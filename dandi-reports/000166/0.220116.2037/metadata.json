@@ -1,0 +1,190 @@
+{
+  "id": "DANDI:000166/0.220116.2037",
+  "doi": "10.48324/dandi.000166/0.220116.2037",
+  "url": "https://dandiarchive.org/dandiset/000166/0.220116.2037",
+  "name": "Layer-Specific Physiological Features and Interlaminar Interactions in the Primary Visual Cortex of the Mouse",
+  "about": [
+    {
+      "name": "Visual cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0000411"
+    }
+  ],
+  "access": [],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.220116.2037",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+  "citation": "Senzai, Yuta; Fernandez-Ruiz, Antonio; Buzs\u00e1ki, Gy\u00f6rgy (2022) Layer-Specific Physiological Features and Interlaminar Interactions in the Primary Visual Cortex of the Mouse (Version 0.220116.2037) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000166/0.220116.2037",
+  "keywords": [
+    "current source density ",
+    "laminar recordings ",
+    "cortex",
+    "electrophysiology"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000166",
+  "repository": "https://dandiarchive.org/",
+  "contributor": [
+    {
+      "name": "Senzai, Yuta",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:FormalAnalysis"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Fernandez-Ruiz, Antonio",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "url": "http://hnf.jp/",
+      "name": "Heiwa Nakajima Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/000k40t10",
+      "contactPoint": [],
+      "includeInCitation": false
+    },
+    {
+      "url": "http://www.nih.gov/",
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "MH54671,  MH107396, NS090583",
+      "contactPoint": [],
+      "includeInCitation": false
+    },
+    {
+      "url": "http://www.nsf.gov/",
+      "name": "National Science Foundation",
+      "email": "info@nsf.gov",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/021nxhr62",
+      "awardNumber": "1545858, 1707316",
+      "contactPoint": [],
+      "includeInCitation": false
+    },
+    {
+      "url": "http://www.wellcome.ac.uk/",
+      "name": "Wellcome Trust",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/029chgv08",
+      "contactPoint": [],
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2021-11-06T18:16:55.568418+00:00",
+  "description": "The relationship between mesoscopic local field potentials (LFPs) and single-neuron firing in the multi-layered neocortex is poorly understood. Simultaneous recordings from all layers in the primary visual cortex (V1) of the behaving mouse revealed functionally defined layers in V1. The depth of maximum spike power and sink-source distributions of LFPs provided consistent laminar landmarks across animals. Coherence of gamma oscillations (30-100 Hz) and spike-LFP coupling identified six physiological layers and further sublayers. Firing rates, burstiness, and other electrophysiological features of neurons displayed unique layer and brain state dependence. Spike transmission strength from layer 2/3 cells to layer 5 pyramidal cells and interneurons was stronger during waking compared with non-REM sleep but stronger during non-REM sleep among deep-layer excitatory neurons. A subset of deep-layer neurons was active exclusively in the DOWN state of non-REM sleep. These results bridge mesoscopic LFPs and single-neuron interactions with laminar structure in V1.",
+  "publishedBy": {
+    "id": "urn:uuid:5f128d68-b05e-4640-a7a1-92da5a539d95",
+    "name": "DANDI publish",
+    "endDate": "2022-01-16T20:37:48.928648+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2022-01-16T20:37:48.928648+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:b2c72309-237b-41d2-b009-3d695f2da120",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 787191910918,
+    "numberOfFiles": 19,
+    "numberOfSubjects": 19,
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "Units",
+      "LFP"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "signal filtering technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2022-01-16T20:37:48.928648+00:00",
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1016/j.neuron.2018.12.009",
+      "name": "Publication",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "doi:10.1016/j.neuron.2018.12.009",
+      "repository": "Neuron"
+    }
+  ],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000166/0.220116.2037/assets.yaml"
+  ]
+}

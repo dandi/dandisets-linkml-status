@@ -1,0 +1,69 @@
+{
+  "id": "DANDI:001070/draft",
+  "url": "https://dandiarchive.org/dandiset/001070/draft",
+  "name": "LITMUS: Rat-based motor unit dataset with 0 STD waveform shape variability",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
+  "citation": "O'Connell, Sean (2024) LITMUS: Rat-based motor unit dataset with 0 STD waveform shape variability (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001070/draft",
+  "keywords": [
+    "LITMUS",
+    "Motor Unit",
+    "MUsim",
+    "SNEL",
+    "EMUsort",
+    "Rat",
+    "EMG"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001070",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "O'Connell, Sean",
+      "email": "sean_oc@emory.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-06-21T19:33:08.788899+00:00",
+  "description": "This 10-minute, 8-channel dataset contains synthetic data generated from the MUsim repository (https://github.com/snel-repo/MUsim) using real waveforms from 10 motor units recorded intramuscularly with up to 200 SNR. Although low background noise was observed, waveform shapes were observed to have an inherent shape variability. In this Dandiset the level of shape noise simulated is 0 STD (computed from the Kilosort spatial template matrix).",
+  "studyTarget": [],
+  "assetsSummary": {
+    "schemaKey": "AssetsSummary",
+    "numberOfBytes": 0,
+    "numberOfFiles": 0
+  },
+  "schemaVersion": "0.6.7",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "acknowledgement": "Simons Foundation",
+  "relatedResource": [
+    {
+      "url": "https://github.com/snel-repo/MUsim",
+      "name": "MUsim: Python class for motor unit simulations, produce activity according to arbitrary force profiles",
+      "relation": "dcite:IsSourceOf",
+      "schemaKey": "Resource",
+      "identifier": "MUsim",
+      "repository": "MUsim",
+      "resourceType": "dcite:Software"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001070/versions/draft/assets/"
+  ]
+}

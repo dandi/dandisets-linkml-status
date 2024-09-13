@@ -1,0 +1,190 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000244/draft",
+      "url": "https://dandiarchive.org/dandiset/000244/draft",
+      "name": "One photon mesoscale calcium imaging of multiple cell types",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.3/context.json",
+      "citation": "O'Connor, Dave (2022) One photon mesoscale calcium imaging of multiple cell types (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000244/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000244",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "O'Connor, Dave",
+          "email": "david_oconnor@live.ie",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-05-09T20:37:01.714202+00:00",
+      "description": "One photon dual wavelength mesoscale calcium imaging of mouse isocortex. Includes data from awake and anesthetized subjects with excitatory neuron sensitive GECIs, and data from awake subjects with GECIs sensitive to three different inhibitory interneuron cell types (PV, SOM and VIP).",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1068310244612,
+        "numberOfFiles": 33,
+        "numberOfSubjects": 25,
+        "variableMeasured": [
+          "ImagingPlane",
+          "TwoPhotonSeries",
+          "OpticalChannel"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.3",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000244/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': \"O'Connor, Dave\", 'email': 'david_oconnor@live.ie', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000244/draft",
+      "url": "https://dandiarchive.org/dandiset/000244/draft",
+      "name": "One photon mesoscale calcium imaging of multiple cell types",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.3/context.json",
+      "citation": "O'Connor, Dave (2022) One photon mesoscale calcium imaging of multiple cell types (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000244/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000244",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "O'Connor, Dave",
+          "email": "david_oconnor@live.ie",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-05-09T20:37:01.714202+00:00",
+      "description": "One photon dual wavelength mesoscale calcium imaging of mouse isocortex. Includes data from awake and anesthetized subjects with excitatory neuron sensitive GECIs, and data from awake subjects with GECIs sensitive to three different inhibitory interneuron cell types (PV, SOM and VIP).",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1068310244612,
+        "numberOfFiles": 33,
+        "numberOfSubjects": 25,
+        "variableMeasured": [
+          "ImagingPlane",
+          "TwoPhotonSeries",
+          "OpticalChannel"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.3",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000244/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

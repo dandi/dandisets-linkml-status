@@ -1,0 +1,4142 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chung, J. E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Joo, H. R.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Fan, J. L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Liu, D. F.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Barnett, A. H.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chen, S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Geaghan-Breiner, C.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Karlsson, M. P.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Karlsson, M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lee, K. Y.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Liang, H.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Magland, J. F.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/11",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Pebbles, J. A.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/12",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tooker, A. C.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/13",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Greengard, L. F.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/14",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tolosa, V. M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/15",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Frank, L. M.', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/16",
+    "instance": {
+      "id": "DANDI:000065/draft",
+      "url": "https://dandiarchive.org/dandiset/000065/draft",
+      "name": "Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "email": "loren@phy.ucsf.edu",
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Chung, J. E.; Joo, H. R.; Fan, J. L.; Liu, D. F.; Barnett, A. H.; Chen, S.; Geaghan-Breiner, C.; Karlsson, M. P.; Karlsson, M.; Lee, K. Y.; Liang, H.; Magland, J. F.; Pebbles, J. A.; Tooker, A. C.; Greengard, L. F.; Tolosa, V. M.; Frank, L. M. (2022) Polymer probe recordings from hippocampus (LFP), OFC, NAc, and mPFC (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000065/draft",
+      "keywords": [
+        "rat, ",
+        "polymer probe",
+        "electrophysiology",
+        "nucleus accumbens",
+        "medial prefrontal cortex",
+        "orbitofrontal cortex",
+        "hippocampus",
+        "sleep"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000065",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Chung, J. E.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Joo, H. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fan, J. L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, D. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Barnett, A. H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chen, S.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Geaghan-Breiner, C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M. P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Karlsson, M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Lee, K. Y.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liang, H.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, J. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Pebbles, J. A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tooker, A. C.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greengard, L. F.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Tolosa, V. M.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, L. M.",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-04-07T23:31:12.831000+00:00",
+      "description": "Recordings made by Jason Chung in the Frank laboratory at UCSF using 64 channel polymer probes across 4 regions in an animal resting in a box. Note that the position data is duplicated, one copy for each epoch.",
+      "studyTarget": [
+        "Technology development (polymer probes) and multiregion recordings in rat."
+      ],
+      "assetsSummary": {
+        "species": [],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [],
+        "numberOfBytes": 237685085456,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30502044/",
+          "name": "High-Density, Long-Lasting, and Multi-region Electrophysiological Recordings Using Polymer Electrode Arrays",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "DOI: 10.1016/j.neuron.2018.11.002"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000065/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

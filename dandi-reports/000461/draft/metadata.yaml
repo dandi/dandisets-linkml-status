@@ -1,0 +1,70 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 23369106
+  numberOfFiles: 14
+  numberOfSubjects: 12
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9615
+    name: Canis lupus familiaris - Dog
+    schemaKey: SpeciesType
+  variableMeasured:
+  - OpticalChannel
+  - ImagingPlane
+  - TwoPhotonSeries
+citation: Davis Ozawa, Hunter; National Institutes of Health (2023) Cohen Tickertapes
+  Exploratory Data 1 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000461/draft
+contributor:
+- affiliation: []
+  email: hdavis@caltech.edu
+  includeInCitation: true
+  name: Davis Ozawa, Hunter
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- awardNumber: 1 R21 EY 033669-01
+  contactPoint: []
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: true
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://nih.gov
+dateCreated: '2023-03-18T15:51:51.664534+00:00'
+description: Exploratory dataset for the second generation of molecular tickertapes
+  in the Adam Cohen Lab.
+ethicsApproval: []
+id: DANDI:000461/draft
+identifier: DANDI:000461
+keywords: []
+license:
+- spdx:CC0-1.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000461/versions/draft/assets/
+name: Cohen Tickertapes Exploratory Data 1
+protocol: []
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.4
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000461/draft
+version: draft
+wasGeneratedBy: []

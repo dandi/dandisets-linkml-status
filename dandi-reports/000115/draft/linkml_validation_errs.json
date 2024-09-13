@@ -1,0 +1,2207 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gillespie, Anna', 'email': 'akgillespie8@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-0980-2408', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'awardNumber': 'Brain Initiative K99AG068425', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Astudillo Maya, Daniela', 'email': 'daniela.astudillo@ucsf.edu', 'roleName': ['dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Denovellis, Eric', 'email': 'eric.denovellis@ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0003-4606-087X', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Liu, Daniel', 'email': 'daniel.liu@ucsf.edu', 'roleName': ['dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kastner, David', 'email': 'david.kastner2@ucsf.edu', 'roleName': ['dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Coulter, Michael', 'email': 'michael.coulter@ucsf.edu', 'roleName': ['dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Roumis, Demetris', 'email': 'roumis.d@gmail.com', 'roleName': ['dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Frank, Loren', 'email': 'loren@phy.ucsf.edu', 'roleName': ['dcite:DataManager', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'HHMI', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance": {
+      "id": "DANDI:000115/draft",
+      "url": "https://dandiarchive.org/dandiset/000115/draft",
+      "name": "Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Gillespie, Anna; Astudillo Maya, Daniela; Denovellis, Eric; Liu, Daniel; Kastner, David; Coulter, Michael; Roumis, Demetris; Frank, Loren (2024) Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000115/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000115",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Gillespie, Anna",
+          "email": "akgillespie8@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0980-2408",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "awardNumber": "Brain Initiative K99AG068425",
+          "includeInCitation": true
+        },
+        {
+          "name": "Astudillo Maya, Daniela",
+          "email": "daniela.astudillo@ucsf.edu",
+          "roleName": [
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Denovellis, Eric",
+          "email": "eric.denovellis@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology",
+            "dcite:FormalAnalysis"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4606-087X",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Liu, Daniel",
+          "email": "daniel.liu@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kastner, David",
+          "email": "david.kastner2@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Coulter, Michael",
+          "email": "michael.coulter@ucsf.edu",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Roumis, Demetris",
+          "email": "roumis.d@gmail.com",
+          "roleName": [
+            "dcite:Methodology"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of California, San Francisco",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/043mz5j54"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Frank, Loren",
+          "email": "loren@phy.ucsf.edu",
+          "roleName": [
+            "dcite:DataManager",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "HHMI",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/006w34k90"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2021-07-09T01:01:19.688366+00:00",
+      "description": "This dataset includes the electrophysiological (dorsal CA1 tetrodes) and behavioral (port triggers, reward delivery, and position tracking) data from Gillespie et al, Neuron 2021: \"Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice\". For more information about this data, please contact Anna Gillespie or Loren Frank. \nPLEASE NOTE: We have updated the NWB files to correct a bug in the NWB file generation that caused mislabeling of electrodes. This correction does not impact the results of the manuscript in any way. Please use the newer version of the files (3/21/22) rather than the originals! ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rat; norway rat; rats; brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          },
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 9103698757665,
+        "numberOfFiles": 57,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "SpatialSeries",
+          "BehavioralEvents",
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00573-0",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2021.03.09.434621v2",
+          "name": "Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice",
+          "relation": "dcite:Describes",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000115/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

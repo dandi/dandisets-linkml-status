@@ -1,0 +1,121 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique: []
+  numberOfBytes: 66961144697
+  numberOfFiles: 174
+  numberOfSubjects: 175
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9606
+    name: Homo sapiens - Human
+    schemaKey: SpeciesType
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured: []
+citation: Brooks, Frederick; Davis, Hunter C.; Park, Pojeong; Qi, Yitong; Cohen, Adam
+  E. (2024) Photophysics-informed two-photon voltage imaging using FRET-opsin voltage
+  indicators (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000988/draft
+contributor:
+- affiliation: []
+  email: fbrooks@g.harvard.edu
+  identifier: 0000-0002-4334-8192
+  includeInCitation: true
+  name: Brooks, Frederick
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:Investigation
+  - dcite:Researcher
+  - dcite:Visualization
+  schemaKey: Person
+- includeInCitation: true
+  name: Davis, Hunter C.
+  roleName:
+  - dcite:Conceptualization
+  - dcite:Investigation
+  - dcite:ProjectMember
+  schemaKey: Person
+- identifier: 0000-0002-5574-6104
+  includeInCitation: true
+  name: Park, Pojeong
+  roleName:
+  - dcite:DataCollector
+  - dcite:ProjectMember
+  - dcite:Researcher
+  schemaKey: Person
+- includeInCitation: true
+  name: Qi, Yitong
+  roleName:
+  - dcite:Investigation
+  - dcite:ProjectMember
+  schemaKey: Person
+- email: cohen@chemistry.harvard.edu
+  identifier: 0000-0002-8699-2404
+  includeInCitation: true
+  name: Cohen, Adam E.
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:FundingAcquisition
+  - dcite:Supervision
+  schemaKey: Person
+- awardNumber: 1R01NS133755; 1RF1NS126043
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: NIH
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: OMA-2121044
+  identifier: https://ror.org/021nxhr62
+  includeInCitation: false
+  name: NSF
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2024-05-13T21:21:48.364170+00:00'
+description: 'Voltage imaging from HEK cells, ex vivo mouse brain slice, and in vivo
+  anaesthetized mouse barrel cortex.
+
+  One-photon photophysical exploration experiments, and two photon voltage sensitive
+  recordings using Voltron1/2 and various dyes.'
+ethicsApproval: []
+id: DANDI:000988/draft
+identifier: DANDI:000988
+keywords:
+- Voltage Imaging, Two-photon, Methods development
+license:
+- spdx:CC0-1.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000988/versions/draft/assets/
+name: Photophysics-informed two-photon voltage imaging using FRET-opsin voltage indicators
+protocol: []
+relatedResource:
+- identifier: https://doi.org/10.1101/2024.04.01.587540
+  name: Photophysics-informed two-photon voltage imaging using FRET-opsin voltage
+    indicators
+  relation: dcite:IsPublishedIn
+  repository: BioRxiv
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://doi.org/10.1101/2024.04.01.587540
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.7
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000988/draft
+version: draft
+wasGeneratedBy: []

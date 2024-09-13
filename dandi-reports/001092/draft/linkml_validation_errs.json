@@ -1,0 +1,482 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:001092/draft",
+      "url": "https://dandiarchive.org/dandiset/001092/draft",
+      "name": "HaloTag Time-Stamping of cFos Transcription in Mouse Brain",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
+      "citation": "Cohen, Adam E.; Moult, Eric (2024) HaloTag Time-Stamping of cFos Transcription in Mouse Brain (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001092/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:001092",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "NIH",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/01cwqze88",
+          "awardNumber": "1 R21 EY 033669-02",
+          "includeInCitation": false
+        },
+        {
+          "name": "Cohen, Adam E.",
+          "email": "cohen@chemistry.harvard.edu",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:FundingAcquisition",
+            "dcite:Supervision"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Moult, Eric",
+          "email": "eric_moult@harvard.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Conceptualization",
+            "dcite:DataCollector",
+            "dcite:DataCurator",
+            "dcite:DataManager",
+            "dcite:Investigation",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-07-22T15:35:15.014321+00:00",
+      "description": "These images are from a cross-sectional slice through a tet-tag mouse brain expressing a TRE::HaloTag-NLS construct. The mouse was intravenously injected with HaloTag-ligand-JF669 on day 1 and HaloTag-ligand-JF552 on day 2. ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 12627889,
+        "numberOfFiles": 3,
+        "numberOfSubjects": 2,
+        "variableMeasured": [
+          "TwoPhotonSeries",
+          "ImagingPlane",
+          "OpticalChannel"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.8",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/001092/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'NIH', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': '1 R21 EY 033669-02', 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:001092/draft",
+      "url": "https://dandiarchive.org/dandiset/001092/draft",
+      "name": "HaloTag Time-Stamping of cFos Transcription in Mouse Brain",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
+      "citation": "Cohen, Adam E.; Moult, Eric (2024) HaloTag Time-Stamping of cFos Transcription in Mouse Brain (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001092/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:001092",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "NIH",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/01cwqze88",
+          "awardNumber": "1 R21 EY 033669-02",
+          "includeInCitation": false
+        },
+        {
+          "name": "Cohen, Adam E.",
+          "email": "cohen@chemistry.harvard.edu",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:FundingAcquisition",
+            "dcite:Supervision"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Moult, Eric",
+          "email": "eric_moult@harvard.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Conceptualization",
+            "dcite:DataCollector",
+            "dcite:DataCurator",
+            "dcite:DataManager",
+            "dcite:Investigation",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-07-22T15:35:15.014321+00:00",
+      "description": "These images are from a cross-sectional slice through a tet-tag mouse brain expressing a TRE::HaloTag-NLS construct. The mouse was intravenously injected with HaloTag-ligand-JF669 on day 1 and HaloTag-ligand-JF552 on day 2. ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 12627889,
+        "numberOfFiles": 3,
+        "numberOfSubjects": 2,
+        "variableMeasured": [
+          "TwoPhotonSeries",
+          "ImagingPlane",
+          "OpticalChannel"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.8",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/001092/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cohen, Adam E.', 'email': 'cohen@chemistry.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Supervision'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:001092/draft",
+      "url": "https://dandiarchive.org/dandiset/001092/draft",
+      "name": "HaloTag Time-Stamping of cFos Transcription in Mouse Brain",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
+      "citation": "Cohen, Adam E.; Moult, Eric (2024) HaloTag Time-Stamping of cFos Transcription in Mouse Brain (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001092/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:001092",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "NIH",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/01cwqze88",
+          "awardNumber": "1 R21 EY 033669-02",
+          "includeInCitation": false
+        },
+        {
+          "name": "Cohen, Adam E.",
+          "email": "cohen@chemistry.harvard.edu",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:FundingAcquisition",
+            "dcite:Supervision"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Moult, Eric",
+          "email": "eric_moult@harvard.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Conceptualization",
+            "dcite:DataCollector",
+            "dcite:DataCurator",
+            "dcite:DataManager",
+            "dcite:Investigation",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-07-22T15:35:15.014321+00:00",
+      "description": "These images are from a cross-sectional slice through a tet-tag mouse brain expressing a TRE::HaloTag-NLS construct. The mouse was intravenously injected with HaloTag-ligand-JF669 on day 1 and HaloTag-ligand-JF552 on day 2. ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 12627889,
+        "numberOfFiles": 3,
+        "numberOfSubjects": 2,
+        "variableMeasured": [
+          "TwoPhotonSeries",
+          "ImagingPlane",
+          "OpticalChannel"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.8",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/001092/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Moult, Eric', 'email': 'eric_moult@harvard.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Investigation', 'dcite:Researcher'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:001092/draft",
+      "url": "https://dandiarchive.org/dandiset/001092/draft",
+      "name": "HaloTag Time-Stamping of cFos Transcription in Mouse Brain",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
+      "citation": "Cohen, Adam E.; Moult, Eric (2024) HaloTag Time-Stamping of cFos Transcription in Mouse Brain (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001092/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:001092",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "NIH",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/01cwqze88",
+          "awardNumber": "1 R21 EY 033669-02",
+          "includeInCitation": false
+        },
+        {
+          "name": "Cohen, Adam E.",
+          "email": "cohen@chemistry.harvard.edu",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:FundingAcquisition",
+            "dcite:Supervision"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Moult, Eric",
+          "email": "eric_moult@harvard.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Conceptualization",
+            "dcite:DataCollector",
+            "dcite:DataCurator",
+            "dcite:DataManager",
+            "dcite:Investigation",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-07-22T15:35:15.014321+00:00",
+      "description": "These images are from a cross-sectional slice through a tet-tag mouse brain expressing a TRE::HaloTag-NLS construct. The mouse was intravenously injected with HaloTag-ligand-JF669 on day 1 and HaloTag-ligand-JF552 on day 2. ",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 12627889,
+        "numberOfFiles": 3,
+        "numberOfSubjects": 2,
+        "variableMeasured": [
+          "TwoPhotonSeries",
+          "ImagingPlane",
+          "OpticalChannel"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.8",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/001092/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

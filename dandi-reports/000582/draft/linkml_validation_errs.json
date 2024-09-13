@@ -1,0 +1,2471 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sargolini, Francesca', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5038-3746', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Fyhn, Marianne', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Hafting, Torkel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'McNaughton, Bruce L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Witter, Menno P.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Moser, May-Britt', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Moser, Edvard I.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Waade, Haagen', 'email': 'haagen.waade@ntnu.no', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4675-2569', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Ball, Simon', 'email': 'simon.ball@ntnu.no', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59', 'name': 'Metadata extraction from DOI', 'used': [], 'schemaKey': 'Project', 'description': 'Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli', 'wasAssociatedWith': [{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.55.1', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'}]} is not valid under any of the given schemas in /wasGeneratedBy/0",
+    "instance": {
+      "id": "DANDI:000582/draft",
+      "url": "https://dandiarchive.org/dandiset/000582/draft",
+      "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2023) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000582/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000582",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Sargolini, Francesca",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5038-3746",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Fyhn, Marianne",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Hafting, Torkel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "McNaughton, Bruce L.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Witter, Menno P.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, May-Britt",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Moser, Edvard I.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Waade, Haagen",
+          "email": "haagen.waade@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4675-2569",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ball, Simon",
+          "email": "simon.ball@ntnu.no",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-07-17T08:18:23.034598+00:00",
+      "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Rattus norvegicus - Norway rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 1812381475,
+        "numberOfFiles": 115,
+        "numberOfSubjects": 14,
+        "variableMeasured": [
+          "ElectricalSeries",
+          "Position",
+          "Units",
+          "ElectrodeGroup",
+          "ProcessingModule",
+          "LFP",
+          "SpatialSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "id": "urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59",
+          "name": "Metadata extraction from DOI",
+          "used": [],
+          "schemaKey": "Project",
+          "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1126/science.1125572 by DANDI cli",
+          "wasAssociatedWith": [
+            {
+              "url": "https://github.com/dandi/dandi-cli",
+              "name": "DANDI Command Line Interface",
+              "version": "0.55.1",
+              "schemaKey": "Software",
+              "identifier": "RRID:SCR_019009"
+            }
+          ]
+        }
+      ],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1126/science.1125572",
+          "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "https://doi.org/10.1126/science.1125572"
+        },
+        {
+          "url": "https://www.ntnu.edu/kavli/research/grid-cell-data",
+          "name": "Grid cell data",
+          "relation": "dcite:IsSupplementTo",
+          "schemaKey": "Resource"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000582/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [
+      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.55.1', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'",
+      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.55.1', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'",
+      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.55.1', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'",
+      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.55.1', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'"
+    ]
+  }
+]

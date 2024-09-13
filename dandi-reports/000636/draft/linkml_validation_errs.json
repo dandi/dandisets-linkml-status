@@ -1,0 +1,1466 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lee, Brian', 'email': 'brianle@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-3210-5638', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Dalley, Rachel', 'email': 'racheld@alleninstitute.org', 'roleName': ['dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0001-7461-7845', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chartrand, Thomas', 'email': 'tom.chartrand@alleninstitute.org', 'roleName': ['dcite:ContactPerson', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0002-7093-8681', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kalmbach, Brian', 'email': 'briank@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3136-8097', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.nimh.nih.gov/', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'U01MH114812', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://alleninstitute.org/', 'name': 'Allen Institute for Brain Science', 'roleName': [], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00dcv1019', 'awardNumber': 'UM1MH130981', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lein, Ed', 'email': 'edl@alleninstitute.org', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0001-9012-6552', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000636/draft",
+      "url": "https://dandiarchive.org/dandiset/000636/draft",
+      "name": "Human interneuron patch-seq electrophysiology",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Lee, Brian; Dalley, Rachel; Chartrand, Thomas; Kalmbach, Brian; Lein, Ed (2023) Human interneuron patch-seq electrophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000636/draft",
+      "keywords": [
+        "human",
+        "multimodal",
+        "patch-seq",
+        "neocortex"
+      ],
+      "protocol": [
+        "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000636",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Lee, Brian",
+          "email": "brianle@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3210-5638",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Dalley, Rachel",
+          "email": "racheld@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectMember"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7461-7845",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chartrand, Thomas",
+          "email": "tom.chartrand@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:DataManager"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7093-8681",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Kalmbach, Brian",
+          "email": "briank@alleninstitute.org",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3136-8097",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "url": "https://www.nimh.nih.gov/",
+          "name": "National Institute of Mental Health",
+          "roleName": [
+            "dcite:Funder"
+          ],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/04xeg9z08",
+          "awardNumber": "U01MH114812",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "url": "https://alleninstitute.org/",
+          "name": "Allen Institute for Brain Science",
+          "roleName": [],
+          "schemaKey": "Organization",
+          "identifier": "https://ror.org/00dcv1019",
+          "awardNumber": "UM1MH130981",
+          "contactPoint": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Lein, Ed",
+          "email": "edl@alleninstitute.org",
+          "roleName": [
+            "dcite:ProjectLeader"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-9012-6552",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-15T22:22:19.423708+00:00",
+      "description": "Patch-seq electrophysiology data from human neocortical interneurons from acute and slice culture preparations, accompanying the manuscript \"Signature morpho-electric properties of diverse GABAergic interneurons in the human neocortex\" (https://www.biorxiv.org/content/10.1101/2022.11.08.515739).",
+      "studyTarget": [
+        "Multimodal classifcation of cell types in the human neocortex."
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          },
+          {
+            "name": "Homo sapiens - Human",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 24473831989,
+        "numberOfCells": 616,
+        "numberOfFiles": 706,
+        "numberOfSubjects": 109,
+        "variableMeasured": [
+          "ProcessingModule",
+          "VoltageClampSeries",
+          "CurrentClampStimulusSeries",
+          "VoltageClampStimulusSeries",
+          "CurrentClampSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "current clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "voltage clamp technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000636/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

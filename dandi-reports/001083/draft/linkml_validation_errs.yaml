@@ -1,0 +1,80 @@
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Avaylon, Matthew (2024) Test Zarr File with Consolidated Metadata (Version
+      draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001083/draft
+    contributor:
+    - affiliation: []
+      email: mavaylon1@berkeley.edu
+      includeInCitation: true
+      name: Avaylon, Matthew
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2024-07-08T05:10:44.233679+00:00'
+    description: Test Zarr NWB File used in test suite for S3.
+    id: DANDI:001083/draft
+    identifier: DANDI:001083
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/001083/versions/draft/assets/
+    name: Test Zarr File with Consolidated Metadata
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.7
+    url: https://dandiarchive.org/dandiset/001083/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Avaylon, Matthew (2024) Test Zarr File with Consolidated Metadata (Version
+      draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001083/draft
+    contributor:
+    - affiliation: []
+      email: mavaylon1@berkeley.edu
+      includeInCitation: true
+      name: Avaylon, Matthew
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2024-07-08T05:10:44.233679+00:00'
+    description: Test Zarr NWB File used in test suite for S3.
+    id: DANDI:001083/draft
+    identifier: DANDI:001083
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/001083/versions/draft/assets/
+    name: Test Zarr File with Consolidated Metadata
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.7
+    url: https://dandiarchive.org/dandiset/001083/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Avaylon, Matthew'', ''email'': ''mavaylon1@berkeley.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  type: jsonschema validation

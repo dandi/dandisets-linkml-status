@@ -1,0 +1,116 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json
+about: []
+access:
+- contactPoint:
+    schemaKey: ContactPoint
+  schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 199439472
+  numberOfFiles: 54
+  numberOfSubjects: 13
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+  - ElectrodeGroup
+citation: Gao, Zhenyu; Davis, Courtney; Thomas, Alyse M.; Economo, Michael N.; Abrego,
+  Amada M.; Svoboda, Karel; Zeeuw, Chris I. De; Li, Nuo (2024) A cortico-cerebellar
+  loop for motor planning (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000007/draft
+contributor:
+- affiliation: []
+  includeInCitation: true
+  name: Gao, Zhenyu
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  includeInCitation: true
+  name: Davis, Courtney
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  identifier: 0000-0002-6070-4769
+  includeInCitation: true
+  name: Thomas, Alyse M.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  identifier: 0000-0001-9893-1505
+  includeInCitation: true
+  name: Economo, Michael N.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  identifier: 0000-0003-0311-5244
+  includeInCitation: true
+  name: Abrego, Amada M.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  includeInCitation: true
+  name: Svoboda, Karel
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  identifier: 0000-0001-5628-8187
+  includeInCitation: true
+  name: Zeeuw, Chris I. De
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  identifier: 0000-0002-6613-5018
+  includeInCitation: true
+  name: Li, Nuo
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2020-03-17T15:01:40.811000+00:00'
+description: Extracellular recording in ALM
+ethicsApproval: []
+id: DANDI:000007/draft
+identifier: DANDI:000007
+keywords: []
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000007/versions/draft/assets/
+name: A cortico-cerebellar loop for motor planning
+protocol: []
+relatedResource:
+- identifier: doi:10.1038/s41586-018-0633-x
+  name: A cortico-cerebellar loop for motor planning
+  relation: dcite:IsDescribedBy
+  repository: Nature
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://www.nature.com/articles/s41586-018-0633-x
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.0
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000007/draft
+version: draft
+wasGeneratedBy: []

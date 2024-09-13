@@ -1,0 +1,141 @@
+{
+  "id": "DANDI:000955/draft",
+  "url": "https://dandiarchive.org/dandiset/000955/draft",
+  "name": "Neural Spiking Data in Rats Responding to Optogenetic Stimulation and Transcranial Focused Ultrasound Stimulation in the Somatosensory Cortex",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
+  "citation": "Ramachandran, Sandhya; Gao, Huan; Yu, Kai; He, Bin (2024) Neural Spiking Data in Rats Responding to Optogenetic Stimulation and Transcranial Focused Ultrasound Stimulation in the Somatosensory Cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000955/draft",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000955",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Ramachandran, Sandhya",
+      "email": "s.ramachandran8@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Gao, Huan",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Yu, Kai",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "He, Bin",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "roleName": [
+        "dcite:Affiliation"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    },
+    {
+      "name": "NIH NS124564",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    },
+    {
+      "name": "NIH EB029354",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    },
+    {
+      "name": "NIH NS131069",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2024-04-03T03:30:48.187699+00:00",
+  "description": "In these recordings, we stimulate rats that were injected with AAV virus to optogenetically tag for CaMKII  to distinguish between excitatory pyramidal neurons and inhibitory interneurons. We alternate between stimulating them optogenetically in order to tag the neuronal subtype and testing different PRFs (pulse repetition frequencies) and pulse durations of ultrasound stimulation using a 128-element random array ultrasound transducer to stimulate the somatosensory cortex. Electrophysiological recordings were acquired using 32-channel NeuroNexus electrodes (Model: A1x32-Poly3-10mm-50-177-A32), surgically inserted into the rat brain. Ultrasound stimulation is delivered every 2.5 seconds with a 10% jitter, and each recording has 500 trials. Optogenetic stimulation was delivered at 120A for 10ms. The PRFs tested were 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz, with pulse durations including 4, 40, 200, and 400 microseconds, and a 67 millisecond ultrasound duration. \n\nFile Information: All subjects were male Wistar rats. Ultrasound test files are named in the format SubjectName_PRF_PulseDuration_UltrasoundDuration_Voltage. Optogenetics test files are named in the format SubjectName_opto_Current_Duration_OrderWithinUltrasoundPRFtests .Each file contains spike time data with the time series data for the onset of each trial of ultrasound stimulation or optogenetic stimulation.",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 10556448,
+    "numberOfFiles": 11,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "Units",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.7",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000955/versions/draft/assets/"
+  ]
+}

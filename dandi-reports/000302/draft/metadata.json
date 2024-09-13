@@ -1,0 +1,120 @@
+{
+  "id": "DANDI:000302/draft",
+  "url": "https://dandiarchive.org/dandiset/000302/draft",
+  "name": "Habenular neurophysiology",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.3/context.json",
+  "citation": "Jo, YoungJu (2023) Habenular neurophysiology (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000302/draft",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000302",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1 U19 NS 118284-01",
+      "contactPoint": [],
+      "includeInCitation": false
+    },
+    {
+      "name": "Jo, YoungJu",
+      "email": "yjjo@stanford.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-2364-7160",
+      "affiliation": [
+        {
+          "name": "Stanford University",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2022-09-03T00:50:42.699603+00:00",
+  "description": "Habenular neurophysiology data associated with Sylwestrak*, Jo*, Vesuna* et al. Cell (2022).",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "optogenetic approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 1078714284,
+    "numberOfFiles": 32,
+    "numberOfSubjects": 12,
+    "variableMeasured": [
+      "BehavioralEvents",
+      "ProcessingModule",
+      "Units",
+      "ElectrodeGroup",
+      "OptogeneticSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.3",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000302/versions/draft/assets/"
+  ]
+}

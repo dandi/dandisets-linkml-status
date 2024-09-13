@@ -1,0 +1,353 @@
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json
+    about: []
+    access:
+    - contactPoint:
+        email: petersen.peter@gmail.com
+        schemaKey: ContactPoint
+      status: dandi:OpenAccess
+    assetsSummary:
+      approach:
+      - name: electrophysiological approach
+        schemaKey: ApproachType
+      dataStandard:
+      - identifier: RRID:SCR_015242
+        name: Neurodata Without Borders (NWB)
+        schemaKey: StandardsType
+      measurementTechnique:
+      - name: signal filtering technique
+        schemaKey: MeasurementTechniqueType
+      - name: multi electrode extracellular electrophysiology recording technique
+        schemaKey: MeasurementTechniqueType
+      - name: spike sorting technique
+        schemaKey: MeasurementTechniqueType
+      numberOfBytes: 65708919583
+      numberOfFiles: 8
+      numberOfSubjects: 4
+      schemaKey: AssetsSummary
+      species:
+      - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+        name: Brown rat
+        schemaKey: SpeciesType
+      variableMeasured:
+      - ElectricalSeries
+      - LFP
+      - Units
+    citation: "Grosmark, Andres D.; Buzs\xE1ki, Gy\xF6rgy (2021) Diversity in neural
+      firing dynamics supports both rigid and learned hippocampal sequences (Version
+      0.210812.1516) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000044/0.210812.1516"
+    contributor:
+    - affiliation: []
+      includeInCitation: true
+      name: Grosmark, Andres D.
+      roleName:
+      - dcite:Author
+      - dcite:ContactPerson
+      schemaKey: Person
+    - affiliation: []
+      identifier: 0000-0002-3100-4800
+      includeInCitation: true
+      name: "Buzs\xE1ki, Gy\xF6rgy"
+      roleName:
+      - dcite:Author
+      schemaKey: Person
+    datePublished: '2021-08-12T15:16:05.197111'
+    description: "This data set is composed of eight bilateral silicon-probe multi-cellular
+      electrophysiological recordings performed on four male Long-Evans rats in the
+      Buzs\xE1ki lab at NYU. These recordings were performed to assess the effect
+      of novel spatial learning on hippocampal CA1 neural firing and LFP patterns
+      in na\xEFve animals. Each session consisted of a long (~4 hour) PRE rest/sleep
+      epoch home-cage recordings performed in a familiar room, followed by a Novel
+      MAZE running epoch (~45 minutes) in which the animals were transferred to a
+      novel room, and water-rewarded to run on a novel maze. These mazes were either
+      A) a wooden 1.6m linear platform, B) a wooden 1m diameter circular platform
+      or C) a 2m metal linear platform. Animals were rewarded either at both ends
+      of the linear platform, or at a predetermined location on the circular platform.
+      The animal was gently encouraged to run unidirectionally on the circular platform.
+      After the MAZE epochs the animals were transferred back to their home-cage in
+      the familiar room where a long (~4 hour) POST rest/sleep was recorded. All eight
+      sessions were concatenated from the PRE, MAZE, and POST recording epochs. In
+      addition to hippocampal electrophysiological recordings, neck EMG and head-mounted
+      accelerometer signals were recorded, and the animal\u2019s position during MAZE
+      running epochs was tracked via head-mounted LEDs."
+    doi: 10.48324/dandi.000044/0.210812.1516
+    ethicsApproval: []
+    id: DANDI:000044/0.210812.1516
+    identifier: DANDI:000044
+    keywords: []
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://dandiarchive.s3.amazonaws.com/dandisets/000044/0.210812.1516/assets.yaml
+    name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
+      sequences
+    protocol: []
+    publishedBy:
+      endDate: '2021-08-12T15:16:05.197111'
+      id: urn:uuid:e4c71a14-8e1f-4ea1-b10b-687a7f661a2e
+      name: DANDI publish
+      schemaKey: PublishActivity
+      startDate: '2021-08-12T15:16:05.197111'
+      wasAssociatedWith:
+      - id: urn:uuid:e5aa1351-6de3-4bc3-8496-056d2ca82528
+        identifier: RRID:SCR_017571
+        name: DANDI API
+        schemaKey: Software
+        version: 0.1.0
+    relatedResource:
+    - identifier: 'doi: 10.1126/science.aad1935'
+      relation: dcite:IsDescribedBy
+      url: https://science.sciencemag.org/content/351/6280/1440
+    - identifier: 'doi: 10.1038/srep32193'
+      relation: dcite:IsDescribedBy
+      url: https://www.nature.com/articles/srep32193
+    repository: https://dandiarchive.org/
+    schemaKey: Dandiset
+    schemaVersion: 0.4.4
+    studyTarget: []
+    url: https://dandiarchive.org/dandiset/000044/0.210812.1516
+    version: 0.210812.1516
+    wasGeneratedBy: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+    'publishedBy' were unexpected) in /
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json
+    about: []
+    access:
+    - contactPoint:
+        email: petersen.peter@gmail.com
+        schemaKey: ContactPoint
+      status: dandi:OpenAccess
+    assetsSummary:
+      approach:
+      - name: electrophysiological approach
+        schemaKey: ApproachType
+      dataStandard:
+      - identifier: RRID:SCR_015242
+        name: Neurodata Without Borders (NWB)
+        schemaKey: StandardsType
+      measurementTechnique:
+      - name: signal filtering technique
+        schemaKey: MeasurementTechniqueType
+      - name: multi electrode extracellular electrophysiology recording technique
+        schemaKey: MeasurementTechniqueType
+      - name: spike sorting technique
+        schemaKey: MeasurementTechniqueType
+      numberOfBytes: 65708919583
+      numberOfFiles: 8
+      numberOfSubjects: 4
+      schemaKey: AssetsSummary
+      species:
+      - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+        name: Brown rat
+        schemaKey: SpeciesType
+      variableMeasured:
+      - ElectricalSeries
+      - LFP
+      - Units
+    citation: "Grosmark, Andres D.; Buzs\xE1ki, Gy\xF6rgy (2021) Diversity in neural
+      firing dynamics supports both rigid and learned hippocampal sequences (Version
+      0.210812.1516) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000044/0.210812.1516"
+    contributor:
+    - affiliation: []
+      includeInCitation: true
+      name: Grosmark, Andres D.
+      roleName:
+      - dcite:Author
+      - dcite:ContactPerson
+      schemaKey: Person
+    - affiliation: []
+      identifier: 0000-0002-3100-4800
+      includeInCitation: true
+      name: "Buzs\xE1ki, Gy\xF6rgy"
+      roleName:
+      - dcite:Author
+      schemaKey: Person
+    datePublished: '2021-08-12T15:16:05.197111'
+    description: "This data set is composed of eight bilateral silicon-probe multi-cellular
+      electrophysiological recordings performed on four male Long-Evans rats in the
+      Buzs\xE1ki lab at NYU. These recordings were performed to assess the effect
+      of novel spatial learning on hippocampal CA1 neural firing and LFP patterns
+      in na\xEFve animals. Each session consisted of a long (~4 hour) PRE rest/sleep
+      epoch home-cage recordings performed in a familiar room, followed by a Novel
+      MAZE running epoch (~45 minutes) in which the animals were transferred to a
+      novel room, and water-rewarded to run on a novel maze. These mazes were either
+      A) a wooden 1.6m linear platform, B) a wooden 1m diameter circular platform
+      or C) a 2m metal linear platform. Animals were rewarded either at both ends
+      of the linear platform, or at a predetermined location on the circular platform.
+      The animal was gently encouraged to run unidirectionally on the circular platform.
+      After the MAZE epochs the animals were transferred back to their home-cage in
+      the familiar room where a long (~4 hour) POST rest/sleep was recorded. All eight
+      sessions were concatenated from the PRE, MAZE, and POST recording epochs. In
+      addition to hippocampal electrophysiological recordings, neck EMG and head-mounted
+      accelerometer signals were recorded, and the animal\u2019s position during MAZE
+      running epochs was tracked via head-mounted LEDs."
+    doi: 10.48324/dandi.000044/0.210812.1516
+    ethicsApproval: []
+    id: DANDI:000044/0.210812.1516
+    identifier: DANDI:000044
+    keywords: []
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://dandiarchive.s3.amazonaws.com/dandisets/000044/0.210812.1516/assets.yaml
+    name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
+      sequences
+    protocol: []
+    publishedBy:
+      endDate: '2021-08-12T15:16:05.197111'
+      id: urn:uuid:e4c71a14-8e1f-4ea1-b10b-687a7f661a2e
+      name: DANDI publish
+      schemaKey: PublishActivity
+      startDate: '2021-08-12T15:16:05.197111'
+      wasAssociatedWith:
+      - id: urn:uuid:e5aa1351-6de3-4bc3-8496-056d2ca82528
+        identifier: RRID:SCR_017571
+        name: DANDI API
+        schemaKey: Software
+        version: 0.1.0
+    relatedResource:
+    - identifier: 'doi: 10.1126/science.aad1935'
+      relation: dcite:IsDescribedBy
+      url: https://science.sciencemag.org/content/351/6280/1440
+    - identifier: 'doi: 10.1038/srep32193'
+      relation: dcite:IsDescribedBy
+      url: https://www.nature.com/articles/srep32193
+    repository: https://dandiarchive.org/
+    schemaKey: Dandiset
+    schemaVersion: 0.4.4
+    studyTarget: []
+    url: https://dandiarchive.org/dandiset/000044/0.210812.1516
+    version: 0.210812.1516
+    wasGeneratedBy: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Grosmark, Andres D.'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/0'
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json
+    about: []
+    access:
+    - contactPoint:
+        email: petersen.peter@gmail.com
+        schemaKey: ContactPoint
+      status: dandi:OpenAccess
+    assetsSummary:
+      approach:
+      - name: electrophysiological approach
+        schemaKey: ApproachType
+      dataStandard:
+      - identifier: RRID:SCR_015242
+        name: Neurodata Without Borders (NWB)
+        schemaKey: StandardsType
+      measurementTechnique:
+      - name: signal filtering technique
+        schemaKey: MeasurementTechniqueType
+      - name: multi electrode extracellular electrophysiology recording technique
+        schemaKey: MeasurementTechniqueType
+      - name: spike sorting technique
+        schemaKey: MeasurementTechniqueType
+      numberOfBytes: 65708919583
+      numberOfFiles: 8
+      numberOfSubjects: 4
+      schemaKey: AssetsSummary
+      species:
+      - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+        name: Brown rat
+        schemaKey: SpeciesType
+      variableMeasured:
+      - ElectricalSeries
+      - LFP
+      - Units
+    citation: "Grosmark, Andres D.; Buzs\xE1ki, Gy\xF6rgy (2021) Diversity in neural
+      firing dynamics supports both rigid and learned hippocampal sequences (Version
+      0.210812.1516) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000044/0.210812.1516"
+    contributor:
+    - affiliation: []
+      includeInCitation: true
+      name: Grosmark, Andres D.
+      roleName:
+      - dcite:Author
+      - dcite:ContactPerson
+      schemaKey: Person
+    - affiliation: []
+      identifier: 0000-0002-3100-4800
+      includeInCitation: true
+      name: "Buzs\xE1ki, Gy\xF6rgy"
+      roleName:
+      - dcite:Author
+      schemaKey: Person
+    datePublished: '2021-08-12T15:16:05.197111'
+    description: "This data set is composed of eight bilateral silicon-probe multi-cellular
+      electrophysiological recordings performed on four male Long-Evans rats in the
+      Buzs\xE1ki lab at NYU. These recordings were performed to assess the effect
+      of novel spatial learning on hippocampal CA1 neural firing and LFP patterns
+      in na\xEFve animals. Each session consisted of a long (~4 hour) PRE rest/sleep
+      epoch home-cage recordings performed in a familiar room, followed by a Novel
+      MAZE running epoch (~45 minutes) in which the animals were transferred to a
+      novel room, and water-rewarded to run on a novel maze. These mazes were either
+      A) a wooden 1.6m linear platform, B) a wooden 1m diameter circular platform
+      or C) a 2m metal linear platform. Animals were rewarded either at both ends
+      of the linear platform, or at a predetermined location on the circular platform.
+      The animal was gently encouraged to run unidirectionally on the circular platform.
+      After the MAZE epochs the animals were transferred back to their home-cage in
+      the familiar room where a long (~4 hour) POST rest/sleep was recorded. All eight
+      sessions were concatenated from the PRE, MAZE, and POST recording epochs. In
+      addition to hippocampal electrophysiological recordings, neck EMG and head-mounted
+      accelerometer signals were recorded, and the animal\u2019s position during MAZE
+      running epochs was tracked via head-mounted LEDs."
+    doi: 10.48324/dandi.000044/0.210812.1516
+    ethicsApproval: []
+    id: DANDI:000044/0.210812.1516
+    identifier: DANDI:000044
+    keywords: []
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://dandiarchive.s3.amazonaws.com/dandisets/000044/0.210812.1516/assets.yaml
+    name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
+      sequences
+    protocol: []
+    publishedBy:
+      endDate: '2021-08-12T15:16:05.197111'
+      id: urn:uuid:e4c71a14-8e1f-4ea1-b10b-687a7f661a2e
+      name: DANDI publish
+      schemaKey: PublishActivity
+      startDate: '2021-08-12T15:16:05.197111'
+      wasAssociatedWith:
+      - id: urn:uuid:e5aa1351-6de3-4bc3-8496-056d2ca82528
+        identifier: RRID:SCR_017571
+        name: DANDI API
+        schemaKey: Software
+        version: 0.1.0
+    relatedResource:
+    - identifier: 'doi: 10.1126/science.aad1935'
+      relation: dcite:IsDescribedBy
+      url: https://science.sciencemag.org/content/351/6280/1440
+    - identifier: 'doi: 10.1038/srep32193'
+      relation: dcite:IsDescribedBy
+      url: https://www.nature.com/articles/srep32193
+    repository: https://dandiarchive.org/
+    schemaKey: Dandiset
+    schemaVersion: 0.4.4
+    studyTarget: []
+    url: https://dandiarchive.org/dandiset/000044/0.210812.1516
+    version: 0.210812.1516
+    wasGeneratedBy: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+    'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [], 'includeInCitation':
+    True} is not of type 'string' in /contributor/1"
+  severity: ERROR
+  type: jsonschema validation

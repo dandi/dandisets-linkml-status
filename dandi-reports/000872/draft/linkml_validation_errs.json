@@ -1,0 +1,2606 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Zhao, Yue', 'email': 'yuezhao@rochester.edu', 'roleName': ['dcite:Maintainer'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Giannetto, Michael J.', 'email': 'michael_giannetto@urmc.rochester.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gomolka, Ryszard S.', 'email': 'ryszard.gomolka@sund.ku.dk', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gahn-Martinez, Daniel ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Newbold, Evan J.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Bork, Peter A. R.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Technical University of Denmark', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04qtj9h94'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chang, Ethan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gresser, Michael', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Aeromics (United States)', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04y4jzv33'}], 'includeInCitation': False} is not of type 'string' in /contributor/7",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Thompson, Trevor', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Aeromics (United States)', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04y4jzv33'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mori, Yuki', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Nedergaard, Maiken', 'email': 'Maiken_Nedergaard@urmc.rochester.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}, {'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance": {
+      "id": "DANDI:000872/draft",
+      "url": "https://dandiarchive.org/dandiset/000872/draft",
+      "name": "Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Giannetto, Michael J.; Gomolka, Ryszard S.; Gahn-Martinez, Daniel ; Newbold, Evan J.; Bork, Peter A. R.; Chang, Ethan; Thompson, Trevor; Mori, Yuki; Nedergaard, Maiken (2024) Glymphatic Fluid Transport Is Suppressed by the AQP4 Inhibitor AER-271 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000872/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000872",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Zhao, Yue",
+          "email": "yuezhao@rochester.edu",
+          "roleName": [
+            "dcite:Maintainer"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": false
+        },
+        {
+          "name": "Giannetto, Michael J.",
+          "email": "michael_giannetto@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gomolka, Ryszard S.",
+          "email": "ryszard.gomolka@sund.ku.dk",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gahn-Martinez, Daniel ",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Newbold, Evan J.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Bork, Peter A. R.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Technical University of Denmark",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04qtj9h94"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Chang, Ethan",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gresser, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": false
+        },
+        {
+          "name": "Thompson, Trevor",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Aeromics (United States)",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/04y4jzv33"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Mori, Yuki",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nedergaard, Maiken",
+          "email": "Maiken_Nedergaard@urmc.rochester.edu",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Rochester Medical Center",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/00trqv719"
+            },
+            {
+              "name": "University of Copenhagen",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/035b05819"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-01-19T19:13:04.392274+00:00",
+      "description": "This dataset contains fluorescent images of CSF brain influx, AQP4 immunohistochemistry, and DWI MRI data included in the GLIA article: \u201cGlymphatic fluid transport is suppressed by the aquaporin-4 inhibitor AER-271\u201d  https://doi.org/10.1002/glia.24515\n\nData upload currently in construction. For temporary access please find the data here: https://rochester.box.com/s/suhlnmytw6jhcv4ziauh4eos3gfjykow",
+      "studyTarget": [],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000872/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

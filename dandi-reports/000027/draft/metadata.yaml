@@ -1,0 +1,69 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json
+about: []
+access:
+- contactPoint:
+    email: team@dandiarchive.org
+    schemaKey: ContactPoint
+    url: https://dandiarchive.org
+  schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique: []
+  numberOfBytes: 18792
+  numberOfFiles: 1
+  numberOfSubjects: 1
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured: []
+citation: Halchenko, Yaroslav O. (2023) Test dataset for testing dandi-cli (Version
+  draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000027/draft
+contributor:
+- affiliation:
+  - identifier: https://ror.org/049s0rh22
+    name: Dartmouth College
+    schemaKey: Affiliation
+  email: yoh@dartmouth.edu
+  identifier: 0000-0003-3456-2493
+  includeInCitation: true
+  name: Halchenko, Yaroslav O.
+  roleName:
+  - dcite:Conceptualization
+  - dcite:Author
+  - dcite:Maintainer
+  - dcite:ProjectMember
+  - dcite:ContactPerson
+  schemaKey: Person
+  url: http://centerforopenneuroscience.org/
+dateCreated: '2020-07-08T21:54:42.543000+00:00'
+description: 'Should be ignored by regular mortals.
+
+
+  ATM contains only a few files from http://github.com/dandi-datasets/nwb_test_data
+  which more or less appropriate (do not lack critical metadata) for testing'
+ethicsApproval: []
+id: DANDI:000027/draft
+identifier: DANDI:000027
+keywords:
+- development
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000027/versions/draft/assets/
+name: Test dataset for testing dandi-cli.
+protocol: []
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.0
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000027/draft
+version: draft
+wasGeneratedBy: []

@@ -1,0 +1,992 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "instance": {
+      "id": "DANDI:000041/0.210812.1515",
+      "doi": "10.48324/dandi.000041/0.210812.1515",
+      "url": "https://dandiarchive.org/dandiset/000041/0.210812.1515",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "0.210812.1515",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+      "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Network Homeostasis and State Dynamics of Neocortical Sleep (Version 0.210812.1515) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000041/0.210812.1515",
+      "keywords": [
+        "Firing patterns",
+        "Sleep/awake states",
+        "Sleep stages",
+        "Homeostasis"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000041",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Watson, Brendon O.",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Levenstein, Daniel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greene, J. Palmer",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gelinas, Jennifer N.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3100-4800",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+      "publishedBy": {
+        "id": "urn:uuid:4b6a2801-6f95-440d-bfc2-2100a463c848",
+        "name": "DANDI publish",
+        "endDate": "2021-08-12T15:15:38.643636",
+        "schemaKey": "PublishActivity",
+        "startDate": "2021-08-12T15:15:38.643636",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:7f4f7c9c-6f5b-4546-a885-b0b4f0264c42",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 154863459017,
+        "numberOfFiles": 22,
+        "numberOfSubjects": 10,
+        "variableMeasured": [
+          "Units",
+          "LFP",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2021-08-12T15:15:38.643636",
+      "schemaVersion": "0.4.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+          "relation": "dcite:IsDescribedBy",
+          "identifier": "doi: 10.1016/j.neuron.2016.03.036"
+        }
+      ],
+      "manifestLocation": [
+        "https://dandiarchive.s3.amazonaws.com/dandisets/000041/0.210812.1515/assets.yaml"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Watson, Brendon O.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000041/0.210812.1515",
+      "doi": "10.48324/dandi.000041/0.210812.1515",
+      "url": "https://dandiarchive.org/dandiset/000041/0.210812.1515",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "0.210812.1515",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+      "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Network Homeostasis and State Dynamics of Neocortical Sleep (Version 0.210812.1515) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000041/0.210812.1515",
+      "keywords": [
+        "Firing patterns",
+        "Sleep/awake states",
+        "Sleep stages",
+        "Homeostasis"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000041",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Watson, Brendon O.",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Levenstein, Daniel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greene, J. Palmer",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gelinas, Jennifer N.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3100-4800",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+      "publishedBy": {
+        "id": "urn:uuid:4b6a2801-6f95-440d-bfc2-2100a463c848",
+        "name": "DANDI publish",
+        "endDate": "2021-08-12T15:15:38.643636",
+        "schemaKey": "PublishActivity",
+        "startDate": "2021-08-12T15:15:38.643636",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:7f4f7c9c-6f5b-4546-a885-b0b4f0264c42",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 154863459017,
+        "numberOfFiles": 22,
+        "numberOfSubjects": 10,
+        "variableMeasured": [
+          "Units",
+          "LFP",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2021-08-12T15:15:38.643636",
+      "schemaVersion": "0.4.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+          "relation": "dcite:IsDescribedBy",
+          "identifier": "doi: 10.1016/j.neuron.2016.03.036"
+        }
+      ],
+      "manifestLocation": [
+        "https://dandiarchive.s3.amazonaws.com/dandisets/000041/0.210812.1515/assets.yaml"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Levenstein, Daniel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000041/0.210812.1515",
+      "doi": "10.48324/dandi.000041/0.210812.1515",
+      "url": "https://dandiarchive.org/dandiset/000041/0.210812.1515",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "0.210812.1515",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+      "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Network Homeostasis and State Dynamics of Neocortical Sleep (Version 0.210812.1515) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000041/0.210812.1515",
+      "keywords": [
+        "Firing patterns",
+        "Sleep/awake states",
+        "Sleep stages",
+        "Homeostasis"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000041",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Watson, Brendon O.",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Levenstein, Daniel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greene, J. Palmer",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gelinas, Jennifer N.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3100-4800",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+      "publishedBy": {
+        "id": "urn:uuid:4b6a2801-6f95-440d-bfc2-2100a463c848",
+        "name": "DANDI publish",
+        "endDate": "2021-08-12T15:15:38.643636",
+        "schemaKey": "PublishActivity",
+        "startDate": "2021-08-12T15:15:38.643636",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:7f4f7c9c-6f5b-4546-a885-b0b4f0264c42",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 154863459017,
+        "numberOfFiles": 22,
+        "numberOfSubjects": 10,
+        "variableMeasured": [
+          "Units",
+          "LFP",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2021-08-12T15:15:38.643636",
+      "schemaVersion": "0.4.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+          "relation": "dcite:IsDescribedBy",
+          "identifier": "doi: 10.1016/j.neuron.2016.03.036"
+        }
+      ],
+      "manifestLocation": [
+        "https://dandiarchive.s3.amazonaws.com/dandisets/000041/0.210812.1515/assets.yaml"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Greene, J. Palmer', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000041/0.210812.1515",
+      "doi": "10.48324/dandi.000041/0.210812.1515",
+      "url": "https://dandiarchive.org/dandiset/000041/0.210812.1515",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "0.210812.1515",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+      "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Network Homeostasis and State Dynamics of Neocortical Sleep (Version 0.210812.1515) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000041/0.210812.1515",
+      "keywords": [
+        "Firing patterns",
+        "Sleep/awake states",
+        "Sleep stages",
+        "Homeostasis"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000041",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Watson, Brendon O.",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Levenstein, Daniel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greene, J. Palmer",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gelinas, Jennifer N.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3100-4800",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+      "publishedBy": {
+        "id": "urn:uuid:4b6a2801-6f95-440d-bfc2-2100a463c848",
+        "name": "DANDI publish",
+        "endDate": "2021-08-12T15:15:38.643636",
+        "schemaKey": "PublishActivity",
+        "startDate": "2021-08-12T15:15:38.643636",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:7f4f7c9c-6f5b-4546-a885-b0b4f0264c42",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 154863459017,
+        "numberOfFiles": 22,
+        "numberOfSubjects": 10,
+        "variableMeasured": [
+          "Units",
+          "LFP",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2021-08-12T15:15:38.643636",
+      "schemaVersion": "0.4.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+          "relation": "dcite:IsDescribedBy",
+          "identifier": "doi: 10.1016/j.neuron.2016.03.036"
+        }
+      ],
+      "manifestLocation": [
+        "https://dandiarchive.s3.amazonaws.com/dandisets/000041/0.210812.1515/assets.yaml"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gelinas, Jennifer N.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000041/0.210812.1515",
+      "doi": "10.48324/dandi.000041/0.210812.1515",
+      "url": "https://dandiarchive.org/dandiset/000041/0.210812.1515",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "0.210812.1515",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+      "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Network Homeostasis and State Dynamics of Neocortical Sleep (Version 0.210812.1515) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000041/0.210812.1515",
+      "keywords": [
+        "Firing patterns",
+        "Sleep/awake states",
+        "Sleep stages",
+        "Homeostasis"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000041",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Watson, Brendon O.",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Levenstein, Daniel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greene, J. Palmer",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gelinas, Jennifer N.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3100-4800",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+      "publishedBy": {
+        "id": "urn:uuid:4b6a2801-6f95-440d-bfc2-2100a463c848",
+        "name": "DANDI publish",
+        "endDate": "2021-08-12T15:15:38.643636",
+        "schemaKey": "PublishActivity",
+        "startDate": "2021-08-12T15:15:38.643636",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:7f4f7c9c-6f5b-4546-a885-b0b4f0264c42",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 154863459017,
+        "numberOfFiles": 22,
+        "numberOfSubjects": 10,
+        "variableMeasured": [
+          "Units",
+          "LFP",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2021-08-12T15:15:38.643636",
+      "schemaVersion": "0.4.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+          "relation": "dcite:IsDescribedBy",
+          "identifier": "doi: 10.1016/j.neuron.2016.03.036"
+        }
+      ],
+      "manifestLocation": [
+        "https://dandiarchive.s3.amazonaws.com/dandisets/000041/0.210812.1515/assets.yaml"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000041/0.210812.1515",
+      "doi": "10.48324/dandi.000041/0.210812.1515",
+      "url": "https://dandiarchive.org/dandiset/000041/0.210812.1515",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "0.210812.1515",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+      "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Network Homeostasis and State Dynamics of Neocortical Sleep (Version 0.210812.1515) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000041/0.210812.1515",
+      "keywords": [
+        "Firing patterns",
+        "Sleep/awake states",
+        "Sleep stages",
+        "Homeostasis"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000041",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Watson, Brendon O.",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Levenstein, Daniel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Greene, J. Palmer",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Gelinas, Jennifer N.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-3100-4800",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+      "publishedBy": {
+        "id": "urn:uuid:4b6a2801-6f95-440d-bfc2-2100a463c848",
+        "name": "DANDI publish",
+        "endDate": "2021-08-12T15:15:38.643636",
+        "schemaKey": "PublishActivity",
+        "startDate": "2021-08-12T15:15:38.643636",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:7f4f7c9c-6f5b-4546-a885-b0b4f0264c42",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Brown rat",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 154863459017,
+        "numberOfFiles": 22,
+        "numberOfSubjects": 10,
+        "variableMeasured": [
+          "Units",
+          "LFP",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "signal filtering technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2021-08-12T15:15:38.643636",
+      "schemaVersion": "0.4.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+          "relation": "dcite:IsDescribedBy",
+          "identifier": "doi: 10.1016/j.neuron.2016.03.036"
+        }
+      ],
+      "manifestLocation": [
+        "https://dandiarchive.s3.amazonaws.com/dandisets/000041/0.210812.1515/assets.yaml"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

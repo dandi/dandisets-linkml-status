@@ -1,0 +1,108 @@
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      approach: []
+      dataStandard:
+      - identifier: RRID:SCR_015242
+        name: Neurodata Without Borders (NWB)
+        schemaKey: StandardsType
+      measurementTechnique: []
+      numberOfBytes: 68032063
+      numberOfCells: 36
+      numberOfFiles: 37
+      numberOfSamples: 36
+      numberOfSubjects: 36
+      schemaKey: AssetsSummary
+      species:
+      - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+        name: Mus musculus - House mouse
+        schemaKey: SpeciesType
+      variableMeasured: []
+    citation: Neural circuits for social modulation of a persistent negative emotional
+      state (2024). (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001183/draft
+    contributor:
+    - awardNumber: 1 R01 NS 132912-01
+      name: National Institutes of Health (NIH)
+      roleName:
+      - dcite:Funder
+      schemaKey: Organization
+    dateCreated: '2024-08-27T21:15:18.623401+00:00'
+    description: electrophysiological recording from neurons in medial preoptic area
+      under chronic restrain stress
+    id: DANDI:001183/draft
+    identifier: DANDI:001183
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/001183/versions/draft/assets/
+    name: Neural circuits for social modulation of a persistent negative emotional
+      state
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.8
+    url: https://dandiarchive.org/dandiset/001183/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      approach: []
+      dataStandard:
+      - identifier: RRID:SCR_015242
+        name: Neurodata Without Borders (NWB)
+        schemaKey: StandardsType
+      measurementTechnique: []
+      numberOfBytes: 68032063
+      numberOfCells: 36
+      numberOfFiles: 37
+      numberOfSamples: 36
+      numberOfSubjects: 36
+      schemaKey: AssetsSummary
+      species:
+      - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+        name: Mus musculus - House mouse
+        schemaKey: SpeciesType
+      variableMeasured: []
+    citation: Neural circuits for social modulation of a persistent negative emotional
+      state (2024). (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001183/draft
+    contributor:
+    - awardNumber: 1 R01 NS 132912-01
+      name: National Institutes of Health (NIH)
+      roleName:
+      - dcite:Funder
+      schemaKey: Organization
+    dateCreated: '2024-08-27T21:15:18.623401+00:00'
+    description: electrophysiological recording from neurons in medial preoptic area
+      under chronic restrain stress
+    id: DANDI:001183/draft
+    identifier: DANDI:001183
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/001183/versions/draft/assets/
+    name: Neural circuits for social modulation of a persistent negative emotional
+      state
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.8
+    url: https://dandiarchive.org/dandiset/001183/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''1 R01 NS 132912-01''} is not
+    of type ''string'' in /contributor/0'
+  severity: ERROR
+  type: jsonschema validation

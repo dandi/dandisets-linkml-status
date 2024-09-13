@@ -1,0 +1,862 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000011/draft",
+      "url": "https://dandiarchive.org/dandiset/000011/draft",
+      "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2024) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000011/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000011",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Li, Nuo",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-6613-5018",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Daie, Kayvon",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Svoboda, Karel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Druckmann, Shaul",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0068-3377",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "roleName": [],
+              "schemaKey": "Affiliation",
+              "contactPoint": [],
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-03-19T16:07:28.472000+00:00",
+      "description": "Data from \"Robust neuronal dynamics in premotor cortex during motor planning\" Nature 2016",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 32435325542,
+        "numberOfFiles": 92,
+        "numberOfSubjects": 19,
+        "variableMeasured": [
+          "BehavioralEvents",
+          "ElectrodeGroup",
+          "Units",
+          "BehavioralTimeSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1038/nature17643",
+          "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.1038/nature17643",
+          "repository": "Nature",
+          "resourceType": "dcite:JournalArticle"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000011/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000011/draft",
+      "url": "https://dandiarchive.org/dandiset/000011/draft",
+      "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2024) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000011/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000011",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Li, Nuo",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-6613-5018",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Daie, Kayvon",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Svoboda, Karel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Druckmann, Shaul",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0068-3377",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "roleName": [],
+              "schemaKey": "Affiliation",
+              "contactPoint": [],
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-03-19T16:07:28.472000+00:00",
+      "description": "Data from \"Robust neuronal dynamics in premotor cortex during motor planning\" Nature 2016",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 32435325542,
+        "numberOfFiles": 92,
+        "numberOfSubjects": 19,
+        "variableMeasured": [
+          "BehavioralEvents",
+          "ElectrodeGroup",
+          "Units",
+          "BehavioralTimeSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1038/nature17643",
+          "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.1038/nature17643",
+          "repository": "Nature",
+          "resourceType": "dcite:JournalArticle"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000011/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000011/draft",
+      "url": "https://dandiarchive.org/dandiset/000011/draft",
+      "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2024) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000011/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000011",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Li, Nuo",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-6613-5018",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Daie, Kayvon",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Svoboda, Karel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Druckmann, Shaul",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0068-3377",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "roleName": [],
+              "schemaKey": "Affiliation",
+              "contactPoint": [],
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-03-19T16:07:28.472000+00:00",
+      "description": "Data from \"Robust neuronal dynamics in premotor cortex during motor planning\" Nature 2016",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 32435325542,
+        "numberOfFiles": 92,
+        "numberOfSubjects": 19,
+        "variableMeasured": [
+          "BehavioralEvents",
+          "ElectrodeGroup",
+          "Units",
+          "BehavioralTimeSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1038/nature17643",
+          "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.1038/nature17643",
+          "repository": "Nature",
+          "resourceType": "dcite:JournalArticle"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000011/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000011/draft",
+      "url": "https://dandiarchive.org/dandiset/000011/draft",
+      "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2024) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000011/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000011",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Li, Nuo",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-6613-5018",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Daie, Kayvon",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Svoboda, Karel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Druckmann, Shaul",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0068-3377",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "roleName": [],
+              "schemaKey": "Affiliation",
+              "contactPoint": [],
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-03-19T16:07:28.472000+00:00",
+      "description": "Data from \"Robust neuronal dynamics in premotor cortex during motor planning\" Nature 2016",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 32435325542,
+        "numberOfFiles": 92,
+        "numberOfSubjects": 19,
+        "variableMeasured": [
+          "BehavioralEvents",
+          "ElectrodeGroup",
+          "Units",
+          "BehavioralTimeSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1038/nature17643",
+          "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.1038/nature17643",
+          "repository": "Nature",
+          "resourceType": "dcite:JournalArticle"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000011/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Druckmann, Shaul', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-0068-3377', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'roleName': [], 'schemaKey': 'Affiliation', 'contactPoint': [], 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000011/draft",
+      "url": "https://dandiarchive.org/dandiset/000011/draft",
+      "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements",
+          "contactPoint": {
+            "schemaKey": "ContactPoint"
+          }
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2024) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000011/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000011",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Li, Nuo",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-6613-5018",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Daie, Kayvon",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Svoboda, Karel",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "schemaKey": "Affiliation",
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Druckmann, Shaul",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-0068-3377",
+          "affiliation": [
+            {
+              "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+              "roleName": [],
+              "schemaKey": "Affiliation",
+              "contactPoint": [],
+              "includeInCitation": false
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-03-19T16:07:28.472000+00:00",
+      "description": "Data from \"Robust neuronal dynamics in premotor cortex during motor planning\" Nature 2016",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "behavioral approach",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 32435325542,
+        "numberOfFiles": 92,
+        "numberOfSubjects": 19,
+        "variableMeasured": [
+          "BehavioralEvents",
+          "ElectrodeGroup",
+          "Units",
+          "BehavioralTimeSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "behavioral technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.1038/nature17643",
+          "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.1038/nature17643",
+          "repository": "Nature",
+          "resourceType": "dcite:JournalArticle"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000011/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

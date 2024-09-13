@@ -1,0 +1,241 @@
+{
+  "id": "DANDI:000055/0.220127.0436",
+  "doi": "10.48324/dandi.000055/0.220127.0436",
+  "url": "https://dandiarchive.org/dandiset/000055/0.220127.0436",
+  "name": "AJILE12: Long-term naturalistic human intracranial neural recordings and pose",
+  "about": [
+    {
+      "name": "primary motor cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "UBERON:0001384"
+    }
+  ],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements",
+      "contactPoint": {
+        "email": "bbrunton@uw.edu",
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.220127.0436",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+  "citation": "Peterson, Steven M.; Singh, Satpreet H.; Dichter, Benjamin; Scheid, Micheal; Rao, Rajesh P. N.; Brunton, Bingni W. (2022) AJILE12: Long-term naturalistic human intracranial neural recordings and pose (Version 0.220127.0436) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000055/0.220127.0436",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000055",
+  "repository": "https://dandiarchive.org/",
+  "contributor": [
+    {
+      "name": "Peterson, Steven M.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-0782-5788",
+      "affiliation": [
+        {
+          "name": "University of Washington",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/00cvxb145"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Singh, Satpreet H.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-1867-4401",
+      "affiliation": [
+        {
+          "name": "University of Washington",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/00cvxb145"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Dichter, Benjamin",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-5725-6910",
+      "affiliation": [
+        {
+          "name": "CatalystNeuro",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Scheid, Micheal",
+      "roleName": [],
+      "schemaKey": "Person",
+      "affiliation": [
+        {
+          "name": "CatalystNeuro",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Rao, Rajesh P. N.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-0682-8952",
+      "affiliation": [
+        {
+          "name": "University of Washington",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/00cvxb145"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Brunton, Bingni W.",
+      "email": "bbrunton@uw.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4831-3466",
+      "affiliation": [
+        {
+          "name": "University of Washington",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/00cvxb145"
+        }
+      ],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2021-01-08T22:39:31.075000+00:00",
+  "description": "Understanding the neural basis of human movement in naturalistic scenarios is critical for expanding neuroscience research beyond constrained laboratory paradigms. The neural correlates of unstructured, spontaneous movements in completely naturalistic settings have rarely been studied, due in large part to a lack of available data. Here, we present our Annotated Joints in Long-term Electrocorticography for 12 human participants (AJILE12) dataset, the largest human neurobehavioral dataset that is publicly available; the dataset was recorded opportunistically during passive clinical epilepsy monitoring. AJILE12 includes synchronized intracranial neural recordings and upper body pose trajectories across 55 semi-continuous days of naturalistic movements, along with relevant metadata, including thousands of wrist movement events and annotated behavioral states. Neural recordings are available at 500 Hz from at least 64 electrodes per participant, for a total of 1280 hours. Pose trajectories at 9 upper-body keypoints, including wrist, elbow, and shoulder joints, were sampled at 30 frames per second and estimated from 118 million video frames. In adherence with the FAIR data principles, we have shared AJILE12 on The Dandi Archive in the Neurodata Without Borders (NWB) data standard and developed a browser-based dashboard to facilitate data exploration and reuse.",
+  "publishedBy": {
+    "id": "urn:uuid:b95a8058-1b16-4a46-804f-8e547af2f5d7",
+    "name": "DANDI publish",
+    "endDate": "2022-01-27T04:36:51.269746+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2022-01-27T04:36:51.269746+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:40836676-0292-465d-b014-b4e257f9cb70",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Human",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      }
+    ],
+    "approach": [
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 845869698341,
+    "numberOfFiles": 55,
+    "numberOfSubjects": 12,
+    "variableMeasured": [
+      "Position",
+      "ProcessingModule",
+      "ElectricalSeries",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2022-01-27T04:36:51.269746+00:00",
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "STUDY00000623",
+      "contactPoint": {
+        "url": "https://www.washington.edu/research/hsd/",
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1523/ENEURO.0007-21.2021",
+      "name": "Behavioral and Neural Variability of Naturalistic Arm Movements",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "DOI:10.1523/ENEURO.0007-21.2021"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jneumeth.2021.109199",
+      "name": "Mining naturalistic human behaviors in long-term video and neural recordings",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "DOI:10.1016/j.jneumeth.2021.109199"
+    },
+    {
+      "url": "https://doi.org/10.1101/2021.07.26.453884",
+      "name": "AJILE12: Long-term naturalistic human intracranial neural recordings and pose",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "DOI: 10.1101/2021.07.26.453884"
+    }
+  ],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000055/0.220127.0436/assets.yaml"
+  ]
+}

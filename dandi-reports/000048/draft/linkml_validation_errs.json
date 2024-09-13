@@ -1,0 +1,2407 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Ledochowitsch, Peter', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Huang, Lawrence', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Knoblich, Ulf', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Oliver, Michael', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lecoq, Jerome', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Reid, Clay', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Li, Lu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Zeng, Hongkui', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Koch, Christof', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Waters, Jack', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Vries, Saskia E.J. de', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Buice, Michael A.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/11",
+    "instance": {
+      "id": "DANDI:000048/draft",
+      "url": "https://dandiarchive.org/dandiset/000048/draft",
+      "name": "Electrical and optical physiology in in vivo population-scale two-photon calcium imaging",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2023) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000048/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000048",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ledochowitsch, Peter",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        },
+        {
+          "name": "Huang, Lawrence",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Knoblich, Ulf",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Oliver, Michael",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Lecoq, Jerome",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Reid, Clay",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Li, Lu",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Zeng, Hongkui",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Koch, Christof",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Waters, Jack",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Vries, Saskia E.J. de",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Buice, Michael A.",
+          "roleName": [
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-12-08T20:01:18.361000+00:00",
+      "description": "Spiking activity and simultaneously recorded fluorescence signals in transgenic mice expressing GCaMP6\n\nWe present a dataset consisting of simultaneously measured fluorescence and spiking activity of pyramidal neurons in layer 2/3 of primary visual cortex in transgenic mouse lines expressing genetically-encoded calcium indicators (GECIs) GCaMP6s or GCaMP6f.\n\nReference: https://portal.brain-map.org/explore/circuits/oephys",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [],
+        "approach": [
+          {
+            "name": "microscopy approach; cell population imaging",
+            "schemaKey": "ApproachType"
+          },
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 590267164,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "PlaneSegmentation",
+          "TwoPhotonSeries",
+          "ElectrodeGroup",
+          "Units"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "two-photon microscopy technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000048/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

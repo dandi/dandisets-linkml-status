@@ -1,0 +1,208 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "instance": {
+      "id": "DANDI:000626/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000626/draft",
+      "name": "Neural Organoid Ephys Trace",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Blauvelt, Lon (2023) Neural Organoid Ephys Trace (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000626",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Blauvelt, Lon",
+          "email": "lblauvel@ucsc.edu",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-06T20:33:29.251788+00:00",
+      "description": "Captured originally with a MaxWell BioSystems CMOS-based High-Density Microelectrode Array.",
+      "publishedBy": {
+        "id": "urn:uuid:0491fc86-1599-4be5-9831-63451b9382f4",
+        "name": "DANDI publish",
+        "endDate": "2023-11-02T18:49:35.161614+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-11-02T18:49:35.161614+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:2d393ff0-9d03-46e5-b1e1-fe8c4a351bd0",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [
+        "Neural Organoid"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Macaca mulatta - Rhesus monkey",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 18295752,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2023-11-02T18:49:35.161614+00:00",
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000626/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Blauvelt, Lon', 'email': 'lblauvel@ucsc.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000626/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000626/draft",
+      "name": "Neural Organoid Ephys Trace",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Blauvelt, Lon (2023) Neural Organoid Ephys Trace (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000626",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Blauvelt, Lon",
+          "email": "lblauvel@ucsc.edu",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-09-06T20:33:29.251788+00:00",
+      "description": "Captured originally with a MaxWell BioSystems CMOS-based High-Density Microelectrode Array.",
+      "publishedBy": {
+        "id": "urn:uuid:0491fc86-1599-4be5-9831-63451b9382f4",
+        "name": "DANDI publish",
+        "endDate": "2023-11-02T18:49:35.161614+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-11-02T18:49:35.161614+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:2d393ff0-9d03-46e5-b1e1-fe8c4a351bd0",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [
+        "Neural Organoid"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Macaca mulatta - Rhesus monkey",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 18295752,
+        "numberOfFiles": 1,
+        "numberOfSubjects": 1,
+        "variableMeasured": [
+          "ProcessingModule"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "analytical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "datePublished": "2023-11-02T18:49:35.161614+00:00",
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000626/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

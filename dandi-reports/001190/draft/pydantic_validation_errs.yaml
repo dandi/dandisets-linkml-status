@@ -1,0 +1,19 @@
+- ctx:
+    pattern: ^([\w\s\-\.']+),\s+([\w\s\-\.']+)$
+  input: Barkha Yadav-Samudrala
+  loc:
+  - contributor
+  - 1
+  - Person
+  - name
+  msg: String should match pattern '^([\w\s\-\.']+),\s+([\w\s\-\.']+)$'
+  type: string_pattern_mismatch
+  url: https://errors.pydantic.dev/2.9/v/string_pattern_mismatch
+- input: {}
+  loc:
+  - ethicsApproval
+  - 0
+  - identifier
+  msg: Field required
+  type: missing
+  url: https://errors.pydantic.dev/2.9/v/missing

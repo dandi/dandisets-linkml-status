@@ -1,0 +1,80 @@
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Liao, Song-Mao (2023) Test (Version draft) [Data set]. DANDI archive.
+      https://dandiarchive.org/dandiset/000543/draft
+    contributor:
+    - affiliation: []
+      email: songmao.liao@gmail.com
+      includeInCitation: true
+      name: Liao, Song-Mao
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2023-05-12T17:42:50.687595+00:00'
+    description: Test
+    id: DANDI:000543/draft
+    identifier: DANDI:000543
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/000543/versions/draft/assets/
+    name: Test
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.4
+    url: https://dandiarchive.org/dandiset/000543/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Liao, Song-Mao (2023) Test (Version draft) [Data set]. DANDI archive.
+      https://dandiarchive.org/dandiset/000543/draft
+    contributor:
+    - affiliation: []
+      email: songmao.liao@gmail.com
+      includeInCitation: true
+      name: Liao, Song-Mao
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2023-05-12T17:42:50.687595+00:00'
+    description: Test
+    id: DANDI:000543/draft
+    identifier: DANDI:000543
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/000543/versions/draft/assets/
+    name: Test
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.4
+    url: https://dandiarchive.org/dandiset/000543/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Liao, Song-Mao'', ''email'': ''songmao.liao@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  type: jsonschema validation

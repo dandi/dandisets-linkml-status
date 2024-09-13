@@ -1,0 +1,126 @@
+{
+  "id": "DANDI:000020/0.210913.1639",
+  "doi": "10.48324/dandi.000020/0.210913.1639",
+  "url": "https://dandiarchive.org/dandiset/000020/0.210913.1639",
+  "name": "Patch-seq recordings from mouse visual cortex",
+  "about": [
+    {
+      "name": "visual cortex",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0000411"
+    }
+  ],
+  "access": [
+    {
+      "status": "dandi:OpenAccess"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.210913.1639",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+  "citation": "Allen Institute for Brain Science (2021) Patch-seq recordings from mouse visual cortex (Version 0.210913.1639) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000020/0.210913.1639",
+  "keywords": [
+    "Patch-seq",
+    "mouse",
+    "visual cortex",
+    "interneuron"
+  ],
+  "protocol": [
+    "https://www.protocols.io/view/patch-seq-recording-and-extraction-bepyjdpw"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000020",
+  "repository": "https://dandiarchive.org/",
+  "contributor": [
+    {
+      "name": "Gouwens, Nathan",
+      "email": "nathang@alleninstitute.org",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8429-4090",
+      "affiliation": [
+        {
+          "name": "Allen Institute for Brain Science",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/00dcv1019"
+        }
+      ],
+      "includeInCitation": false
+    },
+    {
+      "url": "https://alleninstitute.org",
+      "name": "Allen Institute for Brain Science",
+      "roleName": [],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/00dcv1019",
+      "contactPoint": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2020-04-30T00:53:01.664000+00:00",
+  "description": "Whole-cell Patch-seq recordings from neurons of the mouse visual cortex from the Allen Institute for Brain Science, released in June 2020. The majority of cells in this dataset are GABAergic interneurons, but there are also a small number of glutamatergic neurons from layer 2/3 of the mouse visual cortex.",
+  "publishedBy": {
+    "id": "urn:uuid:cf363ec8-9e1b-4fd1-8e7c-d69e61739d48",
+    "name": "DANDI publish",
+    "endDate": "2021-09-13T16:39:34.589079+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2021-09-13T16:39:34.589079+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:0800ca82-d8a4-4ed7-9896-9c9b773db26b",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 141856436428,
+    "numberOfFiles": 4435,
+    "numberOfSubjects": 1040,
+    "variableMeasured": [
+      "ProcessingModule"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2021-09-13T16:39:34.589079+00:00",
+  "schemaVersion": "0.4.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S009286742031254X",
+      "name": "Integrated Morphoelectric and Transcriptomic Classification of Cortical GABAergic Cells",
+      "relation": "dcite:IsSupplementTo"
+    }
+  ],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000020/0.210913.1639/assets.yaml"
+  ]
+}

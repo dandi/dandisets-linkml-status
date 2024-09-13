@@ -1,0 +1,81 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 73147035938
+  numberOfFiles: 62
+  numberOfSubjects: 35
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - BehavioralEpochs
+  - PlaneSegmentation
+  - BehavioralTimeSeries
+  - ProcessingModule
+citation: Dard, Robin (2022) Two photon calcium imaging in the CA1 region of the hippocampus
+  in neonatal mice (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000219/draft
+contributor:
+- affiliation: []
+  email: robin.dard@inserm.fr
+  includeInCitation: true
+  name: Dard, Robin
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2022-01-25T13:01:59.537848+00:00'
+description: "We performed in vivo 2-photon calcium imaging in the CA1 region of the
+  hippocampus in awake mouse pups aged between 5 and 12 days postnatal. We used GCaMP6s
+  calcium indicator in WT mice or GCaMP6s and flex-tdTomato in GadCre mice to record
+  calcium dynamics from both pyramidal cells and interneurons. The imaging data set
+  was acquired at 8 Hz, in field of view of 400x400 \xB5m. Simultaneously with imaging,
+  we record the spontaneous motor behavior of the mouse pups."
+ethicsApproval: []
+id: DANDI:000219/draft
+identifier: DANDI:000219
+keywords: []
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000219/versions/draft/assets/
+name: Two photon calcium imaging in the CA1 region of the hippocampus in neonatal
+  mice.
+protocol: []
+relatedResource:
+- identifier: https://gitlab.com/cossartlab/cicada
+  name: Codes for analysis
+  relation: dcite:IsSupplementedBy
+  repository: CICADA
+  schemaKey: Resource
+  url: https://gitlab.com/cossartlab/cicada
+- name: The rapid developmental rise of somatic inhibition disengages hippocampal
+    dynamics from self-motion
+  relation: dcite:IsPublishedIn
+  repository: eLife
+  schemaKey: Resource
+  url: https://elifesciences.org/articles/78116
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.2
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000219/draft
+version: draft
+wasGeneratedBy: []

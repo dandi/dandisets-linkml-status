@@ -1,0 +1,131 @@
+{
+  "id": "DANDI:000044/0.210812.1516",
+  "doi": "10.48324/dandi.000044/0.210812.1516",
+  "url": "https://dandiarchive.org/dandiset/000044/0.210812.1516",
+  "name": "Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "contactPoint": {
+        "email": "petersen.peter@gmail.com",
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.210812.1516",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json",
+  "citation": "Grosmark, Andres D.; Buzs\u00e1ki, Gy\u00f6rgy (2021) Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences (Version 0.210812.1516) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000044/0.210812.1516",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000044",
+  "repository": "https://dandiarchive.org/",
+  "contributor": [
+    {
+      "name": "Grosmark, Andres D.",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-3100-4800",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "description": "This data set is composed of eight bilateral silicon-probe multi-cellular electrophysiological recordings performed on four male Long-Evans rats in the Buzs\u00e1ki lab at NYU. These recordings were performed to assess the effect of novel spatial learning on hippocampal CA1 neural firing and LFP patterns in na\u00efve animals. Each session consisted of a long (~4 hour) PRE rest/sleep epoch home-cage recordings performed in a familiar room, followed by a Novel MAZE running epoch (~45 minutes) in which the animals were transferred to a novel room, and water-rewarded to run on a novel maze. These mazes were either A) a wooden 1.6m linear platform, B) a wooden 1m diameter circular platform or C) a 2m metal linear platform. Animals were rewarded either at both ends of the linear platform, or at a predetermined location on the circular platform. The animal was gently encouraged to run unidirectionally on the circular platform. After the MAZE epochs the animals were transferred back to their home-cage in the familiar room where a long (~4 hour) POST rest/sleep was recorded. All eight sessions were concatenated from the PRE, MAZE, and POST recording epochs. In addition to hippocampal electrophysiological recordings, neck EMG and head-mounted accelerometer signals were recorded, and the animal\u2019s position during MAZE running epochs was tracked via head-mounted LEDs.",
+  "publishedBy": {
+    "id": "urn:uuid:e4c71a14-8e1f-4ea1-b10b-687a7f661a2e",
+    "name": "DANDI publish",
+    "endDate": "2021-08-12T15:16:05.197111",
+    "schemaKey": "PublishActivity",
+    "startDate": "2021-08-12T15:16:05.197111",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:e5aa1351-6de3-4bc3-8496-056d2ca82528",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Brown rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 65708919583,
+    "numberOfFiles": 8,
+    "numberOfSubjects": 4,
+    "variableMeasured": [
+      "ElectricalSeries",
+      "LFP",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "signal filtering technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2021-08-12T15:16:05.197111",
+  "schemaVersion": "0.4.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://science.sciencemag.org/content/351/6280/1440",
+      "relation": "dcite:IsDescribedBy",
+      "identifier": "doi: 10.1126/science.aad1935"
+    },
+    {
+      "url": "https://www.nature.com/articles/srep32193",
+      "relation": "dcite:IsDescribedBy",
+      "identifier": "doi: 10.1038/srep32193"
+    }
+  ],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000044/0.210812.1516/assets.yaml"
+  ]
+}

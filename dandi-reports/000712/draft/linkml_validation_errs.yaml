@@ -1,0 +1,78 @@
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Amin, Jai (2023) test (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000712/draft
+    contributor:
+    - affiliation: []
+      email: jaiamin130@gmail.com
+      includeInCitation: true
+      name: Amin, Jai
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2023-11-15T20:23:39.920020+00:00'
+    description: test
+    id: DANDI:000712/draft
+    identifier: DANDI:000712
+    license:
+    - spdx:CC0-1.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/000712/versions/draft/assets/
+    name: test
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.4
+    url: https://dandiarchive.org/dandiset/000712/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Amin, Jai (2023) test (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000712/draft
+    contributor:
+    - affiliation: []
+      email: jaiamin130@gmail.com
+      includeInCitation: true
+      name: Amin, Jai
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2023-11-15T20:23:39.920020+00:00'
+    description: test
+    id: DANDI:000712/draft
+    identifier: DANDI:000712
+    license:
+    - spdx:CC0-1.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/000712/versions/draft/assets/
+    name: test
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.4
+    url: https://dandiarchive.org/dandiset/000712/draft
+    version: draft
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Amin, Jai'', ''email'': ''jaiamin130@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  type: jsonschema validation

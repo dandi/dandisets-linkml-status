@@ -1,0 +1,96 @@
+{
+  "id": "DANDI:000399/draft",
+  "doi": "10.80507/dandi.123456/0.123456.1234",
+  "url": "https://dandiarchive.org/dandiset/000399/draft",
+  "name": "All-optical physiology resolves a synaptic basis for behavioral time scale plasticity",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.3/context.json",
+  "citation": "Fan, Linlin (2023) All-optical physiology resolves a synaptic basis for behavioral time scale plasticity (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000399",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Fan, Linlin",
+      "email": "dlinfan@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2022-12-11T06:15:01.030408+00:00",
+  "description": "Data included in Fan (2022) Cell",
+  "publishedBy": {
+    "id": "urn:uuid:93b629c2-43ab-4653-a56c-c5e93893d5ac",
+    "name": "DANDI publish",
+    "endDate": "2023-06-14T06:20:56.195429+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2023-06-14T06:20:56.195429+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:d5beda19-8522-422f-940e-c25920000268",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 86582248,
+    "numberOfFiles": 105,
+    "numberOfSubjects": 19,
+    "variableMeasured": [
+      "ElectricalSeries",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2023-06-14T06:20:56.195429+00:00",
+  "schemaVersion": "0.6.3",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000399/versions/draft/assets/"
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000942/draft",
+      "url": "https://dandiarchive.org/dandiset/000942/draft",
+      "name": "Test",
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
+      "citation": "Ezquerra Romano, Ivan (2024) Test (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000942/draft",
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000942",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ezquerra Romano, Ivan",
+          "email": "ivan.eromano@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-03-22T20:20:35.270232+00:00",
+      "description": "test",
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.7",
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000942/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Ezquerra Romano, Ivan', 'email': 'ivan.eromano@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000942/draft",
+      "url": "https://dandiarchive.org/dandiset/000942/draft",
+      "name": "Test",
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
+      "citation": "Ezquerra Romano, Ivan (2024) Test (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000942/draft",
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000942",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Ezquerra Romano, Ivan",
+          "email": "ivan.eromano@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2024-03-22T20:20:35.270232+00:00",
+      "description": "test",
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "schemaVersion": "0.6.7",
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000942/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "instance": {
+      "id": "DANDI:000539/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000539/draft",
+      "name": "EDtest2",
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Dimwamwa, Elaida (2023) EDtest2 (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000539",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Dimwamwa, Elaida",
+          "email": "elaidad@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-05-11T17:47:39.678868+00:00",
+      "description": "Test",
+      "publishedBy": {
+        "id": "urn:uuid:948aef73-8f7c-440e-8c33-0bac4d8b6a70",
+        "name": "DANDI publish",
+        "endDate": "2023-05-11T17:48:32.875017+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-05-11T17:48:32.875017+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:0025a002-d093-4f84-a24d-514be028260a",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "datePublished": "2023-05-11T17:48:32.875017+00:00",
+      "schemaVersion": "0.6.4",
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000539/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Dimwamwa, Elaida', 'email': 'elaidad@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000539/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000539/draft",
+      "name": "EDtest2",
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Dimwamwa, Elaida (2023) EDtest2 (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000539",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Dimwamwa, Elaida",
+          "email": "elaidad@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-05-11T17:47:39.678868+00:00",
+      "description": "Test",
+      "publishedBy": {
+        "id": "urn:uuid:948aef73-8f7c-440e-8c33-0bac4d8b6a70",
+        "name": "DANDI publish",
+        "endDate": "2023-05-11T17:48:32.875017+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-05-11T17:48:32.875017+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:0025a002-d093-4f84-a24d-514be028260a",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "datePublished": "2023-05-11T17:48:32.875017+00:00",
+      "schemaVersion": "0.6.4",
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000539/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

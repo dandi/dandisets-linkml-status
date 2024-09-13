@@ -1,0 +1,145 @@
+{
+  "id": "DANDI:000953/draft",
+  "url": "https://dandiarchive.org/dandiset/000953/draft",
+  "name": "FALCON Benchmark M2: primary motor cortex recordings in primate during finger movement",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
+  "citation": "Samuel R Nason-Tomaszewski; Matthew J. Mender; Cynthia Chestek (2024) FALCON Benchmark M2: primary motor cortex recordings in primate during finger movement (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000953/draft",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000953",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Samuel R Nason-Tomaszewski",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-7127-0986",
+      "includeInCitation": true
+    },
+    {
+      "name": "Matthew J. Mender",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-9671-7051",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cynthia Chestek",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-9671-7051",
+      "includeInCitation": true
+    },
+    {
+      "name": "Joel Ye",
+      "email": "joelye9@gmail.com",
+      "roleName": [
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-1149-6035",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2024-04-02T04:28:59.353797+00:00",
+  "description": "This dataset contains multiunit spiking times and behavioral data from a macaque in a finger movement task. The experimental task was to move two finger groups according to targets cued on a screen. Neural activity was recorded from electrode arrays implanted in primary motor cortex (M1). Finger positions as recorded by the manipulandum state, and normalized between full flexion and full extension, are provided. \n\nThis dataset is part of the FALCON benchmark: https://snel-repo.github.io/falcon. The datafile contains the following data in the acquisition fields: 2D kinematics (`finger_vel`) and metadata for FALCON evaluation (`eval_mask`). The datafile also contains multi-unit spiking activity in the `units` field.\n\nAs part of the FALCON challenge, dataset files are released in three ways. The held-in-calib data includes many trials of data intended for calibration of decoders in the FALCON challenge. The held-in-minival data is a small subset of the held-in-calib data intended for FALCON models to validate submission format. Lastly, held-out-calib data are separate sessions of data from held-in-calib, but have much fewer trials, intended to be used for few-shot recalibration. Please bear in mind these factors if making use of this dataset for purposes outside of the FALCON Benchmark. Each dataset split is considered one \"subject\" by the DANDI repository; only data from one monkey is included.",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca mulatta - Rhesus monkey",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 22404212,
+    "numberOfFiles": 20,
+    "numberOfSubjects": 3,
+    "variableMeasured": [
+      "Units",
+      "ElectrodeGroup",
+      "BehavioralTimeSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.7",
+  "ethicsApproval": [
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "PRO00008138 (University of Michigan IACUC)",
+      "contactPoint": {
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1016/j.neuron.2021.08.009",
+      "name": "Real-time linear prediction of simultaneous and independent movements of two finger groups using an intracortical brain-machine interface",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:JournalArticle"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38370697/",
+      "name": "A real-time, high-performance brain-computer interface for finger decoding and quadcopter control",
+      "relation": "dcite:Cites",
+      "schemaKey": "Resource",
+      "identifier": "10.1101/2024.02.06.578107",
+      "resourceType": "dcite:Preprint"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000953/versions/draft/assets/"
+  ]
+}

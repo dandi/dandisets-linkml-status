@@ -1,0 +1,139 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0000411
+  name: Visual cortex
+  schemaKey: Anatomy
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 787191910918
+  numberOfFiles: 19
+  numberOfSubjects: 19
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - Units
+  - LFP
+citation: "Senzai, Yuta; Fernandez-Ruiz, Antonio; Buzs\xE1ki, Gy\xF6rgy (2024) Layer-Specific
+  Physiological Features and Interlaminar Interactions in the Primary Visual Cortex
+  of the Mouse (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000166/draft"
+contributor:
+- affiliation: []
+  includeInCitation: true
+  name: Senzai, Yuta
+  roleName:
+  - dcite:ContactPerson
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:FormalAnalysis
+  schemaKey: Person
+- affiliation: []
+  includeInCitation: true
+  name: Fernandez-Ruiz, Antonio
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  includeInCitation: true
+  name: "Buzs\xE1ki, Gy\xF6rgy"
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- contactPoint: []
+  identifier: https://ror.org/000k40t10
+  includeInCitation: false
+  name: Heiwa Nakajima Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://hnf.jp/
+- awardNumber: MH54671,  MH107396, NS090583
+  contactPoint: []
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
+- awardNumber: 1545858, 1707316
+  contactPoint: []
+  email: info@nsf.gov
+  identifier: https://ror.org/021nxhr62
+  includeInCitation: false
+  name: National Science Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nsf.gov/
+- contactPoint: []
+  identifier: https://ror.org/029chgv08
+  includeInCitation: false
+  name: Wellcome Trust
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.wellcome.ac.uk/
+dateCreated: '2021-11-06T18:16:55.568418+00:00'
+description: The relationship between mesoscopic local field potentials (LFPs) and
+  single-neuron firing in the multi-layered neocortex is poorly understood. Simultaneous
+  recordings from all layers in the primary visual cortex (V1) of the behaving mouse
+  revealed functionally defined layers in V1. The depth of maximum spike power and
+  sink-source distributions of LFPs provided consistent laminar landmarks across animals.
+  Coherence of gamma oscillations (30-100 Hz) and spike-LFP coupling identified six
+  physiological layers and further sublayers. Firing rates, burstiness, and other
+  electrophysiological features of neurons displayed unique layer and brain state
+  dependence. Spike transmission strength from layer 2/3 cells to layer 5 pyramidal
+  cells and interneurons was stronger during waking compared with non-REM sleep but
+  stronger during non-REM sleep among deep-layer excitatory neurons. A subset of deep-layer
+  neurons was active exclusively in the DOWN state of non-REM sleep. These results
+  bridge mesoscopic LFPs and single-neuron interactions with laminar structure in
+  V1.
+ethicsApproval: []
+id: DANDI:000166/draft
+identifier: DANDI:000166
+keywords:
+- 'current source density '
+- 'laminar recordings '
+- cortex
+- electrophysiology
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000166/versions/draft/assets/
+name: Layer-Specific Physiological Features and Interlaminar Interactions in the Primary
+  Visual Cortex of the Mouse
+protocol: []
+relatedResource:
+- identifier: doi:10.1016/j.neuron.2018.12.009
+  name: Publication
+  relation: dcite:IsDescribedBy
+  repository: Neuron
+  schemaKey: Resource
+  url: https://doi.org/10.1016/j.neuron.2018.12.009
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.0
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000166/draft
+version: draft
+wasGeneratedBy: []

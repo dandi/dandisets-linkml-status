@@ -1,0 +1,94 @@
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json
+    about: []
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Dichter, Ben (2023) user test (Version draft) [Data set]. DANDI archive.
+      https://dandiarchive.org/dandiset/000118/draft
+    contributor:
+    - affiliation: []
+      email: ben.dichter@gmail.com
+      includeInCitation: true
+      name: Dichter, Ben
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2021-07-14T19:24:30.163831+00:00'
+    description: This is a test
+    ethicsApproval: []
+    id: DANDI:000118/draft
+    identifier: DANDI:000118
+    keywords: []
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/000118/versions/draft/assets/
+    name: user test
+    protocol: []
+    relatedResource: []
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.0
+    studyTarget: []
+    url: https://dandiarchive.org/dandiset/000118/draft
+    version: draft
+    wasGeneratedBy: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  type: jsonschema validation
+- context: []
+  instance:
+    '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json
+    about: []
+    access:
+    - schemaKey: AccessRequirements
+      status: dandi:OpenAccess
+    assetsSummary:
+      numberOfBytes: 0
+      numberOfFiles: 0
+      schemaKey: AssetsSummary
+    citation: Dichter, Ben (2023) user test (Version draft) [Data set]. DANDI archive.
+      https://dandiarchive.org/dandiset/000118/draft
+    contributor:
+    - affiliation: []
+      email: ben.dichter@gmail.com
+      includeInCitation: true
+      name: Dichter, Ben
+      roleName:
+      - dcite:ContactPerson
+      schemaKey: Person
+    dateCreated: '2021-07-14T19:24:30.163831+00:00'
+    description: This is a test
+    ethicsApproval: []
+    id: DANDI:000118/draft
+    identifier: DANDI:000118
+    keywords: []
+    license:
+    - spdx:CC-BY-4.0
+    manifestLocation:
+    - https://api.dandiarchive.org/api/dandisets/000118/versions/draft/assets/
+    name: user test
+    protocol: []
+    relatedResource: []
+    repository: https://dandiarchive.org
+    schemaKey: Dandiset
+    schemaVersion: 0.6.0
+    studyTarget: []
+    url: https://dandiarchive.org/dandiset/000118/draft
+    version: draft
+    wasGeneratedBy: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Dichter, Ben'', ''email'': ''ben.dichter@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  type: jsonschema validation

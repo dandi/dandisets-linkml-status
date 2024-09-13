@@ -1,0 +1,75 @@
+{
+  "id": "DANDI:000126/draft",
+  "url": "https://dandiarchive.org/dandiset/000126/draft",
+  "name": "NWB API Test Data",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC0-1.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+  "citation": "Ly, Ryan (2024) NWB API Test Data (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000126/draft",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000126",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Ly, Ryan",
+      "email": "rly@lbl.gov",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2021-08-12T18:14:16.760000+00:00",
+  "description": "This dandiset consists of NWB files used for testing the NWB APIs (PyNWB, MatNWB).",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 167058036,
+    "numberOfFiles": 5,
+    "numberOfSubjects": 2,
+    "variableMeasured": [
+      "ProcessingModule"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000126/versions/draft/assets/"
+  ]
+}

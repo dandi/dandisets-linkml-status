@@ -1,0 +1,196 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.3/context.json
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+acknowledgement: "This study was supported by the ETH Zurich Postdoctoral Fellowship
+  19-2 FEL-17 (APB), the ERC Advanced Grant 694829 \"neuroXscales\" (JB, XX, TG, VE,
+  AH), the China Scholarship Council (XX), and by funding to the Blue Brain Project,
+  a research center of the \xC9cole polytechnique f\xE9d\xE9rale de Lausanne (EPFL),
+  from the Swiss government\u2019s ETH Board of the Swiss Federal Institutes of Technology
+  (TD, DM, MZ, AJ, HM, WVG)."
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 18173614543
+  numberOfFiles: 2
+  numberOfSubjects: 2
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectricalSeries
+  - ProcessingModule
+  - CurrentClampSeries
+  - CurrentClampStimulusSeries
+  - ElectrodeGroup
+citation: "Buccino, Alessio Paolo; Damart, Tanguy; Bartram, Julian; Mandge, Darshan;
+  Xue, Xiaohan; Zbili, Mickael; G\xE4nswein, Tobias; Jaquier, Aurelien; Emmenegger,
+  Vishalini; Markram, Henry; Hierlemann, Andreas; Van Geit, Werner (2023) A multi-modal
+  fitting approach to construct single-neuron models with patch-clamp and high-density
+  microelectrode arrays (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000294/draft"
+contributor:
+- affiliation:
+  - identifier: https://ror.org/05a28rw58
+    name: ETH Zurich
+    schemaKey: Affiliation
+  email: alessiop.buccino@gmail.com
+  identifier: 0000-0003-3661-527X
+  includeInCitation: true
+  name: Buccino, Alessio Paolo
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/02s376052
+    name: EPFL - Blue Brain Project
+    schemaKey: Affiliation
+  identifier: 0000-0003-2175-7304
+  includeInCitation: true
+  name: Damart, Tanguy
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05a28rw58
+    name: ETH Zurich
+    schemaKey: Affiliation
+  identifier: 0000-0001-7513-1716
+  includeInCitation: true
+  name: Bartram, Julian
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/02s376052
+    name: EPFL - Blue Brain Project
+    schemaKey: Affiliation
+  identifier: 0000-0002-7104-4604
+  includeInCitation: true
+  name: Mandge, Darshan
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05a28rw58
+    name: ETH Zurich
+    schemaKey: Affiliation
+  identifier: 0000-0001-5398-2368
+  includeInCitation: true
+  name: Xue, Xiaohan
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/02s376052
+    name: EPFL - Blue Brain Project
+    schemaKey: Affiliation
+  identifier: 0000-0002-7377-2605
+  includeInCitation: true
+  name: Zbili, Mickael
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05a28rw58
+    name: ETH Zurich
+    schemaKey: Affiliation
+  identifier: 0000-0003-0323-6767
+  includeInCitation: true
+  name: "G\xE4nswein, Tobias"
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/02s376052
+    name: EPFL - Blue Brain Project
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Jaquier, Aurelien
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05a28rw58
+    name: ETH Zurich
+    schemaKey: Affiliation
+  identifier: 0000-0003-3195-7772
+  includeInCitation: true
+  name: Emmenegger, Vishalini
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/02s376052
+    name: EPFL - Blue Brain Project
+    schemaKey: Affiliation
+  identifier: 0000-0001-6164-2590
+  includeInCitation: true
+  name: Markram, Henry
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05a28rw58
+    name: ETH Zurich
+    schemaKey: Affiliation
+  identifier: 0000-0002-3838-2468
+  includeInCitation: true
+  name: Hierlemann, Andreas
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/02s376052
+    name: EPFL - Blue Brain Project
+    schemaKey: Affiliation
+  identifier: 0000-0002-2915-720X
+  includeInCitation: true
+  name: Van Geit, Werner
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- {}
+dateCreated: '2022-07-15T11:27:46.490921+00:00'
+description: 'This dataset contains simultaneous intracellular whole-cell patch clamp
+  and extracellular high-density microelectrode array (HD-MEA) recordings.
+
+  It includes data from two files, corresponding to two recorded neurons. Each NWB
+  file contains several runs of 8 eCode protocols, with syncronized intracellular
+  voltages, stimulus currents, and extracellular voltages.'
+ethicsApproval: []
+id: DANDI:000294/draft
+identifier: DANDI:000294
+keywords:
+- HD-MEA, patch-clamp, multimodal
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000294/versions/draft/assets/
+name: A multi-modal fitting approach to construct single-neuron models with patch-clamp
+  and high-density microelectrode arrays
+protocol: []
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.3
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000294/draft
+version: draft
+wasGeneratedBy: []

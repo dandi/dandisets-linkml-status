@@ -1,0 +1,1234 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Buccino, Alessio', 'email': 'alessiop.buccino@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3661-527X', 'affiliation': [], 'awardNumber': 'ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Hurwitz, Cole', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-2023-1653', 'affiliation': [], 'awardNumber': 'Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Garcia, Samuel', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Magland, Jeremy', 'schemaKey': 'Person', 'identifier': '0000-0002-5286-4375', 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Siegle, Joshua', 'schemaKey': 'Person', 'identifier': '0000-0002-7736-4844', 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Hurwitz, Roger', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Hennig, Matthias H.', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0001-7270-5817', 'affiliation': [], 'awardNumber': 'Wellcome Trust grant 214431/Z/18/Z', 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000034/draft",
+      "url": "https://dandiarchive.org/dandiset/000034/draft",
+      "name": "SpikeInterface, a unified framework for spike sorting",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC-BY-4.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+      "citation": "Buccino, Alessio; Hurwitz, Cole; Garcia, Samuel; Magland, Jeremy; Siegle, Joshua; Hurwitz, Roger; Hennig, Matthias H. (2022) SpikeInterface, a unified framework for spike sorting (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000034/draft",
+      "keywords": [
+        "Spike Sorting",
+        "extracellular electrophysiology"
+      ],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000034",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Buccino, Alessio",
+          "email": "alessiop.buccino@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-3661-527X",
+          "affiliation": [],
+          "awardNumber": "ETH Zurich Postdoctoral Fellowship 19\u20132 FEL-17",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Cole",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2023-1653",
+          "affiliation": [],
+          "awardNumber": "Thouron Award and by the Institute for Adaptive and Neural Computation, University of Edinburgh",
+          "includeInCitation": true
+        },
+        {
+          "name": "Garcia, Samuel",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Magland, Jeremy",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5286-4375",
+          "includeInCitation": true
+        },
+        {
+          "name": "Siegle, Joshua",
+          "schemaKey": "Person",
+          "identifier": "0000-0002-7736-4844",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hurwitz, Roger",
+          "schemaKey": "Person",
+          "includeInCitation": true
+        },
+        {
+          "name": "Hennig, Matthias H.",
+          "roleName": [],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-7270-5817",
+          "affiliation": [],
+          "awardNumber": "Wellcome Trust grant 214431/Z/18/Z",
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2020-08-05T16:05:49.220000+00:00",
+      "description": "SpikeInterface is a Python framework designed to make the analysis of extracellular electrophysiology data more accessible and standardized. The SpikeInterface documentation can be found at https://spikeinterface.readthedocs.io/en/latest/.\n\nThis dataset contains all recordings analysed in the paper: \"SpikeInterface, a unified framework for spike sorting.\" Alessio P. Buccino, Cole L. Hurwitz, Samuel Garcia, Jeremy Magland, Joshua H. Siegle, Roger Hurwitz, Matthias H. Hennig, eLife - doi: https://doi.org/10.7554/eLife.61834; ",
+      "studyTarget": [
+        "Benchmark and compare existing automatic spike sorting algorithms"
+      ],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [
+          {
+            "name": "electrophysiological approach",
+            "schemaKey": "ApproachType"
+          }
+        ],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 74351014076,
+        "numberOfFiles": 6,
+        "numberOfSubjects": 4,
+        "variableMeasured": [
+          "ElectrodeGroup",
+          "Units",
+          "ElectricalSeries"
+        ],
+        "measurementTechnique": [
+          {
+            "name": "multi electrode extracellular electrophysiology recording technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "surgical technique",
+            "schemaKey": "MeasurementTechniqueType"
+          },
+          {
+            "name": "spike sorting technique",
+            "schemaKey": "MeasurementTechniqueType"
+          }
+        ]
+      },
+      "schemaVersion": "0.6.0",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [
+        {
+          "url": "https://doi.org/10.7554/eLife.61834",
+          "name": "SpikeInterface, a unified framework for spike sorting",
+          "relation": "dcite:IsDescribedBy",
+          "schemaKey": "Resource",
+          "identifier": "doi:10.7554/eLife.61834",
+          "repository": "eLife"
+        }
+      ],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000034/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

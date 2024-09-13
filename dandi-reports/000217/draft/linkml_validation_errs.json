@@ -1,0 +1,4622 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Findley, Teresa', 'email': 'tmfindley15@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-2050-4869', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Wyrick, David G', 'roleName': ['dcite:Author', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-8096-5766', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cramer, Jennifer L', 'roleName': ['dcite:Researcher', 'dcite:DataCollector', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Brown, Morgan A', 'email': 'morganallen@gmail.com', 'roleName': ['dcite:DataCollector', 'dcite:Researcher', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Holcomb, Blake', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Attey, Robin', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yeh, Dorian', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Monasevitch, Eric', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Nouboussi, Nelly', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cullen, Isabelle', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Songco, Jeremea O', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'King, Jared F', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Ahmadian, Yashar', 'roleName': ['dcite:Author', 'dcite:ProjectLeader', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-5942-0697', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}, {'name': 'University of Cambridge', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013meh722'}], 'includeInCitation': True} is not of type 'string' in /contributor/12",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Smear, Matt', 'email': 'smear@uoregon.edu', 'roleName': ['dcite:ProjectLeader', 'dcite:ContactPerson', 'dcite:Author', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-4689-388X', 'affiliation': [{'name': 'University of Oregon', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0293rh119'}], 'includeInCitation': True} is not of type 'string' in /contributor/13",
+    "instance": {
+      "id": "DANDI:000217/draft",
+      "url": "https://dandiarchive.org/dandiset/000217/draft",
+      "name": "Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset",
+      "about": [],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+      "citation": "Findley, Teresa; Wyrick, David G; Cramer, Jennifer L; Brown, Morgan A; Holcomb, Blake; Attey, Robin; Yeh, Dorian; Monasevitch, Eric; Nouboussi, Nelly; Cullen, Isabelle; Songco, Jeremea O; King, Jared F; Ahmadian, Yashar; Smear, Matt (2022) Sniff-synchronized, gradient-guided olfactory search by freely moving mice -- Behavioral Dataset (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000217/draft",
+      "keywords": [],
+      "protocol": [],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000217",
+      "repository": "https://dandiarchive.org/",
+      "contributor": [
+        {
+          "name": "Findley, Teresa",
+          "email": "tmfindley15@gmail.com",
+          "roleName": [
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-2050-4869",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Wyrick, David G",
+          "roleName": [
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0001-8096-5766",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cramer, Jennifer L",
+          "roleName": [
+            "dcite:Researcher",
+            "dcite:DataCollector",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Brown, Morgan A",
+          "email": "morganallen@gmail.com",
+          "roleName": [
+            "dcite:DataCollector",
+            "dcite:Researcher",
+            "dcite:Author"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Holcomb, Blake",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Attey, Robin",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Yeh, Dorian",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Monasevitch, Eric",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Nouboussi, Nelly",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Cullen, Isabelle",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Songco, Jeremea O",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "King, Jared F",
+          "roleName": [
+            "dcite:Author",
+            "dcite:DataCollector"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Ahmadian, Yashar",
+          "roleName": [
+            "dcite:Author",
+            "dcite:ProjectLeader",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0002-5942-0697",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            },
+            {
+              "name": "University of Cambridge",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/013meh722"
+            }
+          ],
+          "includeInCitation": true
+        },
+        {
+          "name": "Smear, Matt",
+          "email": "smear@uoregon.edu",
+          "roleName": [
+            "dcite:ProjectLeader",
+            "dcite:ContactPerson",
+            "dcite:Author",
+            "dcite:Researcher"
+          ],
+          "schemaKey": "Person",
+          "identifier": "0000-0003-4689-388X",
+          "affiliation": [
+            {
+              "name": "University of Oregon",
+              "schemaKey": "Affiliation",
+              "identifier": "https://ror.org/0293rh119"
+            }
+          ],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2022-01-20T03:12:02.773640+00:00",
+      "description": "This dataset contains the movement tracking, sniff recording, and trial statistics for the dataset used in the publication: Sniff-synchronized, gradient-guided olfactory search by freely moving mice in eLife (Findley et al. 2021)",
+      "studyTarget": [],
+      "assetsSummary": {
+        "species": [
+          {
+            "name": "Mus musculus - House mouse",
+            "schemaKey": "SpeciesType",
+            "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          }
+        ],
+        "approach": [],
+        "schemaKey": "AssetsSummary",
+        "dataStandard": [
+          {
+            "name": "Neurodata Without Borders (NWB)",
+            "schemaKey": "StandardsType",
+            "identifier": "RRID:SCR_015242"
+          }
+        ],
+        "numberOfBytes": 2152038728,
+        "numberOfFiles": 1121,
+        "numberOfSubjects": 25,
+        "variableMeasured": [],
+        "measurementTechnique": []
+      },
+      "schemaVersion": "0.6.2",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [],
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000217/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

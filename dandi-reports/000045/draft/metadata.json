@@ -1,0 +1,115 @@
+{
+  "id": "DANDI:000045/draft",
+  "url": "https://dandiarchive.org/dandiset/000045/draft",
+  "name": "IBL behavioral data",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements",
+      "contactPoint": {
+        "url": "https://internationalbrainlab.com",
+        "email": "ibldata@internationalbrainlab.org",
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+  "citation": "International Brain Laboratory (2022) IBL behavioral data (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000045/draft",
+  "keywords": [
+    "International Brain Laboratory"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000045",
+  "repository": "https://dandiarchive.org/",
+  "contributor": [
+    {
+      "url": "https://internationalbrainlab.com",
+      "name": "International Brain Laboratory",
+      "email": "ibldata@internationalbrainlab.org",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Organization",
+      "contactPoint": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2020-11-17T13:49:29.314000+00:00",
+  "description": "This dataset is a result of a multi-institution, cross country collaboration of labs, called International Brain Laboratory conducting standardized experiments on decision-making in mice. In the experiment, mice are shown a visual grating on screen with varying levels of contrast, and they are trained to rotate a wheel to move the on-screen stimulus from either side of their visual field to the center. These NWB files contain datasets corresponding to this wheel movement, camera footage of mice and information about the visual stimulus at every trial. \nPaper: \nAguillon, V., Angelaki, D., Bayer, H. M., Bonacchi, N., Carandini, M., Cazettes, F., Churchland, A. K., Chapuis, G., Dan, Y., Dewitt, E., Faulkner, M., Hamish, F., Haetzel, L., Hausser, M., Hofer, S., Hu, F., Khanal, A., Krasniak, C., Laranjeira, I., \u2026 Zador, A. (2020). A standardized and reproducible method to measure decision-making in mice. BioRxiv, 2020.01.17.909838. https://doi.org/10.1101/2020.01.17.909838",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 97844923040,
+    "numberOfFiles": 6615,
+    "numberOfSubjects": 178,
+    "variableMeasured": [
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "Position",
+      "DecompositionSeries",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "fourier analysis technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.7554/eLife.63711",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000045/versions/draft/assets/"
+  ]
+}

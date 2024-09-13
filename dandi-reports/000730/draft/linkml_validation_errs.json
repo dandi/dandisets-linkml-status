@@ -1,0 +1,394 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "instance": {
+      "id": "DANDI:000730/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000730/draft",
+      "name": "General data test",
+      "about": [
+        {
+          "name": "hippocampus-slices",
+          "schemaKey": "GenericType",
+          "identifier": "2photon data"
+        }
+      ],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Platholi, Jimcy (2023) General data test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "keywords": [
+        "general"
+      ],
+      "protocol": [
+        "2015-0023"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000730",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Platholi, Jimcy",
+          "email": "jip2003@med.cornell.edu",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-12-11T20:15:55.140295+00:00",
+      "description": "Initial batch of data (combined approaches)",
+      "publishedBy": {
+        "id": "urn:uuid:3cac9245-7d37-4db7-b268-f420c10ef620",
+        "name": "DANDI publish",
+        "endDate": "2023-12-21T15:57:15.361190+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-12-21T15:57:15.361190+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:88dd53b6-8d26-4e6c-bb5d-5993abad87db",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [
+        "plasticity"
+      ],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "datePublished": "2023-12-21T15:57:15.361190+00:00",
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "name": "BDNF",
+          "used": [],
+          "schemaKey": "Project",
+          "startDate": "2020-01-01T12:30:00-05:00",
+          "description": "bdnf release in mft",
+          "wasAssociatedWith": []
+        }
+      ],
+      "acknowledgement": "KP",
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000730/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'hippocampus-slices', 'schemaKey': 'GenericType', 'identifier': '2photon data'} is not of type 'string' in /about/0",
+    "instance": {
+      "id": "DANDI:000730/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000730/draft",
+      "name": "General data test",
+      "about": [
+        {
+          "name": "hippocampus-slices",
+          "schemaKey": "GenericType",
+          "identifier": "2photon data"
+        }
+      ],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Platholi, Jimcy (2023) General data test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "keywords": [
+        "general"
+      ],
+      "protocol": [
+        "2015-0023"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000730",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Platholi, Jimcy",
+          "email": "jip2003@med.cornell.edu",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-12-11T20:15:55.140295+00:00",
+      "description": "Initial batch of data (combined approaches)",
+      "publishedBy": {
+        "id": "urn:uuid:3cac9245-7d37-4db7-b268-f420c10ef620",
+        "name": "DANDI publish",
+        "endDate": "2023-12-21T15:57:15.361190+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-12-21T15:57:15.361190+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:88dd53b6-8d26-4e6c-bb5d-5993abad87db",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [
+        "plasticity"
+      ],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "datePublished": "2023-12-21T15:57:15.361190+00:00",
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "name": "BDNF",
+          "used": [],
+          "schemaKey": "Project",
+          "startDate": "2020-01-01T12:30:00-05:00",
+          "description": "bdnf release in mft",
+          "wasAssociatedWith": []
+        }
+      ],
+      "acknowledgement": "KP",
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000730/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Platholi, Jimcy', 'email': 'jip2003@med.cornell.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance": {
+      "id": "DANDI:000730/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000730/draft",
+      "name": "General data test",
+      "about": [
+        {
+          "name": "hippocampus-slices",
+          "schemaKey": "GenericType",
+          "identifier": "2photon data"
+        }
+      ],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Platholi, Jimcy (2023) General data test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "keywords": [
+        "general"
+      ],
+      "protocol": [
+        "2015-0023"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000730",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Platholi, Jimcy",
+          "email": "jip2003@med.cornell.edu",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-12-11T20:15:55.140295+00:00",
+      "description": "Initial batch of data (combined approaches)",
+      "publishedBy": {
+        "id": "urn:uuid:3cac9245-7d37-4db7-b268-f420c10ef620",
+        "name": "DANDI publish",
+        "endDate": "2023-12-21T15:57:15.361190+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-12-21T15:57:15.361190+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:88dd53b6-8d26-4e6c-bb5d-5993abad87db",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [
+        "plasticity"
+      ],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "datePublished": "2023-12-21T15:57:15.361190+00:00",
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "name": "BDNF",
+          "used": [],
+          "schemaKey": "Project",
+          "startDate": "2020-01-01T12:30:00-05:00",
+          "description": "bdnf release in mft",
+          "wasAssociatedWith": []
+        }
+      ],
+      "acknowledgement": "KP",
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000730/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "'2015-0023' does not match '^(?i:http|https)://[^\\\\s]+$' in /protocol/0",
+    "instance": {
+      "id": "DANDI:000730/draft",
+      "doi": "10.80507/dandi.123456/0.123456.1234",
+      "url": "https://dandiarchive.org/dandiset/000730/draft",
+      "name": "General data test",
+      "about": [
+        {
+          "name": "hippocampus-slices",
+          "schemaKey": "GenericType",
+          "identifier": "2photon data"
+        }
+      ],
+      "access": [
+        {
+          "status": "dandi:OpenAccess",
+          "schemaKey": "AccessRequirements"
+        }
+      ],
+      "license": [
+        "spdx:CC0-1.0"
+      ],
+      "version": "draft",
+      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+      "citation": "Platholi, Jimcy (2023) General data test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+      "keywords": [
+        "general"
+      ],
+      "protocol": [
+        "2015-0023"
+      ],
+      "schemaKey": "Dandiset",
+      "identifier": "DANDI:000730",
+      "repository": "https://dandiarchive.org",
+      "contributor": [
+        {
+          "name": "Platholi, Jimcy",
+          "email": "jip2003@med.cornell.edu",
+          "roleName": [
+            "dcite:ContactPerson"
+          ],
+          "schemaKey": "Person",
+          "affiliation": [],
+          "includeInCitation": true
+        }
+      ],
+      "dateCreated": "2023-12-11T20:15:55.140295+00:00",
+      "description": "Initial batch of data (combined approaches)",
+      "publishedBy": {
+        "id": "urn:uuid:3cac9245-7d37-4db7-b268-f420c10ef620",
+        "name": "DANDI publish",
+        "endDate": "2023-12-21T15:57:15.361190+00:00",
+        "schemaKey": "PublishActivity",
+        "startDate": "2023-12-21T15:57:15.361190+00:00",
+        "wasAssociatedWith": [
+          {
+            "id": "urn:uuid:88dd53b6-8d26-4e6c-bb5d-5993abad87db",
+            "name": "DANDI API",
+            "version": "0.1.0",
+            "schemaKey": "Software",
+            "identifier": "RRID:SCR_017571"
+          }
+        ]
+      },
+      "studyTarget": [
+        "plasticity"
+      ],
+      "assetsSummary": {
+        "schemaKey": "AssetsSummary",
+        "numberOfBytes": 0,
+        "numberOfFiles": 0
+      },
+      "datePublished": "2023-12-21T15:57:15.361190+00:00",
+      "schemaVersion": "0.6.4",
+      "ethicsApproval": [],
+      "wasGeneratedBy": [
+        {
+          "name": "BDNF",
+          "used": [],
+          "schemaKey": "Project",
+          "startDate": "2020-01-01T12:30:00-05:00",
+          "description": "bdnf release in mft",
+          "wasAssociatedWith": []
+        }
+      ],
+      "acknowledgement": "KP",
+      "relatedResource": [],
+      "manifestLocation": [
+        "https://api.dandiarchive.org/api/dandisets/000730/versions/draft/assets/"
+      ]
+    },
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": []
+  }
+]

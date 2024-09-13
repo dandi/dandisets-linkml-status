@@ -1,0 +1,115 @@
+'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json
+about: []
+access:
+- contactPoint:
+    email: petersen.peter@gmail.com
+    schemaKey: ContactPoint
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 94565736755
+  numberOfFiles: 28
+  numberOfSubjects: 3
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Brown rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - LFP
+  - ProcessingModule
+  - Units
+  - ElectricalSeries
+citation: "Fujisawa, Shigeyoshi; Amarasingham, Asohan; Harrison, Matthew; Buzs\xE1ki,
+  Gy\xF6rgy (2021) Behavior-dependent short-term assembly dynamics in the medial prefrontal
+  cortex (Version 0.210812.1457) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000067/0.210812.1457"
+contributor:
+- affiliation: []
+  includeInCitation: true
+  name: Fujisawa, Shigeyoshi
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation: []
+  includeInCitation: true
+  name: Amarasingham, Asohan
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  includeInCitation: true
+  name: Harrison, Matthew
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  identifier: 0000-0002-3100-4800
+  includeInCitation: true
+  name: "Buzs\xE1ki, Gy\xF6rgy"
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+datePublished: '2021-08-12T14:57:31.160475'
+description: "Although short-term plasticity is believed to play a fundamental role
+  in cortical computation, empirical evidence bearing on its role during behavior
+  is scarce. Here we looked for the signature of short-term plasticity in the fine-timescale
+  spiking relationships of a simultaneously recorded population of physiologically
+  identified pyramidal cells and interneurons, in the medial prefrontal cortex of
+  the rat, in a working memory task. On broader timescales, sequentially organized
+  and transiently active neurons reliably differentiated between different trajectories
+  of the rat in the maze. On finer timescales, putative monosynaptic interactions
+  reflected short-term plasticity in their dynamic and predictable modulation across
+  various aspects of the task, beyond a statistical accounting for the effect of the
+  neurons' co-varying firing rates. Seeking potential mechanisms for such effects,
+  we found evidence for both firing pattern\u2013dependent facilitation and depression,
+  as well as for a supralinear effect of presynaptic coincidence on the firing of
+  postsynaptic targets."
+doi: 10.48324/dandi.000067/0.210812.1457
+ethicsApproval: []
+id: DANDI:000067/0.210812.1457
+identifier: DANDI:000067
+keywords: []
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/000067/0.210812.1457/assets.yaml
+name: Behavior-dependent short-term assembly dynamics in the medial prefrontal cortex
+protocol: []
+publishedBy:
+  endDate: '2021-08-12T14:57:31.160475'
+  id: urn:uuid:d60ad1a8-cd01-480a-819a-80327d9952fd
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2021-08-12T14:57:31.160475'
+  wasAssociatedWith:
+  - id: urn:uuid:1954bca2-ce63-4c63-be91-7dfa3389cc46
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource:
+- relation: dcite:IsDescribedBy
+  url: https://www.nature.com/articles/nn.2134
+repository: https://dandiarchive.org/
+schemaKey: Dandiset
+schemaVersion: 0.4.4
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000067/0.210812.1457
+version: 0.210812.1457
+wasGeneratedBy: []

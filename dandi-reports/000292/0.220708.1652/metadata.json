@@ -1,0 +1,163 @@
+{
+  "id": "DANDI:000292/0.220708.1652",
+  "doi": "10.48324/dandi.000292/0.220708.1652",
+  "url": "https://dandiarchive.org/dandiset/000292/0.220708.1652",
+  "name": "UHN whole-cell patch-clamp excitability recordings from mouse cortical neurons",
+  "about": [
+    {
+      "name": "Cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "UBERON:0001851"
+    }
+  ],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC0-1.0"
+  ],
+  "version": "0.220708.1652",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.3/context.json",
+  "citation": "Howard, Derek; Chameh, Homeira Moradi; Valiante, Taufik; Tripathy, Shreejoy (2022) UHN whole-cell patch-clamp excitability recordings from mouse cortical neurons (Version 0.220708.1652) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000292/0.220708.1652",
+  "keywords": [
+    "excitability",
+    "cortex",
+    "mouse"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000292",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Howard, Derek",
+      "email": "derekhoward@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-6621-9473",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Chameh, Homeira Moradi",
+      "email": "homeira.moradi@uhnresearch.ca",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-8009-147X",
+      "affiliation": [
+        {
+          "name": "Krembil Brain Institute, University Health Network",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Valiante, Taufik",
+      "email": "taufik.valiante@uhn.ca",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-3443-3790",
+      "affiliation": [
+        {
+          "name": "Krembil Brain Institute, University Health Network",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Tripathy, Shreejoy",
+      "email": "shreejoy.tripathy@camh.ca",
+      "roleName": [
+        "dcite:Conceptualization",
+        "dcite:DataCurator",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-1007-9061",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2022-07-07T21:28:23.171592+00:00",
+  "description": "Whole-cell patch clamp recordings from acute mouse brain slices of layer 5 cortex.",
+  "publishedBy": {
+    "id": "urn:uuid:4c73b6fd-cadf-4c76-8022-441767b1e990",
+    "name": "DANDI publish",
+    "endDate": "2022-07-08T16:52:23.775311+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2022-07-08T16:52:23.775311+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:8c113f94-617f-426a-a746-59cc2e5e2208",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 13764872,
+    "numberOfFiles": 11,
+    "numberOfSubjects": 11,
+    "variableMeasured": [
+      "CurrentClampSeries",
+      "CurrentClampStimulusSeries",
+      "VoltageClampStimulusSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "voltage clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2022-07-08T16:52:23.775311+00:00",
+  "schemaVersion": "0.6.3",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000292/0.220708.1652/assets.yaml"
+  ]
+}
