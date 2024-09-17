@@ -3,67 +3,6 @@
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
-    "instance": {
-      "id": "DANDI:000542/draft",
-      "doi": "10.80507/dandi.123456/0.123456.1234",
-      "url": "https://dandiarchive.org/dandiset/000542/draft",
-      "name": "test",
-      "access": [
-        {
-          "status": "dandi:OpenAccess",
-          "schemaKey": "AccessRequirements"
-        }
-      ],
-      "license": [
-        "spdx:CC-BY-4.0"
-      ],
-      "version": "draft",
-      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
-      "citation": "Rinehart, Duane (2023) test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
-      "schemaKey": "Dandiset",
-      "identifier": "DANDI:000542",
-      "repository": "https://dandiarchive.org",
-      "contributor": [
-        {
-          "name": "Rinehart, Duane",
-          "email": "duane.rinehart@gmail.com",
-          "roleName": [
-            "dcite:ContactPerson"
-          ],
-          "schemaKey": "Person",
-          "affiliation": [],
-          "includeInCitation": true
-        }
-      ],
-      "dateCreated": "2023-05-12T16:23:59.693928+00:00",
-      "description": "test",
-      "publishedBy": {
-        "id": "urn:uuid:e59551d1-311a-4110-b37c-1282b63f2cd9",
-        "name": "DANDI publish",
-        "endDate": "2023-05-12T16:24:52.423862+00:00",
-        "schemaKey": "PublishActivity",
-        "startDate": "2023-05-12T16:24:52.423862+00:00",
-        "wasAssociatedWith": [
-          {
-            "id": "urn:uuid:d70dd257-b031-405e-a7d8-848a6858c110",
-            "name": "DANDI API",
-            "version": "0.1.0",
-            "schemaKey": "Software",
-            "identifier": "RRID:SCR_017571"
-          }
-        ]
-      },
-      "assetsSummary": {
-        "schemaKey": "AssetsSummary",
-        "numberOfBytes": 0,
-        "numberOfFiles": 0
-      },
-      "datePublished": "2023-05-12T16:24:52.423862+00:00",
-      "schemaVersion": "0.6.4",
-      "manifestLocation": [
-        "https://api.dandiarchive.org/api/dandisets/000542/versions/draft/assets/"
-      ]
-    },
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": []
@@ -72,67 +11,6 @@
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Rinehart, Duane', 'email': 'duane.rinehart@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
-    "instance": {
-      "id": "DANDI:000542/draft",
-      "doi": "10.80507/dandi.123456/0.123456.1234",
-      "url": "https://dandiarchive.org/dandiset/000542/draft",
-      "name": "test",
-      "access": [
-        {
-          "status": "dandi:OpenAccess",
-          "schemaKey": "AccessRequirements"
-        }
-      ],
-      "license": [
-        "spdx:CC-BY-4.0"
-      ],
-      "version": "draft",
-      "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
-      "citation": "Rinehart, Duane (2023) test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
-      "schemaKey": "Dandiset",
-      "identifier": "DANDI:000542",
-      "repository": "https://dandiarchive.org",
-      "contributor": [
-        {
-          "name": "Rinehart, Duane",
-          "email": "duane.rinehart@gmail.com",
-          "roleName": [
-            "dcite:ContactPerson"
-          ],
-          "schemaKey": "Person",
-          "affiliation": [],
-          "includeInCitation": true
-        }
-      ],
-      "dateCreated": "2023-05-12T16:23:59.693928+00:00",
-      "description": "test",
-      "publishedBy": {
-        "id": "urn:uuid:e59551d1-311a-4110-b37c-1282b63f2cd9",
-        "name": "DANDI publish",
-        "endDate": "2023-05-12T16:24:52.423862+00:00",
-        "schemaKey": "PublishActivity",
-        "startDate": "2023-05-12T16:24:52.423862+00:00",
-        "wasAssociatedWith": [
-          {
-            "id": "urn:uuid:d70dd257-b031-405e-a7d8-848a6858c110",
-            "name": "DANDI API",
-            "version": "0.1.0",
-            "schemaKey": "Software",
-            "identifier": "RRID:SCR_017571"
-          }
-        ]
-      },
-      "assetsSummary": {
-        "schemaKey": "AssetsSummary",
-        "numberOfBytes": 0,
-        "numberOfFiles": 0
-      },
-      "datePublished": "2023-05-12T16:24:52.423862+00:00",
-      "schemaVersion": "0.6.4",
-      "manifestLocation": [
-        "https://api.dandiarchive.org/api/dandisets/000542/versions/draft/assets/"
-      ]
-    },
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": []

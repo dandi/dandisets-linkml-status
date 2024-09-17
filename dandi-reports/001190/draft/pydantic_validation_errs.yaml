@@ -9,11 +9,36 @@
   msg: String should match pattern '^([\w\s\-\.']+),\s+([\w\s\-\.']+)$'
   type: string_pattern_mismatch
   url: https://errors.pydantic.dev/2.9/v/string_pattern_mismatch
-- input: {}
+- ctx:
+    error: input is empty
+  input: ''
   loc:
-  - ethicsApproval
+  - about
   - 0
+  - Disorder
   - identifier
-  msg: Field required
-  type: missing
-  url: https://errors.pydantic.dev/2.9/v/missing
+  - url['http','https']
+  msg: Input should be a valid URL, input is empty
+  type: url_parsing
+  url: https://errors.pydantic.dev/2.9/v/url_parsing
+- ctx:
+    pattern: ^[a-zA-Z0-9-]+:[a-zA-Z0-9-/\._]+$
+  input: ''
+  loc:
+  - about
+  - 0
+  - Disorder
+  - identifier
+  - constrained-str
+  msg: String should match pattern '^[a-zA-Z0-9-]+:[a-zA-Z0-9-/\._]+$'
+  type: string_pattern_mismatch
+  url: https://errors.pydantic.dev/2.9/v/string_pattern_mismatch
+- ctx:
+    error: relative URL without a base
+  input: '23.056'
+  loc:
+  - protocol
+  - 0
+  msg: Input should be a valid URL, relative URL without a base
+  type: url_parsing
+  url: https://errors.pydantic.dev/2.9/v/url_parsing

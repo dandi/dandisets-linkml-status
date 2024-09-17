@@ -2,7 +2,13 @@
   "id": "DANDI:001190/draft",
   "url": "https://dandiarchive.org/dandiset/001190/draft",
   "name": "In vivo Calcium Imaging: Genotype Data: NOR",
-  "about": [],
+  "about": [
+    {
+      "name": "",
+      "schemaKey": "Disorder",
+      "identifier": ""
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -15,8 +21,12 @@
   "version": "draft",
   "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
   "citation": "Fitting, Sylvia  (2024) In vivo Calcium Imaging: Genotype Data: NOR (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001190/draft",
-  "keywords": [],
-  "protocol": [],
+  "keywords": [
+    "In vivo calcium imaging, endocannabinoids, HIV-1, Tat"
+  ],
+  "protocol": [
+    "23.056"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001190",
   "repository": "https://dandiarchive.org",
@@ -25,7 +35,9 @@
       "name": "Fitting, Sylvia ",
       "email": "sfitting@email.unc.edu",
       "roleName": [
-        "dcite:ContactPerson"
+        "dcite:ContactPerson",
+        "dcite:Conceptualization",
+        "dcite:FundingAcquisition"
       ],
       "schemaKey": "Person",
       "affiliation": [],
@@ -69,7 +81,15 @@
   },
   "schemaVersion": "0.6.8",
   "ethicsApproval": [
-    {}
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "23.056",
+      "contactPoint": {
+        "url": "https://research.unc.edu/iacuc/",
+        "email": "sfitting@email.unc.edu",
+        "schemaKey": "ContactPoint"
+      }
+    }
   ],
   "wasGeneratedBy": [],
   "relatedResource": [],
