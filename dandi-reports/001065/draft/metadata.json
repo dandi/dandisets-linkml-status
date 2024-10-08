@@ -65,9 +65,51 @@
   "description": "Electrophysiology dataset associated with journal article titled areal specializations in the morpho-electric and transcriptomic properties of layer 5 extratelencephalic-projecting neurons in the primate neocortex. NWB files contains current clamp data collected for analysis of deep layer 5 ET neurons in the primate temporal and motor cortical regions. ",
   "studyTarget": [],
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca mulatta - Rhesus monkey",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+      },
+      {
+        "name": "Macaca nemestrina",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9545"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 10805026780,
+    "numberOfFiles": 289,
+    "numberOfSubjects": 112,
+    "variableMeasured": [
+      "CurrentClampSeries",
+      "CurrentClampStimulusSeries",
+      "VoltageClampSeries",
+      "VoltageClampStimulusSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "voltage clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.7",
   "ethicsApproval": [],

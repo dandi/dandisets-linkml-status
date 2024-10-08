@@ -1,3 +1,5 @@
+[DANDI LinkML schema](./dandi-linkml-schema.yml) (LinkML schema used in the LinkML validations)
+
 | dandiset | version | schema_version | api_status | modified | pydantic | linkml |
 |----------|---------|----------------|------------|----------|----------|--------|
 | [000003](./000003/) | [0.230629.1955](./000003/0.230629.1955/metadata.yaml) | 0.6.0 | Valid | 2023-06-29T19:55:35.080882+00:00 | [1 (1 value_error)](./000003/0.230629.1955/pydantic_validation_errs.yaml) | [9 (1 + 8)](./000003/0.230629.1955/linkml_validation_errs.yaml) |
@@ -37,12 +39,12 @@
 | [000023](./000023/) | [draft](./000023/draft/metadata.yaml) | 0.6.0 | Valid | 2023-06-20T00:56:17.847062+00:00 | 0 | [6 (1 + 5)](./000023/draft/linkml_validation_errs.yaml) |
 | [000024](./000024/) | [draft](./000024/draft/metadata.yaml) | 0.6.0 | Invalid | 2023-06-20T00:56:14.665750+00:00 | [2 (2 missing)](./000024/draft/pydantic_validation_errs.yaml) | [1 (1)](./000024/draft/linkml_validation_errs.yaml) |
 | [000025](./000025/) | [draft](./000025/draft/metadata.yaml) | 0.6.0 | Valid | 2023-06-20T00:56:16.937243+00:00 | [1 (1 value_error)](./000025/draft/pydantic_validation_errs.yaml) | [2 (1 + 1)](./000025/draft/linkml_validation_errs.yaml) |
-| [000026](./000026/) | [draft](./000026/draft/metadata.yaml) | 0.6.0 | Valid | 2024-09-10T14:52:41.635887+00:00 | 0 | [48 (1 + 47)](./000026/draft/linkml_validation_errs.yaml) |
+| [000026](./000026/) | [draft](./000026/draft/metadata.yaml) | 0.6.0 | Valid | 2024-09-20T17:56:37.959500+00:00 | 0 | [48 (1 + 47)](./000026/draft/linkml_validation_errs.yaml) |
 | [000027](./000027/) | [0.210831.2033](./000027/0.210831.2033/metadata.yaml) | 0.4.4 | Valid | 2021-08-31T20:34:01.283878+00:00 | 0 | [2 (1 + 1)](./000027/0.210831.2033/linkml_validation_errs.yaml) |
 | [000027](./000027/) | [draft](./000027/draft/metadata.yaml) | 0.6.0 | Valid | 2023-06-20T00:56:23.249993+00:00 | 0 | [2 (1 + 1)](./000027/draft/linkml_validation_errs.yaml) |
 | [000028](./000028/) | [draft](./000028/draft/metadata.yaml) | 0.6.0 | Invalid | 2023-06-20T00:56:15.243583+00:00 | [2 (2 missing)](./000028/draft/pydantic_validation_errs.yaml) | [1 (1)](./000028/draft/linkml_validation_errs.yaml) |
 | [000029](./000029/) | [0.231017.2004](./000029/0.231017.2004/metadata.yaml) | 0.4.4 | Valid | 2023-10-17T20:04:32.976864+00:00 | [1 (1 value_error)](./000029/0.231017.2004/pydantic_validation_errs.yaml) | [4 (1 + 3)](./000029/0.231017.2004/linkml_validation_errs.yaml) |
-| [000029](./000029/) | [draft](./000029/draft/metadata.yaml) | 0.4.4 | Valid | 2024-08-14T18:33:42.861052+00:00 | 0 | [2 (1 + 1)](./000029/draft/linkml_validation_errs.yaml) |
+| [000029](./000029/) | [draft](./000029/draft/metadata.yaml) | 0.4.4 | Invalid | 2024-09-20T17:15:05.398315+00:00 | [2 (2 value_error)](./000029/draft/pydantic_validation_errs.yaml) | [5 (1 + 4)](./000029/draft/linkml_validation_errs.yaml) |
 | [000030](./000030/) | [draft](./000030/draft/metadata.yaml) | 0.6.0 | Invalid | 2023-06-20T00:56:17.151718+00:00 | [2 (2 missing)](./000030/draft/pydantic_validation_errs.yaml) | [1 (1)](./000030/draft/linkml_validation_errs.yaml) |
 | [000031](./000031/) | [draft](./000031/draft/metadata.yaml) | 0.6.0 | Invalid | 2023-06-20T00:56:16.920508+00:00 | [2 (2 missing)](./000031/draft/pydantic_validation_errs.yaml) | [1 (1)](./000031/draft/linkml_validation_errs.yaml) |
 | [000032](./000032/) | [draft](./000032/draft/metadata.yaml) | 0.6.0 | Invalid | 2023-06-20T00:56:25.266167+00:00 | [1 (1 value_error)](./000032/draft/pydantic_validation_errs.yaml) | [2 (1 + 1)](./000032/draft/linkml_validation_errs.yaml) |
@@ -247,8 +249,8 @@
 | [000251](./000251/) | [draft](./000251/draft/metadata.yaml) | 0.6.3 | Valid | 2023-06-20T00:56:22.602125+00:00 | [1 (1 value_error)](./000251/draft/pydantic_validation_errs.yaml) | [12 (1 + 11)](./000251/draft/linkml_validation_errs.yaml) |
 | [000252](./000252/) | [0.230408.2207](./000252/0.230408.2207/metadata.yaml) | 0.6.3 | Valid | 2023-04-08T22:07:55.954540+00:00 | 0 | [7 (1 + 6)](./000252/0.230408.2207/linkml_validation_errs.yaml) |
 | [000252](./000252/) | [draft](./000252/draft/metadata.yaml) | 0.6.3 | Published | 2023-06-20T00:56:25.462681+00:00 | 0 | [7 (1 + 6)](./000252/draft/linkml_validation_errs.yaml) |
-| [000253](./000253/) | [0.240503.0152](./000253/0.240503.0152/metadata.yaml) | 0.6.3 | Valid | 2024-05-03T01:52:39.950933+00:00 | 0 | [30 (1 + 29)](./000253/0.240503.0152/linkml_validation_errs.yaml) |
-| [000253](./000253/) | [draft](./000253/draft/metadata.yaml) | 0.6.3 | Valid | 2024-08-23T20:31:28.800441+00:00 | 0 | [30 (1 + 29)](./000253/draft/linkml_validation_errs.yaml) |
+| [000253](./000253/) | [0.240923.1441](./000253/0.240923.1441/metadata.yaml) | 0.6.3 | Valid | 2024-09-23T14:41:58.196613+00:00 | 0 | [30 (1 + 29)](./000253/0.240923.1441/linkml_validation_errs.yaml) |
+| [000253](./000253/) | [draft](./000253/draft/metadata.yaml) | 0.6.3 | Published | 2024-09-23T14:41:56.754243+00:00 | 0 | [30 (1 + 29)](./000253/draft/linkml_validation_errs.yaml) |
 | [000255](./000255/) | [draft](./000255/draft/metadata.yaml) | 0.6.3 | Invalid | 2023-06-20T00:56:23.996216+00:00 | [1 (1 missing)](./000255/draft/pydantic_validation_errs.yaml) | [2 (1 + 1)](./000255/draft/linkml_validation_errs.yaml) |
 | [000288](./000288/) | [draft](./000288/draft/metadata.yaml) | 0.6.3 | Valid | 2023-06-20T00:56:18.943095+00:00 | 0 | [9 (1 + 8)](./000288/draft/linkml_validation_errs.yaml) |
 | [000289](./000289/) | [0.240801.1040](./000289/0.240801.1040/metadata.yaml) | 0.6.3 | Valid | 2024-08-01T10:40:09.552662+00:00 | 0 | [6 (1 + 5)](./000289/0.240801.1040/linkml_validation_errs.yaml) |
@@ -300,7 +302,7 @@
 | [000405](./000405/) | [draft](./000405/draft/metadata.yaml) | 0.6.3 | Valid | 2023-06-20T00:56:24.445627+00:00 | 0 | [2 (1 + 1)](./000405/draft/linkml_validation_errs.yaml) |
 | [000406](./000406/) | [draft](./000406/draft/metadata.yaml) | 0.6.3 | Invalid | 2023-06-20T00:56:22.979316+00:00 | [1 (1 url_parsing)](./000406/draft/pydantic_validation_errs.yaml) | [3 (1 + 1 + 1)](./000406/draft/linkml_validation_errs.yaml) |
 | [000408](./000408/) | [draft](./000408/draft/metadata.yaml) | 0.6.3 | Invalid | 2024-05-08T18:19:02.893270+00:00 | [2 (2 value_error)](./000408/draft/pydantic_validation_errs.yaml) | [5 (1 + 4)](./000408/draft/linkml_validation_errs.yaml) |
-| [000409](./000409/) | [draft](./000409/draft/metadata.yaml) | 0.6.3 | Valid | 2024-07-15T15:34:22.769952+00:00 | 0 | [49 (1 + 48)](./000409/draft/linkml_validation_errs.yaml) |
+| [000409](./000409/) | [draft](./000409/draft/metadata.yaml) | 0.6.3 | Valid | 2024-09-29T17:39:19.347412+00:00 | 0 | [49 (1 + 48)](./000409/draft/linkml_validation_errs.yaml) |
 | [000410](./000410/) | [draft](./000410/draft/metadata.yaml) | 0.6.3 | Valid | 2023-09-05T22:32:34.404962+00:00 | 0 | [2 (1 + 1)](./000410/draft/linkml_validation_errs.yaml) |
 | [000411](./000411/) | [draft](./000411/draft/metadata.yaml) | 0.6.3 | Valid | 2023-06-20T00:56:25.338383+00:00 | 0 | [2 (1 + 1)](./000411/draft/linkml_validation_errs.yaml) |
 | [000444](./000444/) | [draft](./000444/draft/metadata.yaml) | 0.6.3 | Invalid | 2023-06-20T00:56:27.967387+00:00 | 0 | [4 (1 + 3)](./000444/draft/linkml_validation_errs.yaml) |
@@ -482,7 +484,7 @@
 | [000715](./000715/) | [draft](./000715/draft/metadata.yaml) | 0.6.4 | Published | 2024-06-14T19:42:06.268440+00:00 | 0 | [9 (1 + 8)](./000715/draft/linkml_validation_errs.yaml) |
 | [000717](./000717/) | [draft](./000717/draft/metadata.yaml) | 0.6.4 | Invalid | 2024-04-02T09:51:23.164619+00:00 | [1 (1 too_short)](./000717/draft/pydantic_validation_errs.yaml) | [1 (1)](./000717/draft/linkml_validation_errs.yaml) |
 | [000718](./000718/) | [draft](./000718/draft/metadata.yaml) | 0.6.4 | Invalid | 2023-12-15T20:18:57.770947+00:00 | 0 | [2 (1 + 1)](./000718/draft/linkml_validation_errs.yaml) |
-| [000719](./000719/) | [draft](./000719/draft/metadata.yaml) | 0.6.4 | Invalid | 2024-04-19T16:03:02.076280+00:00 | [1 (1 too_short)](./000719/draft/pydantic_validation_errs.yaml) | [1 (1)](./000719/draft/linkml_validation_errs.yaml) |
+| [000719](./000719/) | [draft](./000719/draft/metadata.yaml) | 0.6.4 | Invalid | 2024-10-03T01:08:54.074014+00:00 | [1 (1 too_short)](./000719/draft/pydantic_validation_errs.yaml) | [1 (1)](./000719/draft/linkml_validation_errs.yaml) |
 | [000722](./000722/) | [draft](./000722/draft/metadata.yaml) | 0.6.4 | Invalid | 2023-12-04T23:36:56.373255+00:00 | 0 | [2 (1 + 1)](./000722/draft/linkml_validation_errs.yaml) |
 | [000723](./000723/) | [0.240716.1414](./000723/0.240716.1414/metadata.yaml) | 0.6.4 | Valid | 2024-07-16T14:14:26.145635+00:00 | 0 | [2 (1 + 1)](./000723/0.240716.1414/linkml_validation_errs.yaml) |
 | [000723](./000723/) | [draft](./000723/draft/metadata.yaml) | 0.6.4 | Published | 2024-07-16T14:14:24.914729+00:00 | 0 | [2 (1 + 1)](./000723/draft/linkml_validation_errs.yaml) |
@@ -542,8 +544,8 @@
 | [000942](./000942/) | [draft](./000942/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-03-22T20:20:39.156399+00:00 | 0 | [2 (1 + 1)](./000942/draft/linkml_validation_errs.yaml) |
 | [000943](./000943/) | [0.240614.0754](./000943/0.240614.0754/metadata.yaml) | 0.6.7 | Valid | 2024-06-14T07:54:17.229049+00:00 | 0 | [2 (1 + 1)](./000943/0.240614.0754/linkml_validation_errs.yaml) |
 | [000943](./000943/) | [draft](./000943/draft/metadata.yaml) | 0.6.7 | Published | 2024-06-14T07:54:16.148854+00:00 | 0 | [2 (1 + 1)](./000943/draft/linkml_validation_errs.yaml) |
-| [000945](./000945/) | [draft](./000945/draft/metadata.yaml) | 0.6.7 | Valid | 2024-04-01T19:05:21.684670+00:00 | 0 | [9 (1 + 8)](./000945/draft/linkml_validation_errs.yaml) |
-| [000946](./000946/) | [draft](./000946/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-04-08T02:35:24.267924+00:00 | [1 (1 string_pattern_mismatch)](./000946/draft/pydantic_validation_errs.yaml) | [9 (1 + 8)](./000946/draft/linkml_validation_errs.yaml) |
+| [000945](./000945/) | [draft](./000945/draft/metadata.yaml) | 0.6.7 | Valid | 2024-09-30T18:57:42.162446+00:00 | 0 | [9 (1 + 8)](./000945/draft/linkml_validation_errs.yaml) |
+| [000946](./000946/) | [draft](./000946/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-09-30T19:58:43.915326+00:00 | [1 (1 string_pattern_mismatch)](./000946/draft/pydantic_validation_errs.yaml) | [9 (1 + 8)](./000946/draft/linkml_validation_errs.yaml) |
 | [000947](./000947/) | [0.240510.2211](./000947/0.240510.2211/metadata.yaml) | 0.6.7 | Valid | 2024-05-10T22:11:28.493117+00:00 | 0 | [12 (1 + 11)](./000947/0.240510.2211/linkml_validation_errs.yaml) |
 | [000947](./000947/) | [draft](./000947/draft/metadata.yaml) | 0.6.7 | Published | 2024-05-10T22:11:27.282802+00:00 | 0 | [12 (1 + 11)](./000947/draft/linkml_validation_errs.yaml) |
 | [000949](./000949/) | [draft](./000949/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-03-30T21:12:35.867788+00:00 | [1 (1 string_too_long)](./000949/draft/pydantic_validation_errs.yaml) | [3 (1 + 1 + 1)](./000949/draft/linkml_validation_errs.yaml) |
@@ -622,7 +624,7 @@
 | [001054](./001054/) | [draft](./001054/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-10T12:37:57.479827+00:00 | 0 | [2 (1 + 1)](./001054/draft/linkml_validation_errs.yaml) |
 | [001055](./001055/) | [draft](./001055/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:06:00.387190+00:00 | 0 | [3 (1 + 2)](./001055/draft/linkml_validation_errs.yaml) |
 | [001056](./001056/) | [draft](./001056/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:03:00.333095+00:00 | 0 | [3 (1 + 2)](./001056/draft/linkml_validation_errs.yaml) |
-| [001057](./001057/) | [draft](./001057/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:02:01.040224+00:00 | 0 | [3 (1 + 2)](./001057/draft/linkml_validation_errs.yaml) |
+| [001057](./001057/) | [draft](./001057/draft/metadata.yaml) | 0.6.7 | Valid | 2024-10-04T17:49:02.250121+00:00 | 0 | [3 (1 + 2)](./001057/draft/linkml_validation_errs.yaml) |
 | [001058](./001058/) | [draft](./001058/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:05:00.384187+00:00 | 0 | [3 (1 + 2)](./001058/draft/linkml_validation_errs.yaml) |
 | [001059](./001059/) | [draft](./001059/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:05:00.470441+00:00 | 0 | [3 (1 + 2)](./001059/draft/linkml_validation_errs.yaml) |
 | [001060](./001060/) | [draft](./001060/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:06:00.336864+00:00 | 0 | [3 (1 + 2)](./001060/draft/linkml_validation_errs.yaml) |
@@ -630,7 +632,7 @@
 | [001062](./001062/) | [draft](./001062/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-14T18:41:36.118627+00:00 | 0 | [5 (1 + 4)](./001062/draft/linkml_validation_errs.yaml) |
 | [001063](./001063/) | [draft](./001063/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-17T05:00:20.103840+00:00 | 0 | [2 (1 + 1)](./001063/draft/linkml_validation_errs.yaml) |
 | [001064](./001064/) | [draft](./001064/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-23T02:44:17.231136+00:00 | 0 | [2 (1 + 1)](./001064/draft/linkml_validation_errs.yaml) |
-| [001065](./001065/) | [draft](./001065/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-08-13T19:26:27.955687+00:00 | 0 | [3 (1 + 2)](./001065/draft/linkml_validation_errs.yaml) |
+| [001065](./001065/) | [draft](./001065/draft/metadata.yaml) | 0.6.7 | Valid | 2024-10-04T20:11:03.116797+00:00 | 0 | [3 (1 + 2)](./001065/draft/linkml_validation_errs.yaml) |
 | [001066](./001066/) | [draft](./001066/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-06-20T18:43:31.439736+00:00 | 0 | [2 (1 + 1)](./001066/draft/linkml_validation_errs.yaml) |
 | [001069](./001069/) | [0.240621.2139](./001069/0.240621.2139/metadata.yaml) | 0.6.7 | Valid | 2024-06-21T21:39:47.507521+00:00 | 0 | [2 (1 + 1)](./001069/0.240621.2139/linkml_validation_errs.yaml) |
 | [001069](./001069/) | [draft](./001069/draft/metadata.yaml) | 0.6.7 | Published | 2024-06-21T21:39:46.427380+00:00 | 0 | [2 (1 + 1)](./001069/draft/linkml_validation_errs.yaml) |
@@ -638,7 +640,8 @@
 | [001071](./001071/) | [draft](./001071/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-21T21:39:32.749054+00:00 | 0 | [2 (1 + 1)](./001071/draft/linkml_validation_errs.yaml) |
 | [001072](./001072/) | [draft](./001072/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-21T21:39:32.761323+00:00 | 0 | [2 (1 + 1)](./001072/draft/linkml_validation_errs.yaml) |
 | [001073](./001073/) | [draft](./001073/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-21T22:20:30.891312+00:00 | 0 | [2 (1 + 1)](./001073/draft/linkml_validation_errs.yaml) |
-| [001075](./001075/) | [draft](./001075/draft/metadata.yaml) | 0.6.7 | Valid | 2024-09-15T04:29:44.160032+00:00 | 0 | [11 (1 + 10)](./001075/draft/linkml_validation_errs.yaml) |
+| [001075](./001075/) | [0.240930.1859](./001075/0.240930.1859/metadata.yaml) | 0.6.7 | Valid | 2024-09-30T18:59:47.364830+00:00 | 0 | [11 (1 + 10)](./001075/0.240930.1859/linkml_validation_errs.yaml) |
+| [001075](./001075/) | [draft](./001075/draft/metadata.yaml) | 0.6.7 | Published | 2024-09-30T18:59:46.169667+00:00 | 0 | [11 (1 + 10)](./001075/draft/linkml_validation_errs.yaml) |
 | [001076](./001076/) | [draft](./001076/draft/metadata.yaml) | 0.6.7 | Valid | 2024-06-27T21:01:35.617945+00:00 | 0 | [2 (1 + 1)](./001076/draft/linkml_validation_errs.yaml) |
 | [001078](./001078/) | [draft](./001078/draft/metadata.yaml) | 0.6.7 | Valid | 2024-07-12T21:05:00.334797+00:00 | 0 | [3 (1 + 2)](./001078/draft/linkml_validation_errs.yaml) |
 | [001079](./001079/) | [draft](./001079/draft/metadata.yaml) | 0.6.7 | Invalid | 2024-07-01T23:06:31.339481+00:00 | 0 | [2 (1 + 1)](./001079/draft/linkml_validation_errs.yaml) |
@@ -656,6 +659,7 @@
 | [001130](./001130/) | [draft](./001130/draft/metadata.yaml) | 0.6.8 | Valid | 2024-08-21T07:09:49.886174+00:00 | 0 | [7 (1 + 6)](./001130/draft/linkml_validation_errs.yaml) |
 | [001131](./001131/) | [0.240826.1647](./001131/0.240826.1647/metadata.yaml) | 0.6.8 | Valid | 2024-08-26T16:47:32.369594+00:00 | 0 | [7 (1 + 6)](./001131/0.240826.1647/linkml_validation_errs.yaml) |
 | [001131](./001131/) | [draft](./001131/draft/metadata.yaml) | 0.6.8 | Published | 2024-08-26T16:47:31.154897+00:00 | 0 | [7 (1 + 6)](./001131/draft/linkml_validation_errs.yaml) |
+| [001132](./001132/) | [draft](./001132/draft/metadata.yaml) | 0.6.8 | Valid | 2024-09-29T23:15:18.098474+00:00 | 0 | [11 (1 + 10)](./001132/draft/linkml_validation_errs.yaml) |
 | [001133](./001133/) | [draft](./001133/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-08-02T16:39:55.858861+00:00 | 0 | [2 (1 + 1)](./001133/draft/linkml_validation_errs.yaml) |
 | [001171](./001171/) | [0.240917.1434](./001171/0.240917.1434/metadata.yaml) | 0.6.8 | Valid | 2024-09-17T14:34:57.866898+00:00 | 0 | [2 (1 + 1)](./001171/0.240917.1434/linkml_validation_errs.yaml) |
 | [001171](./001171/) | [draft](./001171/draft/metadata.yaml) | 0.6.8 | Published | 2024-09-17T14:34:56.874141+00:00 | 0 | [2 (1 + 1)](./001171/draft/linkml_validation_errs.yaml) |
@@ -675,5 +679,13 @@
 | [001188](./001188/) | [draft](./001188/draft/metadata.yaml) | 0.6.8 | Published | 2024-09-12T19:25:46.193214+00:00 | 0 | [2 (1 + 1)](./001188/draft/linkml_validation_errs.yaml) |
 | [001190](./001190/) | [draft](./001190/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-09-17T17:39:59.944087+00:00 | [4 (2 string_pattern_mismatch, 2 url_parsing)](./001190/draft/pydantic_validation_errs.yaml) | [5 (1 + 1 + 3)](./001190/draft/linkml_validation_errs.yaml) |
 | [001192](./001192/) | [draft](./001192/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-09-07T17:16:03.688019+00:00 | 0 | [2 (1 + 1)](./001192/draft/linkml_validation_errs.yaml) |
-| [001193](./001193/) | [draft](./001193/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-09-15T10:15:43.517175+00:00 | 0 | [2 (1 + 1)](./001193/draft/linkml_validation_errs.yaml) |
+| [001193](./001193/) | [0.240921.1006](./001193/0.240921.1006/metadata.yaml) | 0.6.8 | Valid | 2024-09-21T10:06:48.290137+00:00 | 0 | [2 (1 + 1)](./001193/0.240921.1006/linkml_validation_errs.yaml) |
+| [001193](./001193/) | [draft](./001193/draft/metadata.yaml) | 0.6.8 | Published | 2024-09-21T10:06:47.328870+00:00 | 0 | [2 (1 + 1)](./001193/draft/linkml_validation_errs.yaml) |
 | [001194](./001194/) | [draft](./001194/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-09-17T16:33:59.983268+00:00 | 0 | [4 (1 + 3)](./001194/draft/linkml_validation_errs.yaml) |
+| [001195](./001195/) | [draft](./001195/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-09-25T20:38:46.848218+00:00 | [4 (3 string_pattern_mismatch, 1 union_tag_not_found)](./001195/draft/pydantic_validation_errs.yaml) | [19 (1 + 18)](./001195/draft/linkml_validation_errs.yaml) |
+| [001197](./001197/) | [draft](./001197/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-09-25T11:15:31.268430+00:00 | 0 | [2 (1 + 1)](./001197/draft/linkml_validation_errs.yaml) |
+| [001199](./001199/) | [draft](./001199/draft/metadata.yaml) | 0.6.8 | Valid | 2024-10-01T00:08:43.265590+00:00 | 0 | [9 (1 + 8)](./001199/draft/linkml_validation_errs.yaml) |
+| [001200](./001200/) | [draft](./001200/draft/metadata.yaml) | 0.6.8 | Valid | 2024-09-30T23:22:42.901839+00:00 | 0 | [9 (1 + 8)](./001200/draft/linkml_validation_errs.yaml) |
+| [001201](./001201/) | [draft](./001201/draft/metadata.yaml) | 0.6.8 | Valid | 2024-10-01T18:45:42.054530+00:00 | 0 | [2 (1 + 1)](./001201/draft/linkml_validation_errs.yaml) |
+| [001202](./001202/) | [draft](./001202/draft/metadata.yaml) | 0.6.8 | Valid | 2024-10-01T02:04:43.085944+00:00 | 0 | [9 (1 + 8)](./001202/draft/linkml_validation_errs.yaml) |
+| [001203](./001203/) | [draft](./001203/draft/metadata.yaml) | 0.6.8 | Invalid | 2024-10-02T19:59:54.422426+00:00 | 0 | [2 (1 + 1)](./001203/draft/linkml_validation_errs.yaml) |
