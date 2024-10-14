@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +19,19 @@
   message: '{''name'': ''Type 2 Diabetes'', ''dxdate'': [], ''schemaKey'': ''Disorder'',
     ''identifier'': ''snomedct:44054006''} is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Type 2 Diabetes'', ''dxdate'': [], ''schemaKey'': ''Disorder'',
+      ''identifier'': ''snomedct:44054006''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -19,6 +40,19 @@
     ''http://purl.obolibrary.org/obo/UBERON_0002421''} is not of type ''string'' in
     /about/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Hippocampus'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0002421''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -27,6 +61,19 @@
     ''http://purl.obolibrary.org/obo/UBERON_0001898''} is not of type ''string'' in
     /about/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 2
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Hypothalamus'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0001898''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -37,6 +84,22 @@
     University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Tingley, David'', ''email'': ''davidtingley2@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-4263-0476'', ''affiliation'': [{''name'': ''New
+      York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -45,6 +108,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''McClain, Kathryn'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -55,6 +132,22 @@
     'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation':
     True} is not of type 'string' in /contributor/2"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Kaya, Ekin', 'roleName': ['dcite:Author'], 'schemaKey': 'Person',
+      'affiliation': [{'name': 'Bo\u011Fazi\xE7i University', 'schemaKey': 'Affiliation',
+      'identifier': 'https://ror.org/03z9tma90'}, {'name': 'New York University',
+      'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation':
+      True} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -66,6 +159,23 @@
     ''https://ror.org/0190ak572''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Carpenter, Jordan'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Norwegian University
+      of Science and Technology'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/05xg72x27''}, {''name'': ''New York University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -75,6 +185,21 @@
     University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of
     type 'string' in /contributor/4"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+      'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New
+      York University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is
+      not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -85,4 +210,20 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.nih.gov/'', ''name'': ''National Institutes
+      of Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH122391,
+      U19NS104590, and U19NS107616'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

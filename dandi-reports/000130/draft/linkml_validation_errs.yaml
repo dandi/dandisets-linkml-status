@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -10,6 +17,19 @@
   message: '{''name'': ''Frontal cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
     ''UBERON:0001870''} is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Frontal cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''UBERON:0001870''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -18,6 +38,20 @@
     [''dcite:ContactPerson'', ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pei, Felix'', ''email'': ''felp8484@gmail.com'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Maintainer''], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -28,6 +62,22 @@
     ''identifier'': ''https://ror.org/042nb2s44''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sohn, Hansem'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8593-7473'', ''affiliation'':
+      [{''name'': ''Massachusetts Institute of Technology'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/042nb2s44''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -38,4 +88,20 @@
     ''https://ror.org/042nb2s44''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jazayeri, Mehrdad'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9764-6961'', ''affiliation'':
+      [{''name'': ''Massachusetts Institute of Technology'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/042nb2s44''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

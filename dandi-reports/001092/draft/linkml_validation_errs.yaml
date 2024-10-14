@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +18,20 @@
     ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''1 R21 EY 033669-02'',
     ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'':
+      ''1 R21 EY 033669-02'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -20,6 +41,20 @@
     ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen, Adam E.'', ''email'': ''cohen@chemistry.harvard.edu'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:FundingAcquisition'', ''dcite:Supervision''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -29,4 +64,19 @@
     ''dcite:DataManager'', ''dcite:Investigation'', ''dcite:Researcher''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Moult, Eric'', ''email'': ''eric_moult@harvard.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataCollector'', ''dcite:DataCurator'',
+      ''dcite:DataManager'', ''dcite:Investigation'', ''dcite:Researcher''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

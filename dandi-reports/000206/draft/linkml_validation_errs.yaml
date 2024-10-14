@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -14,6 +21,23 @@
     ''https://ror.org/02t274463''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Smith, Spencer'', ''email'': ''slabcloudcomp@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-2021-7034'', ''affiliation'': [{''name'': ''University
+      of California Santa Barbara'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02t274463''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -24,6 +48,22 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/02t274463''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''McGreal, Ryan'', ''email'': ''ryanpmcgreal@ucsb.edu'',
+      ''roleName'': [''dcite:ProjectManager''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-5849-4312'', ''affiliation'': [{''name'': ''University of California
+      Santa Barbara'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02t274463''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -35,4 +75,21 @@
     ''https://ror.org/02t274463''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Canzano, Joseph'', ''email'': ''jscanzano@ucsb.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-5371-4846'', ''affiliation'': [{''name'':
+      ''University of California Santa Barbara'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/02t274463''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

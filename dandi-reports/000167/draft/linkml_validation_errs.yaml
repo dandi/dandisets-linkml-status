@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
     were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -13,6 +21,21 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5139-2743'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Daste, Simon'', ''email'': ''simon_daste@brown.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCollector'', ''dcite:Researcher'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5139-2743'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -22,6 +45,21 @@
     '0000-0003-4501-5428', 'affiliation': [], 'includeInCitation': True} is not of
     type 'string' in /contributor/1"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Pierr\xE9, Andrea', 'email': 'andrea_pierre@brown.edu', 'roleName':
+      ['dcite:Software', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier':
+      '0000-0003-4501-5428', 'affiliation': [], 'includeInCitation': True} is not
+      of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,4 +69,19 @@
     ''0000-0001-6891-3760'', ''affiliation'': [], ''includeInCitation'': True} is
     not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pham, Tuan'', ''email'': ''tuanhpham@brown.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-6891-3760'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

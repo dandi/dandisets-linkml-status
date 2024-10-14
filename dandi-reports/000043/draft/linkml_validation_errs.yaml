@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -12,6 +19,21 @@
     ''identifier'': ''0000-0003-3136-8097'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kalmbach, Brian'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
+      ''dcite:ContactPerson'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-3136-8097'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -21,6 +43,20 @@
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ting, Jonathan'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+      ''dcite:Conceptualization''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8266-0392'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -29,6 +65,20 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6294-7513'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Owen, Scott'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6294-7513'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -38,4 +88,18 @@
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lein, Ed'', ''roleName'': [''dcite:Author'', ''dcite:ProjectLeader'',
+      ''dcite:Conceptualization''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9012-6552'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

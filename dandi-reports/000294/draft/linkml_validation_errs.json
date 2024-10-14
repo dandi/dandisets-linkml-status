@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Buccino, Alessio Paolo', 'email': 'alessiop.buccino@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3661-527X', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Buccino, Alessio Paolo', 'email': 'alessiop.buccino@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3661-527X', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Damart, Tanguy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2175-7304', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Damart, Tanguy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2175-7304', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Bartram, Julian', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7513-1716', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bartram, Julian', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7513-1716', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'name': 'Mandge, Darshan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7104-4604', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mandge, Darshan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7104-4604', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,7 +114,22 @@
     "message": "{'name': 'Xue, Xiaohan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5398-2368', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Xue, Xiaohan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5398-2368', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -53,7 +137,22 @@
     "message": "{'name': 'Zbili, Mickael', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7377-2605', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zbili, Mickael', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7377-2605', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -61,7 +160,22 @@
     "message": "{'name': 'G\u00e4nswein, Tobias', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0323-6767', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'G\u00e4nswein, Tobias', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0323-6767', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -69,7 +183,22 @@
     "message": "{'name': 'Jaquier, Aurelien', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jaquier, Aurelien', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -77,7 +206,22 @@
     "message": "{'name': 'Emmenegger, Vishalini', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3195-7772', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Emmenegger, Vishalini', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3195-7772', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -85,7 +229,22 @@
     "message": "{'name': 'Markram, Henry', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6164-2590', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Markram, Henry', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6164-2590', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -93,7 +252,22 @@
     "message": "{'name': 'Hierlemann, Andreas', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3838-2468', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hierlemann, Andreas', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3838-2468', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -101,7 +275,22 @@
     "message": "{'name': 'Van Geit, Werner', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2915-720X', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Van Geit, Werner', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2915-720X', 'affiliation': [{'name': 'EPFL - Blue Brain Project', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s376052'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -109,6 +298,21 @@
     "message": "{} is not of type 'string' in /contributor/12",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -15,6 +23,23 @@
     ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Findley, Teresa'', ''email'': ''tmfindley15@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Researcher''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2050-4869'', ''affiliation'':
+      [{''name'': ''University of Oregon'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -25,6 +50,22 @@
     ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wyrick, David G'', ''roleName'': [''dcite:Author'', ''dcite:Researcher''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8096-5766'', ''affiliation'':
+      [{''name'': ''University of Oregon'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -35,6 +76,22 @@
     ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cramer, Jennifer L'', ''roleName'': [''dcite:Researcher'',
+      ''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of Oregon'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -45,6 +102,22 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Brown, Morgan A'', ''email'': ''morganallen@gmail.com'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:Researcher'', ''dcite:Author''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -54,6 +127,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Holcomb, Blake'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -63,6 +151,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Attey, Robin'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -72,6 +175,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yeh, Dorian'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -81,6 +199,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Monasevitch, Eric'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -90,6 +223,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nouboussi, Nelly'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -99,6 +247,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cullen, Isabelle'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -108,6 +271,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/10'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Songco, Jeremea O'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -117,6 +295,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/11'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''King, Jared F'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Oregon'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0293rh119''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -128,6 +321,23 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013meh722''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/12'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ahmadian, Yashar'', ''roleName'': [''dcite:Author'', ''dcite:ProjectLeader'',
+      ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5942-0697'',
+      ''affiliation'': [{''name'': ''University of Oregon'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/0293rh119''}, {''name'': ''University of Cambridge'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013meh722''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -139,4 +349,21 @@
     ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/13'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Smear, Matt'', ''email'': ''smear@uoregon.edu'', ''roleName'':
+      [''dcite:ProjectLeader'', ''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Researcher''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4689-388X'', ''affiliation'':
+      [{''name'': ''University of Oregon'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0293rh119''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

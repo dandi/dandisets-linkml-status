@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': '', 'schemaKey': 'Disorder', 'identifier': ''} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': '', 'schemaKey': 'Disorder', 'identifier': ''} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Fitting, Sylvia ', 'email': 'sfitting@email.unc.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Conceptualization', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fitting, Sylvia ', 'email': 'sfitting@email.unc.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Conceptualization', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Barkha Yadav-Samudrala', 'email': 'yadavb@email.unc.edu', 'roleName': ['dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectLeader', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Researcher', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-2967-2017', 'includeInCitation': False} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Barkha Yadav-Samudrala', 'email': 'yadavb@email.unc.edu', 'roleName': ['dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectLeader', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Researcher', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-2967-2017', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,6 +91,21 @@
     "message": "'23.056' does not match '^(?i:http|https)://[^\\\\s]+$' in /protocol/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "'23.056' does not match '^(?i:http|https)://[^\\\\s]+$'",
+      "absolute_path": [
+        "protocol",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "protocol",
+        "items",
+        "pattern"
+      ],
+      "validator": "pattern",
+      "validator_value": "^(?i:http|https)://[^\\s]+$"
+    }
   }
 ]

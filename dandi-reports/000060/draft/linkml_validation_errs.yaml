@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -14,6 +21,23 @@
     ''includeInCitation'': False}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Finkelstein, Arseny'', ''email'': ''arsenyf@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-1480-5670'', ''affiliation'': [{''name'': ''Janelia
+      Research Campus, Howard Hughes Medical Institute'', ''schemaKey'': ''Affiliation'',
+      ''includeInCitation'': False}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -24,4 +48,20 @@
     Institute'', ''schemaKey'': ''Affiliation'', ''includeInCitation'': False}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Svoboda, Karel'', ''email'': ''svobodak@janelia.hhmi.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''affiliation'': [{''name'': ''Janelia Research Campus, Howard Hughes Medical
+      Institute'', ''schemaKey'': ''Affiliation'', ''includeInCitation'': False}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

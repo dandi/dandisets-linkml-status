@@ -1,0 +1,190 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+    'publishedBy' were unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''C. elegans whole-brain'', ''schemaKey'': ''Anatomy''} is
+    not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''C. elegans whole-brain'', ''schemaKey'': ''Anatomy''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Chaudhary, Shivesh'', ''email'': ''shiveshc@gmail.com'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+    ''dcite:Conceptualization'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+    ''dcite:Methodology'', ''dcite:Validation'', ''dcite:Software''], ''schemaKey'':
+    ''Person'', ''affiliation'': [{''name'': ''School of Chemical & Biomolecular Engineering,
+    Georgia Institute of Technology, Atlanta, United States'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chaudhary, Shivesh'', ''email'': ''shiveshc@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+      ''dcite:Conceptualization'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+      ''dcite:Methodology'', ''dcite:Validation'', ''dcite:Software''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''School of Chemical & Biomolecular
+      Engineering, Georgia Institute of Technology, Atlanta, United States'', ''schemaKey'':
+      ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Sprague, Daniel'', ''email'': ''daniel.y.sprague@gmail.com'',
+    ''roleName'': [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sprague, Daniel'', ''email'': ''daniel.y.sprague@gmail.com'',
+      ''roleName'': [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lee, Sol Ah'', ''roleName'': [''dcite:Investigation''], ''schemaKey'':
+    ''Person'', ''affiliation'': [{''name'': ''School of Chemical & Biomolecular Engineering,
+    Georgia Institute of Technology, Atlanta, United States'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lee, Sol Ah'', ''roleName'': [''dcite:Investigation''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''School of Chemical
+      & Biomolecular Engineering, Georgia Institute of Technology, Atlanta, United
+      States'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Li, Yueyi'', ''roleName'': [''dcite:Investigation''], ''schemaKey'':
+    ''Person'', ''affiliation'': [{''name'': ''School of Chemical & Biomolecular Engineering,
+    Georgia Institute of Technology, Atlanta, United States'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Li, Yueyi'', ''roleName'': [''dcite:Investigation''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''School of Chemical & Biomolecular
+      Engineering, Georgia Institute of Technology, Atlanta, United States'', ''schemaKey'':
+      ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Patel, Dhaval S'', ''roleName'': [''dcite:Methodology''],
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''School of Chemical &
+    Biomolecular Engineering, Georgia Institute of Technology, Atlanta, United States'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Patel, Dhaval S'', ''roleName'': [''dcite:Methodology''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''School of Chemical
+      & Biomolecular Engineering, Georgia Institute of Technology, Atlanta, United
+      States'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lu, Hang'', ''roleName'': [''dcite:Conceptualization'', ''dcite:FormalAnalysis'',
+    ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:ProjectAdministration'',
+    ''dcite:Visualization''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''School of Chemical & Biomolecular Engineering, Georgia Institute of Technology,
+    Atlanta, United States'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lu, Hang'', ''roleName'': [''dcite:Conceptualization'',
+      ''dcite:FormalAnalysis'', ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:ProjectAdministration'',
+      ''dcite:Visualization''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''School of Chemical & Biomolecular Engineering, Georgia Institute of Technology,
+      Atlanta, United States'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

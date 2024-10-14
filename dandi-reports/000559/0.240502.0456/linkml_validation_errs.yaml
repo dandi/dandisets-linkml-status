@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -13,6 +21,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Markowitz, Jeffrey E.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -22,6 +45,22 @@
     ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gillis, Winthrop'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-1659-8639'', ''affiliation'': [{''name'':
+      ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,6 +70,22 @@
     ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jay, Maya'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-5537-6476'', ''affiliation'': [{''name'':
+      ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -40,6 +95,21 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wood, Jeffrey'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -49,6 +119,22 @@
     ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Harris, Ryley W.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-6924-4981'', ''affiliation'': [{''name'':
+      ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -58,6 +144,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cieszkowski, Robert'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -67,6 +168,21 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Scott, Rebecca'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -76,6 +192,21 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Brann, David'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -85,6 +216,22 @@
     ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Koveal, Dorothy'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-2907-6925'', ''affiliation'': [{''name'':
+      ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -94,6 +241,21 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kula, Tomasz'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -103,6 +265,21 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/10'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Weinreb, Caleb'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Harvard Medical School'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -113,6 +290,22 @@
     ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/11'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Osman, Mohammed Abdal Monium '', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8606-6518'', ''affiliation'':
+      [{''name'': ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -122,6 +315,21 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/12'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pinto, Sandra Romero '', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Harvard University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -131,6 +339,22 @@
     ''Harvard University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/13'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Uchida, Naoshige '', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5755-9409'', ''affiliation'':
+      [{''name'': ''Harvard University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -141,6 +365,22 @@
     ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/14'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 14
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Linderman, Scott W.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3878-9073'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -152,6 +392,23 @@
     ''identifier'': ''https://ror.org/006w34k90''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/15'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 15
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sabatini, Bernardo'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0095-9177'', ''affiliation'':
+      [{''name'': ''Harvard Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03vek6s52''}, {''name'': ''Howard Hughes Medical Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -162,6 +419,22 @@
     Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/16'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 16
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Datta, Sandeep Robert '', ''email'': ''srdatta@hms.harvard.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-8068-3862'', ''affiliation'': [{''name'': ''Harvard
+      Medical School'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03vek6s52''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -171,6 +444,21 @@
     ''awardNumber'': ''RF1AG073625'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/17'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 17
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''RF1AG073625'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -180,6 +468,20 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/18'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 18
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Brain Research Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0492gsr48'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -188,6 +490,20 @@
     ''Organization'', ''identifier'': ''https://ror.org/01cmst727'', ''contactPoint'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/19'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 19
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Simons Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cmst727'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -197,6 +513,20 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/20'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 20
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Burroughs Wellcome Fund'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01d35cw23'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -206,6 +536,21 @@
     ''https://ror.org/04yhme281'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/21'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 21
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jane Coffin Childs Memorial Fund for Medical Research'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/04yhme281'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -215,6 +560,20 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/22'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 22
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -223,6 +582,20 @@
     ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/23'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 23
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bhagat, N.'', ''roleName'': [''dcite:ProjectAdministration''],
+      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -231,6 +604,20 @@
     ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/24'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 24
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Araki, J.'', ''roleName'': [''dcite:ProjectAdministration''],
+      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -239,6 +626,20 @@
     ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/25'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 25
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wallace, J.'', ''roleName'': [''dcite:ProjectAdministration''],
+      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -247,6 +648,20 @@
     ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/26'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 26
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Harvard Neurobiology Imaging Core'', ''roleName'': [''dcite:Resources''],
+      ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -256,6 +671,21 @@
     ''https://ror.org/01s5ya894'', ''awardNumber'': ''NS072030'', ''contactPoint'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/27'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 27
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Neurological Disorders and Stroke'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/01s5ya894'', ''awardNumber'': ''NS072030'', ''contactPoint'':
+      [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -264,6 +694,20 @@
     ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/28'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 28
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''HMS Research Instrumentation Core'', ''roleName'': [''dcite:Resources''],
+      ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -272,6 +716,20 @@
     ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''contactPoint'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/29'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 29
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bertarelli Program in Translational Neuroscience and Neuroengineering'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''contactPoint'':
+      [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -281,6 +739,21 @@
     ''awardNumber'': ''EY012196'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/30'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 30
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Eye Institute'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03wkg3b53'',
+      ''awardNumber'': ''EY012196'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -289,6 +762,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/31'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 31
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gershman, S.'', ''roleName'': [''dcite:Other''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -297,6 +784,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/32'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 32
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Assad, J.'', ''roleName'': [''dcite:Other''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -305,6 +806,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/33'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 33
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Shea, S.'', ''roleName'': [''dcite:Other''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -313,6 +828,20 @@
     ''roleName'': [''dcite:Resources''], ''schemaKey'': ''Organization'', ''contactPoint'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/34'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 34
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''O2 High Performance Compute Cluster at Harvard Medical
+      School'', ''roleName'': [''dcite:Resources''], ''schemaKey'': ''Organization'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -322,6 +851,21 @@
     ''0009-0005-8943-5450'', ''affiliation'': [], ''includeInCitation'': False} is
     not of type ''string'' in /contributor/35'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 35
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Adkisson, Paul'', ''email'': ''paul.adkisson@catalystneuro.com'',
+      ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0005-8943-5450'', ''affiliation'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -331,6 +875,21 @@
     ''0000-0002-0829-4790'', ''affiliation'': [], ''includeInCitation'': False} is
     not of type ''string'' in /contributor/36'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 36
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Baker, Cody'', ''email'': ''cody.baker@catalystneuro.com'',
+      ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-0829-4790'', ''affiliation'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -340,6 +899,21 @@
     ''awardNumber'': ''R01NS114020'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/37'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 37
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03f394x19'',
+      ''awardNumber'': ''R01NS114020'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -349,6 +923,21 @@
     ''awardNumber'': ''U19NS113201'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/38'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 38
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03f394x19'',
+      ''awardNumber'': ''U19NS113201'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -358,6 +947,21 @@
     ''awardNumber'': ''F31NS113385'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/39'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 39
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03f394x19'',
+      ''awardNumber'': ''F31NS113385'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -367,4 +971,19 @@
     ''awardNumber'': ''F31NS122155'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/40'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 40
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03f394x19'',
+      ''awardNumber'': ''F31NS122155'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

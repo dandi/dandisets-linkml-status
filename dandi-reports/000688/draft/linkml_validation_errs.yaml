@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -14,6 +22,22 @@
     ''Person'', ''identifier'': ''0000-0001-9800-2386'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://ma.ttperi.ch/'', ''name'': ''Perich, Matthew G.'',
+      ''email'': ''matthew.perich@umontreal.ca'', ''roleName'': [''dcite:ContactPerson'',
+      ''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-9800-2386'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -22,6 +46,20 @@
     ''Person'', ''identifier'': ''0000-0001-8675-7140'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Miller, Lee E.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8675-7140'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,6 +69,21 @@
     ''0000-0001-8778-9507'', ''affiliation'': [], ''includeInCitation'': True} is
     not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.mehai.dev/'', ''name'': ''Azabou, Mehdi'', ''email'':
+      ''mehdiazabou@gmail.com'', ''roleName'': [], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-8778-9507'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -39,4 +92,18 @@
     [], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6962-524X'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dyer, Eva L.'', ''email'': ''evadyer@gatech.edu'', ''roleName'':
+      [], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6962-524X'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

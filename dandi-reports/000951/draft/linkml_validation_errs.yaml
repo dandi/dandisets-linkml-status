@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
     were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -15,6 +23,23 @@
     ''https://ror.org/02qz8b764''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://cowleygroup.cshl.edu/'', ''name'': ''Cowley, Benjamin'',
+      ''email'': ''cowley@cshl.edu'', ''roleName'': [''dcite:ContactPerson''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-2681-2448'', ''affiliation'': [{''name'':
+      ''Cold Spring Harbor Laboratory'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02qz8b764''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -24,6 +49,21 @@
     Collaboration on the Global Brain Postdoctoral Fellowship'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Calhoun, Adam'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-9347-7956'', ''awardNumber'': ''Simons
+      Collaboration on the Global Brain Postdoctoral Fellowship'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -32,6 +72,19 @@
     ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Rangarajan, Nivedita'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -39,6 +92,19 @@
   message: '{''name'': ''Ireland, Elise'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ireland, Elise'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -49,6 +115,22 @@
     Initiative Award (R01 NS104899)'', ''includeInCitation'': True} is not of type
     ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://pillowlab.princeton.edu/'', ''name'': ''Pillow,
+      Jonathan'', ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''awardNumber'':
+      ''The Simons Collaboration on the Global Brain Investigator Awards and NIH BRAIN
+      Initiative Award (R01 NS104899)'', ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -60,4 +142,21 @@
     and NINDS R35 Research Program Award.'', ''includeInCitation'': True} is not of
     type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://murthylab.princeton.edu/'', ''name'': ''Murthy,
+      Mala'', ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-3063-3389'', ''awardNumber'': ''The Simons Collaboration on the
+      Global Brain Investigator Awards and NIH BRAIN Initiative Award (R01 NS104899),
+      and an HHMI Faculty Scholar Award and NINDS R35 Research Program Award.'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
