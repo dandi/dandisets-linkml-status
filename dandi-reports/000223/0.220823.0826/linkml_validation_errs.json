@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Xue, Xiaohan', 'email': 'xiaohan.xue@outlook.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5398-2368', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'China Scholarship Council; ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Xue, Xiaohan', 'email': 'xiaohan.xue@outlook.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5398-2368', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'China Scholarship Council; ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Buccino, Alessio', 'email': 'alessiop.buccino@gmail.com', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3661-527X', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ETH Zurich Postdoctoral Fellowship 19-2 FEL-17', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Buccino, Alessio', 'email': 'alessiop.buccino@gmail.com', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3661-527X', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ETH Zurich Postdoctoral Fellowship 19-2 FEL-17', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Kumar, Sreedhar Saseendran', 'email': 'sreedhar.kumar@bsse.ethz.ch', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5272-6474', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kumar, Sreedhar Saseendran', 'email': 'sreedhar.kumar@bsse.ethz.ch', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5272-6474', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'name': 'Hierlemann, Andreas', 'email': 'andreas.hierlemann@bsse.ethz.ch', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3838-2468', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hierlemann, Andreas', 'email': 'andreas.hierlemann@bsse.ethz.ch', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3838-2468', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,6 +114,21 @@
     "message": "{'name': 'Bartram, Julian', 'email': 'julian.bartram@bsse.ethz.ch', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7513-1716', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bartram, Julian', 'email': 'julian.bartram@bsse.ethz.ch', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7513-1716', 'affiliation': [{'name': 'ETH Zurich', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}], 'awardNumber': 'ERC advanced grant 694829', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Daste, Simon', 'email': 'simon_daste@brown.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Researcher', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5139-2743', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Daste, Simon', 'email': 'simon_daste@brown.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Researcher', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5139-2743', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Pierr\u00e9, Andrea', 'email': 'andrea_pierre@brown.edu', 'roleName': ['dcite:Software', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4501-5428', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pierr\u00e9, Andrea', 'email': 'andrea_pierre@brown.edu', 'roleName': ['dcite:Software', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4501-5428', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,6 +68,21 @@
     "message": "{'name': 'Pham, Tuan', 'email': 'tuanhpham@brown.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-6891-3760', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pham, Tuan', 'email': 'tuanhpham@brown.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-6891-3760', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

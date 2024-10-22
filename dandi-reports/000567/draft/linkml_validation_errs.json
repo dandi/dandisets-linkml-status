@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Yin, Jiaze', 'email': 'jiazeyin@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yin, Jiaze', 'email': 'jiazeyin@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,24 @@
     "message": "'relation' is a required property in /relatedResource/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "'relation' is a required property",
+      "absolute_path": [
+        "relatedResource",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "relatedResource",
+        "items",
+        "required"
+      ],
+      "validator": "required",
+      "validator_value": [
+        "relation"
+      ]
+    }
   },
   {
     "type": "jsonschema validation",
@@ -34,6 +75,34 @@
       "'name' is a required property",
       "'name' is a required property",
       "'name' is a required property"
-    ]
+    ],
+    "source": {
+      "message": "{} is not valid under any of the given schemas",
+      "absolute_path": [
+        "wasGeneratedBy",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "wasGeneratedBy",
+        "items",
+        "anyOf"
+      ],
+      "validator": "anyOf",
+      "validator_value": [
+        {
+          "$ref": "#/$defs/Activity"
+        },
+        {
+          "$ref": "#/$defs/Project"
+        },
+        {
+          "$ref": "#/$defs/PublishActivity"
+        },
+        {
+          "$ref": "#/$defs/Session"
+        }
+      ]
+    }
   }
 ]

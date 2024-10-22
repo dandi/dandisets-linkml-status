@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -15,6 +23,23 @@
     ''identifier'': ''https://ror.org/055f7t516''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fedele, Tommaso'', ''email'': ''fedele.tm@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7574-8062'', ''affiliation'': [{''name'': ''National
+      Research University Higher School of Economics, Moscow, Russian Federation'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/055f7t516''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -23,6 +48,20 @@
     ''identifier'': ''0000-0001-7729-4754'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hilfiker, Peter '', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7729-4754'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,6 +70,19 @@
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Grunwald, Thomas '', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -41,6 +93,22 @@
     'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01462r250'}], 'includeInCitation':
     True} is not of type 'string' in /contributor/3"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Stieglitz, Lennart ', 'roleName': [], 'schemaKey': 'Person',
+      'identifier': '0000-0002-3744-5105', 'affiliation': [{'name': 'Klinik f\xFCr
+      Neurochirurgie, Universit\xE4tsSpital Z\xFCrich und Universit\xE4t Z\xFCrich,
+      Zurich, Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01462r250'}],
+      'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -50,6 +118,21 @@
     Z\xFCrich, Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01462r250'}],
     'includeInCitation': True} is not of type 'string' in /contributor/4"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Jokeit, Hennric', 'roleName': [], 'schemaKey': 'Person', 'identifier':
+      '0000-0001-6969-9639', 'affiliation': [{'name': 'Zentrum f\xFCr Neurowissenschaften
+      Z\xFCrich, Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01462r250'}],
+      'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -63,6 +146,25 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05a28rw58''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.hohenheim.ch'', ''name'': ''Hohenheim, Jan'',
+      ''email'': ''jan@hohenheim.ch'', ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9436-8348'', ''affiliation'':
+      [{''name'': ''Institute of Neuroinformatics, University of Zurich & ETH Zurich'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02crff812''},
+      {''name'': ''Institute of Neuroinformatics, University of Zurich & ETH Zurich'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05a28rw58''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -76,6 +178,25 @@
     'identifier': 'https://ror.org/01462r250'}], 'includeInCitation': True} is not
     of type 'string' in /contributor/6"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Sarnthein, Johannes ', 'email': 'johannes.sarnthein@usz.ch',
+      'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person',
+      'identifier': '0000-0001-9141-381X', 'affiliation': [{'name': 'Klinik f\xFCr
+      Neurochirurgie, Universit\xE4tsSpital Z\xFCrich und Universit\xE4t Z\xFCrich,
+      Zurich, Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01462r250'},
+      {'name': 'Zentrum f\xFCr Neurowissenschaften Z\xFCrich, Switzerland', 'schemaKey':
+      'Affiliation', 'identifier': 'https://ror.org/01462r250'}], 'includeInCitation':
+      True} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -86,6 +207,22 @@
     ''awardNumber'': ''204651'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.snf.ch/en'', ''name'': '' Swiss National Science
+      Foundation'', ''email'': ''projects.ls@snf.ch'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00yjd3n13'',
+      ''awardNumber'': ''204651'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -96,4 +233,20 @@
     ''awardNumber'': ''2586'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.kavlifoundation.org/'', ''name'': '' The Kavli
+      Foundation'', ''email'': ''communications@kavlifoundation.org'', ''roleName'':
+      [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00kztt736'',
+      ''awardNumber'': ''2586'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

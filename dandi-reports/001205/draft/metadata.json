@@ -1,0 +1,79 @@
+{
+  "id": "DANDI:001205/draft",
+  "url": "https://dandiarchive.org/dandiset/001205/draft",
+  "name": "Adaptation to visual sparsity enhances responses to isolated stimuli",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
+  "citation": "Gou, Tong (2024) Adaptation to visual sparsity enhances responses to isolated stimuli (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001205/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001205",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Gou, Tong",
+      "email": "tong.gou@yale.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-10-14T19:11:27.553855+00:00",
+  "description": "Associated Reference Publication: Sensory systems adapt their response properties to the statistics of their inputs. For instance, visual systems adapt to low-order statistics like mean and variance to encode stimuli efficiently or to facilitate specific downstream computations. However, it remains unclear how other statistical features affect sensory adaptation. Here, we explore how Drosophila\u2019s visual motion circuits adapt to stimulus sparsity, a measure of the signal\u2019s intermittency not captured by low-order statistics alone. Early visual neurons in both ON and OFF pathways alter their responses dramatically with stimulus sparsity, responding positively to both light and dark sparse stimuli but linearly to dense stimuli. These changes extend to downstream ON and OFF direction-selective neurons, which are activated by sparse stimuli of both polarities, but respond with opposite signs to light and dark regions of dense stimuli. Thus, sparse stimuli activate both ON and OFF pathways, recruiting a larger fraction of the circuit and potentially enhancing the salience of isolated stimuli. Overall, our results reveal visual response properties that increase the fraction of the circuit responding to sparse, isolated stimuli.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Drosophila melanogaster - Fruit fly",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 136084878697,
+    "numberOfFiles": 277,
+    "numberOfSubjects": 277,
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "OpticalChannel",
+      "ImagingPlane"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.8",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001205/versions/draft/assets/"
+  ]
+}

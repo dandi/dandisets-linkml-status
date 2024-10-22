@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Yu Feng', 'email': 'susieyufeng@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectManager'], 'schemaKey': 'Organization', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yu Feng', 'email': 'susieyufeng@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectManager'], 'schemaKey': 'Organization', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Zhe Dong', 'email': 'phil.zhe.dong@gmail.com', 'roleName': ['dcite:FormalAnalysis'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zhe Dong', 'email': 'phil.zhe.dong@gmail.com', 'roleName': ['dcite:FormalAnalysis'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,6 +68,21 @@
     "message": "{'name': 'Tristan Shuman', 'email': 'tristan.shuman@mssm.edu', 'roleName': ['dcite:ContactPerson', 'dcite:FundingAcquisition'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tristan Shuman', 'email': 'tristan.shuman@mssm.edu', 'roleName': ['dcite:ContactPerson', 'dcite:FundingAcquisition'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

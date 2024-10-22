@@ -1,6 +1,5 @@
 {
   "id": "DANDI:000026/draft",
-  "doi": "10.80507/dandi.123456/0.123456.1234",
   "url": "https://dandiarchive.org/dandiset/000026/draft",
   "name": "Human brain cell census for BA 44/45",
   "about": [
@@ -27,7 +26,7 @@
   ],
   "version": "draft",
   "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
-  "citation": "Mazzamuto, Giacomo; Costantini, Irene; Gavryusev, Vladislav; Castelli, Filippo Maria; Pesce, Luca; Scardigli, Marina; Pavone, Francesco Saverio; Roffilli, Matteo; Silvestri, Ludovico; Brady, Niamh; Ramazzotti, Josephine; Hof, Patrick R.; Boas, David A.; Fischl, Bruce; Morgan, Leah; Yang, Jiarui; Chang, Shuaibin; Laffey, Jessie; Magnain, Caroline; Varadarajan, Divya; Wang, Hui; Frost, Robert; Kouwe, Andre van der; Player, Allison Stevens; Atzeni, Alessia; Gonzalez, Juan Eugenio Iglesias; Balbastre, Yael; Vera, Matthew; Cordero, Devani; Nestor, Kimberly; Ammon, William; Nolan, Jackson; Mora, Jocelyn; Pallares, Erendira Garcia; Augustinack, Jean; Diamond, Bram; Fogarty, Morgan; Boyd, Emma; Varghese, Merina; Dalca, Adrian V.; Edlow, Brian; Frosche, Matthew; Wicinski, Bridget; Chen, I-Chun Anderson (2024) Human brain cell census for BA 44/45 (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+  "citation": "Mazzamuto, Giacomo; Costantini, Irene; Danila Di Meo; Castelli, Filippo Maria; Pesce, Luca; Scardigli, Marina; Pavone, Francesco Saverio; Roffilli, Matteo; Silvestri, Ludovico; Brady, Niamh; Ramazzotti, Josephine; Hof, Patrick R.; Boas, David A.; Fischl, Bruce; Morgan, Leah; Yang, Jiarui; Chang, Shuaibin; Laffey, Jessie; Magnain, Caroline; Varadarajan, Divya; Wang, Hui; Frost, Robert; Kouwe, Andre van der; Player, Allison Stevens; Atzeni, Alessia; Gonzalez, Juan Eugenio Iglesias; Balbastre, Yael; Vera, Matthew; Cordero, Devani; Nestor, Kimberly; Ammon, William; Nolan, Jackson; Mora, Jocelyn; Pallares, Erendira Garcia; Augustinack, Jean; Diamond, Bram; Fogarty, Morgan; Boyd, Emma; Varghese, Merina; Dalca, Adrian V.; Edlow, Brian; Frosche, Matthew; Wicinski, Bridget; Chen, I-Chun Anderson; Gavryusev, Vladislav (2024) Human brain cell census for BA 44/45 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000026/draft",
   "keywords": [
     "multi-modal imaging",
     "MRI",
@@ -97,22 +96,14 @@
       "includeInCitation": true
     },
     {
-      "name": "Gavryusev, Vladislav",
+      "name": "Danila Di Meo",
+      "email": "dimeo@lens.unifi.it",
       "roleName": [
-        "dcite:Author",
-        "dcite:DataCollector",
-        "dcite:ProjectMember",
-        "dcite:Methodology"
+        "dcite:Methodology",
+        "dcite:DataCollector"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0001-7734-7828",
-      "affiliation": [
-        {
-          "name": "European Laboratory for Non-Linear Spectroscopy, LENS, Italy",
-          "schemaKey": "Affiliation",
-          "includeInCitation": false
-        }
-      ],
+      "identifier": "0000-0001-6545-0676",
       "includeInCitation": true
     },
     {
@@ -979,26 +970,29 @@
       "awardNumber": "1U01MH117023-01",
       "contactPoint": [],
       "includeInCitation": false
+    },
+    {
+      "name": "Gavryusev, Vladislav",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:ProjectMember",
+        "dcite:Methodology"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-7734-7828",
+      "affiliation": [
+        {
+          "name": "European Laboratory for Non-Linear Spectroscopy, LENS, Italy",
+          "schemaKey": "Affiliation",
+          "includeInCitation": false
+        }
+      ],
+      "includeInCitation": true
     }
   ],
   "dateCreated": "2020-06-24T18:34:50.022000+00:00",
   "description": "Magnetic resonance imaging (MRI) is used to establish a macroscopic reference coordinate system of laminar and cytoarchitectural boundaries. Cell counting is obtained with both traditional immunohistochemistry, to provide a stereological gold standard, and with a custom-made inverted confocal light-sheet fluorescence microscope (LSM) for 3D imaging at cellular resolution. Finally, polarization-sensitive optical coherence tomography (PSOCT) enables registration of the distorted histological cell typing obtained with LSM to the MRI-based atlas coordinate system.",
-  "publishedBy": {
-    "id": "urn:uuid:f6eaac52-2363-4f4c-b60b-66c12352e395",
-    "name": "DANDI publish",
-    "endDate": "2024-02-08T15:14:52.254922+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2024-02-08T15:14:52.254922+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:0ce94141-5d41-4e87-a81c-e1f8e82601c8",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "studyTarget": [
     "Our consortium will develop and utilize an imaging infrastructure to create a human brain cell census and instantiate it in a coordinate system that will enable an immediate impact of all in vivo MRI studies of the human brain. Our imaging pipeline begins with 150 \u03bcm isotropic ex vivo structural MRIs and 500 \u03bcm 90 direction diffusion MRI. 4x4x2 cm tissue blocks will then be imaged with serial sectioning polarization sensitive optical coherence tomography (PS-OCT) to obtain 20 \u03bcm isotropic resolution images of cyto- and myelo-architectural features and fiber tractography. Registration with the MRI is preserved because imaging is performed before sectioning. Serial sections with 150 \u03bcm thickness are cut from the block face, cleared, and subsequently imaged by selective plane imaging microscopy (SPIM) with 1 \u03bcm isotropic resolution, and with multiplexed histological staining of multiple molecular markers. Segmentation of common features amongst the SPIM, OCT, and MRI, permits registration of the cellular information from SPIM back to the MRI coordinate system with OCT serving as an important intermediary permitting registration of SPIM with MRI with micrometer resolution. Our aims are designed to establish our imaging workflow and build a cell census atlas for language regions in human frontal cortex, resulting in a clear path forward for obtaining the cell census for the entire human brain. "
   ],
@@ -1020,7 +1014,6 @@
     "variableMeasured": [],
     "measurementTechnique": []
   },
-  "datePublished": "2024-02-08T15:14:52.254922+00:00",
   "schemaVersion": "0.6.0",
   "ethicsApproval": [],
   "wasGeneratedBy": [
@@ -1103,6 +1096,15 @@
       "schemaKey": "Resource",
       "identifier": "Paper",
       "repository": "Biomedical Optics Express"
+    },
+    {
+      "url": "https://academic.oup.com/cercor/article-abstract/34/9/bhae362/7755370?login=false",
+      "name": "Segmentation of supragranular and infragranular layers in ultra-high-resolution 7T ex vivo MRI of the human cerebral cortex",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "identifier": "Paper",
+      "repository": "Cerebral Cortex",
+      "resourceType": "dcite:JournalArticle"
     }
   ],
   "manifestLocation": [

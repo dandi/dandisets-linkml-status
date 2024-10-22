@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +19,19 @@
   message: '{''name'': ''Sprague-Dawley'', ''schemaKey'': ''GenericType''} is not
     of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Sprague-Dawley'', ''schemaKey'': ''GenericType''} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -18,6 +39,19 @@
   message: '{''name'': ''bilateral subiculum (SUB)'', ''schemaKey'': ''Anatomy''}
     is not of type ''string'' in /about/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''bilateral subiculum (SUB)'', ''schemaKey'': ''Anatomy''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -25,6 +59,19 @@
   message: '{''name'': ''dentate gyrus (DG)'', ''schemaKey'': ''Anatomy''} is not
     of type ''string'' in /about/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 2
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''dentate gyrus (DG)'', ''schemaKey'': ''Anatomy''} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -32,6 +79,19 @@
   message: '{''name'': ''CA1 subfield of the hippocampus (CA1)'', ''schemaKey'': ''Anatomy''}
     is not of type ''string'' in /about/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 3
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''CA1 subfield of the hippocampus (CA1)'', ''schemaKey'':
+      ''Anatomy''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -39,6 +99,19 @@
   message: '{''name'': ''CA3 subfield of the hippocampus (CA3)'', ''schemaKey'': ''Anatomy''}
     is not of type ''string'' in /about/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 4
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''CA3 subfield of the hippocampus (CA3)'', ''schemaKey'':
+      ''Anatomy''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -46,6 +119,19 @@
   message: '{''name'': ''amygdala (AMD)'', ''schemaKey'': ''Anatomy''} is not of type
     ''string'' in /about/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 5
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''amygdala (AMD)'', ''schemaKey'': ''Anatomy''} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -53,6 +139,19 @@
   message: '{''name'': ''anterior nucleus of the thalamus (ANT)'', ''schemaKey'':
     ''Anatomy''} is not of type ''string'' in /about/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 6
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''anterior nucleus of the thalamus (ANT)'', ''schemaKey'':
+      ''Anatomy''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -62,6 +161,21 @@
     ''Person'', ''identifier'': ''0009-0003-1749-4043'', ''includeInCitation'': True}
     is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Haoqi, Ni'', ''email'': ''nihq@zju.edu.cn'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataManager'', ''dcite:FormalAnalysis''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0009-0003-1749-4043'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -70,6 +184,20 @@
     ''dcite:Researcher''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
     is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yufang, Yang'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+      ''dcite:Researcher''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -78,6 +206,20 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2585-4611'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fang, Zhang'', ''roleName'': [''dcite:DataCollector'',
+      ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2585-4611'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -86,6 +228,20 @@
     [''dcite:DataCollector'', ''dcite:Researcher''], ''schemaKey'': ''Person'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yuting, Sun'', ''email'': ''sunyt@zju.edu.cn'', ''roleName'':
+      [''dcite:DataCollector'', ''dcite:Researcher''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -94,6 +250,20 @@
     ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2576-6796'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yongte, Zheng'', ''roleName'': [''dcite:DataCollector'',
+      ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2576-6796'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -102,6 +272,19 @@
     ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Junming, Zhu'', ''roleName'': [''dcite:Supervision'', ''dcite:Validation''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -111,6 +294,21 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9059-3860'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kedi, Xu'', ''email'': ''xukd@zju.edu.cn'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:ProjectAdministration'', ''dcite:Supervision''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9059-3860'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -119,6 +317,20 @@
     'schemaKey': 'Organization', 'awardNumber': '2021ZD0200405', 'includeInCitation':
     False} is not of type 'string' in /contributor/7"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'STI 2030\u2014Major Projects', 'roleName': ['dcite:Funder'],
+      'schemaKey': 'Organization', 'awardNumber': '2021ZD0200405', 'includeInCitation':
+      False} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -127,6 +339,20 @@
     [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'': ''82272112'',
     ''includeInCitation'': False} is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Natural Science Foundation of China'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'': ''82272112'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -135,6 +361,20 @@
     ''schemaKey'': ''Organization'', ''awardNumber'': ''LR23H180002'', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Outstanding Youth Program of Zhejiang Natural Science Foundation'',
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''LR23H180002'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -143,6 +383,20 @@
     ''schemaKey'': ''Organization'', ''awardNumber'': ''2021KYY600403-0001'', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/10'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''the Fundamental Research Funds for the Central Universities'',
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''2021KYY600403-0001'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -152,4 +406,18 @@
     ''SN-ZJU-SIAS-002'', ''includeInCitation'': False} is not of type ''string'' in
     /contributor/11'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''the Starry Night Science Fund of Zhejiang University Shanghai
+      Institute for Advanced Study'', ''schemaKey'': ''Organization'', ''awardNumber'':
+      ''SN-ZJU-SIAS-002'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

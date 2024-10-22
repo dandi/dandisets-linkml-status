@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +19,19 @@
   message: '{''name'': ''hippocampus'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0014548''}
     is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''hippocampus'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0014548''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -23,6 +44,24 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/03mtd9a03''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://pubmed.ncbi.nlm.nih.gov/?cmd=search&term=Mark+H.+Plitt'',
+      ''name'': ''Plitt, Mark'', ''email'': ''markplitt@gmail.com'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7154-6292'', ''affiliation'':
+      [{''name'': ''Department of Neurobiology, Stanford University, Stanford, CA,
+      USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03mtd9a03''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -34,4 +73,21 @@
     ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://pubmed.ncbi.nlm.nih.gov/?cmd=search&term=Lisa+M.+Giocomo'',
+      ''name'': ''Giocomo, Lisa M.'', ''email'': ''giocomo@gmail.com'', ''roleName'':
+      [''dcite:Author'', ''dcite:Supervision'', ''dcite:Researcher''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-0416-2528'', ''affiliation'': [{''name'':
+      ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

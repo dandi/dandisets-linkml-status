@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -13,6 +20,22 @@
     ''https://ror.org/05xg72x27''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jacobsen, R Irene'', ''email'': ''ragnhild.i.jacobsen@ntnu.no'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-9521-5044'', ''affiliation'': [{''name'': ''NTNU'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -23,6 +46,22 @@
     ''https://ror.org/05xg72x27''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nair, Rajeevkumar R'', ''email'': ''rajeevkumar.r.nair@ntnu.no'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-9755-0874'', ''affiliation'': [{''name'': ''NTNU'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -33,6 +72,22 @@
     ''https://ror.org/05xg72x27''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Obenhaus, Horst A'', ''email'': ''horst.obenhaus@ntnu.no'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-7670-4827'', ''affiliation'': [{''name'': ''NTNU'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -42,6 +97,21 @@
     Basel', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s6k3f65'}],
     'includeInCitation': True} is not of type 'string' in /contributor/3"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Donato, Flavio', 'roleName': ['dcite:Author'], 'schemaKey':
+      'Person', 'identifier': '0000-0002-0732-1654', 'affiliation': [{'name': 'Universit\xE4t
+      Basel', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02s6k3f65'}],
+      'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -51,6 +121,21 @@
     [{''name'': ''NTNU'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Slettmoen, Torstein'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0959-7304'', ''affiliation'':
+      [{''name'': ''NTNU'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -61,6 +146,22 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Moser, May-Britt'', ''email'': ''may-britt.moser@ntnu.no'',
+      ''roleName'': [''dcite:Author'', ''dcite:ProjectLeader''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7884-3049'', ''affiliation'': [{''name'': ''NTNU'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -71,6 +172,22 @@
     ''NTNU'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Moser, Edvard I'', ''email'': ''edvard.moser@ntnu.no'',
+      ''roleName'': [''dcite:Author'', ''dcite:ProjectLeader'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0226-5566'', ''affiliation'':
+      [{''name'': ''NTNU'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -80,6 +197,21 @@
     ''NTNU'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
     ''includeInCitation'': False} is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ball, Simon'', ''email'': ''simon.ball@ntnu.no'', ''roleName'':
+      [''dcite:Maintainer''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''NTNU'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}],
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -89,6 +221,21 @@
     ''identifier'': ''https://ror.org/05xg72x27''}], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Waade, Haagen'', ''roleName'': [''dcite:Maintainer''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''NTNU'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/05xg72x27''}], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -98,6 +245,21 @@
     ''awardNumber'': ''338865'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''European Research Council'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0472cxd90'',
+      ''awardNumber'': ''338865'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -107,6 +269,21 @@
     ''awardNumber'': ''223262'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/10'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Research Council of Norway'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00epmv149'',
+      ''awardNumber'': ''223262'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -116,6 +293,21 @@
     ''awardNumber'': ''295721'', ''contactPoint'': [], ''includeInCitation'': False}
     is not of type ''string'' in /contributor/11'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Research Council of Norway'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00epmv149'',
+      ''awardNumber'': ''295721'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -125,4 +317,18 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/12'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''The Kavli Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00kztt736'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

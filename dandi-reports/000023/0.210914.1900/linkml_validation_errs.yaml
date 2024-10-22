@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +19,19 @@
   message: '{''name'': ''neocortex'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0001950''}
     is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''neocortex'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0001950''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -21,6 +42,22 @@
     Science'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00dcv1019''}],
     ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kalmbach, Brian'', ''email'': ''briank@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-3136-8097'', ''affiliation'': [{''name'': ''Allen Institute for
+      Brian Science'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00dcv1019''}],
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,6 +68,22 @@
     Science'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00dcv1019''}],
     ''includeInCitation'': False} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chartrand, Tom'', ''email'': ''tom.chartrand@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-7093-8681'', ''affiliation'': [{''name'': ''Allen Institute for
+      Brian Science'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00dcv1019''}],
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -40,6 +93,21 @@
     ''https://ror.org/00dcv1019'', ''contactPoint'': [], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org'', ''name'': ''Allen Institute
+      for Brian Science'', ''roleName'': [], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/00dcv1019'', ''contactPoint'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -50,4 +118,20 @@
     ''U01MH114812'', ''contactPoint'': [], ''includeInCitation'': False} is not of
     type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.nimh.nih.gov/index.shtml'', ''name'': ''National
+      Institute of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'':
+      ''U01MH114812'', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

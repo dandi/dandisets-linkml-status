@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'primary motor cortex', 'schemaKey': 'Disorder', 'identifier': 'UBERON:0001384'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'primary motor cortex', 'schemaKey': 'Disorder', 'identifier': 'UBERON:0001384'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Scala, Federico', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Scala, Federico', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Kobak, Dmitry', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5639-7209', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kobak, Dmitry', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5639-7209', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'name': 'Bernabucci, Matteo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4458-117X', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bernabucci, Matteo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4458-117X', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,7 +114,22 @@
     "message": "{'name': 'Bernaerts, Yves', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bernaerts, Yves', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -53,7 +137,22 @@
     "message": "{'name': 'Cadwell, Cathryn Rene', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1963-8285', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cadwell, Cathryn Rene', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1963-8285', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -61,7 +160,22 @@
     "message": "{'name': 'Castro, Jesus Ramon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Castro, Jesus Ramon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -69,7 +183,22 @@
     "message": "{'name': 'Hartmanis, Leonard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4922-8781', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hartmanis, Leonard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4922-8781', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -77,7 +206,22 @@
     "message": "{'name': 'Jiang, Xiaolong', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8066-1383', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jiang, Xiaolong', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8066-1383', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -85,7 +229,22 @@
     "message": "{'name': 'Laturnus, Sophie', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9532-788X', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Laturnus, Sophie', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9532-788X', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -93,7 +252,22 @@
     "message": "{'name': 'Miranda, Elanine', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/9",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Miranda, Elanine', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -101,7 +275,22 @@
     "message": "{'name': 'Mulherkar, Shalaka', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8736-527X', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/10",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mulherkar, Shalaka', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8736-527X', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -109,7 +298,22 @@
     "message": "{'name': 'Tan, Zheng Huan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/11",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tan, Zheng Huan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -117,7 +321,22 @@
     "message": "{'name': 'Yao, Zizhen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9361-5607', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/12",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yao, Zizhen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9361-5607', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -125,7 +344,22 @@
     "message": "{'name': 'Last, First', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9361-5607', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/13",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Last, First', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9361-5607', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -133,7 +367,22 @@
     "message": "{'name': 'Zeng, Hongkui', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0326-5878', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/14",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zeng, Hongkui', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0326-5878', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        14
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -141,7 +390,22 @@
     "message": "{'name': 'Sandberg, Rickard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6473-1740', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/15",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sandberg, Rickard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6473-1740', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        15
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -149,7 +413,22 @@
     "message": "{'name': 'Berens, Philipp', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0199-4727', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/16",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Berens, Philipp', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0199-4727', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        16
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -157,7 +436,22 @@
     "message": "{'name': 'Tolias, Andreas Savas', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-4305-6376', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/17",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tolias, Andreas Savas', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-4305-6376', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        17
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -165,7 +459,22 @@
     "message": "{'url': 'https://www.nimh.nih.gov/index.shtml', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'U19MH114830', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/18",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.nimh.nih.gov/index.shtml', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'U19MH114830', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        18
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -173,7 +482,22 @@
     "message": "{'url': 'https://www.nimh.nih.gov/index.shtml', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'R01MH109556', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/19",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.nimh.nih.gov/index.shtml', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'R01MH109556', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        19
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -181,7 +505,22 @@
     "message": "{'url': 'https://nei.nih.gov/', 'name': 'National Eye Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03wkg3b53', 'awardNumber': 'EY002520', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/20",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://nei.nih.gov/', 'name': 'National Eye Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03wkg3b53', 'awardNumber': 'EY002520', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        20
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -189,7 +528,22 @@
     "message": "{'url': 'https://nei.nih.gov/', 'name': 'National Eye Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03wkg3b53', 'awardNumber': 'T32EY07001', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/21",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://nei.nih.gov/', 'name': 'National Eye Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03wkg3b53', 'awardNumber': 'T32EY07001', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        21
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -197,7 +551,22 @@
     "message": "{'url': 'http://www.dfg.de/en/', 'name': 'Deutsche Forschungsgemeinschaft', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/018mejw64', 'awardNumber': 'BE5601/4-1', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/22",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.dfg.de/en/', 'name': 'Deutsche Forschungsgemeinschaft', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/018mejw64', 'awardNumber': 'BE5601/4-1', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        22
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -205,7 +574,22 @@
     "message": "{'name': 'Cluster of Excellence \u201cMachine Learning \u2014 New Perspectives for Science\u201d', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'EXC 2064, project number 390727645', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/23",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cluster of Excellence \u201cMachine Learning \u2014 New Perspectives for Science\u201d', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'EXC 2064, project number 390727645', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        23
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -213,7 +597,22 @@
     "message": "{'name': 'Collaborative Research Center 1233 \u201cRobust Vision\u201d', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'project number 276693517', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/24",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Collaborative Research Center 1233 \u201cRobust Vision\u201d', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'project number 276693517', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        24
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -221,7 +620,22 @@
     "message": "{'url': 'https://www.bmbf.de/bmbf/en/home/home_node.html', 'name': 'German Federal Ministry of Education and Research', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04pz7b180', 'awardNumber': 'FKZ 01GQ1601', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/25",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.bmbf.de/bmbf/en/home/home_node.html', 'name': 'German Federal Ministry of Education and Research', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04pz7b180', 'awardNumber': 'FKZ 01GQ1601', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        25
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -229,7 +643,22 @@
     "message": "{'url': 'https://www.bmbf.de/bmbf/en/home/home_node.html', 'name': 'German Federal Ministry of Education and Research', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04pz7b180', 'awardNumber': '01IS18039A', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/26",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.bmbf.de/bmbf/en/home/home_node.html', 'name': 'German Federal Ministry of Education and Research', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04pz7b180', 'awardNumber': '01IS18039A', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        26
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -237,6 +666,21 @@
     "message": "{'name': 'Intelligence Advanced Research Projects Activity', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'D16PC00003', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/27",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Intelligence Advanced Research Projects Activity', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'D16PC00003', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        27
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -14,6 +22,22 @@
     Institute'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Claar, Leslie D'', ''email'': ''lesliec@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-4030-9171'', ''affiliation'': [{''name'': ''Allen
+      Institute'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -24,6 +48,22 @@
     ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Rembado, Irene'', ''email'': ''irene.rembado@alleninstitute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''affiliation'': [{''name'': ''Allen Institute'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -33,6 +73,21 @@
     ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kuyat, Jacqulyn R'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Allen Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -42,6 +97,21 @@
     ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Russo, Simone'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Allen Institute'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -51,6 +121,21 @@
     ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Marks, Lydia C'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Allen Institute'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -60,6 +145,21 @@
     ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Olsen, Shawn R'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Allen Institute'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -69,6 +169,21 @@
     ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Koch, Christof'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Allen Institute'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/03cpe7c52''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -78,6 +193,20 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.tinybluedotfoundation.org/'', ''name'': ''Tiny
+      Blue Dot Foundation'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -88,4 +217,19 @@
     ''ContactPoint''}], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute'',
+      ''roleName'': [''dcite:Sponsor'', ''dcite:Affiliation''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/03cpe7c52'', ''contactPoint'': [{''schemaKey'':
+      ''ContactPoint''}], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

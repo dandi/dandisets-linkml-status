@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +18,20 @@
     ''schemaKey'': ''Organization'', ''awardNumber'': ''5 RM1 HG 011543-03'', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''5 RM1 HG 011543-03'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -20,6 +41,21 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8025-1525'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Andrews, John P.'', ''email'': ''John.Andrews@ucsf.edu'',
+      ''roleName'': [''dcite:Researcher'', ''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8025-1525'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -29,6 +65,20 @@
     ''0000-0002-3431-9568'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Geng, Jinghui'', ''email'': ''jgeng2@ucsc.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3431-9568'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -38,6 +88,21 @@
     ''0000-0002-6392-5188'', ''awardNumber'': ''T32HG012344'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Voitiuk, Kateryna'', ''email'': ''kvoitiuk@ucsc.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:Researcher''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-6392-5188'', ''awardNumber'': ''T32HG012344'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -48,6 +113,22 @@
     ''0000-0003-2345-4964'', ''awardNumber'': ''R01NS123263'', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nowakowski, Tomasz J.'', ''email'': ''tomasz.nowakowski@ucsf.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:FundingAcquisition'',
+      ''dcite:Investigation'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-2345-4964'', ''awardNumber'': ''R01NS123263'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -57,6 +138,21 @@
     ''dcite:Supervision''], ''schemaKey'': ''Person'', ''includeInCitation'': False}
     is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Teodorescu, Mircea'', ''email'': ''mteodore@ucsc.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:Investigation'',
+      ''dcite:FundingAcquisition'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -66,6 +162,21 @@
     ''dcite:FundingAcquisition'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
     ''includeInCitation'': False} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chang, Edward F.'', ''email'': ''edward.chang@ucsf.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:Investigation'',
+      ''dcite:FundingAcquisition'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -75,6 +186,21 @@
     ''Organization'', ''awardNumber'': ''5R25NS070680-13'', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Neurological Disorders and Stroke,
+      National Institutes of Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''awardNumber'': ''5R25NS070680-13'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -83,6 +209,20 @@
     ''schemaKey'': ''Organization'', ''awardNumber'': ''UF1MH130700'', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH Brain Initiative'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''UF1MH130700'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -90,4 +230,17 @@
   message: '{''name'': ''NSF'', ''schemaKey'': ''Organization'', ''awardNumber'':
     ''2034037'', ''includeInCitation'': False} is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NSF'', ''schemaKey'': ''Organization'', ''awardNumber'':
+      ''2034037'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'url': 'https://alleninstitute.org/', 'name': 'Allen Institute', 'roleName': ['dcite:Funder', 'dcite:Producer'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03cpe7c52', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://alleninstitute.org/', 'name': 'Allen Institute', 'roleName': ['dcite:Funder', 'dcite:Producer'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03cpe7c52', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Lecoq, Jerome A.', 'email': 'jeromel@alleninstitute.org', 'roleName': ['dcite:Author', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Validation'], 'schemaKey': 'Person', 'identifier': '0000-0002-0131-0938', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Lecoq, Jerome A.', 'email': 'jeromel@alleninstitute.org', 'roleName': ['dcite:Author', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Validation'], 'schemaKey': 'Person', 'identifier': '0000-0002-0131-0938', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Garrett, Marina', 'email': 'marinag@alleninstitute.org', 'roleName': ['dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Software', 'dcite:Supervision', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5271-2291', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Garrett, Marina', 'email': 'marinag@alleninstitute.org', 'roleName': ['dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Software', 'dcite:Supervision', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5271-2291', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'name': 'Choi, Hannah', 'email': 'hannahch@gatech.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8192-1121', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Choi, Hannah', 'email': 'hannahch@gatech.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8192-1121', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,7 +114,22 @@
     "message": "{'name': 'Mazzucato, Luca', 'email': 'lmazzuca@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis', 'dcite:ProjectLeader', 'dcite:Software', 'dcite:Supervision', 'dcite:Visualization'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mazzucato, Luca', 'email': 'lmazzuca@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis', 'dcite:ProjectLeader', 'dcite:Software', 'dcite:Supervision', 'dcite:Visualization'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -53,6 +137,21 @@
     "message": "{'name': 'Wyrick, David', 'email': 'davidgwyrick@gmail.com', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Visualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wyrick, David', 'email': 'davidgwyrick@gmail.com', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Visualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

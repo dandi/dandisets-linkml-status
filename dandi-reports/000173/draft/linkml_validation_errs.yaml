@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -13,6 +20,22 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05x2bcf33''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ramachandran, Sandhya'', ''email'': ''sandhyar@andrew.cmu.edu'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Carnegie Mellon University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05x2bcf33''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -22,6 +45,20 @@
     ''contactPoint'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Carnegie Mellon University'', ''roleName'': [''dcite:Affiliation''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/05x2bcf33'',
+      ''contactPoint'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,6 +68,22 @@
     Mellon University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05x2bcf33''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Niu, Xiaodan'', ''email'': ''xiaodann@andrew.cmu.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''Carnegie Mellon University'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/05x2bcf33''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -40,6 +93,22 @@
     ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05x2bcf33''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yu, Kai'', ''email'': ''yukai@cmu.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Carnegie Mellon University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/05x2bcf33''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -49,6 +118,22 @@
     Mellon University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05x2bcf33''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''He, Bin'', ''email'': ''bhe1@andrew.cmu.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Carnegie Mellon University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/05x2bcf33''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -57,6 +142,20 @@
     ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not of
     type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH MH114233'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -65,4 +164,18 @@
     ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not of
     type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH NS124564 '', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

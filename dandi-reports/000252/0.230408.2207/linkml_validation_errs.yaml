@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -14,6 +22,22 @@
     Technology'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Guan, Charles'', ''email'': ''cguan@caltech.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-8040-8844'', ''affiliation'': [{''name'': ''California Institute
+      of Technology'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -24,6 +48,22 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Aflalo, Tyson'', ''email'': ''taflalo@caltech.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0101-2455'',
+      ''affiliation'': [{''name'': ''California Institute of Technology'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -34,6 +74,22 @@
     ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kadlec, Kelly'', ''email'': ''kkadlec@caltech.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8765-7253'',
+      ''affiliation'': [{''name'': ''California Institute of Technology'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -43,6 +99,22 @@
     Institute of Technology'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gamez, Jorge'', ''email'': ''jgamez@caltech.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''California Institute of Technology'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/05dxps055''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -53,6 +125,22 @@
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
     in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.nei.nih.gov/'', ''name'': ''NIH National Eye
+      Institute'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/03wkg3b53'', ''awardNumber'': ''UG1EY032039,
+      R01EY015545'', ''contactPoint'': [], ''includeInCitation'': False} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -61,4 +149,18 @@
     [''dcite:Funder''], ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''T&C Chen Brain-Machine Interface Center'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +19,19 @@
   message: '{''name'': ''medial entorhinal cortex'', ''identifier'': ''UBERON:0007224''}
     is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''medial entorhinal cortex'', ''identifier'': ''UBERON:0007224''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -21,6 +42,22 @@
     ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mallory, Caitlin S.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2865-0235'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -30,6 +67,21 @@
     ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hardcastle, Kiah'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-2337-9290'', ''affiliation'': [{''name'':
+      ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -40,6 +92,22 @@
     ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Campbell, Malcolm G.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1971-8923'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -50,6 +118,22 @@
     ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Attinger, Alexander'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6129-3199'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -59,6 +143,22 @@
     ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Low, Isabel I. C.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6465-8459'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -69,6 +169,22 @@
     ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Raymond, Jennifer L.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8145-747X'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -79,4 +195,20 @@
     ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Giocomo, Lisa M.'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0416-2528'', ''affiliation'':
+      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

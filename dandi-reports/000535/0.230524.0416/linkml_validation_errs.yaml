@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -16,6 +24,24 @@
     ''Person'', ''identifier'': ''0000-0002-0131-0938'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lecoq, Jerome'', ''email'': ''jeromel@alleninstitute.org'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'',
+      ''dcite:FundingAcquisition'', ''dcite:Maintainer'', ''dcite:Methodology'', ''dcite:Producer'',
+      ''dcite:ProjectManager'', ''dcite:ProjectAdministration'', ''dcite:Software'',
+      ''dcite:Supervision'', ''dcite:Validation'', ''dcite:ContactPerson''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-0131-0938'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -26,6 +52,22 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0131-0938'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Murdock, Mitchell H.'', ''email'': ''mitchm@mit.edu'',
+      ''roleName'': [''dcite:Conceptualization'', ''dcite:DataCurator'', ''dcite:FormalAnalysis'',
+      ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:Software'', ''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0131-0938'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -38,6 +80,24 @@
     ''Person'', ''identifier'': ''0000-0003-1106-8310'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Arkhipov, Anton'', ''email'': ''antona@alleninstitute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataManager'',
+      ''dcite:Investigation'', ''dcite:Software'', ''dcite:Supervision'', ''dcite:Validation'',
+      ''dcite:FundingAcquisition'', ''dcite:Maintainer'', ''dcite:Producer'', ''dcite:ProjectManager'',
+      ''dcite:DataCurator'', ''dcite:ProjectLeader'', ''dcite:ContactPerson''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-1106-8310'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -49,6 +109,22 @@
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ito, Shinya'', ''email'': ''shinya.ito@alleninstitute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Researcher'',
+      ''dcite:Software'', ''dcite:Validation'', ''dcite:Investigation'', ''dcite:Methodology'',
+      ''dcite:Visualization''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5529-223X'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -59,6 +135,22 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3074-281X'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ren, Naixin'', ''email'': ''naixin.ren@alleninstitute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+      ''dcite:Methodology'', ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3074-281X'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -69,4 +161,20 @@
     ''Person'', ''identifier'': ''0000-0001-5200-4992'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Billeh, Yazan N.'', ''email'': ''yaz.billeh@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+      ''dcite:Methodology'', ''dcite:Researcher'', ''dcite:Software''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-5200-4992'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
