@@ -2,65 +2,200 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:6d49336c-a6e7-45b6-889c-c94d6b8ab132', 'name': 'DANDI publish', 'endDate': '2023-07-28T17:27:02.559597+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-07-28T17:27:02.559597+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:4341c65d-6985-45bc-9233-3de397efabba', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:6d49336c-a6e7-45b6-889c-c94d6b8ab132', 'name': 'DANDI publish', 'endDate': '2023-07-28T17:27:02.559597+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-07-28T17:27:02.559597+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:4341c65d-6985-45bc-9233-3de397efabba', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Tseng, Shih-Yi', 'email': 'shihyitseng41@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-5029-433X', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tseng, Shih-Yi', 'email': 'shihyitseng41@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-5029-433X', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Chettih, Selmaan', 'roleName': ['dcite:Author', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'identifier': '0000-0003-2045-3747', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chettih, Selmaan', 'roleName': ['dcite:Author', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'identifier': '0000-0003-2045-3747', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Harvey, Christopher', 'email': 'Christopher_Harvey@hms.harvard.edu ', 'roleName': ['dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-9850-2268', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Harvey, Christopher', 'email': 'Christopher_Harvey@hms.harvard.edu ', 'roleName': ['dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-9850-2268', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'http://www.nih.gov/', 'name': 'National Institutes of Health Director\u2019s Pioneer Award', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'DP1 MH125776', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.nih.gov/', 'name': 'National Institutes of Health Director\u2019s Pioneer Award', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'DP1 MH125776', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'https://www.ninds.nih.gov/', 'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': 'R01 NS089521', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.ninds.nih.gov/', 'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': 'R01 NS089521', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'https://www.nimh.nih.gov/', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'R01 MH107620', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.nimh.nih.gov/', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'R01 MH107620', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'https://braininitiative.nih.gov/', 'name': 'National Institutes of Health BRAIN Initiative', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01 NS108410', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/6",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://braininitiative.nih.gov/', 'name': 'National Institutes of Health BRAIN Initiative', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01 NS108410', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

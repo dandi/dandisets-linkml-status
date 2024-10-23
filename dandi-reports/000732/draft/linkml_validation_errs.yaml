@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
     'publishedBy' were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
+      'publishedBy' were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -12,6 +20,20 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6147-542X'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Molen, Tjitse van der'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6147-542X'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -20,6 +42,20 @@
     ''Person'', ''identifier'': ''0000-0003-0702-3945'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Spaeth, Alex'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-0702-3945'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -28,6 +64,20 @@
     ''identifier'': ''0000-0002-5782-9720'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chini, Mattia'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-5782-9720'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -36,6 +86,20 @@
     ''identifier'': ''0000-0001-7513-1716'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bartram, Julian'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7513-1716'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -44,6 +108,20 @@
     ''identifier'': ''0000-0001-7350-868X'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dendukuri, Adi'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7350-868X'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -52,6 +130,20 @@
     ''identifier'': ''0009-0001-7709-9980'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhang, Zongren'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0009-0001-7709-9980'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -60,6 +152,20 @@
     ''Person'', ''identifier'': ''0000-0001-6855-8244'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bhaskaran-Nair, Kiran'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-6855-8244'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -68,6 +174,20 @@
     ''identifier'': ''0000-0001-6251-6078'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Petzold, Linda R.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-6251-6078'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -76,6 +196,20 @@
     ''identifier'': ''0000-0002-0719-0615'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hansma, Paul K.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-0719-0615'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -84,6 +218,20 @@
     ''identifier'': ''0000-0001-7085-5248'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Teodorescu, Mircea'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-7085-5248'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -92,6 +240,20 @@
     ''identifier'': ''0000-0002-3838-2468'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/10'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hierlemann, Andreas'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3838-2468'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -100,6 +262,20 @@
     ''identifier'': ''0000-0001-5017-4090'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/11'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hengen, Keith B.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-5017-4090'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -108,6 +284,20 @@
     ''Person'', ''identifier'': ''0000-0002-4787-1765'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/12'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hanganu-Opatz, Ileana L.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-4787-1765'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -116,6 +306,20 @@
     ''identifier'': ''0000-0003-3224-5179'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/13'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kosik, Kenneth S.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-3224-5179'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -125,6 +329,20 @@
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/14'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 14
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Blauvelt, Lon'', ''roleName'': [''dcite:ContactPerson'',
+      ''dcite:DataManager''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8352-873X'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -133,6 +351,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/15'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 15
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Glasauer, Stella M. K.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -141,6 +373,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/16'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 16
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Guzman, Elmer'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -149,6 +394,20 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/17'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 17
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Buccino, Alessio P.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -157,6 +416,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/18'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 18
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Luna, Gabriel'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -165,6 +437,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/19'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 19
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cheng, Zhuowei'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -173,6 +458,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/20'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 20
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Audouard, Morgane'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -181,6 +479,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/21'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 21
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ranasinghe, Kamalini G.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -189,6 +501,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/22'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 22
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kudo, Kiwamu'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -197,6 +522,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/23'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 23
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nagarajan, Srikantan'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -205,6 +544,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/24'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 24
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Tovar, Kenneth R.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -213,6 +565,20 @@
     ''identifier'': ''0000-0002-5931-0295'', ''affiliation'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/25'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 25
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Akarca, Danyal'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-5931-0295'', ''affiliation'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -221,6 +587,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/26'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 26
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dunn, Alexander W. E.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -229,6 +609,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/27'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 27
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hornauer, Philipp J.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -237,6 +631,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/28'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 28
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ronchi, Silvia'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -245,6 +652,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/29'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 29
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fiscella, Micele'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -253,6 +673,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/30'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 30
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wang, Congwei'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -261,6 +694,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/31'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 31
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Terrigno, Marco'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -269,6 +715,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/32'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 32
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jagasia, Ravi'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -276,6 +735,19 @@
   message: "{'name': 'V\xE9rtes, Petra E.', 'roleName': [], 'schemaKey': 'Person',
     'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/33"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 33
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'V\xE9rtes, Petra E.', 'roleName': [], 'schemaKey': 'Person',
+      'affiliation': [], 'includeInCitation': False} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -284,6 +756,20 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/34'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 34
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mierau, Susanna B.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -292,6 +778,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/35'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 35
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Paulsen, Ole'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -300,6 +799,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/36'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 36
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Eglen, Stephen J.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -308,6 +820,20 @@
     ''identifier'': ''0000-0002-7042-5392'', ''affiliation'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/37'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 37
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Astle, Duncan E.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-7042-5392'', ''affiliation'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -316,6 +842,20 @@
     'identifier': '0000-0002-9347-9203', 'affiliation': [], 'includeInCitation': False}
     is not of type 'string' in /contributor/38"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 38
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Schr\xF6ter, Manuel', 'roleName': [], 'schemaKey': 'Person',
+      'identifier': '0000-0002-9347-9203', 'affiliation': [], 'includeInCitation':
+      False} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -324,6 +864,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/39'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 39
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yuan, Xinyue'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -332,6 +885,20 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
     ''string'' in /contributor/40'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 40
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Obien, Marie Engelene J.'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -340,6 +907,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/41'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 41
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gong, Wei'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -348,6 +928,20 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/42'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 42
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kikuchi, Tetsuhiro'', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -356,6 +950,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/43'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 43
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Odawara, Aoi'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -364,6 +971,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/44'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 44
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Noji, Shuhei'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -372,6 +992,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/45'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 45
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Suzuki, Ikuro'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -380,6 +1013,19 @@
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/46'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 46
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Takahashi, Jun'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -388,6 +1034,20 @@
     ''identifier'': ''0000-0003-3773-2822'', ''affiliation'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/47'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 47
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Frey, Urs'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-3773-2822'', ''affiliation'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -396,4 +1056,18 @@
     ''Person'', ''identifier'': ''0000-0002-7899-2818'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/48'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 48
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sharf, Tal'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-7899-2818'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

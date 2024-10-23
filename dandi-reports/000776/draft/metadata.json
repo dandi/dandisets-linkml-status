@@ -14,7 +14,7 @@
   ],
   "version": "draft",
   "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
-  "citation": "Atanas, Adam; Kim, Jungsoo; Wang, Ziyu; Bueno, Eric; Becker, McCoy; Kang, Di; Park, Jungyeon; Kramer, Talya; Wan, Flossie; Baskoylu, Saba; Dag, Ugur; Kalogeropoulou, Elpiniki; Gomes, Matthew; Estrem, Cassi; Sprague, Daniel; Cohen, Netta; Mansinghka, Vikash (2024) Brain-wide representations of behavior spanning multiple timescales and states in C. elegans (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000776/draft",
+  "citation": "Atanas, Adam; Kim, Jungsoo; Wang, Ziyu; Bueno, Eric; Becker, McCoy; Kang, Di; Park, Jungyeon; Kramer, Talya; Wan, Flossie; Baskoylu, Saba; Dag, Ugur; Kalogeropoulou, Elpiniki; Gomes, Matthew; Estrem, Cassi; Sprague, Daniel; Cohen, Netta; Mansinghka, Vikash; Flavell, Steve (2024) Brain-wide representations of behavior spanning multiple timescales and states in C. elegans (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000776/draft",
   "keywords": [],
   "protocol": [],
   "schemaKey": "Dandiset",
@@ -136,9 +136,7 @@
     {
       "name": "Sprague, Daniel",
       "email": "daniel.y.sprague@gmail.com",
-      "roleName": [
-        "dcite:ContactPerson"
-      ],
+      "roleName": [],
       "schemaKey": "Person",
       "affiliation": [],
       "includeInCitation": true
@@ -161,24 +159,26 @@
     },
     {
       "name": "Flavell, Steve",
+      "email": "flavell@mit.edu",
       "roleName": [
-        "dcite:ProjectMember"
+        "dcite:ProjectMember",
+        "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
-      "includeInCitation": false
+      "includeInCitation": true
     }
   ],
   "dateCreated": "2024-01-09T20:32:27.801335+00:00",
   "description": "Dataset of 38 worms from 'Brain-wide representations of behavior spanning multiple timescales and states in C. elegans'. Each NWB file contains the NIR bright-field images, GCaMP images, and NeuroPAL structural images, ROI locations and IDs, labeled activity traces, and behavioral information. \n",
   "publishedBy": {
-    "id": "urn:uuid:dc2189e5-ede4-458e-8f87-594fa7059316",
+    "id": "urn:uuid:68fb5291-c137-4242-9899-5eff85d24b46",
     "name": "DANDI publish",
-    "endDate": "2024-06-25T00:22:56.563222+00:00",
+    "endDate": "2024-10-09T15:09:37.183139+00:00",
     "schemaKey": "PublishActivity",
-    "startDate": "2024-06-25T00:22:56.563222+00:00",
+    "startDate": "2024-10-09T15:09:37.183139+00:00",
     "wasAssociatedWith": [
       {
-        "id": "urn:uuid:b0b0b64b-4c3a-4cb9-a4dc-060bd4ca02ff",
+        "id": "urn:uuid:9dd3c491-6433-43a8-afc5-cf2aa8e22675",
         "name": "DANDI API",
         "version": "0.1.0",
         "schemaKey": "Software",
@@ -233,7 +233,7 @@
       }
     ]
   },
-  "datePublished": "2024-06-25T00:22:56.563222+00:00",
+  "datePublished": "2024-10-09T15:09:37.183139+00:00",
   "schemaVersion": "0.6.4",
   "ethicsApproval": [],
   "wasGeneratedBy": [],

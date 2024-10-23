@@ -1,13 +1,45 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:7395d57d-6c22-4f3a-9c88-f176ca4fb343'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-11-08T18:43:57.671117+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-11-08T18:43:57.671117+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:dc550bc3-3938-4ba8-a365-bbefe8ff7931'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:7395d57d-6c22-4f3a-9c88-f176ca4fb343'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-11-08T18:43:57.671117+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-11-08T18:43:57.671117+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:dc550bc3-3938-4ba8-a365-bbefe8ff7931'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Koloski, Miranda '', ''email'': ''mfrancoeur@health.ucsd.edu'',
     ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
     [{''name'': ''University of California San Diego'', ''schemaKey'': ''Affiliation''},
@@ -15,13 +47,45 @@
     ''Career Development Award IK2BX006125 '', ''includeInCitation'': True} is not
     of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Koloski, Miranda '', ''email'': ''mfrancoeur@health.ucsd.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of California San Diego'', ''schemaKey'': ''Affiliation''},
+      {''name'': ''VA Hospital San Diego'', ''schemaKey'': ''Affiliation''}], ''awardNumber'':
+      ''Career Development Award IK2BX006125 '', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Ramanathan, Dhakshin'', ''email'': ''dramanathan@health.ucsd.edu'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''awardNumber'': ''National Institutes for Health R01-NS110905'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ramanathan, Dhakshin'', ''email'': ''dramanathan@health.ucsd.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''awardNumber'': ''National Institutes for Health R01-NS110905'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

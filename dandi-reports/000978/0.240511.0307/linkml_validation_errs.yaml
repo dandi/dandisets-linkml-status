@@ -1,32 +1,107 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:716139e4-b7f1-4f49-a553-64c39ad24144'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-05-11T03:07:10.716024+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-05-11T03:07:10.716024+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:465e16c1-9b0f-42fc-87b3-2b4ede9e9f6c'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:716139e4-b7f1-4f49-a553-64c39ad24144'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-05-11T03:07:10.716024+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-05-11T03:07:10.716024+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:465e16c1-9b0f-42fc-87b3-2b4ede9e9f6c'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Shin, Justin'', ''email'': ''jdshin@brandeis.edu'', ''roleName'':
     [''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:Investigation'',
     ''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Shin, Justin'', ''email'': ''jdshin@brandeis.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:Investigation'',
+      ''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Jadhav, Shantanu'', ''roleName'': [''dcite:Supervision'',
     ''dcite:Funder'', ''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jadhav, Shantanu'', ''roleName'': [''dcite:Supervision'',
+      ''dcite:Funder'', ''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH112661 '', ''includeInCitation'':
     False} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH112661 '', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

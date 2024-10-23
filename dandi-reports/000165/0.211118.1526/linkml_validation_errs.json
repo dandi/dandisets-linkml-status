@@ -2,145 +2,430 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:4956b3d7-5e9c-4fdf-b180-265ed4550724', 'name': 'DANDI publish', 'endDate': '2021-11-18T15:26:09.602587+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2021-11-18T15:26:09.602587+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:1e1632d4-9034-4e8b-9ba1-70ac5608d84c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:4956b3d7-5e9c-4fdf-b180-265ed4550724', 'name': 'DANDI publish', 'endDate': '2021-11-18T15:26:09.602587+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2021-11-18T15:26:09.602587+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:1e1632d4-9034-4e8b-9ba1-70ac5608d84c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Hippocampus', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0002421'} is not of type 'string' in /about/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hippocampus', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0002421'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Aery Jones, Emily', 'email': 'emijones@stanford.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-8180-3267', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}, {'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Aery Jones, Emily', 'email': 'emijones@stanford.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-8180-3267', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}, {'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Rao, Antara', 'email': 'antara.rao@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-1269-018X', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Rao, Antara', 'email': 'antara.rao@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-1269-018X', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Zilberter, Misha', 'email': 'misha.zilberter@gladstone.uscf.edu', 'roleName': ['dcite:Author', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7164-8312', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zilberter, Misha', 'email': 'misha.zilberter@gladstone.uscf.edu', 'roleName': ['dcite:Author', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7164-8312', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Djukic, Biljana', 'email': 'biljanadd@gmail.com', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Djukic, Biljana', 'email': 'biljanadd@gmail.com', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Gillespie, Anna K.', 'email': 'akgillespie8@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0980-2408', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gillespie, Anna K.', 'email': 'akgillespie8@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0980-2408', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Koutsodendris, Nicole', 'email': 'nicole.koutsodendris@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Koutsodendris, Nicole', 'email': 'nicole.koutsodendris@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Nelson, Maxine', 'email': 'maxine.nelson@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1990-5099', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Nelson, Maxine', 'email': 'maxine.nelson@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1990-5099', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Yoon, Seo Yeon', 'email': 'victoria.yoon@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yoon, Seo Yeon', 'email': 'victoria.yoon@gladstone.ucsf.edu', 'roleName': ['dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Huang, Ky', 'email': 'Kyliehuang312@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Huang, Ky', 'email': 'Kyliehuang312@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Yuan, Heidi', 'email': 'heidiyuan96@gmail.com', 'roleName': ['dcite:Author', 'dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yuan, Heidi', 'email': 'heidiyuan96@gmail.com', 'roleName': ['dcite:Author', 'dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Gill, Theodore M.', 'email': 'tmichaelg0015@gmail.com', 'roleName': ['dcite:Author', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gill, Theodore M.', 'email': 'tmichaelg0015@gmail.com', 'roleName': ['dcite:Author', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Huang, Yadong', 'email': 'yadong.huang@gladstone.ucsf.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataManager', 'dcite:FundingAcquisition', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-5871-4589', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Huang, Yadong', 'email': 'yadong.huang@gladstone.ucsf.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataManager', 'dcite:FundingAcquisition', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-5871-4589', 'affiliation': [{'name': 'Gladstone Institutes', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/038321296'}, {'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Frank, Loren M.', 'email': 'loren@cin.ucsf.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataManager', 'dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'identifier': '0000-0002-1752-5677', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}, {'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string' in /contributor/12",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Frank, Loren M.', 'email': 'loren@cin.ucsf.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataManager', 'dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'identifier': '0000-0002-1752-5677', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}, {'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': '1144247', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/13",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': '1144247', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'National Institute on Aging', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/049v75w11', 'awardNumber': 'F31AG057150, RF1AG047655, RF1AG055421, R01AG055682, and P01AG073082', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/14",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute on Aging', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/049v75w11', 'awardNumber': 'F31AG057150, RF1AG047655, RF1AG055421, R01AG055682, and P01AG073082', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        14
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Howard Hughes Medical Institutes', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/15",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Howard Hughes Medical Institutes', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        15
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

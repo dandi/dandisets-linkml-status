@@ -2,81 +2,246 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:ca89e51d-8ce6-491e-99f8-6bd54d375690', 'name': 'DANDI publish', 'endDate': '2023-02-23T08:15:22.880501+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-02-23T08:15:22.880501+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:b7cacd90-1357-4bf1-8777-e85690f53341', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:ca89e51d-8ce6-491e-99f8-6bd54d375690', 'name': 'DANDI publish', 'endDate': '2023-02-23T08:15:22.880501+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-02-23T08:15:22.880501+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:b7cacd90-1357-4bf1-8777-e85690f53341', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Type 2 Diabetes', 'dxdate': [], 'schemaKey': 'Disorder', 'identifier': 'snomedct:44054006'} is not of type 'string' in /about/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Type 2 Diabetes', 'dxdate': [], 'schemaKey': 'Disorder', 'identifier': 'snomedct:44054006'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Hippocampus', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002421'} is not of type 'string' in /about/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hippocampus', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002421'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Hypothalamus', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001898'} is not of type 'string' in /about/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hypothalamus', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001898'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Tingley, David', 'email': 'davidtingley2@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4263-0476', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tingley, David', 'email': 'davidtingley2@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4263-0476', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'McClain, Kathryn', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'McClain, Kathryn', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Kaya, Ekin', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Bo\u011fazi\u00e7i University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03z9tma90'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kaya, Ekin', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Bo\u011fazi\u00e7i University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03z9tma90'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Carpenter, Jordan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Norwegian University of Science and Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05xg72x27'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Carpenter, Jordan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Norwegian University of Science and Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05xg72x27'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'https://www.nih.gov/', 'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'MH122391, U19NS104590, and U19NS107616', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.nih.gov/', 'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'MH122391, U19NS104590, and U19NS107616', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

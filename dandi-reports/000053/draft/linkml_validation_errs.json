@@ -5,15 +5,39 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'medial entorhinal cortex', 'identifier': 'UBERON:0007224'} is not of type 'string' in /about/0",
+    "message": "{'name': 'Medial entorhinal cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0007224'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Medial entorhinal cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0007224'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Mallory, Caitlin S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2865-0235', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mallory, Caitlin S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2865-0235', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Hardcastle, Kiah', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2337-9290', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hardcastle, Kiah', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2337-9290', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'name': 'Campbell, Malcolm G.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1971-8923', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Campbell, Malcolm G.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1971-8923', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,7 +114,22 @@
     "message": "{'name': 'Attinger, Alexander', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6129-3199', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Attinger, Alexander', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6129-3199', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -53,7 +137,22 @@
     "message": "{'name': 'Low, Isabel I. C.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6465-8459', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Low, Isabel I. C.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6465-8459', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -61,7 +160,22 @@
     "message": "{'name': 'Raymond, Jennifer L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8145-747X', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Raymond, Jennifer L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8145-747X', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -69,6 +183,21 @@
     "message": "{'name': 'Giocomo, Lisa M.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-0416-2528', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Giocomo, Lisa M.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-0416-2528', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

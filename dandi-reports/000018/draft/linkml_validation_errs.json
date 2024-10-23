@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Tao, Can', 'email': 'cantao@usc.edu', 'roleName': ['dcite:DataCollector', 'dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Southern California', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tao, Can', 'email': 'cantao@usc.edu', 'roleName': ['dcite:DataCollector', 'dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Southern California', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Zhang, Guang-Wei', 'email': 'guangwei.zhang@med.usc.edu', 'roleName': ['dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0002-3228-1981', 'affiliation': [{'name': 'University of Southern California', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zhang, Guang-Wei', 'email': 'guangwei.zhang@med.usc.edu', 'roleName': ['dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0002-3228-1981', 'affiliation': [{'name': 'University of Southern California', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,6 +68,21 @@
     "message": "{'name': 'NIH', 'roleName': ['dcite:Sponsor'], 'schemaKey': 'Organization', 'awardNumber': '1U01MH116990-01', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'NIH', 'roleName': ['dcite:Sponsor'], 'schemaKey': 'Organization', 'awardNumber': '1U01MH116990-01', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

@@ -2,10 +2,19 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Broca\u2019s Area', 'schemaKey': 'GenericType'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Broca\u2019s Area', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Motor Cortex', 'schemaKey': 'GenericType'} is not of type 'string' in /about/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Motor Cortex', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Mazzamuto, Giacomo', 'email': 'mazzamuto@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Maintainer', 'dcite:Researcher', 'dcite:Software', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-3077-3904', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'National Research Council - National Institute of Optics (CNR-INO), Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mazzamuto, Giacomo', 'email': 'mazzamuto@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Maintainer', 'dcite:Researcher', 'dcite:Software', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-3077-3904', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'National Research Council - National Institute of Optics (CNR-INO), Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,15 +91,45 @@
     "message": "{'name': 'Costantini, Irene', 'email': 'costantini@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:Researcher', 'dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0002-8464-7324', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Costantini, Irene', 'email': 'costantini@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:Researcher', 'dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0002-8464-7324', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Gavryusev, Vladislav', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7734-7828', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Danila Di Meo', 'email': 'dimeo@lens.unifi.it', 'roleName': ['dcite:Methodology', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0001-6545-0676', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Danila Di Meo', 'email': 'dimeo@lens.unifi.it', 'roleName': ['dcite:Methodology', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0001-6545-0676', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -53,7 +137,22 @@
     "message": "{'name': 'Castelli, Filippo Maria', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-8170-8905', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Castelli, Filippo Maria', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-8170-8905', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -61,7 +160,22 @@
     "message": "{'name': 'Pesce, Luca', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-5863-399X', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pesce, Luca', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-5863-399X', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -69,7 +183,22 @@
     "message": "{'name': 'Scardigli, Marina', 'roleName': ['dcite:Author', 'dcite:ProjectMember', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-2438-2923', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Scardigli, Marina', 'roleName': ['dcite:Author', 'dcite:ProjectMember', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-2438-2923', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -77,7 +206,22 @@
     "message": "{'name': 'Pavone, Francesco Saverio', 'roleName': ['dcite:Author', 'dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-0675-3981', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pavone, Francesco Saverio', 'roleName': ['dcite:Author', 'dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-0675-3981', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -85,7 +229,22 @@
     "message": "{'name': 'Roffilli, Matteo', 'email': 'roffilli@gmail.com', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-7554-4470', 'affiliation': [{'name': 'Bioretics Srl, Cesena (FC), Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Roffilli, Matteo', 'email': 'roffilli@gmail.com', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-7554-4470', 'affiliation': [{'name': 'Bioretics Srl, Cesena (FC), Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -93,7 +252,22 @@
     "message": "{'name': 'Silvestri, Ludovico', 'email': 'silvestri@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-9215-9104', 'affiliation': [{'name': 'European Laboratory for Non-linear Spectroscopy, University of Florence,Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Silvestri, Ludovico', 'email': 'silvestri@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-9215-9104', 'affiliation': [{'name': 'European Laboratory for Non-linear Spectroscopy, University of Florence,Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -101,7 +275,22 @@
     "message": "{'name': 'Brady, Niamh', 'email': 'brady@lens.unifi.it', 'roleName': ['dcite:DataCollector', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Brady, Niamh', 'email': 'brady@lens.unifi.it', 'roleName': ['dcite:DataCollector', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -109,7 +298,22 @@
     "message": "{'name': 'Ramazzotti, Josephine', 'email': 'ramazzotti@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'National Research Council - National Institute of Optics (CNR-INO), Italy', 'schemaKey': 'Affiliation'}, {'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Ramazzotti, Josephine', 'email': 'ramazzotti@lens.unifi.it', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'National Research Council - National Institute of Optics (CNR-INO), Italy', 'schemaKey': 'Affiliation'}, {'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -117,7 +321,22 @@
     "message": "{'name': 'Hof, Patrick R.', 'email': 'patrick.hof@mssm.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Supervision', 'dcite:ProjectLeader', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-3208-1154', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hof, Patrick R.', 'email': 'patrick.hof@mssm.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Supervision', 'dcite:ProjectLeader', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-3208-1154', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -125,7 +344,22 @@
     "message": "{'name': 'Boas, David A.', 'email': 'dboas@bu.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:Methodology', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-6709-7711', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/12",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Boas, David A.', 'email': 'dboas@bu.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:Methodology', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-6709-7711', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -133,7 +367,22 @@
     "message": "{'name': 'Fischl, Bruce', 'email': 'fischl@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-2413-1115', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HMS', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'CSAIL/HST, MIT, Cambridge, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/13",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fischl, Bruce', 'email': 'fischl@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-2413-1115', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HMS', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'CSAIL/HST, MIT, Cambridge, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -141,7 +390,22 @@
     "message": "{'name': 'Morgan, Leah', 'email': 'lmorgan6@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Methodology', 'dcite:ProjectManager', 'dcite:ProjectAdministration', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Supervision', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-6859-734X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/14",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Morgan, Leah', 'email': 'lmorgan6@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Methodology', 'dcite:ProjectManager', 'dcite:ProjectAdministration', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Supervision', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-6859-734X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        14
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -149,7 +413,22 @@
     "message": "{'name': 'Yang, Jiarui', 'email': 'jryang@bu.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2759-776X', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/15",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yang, Jiarui', 'email': 'jryang@bu.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2759-776X', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        15
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -157,7 +436,22 @@
     "message": "{'name': 'Chang, Shuaibin', 'email': 'shuaibin@bu.edu', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/16",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chang, Shuaibin', 'email': 'shuaibin@bu.edu', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        16
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -165,7 +459,22 @@
     "message": "{'name': 'Laffey, Jessie', 'email': 'jessie.laffey@mssm.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:ProjectMember', 'dcite:Methodology', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-7473-5558', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/17",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Laffey, Jessie', 'email': 'jessie.laffey@mssm.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:ProjectMember', 'dcite:Methodology', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-7473-5558', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        17
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -173,7 +482,22 @@
     "message": "{'name': 'Magnain, Caroline', 'email': 'cmagnain@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-4244-7380', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/18",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Magnain, Caroline', 'email': 'cmagnain@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-4244-7380', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        18
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -181,7 +505,22 @@
     "message": "{'name': 'Varadarajan, Divya', 'email': 'dvaradarajan@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectMember', 'dcite:Software', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-3517-9739', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HMS', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/19",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Varadarajan, Divya', 'email': 'dvaradarajan@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectMember', 'dcite:Software', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-3517-9739', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HMS', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        19
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -189,7 +528,22 @@
     "message": "{'name': 'Wang, Hui', 'email': 'huiwang@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-0181-5845', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/20",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wang, Hui', 'email': 'huiwang@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-0181-5845', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        20
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -197,7 +551,22 @@
     "message": "{'name': 'Frost, Robert', 'email': 'srfrost@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:DataCollector', 'dcite:Producer', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-2849-9240', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HMS', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/21",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Frost, Robert', 'email': 'srfrost@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:DataCollector', 'dcite:Producer', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-2849-9240', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HMS', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        21
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -205,7 +574,22 @@
     "message": "{'name': 'Kouwe, Andre van der', 'email': 'andre@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-2754-6594', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/22",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kouwe, Andre van der', 'email': 'andre@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-2754-6594', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        22
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -213,7 +597,22 @@
     "message": "{'name': 'Player, Allison Stevens', 'email': 'astevens@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Resources', 'dcite:Researcher', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-4978-0824', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/23",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Player, Allison Stevens', 'email': 'astevens@nmr.mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Resources', 'dcite:Researcher', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-4978-0824', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        23
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -221,7 +620,22 @@
     "message": "{'name': 'Atzeni, Alessia', 'email': 'alessia.atzeni.14@ucl.ac.uk', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Software', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-8320-230X', 'affiliation': [{'name': 'Centre for Medical Image Computing, Department of Medical Phisics and Biomedical Engineering, University College London, UK', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/24",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Atzeni, Alessia', 'email': 'alessia.atzeni.14@ucl.ac.uk', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Software', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-8320-230X', 'affiliation': [{'name': 'Centre for Medical Image Computing, Department of Medical Phisics and Biomedical Engineering, University College London, UK', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        24
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -229,7 +643,22 @@
     "message": "{'name': 'Gonzalez, Juan Eugenio Iglesias', 'email': 'jiglesiasgonzalez@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'Centre for Medical Image Computing, University College London, United Kingdom  ', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'CSAIL, MIT, Cambridge, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/25",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gonzalez, Juan Eugenio Iglesias', 'email': 'jiglesiasgonzalez@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'Centre for Medical Image Computing, University College London, United Kingdom  ', 'schemaKey': 'Affiliation', 'includeInCitation': False}, {'name': 'CSAIL, MIT, Cambridge, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        25
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -237,7 +666,22 @@
     "message": "{'name': 'Balbastre, Yael', 'email': 'ybalbastre@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-8758-9978', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/26",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Balbastre, Yael', 'email': 'ybalbastre@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-8758-9978', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        26
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -245,7 +689,22 @@
     "message": "{'name': 'Vera, Matthew', 'email': 'mvera2@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2854-8775', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/27",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Vera, Matthew', 'email': 'mvera2@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2854-8775', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        27
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -253,7 +712,22 @@
     "message": "{'name': 'Cordero, Devani', 'email': 'dccordero@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2846-4571', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/28",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cordero, Devani', 'email': 'dccordero@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2846-4571', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        28
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -261,7 +735,22 @@
     "message": "{'name': 'Nestor, Kimberly', 'email': 'knestor1@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-3178-1300', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/29",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Nestor, Kimberly', 'email': 'knestor1@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-3178-1300', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        29
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -269,7 +758,22 @@
     "message": "{'name': 'Ammon, William', 'email': 'wammon@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-8952-979X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/30",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Ammon, William', 'email': 'wammon@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-8952-979X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        30
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -277,7 +781,22 @@
     "message": "{'name': 'Nolan, Jackson', 'email': 'jnolan5@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Software', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-7215-9107', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/31",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Nolan, Jackson', 'email': 'jnolan5@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Software', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-7215-9107', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        31
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -285,7 +804,22 @@
     "message": "{'name': 'Mora, Jocelyn', 'email': 'jsmora@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-4241-408X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/32",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mora, Jocelyn', 'email': 'jsmora@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-4241-408X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        32
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -293,7 +827,22 @@
     "message": "{'name': 'Pallares, Erendira Garcia', 'email': 'egarciapallares@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-1524-6698', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/33",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pallares, Erendira Garcia', 'email': 'egarciapallares@mgh.harvard.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-1524-6698', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        33
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -301,7 +850,22 @@
     "message": "{'name': 'Augustinack, Jean', 'email': 'jean@nmr.mgh.harvard.edu', 'roleName': ['dcite:Resources', 'dcite:Supervision', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7198-2548', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/34",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Augustinack, Jean', 'email': 'jean@nmr.mgh.harvard.edu', 'roleName': ['dcite:Resources', 'dcite:Supervision', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7198-2548', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        34
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -309,7 +873,22 @@
     "message": "{'name': 'Diamond, Bram', 'email': 'bram.diamond@northwestern.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:Researcher', 'dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0002-9493-874X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/35",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Diamond, Bram', 'email': 'bram.diamond@northwestern.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:Researcher', 'dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0002-9493-874X', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        35
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -317,7 +896,22 @@
     "message": "{'name': 'Fogarty, Morgan', 'email': 'm.fogarty@wustl.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-1334-1923', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/36",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fogarty, Morgan', 'email': 'm.fogarty@wustl.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-1334-1923', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        36
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -325,7 +919,22 @@
     "message": "{'name': 'Boyd, Emma', 'email': 'eboyd@ucsd.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-6922-8092', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/37",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Boyd, Emma', 'email': 'eboyd@ucsd.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-6922-8092', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        37
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -333,7 +942,22 @@
     "message": "{'name': 'Varghese, Merina', 'email': 'merina.varghese@mssm.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-1517-3903', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/38",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Varghese, Merina', 'email': 'merina.varghese@mssm.edu', 'roleName': ['dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-1517-3903', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        38
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -341,7 +965,22 @@
     "message": "{'name': 'Dalca, Adrian V.', 'email': 'adalca@mit.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8422-0136', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/39",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Dalca, Adrian V.', 'email': 'adalca@mit.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8422-0136', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        39
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -349,7 +988,22 @@
     "message": "{'name': 'Edlow, Brian', 'email': 'bedlow@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Resources', 'dcite:Supervision'], 'schemaKey': 'Person', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/40",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Edlow, Brian', 'email': 'bedlow@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Resources', 'dcite:Supervision'], 'schemaKey': 'Person', 'affiliation': [{'name': 'A.A. Martinos Center for Biomedical Imaging, Dept. of Radiology, MGH/HST', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        40
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -357,7 +1011,22 @@
     "message": "{'name': 'Frosche, Matthew', 'email': 'mfrosch@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Resources', 'dcite:Supervision'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Massachusetts General Hospital, Dept. of Pathology, Boston', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/41",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Frosche, Matthew', 'email': 'mfrosch@mgh.harvard.edu', 'roleName': ['dcite:Author', 'dcite:Investigation', 'dcite:Resources', 'dcite:Supervision'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Massachusetts General Hospital, Dept. of Pathology, Boston', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        41
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -365,7 +1034,22 @@
     "message": "{'name': 'Wicinski, Bridget', 'email': 'bridget.wicinski@mssm.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-2972-7081', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/42",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wicinski, Bridget', 'email': 'bridget.wicinski@mssm.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-2972-7081', 'affiliation': [{'name': 'Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        42
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -373,7 +1057,22 @@
     "message": "{'name': 'Chen, I-Chun Anderson', 'email': 'chena11@bu.edu', 'roleName': ['dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/43",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chen, I-Chun Anderson', 'email': 'chena11@bu.edu', 'roleName': ['dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Boston University Neurophotonics Center, Boston, MA', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        43
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -381,6 +1080,44 @@
     "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Sponsor'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': '1U01MH117023-01', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/44",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Sponsor'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': '1U01MH117023-01', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        44
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gavryusev, Vladislav', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7734-7828', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/45",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gavryusev, Vladislav', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ProjectMember', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0001-7734-7828', 'affiliation': [{'name': 'European Laboratory for Non-Linear Spectroscopy, LENS, Italy', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        45
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

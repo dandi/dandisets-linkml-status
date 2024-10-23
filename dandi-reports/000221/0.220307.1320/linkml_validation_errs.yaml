@@ -1,31 +1,103 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:693515c7-d04b-47a4-b9ee-e5cba38337c2'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2022-03-07T13:20:06.885927+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2022-03-07T13:20:06.885927+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:6f698a17-aed7-480a-a61c-77be25c01e30'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:693515c7-d04b-47a4-b9ee-e5cba38337c2'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2022-03-07T13:20:06.885927+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2022-03-07T13:20:06.885927+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:6f698a17-aed7-480a-a61c-77be25c01e30'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Inagaki, Hidehiko'', ''email'': ''hidehiko.inagaki@mpfi.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Inagaki, Hidehiko'', ''email'': ''hidehiko.inagaki@mpfi.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Chen, Susu'', ''roleName'': [], ''schemaKey'': ''Person'',
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chen, Susu'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Svoboda, Karel'', ''roleName'': [], ''schemaKey'': ''Person'',
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Svoboda, Karel'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

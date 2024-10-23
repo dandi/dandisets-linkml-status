@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'publishedBy' were unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context', 'datePublished', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Suzuki, Ryoga', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Nagoya City University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Suzuki, Ryoga', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Nagoya City University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'url': 'https://github.com/WenChentao', 'name': 'Wen, Chentao', 'email': 'chentao.wen@riken.jp', 'roleName': ['dcite:Author', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0002-8609-476X', 'affiliation': [{'name': 'RIKEN Center for Biosystems Dynamics Research', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://github.com/WenChentao', 'name': 'Wen, Chentao', 'email': 'chentao.wen@riken.jp', 'roleName': ['dcite:Author', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0002-8609-476X', 'affiliation': [{'name': 'RIKEN Center for Biosystems Dynamics Research', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Sprague, Daniel', 'email': 'Daniel.Sprague@ucsf.edu', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'identifier': '0009-0001-7773-2280', 'affiliation': [{'name': 'UCSF Department of Neurology', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sprague, Daniel', 'email': 'Daniel.Sprague@ucsf.edu', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'identifier': '0009-0001-7773-2280', 'affiliation': [{'name': 'UCSF Department of Neurology', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'url': 'https://www.bdr.riken.jp/en/research/labs/onami-s/index.html', 'name': 'Onami, Shuichi', 'email': 'sonami@riken.jp', 'roleName': ['dcite:Author', 'dcite:Methodology', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8255-1724', 'affiliation': [{'name': 'RIKEN Center for Biosystems Dynamics Research', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.bdr.riken.jp/en/research/labs/onami-s/index.html', 'name': 'Onami, Shuichi', 'email': 'sonami@riken.jp', 'roleName': ['dcite:Author', 'dcite:Methodology', 'dcite:Software', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8255-1724', 'affiliation': [{'name': 'RIKEN Center for Biosystems Dynamics Research', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,6 +114,21 @@
     "message": "{'name': 'Kimura, Koutarou D', 'email': 'kokimura@nsc.nagoya-cu.ac.jp', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Validation'], 'schemaKey': 'Person', 'identifier': '0000-0002-3359-1578', 'affiliation': [{'name': 'Nagoya City University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kimura, Koutarou D', 'email': 'kokimura@nsc.nagoya-cu.ac.jp', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Validation'], 'schemaKey': 'Person', 'identifier': '0000-0002-3359-1578', 'affiliation': [{'name': 'Nagoya City University', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

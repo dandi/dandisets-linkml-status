@@ -1,0 +1,143 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:78239632-6a08-4620-8b01-1ef66cf4c9d3'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-10-09T15:02:37.386939+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-10-09T15:02:37.386939+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:804ad183-e3ae-467c-8549-a462cba713fd'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:78239632-6a08-4620-8b01-1ef66cf4c9d3'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-10-09T15:02:37.386939+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-10-09T15:02:37.386939+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:804ad183-e3ae-467c-8549-a462cba713fd'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Dunn, Raymond'', ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dunn, Raymond'', ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sprague, Daniel'', ''email'': ''daniel.y.sprague@gmail.com'',
+    ''roleName'': [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sprague, Daniel'', ''email'': ''daniel.y.sprague@gmail.com'',
+      ''roleName'': [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Borchardt, Jackson'', ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Borchardt, Jackson'', ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Bubnis, Greg'', ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bubnis, Greg'', ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kato, Saul'', ''email'': ''saul.kato@ucsf.edu'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kato, Saul'', ''email'': ''saul.kato@ucsf.edu'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

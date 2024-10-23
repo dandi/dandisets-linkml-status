@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'DataBase', 'schemaKey': 'GenericType'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'DataBase', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -24,7 +48,30 @@
     "context": [
       "'www.inb.unam.mx' does not match '^(?i:http|https)://[^\\\\s]+$'",
       "{'url': 'www.inb.unam.mx', 'email': 'pradol@unam.mx', 'schemaKey': 'ContactPoint'} is not of type 'null'"
-    ]
+    ],
+    "source": {
+      "message": "'www.inb.unam.mx' does not match '^(?i:http|https)://[^\\\\s]+$'",
+      "absolute_path": [
+        "access",
+        0,
+        "contactPoint",
+        "url"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "access",
+        "items",
+        "properties",
+        "contactPoint",
+        "anyOf",
+        0,
+        "properties",
+        "url",
+        "pattern"
+      ],
+      "validator": "pattern",
+      "validator_value": "^(?i:http|https)://[^\\s]+$"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -32,7 +79,22 @@
     "message": "{'url': 'www.inb.unam.mx', 'name': 'Merchant, Hugo', 'email': 'hugomerchant@unam.mx', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3488-9501', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'url': 'www.inb.unam.mx', 'name': 'Merchant, Hugo', 'email': 'hugomerchant@unam.mx', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3488-9501', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -43,7 +105,30 @@
     "context": [
       "'www.inb.unam.mx' does not match '^(?i:http|https)://[^\\\\s]+$'",
       "{'url': 'www.inb.unam.mx', 'email': 'pradol@unam.mx', 'schemaKey': 'ContactPoint'} is not of type 'null'"
-    ]
+    ],
+    "source": {
+      "message": "'www.inb.unam.mx' does not match '^(?i:http|https)://[^\\\\s]+$'",
+      "absolute_path": [
+        "ethicsApproval",
+        0,
+        "contactPoint",
+        "url"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "ethicsApproval",
+        "items",
+        "properties",
+        "contactPoint",
+        "anyOf",
+        0,
+        "properties",
+        "url",
+        "pattern"
+      ],
+      "validator": "pattern",
+      "validator_value": "^(?i:http|https)://[^\\s]+$"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -51,6 +136,24 @@
     "message": "'spdx:CC-BY-NC-4.0' is not one of ['spdx:CC0-1.0', 'spdx:CC-BY-4.0'] in /license/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "'spdx:CC-BY-NC-4.0' is not one of ['spdx:CC0-1.0', 'spdx:CC-BY-4.0']",
+      "absolute_path": [
+        "license",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "license",
+        "items",
+        "enum"
+      ],
+      "validator": "enum",
+      "validator_value": [
+        "spdx:CC0-1.0",
+        "spdx:CC-BY-4.0"
+      ]
+    }
   }
 ]

@@ -2,49 +2,154 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:a5729532-26e9-4342-b388-60698b8fedf4', 'name': 'DANDI publish', 'endDate': '2023-11-14T00:19:40.618448+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-11-14T00:19:40.618448+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a375020a-655f-45f7-8b07-a7a6e4ebeeac', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:a5729532-26e9-4342-b388-60698b8fedf4', 'name': 'DANDI publish', 'endDate': '2023-11-14T00:19:40.618448+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-11-14T00:19:40.618448+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a375020a-655f-45f7-8b07-a7a6e4ebeeac', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Zakka, George', 'email': 'gz2333@columbia.edu', 'roleName': ['dcite:DataCurator', 'dcite:DataManager', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Resources', 'dcite:Supervision', 'dcite:Affiliation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Columbia University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00hj8s172'}], 'includeInCitation': False} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zakka, George', 'email': 'gz2333@columbia.edu', 'roleName': ['dcite:DataCurator', 'dcite:DataManager', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Resources', 'dcite:Supervision', 'dcite:Affiliation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Columbia University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00hj8s172'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'http://www.columbia.edu/~tcg2117/', 'name': 'Geiller, Tristan', 'email': 'tristan.geiller@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Columbia University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00hj8s172'}], 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.columbia.edu/~tcg2117/', 'name': 'Geiller, Tristan', 'email': 'tristan.geiller@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Columbia University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00hj8s172'}], 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'https://www.nimh.nih.gov/index.shtml', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': '1R01MH100631', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.nimh.nih.gov/index.shtml', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': '1R01MH100631', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'http://www.ninds.nih.gov/', 'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': '1U19NS104590', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.ninds.nih.gov/', 'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': '1U19NS104590', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'http://www.ninds.nih.gov/', 'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': '1R01NS094668', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.ninds.nih.gov/', 'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': '1R01NS094668', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

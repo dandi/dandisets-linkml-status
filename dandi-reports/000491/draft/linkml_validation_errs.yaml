@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
     were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -13,6 +21,21 @@
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhao, Yue'', ''email'': ''yuezhao@rochester.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:DataManager'', ''dcite:Maintainer''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -23,6 +46,22 @@
     ''https://ror.org/022kthw22''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Boster, Kimberly'', ''roleName'': [''dcite:Researcher''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5178-128X'', ''affiliation'':
+      [{''name'': ''University of Rochester'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/022kthw22''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -34,6 +73,23 @@
     ''https://ror.org/022kthw22''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kelley, Douglas'', ''email'': ''d.h.kelley@rochester.edu'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:ProjectLeader'', ''dcite:ProjectManager''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9658-2954'', ''affiliation'':
+      [{''name'': ''University of Rochester'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/022kthw22''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -43,6 +99,21 @@
     ''awardNumber'': ''MURI W911NF1910280'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''United States Department of the Army'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/035w1gb98'',
+      ''awardNumber'': ''MURI W911NF1910280'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -52,6 +123,21 @@
     ''awardNumber'': ''U19NS128613 and R01AT012312'', ''contactPoint'': [], ''includeInCitation'':
     False} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''U19NS128613 and R01AT012312'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -62,4 +148,20 @@
     ''https://ror.org/022kthw22''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Raicevic, Nikola'', ''email'': ''nraicevi@u.rochester.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of Rochester'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/022kthw22''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

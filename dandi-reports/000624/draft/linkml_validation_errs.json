@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Rinehart, Duane', 'email': 'duane.rinehart@gmail.com', 'roleName': ['dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-9245-2124', 'affiliation': [{'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Rinehart, Duane', 'email': 'duane.rinehart@gmail.com', 'roleName': ['dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-9245-2124', 'affiliation': [{'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,7 +45,22 @@
     "message": "{'name': 'Amalia Callado-P\u00e9rez', 'email': 'amalia.callado.perez@gmail.com', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2255-4640', 'affiliation': [{'name': 'Universit\u00e9 Laval', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04sjchr03'}, {'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Amalia Callado-P\u00e9rez', 'email': 'amalia.callado.perez@gmail.com', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2255-4640', 'affiliation': [{'name': 'Universit\u00e9 Laval', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04sjchr03'}, {'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -29,7 +68,22 @@
     "message": "{'name': 'Kleinfeld, David', 'email': 'dk@physics.ucsd.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9797-4722', 'affiliation': [{'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kleinfeld, David', 'email': 'dk@physics.ucsd.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9797-4722', 'affiliation': [{'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -37,7 +91,22 @@
     "message": "{'name': 'Fassihi, Arash', 'email': 'arfassihi@gmail.com', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7477-7080', 'affiliation': [{'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fassihi, Arash', 'email': 'arfassihi@gmail.com', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7477-7080', 'affiliation': [{'name': 'University of California, San Diego', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0168r3w48'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -45,7 +114,22 @@
     "message": "{'name': 'Dech\u00eanes, Martin', 'email': 'martin.deschenes@fmed.ulaval.ca', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5385-6633', 'affiliation': [{'name': 'Universit\u00e9 Laval', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04sjchr03'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Dech\u00eanes, Martin', 'email': 'martin.deschenes@fmed.ulaval.ca', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5385-6633', 'affiliation': [{'name': 'Universit\u00e9 Laval', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04sjchr03'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -53,7 +137,22 @@
     "message": "{'name': 'Moore, Jeffrey D.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Southern California', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03taz7m60'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Moore, Jeffrey D.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Southern California', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03taz7m60'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -61,7 +160,22 @@
     "message": "{'name': 'Demers, Maxime', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Universit\u00e9 Laval', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04sjchr03'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Demers, Maxime', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Universit\u00e9 Laval', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04sjchr03'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -69,7 +183,22 @@
     "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'NS107466', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'NS107466', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -77,7 +206,22 @@
     "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'NS097265', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'NS097265', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -85,6 +229,21 @@
     "message": "{'name': 'Canadian Institute of Health Research', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'MT-5877', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/9",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Canadian Institute of Health Research', 'roleName': [], 'schemaKey': 'Organization', 'awardNumber': 'MT-5877', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

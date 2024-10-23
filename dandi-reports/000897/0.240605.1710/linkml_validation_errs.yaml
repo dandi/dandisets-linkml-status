@@ -1,51 +1,156 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:d58da278-5701-4b19-9d3f-be95245f2d27'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-06-05T17:10:33.732071+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-06-05T17:10:33.732071+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:e91af7af-cbfc-40ae-8555-256dee6780de'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:d58da278-5701-4b19-9d3f-be95245f2d27'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-06-05T17:10:33.732071+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-06-05T17:10:33.732071+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:e91af7af-cbfc-40ae-8555-256dee6780de'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Neupane, Sujaya'', ''email'': ''sujayanyaupane@gmail.com'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-0052-3122'', ''includeInCitation'': True} is not of
     type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Neupane, Sujaya'', ''email'': ''sujayanyaupane@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-0052-3122'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Fiete, Ila'', ''email'': ''fiete@mit.edu'', ''roleName'':
     [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4738-2539'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fiete, Ila'', ''email'': ''fiete@mit.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4738-2539'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Jazayeri, Mehrdad'', ''email'': ''mjaz@mit.edu'', ''roleName'':
     [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-9764-6961'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jazayeri, Mehrdad'', ''email'': ''mjaz@mit.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-9764-6961'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/05xj56w78'',
     ''awardNumber'': ''NIMH-MH129046'', ''includeInCitation'': False} is not of type
     ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/05xj56w78'',
+      ''awardNumber'': ''NIMH-MH129046'', ''includeInCitation'': False} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Natural Science and Engineering Council of Canada'', ''roleName'':
     [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01h531d29'',
     ''awardNumber'': ''NSERC PDF-516867-2018'', ''includeInCitation'': False} is not
     of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Natural Science and Engineering Council of Canada'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01h531d29'',
+      ''awardNumber'': ''NSERC PDF-516867-2018'', ''includeInCitation'': False} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

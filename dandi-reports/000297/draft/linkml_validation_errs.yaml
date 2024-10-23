@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -10,6 +17,19 @@
   message: '{''name'': ''Cortex'', ''schemaKey'': ''Anatomy'', ''identifier'': ''UBERON:0001851''}
     is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Cortex'', ''schemaKey'': ''Anatomy'', ''identifier'': ''UBERON:0001851''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -18,6 +38,20 @@
     [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Howard, Derek'', ''email'': ''derekhoward@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -27,6 +61,21 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8009-147X'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Homeira Moradi, Chameh'', ''email'': ''homeira.moradi@uhnresearch.ca'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8009-147X'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -36,6 +85,21 @@
     ''Person'', ''identifier'': ''0000-0002-3443-3790'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Taufik A Valiante'', ''email'': ''taufik.valiante@uhn.ca'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:Supervision''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3443-3790'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -46,4 +110,19 @@
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Shreejoy Tripathy'', ''email'': ''shreejoy.tripathy@camh.ca'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataCurator'',
+      ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1007-9061'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

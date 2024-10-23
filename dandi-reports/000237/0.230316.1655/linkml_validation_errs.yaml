@@ -1,23 +1,83 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:3da5db15-d7c7-4dc8-afba-9043bf9edd67'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-03-16T16:55:56.052220+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-03-16T16:55:56.052220+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:ae2b27ec-73ef-41f2-94d7-8615eb71bbe9'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:3da5db15-d7c7-4dc8-afba-9043bf9edd67'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-03-16T16:55:56.052220+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-03-16T16:55:56.052220+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:ae2b27ec-73ef-41f2-94d7-8615eb71bbe9'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''awardNumber'': ''1 R01 NS 123887-01''} is not
     of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''1 R01 NS 123887-01''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Haesemeyer, Martin'', ''email'': ''haesemeyer.1@osu.edu'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Haesemeyer, Martin'', ''email'': ''haesemeyer.1@osu.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

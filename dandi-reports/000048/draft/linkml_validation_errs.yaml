@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -11,6 +18,20 @@
     ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ledochowitsch, Peter'', ''roleName'': [''dcite:Author'',
+      ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -18,6 +39,19 @@
   message: '{''name'': ''Huang, Lawrence'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Huang, Lawrence'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -25,6 +59,19 @@
   message: '{''name'': ''Knoblich, Ulf'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Knoblich, Ulf'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -32,6 +79,19 @@
   message: '{''name'': ''Oliver, Michael'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Oliver, Michael'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -39,6 +99,19 @@
   message: '{''name'': ''Lecoq, Jerome'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lecoq, Jerome'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -46,6 +119,19 @@
   message: '{''name'': ''Reid, Clay'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Reid, Clay'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -53,6 +139,19 @@
   message: '{''name'': ''Li, Lu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Li, Lu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -60,6 +159,19 @@
   message: '{''name'': ''Zeng, Hongkui'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/7'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zeng, Hongkui'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -67,6 +179,19 @@
   message: '{''name'': ''Koch, Christof'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Koch, Christof'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -74,6 +199,19 @@
   message: '{''name'': ''Waters, Jack'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/9'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Waters, Jack'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -82,6 +220,19 @@
     ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/10'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Vries, Saskia E.J. de'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -89,4 +240,17 @@
   message: '{''name'': ''Buice, Michael A.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/11'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Buice, Michael A.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -12,6 +19,21 @@
     ''identifier'': ''0000-0002-3228-1981'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhang, Guang-Wei'', ''email'': ''guangwei.zhang@med.usc.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-3228-1981'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -20,6 +42,20 @@
     ''Person'', ''identifier'': ''0000-0002-3914-1877'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Tao, Can'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3914-1877'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -29,4 +65,19 @@
     ''https://ror.org/01cwqze88'', ''awardNumber'': ''1U01MH116990-01'', ''contactPoint'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institute of
+      Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''1U01MH116990-01'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

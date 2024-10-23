@@ -1,23 +1,83 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:4163eba3-27b2-4b92-a73f-8512285173e6'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-02-23T12:16:32.676105+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-02-23T12:16:32.676105+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:646512a5-4d84-4717-9803-0e12ecd7d3e5'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:4163eba3-27b2-4b92-a73f-8512285173e6'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-02-23T12:16:32.676105+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-02-23T12:16:32.676105+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:646512a5-4d84-4717-9803-0e12ecd7d3e5'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Millman, Dan'', ''roleName'': [''dcite:ContactPerson'', ''dcite:Author''],
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6255-6085'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Millman, Dan'', ''roleName'': [''dcite:ContactPerson'',
+      ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6255-6085'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Vries, Saskia de'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''identifier'': ''0000-0002-3704-3499'', ''includeInCitation'': True}
     is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Vries, Saskia de'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3704-3499'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

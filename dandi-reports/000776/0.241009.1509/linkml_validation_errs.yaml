@@ -1,0 +1,415 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:68fb5291-c137-4242-9899-5eff85d24b46'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-10-09T15:09:37.183139+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-10-09T15:09:37.183139+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:9dd3c491-6433-43a8-afc5-cf2aa8e22675'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:68fb5291-c137-4242-9899-5eff85d24b46'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-10-09T15:09:37.183139+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-10-09T15:09:37.183139+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:9dd3c491-6433-43a8-afc5-cf2aa8e22675'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Atanas, Adam'', ''roleName'': [''dcite:ProjectLeader''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Atanas, Adam'', ''roleName'': [''dcite:ProjectLeader''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kim, Jungsoo'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kim, Jungsoo'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wang, Ziyu'', ''roleName'': [''dcite:ProjectMember''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wang, Ziyu'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Bueno, Eric'', ''roleName'': [''dcite:ProjectMember''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bueno, Eric'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Becker, McCoy'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Becker, McCoy'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kang, Di'', ''roleName'': [''dcite:ProjectMember''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kang, Di'', ''roleName'': [''dcite:ProjectMember''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Park, Jungyeon'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Park, Jungyeon'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kramer, Talya'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kramer, Talya'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wan, Flossie'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wan, Flossie'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Baskoylu, Saba'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Baskoylu, Saba'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Dag, Ugur'', ''roleName'': [''dcite:ProjectMember''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dag, Ugur'', ''roleName'': [''dcite:ProjectMember''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kalogeropoulou, Elpiniki'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kalogeropoulou, Elpiniki'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Gomes, Matthew'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gomes, Matthew'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Estrem, Cassi'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/13'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Estrem, Cassi'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sprague, Daniel'', ''email'': ''daniel.y.sprague@gmail.com'',
+    ''roleName'': [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/14'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 14
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sprague, Daniel'', ''email'': ''daniel.y.sprague@gmail.com'',
+      ''roleName'': [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Cohen, Netta'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/15'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 15
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen, Netta'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Mansinghka, Vikash'', ''roleName'': [''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/16'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 16
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mansinghka, Vikash'', ''roleName'': [''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Flavell, Steve'', ''email'': ''flavell@mit.edu'', ''roleName'':
+    [''dcite:ProjectMember'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/17'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 17
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Flavell, Steve'', ''email'': ''flavell@mit.edu'', ''roleName'':
+      [''dcite:ProjectMember'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

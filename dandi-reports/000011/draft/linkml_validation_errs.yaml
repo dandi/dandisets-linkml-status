@@ -3,6 +3,13 @@
   instantiates: Dandiset
   message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -13,6 +20,22 @@
     ''Affiliation'', ''includeInCitation'': False}], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Li, Nuo'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6613-5018'', ''affiliation'':
+      [{''name'': ''Janelia Research Campus, Howard Hughes Medical Institute'', ''schemaKey'':
+      ''Affiliation'', ''includeInCitation'': False}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -22,6 +45,21 @@
     Medical Institute'', ''schemaKey'': ''Affiliation'', ''includeInCitation'': False}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Daie, Kayvon'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Janelia Research Campus, Howard Hughes
+      Medical Institute'', ''schemaKey'': ''Affiliation'', ''includeInCitation'':
+      False}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -31,6 +69,21 @@
     Medical Institute'', ''schemaKey'': ''Affiliation'', ''includeInCitation'': False}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Svoboda, Karel'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''Janelia Research Campus, Howard Hughes
+      Medical Institute'', ''schemaKey'': ''Affiliation'', ''includeInCitation'':
+      False}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -41,4 +94,20 @@
     [], ''schemaKey'': ''Affiliation'', ''contactPoint'': [], ''includeInCitation'':
     False}], ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Druckmann, Shaul'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0068-3377'', ''affiliation'':
+      [{''name'': ''Janelia Research Campus, Howard Hughes Medical Institute'', ''roleName'':
+      [], ''schemaKey'': ''Affiliation'', ''contactPoint'': [], ''includeInCitation'':
+      False}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

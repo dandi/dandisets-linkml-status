@@ -1,33 +1,109 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:cf363ec8-9e1b-4fd1-8e7c-d69e61739d48'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2021-09-13T16:39:34.589079+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2021-09-13T16:39:34.589079+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:0800ca82-d8a4-4ed7-9896-9c9b773db26b'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:cf363ec8-9e1b-4fd1-8e7c-d69e61739d48'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2021-09-13T16:39:34.589079+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2021-09-13T16:39:34.589079+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:0800ca82-d8a4-4ed7-9896-9c9b773db26b'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''visual cortex'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0000411''}
     is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''visual cortex'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0000411''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Gouwens, Nathan'', ''email'': ''nathang@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0001-8429-4090'', ''affiliation'': [{''name'': ''Allen Institute for Brain
     Science'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00dcv1019''}],
     ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gouwens, Nathan'', ''email'': ''nathang@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-8429-4090'', ''affiliation'': [{''name'': ''Allen Institute for
+      Brain Science'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00dcv1019''}],
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://alleninstitute.org'', ''name'': ''Allen Institute
     for Brain Science'', ''roleName'': [], ''schemaKey'': ''Organization'', ''identifier'':
     ''https://ror.org/00dcv1019'', ''contactPoint'': [], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org'', ''name'': ''Allen Institute
+      for Brain Science'', ''roleName'': [], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/00dcv1019'', ''contactPoint'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

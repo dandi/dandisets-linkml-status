@@ -4,6 +4,14 @@
   message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
     were unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context', 'datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -12,6 +20,20 @@
     ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Baker, Cody'', ''email'': ''cody.c.baker.phd@gmail.com'',
+      ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -21,4 +43,19 @@
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03cpe7c52'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute'',
+      ''email'': ''info@alleninstitute.org'', ''roleName'': [''dcite:Funder'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03cpe7c52'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

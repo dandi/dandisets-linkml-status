@@ -1,23 +1,99 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '''2021-08-12T15:16:05.197111'' is not a ''date-time'' in /datePublished'
+  severity: ERROR
+  source:
+    absolute_path:
+    - datePublished
+    absolute_schema_path:
+    - properties
+    - datePublished
+    - format
+    message: '''2021-08-12T15:16:05.197111'' is not a ''date-time'''
+    validator: format
+    validator_value: date-time
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:e4c71a14-8e1f-4ea1-b10b-687a7f661a2e'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2021-08-12T15:16:05.197111'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2021-08-12T15:16:05.197111'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:e5aa1351-6de3-4bc3-8496-056d2ca82528'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:e4c71a14-8e1f-4ea1-b10b-687a7f661a2e'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2021-08-12T15:16:05.197111'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2021-08-12T15:16:05.197111'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:e5aa1351-6de3-4bc3-8496-056d2ca82528'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Grosmark, Andres D.'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
     ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
     not of type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Grosmark, Andres D.'', ''roleName'': [''dcite:Author'',
+      ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
     'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [], 'includeInCitation':
     True} is not of type 'string' in /contributor/1"
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+      'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [], 'includeInCitation':
+      True} is not of type 'string'"
+    validator: type
+    validator_value: string
   type: jsonschema validation

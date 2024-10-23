@@ -5,7 +5,16 @@
     "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
   },
   {
     "type": "jsonschema validation",
@@ -13,7 +22,22 @@
     "message": "{'name': 'Yu, Kai', 'email': 'kaiyu1@andrew.cmu.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yu, Kai', 'email': 'kaiyu1@andrew.cmu.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
@@ -21,6 +45,19 @@
     "message": "'Electrophysiology-Compatible Wearable Transcranial Focused Ultrasound Neuromodulation Array Probes (Ultrasound Characterizations: Computer Simulations)' does not match '^(?=.{,150}$)' in /name",
     "instance_index": 0,
     "instantiates": "Dandiset",
-    "context": []
+    "context": [],
+    "source": {
+      "message": "'Electrophysiology-Compatible Wearable Transcranial Focused Ultrasound Neuromodulation Array Probes (Ultrasound Characterizations: Computer Simulations)' does not match '^(?=.{,150}$)'",
+      "absolute_path": [
+        "name"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "name",
+        "pattern"
+      ],
+      "validator": "pattern",
+      "validator_value": "^(?=.{,150}$)"
+    }
   }
 ]

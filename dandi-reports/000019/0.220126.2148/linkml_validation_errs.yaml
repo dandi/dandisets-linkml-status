@@ -1,32 +1,106 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
+  instantiates: PublishedDandiset
+  message: Additional properties are not allowed ('@context' was unexpected) in /
   severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('@context' was unexpected)
+    validator: additionalProperties
+    validator_value: false
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:dd727b38-3944-4b45-9cd0-8998282a835f'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2022-01-26T21:48:51.810284+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2022-01-26T21:48:51.810284+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:4b407888-0138-4d06-9a82-d1974fd52802'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:dd727b38-3944-4b45-9cd0-8998282a835f'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2022-01-26T21:48:51.810284+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2022-01-26T21:48:51.810284+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:4b407888-0138-4d06-9a82-d1974fd52802'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''primary motor cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
     ''UBERON:0034888''} is not of type ''string'' in /about/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''primary motor cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''UBERON:0034888''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Bouchard, Kristofer E.'', ''roleName'': [''dcite:Author'',
     ''dcite:DataCollector'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-1974-4603'', ''includeInCitation'': True} is not of
     type ''string'' in /contributor/0'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Bouchard, Kristofer E.'', ''roleName'': [''dcite:Author'',
+      ''dcite:DataCollector'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-1974-4603'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Chang, Edward F.'', ''email'': ''Edward.Chang@ucsf.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
     /contributor/1'
   severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chang, Edward F.'', ''email'': ''Edward.Chang@ucsf.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation

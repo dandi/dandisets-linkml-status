@@ -2,17 +2,62 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:9144120e-1681-4106-a155-49117db2cece', 'name': 'DANDI publish', 'endDate': '2021-08-31T20:33:59.583352+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2021-08-31T20:33:59.583352+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:dd4c8326-504c-4bf3-b0a6-24ceb70a9830', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:9144120e-1681-4106-a155-49117db2cece', 'name': 'DANDI publish', 'endDate': '2021-08-31T20:33:59.583352+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2021-08-31T20:33:59.583352+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:dd4c8326-504c-4bf3-b0a6-24ceb70a9830', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'url': 'http://centerforopenneuroscience.org/', 'name': 'Halchenko, Yaroslav O.', 'email': 'yoh@dartmouth.edu', 'roleName': ['dcite:Conceptualization', 'dcite:Author', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3456-2493', 'affiliation': [{'name': 'Dartmouth College', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/049s0rh22'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://centerforopenneuroscience.org/', 'name': 'Halchenko, Yaroslav O.', 'email': 'yoh@dartmouth.edu', 'roleName': ['dcite:Conceptualization', 'dcite:Author', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3456-2493', 'affiliation': [{'name': 'Dartmouth College', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/049s0rh22'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

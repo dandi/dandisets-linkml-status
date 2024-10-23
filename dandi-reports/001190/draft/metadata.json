@@ -2,13 +2,7 @@
   "id": "DANDI:001190/draft",
   "url": "https://dandiarchive.org/dandiset/001190/draft",
   "name": "In vivo Calcium Imaging: Genotype Data: NOR",
-  "about": [
-    {
-      "name": "",
-      "schemaKey": "Disorder",
-      "identifier": ""
-    }
-  ],
+  "about": [],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -20,13 +14,11 @@
   ],
   "version": "draft",
   "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json",
-  "citation": "Fitting, Sylvia  (2024) In vivo Calcium Imaging: Genotype Data: NOR (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001190/draft",
+  "citation": "Fitting, Sylvia ; Yadav-Samudrala, Barkha (2024) In vivo Calcium Imaging: Genotype Data: NOR (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001190/draft",
   "keywords": [
     "In vivo calcium imaging, endocannabinoids, HIV-1, Tat"
   ],
-  "protocol": [
-    "23.056"
-  ],
+  "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001190",
   "repository": "https://dandiarchive.org",
@@ -37,14 +29,23 @@
       "roleName": [
         "dcite:ContactPerson",
         "dcite:Conceptualization",
-        "dcite:FundingAcquisition"
+        "dcite:FundingAcquisition",
+        "dcite:Author",
+        "dcite:Investigation",
+        "dcite:ProjectLeader",
+        "dcite:Sponsor"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "University of North Carolina at Chapel Hill",
+          "schemaKey": "Affiliation"
+        }
+      ],
       "includeInCitation": true
     },
     {
-      "name": "Barkha Yadav-Samudrala",
+      "name": "Yadav-Samudrala, Barkha",
       "email": "yadavb@email.unc.edu",
       "roleName": [
         "dcite:Conceptualization",
@@ -66,19 +67,73 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-2967-2017",
-      "includeInCitation": false
+      "includeInCitation": true
     }
   ],
   "dateCreated": "2024-09-05T14:40:30.580826+00:00",
-  "description": "Data set for Tat(-) and Tat(+) male mice comparing genotype differences without any drug treatment\nResearcher: Barkha J. Yadav Samudrala",
+  "description": "Data set for Tat(-) and Tat(+) male mice comparing genotype differences without any drug treatment\nResearcher: Barkha J. Yadav Samudrala and Sylvia Fitting",
+  "publishedBy": {
+    "id": "urn:uuid:de43493a-14e4-46d0-8553-2d37a517f216",
+    "name": "DANDI publish",
+    "endDate": "2024-10-18T16:34:10.491088+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2024-10-18T16:34:10.491088+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:f1c046d2-d344-4daf-a3cd-e81ae4f96747",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
   "studyTarget": [
     "HIV-1 Tat Transgenic Mouse Model"
   ],
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 220201651439,
+    "numberOfFiles": 16,
+    "numberOfSubjects": 8,
+    "variableMeasured": [
+      "PlaneSegmentation",
+      "ImagingPlane",
+      "ProcessingModule",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
+  "datePublished": "2024-10-18T16:34:10.491088+00:00",
   "schemaVersion": "0.6.8",
   "ethicsApproval": [
     {

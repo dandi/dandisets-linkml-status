@@ -2,57 +2,177 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('@context' was unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:2165d23e-389e-4efd-8ccf-c841c4648cd4', 'name': 'DANDI publish', 'endDate': '2023-06-02T13:07:32.205531+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-06-02T13:07:32.205531+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:ed323eeb-c2bd-4cb1-8c6e-cbccda4c4e30', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:2165d23e-389e-4efd-8ccf-c841c4648cd4', 'name': 'DANDI publish', 'endDate': '2023-06-02T13:07:32.205531+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-06-02T13:07:32.205531+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:ed323eeb-c2bd-4cb1-8c6e-cbccda4c4e30', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Zhao, Yue', 'email': 'yuezhao@rochester.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataManager', 'dcite:Maintainer'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zhao, Yue', 'email': 'yuezhao@rochester.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataManager', 'dcite:Maintainer'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Boster, Kimberly', 'roleName': ['dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-5178-128X', 'affiliation': [{'name': 'University of Rochester', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/022kthw22'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Boster, Kimberly', 'roleName': ['dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-5178-128X', 'affiliation': [{'name': 'University of Rochester', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/022kthw22'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Kelley, Douglas', 'email': 'd.h.kelley@rochester.edu', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectLeader', 'dcite:ProjectManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-9658-2954', 'affiliation': [{'name': 'University of Rochester', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/022kthw22'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kelley, Douglas', 'email': 'd.h.kelley@rochester.edu', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectLeader', 'dcite:ProjectManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-9658-2954', 'affiliation': [{'name': 'University of Rochester', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/022kthw22'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'United States Department of the Army', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/035w1gb98', 'awardNumber': 'MURI W911NF1910280', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'United States Department of the Army', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/035w1gb98', 'awardNumber': 'MURI W911NF1910280', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U19NS128613 and R01AT012312', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U19NS128613 and R01AT012312', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
     "message": "{'name': 'Raicevic, Nikola', 'email': 'nraicevi@u.rochester.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/022kthw22'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": []
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Raicevic, Nikola', 'email': 'nraicevi@u.rochester.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/022kthw22'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]
