@@ -1,24 +1,10 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-    'publishedBy' were unexpected) in /
-  severity: ERROR
-  source:
-    absolute_path: []
-    absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('@context', 'datePublished', 'doi',
-      'publishedBy' were unexpected)
-    validator: additionalProperties
-    validator_value: false
-  type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: Dandiset
-  message: '{''name'': ''Flynn, Garrett'', ''email'': ''gflynn@usc.edu'', ''roleName'':
-    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/0'
+  message: '{''name'': ''Zaki, Yosif'', ''email'': ''joe.zaki@icahn.mssm.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCollector'', ''dcite:ContactPerson''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-8167-0182'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -29,8 +15,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Flynn, Garrett'', ''email'': ''gflynn@usc.edu'', ''roleName'':
-      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    message: '{''name'': ''Zaki, Yosif'', ''email'': ''joe.zaki@icahn.mssm.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8167-0182'', ''includeInCitation'':
       True} is not of type ''string'''
     validator: type
     validator_value: string

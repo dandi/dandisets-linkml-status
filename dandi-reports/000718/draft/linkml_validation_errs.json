@@ -2,29 +2,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "message": "{'name': 'Zaki, Yosif', 'email': 'joe.zaki@icahn.mssm.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8167-0182', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('@context', 'datePublished', 'doi', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
-      ],
-      "validator": "additionalProperties",
-      "validator_value": false
-    }
-  },
-  {
-    "type": "jsonschema validation",
-    "severity": "ERROR",
-    "message": "{'name': 'Flynn, Garrett', 'email': 'gflynn@usc.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
-    "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": [],
-    "source": {
-      "message": "{'name': 'Flynn, Garrett', 'email': 'gflynn@usc.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Zaki, Yosif', 'email': 'joe.zaki@icahn.mssm.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8167-0182', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0

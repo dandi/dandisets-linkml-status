@@ -24,7 +24,6 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
   "citation": "Vu, Mai-Anh T.; Brown, Eleanor H.; Wen, Michelle J.; Noggle, Christian A.; Zhang, Zicheng; Monk, Kevin J.; Bouabid, Safa; Mroz, Lydia; Graham, Benjamin M.; Zhuo, Yizhou; Li, Yulong; Otchy, Timothy M.; Tian, Lin; Davison, Ian G.; Boas, David A.; Howe, Mark W. (2024) Targeted micro-fiber arrays for measuring and manipulating localized multi-scale neural dynamics over large, deep brain volumes during behavior (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001084/draft",
   "keywords": [
     "multi-site photometry",
@@ -264,6 +263,22 @@
   ],
   "dateCreated": "2024-07-09T09:02:04.023305+00:00",
   "description": "Neural population dynamics relevant to behavior vary over multiple spatial and temporal scales across three-dimensional volumes. Current optical approaches lack the spatial coverage and resolution necessary to measure and manipulate naturally occurring patterns of large-scale, distributed dynamics within and across deep brain regions such as the striatum. We designed a new micro-fiber array approach capable of chronically measuring and optogenetically manipulating local dynamics across over 100 targeted locations simultaneously in head-fixed and freely moving mice, enabling the investigation of cell-type- and neurotransmitter-specific signals over arbitrary 3D volumes at a spatial resolution and coverage previously inaccessible. We applied this method to resolve rapid dopamine release dynamics across the striatum, revealing distinct, modality-specific spatiotemporal patterns in response to salient sensory stimuli extending over millimeters of tissue.",
+  "publishedBy": {
+    "id": "urn:uuid:88d7cfee-4aee-41e4-87ed-5ed9bf63e896",
+    "name": "DANDI publish",
+    "endDate": "2024-10-23T20:11:48.114699+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2024-10-23T20:11:48.114699+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:a11a8934-6287-404b-87a1-6af492e85090",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
   "studyTarget": [],
   "assetsSummary": {
     "species": [
@@ -287,8 +302,8 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 823109975937,
-    "numberOfFiles": 179,
+    "numberOfBytes": 826752561643,
+    "numberOfFiles": 180,
     "numberOfSubjects": 16,
     "variableMeasured": [
       "OpticalChannel",
@@ -307,6 +322,7 @@
       }
     ]
   },
+  "datePublished": "2024-10-23T20:11:48.114699+00:00",
   "schemaVersion": "0.6.7",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
@@ -335,6 +351,14 @@
       "schemaKey": "Resource",
       "repository": "GitHub",
       "resourceType": "dcite:ComputationalNotebook"
+    },
+    {
+      "url": "https://github.com/howelab",
+      "name": "Howe Lab GitHub",
+      "relation": "dcite:IsSupplementedBy",
+      "schemaKey": "Resource",
+      "repository": "GitHub",
+      "resourceType": "dcite:Software"
     }
   ],
   "manifestLocation": [

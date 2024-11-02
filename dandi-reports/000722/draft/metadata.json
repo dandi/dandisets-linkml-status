@@ -1,8 +1,19 @@
 {
   "id": "DANDI:000722/draft",
   "url": "https://dandiarchive.org/dandiset/000722/draft",
-  "name": "sOCT Vessel Segmentation Validation Data",
-  "about": [],
+  "name": "sOCT of the Human Somatosensory Cortex and Vessel Segmentation",
+  "about": [
+    {
+      "name": "Somatosensory Cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "UBERON:0008930"
+    },
+    {
+      "name": "Brain",
+      "schemaKey": "Anatomy",
+      "identifier": "UBERON:0000955"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -13,10 +24,10 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
-  "citation": "Chollet, Etienne (2024) sOCT Vessel Segmentation Validation Data (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000722/draft",
+  "citation": "Chollet, Etienne; Ya\u00ebl Balbastre; Mauri, Chiara; Magnain, Caroline; Fischl, Bruce; Wang, Hui (2024) sOCT of the Human Somatosensory Cortex and Vessel Segmentation (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000722/draft",
   "keywords": [
-    "Optical Coherence Tomography"
+    "Optical Coherence Tomography",
+    "Vasculature"
   ],
   "protocol": [
     "https://github.com/EtienneChollet/oct_vesselseg"
@@ -29,44 +40,67 @@
       "name": "Chollet, Etienne",
       "email": "echollet@mgh.harvard.edu",
       "roleName": [
-        "dcite:ContactPerson"
+        "dcite:ContactPerson",
+        "dcite:Author"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0009-0006-4730-525X",
+      "affiliation": [
+        {
+          "name": "Massachussets General Hospital",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Ya\u00ebl Balbastre",
+      "email": "y.balbastre@ucl.ac.uk",
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8758-9978",
+      "awardNumber": "NIF\\R1\\232460",
+      "includeInCitation": true
+    },
+    {
+      "name": "Mauri, Chiara",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Magnain, Caroline",
+      "schemaKey": "Person",
+      "awardNumber": "CZI (2019- 198101, 2021-244261)",
+      "includeInCitation": true
+    },
+    {
+      "name": "Fischl, Bruce",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Wang, Hui",
+      "schemaKey": "Person",
       "includeInCitation": true
     }
   ],
   "dateCreated": "2023-12-04T23:33:28.541355+00:00",
-  "description": "_",
+  "description": "This dataset contains a 3.4 x 2.9 x 1.1 cm block of Human somatosensory cortex imaged by Serial-sectionning Optical Coherence Tomography (sOCT) at 20 \u00b5m isotropic resolution. Vessels in a 6 x 6 x 6 mm region of interest (ROI) were manually labeled and used to validate a machine-learning segmentation method.The output of the automatic segmentation method are also provided, both for the small ROI and large block.\n\nIn details, the dataset contains:\n\n- `sub-I46/micr/sub-I46_sample-somatosensory_chunk-01_OCT.ome.zarr` - Image of the full block of tissue\n- `sub-I46/micr/sub-I46_sample-somatosensory_chunk-02_OCT.ome.zarr` - Image of the smaller region of interest\n- `derivatives/annotations/sub-I46/micr/sub-I46_sample-somatosensory_chunk-01_label-tissue_mask.ome.zarr` - Manually labeled tissue\n- `derivatives/annotations/sub-I46/micr/sub-I46_sample-somatosensory_chunk-01_label-vessels_mask.ome.zarr` - Manually labeled vessels\n- `derivatives/predictions/sub-I46/micr/sub-I46_sample-somatosensory_chunk-01_label-vessels_mask.ome.zarr` - Vessel maximum-likelihood map (large block)\n- `derivatives/predictions/sub-I46/micr/sub-I46_sample-somatosensory_chunk-02_label-vessels_mask.ome.zarr` - Vessel maximum-likelihood map (small block)\n- `derivatives/predictions/sub-I46/micr/sub-I46_sample-somatosensory_chunk-01_label-vessels_probseg.ome.zarr` - Vessel probability map (large block)\n- `derivatives/predictions/sub-I46/micr/sub-I46_sample-somatosensory_chunk-02_label-vessels_probseg.ome.zarr` - Vessel probability map (small block)",
   "studyTarget": [
     "Human Brain"
   ],
   "assetsSummary": {
-    "species": [
-      {
-        "name": "Homo sapiens - Human",
-        "schemaKey": "SpeciesType",
-        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      }
-    ],
-    "approach": [],
     "schemaKey": "AssetsSummary",
-    "dataStandard": [
-      {
-        "name": "Neurodata Without Borders (NWB)",
-        "schemaKey": "StandardsType",
-        "identifier": "RRID:SCR_015242"
-      }
-    ],
-    "numberOfBytes": 11321259672,
-    "numberOfFiles": 1,
-    "numberOfSubjects": 1,
-    "variableMeasured": [],
-    "measurementTechnique": []
+    "numberOfBytes": 0,
+    "numberOfFiles": 0
   },
   "schemaVersion": "0.6.4",
   "ethicsApproval": [],
-  "wasGeneratedBy": [],
+  "wasGeneratedBy": [
+    {
+      "name": "Unet validation data",
+      "schemaKey": "Project"
+    }
+  ],
   "relatedResource": [],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/000722/versions/draft/assets/"

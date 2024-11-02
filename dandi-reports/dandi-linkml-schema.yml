@@ -408,9 +408,9 @@ slots:
     name: access
     notes:
     - 'pydantic2linkml: Unable to express the default factory, <function CommonModel.<lambda>
-      at 0x10715eb80>, in LinkML.'
+      at 0x7f39b2a8b6a0>, in LinkML.'
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function AccessRequirements.open_or_embargoed at 0x106c4d1f0>.'
+      function, <function AccessRequirements.open_or_embargoed at 0x7f39b2a29b20>.'
     range: AccessRequirements
     required: false
     multivalued: true
@@ -717,7 +717,7 @@ slots:
     name: relatedResource
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function Resource.identifier_or_url at 0x107216c10>.'
+      function, <function Resource.identifier_or_url at 0x7f39b2a2bf60>.'
     range: Resource
     required: false
     multivalued: true
@@ -819,7 +819,7 @@ slots:
     name: vendor
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function Contributor.ensure_contact_person_has_email at 0x106be3f70>.'
+      function, <function Contributor.ensure_contact_person_has_email at 0x7f39b2a291c0>.'
     range: Organization
     required: false
   version:
@@ -1021,6 +1021,9 @@ classes:
   BareAsset:
     name: BareAsset
     notes:
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
+      slot. The slot representation of the wasGeneratedBy field in the BareAsset Pydantic
+      model lacks meta slots: [''range''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the BareAsset Pydantic
       model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
@@ -1028,9 +1031,6 @@ classes:
     - 'pydantic2linkml: Impossible to generate slot usage entry for the access slot.
       The slot representation of the access field in the BareAsset Pydantic model
       has changes in value in meta slots: [''notes''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
-      slot. The slot representation of the wasGeneratedBy field in the BareAsset Pydantic
-      model lacks meta slots: [''range''] .'
     is_a: CommonModel
     slots:
     - approach
@@ -1187,25 +1187,25 @@ classes:
   Dandiset:
     name: Dandiset
     notes:
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
+      slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic
+      model has changes in value in meta slots: [''range''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
+      The slot representation of the name field in the Dandiset Pydantic model has
+      changes in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Dandiset Pydantic
       model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
       .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
-      slot representation of the id field in the Dandiset Pydantic model has changes
-      in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the description
       slot. The slot representation of the description field in the Dandiset Pydantic
       model has changes in value in meta slots: [''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
-      slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic
-      model has changes in value in meta slots: [''range''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the license slot.
       The slot representation of the license field in the Dandiset Pydantic model
       has changes in value in meta slots: [''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
-      The slot representation of the name field in the Dandiset Pydantic model has
-      changes in value in meta slots: [''required''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
+      slot representation of the id field in the Dandiset Pydantic model has changes
+      in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the contributor
       slot. The slot representation of the contributor field in the Dandiset Pydantic
       model has changes in value in meta slots: [''notes'', ''required''] .'
@@ -1327,13 +1327,13 @@ classes:
   Organization:
     name: Organization
     notes:
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation
+      slot. The slot representation of the includeInCitation field in the Organization
+      Pydantic model has changes in value in meta slots: [''ifabsent''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Organization Pydantic
       model has changes in value in meta slots: [''any_of'', ''ifabsent'', ''notes'']
       .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation
-      slot. The slot representation of the includeInCitation field in the Organization
-      Pydantic model has changes in value in meta slots: [''ifabsent''] .'
     is_a: Contributor
     slots:
     - contactPoint
@@ -1452,12 +1452,12 @@ classes:
     notes:
     - 'pydantic2linkml: Warning: LinkML does not support multiple inheritance. Publishable
       is not specified as a parent, through the `is_a` meta slot, but as a mixin.'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
-      slot. The slot representation of the schemaKey field in the PublishedDandiset
-      Pydantic model has changes in value in meta slots: [''notes''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
       slot representation of the id field in the PublishedDandiset Pydantic model
       has changes in value in meta slots: [''pattern''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
+      slot. The slot representation of the schemaKey field in the PublishedDandiset
+      Pydantic model has changes in value in meta slots: [''notes''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the url slot.
       The slot representation of the url field in the PublishedDandiset Pydantic model
       has changes in value in meta slots: [''required''] .'

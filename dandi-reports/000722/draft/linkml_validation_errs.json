@@ -2,32 +2,176 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('@context' was unexpected) in /",
+    "message": "{'name': 'Somatosensory Cortex', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0008930'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('@context' was unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'name': 'Somatosensory Cortex', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0008930'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Chollet, Etienne', 'email': 'echollet@mgh.harvard.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'Brain', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0000955'} is not of type 'string' in /about/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Chollet, Etienne', 'email': 'echollet@mgh.harvard.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Brain', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0000955'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chollet, Etienne', 'email': 'echollet@mgh.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0009-0006-4730-525X', 'affiliation': [{'name': 'Massachussets General Hospital', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chollet, Etienne', 'email': 'echollet@mgh.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0009-0006-4730-525X', 'affiliation': [{'name': 'Massachussets General Hospital', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Ya\u00ebl Balbastre', 'email': 'y.balbastre@ucl.ac.uk', 'schemaKey': 'Person', 'identifier': '0000-0001-8758-9978', 'awardNumber': 'NIF\\\\R1\\\\232460', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Ya\u00ebl Balbastre', 'email': 'y.balbastre@ucl.ac.uk', 'schemaKey': 'Person', 'identifier': '0000-0001-8758-9978', 'awardNumber': 'NIF\\\\R1\\\\232460', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mauri, Chiara', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mauri, Chiara', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Magnain, Caroline', 'schemaKey': 'Person', 'awardNumber': 'CZI (2019- 198101, 2021-244261)', 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Magnain, Caroline', 'schemaKey': 'Person', 'awardNumber': 'CZI (2019- 198101, 2021-244261)', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Fischl, Bruce', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fischl, Bruce', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Wang, Hui', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wang, Hui', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
       ],
       "absolute_schema_path": [
         "properties",

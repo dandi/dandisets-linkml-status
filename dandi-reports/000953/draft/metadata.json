@@ -13,7 +13,6 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "@context": "https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json",
   "citation": "Samuel R Nason-Tomaszewski; Matthew J. Mender; Cynthia Chestek (2024) FALCON Benchmark M2: primary motor cortex recordings in primate during finger movement (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000953/draft",
   "keywords": [],
   "protocol": [],
@@ -88,17 +87,22 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 22404212,
-    "numberOfFiles": 20,
-    "numberOfSubjects": 3,
+    "numberOfBytes": 37051512,
+    "numberOfFiles": 2,
+    "numberOfSubjects": 1,
     "variableMeasured": [
-      "Units",
+      "ElectricalSeries",
       "ElectrodeGroup",
-      "BehavioralTimeSeries"
+      "BehavioralTimeSeries",
+      "Units"
     ],
     "measurementTechnique": [
       {
-        "name": "spike sorting technique",
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
         "schemaKey": "MeasurementTechniqueType"
       },
       {
@@ -106,7 +110,7 @@
         "schemaKey": "MeasurementTechniqueType"
       },
       {
-        "name": "surgical technique",
+        "name": "spike sorting technique",
         "schemaKey": "MeasurementTechniqueType"
       }
     ]

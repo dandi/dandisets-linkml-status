@@ -1,4 +1,3 @@
-'@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
 about: []
 access:
 - schemaKey: AccessRequirements
@@ -111,7 +110,10 @@ description: 'The B1 dataset contains unsorted spike times, audio recordings, an
   intended to be used for few-shot recalibration. Please bear in mind these factors
   if making use of this dataset for purposes outside of the FALCON Benchmark. Each
   dataset split is considered one "subject" by the DANDI repository; only data from
-  one songbird is included.'
+  one songbird is included.
+
+
+  Broadband data corresponding to each dataset split can be found: https://dandiarchive.org/dandiset/001245'
 ethicsApproval:
 - contactPoint:
     email: tgentner@ucsd.edu
