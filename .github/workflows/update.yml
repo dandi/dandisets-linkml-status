@@ -1,0 +1,52 @@
+name: Update repository
+
+on:
+  schedule:
+    - cron: '51 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '^3.9'
+
+      - name: Configure git environment
+        run: |
+          git config --global user.email "team@dandiarchive.org"
+          git config --global user.name "DANDI Bot"
+
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Get dandisets-linkml-status-tools submodule content
+        run: git submodule update --init --recursive --remote
+
+      - name: Commit of the update of submodule if there is a change
+        run: |
+          if git diff --quiet -- "./tools"; then
+            echo "There is no change in the dandisets-linkml-status-tools submodule."
+          else
+            git add ./tools
+            git commit -m "Update dandisets-linkml-status-tools submodule"
+            git push
+            echo "The dandisets-linkml-status-tools submodule has been updated."
+          fi
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install datalad
+          python -m pip install con-duct
+          python -m pip install ./tools
+
+      # Update this repo with the latest validation reports
+      - name: datalad run dandisets-linkml-status with con-duct
+        run: |
+          datalad run -m "Get latest validation reports with a summary" duct dandisets-linkml-status --include-unpublished --dandi-instance dandi -l INFO
+          git push
+          echo "The repository has been updated with the latest validation reports."
+
+
