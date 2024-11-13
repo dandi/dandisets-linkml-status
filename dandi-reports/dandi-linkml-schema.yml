@@ -408,9 +408,9 @@ slots:
     name: access
     notes:
     - 'pydantic2linkml: Unable to express the default factory, <function CommonModel.<lambda>
-      at 0x7fc32fcaaf20>, in LinkML.'
+      at 0x7f48296b6f20>, in LinkML.'
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function AccessRequirements.open_or_embargoed at 0x7fc32fc34680>.'
+      function, <function AccessRequirements.open_or_embargoed at 0x7f4829624680>.'
     range: AccessRequirements
     required: false
     multivalued: true
@@ -616,258 +616,258 @@ slots:
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc34720>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829624720>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.GenotypeInfo''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''GenotypeInfo'']}, ''type'':
       ''function-after''}, ''default'': ''GenotypeInfo'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35080>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625080>]}},
       ''locus'': {''type'': ''model-field'', ''schema'': {''type'': ''model'', ''cls'':
       <class ''dandischema.models.Locus''>, ''schema'': {''type'': ''model-fields'',
       ''fields'': {''id'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca99e0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b59e0>]}},
       ''schemaKey'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''function'': {''type'': ''no-info'', ''function'': <bound method
       DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Locus''>>}, ''schema'':
       {''type'': ''literal'', ''expected'': [''Locus'']}, ''type'': ''function-after''},
       ''default'': ''Locus'', ''validate_default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca8fe0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b4fe0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
       {''type'': ''union'', ''choices'': [{''type'': ''str''}, {''type'': ''list'',
       ''items_schema'': {''type'': ''str''}}]}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca8220>]}}, ''locusType'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b4220>]}}, ''locusType'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca9120>]}}}, ''model_name'': ''Locus'', ''computed_fields'': []},
+      at 0x7f48296b5120>]}}}, ''model_name'': ''Locus'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Locus''}, ''ref'': ''dandischema.models.Locus:94832105293680'',
+      ''config'': {''title'': ''Locus''}, ''ref'': ''dandischema.models.Locus:94293513019392'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Locus''>, title=None), <bound
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Locus''>, title=None), <bound
       method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Locus''>>],
       ''pydantic_js_annotation_functions'': []}}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc37ce0>]}}, ''alleles'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829627ce0>]}}, ''alleles'': {''type'': ''model-field'', ''schema'':
       {''type'': ''list'', ''items_schema'': {''type'': ''model'', ''cls'': <class
       ''dandischema.models.Allele''>, ''schema'': {''type'': ''model-fields'', ''fields'':
       {''id'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'': None},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fcaa160>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b6160>]}},
       ''schemaKey'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''function'': {''type'': ''no-info'', ''function'': <bound method
       DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Allele''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Allele'']}, ''type'': ''function-after''},
       ''default'': ''Allele'', ''validate_default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fcaa340>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b6340>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
       {''type'': ''union'', ''choices'': [{''type'': ''str''}, {''type'': ''list'',
       ''items_schema'': {''type'': ''str''}}]}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fcaa2a0>]}}, ''alleleSymbol'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b62a0>]}}, ''alleleSymbol'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fcaa480>]}}, ''alleleType'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b6480>]}}, ''alleleType'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fcaa3e0>]}}}, ''model_name'': ''Allele'', ''computed_fields'': []},
+      at 0x7f48296b63e0>]}}}, ''model_name'': ''Allele'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Allele''}, ''ref'': ''dandischema.models.Allele:94832106014512'',
+      ''config'': {''title'': ''Allele''}, ''ref'': ''dandischema.models.Allele:94293513737936'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Allele''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Allele''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Allele''>>],
       ''pydantic_js_annotation_functions'': []}}}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc37f60>]}}, ''wasGeneratedBy'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829627f60>]}}, ''wasGeneratedBy'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''list'', ''items_schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Session''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca93a0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b53a0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Session''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Session'']}, ''type'':
       ''function-after''}, ''default'': ''Session'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9440>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5440>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9300>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5300>]}},
       ''name'': {''type'': ''model-field'', ''schema'': {''type'': ''str'', ''max_length'':
       150}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9620>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5620>]}},
       ''description'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9580>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5580>]}},
       ''startDate'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''datetime'', ''microseconds_precision'':
       ''truncate''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca94e0>]}}, ''endDate'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b54e0>]}}, ''endDate'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''datetime'', ''microseconds_precision'': ''truncate''}}, ''default'': None},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca96c0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b56c0>]}},
       ''wasAssociatedWith'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
       {''type'': ''tagged-union'', ''choices'': {''Person'': {''function'': {''type'':
       ''no-info'', ''function'': <function Contributor.ensure_contact_person_has_email
-      at 0x7fc32fc34a40>}, ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
+      at 0x7f4829624a40>}, ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc360c0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296260c0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Person''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Person'']}, ''type'': ''function-after''},
       ''default'': ''Person'', ''validate_default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc362a0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296262a0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str'', ''pattern'': ''^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36340>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626340>]}},
       ''name'': {''type'': ''model-field'', ''schema'': {''type'': ''str'', ''pattern'':
       "^([\\w\\s\\-\\.'']+),\\s+([\\w\\s\\-\\.'']+)$"}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36480>]}}, ''email'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829626480>]}}, ''email'': {''type'': ''model-field'', ''schema'': {''type'':
       ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''function'':
       {''type'': ''no-info'', ''function'': <bound method EmailStr._validate of <class
       ''pydantic.networks.EmailStr''>>}, ''schema'': {''type'': ''str''}, ''metadata'':
       {''pydantic_js_functions'': [<bound method EmailStr.__get_pydantic_json_schema__
       of <class ''pydantic.networks.EmailStr''>>]}, ''type'': ''function-after''}},
       ''default'': None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36160>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626160>]}},
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''url'', ''allowed_schemes'':
       [''http'', ''https'']}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc363e0>]}}, ''roleName'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296263e0>]}}, ''roleName'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
-      ''list'', ''items_schema'': {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94832101496208''}}},
+      ''list'', ''items_schema'': {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94293509220912''}}},
       ''default'': None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc367a0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296267a0>]}},
       ''includeInCitation'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''bool''}, ''default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36520>]}}, ''awardNumber'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829626520>]}}, ''awardNumber'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36840>]}}, ''affiliation'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829626840>]}}, ''affiliation'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''list'', ''items_schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Affiliation''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc359e0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296259e0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Affiliation''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Affiliation'']}, ''type'':
       ''function-after''}, ''default'': ''Affiliation'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35bc0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625bc0>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str'', ''pattern'':
       ''^https://ror.org/[a-z0-9]+$''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35c60>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829625c60>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''str''}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35b20>]}}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625b20>]}}},
       ''model_name'': ''Affiliation'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:94832103397536'',
+      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:94293511011456'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Affiliation''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Affiliation''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Affiliation''>>],
       ''pydantic_js_annotation_functions'': []}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fef3240>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48298eb240>]}}},
       ''model_name'': ''Person'', ''computed_fields'': []}, ''custom_init'': False,
       ''root_model'': False, ''post_init'': ''model_post_init'', ''config'': {''title'':
       ''Person''}, ''metadata'': {''pydantic_js_functions'': [functools.partial(<function
-      modify_model_json_schema at 0x7fc32fe35620>, cls=<class ''dandischema.models.Person''>,
-      title=None)], ''pydantic_js_annotation_functions'': []}}, ''ref'': ''dandischema.models.Person:94832103428976'',
+      modify_model_json_schema at 0x7f4829825620>, cls=<class ''dandischema.models.Person''>,
+      title=None)], ''pydantic_js_annotation_functions'': []}}, ''ref'': ''dandischema.models.Person:94293511154512'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Person''>>]}, ''type'': ''function-after''},
-      ''Organization'': {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.Organization:94832103395760''},
+      ''Organization'': {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.Organization:94293510963120''},
       ''Software'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Software''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35da0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829625da0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Software''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Software'']}, ''type'':
       ''function-after''}, ''default'': ''Software'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc358a0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296258a0>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str'', ''pattern'':
       ''^RRID\\:.*''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35940>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829625940>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''str''}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35a80>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625a80>]}},
       ''version'': {''type'': ''model-field'', ''schema'': {''type'': ''str''}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35800>]}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625800>]}},
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''url'', ''allowed_schemes'':
       [''http'', ''https'']}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc356c0>]}}}, ''model_name'': ''Software'', ''computed_fields'': []},
+      at 0x7f48296256c0>]}}}, ''model_name'': ''Software'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Software''}, ''ref'': ''dandischema.models.Software:94832103249152'',
+      ''config'': {''title'': ''Software''}, ''ref'': ''dandischema.models.Software:94293511100192'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Software''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Software''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Software''>>],
       ''pydantic_js_annotation_functions'': []}}, ''Agent'': {''type'': ''model'',
       ''cls'': <class ''dandischema.models.Agent''>, ''schema'': {''type'': ''model-fields'',
       ''fields'': {''id'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36b60>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626b60>]}},
       ''schemaKey'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''function'': {''type'': ''no-info'', ''function'': <bound method
       DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Agent''>>}, ''schema'':
       {''type'': ''literal'', ''expected'': [''Agent'']}, ''type'': ''function-after''},
       ''default'': ''Agent'', ''validate_default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36ca0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829626ca0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36c00>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829626c00>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''str''}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36de0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626de0>]}},
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''url'', ''allowed_schemes'':
       [''http'', ''https'']}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36d40>]}}}, ''model_name'': ''Agent'', ''computed_fields'': []},
+      at 0x7f4829626d40>]}}}, ''model_name'': ''Agent'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Agent''}, ''ref'': ''dandischema.models.Agent:94832103294992'',
+      ''config'': {''title'': ''Agent''}, ''ref'': ''dandischema.models.Agent:94293511086352'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Agent''>, title=None), <bound
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Agent''>, title=None), <bound
       method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Agent''>>],
       ''pydantic_js_annotation_functions'': []}}}, ''discriminator'': ''schemaKey'',
       ''strict'': False, ''from_attributes'': True, ''metadata'': {}}}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9760>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5760>]}},
       ''used'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
       {''type'': ''model'', ''cls'': <class ''dandischema.models.Equipment''>, ''schema'':
@@ -875,47 +875,47 @@ slots:
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc37e20>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829627e20>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Equipment''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Equipment'']}, ''type'':
       ''function-after''}, ''default'': ''Equipment'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc37d80>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829627d80>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc37ec0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829627ec0>]}},
       ''name'': {''type'': ''model-field'', ''schema'': {''type'': ''str'', ''max_length'':
       150}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc37c40>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829627c40>]}},
       ''description'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36ac0>]}}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626ac0>]}}},
       ''model_name'': ''Equipment'', ''computed_fields'': []}, ''custom_init'': False,
       ''root_model'': False, ''post_init'': ''model_post_init'', ''config'': {''title'':
-      ''Equipment''}, ''ref'': ''dandischema.models.Equipment:94832103943504'', ''metadata'':
+      ''Equipment''}, ''ref'': ''dandischema.models.Equipment:94293511670656'', ''metadata'':
       {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Equipment''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Equipment''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Equipment''>>],
       ''pydantic_js_annotation_functions'': []}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9940>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5940>]}}},
       ''model_name'': ''Session'', ''computed_fields'': []}, ''custom_init'': False,
       ''root_model'': False, ''post_init'': ''model_post_init'', ''config'': {''title'':
-      ''Session''}, ''ref'': ''dandischema.models.Session:94832104188256'', ''metadata'':
+      ''Session''}, ''ref'': ''dandischema.models.Session:94293512270880'', ''metadata'':
       {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Session''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Session''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Session''>>],
       ''pydantic_js_annotation_functions'': []}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32febb7e0>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48298ab7e0>]}}},
       ''model_name'': ''GenotypeInfo'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''GenotypeInfo''}, ''ref'': ''dandischema.models.GenotypeInfo:94832106032736'',
+      {''title'': ''GenotypeInfo''}, ''ref'': ''dandischema.models.GenotypeInfo:94293513756096'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.GenotypeInfo''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.GenotypeInfo''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.GenotypeInfo''>>],
       ''pydantic_js_annotation_functions'': []}}}, {''type'': ''str''}]}).'
     required: false
@@ -1012,7 +1012,7 @@ slots:
     - 'pydantic2linkml: Warning: The translation is incomplete. The union core schema
       contains a choice of type definition-ref. The choice type is yet to be supported.
       (core schema: {''type'': ''union'', ''choices'': [{''type'': ''definition-ref'',
-      ''schema_ref'': ''dandischema.models.IdentifierType:94832101428096''}, {''type'':
+      ''schema_ref'': ''dandischema.models.IdentifierType:94293509202272''}, {''type'':
       ''url'', ''allowed_schemes'': [''http'', ''https'']}]}).'
     required: false
   protocol:
@@ -1032,139 +1032,139 @@ slots:
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca9c60>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b5c60>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.PublishActivity''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''PublishActivity'']}, ''type'':
       ''function-after''}, ''default'': ''PublishActivity'', ''validate_default'':
       True}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9d00>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5d00>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9bc0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5bc0>]}},
       ''name'': {''type'': ''model-field'', ''schema'': {''type'': ''str'', ''max_length'':
       150}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9ee0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5ee0>]}},
       ''description'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9e40>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5e40>]}},
       ''startDate'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''datetime'', ''microseconds_precision'':
       ''truncate''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fca9da0>]}}, ''endDate'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296b5da0>]}}, ''endDate'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''datetime'', ''microseconds_precision'': ''truncate''}}, ''default'': None},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fca9f80>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b5f80>]}},
       ''wasAssociatedWith'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
       {''type'': ''tagged-union'', ''choices'': {''Person'': {''function'': {''type'':
       ''no-info'', ''function'': <function Contributor.ensure_contact_person_has_email
-      at 0x7fc32fc34a40>}, ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
+      at 0x7f4829624a40>}, ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc360c0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296260c0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Person''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Person'']}, ''type'': ''function-after''},
       ''default'': ''Person'', ''validate_default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc362a0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296262a0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str'', ''pattern'': ''^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36340>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626340>]}},
       ''name'': {''type'': ''model-field'', ''schema'': {''type'': ''str'', ''pattern'':
       "^([\\w\\s\\-\\.'']+),\\s+([\\w\\s\\-\\.'']+)$"}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36480>]}}, ''email'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829626480>]}}, ''email'': {''type'': ''model-field'', ''schema'': {''type'':
       ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''function'':
       {''type'': ''no-info'', ''function'': <bound method EmailStr._validate of <class
       ''pydantic.networks.EmailStr''>>}, ''schema'': {''type'': ''str''}, ''metadata'':
       {''pydantic_js_functions'': [<bound method EmailStr.__get_pydantic_json_schema__
       of <class ''pydantic.networks.EmailStr''>>]}, ''type'': ''function-after''}},
       ''default'': None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36160>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626160>]}},
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''url'', ''allowed_schemes'':
       [''http'', ''https'']}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc363e0>]}}, ''roleName'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296263e0>]}}, ''roleName'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
-      ''list'', ''items_schema'': {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94832101496208''}}},
+      ''list'', ''items_schema'': {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94293509220912''}}},
       ''default'': None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc367a0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296267a0>]}},
       ''includeInCitation'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''bool''}, ''default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36520>]}}, ''awardNumber'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829626520>]}}, ''awardNumber'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36840>]}}, ''affiliation'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829626840>]}}, ''affiliation'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''list'', ''items_schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Affiliation''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc359e0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296259e0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Affiliation''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Affiliation'']}, ''type'':
       ''function-after''}, ''default'': ''Affiliation'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35bc0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625bc0>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str'', ''pattern'':
       ''^https://ror.org/[a-z0-9]+$''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35c60>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829625c60>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''str''}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35b20>]}}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625b20>]}}},
       ''model_name'': ''Affiliation'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:94832103397536'',
+      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:94293511011456'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Affiliation''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Affiliation''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Affiliation''>>],
       ''pydantic_js_annotation_functions'': []}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fef3240>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48298eb240>]}}},
       ''model_name'': ''Person'', ''computed_fields'': []}, ''custom_init'': False,
       ''root_model'': False, ''post_init'': ''model_post_init'', ''config'': {''title'':
       ''Person''}, ''metadata'': {''pydantic_js_functions'': [functools.partial(<function
-      modify_model_json_schema at 0x7fc32fe35620>, cls=<class ''dandischema.models.Person''>,
-      title=None)], ''pydantic_js_annotation_functions'': []}}, ''ref'': ''dandischema.models.Person:94832103428976'',
+      modify_model_json_schema at 0x7f4829825620>, cls=<class ''dandischema.models.Person''>,
+      title=None)], ''pydantic_js_annotation_functions'': []}}, ''ref'': ''dandischema.models.Person:94293511154512'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Person''>>]}, ''type'': ''function-after''},
       ''Organization'': {''function'': {''type'': ''no-info'', ''function'': <function
-      Contributor.ensure_contact_person_has_email at 0x7fc32fc34a40>}, ''schema'':
+      Contributor.ensure_contact_person_has_email at 0x7f4829624a40>}, ''schema'':
       {''type'': ''model'', ''cls'': <class ''dandischema.models.Organization''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fef3c40>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48298ebc40>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Organization''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Organization'']}, ''type'':
       ''function-after''}, ''default'': ''Organization'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32febbd80>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48298abd80>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str'', ''pattern'':
       ''^https://ror.org/[a-z0-9]+$''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fef3920>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f48298eb920>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}},
       ''default'': None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35580>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625580>]}},
       ''email'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''function'': {''type'': ''no-info'',
       ''function'': <bound method EmailStr._validate of <class ''pydantic.networks.EmailStr''>>},
@@ -1172,37 +1172,37 @@ slots:
       method EmailStr.__get_pydantic_json_schema__ of <class ''pydantic.networks.EmailStr''>>]},
       ''type'': ''function-after''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35620>]}}, ''url'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829625620>]}}, ''url'': {''type'': ''model-field'', ''schema'': {''type'':
       ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''url'',
       ''allowed_schemes'': [''http'', ''https'']}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc354e0>]}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296254e0>]}},
       ''roleName'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
-      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94832101496208''}}},
+      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94293509220912''}}},
       ''default'': None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc34900>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829624900>]}},
       ''includeInCitation'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''bool''}, ''default'': False}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35440>]}}, ''awardNumber'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829625440>]}}, ''awardNumber'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc349a0>]}}, ''contactPoint'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48296249a0>]}}, ''contactPoint'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''list'', ''items_schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.ContactPoint''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fef3ce0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f48298ebce0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.ContactPoint''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''ContactPoint'']}, ''type'':
       ''function-after''}, ''default'': ''ContactPoint'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fef3b00>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48298ebb00>]}},
       ''email'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''function'': {''type'': ''no-info'',
       ''function'': <bound method EmailStr._validate of <class ''pydantic.networks.EmailStr''>>},
@@ -1210,25 +1210,25 @@ slots:
       method EmailStr.__get_pydantic_json_schema__ of <class ''pydantic.networks.EmailStr''>>]},
       ''type'': ''function-after''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fef3d80>]}}, ''url'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f48298ebd80>]}}, ''url'': {''type'': ''model-field'', ''schema'': {''type'':
       ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''url'',
       ''allowed_schemes'': [''http'', ''https'']}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fef3ba0>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48298ebba0>]}}},
       ''model_name'': ''ContactPoint'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''ContactPoint''}, ''ref'': ''dandischema.models.ContactPoint:94832103167712'',
+      {''title'': ''ContactPoint''}, ''ref'': ''dandischema.models.ContactPoint:94293510921760'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.ContactPoint''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.ContactPoint''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.ContactPoint''>>],
       ''pydantic_js_annotation_functions'': []}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc34860>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829624860>]}}},
       ''model_name'': ''Organization'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
       {''title'': ''Organization''}, ''metadata'': {''pydantic_js_functions'': [functools.partial(<function
-      modify_model_json_schema at 0x7fc32fe35620>, cls=<class ''dandischema.models.Organization''>,
-      title=None)], ''pydantic_js_annotation_functions'': []}}, ''ref'': ''dandischema.models.Organization:94832103395760'',
+      modify_model_json_schema at 0x7f4829825620>, cls=<class ''dandischema.models.Organization''>,
+      title=None)], ''pydantic_js_annotation_functions'': []}}, ''ref'': ''dandischema.models.Organization:94293510963120'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Organization''>>]}, ''type'': ''function-after''},
       ''Software'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Software''>,
@@ -1236,66 +1236,66 @@ slots:
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35da0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829625da0>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Software''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Software'']}, ''type'':
       ''function-after''}, ''default'': ''Software'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc358a0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296258a0>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str'', ''pattern'':
       ''^RRID\\:.*''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc35940>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829625940>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''str''}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35a80>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625a80>]}},
       ''version'': {''type'': ''model-field'', ''schema'': {''type'': ''str''}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc35800>]}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829625800>]}},
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''url'', ''allowed_schemes'':
       [''http'', ''https'']}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc356c0>]}}}, ''model_name'': ''Software'', ''computed_fields'': []},
+      at 0x7f48296256c0>]}}}, ''model_name'': ''Software'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Software''}, ''ref'': ''dandischema.models.Software:94832103249152'',
+      ''config'': {''title'': ''Software''}, ''ref'': ''dandischema.models.Software:94293511100192'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Software''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Software''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Software''>>],
       ''pydantic_js_annotation_functions'': []}}, ''Agent'': {''type'': ''model'',
       ''cls'': <class ''dandischema.models.Agent''>, ''schema'': {''type'': ''model-fields'',
       ''fields'': {''id'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36b60>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626b60>]}},
       ''schemaKey'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''function'': {''type'': ''no-info'', ''function'': <bound method
       DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Agent''>>}, ''schema'':
       {''type'': ''literal'', ''expected'': [''Agent'']}, ''type'': ''function-after''},
       ''default'': ''Agent'', ''validate_default'': True}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36ca0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829626ca0>]}}, ''identifier'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'': [],
       ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36c00>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
+      at 0x7f4829626c00>]}}, ''name'': {''type'': ''model-field'', ''schema'': {''type'':
       ''str''}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36de0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626de0>]}},
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''url'', ''allowed_schemes'':
       [''http'', ''https'']}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc36d40>]}}}, ''model_name'': ''Agent'', ''computed_fields'': []},
+      at 0x7f4829626d40>]}}}, ''model_name'': ''Agent'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Agent''}, ''ref'': ''dandischema.models.Agent:94832103294992'',
+      ''config'': {''title'': ''Agent''}, ''ref'': ''dandischema.models.Agent:94293511086352'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Agent''>, title=None), <bound
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Agent''>, title=None), <bound
       method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Agent''>>],
       ''pydantic_js_annotation_functions'': []}}}, ''discriminator'': ''schemaKey'',
       ''strict'': False, ''from_attributes'': True, ''metadata'': {}}}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fcaa020>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b6020>]}},
       ''used'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
       {''type'': ''model'', ''cls'': <class ''dandischema.models.Equipment''>, ''schema'':
@@ -1303,38 +1303,38 @@ slots:
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_functions'':
       [], ''pydantic_js_annotation_functions'': [<function get_json_schema_update_func.<locals>.json_schema_update_func
-      at 0x7fc32fc37e20>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
+      at 0x7f4829627e20>]}}, ''schemaKey'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''function'': {''type'': ''no-info'', ''function'':
       <bound method DandiBaseModel.ensure_schemakey of <class ''dandischema.models.Equipment''>>},
       ''schema'': {''type'': ''literal'', ''expected'': [''Equipment'']}, ''type'':
       ''function-after''}, ''default'': ''Equipment'', ''validate_default'': True},
       ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc37d80>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829627d80>]}},
       ''identifier'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc37ec0>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829627ec0>]}},
       ''name'': {''type'': ''model-field'', ''schema'': {''type'': ''str'', ''max_length'':
       150}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc37c40>]}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829627c40>]}},
       ''description'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''str''}}, ''default'':
       None}, ''metadata'': {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'':
-      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fc36ac0>]}}},
+      [<function get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f4829626ac0>]}}},
       ''model_name'': ''Equipment'', ''computed_fields'': []}, ''custom_init'': False,
       ''root_model'': False, ''post_init'': ''model_post_init'', ''config'': {''title'':
-      ''Equipment''}, ''ref'': ''dandischema.models.Equipment:94832103943504'', ''metadata'':
+      ''Equipment''}, ''ref'': ''dandischema.models.Equipment:94293511670656'', ''metadata'':
       {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.Equipment''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.Equipment''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Equipment''>>],
       ''pydantic_js_annotation_functions'': []}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_functions'': [], ''pydantic_js_annotation_functions'': [<function
-      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7fc32fcaa200>]}}},
+      get_json_schema_update_func.<locals>.json_schema_update_func at 0x7f48296b6200>]}}},
       ''model_name'': ''PublishActivity'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''PublishActivity''}, ''ref'': ''dandischema.models.PublishActivity:94832104989280'',
+      {''title'': ''PublishActivity''}, ''ref'': ''dandischema.models.PublishActivity:94293511911248'',
       ''metadata'': {''pydantic_js_functions'': [functools.partial(<function modify_model_json_schema
-      at 0x7fc32fe35620>, cls=<class ''dandischema.models.PublishActivity''>, title=None),
+      at 0x7f4829825620>, cls=<class ''dandischema.models.PublishActivity''>, title=None),
       <bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.PublishActivity''>>],
       ''pydantic_js_annotation_functions'': []}}]}).'
     required: true
@@ -1347,7 +1347,7 @@ slots:
     name: relatedResource
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function Resource.identifier_or_url at 0x7fc32fc377e0>.'
+      function, <function Resource.identifier_or_url at 0x7f48296277e0>.'
     range: Resource
     required: false
     multivalued: true
@@ -1451,7 +1451,7 @@ slots:
     name: vendor
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function Contributor.ensure_contact_person_has_email at 0x7fc32fc34a40>.'
+      function, <function Contributor.ensure_contact_person_has_email at 0x7f4829624a40>.'
     range: Organization
     required: false
   version:
@@ -1655,13 +1655,13 @@ classes:
   BareAsset:
     name: BareAsset
     notes:
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the access slot.
-      The slot representation of the access field in the BareAsset Pydantic model
-      has changes in value in meta slots: [''notes''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the BareAsset Pydantic
       model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
       .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the access slot.
+      The slot representation of the access field in the BareAsset Pydantic model
+      has changes in value in meta slots: [''notes''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
       slot. The slot representation of the wasGeneratedBy field in the BareAsset Pydantic
       model lacks meta slots: [''range''] .'
@@ -1824,28 +1824,28 @@ classes:
   Dandiset:
     name: Dandiset
     notes:
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the license slot.
+      The slot representation of the license field in the Dandiset Pydantic model
+      has changes in value in meta slots: [''required''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
+      slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic
+      model has changes in value in meta slots: [''range''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
+      slot representation of the id field in the Dandiset Pydantic model has changes
+      in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the description
       slot. The slot representation of the description field in the Dandiset Pydantic
       model has changes in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the contributor
       slot. The slot representation of the contributor field in the Dandiset Pydantic
       model has changes in value in meta slots: [''notes'', ''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the license slot.
-      The slot representation of the license field in the Dandiset Pydantic model
-      has changes in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
       The slot representation of the name field in the Dandiset Pydantic model has
       changes in value in meta slots: [''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
-      slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic
-      model has changes in value in meta slots: [''range''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Dandiset Pydantic
       model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
       .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
-      slot representation of the id field in the Dandiset Pydantic model has changes
-      in value in meta slots: [''required''] .'
     is_a: CommonModel
     slots:
     - assetsSummary
@@ -1966,13 +1966,13 @@ classes:
   Organization:
     name: Organization
     notes:
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation
-      slot. The slot representation of the includeInCitation field in the Organization
-      Pydantic model has changes in value in meta slots: [''ifabsent''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Organization Pydantic
       model has changes in value in meta slots: [''any_of'', ''ifabsent'', ''notes'']
       .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation
+      slot. The slot representation of the includeInCitation field in the Organization
+      Pydantic model has changes in value in meta slots: [''ifabsent''] .'
     is_a: Contributor
     slots:
     - contactPoint
@@ -2015,13 +2015,13 @@ classes:
   Person:
     name: Person
     notes:
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
-      The slot representation of the name field in the Person Pydantic model has changes
-      in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Person Pydantic
       model has changes in value in meta slots: [''any_of'', ''ifabsent'', ''notes'']
       .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
+      The slot representation of the name field in the Person Pydantic model has changes
+      in value in meta slots: [''required''] .'
     is_a: Contributor
     slots:
     - affiliation
@@ -2091,12 +2091,12 @@ classes:
     notes:
     - 'pydantic2linkml: Warning: LinkML does not support multiple inheritance. Publishable
       is not specified as a parent, through the `is_a` meta slot, but as a mixin.'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
-      slot representation of the id field in the PublishedDandiset Pydantic model
-      has changes in value in meta slots: [''pattern''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the PublishedDandiset
       Pydantic model has changes in value in meta slots: [''notes''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
+      slot representation of the id field in the PublishedDandiset Pydantic model
+      has changes in value in meta slots: [''pattern''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the url slot.
       The slot representation of the url field in the PublishedDandiset Pydantic model
       has changes in value in meta slots: [''required''] .'
