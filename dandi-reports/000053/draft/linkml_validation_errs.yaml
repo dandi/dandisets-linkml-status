@@ -176,11 +176,11 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Giocomo, Lisa M.'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
-    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0416-2528'', ''affiliation'':
-    [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
-    ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/6'
+  message: '{''name'': ''Giocomo, Lisa M.'', ''email'': ''giocomo@gmail.com'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-0416-2528'', ''affiliation'': [{''name'': ''Stanford University'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
     absolute_path:
@@ -191,11 +191,11 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Giocomo, Lisa M.'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
-      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0416-2528'', ''affiliation'':
-      [{''name'': ''Stanford University'', ''schemaKey'': ''Affiliation'', ''identifier'':
-      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
-      ''string'''
+    message: '{''name'': ''Giocomo, Lisa M.'', ''email'': ''giocomo@gmail.com'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-0416-2528'', ''affiliation'': [{''name'': ''Stanford University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00f54p054''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
