@@ -1,21 +1,6 @@
 - ctx:
     error: Contact person must have an email address.
   input:
-    includeInCitation: true
-    name: VanDenburgh, Mike
-    roleName:
-    - dcite:ContactPerson
-    schemaKey: Person
-  loc:
-  - contributor
-  - 0
-  - Person
-  msg: Value error, Contact person must have an email address.
-  type: value_error
-  url: https://errors.pydantic.dev/2.9/v/value_error
-- ctx:
-    error: Contact person must have an email address.
-  input:
     affiliation:
     - contactPoint: []
       includeInCitation: false
@@ -31,8 +16,30 @@
     schemaKey: Person
   loc:
   - contributor
-  - 3
+  - 0
   - Person
   msg: Value error, Contact person must have an email address.
   type: value_error
   url: https://errors.pydantic.dev/2.9/v/value_error
+- ctx:
+    pattern: ^([\w\s\-\.']+),\s+([\w\s\-\.']+)$
+  input: lijasldkfj lkajsdlkfj
+  loc:
+  - contributor
+  - 3
+  - Person
+  - name
+  msg: String should match pattern '^([\w\s\-\.']+),\s+([\w\s\-\.']+)$'
+  type: string_pattern_mismatch
+  url: https://errors.pydantic.dev/2.9/v/string_pattern_mismatch
+- ctx:
+    error: relative URL without a base
+  input: alksdjflkajsdlfkjasdlkjlkj
+  loc:
+  - contributor
+  - 3
+  - Person
+  - url
+  msg: Input should be a valid URL, relative URL without a base
+  type: url_parsing
+  url: https://errors.pydantic.dev/2.9/v/url_parsing

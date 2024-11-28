@@ -8,27 +8,6 @@
     ],
     "msg": "Value error, Contact person must have an email address.",
     "input": {
-      "name": "VanDenburgh, Mike",
-      "roleName": [
-        "dcite:ContactPerson"
-      ],
-      "schemaKey": "Person",
-      "includeInCitation": true
-    },
-    "ctx": {
-      "error": "Contact person must have an email address."
-    },
-    "url": "https://errors.pydantic.dev/2.9/v/value_error"
-  },
-  {
-    "type": "value_error",
-    "loc": [
-      "contributor",
-      3,
-      "Person"
-    ],
-    "msg": "Value error, Contact person must have an email address.",
-    "input": {
       "name": "Last, First",
       "roleName": [
         "dcite:Author",
@@ -51,5 +30,35 @@
       "error": "Contact person must have an email address."
     },
     "url": "https://errors.pydantic.dev/2.9/v/value_error"
+  },
+  {
+    "type": "string_pattern_mismatch",
+    "loc": [
+      "contributor",
+      3,
+      "Person",
+      "name"
+    ],
+    "msg": "String should match pattern '^([\\w\\s\\-\\.']+),\\s+([\\w\\s\\-\\.']+)$'",
+    "input": "lijasldkfj lkajsdlkfj",
+    "ctx": {
+      "pattern": "^([\\w\\s\\-\\.']+),\\s+([\\w\\s\\-\\.']+)$"
+    },
+    "url": "https://errors.pydantic.dev/2.9/v/string_pattern_mismatch"
+  },
+  {
+    "type": "url_parsing",
+    "loc": [
+      "contributor",
+      3,
+      "Person",
+      "url"
+    ],
+    "msg": "Input should be a valid URL, relative URL without a base",
+    "input": "alksdjflkajsdlfkjasdlkjlkj",
+    "ctx": {
+      "error": "relative URL without a base"
+    },
+    "url": "https://errors.pydantic.dev/2.9/v/url_parsing"
   }
 ]

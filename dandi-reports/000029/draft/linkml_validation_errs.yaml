@@ -1,9 +1,11 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''VanDenburgh, Mike'', ''roleName'': [''dcite:ContactPerson''],
-    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
-    in /contributor/0'
+  message: '{''name'': ''Last, First'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3456-2493'', ''affiliation'':
+    [{''name'': ''An Institution'', ''roleName'': [], ''schemaKey'': ''Affiliation'',
+    ''contactPoint'': [], ''includeInCitation'': False}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -14,8 +16,11 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''VanDenburgh, Mike'', ''roleName'': [''dcite:ContactPerson''],
-      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    message: '{''name'': ''Last, First'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3456-2493'', ''affiliation'':
+      [{''name'': ''An Institution'', ''roleName'': [], ''schemaKey'': ''Affiliation'',
+      ''contactPoint'': [], ''includeInCitation'': False}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -46,7 +51,7 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Smithy, John'', ''roleName'': [], ''schemaKey'': ''Person'',
+  message: '{''name'': ''Smith, John'', ''roleName'': [], ''schemaKey'': ''Person'',
     ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
     /contributor/2'
   severity: ERROR
@@ -59,7 +64,7 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Smithy, John'', ''roleName'': [], ''schemaKey'': ''Person'',
+    message: '{''name'': ''Smith, John'', ''roleName'': [], ''schemaKey'': ''Person'',
       ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
@@ -67,11 +72,9 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Last, First'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
-    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3456-2493'', ''affiliation'':
-    [{''name'': ''An Institution'', ''roleName'': [], ''schemaKey'': ''Affiliation'',
-    ''contactPoint'': [], ''includeInCitation'': False}], ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/3'
+  message: '{''url'': ''alksdjflkajsdlfkjasdlkjlkj'', ''name'': ''lijasldkfj lkajsdlkfj'',
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -82,11 +85,8 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Last, First'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
-      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3456-2493'', ''affiliation'':
-      [{''name'': ''An Institution'', ''roleName'': [], ''schemaKey'': ''Affiliation'',
-      ''contactPoint'': [], ''includeInCitation'': False}], ''includeInCitation'':
-      True} is not of type ''string'''
+    message: '{''url'': ''alksdjflkajsdlfkjasdlkjlkj'', ''name'': ''lijasldkfj lkajsdlkfj'',
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

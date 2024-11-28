@@ -1,0 +1,253 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{} is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Le Merre, Pierre'', ''email'': ''pierre.le.merre@ki.se'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Conceptualization'',
+    ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FormalAnalysis'',
+    ''dcite:Investigation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4205-7411'',
+    ''affiliation'': [{''name'': ''Department of Neuroscience, Karolinska Institutet;
+    Stockholm, 171 77, Sweden.'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Le Merre, Pierre'', ''email'': ''pierre.le.merre@ki.se'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Conceptualization'',
+      ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FormalAnalysis'',
+      ''dcite:Investigation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4205-7411'',
+      ''affiliation'': [{''name'': ''Department of Neuroscience, Karolinska Institutet;
+      Stockholm, 171 77, Sweden.'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Katharina Heining'', ''email'': ''katharina.heining@ki.se'',
+    ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+    ''dcite:Methodology''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1976-3764'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Katharina Heining'', ''email'': ''katharina.heining@ki.se'',
+      ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+      ''dcite:Methodology''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1976-3764'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Marina Slashcheva'', ''email'': ''marina.slashcheva@ki.se'',
+    ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-7918-8151'', ''includeInCitation'': True} is not of
+    type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Marina Slashcheva'', ''email'': ''marina.slashcheva@ki.se'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-7918-8151'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Felix Jung'', ''email'': ''felix.jung@ki.se'', ''roleName'':
+    [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-7565-977X'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Felix Jung'', ''email'': ''felix.jung@ki.se'', ''roleName'':
+      [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-7565-977X'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Eleni Moysiadou'', ''email'': ''eleni.moysiadou@icm-institute.org'',
+    ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Eleni Moysiadou'', ''email'': ''eleni.moysiadou@icm-institute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Nicolas Guyon'', ''email'': ''nicolas.guyon@espci.fr'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1287-8606'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nicolas Guyon'', ''email'': ''nicolas.guyon@espci.fr'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-1287-8606'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Ram Yahya'', ''email'': ''ram.yahya@outlook.com'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ram Yahya'', ''email'': ''ram.yahya@outlook.com'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Hyunsoo Park'', ''email'': ''hyunsoo.park@astrazeneca.com'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5754-9617'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hyunsoo Park'', ''email'': ''hyunsoo.park@astrazeneca.com'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-5754-9617'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Fredrik Wernstal'', ''email'': ''fredrik.wernstal@ki.se'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0002-4192-5897'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fredrik Wernstal'', ''email'': ''fredrik.wernstal@ki.se'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0002-4192-5897'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'Marie Carl\xE9n', 'email': 'marie.carlen@ki.se', 'roleName':
+    ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ProjectLeader',
+    'dcite:Supervision', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier':
+    '0000-0003-1658-1631', 'includeInCitation': True} is not of type 'string' in /contributor/9"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Marie Carl\xE9n', 'email': 'marie.carlen@ki.se', 'roleName':
+      ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ProjectLeader',
+      'dcite:Supervision', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier':
+      '0000-0003-1658-1631', 'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
