@@ -1,6 +1,6 @@
 {
-  "id": "DANDI:001266/draft",
-  "url": "https://dandiarchive.org/dandiset/001266/draft",
+  "id": "DANDI:001269/draft",
+  "url": "https://dandiarchive.org/dandiset/001269/draft",
   "name": "Dendritic excitations govern back-propagation via a spike-rate accelerometer",
   "about": [],
   "access": [
@@ -13,13 +13,11 @@
     "spdx:CC0-1.0"
   ],
   "version": "draft",
-  "citation": "Park, Pojeong; Wong-Campos, David; Itkis, Daniel G.; Lee, Byung Hun; Qi, Yitong; Davis, Hunter C.; Antin, Benjamin; Grimm, Jonathan B.; Plutkis, Sarah E.; Holland, Katie L.; Paninski, Liam; Lavis, Luke D.; Cohen, Adam E. (2024) Dendritic excitations govern back-propagation via a spike-rate accelerometer (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001266/draft",
-  "keywords": [
-    "voltage imaging"
-  ],
+  "citation": "Park, Pojeong; Wong-Campos, David; Itkis, Daniel G.; Lee, Byung Hun; Qi, Yitong; Davis, Hunter C.; Antin, Benjamin; Pasarkar, Amol; Grimm, Jonathan B.; Plutkis, Sarah E.; Holland, Katie L.; Paninski, Liam; Lavis, Luke D.; Cohen, Adam E. (2024) Dendritic excitations govern back-propagation via a spike-rate accelerometer (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001269/draft",
+  "keywords": [],
   "protocol": [],
   "schemaKey": "Dandiset",
-  "identifier": "DANDI:001266",
+  "identifier": "DANDI:001269",
   "repository": "https://dandiarchive.org",
   "contributor": [
     {
@@ -97,7 +95,8 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "includeInCitation": false
+      "identifier": "0000-0002-2970-3207",
+      "includeInCitation": true
     },
     {
       "name": "Grimm, Jonathan B.",
@@ -106,7 +105,6 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0003-0331-4200",
       "includeInCitation": true
     },
     {
@@ -116,12 +114,14 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "identifier": "0009-0003-1822-0466",
       "includeInCitation": true
     },
     {
       "name": "Holland, Katie L.",
       "email": "Katie.Holland@ucsf.edu",
+      "roleName": [
+        "dcite:Author"
+      ],
       "schemaKey": "Person",
       "identifier": "0009-0007-1183-195X",
       "includeInCitation": true
@@ -139,6 +139,9 @@
     {
       "name": "Lavis, Luke D.",
       "email": "lavisl@janelia.hhmi.org",
+      "roleName": [
+        "dcite:Author"
+      ],
       "schemaKey": "Person",
       "identifier": "0000-0002-0789-6343",
       "includeInCitation": true
@@ -155,8 +158,8 @@
       "includeInCitation": true
     }
   ],
-  "dateCreated": "2024-11-28T04:03:03.990353+00:00",
-  "description": "Dendritic voltage imaging was performed in hippocampal brain slices. V-Optopatch (CAG::LR-Voltron2-p2a-LR-CheRiff-eYFP; Addgene #203228) was expressed via in utero electroporation. Voltage imaging was made using JFx608 HTL dye and a one-photon microscope.",
+  "dateCreated": "2024-12-02T02:04:07.723130+00:00",
+  "description": "Voltage imaging data were collected using v-Optopatch construct (CAG::LR-Vontron2-P2A-LR-CheRiff-eYFP; Addgene #203228) in CA1 neurons in brain slices. Genes were delivered via in utero electroporation, and optical imaging was performed using a 1-photon microscope.",
   "studyTarget": [],
   "assetsSummary": {
     "species": [
@@ -175,9 +178,9 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 92923840584,
-    "numberOfFiles": 74,
-    "numberOfSubjects": 79,
+    "numberOfBytes": 95295434973,
+    "numberOfFiles": 83,
+    "numberOfSubjects": 87,
     "variableMeasured": [],
     "measurementTechnique": []
   },
@@ -191,10 +194,10 @@
       "relation": "dcite:IsPublishedIn",
       "schemaKey": "Resource",
       "repository": "BioRxiv",
-      "resourceType": "dcite:Dataset"
+      "resourceType": "dcite:Preprint"
     }
   ],
   "manifestLocation": [
-    "https://api.dandiarchive.org/api/dandisets/001266/versions/draft/assets/"
+    "https://api.dandiarchive.org/api/dandisets/001269/versions/draft/assets/"
   ]
 }
