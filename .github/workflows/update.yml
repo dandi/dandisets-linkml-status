@@ -45,7 +45,7 @@ jobs:
       # Update this repo with the latest validation reports
       - name: datalad run dandisets-linkml-status with con-duct
         run: |
-          datalad run -m "Get latest validation reports with a summary" duct dandisets-linkml-status --include-unpublished --dandi-instance dandi -l INFO
+          datalad run -m "Get latest validation reports with a summary" duct dandisets-report-tools -l INFO linkml-translation --include-unpublished --dandi-instance dandi
           git push
           echo "The repository has been updated with the latest validation reports."
 
