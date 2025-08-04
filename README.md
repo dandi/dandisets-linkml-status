@@ -1,2 +1,2 @@
 See reports
-- [dandi](./dandi-reports/summary.md)
+- [dandi](./reports/linkml_translation/dandi/summary.md)
