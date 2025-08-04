@@ -1,0 +1,74 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Fitting, Sylvia '', ''email'': ''sfitting@email.unc.edu'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:Conceptualization'', ''dcite:FundingAcquisition'',
+    ''dcite:Author'', ''dcite:Investigation'', ''dcite:ProjectLeader'', ''dcite:Sponsor''],
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of North
+    Carolina at Chapel Hill'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fitting, Sylvia '', ''email'': ''sfitting@email.unc.edu'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Conceptualization'', ''dcite:FundingAcquisition'',
+      ''dcite:Author'', ''dcite:Investigation'', ''dcite:ProjectLeader'', ''dcite:Sponsor''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of North
+      Carolina at Chapel Hill'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Yadav-Samudrala, Barkha'', ''email'': ''yadavb@email.unc.edu'',
+    ''roleName'': [''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+    ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+    ''dcite:Methodology'', ''dcite:Producer'', ''dcite:ProjectLeader'', ''dcite:ProjectManager'',
+    ''dcite:ProjectMember'', ''dcite:ProjectAdministration'', ''dcite:Researcher'',
+    ''dcite:Validation'', ''dcite:Visualization''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-2967-2017'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yadav-Samudrala, Barkha'', ''email'': ''yadavb@email.unc.edu'',
+      ''roleName'': [''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+      ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+      ''dcite:Methodology'', ''dcite:Producer'', ''dcite:ProjectLeader'', ''dcite:ProjectManager'',
+      ''dcite:ProjectMember'', ''dcite:ProjectAdministration'', ''dcite:Researcher'',
+      ''dcite:Validation'', ''dcite:Visualization''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-2967-2017'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

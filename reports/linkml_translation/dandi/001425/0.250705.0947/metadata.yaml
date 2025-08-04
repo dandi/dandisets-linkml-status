@@ -1,0 +1,264 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: one-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 8064863266752
+  numberOfFiles: 1838
+  numberOfSubjects: 25
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - ImagingPlane
+  - PupilTracking
+  - SpatialSeries
+  - OpticalChannel
+  - PlaneSegmentation
+  - EyeTracking
+  - OnePhotonSeries
+citation: 'Kondo, Masashi; Sehara, Keisuke; Harukuni, Rie; Aoki, Ryo; Sugimoto, Shoya;
+  Tanaka, Yasuhiro R; Matsuzaki, Masanori; Nakae, Ken (2025) BraiDyn-BC: mouse cued-lever-pull
+  task dataset (Version 0.250705.0947) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001425/0.250705.0947'
+contributor:
+- affiliation:
+  - identifier: https://ror.org/057zh3y96
+    name: Department of Physiology, Graduate School of Medicine
+    schemaKey: Affiliation
+  email: m.kondo.neuro@gmail.com
+  identifier: 0000-0001-8818-8316
+  includeInCitation: true
+  name: Kondo, Masashi
+  roleName:
+  - dcite:Conceptualization
+  - dcite:FormalAnalysis
+  - dcite:Investigation
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/057zh3y96
+    name: Department of Physiology, Graduate School of Medicine
+    schemaKey: Affiliation
+  email: seharak@m.u-tokyo.ac.jp
+  identifier: 0000-0003-4368-8143
+  includeInCitation: true
+  name: Sehara, Keisuke
+  roleName:
+  - dcite:DataCurator
+  - dcite:FormalAnalysis
+  - dcite:Methodology
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/057zh3y96
+    name: Department of Physiology, Graduate School of Medicine
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Harukuni, Rie
+  roleName:
+  - dcite:DataCollector
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05f8a4p63
+    name: Brain Science Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Aoki, Ryo
+  roleName:
+  - dcite:FormalAnalysis
+  - dcite:Methodology
+  - dcite:Validation
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05f8a4p63
+    name: Brain Science Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Sugimoto, Shoya
+  roleName:
+  - dcite:Methodology
+  - dcite:Validation
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/05f8a4p63
+    name: Brain Science Institute
+    schemaKey: Affiliation
+  - identifier: https://ror.org/05f8a4p63
+    name: Graduate School of Brain Sciences
+    schemaKey: Affiliation
+  identifier: 0009-0000-4779-4934
+  includeInCitation: true
+  name: Tanaka, Yasuhiro R
+  roleName:
+  - dcite:Supervision
+  - dcite:FundingAcquisition
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/057zh3y96
+    name: Department of Physiology, Graduate School of Medicine
+    schemaKey: Affiliation
+  - identifier: https://ror.org/04j1n1c04
+    name: Brain Functional Dynamics Collaboration Laboratory
+    schemaKey: Affiliation
+  - identifier: https://ror.org/057zh3y96
+    name: Department of Biological Sciences, Graduate School of Science
+    schemaKey: Affiliation
+  - identifier: https://ror.org/057zh3y96
+    name: International Research Center for Neurointelligence (WPI-IRCN)
+    schemaKey: Affiliation
+  email: mzakim@m.u-tokyo.ac.jp
+  identifier: 0000-0003-3872-4322
+  includeInCitation: true
+  name: Matsuzaki, Masanori
+  roleName:
+  - dcite:Conceptualization
+  - dcite:FundingAcquisition
+  - dcite:Supervision
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/055n47h92
+    name: Exploratory Research Center on Life and Living Systems
+    schemaKey: Affiliation
+  - identifier: https://ror.org/00msqp585
+    name: Department of Human and Artificial Intelligent Systems
+    schemaKey: Affiliation
+  email: ken.nakae@gmail.com
+  identifier: 0000-0003-4183-1532
+  includeInCitation: true
+  name: Nakae, Ken
+  roleName:
+  - dcite:Conceptualization
+  - dcite:FundingAcquisition
+  - dcite:Supervision
+  - dcite:ContactPerson
+  schemaKey: Person
+- awardNumber: JP22H05163, JP22H05160, JP22H05154, JP22H05162, JP23K20309
+  identifier: https://ror.org/00hhkn466
+  name: JSPS KAKENHI
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: JP19dm0207088, JP24wm0625404, JP24wm0625001, JP24wm0625113
+  identifier: https://ror.org/004rtk039
+  name: AMED
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: JPMJMS2294
+  identifier: https://ror.org/00097mb19
+  name: JST
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: Cooperative Study Program no. 19-102
+  identifier: https://ror.org/005t7z309
+  name: ExCELLS
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2025-04-28T01:23:44.851653+00:00'
+datePublished: '2025-07-05T09:47:54.642381+00:00'
+description: The BraiDyn-BC (Brain Dynamics underlying emergence of Behavioral Change)
+  Database offers an extensive, multi-modal dataset that links wide-field calcium
+  imaging of the mouse neocortex to comprehensive behavioral measurements during a
+  behavioral task. As one of the contents in this database, we newly provide a dataset
+  that includes 15 sessions spanning two weeks of motor skill learning, in which 25
+  mice were trained to pull a lever to obtain water rewards. Simultaneous high-speed
+  videography captures body, facial, and eye movements, and environmental parameters
+  are monitored. The dataset also features resting-state cortical activity and sensory-evoked
+  responses, enhancing its utility for both learning-related and sensory-driven neural
+  dynamics studies.
+doi: 10.48324/dandi.001425/0.250705.0947
+ethicsApproval: []
+id: DANDI:001425/0.250705.0947
+identifier: DANDI:001425
+keywords:
+- wide-field calcium imaging
+- behavioral tracking
+- operant conditioning task
+- sensory mapping
+- high-speed videography
+- head fixation
+- pupil tracking
+- transcranial optical imaging
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001425/0.250705.0947/assets.yaml
+name: 'BraiDyn-BC: mouse cued-lever-pull task dataset'
+protocol:
+- https://doi.org/10.1101/2025.02.03.631599
+publishedBy:
+  endDate: '2025-07-05T09:47:54.642381+00:00'
+  id: urn:uuid:a1c7eda7-729a-4ca0-86ed-d5a925d5d0e2
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-07-05T09:47:54.642381+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:739c66e8-4f6d-462e-875a-2eefc1abcb54
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource:
+- identifier: https://doi.org/10.1101/2025.02.03.631599
+  name: A multimodal dataset linking wide-field calcium imaging to behavior changes
+    in mice during an operant lever-pull task
+  relation: dcite:IsDescribedBy
+  repository: bioRxiv
+  resourceType: dcite:Preprint
+  schemaKey: Resource
+  url: https://doi.org/10.1101/2025.02.03.631599
+- name: The BraiDyn-BC dataset for the cued-lever-pull task
+  relation: dcite:IsVariantFormOf
+  repository: Matsuzaki Lab Data Sharing Platform
+  resourceType: dcite:Dataset
+  schemaKey: Resource
+  url: https://mmlab-repo.m.u-tokyo.ac.jp/r/Matsuzaki/BraiDyn-BC_CuedLeverPull
+- name: bdbc-data-pipeline
+  relation: dcite:IsCompiledBy
+  repository: GitHub
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/BraiDyn-BC/bdbc-data-pipeline
+- name: Tutorials for navigating through BraiDyn-BC datasets (English)
+  relation: dcite:IsDescribedBy
+  repository: Google Drive
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://drive.google.com/drive/folders/1QciTJd3tXkEGhz6782czB2dEO3fafm8M
+- identifier: https://github.com/BraiDyn-BC/bdbc-nwb-explorer
+  name: bdbc-nwb-explorer
+  relation: dcite:Compiles
+  repository: bdbc-nwb-explorer
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/BraiDyn-BC/bdbc-nwb-explorer
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+studyTarget:
+- Multi-timescale changes in neural and behavioral dynamics of mice across multiple
+  task-training sessions
+url: https://dandiarchive.org/dandiset/001425/0.250705.0947
+version: 0.250705.0947
+wasGeneratedBy: []

@@ -1,0 +1,78 @@
+{
+  "id": "DANDI:000566/draft",
+  "url": "https://dandiarchive.org/dandiset/000566/draft",
+  "name": "ASAP4 data",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Lin, Michael (2023) ASAP4 data (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000566/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000566",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Lin, Michael",
+      "email": "michaelzlin@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2023-06-19T00:03:34.728513+00:00",
+  "description": "Raw data for \"A positively tuned voltage indicator for extended electrical recordings in the brain\", Nature Methods 2023, https://doi.org/10.1038/s41592-023-01913-z",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Drosophila melanogaster - Fruit fly",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 631788071,
+    "numberOfFiles": 1,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "ImagingPlane",
+      "OpticalChannel",
+      "TwoPhotonSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.4",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000566/versions/draft/assets/"
+  ]
+}

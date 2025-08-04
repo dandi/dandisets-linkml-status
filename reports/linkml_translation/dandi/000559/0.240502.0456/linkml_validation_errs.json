@@ -1,0 +1,966 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:a46bd2a9-52f4-4267-a198-5d759f48b59f', 'name': 'DANDI publish', 'endDate': '2024-05-02T04:56:05.784047+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-05-02T04:56:05.784047+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:755ab796-d8ac-4818-8c90-e902e012b192', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:a46bd2a9-52f4-4267-a198-5d759f48b59f', 'name': 'DANDI publish', 'endDate': '2024-05-02T04:56:05.784047+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-05-02T04:56:05.784047+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:755ab796-d8ac-4818-8c90-e902e012b192', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Markowitz, Jeffrey E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Markowitz, Jeffrey E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gillis, Winthrop', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1659-8639', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gillis, Winthrop', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1659-8639', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Jay, Maya', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5537-6476', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jay, Maya', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5537-6476', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Wood, Jeffrey', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wood, Jeffrey', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Harris, Ryley W.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6924-4981', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Harris, Ryley W.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6924-4981', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cieszkowski, Robert', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cieszkowski, Robert', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Scott, Rebecca', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Scott, Rebecca', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Brann, David', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Brann, David', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Koveal, Dorothy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2907-6925', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Koveal, Dorothy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2907-6925', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kula, Tomasz', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kula, Tomasz', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Weinreb, Caleb', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Weinreb, Caleb', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Osman, Mohammed Abdal Monium ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8606-6518', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Osman, Mohammed Abdal Monium ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8606-6518', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Pinto, Sandra Romero ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/12",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pinto, Sandra Romero ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Harvard University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Uchida, Naoshige ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5755-9409', 'affiliation': [{'name': 'Harvard University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/13",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Uchida, Naoshige ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5755-9409', 'affiliation': [{'name': 'Harvard University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Linderman, Scott W.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3878-9073', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/14",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Linderman, Scott W.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3878-9073', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        14
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sabatini, Bernardo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0095-9177', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}, {'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string' in /contributor/15",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sabatini, Bernardo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0095-9177', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}, {'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        15
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Datta, Sandeep Robert ', 'email': 'srdatta@hms.harvard.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8068-3862', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string' in /contributor/16",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Datta, Sandeep Robert ', 'email': 'srdatta@hms.harvard.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8068-3862', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03vek6s52'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        16
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'RF1AG073625', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/17",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'RF1AG073625', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        17
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Brain Research Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/0492gsr48', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/18",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Brain Research Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/0492gsr48', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        18
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Simons Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cmst727', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/19",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Simons Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cmst727', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        19
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Burroughs Wellcome Fund', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01d35cw23', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/20",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Burroughs Wellcome Fund', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01d35cw23', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        20
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Jane Coffin Childs Memorial Fund for Medical Research', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04yhme281', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/21",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jane Coffin Childs Memorial Fund for Medical Research', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04yhme281', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        21
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Alfred P. Sloan Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/052csg198', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/22",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Alfred P. Sloan Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/052csg198', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        22
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Bhagat, N.', 'roleName': ['dcite:ProjectAdministration'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/23",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bhagat, N.', 'roleName': ['dcite:ProjectAdministration'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        23
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Araki, J.', 'roleName': ['dcite:ProjectAdministration'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/24",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Araki, J.', 'roleName': ['dcite:ProjectAdministration'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        24
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Wallace, J.', 'roleName': ['dcite:ProjectAdministration'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/25",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wallace, J.', 'roleName': ['dcite:ProjectAdministration'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        25
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Harvard Neurobiology Imaging Core', 'roleName': ['dcite:Resources'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/26",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Harvard Neurobiology Imaging Core', 'roleName': ['dcite:Resources'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        26
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': 'NS072030', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/27",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': 'NS072030', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        27
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'HMS Research Instrumentation Core', 'roleName': ['dcite:Resources'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/28",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'HMS Research Instrumentation Core', 'roleName': ['dcite:Resources'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        28
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Bertarelli Program in Translational Neuroscience and Neuroengineering', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/29",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bertarelli Program in Translational Neuroscience and Neuroengineering', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        29
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Eye Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03wkg3b53', 'awardNumber': 'EY012196', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/30",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Eye Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03wkg3b53', 'awardNumber': 'EY012196', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        30
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gershman, S.', 'roleName': ['dcite:Other'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/31",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gershman, S.', 'roleName': ['dcite:Other'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        31
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Assad, J.', 'roleName': ['dcite:Other'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/32",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Assad, J.', 'roleName': ['dcite:Other'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        32
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Shea, S.', 'roleName': ['dcite:Other'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/33",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Shea, S.', 'roleName': ['dcite:Other'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        33
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'O2 High Performance Compute Cluster at Harvard Medical School', 'roleName': ['dcite:Resources'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/34",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'O2 High Performance Compute Cluster at Harvard Medical School', 'roleName': ['dcite:Resources'], 'schemaKey': 'Organization', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        34
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Adkisson, Paul', 'email': 'paul.adkisson@catalystneuro.com', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0009-0005-8943-5450', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/35",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Adkisson, Paul', 'email': 'paul.adkisson@catalystneuro.com', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0009-0005-8943-5450', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        35
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Baker, Cody', 'email': 'cody.baker@catalystneuro.com', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/36",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Baker, Cody', 'email': 'cody.baker@catalystneuro.com', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        36
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'R01NS114020', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/37",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'R01NS114020', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        37
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'U19NS113201', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/38",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'U19NS113201', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        38
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'F31NS113385', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/39",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'F31NS113385', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        39
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'F31NS122155', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/40",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03f394x19', 'awardNumber': 'F31NS122155', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        40
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

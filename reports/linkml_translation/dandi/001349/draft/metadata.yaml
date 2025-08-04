@@ -1,0 +1,73 @@
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 10498307134
+  numberOfFiles: 422
+  numberOfSubjects: 32
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - ImagingPlane
+  - PlaneSegmentation
+  - OpticalChannel
+citation: 'Huang, Jui-Yen (2025) From Initial Formation to Developmental Refinement:
+  GABAergic Inputs Shape Neuronal Subnetworks in the Primary Somatosensory Cortex
+  (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001349/draft'
+contributor:
+- affiliation: []
+  email: juiyhuan@iu.edu
+  includeInCitation: true
+  name: Huang, Jui-Yen
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2025-02-26T18:04:28.786242+00:00'
+datePublished: '2025-06-04T15:10:26.635924+00:00'
+description: The calcium imaging data were obtained through two-photon awake imaging
+  of the somatosensory cortex in developing mice from P11 to P21. Simultaneously,
+  behavioral video recordings were collected from the experimental setup. The two
+  modalities were synchronized using an LED signal at the start and end of the two-photon
+  imaging experiment. Imaging data analysis was performed using Python or MATLAB,
+  utilizing standard toolboxes, open-access toolboxes, and custom-written code.
+id: DANDI:001349/draft
+identifier: DANDI:001349
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001349/versions/draft/assets/
+name: 'From Initial Formation to Developmental Refinement: GABAergic Inputs Shape
+  Neuronal Subnetworks in the Primary Somatosensory Cortex'
+publishedBy:
+  endDate: '2025-06-04T15:10:26.635924+00:00'
+  id: urn:uuid:35749fb2-cf72-4c7e-a1c2-a55258ea3f5c
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-04T15:10:26.635924+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:7d243f90-18c0-461b-885d-d7b36ef0bae2
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+url: https://dandiarchive.org/dandiset/001349/draft
+version: draft

@@ -1,0 +1,48 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:42f60020-b7ef-4af1-ab45-34e7674dcde4'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-01-25T06:01:58.880120+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-01-25T06:01:58.880120+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:9609ec95-37ec-40ac-8680-0598d6838f47'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:42f60020-b7ef-4af1-ab45-34e7674dcde4'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-01-25T06:01:58.880120+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-01-25T06:01:58.880120+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:9609ec95-37ec-40ac-8680-0598d6838f47'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wu, Nathan'', ''email'': ''mrwun2002@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wu, Nathan'', ''email'': ''mrwun2002@gmail.com'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

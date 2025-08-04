@@ -1,0 +1,138 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:9036975f-bdce-4bca-983d-b501768d9357', 'name': 'DANDI publish', 'endDate': '2024-05-01T19:12:21.757744+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-05-01T19:12:21.757744+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:38de3ed4-6aaf-48b8-9e32-f95abfe16059', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:9036975f-bdce-4bca-983d-b501768d9357', 'name': 'DANDI publish', 'endDate': '2024-05-01T19:12:21.757744+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-05-01T19:12:21.757744+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:38de3ed4-6aaf-48b8-9e32-f95abfe16059', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Xiao, Will', 'email': 'xiaow@g.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Maintainer', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectMember', 'dcite:ProjectManager', 'dcite:Researcher', 'dcite:Software', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0001-5555-3217', 'affiliation': [{'name': 'Harvard Medical Schoo', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Xiao, Will', 'email': 'xiaow@g.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Maintainer', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectMember', 'dcite:ProjectManager', 'dcite:Researcher', 'dcite:Software', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0001-5555-3217', 'affiliation': [{'name': 'Harvard Medical Schoo', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sharma, Saloni', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Researcher', 'dcite:ProjectMember', 'dcite:Investigation', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-0273-2091', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sharma, Saloni', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Researcher', 'dcite:ProjectMember', 'dcite:Investigation', 'dcite:Conceptualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-0273-2091', 'affiliation': [{'name': 'Harvard Medical School', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kreiman, Gabriel', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Resources', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-3505-8475', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kreiman, Gabriel', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Resources', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-3505-8475', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Livingstone, Margaret', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-1950-0123', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Livingstone, Margaret', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-1950-0123', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'R01 EY016187; R01 EY025670; P30 EY012196; R01 EY026025', 'contactPoint': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'R01 EY016187; R01 EY025670; P30 EY012196; R01 EY026025', 'contactPoint': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "id": "DANDI:000773/draft",
+  "url": "https://dandiarchive.org/dandiset/000773/draft",
+  "name": "Age affects odor-evoked calcium responses in the ant antennal lobe",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Hart, Taylor (2024) Age affects odor-evoked calcium responses in the ant antennal lobe (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000773/draft",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000773",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "5 R01 NS 123899-02"
+    },
+    {
+      "name": "Hart, Taylor",
+      "email": "harttdp@gmail.com",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-9692-8150",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-01-04T19:31:15.719296+00:00",
+  "description": "Calcium imaging experiments were performed on the clonal raider ant antennal lobe to determine whether odor coding is modulated during aging. Ants were either two weeks old or two months old, corresponding to nurse-like and forager-like behavioral patterns. Ants are clonal line B with transgene insert [ie-DsRed, ObirOrco-QF2, 15xQUAS-GCaMP6s]. GCaMP6s labels all Orco-positive antennal lobe glomeruli and allows recording odor responses throughout the antennal lobe using volumetric imaging.\n\nAssociated with Hart et al. 2024. Pheromone representation in the ant antennal lobe changes with age. Current Biology 34. https://doi.org/10.1016/j.cub.2024.05.031\n\nAnts were stimulated with 5 general odorants (3-hexanone, isopropanol, ethanol, propionic acid, ethylpyrazine) and 2 alarm pheromones (4-methyl-3-heptanone and 4-methyl-3-heptanol) all at either 3% or 48% concentration (volume/volume in paraffin oil). Experiments had a 3s lag time and a 5s stimulus time, total recording time 48s, 0.83 volumes/second. 33 Z-planes were imaged in each volume.\n\nAnts were imaged on different days, and the following outline describes experiment conditions for the dataset.\n\nTwo weeks old experiment days:\n1-18-2023 - 48% odor conc.\n1-20-2023 - 48% odor conc. \n2-24-2023 - 48% odor conc.\n1-17-2023 - 3% odor conc.\n\nTwo months old experiment days:\n1-10-2023 - 48% odor conc.\n4-6-2023 - 48% odor conc.\n1-11-2023 - 3% odor conc. \n",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Ooceraea biroi - Clonal raider ant",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_2015173"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 1281980278656,
+    "numberOfFiles": 15246,
+    "numberOfSubjects": 21,
+    "variableMeasured": [
+      "OpticalChannel",
+      "TwoPhotonSeries",
+      "ImagingPlane"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000773/versions/draft/assets/"
+  ]
+}

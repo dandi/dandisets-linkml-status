@@ -1,0 +1,297 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:12e1f2e7-d179-4900-a6f7-727d7f8b3848'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-06-07T01:01:29.671814+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-06-07T01:01:29.671814+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:5b0ab554-1212-4eb1-be41-244d2d6747ce'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:12e1f2e7-d179-4900-a6f7-727d7f8b3848'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-06-07T01:01:29.671814+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-06-07T01:01:29.671814+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:5b0ab554-1212-4eb1-be41-244d2d6747ce'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Zhao, Yue'', ''email'': ''yuezhao@rochester.edu'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhao, Yue'', ''email'': ''yuezhao@rochester.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Maintainer''], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Quirk, Keelin'', ''email'': ''kquirk@ur.rochester.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Quirk, Keelin'', ''email'': ''kquirk@ur.rochester.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Ladron de Guevara, Antonio'', ''email'': ''antonio_ladron@urmc.rochester.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ladron de Guevara, Antonio'', ''email'': ''antonio_ladron@urmc.rochester.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Raghunandan, Aditya'', ''email'': ''araghuna@ur.rochester.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Raghunandan, Aditya'', ''email'': ''araghuna@ur.rochester.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Nedergaard, Maiken'', ''email'': ''maiken_nedergaard@urmc.rochester.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nedergaard, Maiken'', ''email'': ''maiken_nedergaard@urmc.rochester.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kelley, Douglas H. '', ''email'': ''d.h.kelley@rochester.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kelley, Douglas H. '', ''email'': ''d.h.kelley@rochester.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''United States Army'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/00afsp483'', ''awardNumber'':
+    ''MURI W911NF1910280'', ''includeInCitation'': False} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''United States Army'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00afsp483'',
+      ''awardNumber'': ''MURI W911NF1910280'', ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''awardNumber'': ''U19NS128613, R01AT012312'', ''includeInCitation'': False} is
+    not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''U19NS128613, R01AT012312'', ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: "{'name': 'Lundbeck Foundation', 'roleName': ['dcite:Funder'], 'schemaKey':
+    'Organization', 'identifier': 'https://ror.org/03hz8wd80', 'awardNumber': 'R386\u20132021\u2013165',
+    'includeInCitation': False} is not of type 'string' in /contributor/8"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Lundbeck Foundation', 'roleName': ['dcite:Funder'], 'schemaKey':
+      'Organization', 'identifier': 'https://ror.org/03hz8wd80', 'awardNumber': 'R386\u20132021\u2013165',
+      'includeInCitation': False} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Novo Nordisk Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04txyc737'',
+    ''awardNumber'': ''NNF20OC0066419'', ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Novo Nordisk Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04txyc737'',
+      ''awardNumber'': ''NNF20OC0066419'', ''includeInCitation'': False} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Nick Simons Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00se21e39'',
+    ''awardNumber'': ''811237'', ''includeInCitation'': False} is not of type ''string''
+    in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nick Simons Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00se21e39'',
+      ''awardNumber'': ''811237'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Adelson Foundation'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/0001ew531'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Adelson Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0001ew531'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

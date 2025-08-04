@@ -1,0 +1,138 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:28ceba79-9fbb-499d-a4f6-55c233d670b0', 'name': 'DANDI publish', 'endDate': '2021-10-07T19:26:11.527881+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2021-10-07T19:26:11.527881+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:e6c40d8e-9ce4-4307-b8d9-ec281b4894f8', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:28ceba79-9fbb-499d-a4f6-55c233d670b0', 'name': 'DANDI publish', 'endDate': '2021-10-07T19:26:11.527881+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2021-10-07T19:26:11.527881+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:e6c40d8e-9ce4-4307-b8d9-ec281b4894f8', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'neocortex', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'neocortex', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kalmbach, Brian', 'email': 'briank@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3136-8097', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00cv1019'}], 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kalmbach, Brian', 'email': 'briank@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3136-8097', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00cv1019'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chartrand, Tom', 'email': 'tom.chartrand@alleninstitute.org', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-7093-8681', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00dcv1019'}], 'includeInCitation': False} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chartrand, Tom', 'email': 'tom.chartrand@alleninstitute.org', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-7093-8681', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00dcv1019'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lee, Brian', 'email': 'brianle@alleninstitute.org', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-3210-5638', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00dcv1019'}], 'includeInCitation': False} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Lee, Brian', 'email': 'brianle@alleninstitute.org', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-3210-5638', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00dcv1019'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lein, Ed', 'email': 'edl@alleninstitute.org', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0001-9012-6552', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00cv1019'}], 'includeInCitation': False} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Lein, Ed', 'email': 'edl@alleninstitute.org', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0001-9012-6552', 'affiliation': [{'name': 'Allen Institute for Brain Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00cv1019'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

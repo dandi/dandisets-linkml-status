@@ -1,0 +1,249 @@
+{
+  "id": "DANDI:001371/draft",
+  "url": "https://dandiarchive.org/dandiset/001371/draft",
+  "name": "New information triggers prospective codes to adapt for flexible navigation",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Prince, Stephanie; Cushing, Danielle Sarah; Yassine, Teema; Katragadda, Navya; Roberts, Tyler; Singer, Annabelle (2025) New information triggers prospective codes to adapt for flexible navigation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001371/draft",
+  "keywords": [
+    "hippocampus",
+    "prefrontal cortex",
+    "electrophysiology",
+    "navigation"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001371",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Prince, Stephanie",
+      "email": "stephprince16@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:Conceptualization",
+        "dcite:FormalAnalysis",
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-3083-6955",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Cushing, Danielle Sarah",
+      "roleName": [
+        "dcite:Author",
+        "dcite:FormalAnalysis"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3730-8220",
+      "includeInCitation": true
+    },
+    {
+      "name": "Yassine, Teema",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Katragadda, Navya",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Roberts, Tyler",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Singer, Annabelle",
+      "email": "asinger@gatech.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson",
+        "dcite:Conceptualization",
+        "dcite:FundingAcquisition",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-6003-0488",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Science Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/021nxhr62",
+      "awardNumber": "DGE-1444932",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Neurological Disorders and Stroke ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01s5ya894",
+      "awardNumber": "NS109226",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Neurological Disorders and Stroke",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01s5ya894",
+      "awardNumber": "T32NS096050-22",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Aging",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/049v75w11",
+      "awardNumber": "RF1AG078736-01",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2025-03-31T07:07:54.480563+00:00",
+  "description": "This dataset includes the electrophysiological and behavioral data from hippocampal CA1 and medial prefrontal cortex in mice performing a virtual reality spatial navigation task. Data are described in Prince et al., 2025, \u201cNew information triggers prospective codes to adapt for flexible navigation\u201d, Nature Communications. Head-fixed mice were trained to perform a memory-based decision-making task in virtual reality (the 'update task'). In this y-maze task, animals were required to navigate between two possible paths using visual cues. On most trials, the first original cue indicated the final reward location and was followed by a delay period during which mice had to maintain the memory of the correct goal arm. However on a subset of trials, a second visual cue appeared when mice reached a specific location after a shortened delay period. During the second cue, the visual patterns appeared on the opposite wall from the original cue indicating that the reward location switched from the initial arm, and animals must switch from their initial decision maintained in memory to the opposite choice. After several phases of behavioral training, electrophysiological data was recorded from hippocampal CA1 and medial prefrontal cortex (mPFC) during the task.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 14536769171479,
+    "numberOfFiles": 66,
+    "numberOfSubjects": 7,
+    "variableMeasured": [
+      "SpatialSeries",
+      "Units",
+      "ProcessingModule",
+      "BehavioralEvents",
+      "LFP",
+      "CompassDirection",
+      "DecompositionSeries",
+      "ElectricalSeries",
+      "Position",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "fourier analysis technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "signal filtering technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://github.com/stephprince/singer-lab-to-nwb",
+      "name": "singer-lab-to-nwb: code that converted this data",
+      "relation": "dcite:IsDerivedFrom",
+      "schemaKey": "Resource",
+      "identifier": "",
+      "repository": "singer-lab-to-nwb",
+      "resourceType": "dcite:Software"
+    },
+    {
+      "url": "https://github.com/stephprince/update-project",
+      "name": "update-project: code to analyze this data",
+      "relation": "dcite:IsRequiredBy",
+      "schemaKey": "Resource",
+      "repository": "update-project",
+      "resourceType": "dcite:Software"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41467-025-60122-8",
+      "name": "New information triggers prospective codes to adapt for flexible navigation",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:JournalArticle"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-025-08868-5",
+      "name": "Goal-specific hippocampal inhibition gates learning",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001371/versions/draft/assets/"
+  ]
+}

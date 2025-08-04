@@ -1,0 +1,185 @@
+{
+  "id": "DANDI:000108/draft",
+  "doi": "10.80507/dandi.123456/0.123456.1234",
+  "url": "https://dandiarchive.org/dandiset/000108/draft",
+  "name": "Light sheet imaging of the human brain",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements",
+      "contactPoint": {
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Kamentsky, Lee; Marx, Slayton; Park, Juhyuk; Su-Arcaro, Clover; Moukheiber, Mira; Zhao, Victor (2023) Light sheet imaging of the human brain (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000108",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Kamentsky, Lee",
+      "roleName": [],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Marx, Slayton",
+      "email": "smarx@mit.edu",
+      "roleName": [
+        "dcite:DataManager",
+        "dcite:DataCurator",
+        "dcite:Investigation",
+        "dcite:ProjectMember",
+        "dcite:Researcher",
+        "dcite:Software",
+        "dcite:Supervision",
+        "dcite:Visualization",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-8209-0059",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Park, Juhyuk",
+      "email": "juhyuk@mit.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:Investigation",
+        "dcite:ProjectMember",
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-1429-3399",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Su-Arcaro, Clover",
+      "email": "clover13@mit.edu",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:ProjectManager",
+        "dcite:ProjectMember",
+        "dcite:ProjectAdministration",
+        "dcite:Supervision",
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-5658-5800",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Moukheiber, Mira",
+      "email": "miram@mit.edu",
+      "roleName": [
+        "dcite:Software"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8475-6048",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Zhao, Victor",
+      "email": "viczhao@mit.edu",
+      "roleName": [
+        "dcite:Software"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-9694-7132",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "url": "http://www.nih.gov/",
+      "name": "NIH",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "contactPoint": [],
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2021-06-01T14:35:34.166648+00:00",
+  "description": "This dataset contains images of 1 mm sections of human brain tissue showing nuclei, NeuN+ cells and blood vessels. Each tissue section was first SHIELD-processed for protein protection and delipidated to clear the tissue. The tissues were stained with YOYO1 (nuclei), anti-NeuN antibody (with Rhodamine Red-X secondary antibody) and Lectin (blood vessel) for 8 days in total and then optically cleared using ExPROTOS (a refractive matching solution). The sample was imaged using light sheet microscopy at a resolution of ~2.5 um x 3.6 um x 2.5 um. Each slab was imaged using multiple stacks. Offset transforms are included with the dataset to enable reconstruction of each slab.",
+  "publishedBy": {
+    "id": "urn:uuid:915cf197-79ed-4471-b4cb-28894e9676c5",
+    "name": "DANDI publish",
+    "endDate": "2023-10-28T07:36:51.554373+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2023-10-28T07:36:51.554373+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:fa374805-b86c-42bf-88a5-35c22825eaa4",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Brain Imaging Data Structure (BIDS)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_016124"
+      }
+    ],
+    "numberOfBytes": 371182156843626,
+    "numberOfFiles": 7976,
+    "numberOfSamples": 147,
+    "numberOfSubjects": 5,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2023-10-28T07:36:51.554373+00:00",
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [
+    {
+      "name": "Brain Initiative Cell Census Network (BICCN)",
+      "used": [],
+      "schemaKey": "Project",
+      "wasAssociatedWith": []
+    }
+  ],
+  "relatedResource": [
+    {
+      "url": "https://biccn.github.io/Quarterly_Submission_Receipts/000108-dashboard.html",
+      "name": "Dashboard for available data",
+      "relation": "dcite:IsSupplementedBy",
+      "schemaKey": "Resource",
+      "repository": "BICCN dashboard"
+    },
+    {
+      "url": "https://dandiarchive.org/dandiset/000026/draft/files?location=sub-KC001%2F",
+      "name": "MRI of subject MITU01",
+      "relation": "dcite:IsSupplementedBy",
+      "schemaKey": "Resource",
+      "repository": "DANDI"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000108/versions/draft/assets/"
+  ]
+}

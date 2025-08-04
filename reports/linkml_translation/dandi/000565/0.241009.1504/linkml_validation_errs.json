@@ -1,0 +1,92 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:8c8d4f78-ed86-4188-9b5c-55c11b78de38', 'name': 'DANDI publish', 'endDate': '2024-10-09T15:04:38.614836+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-10-09T15:04:38.614836+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a9eb9d64-d4df-4bf7-a7f3-f084f4157f4a', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:8c8d4f78-ed86-4188-9b5c-55c11b78de38', 'name': 'DANDI publish', 'endDate': '2024-10-09T15:04:38.614836+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-10-09T15:04:38.614836+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a9eb9d64-d4df-4bf7-a7f3-f084f4157f4a', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Dunn, Raymond', 'email': 'Raymond.dunn@ucsf.edu', 'roleName': ['dcite:DataCollector', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Dunn, Raymond', 'email': 'Raymond.dunn@ucsf.edu', 'roleName': ['dcite:DataCollector', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sprague, Daniel', 'email': 'daniel.y.sprague@gmail.com', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sprague, Daniel', 'email': 'daniel.y.sprague@gmail.com', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kato, Saul', 'email': 'saul.kato@ucsf.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kato, Saul', 'email': 'saul.kato@ucsf.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

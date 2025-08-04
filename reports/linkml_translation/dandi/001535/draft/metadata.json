@@ -1,0 +1,107 @@
+{
+  "id": "DANDI:001535/draft",
+  "url": "https://dandiarchive.org/dandiset/001535/draft",
+  "name": "Sampling representational plasticity of simple imagined movements across days enables long-term neuroprosthetic control",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Natraj, Nikhilesh (2025) Sampling representational plasticity of simple imagined movements across days enables long-term neuroprosthetic control (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001535/draft",
+  "keywords": [
+    "ECoG, Human, BCI"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001535",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Natraj, Nikhilesh",
+      "email": "nikhilesh.natraj@ucsf.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "NIH",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/05h1kgg64",
+      "awardNumber": "R01HD111562",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2025-07-13T04:37:45.082548+00:00",
+  "description": "Long-term electrocorticographic (ECoG) training data during contextual brain computer interface (BCI) control in a tetraplegic human participant. The data uploaded represent long-term recordings from a 128 channel ECoG grid over contralateral sensorimotor cortex when trying to access directions in 3D space (6 axial directions plus 1 for the origin for a total of 7 directional targets). Data from individual variable length training trials from these long-term recordings have been collated and uploaded for the development and testing of novel BCI decoding architectures. For example, these trials can be used to train proficient deep learning neural network based BCI decoders to discern directional control. The trials are collated from a multitude of BCI contexts e.g., control in a virtual environment, with a physical real-world robot, during open loop and closed loop control. The neural features are a combination of high gamma amplitude activity (70-150Hz) and low-frequency motor cortical potentials (<25Hz), down sampled from the original 1KhZ sampling rate to 100Hz. Paper describing the scientific rationale, engineering approach, signal processing, experiments, data and a baseline deep learning decoder (stacked bi-directional LSTMs) can be found here: https://www.cell.com/cell/fulltext/S0092-8674(25)00157-6   ",
+  "publishedBy": {
+    "id": "urn:uuid:e03adce4-9ba1-4d4b-b75c-39a193496e85",
+    "name": "DANDI publish",
+    "endDate": "2025-07-14T12:18:13.608172+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-07-14T12:18:13.608172+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:78248fee-2328-4571-9a6a-a866b3b2b36a",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [
+    "Humans"
+  ],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Homo sapiens - Human",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      }
+    ],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 4773567412,
+    "numberOfFiles": 1,
+    "numberOfSubjects": 1,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2025-07-14T12:18:13.608172+00:00",
+  "schemaVersion": "0.6.10",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(25)00157-6",
+      "name": "Sampling representational plasticity of simple imagined movements across days enables long-term neuroprosthetic control",
+      "relation": "dcite:IsSupplementTo",
+      "schemaKey": "Resource",
+      "identifier": "10.1016/j.cell.2025.02.001 ",
+      "repository": "Cell",
+      "resourceType": "dcite:DataPaper"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001535/versions/draft/assets/"
+  ]
+}

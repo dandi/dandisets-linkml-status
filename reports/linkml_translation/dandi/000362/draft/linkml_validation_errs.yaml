@@ -1,0 +1,42 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'R\xF3zsa, M\xE1rton', 'email': 'qtyush@gmail.com', 'roleName':
+    ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation':
+    True} is not of type 'string' in /contributor/0"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'R\xF3zsa, M\xE1rton', 'email': 'qtyush@gmail.com', 'roleName':
+      ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation':
+      True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '''Simultaneous loose seal cell-attached recordings and two-photon imaging
+    of GCaMP8 expressing mouse V1 neurons with drifting gratings visual stimuli  -
+    RAW movies'' does not match ''^(?=.{,150}$)'' in /name'
+  severity: ERROR
+  source:
+    absolute_path:
+    - name
+    absolute_schema_path:
+    - properties
+    - name
+    - pattern
+    message: '''Simultaneous loose seal cell-attached recordings and two-photon imaging
+      of GCaMP8 expressing mouse V1 neurons with drifting gratings visual stimuli  -
+      RAW movies'' does not match ''^(?=.{,150}$)'''
+    validator: pattern
+    validator_value: ^(?=.{,150}$)
+  type: jsonschema validation

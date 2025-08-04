@@ -1,0 +1,44 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Najafi, Farzaneh'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6454-2448'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Najafi, Farzaneh'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6454-2448'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Churchland, Anne K.'', ''roleName'': [''dcite:Author''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3205-3794'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Churchland, Anne K.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3205-3794'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

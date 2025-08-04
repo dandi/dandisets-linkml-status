@@ -1,0 +1,75 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+acknowledgement: 1R01NS138075-01
+assetsSummary:
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 148260571664
+  numberOfFiles: 13
+  numberOfSubjects: 3
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - OpticalChannel
+  - ImagingPlane
+  - TwoPhotonSeries
+citation: 1R01NS138075-01 (2025). (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001462/draft
+contributor:
+- awardNumber: 1R01NS138075-01
+  email: Takashi.Kitamura@UTSouthwestern.edu
+  name: Kitamura, Takashi
+  roleName:
+  - dcite:Supervision
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2025-05-30T14:44:24.765385+00:00'
+datePublished: '2025-06-02T15:36:05.941246+00:00'
+description: Neural circuit mechanisms for a mirror-induced self-directed behavior.
+  in vivo calcium imaging from ACC neurons and animal behavior data during mirror
+  exposure for 5 days.
+ethicsApproval: []
+id: DANDI:001462/draft
+identifier: DANDI:001462
+keywords:
+- in vivo calcium imaging, ACC
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001462/versions/draft/assets/
+name: 1R01NS138075-01
+publishedBy:
+  endDate: '2025-06-02T15:36:05.941246+00:00'
+  id: urn:uuid:751aebf8-b199-49d4-b40c-1295755bb796
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-02T15:36:05.941246+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:8c8ab2c2-eb0e-4b4b-954c-6263b31c586c
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+studyTarget:
+- 'Neural circuit mechanisms for a mirror-induced self-directed behavior. '
+url: https://dandiarchive.org/dandiset/001462/draft
+version: draft
+wasGeneratedBy: []

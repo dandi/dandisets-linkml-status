@@ -1,0 +1,121 @@
+{
+  "id": "DANDI:001363/draft",
+  "url": "https://dandiarchive.org/dandiset/001363/draft",
+  "name": "Neural Spiking Data in the Rat Somatosensory Cortex Using a Flexible Electrode Responding to Transcranial Focused Ultrasound",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Ramachandran, Sandhya; Gao, Huan; Yu, Kai; Yeh, Kelly; He, Bin (2025) Neural Spiking Data in the Rat Somatosensory Cortex Using a Flexible Electrode Responding to Transcranial Focused Ultrasound (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001363/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001363",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Ramachandran, Sandhya",
+      "email": "s.ramachandran8@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Gao, Huan",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Yu, Kai",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Yeh, Kelly",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "He, Bin",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    },
+    {
+      "name": "RF1NS131069",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    },
+    {
+      "name": "R01NS124564",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    }
+  ],
+  "dateCreated": "2025-03-19T04:58:45.735385+00:00",
+  "description": "In this study, we investigate the neuronal response to transcranial focused ultrasound stimulation (tFUS) on the somatosensory cortex using a 128-element array transducer and a chronically implanted ultraflexible nanoelectric thread electrode. This flexible electrode allows us to  study higher intensities of tFUS which are impossible with a rigid electrode due to the vibration artifacts that are created. Here we test 5 different levels of in situ ultrasound pressure including 100, 400, 700, 1000, and 1300 kPa. We then tested the effect of varying duty cycle while keeping the pulse repetition frequency (PRF) constant while using the highest peak-peak pressure (1300 kPa), testing duty cycles of 0.6%, 6%, 30%, 60%, and 90% while holding PRF at 1500 Hz. Finally we tested the effect of varying PRF while holding duty cycle constant, testing PRFs of 30, 300, 1500, 3000, and 4500 Hz with a duty cycle of 30%. In each of these, the fundamental frequency of ultrasound was 1500 kHz, and the ultrasound duration was 67 ms, with trials performed every 2 seconds, with a jitter of 10%. Each recording has 505 trials. ",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 180622044792,
+    "numberOfFiles": 55,
+    "numberOfSubjects": 5,
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "ElectricalSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001363/versions/draft/assets/"
+  ]
+}

@@ -1,0 +1,70 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:4e1af4d4-ff35-4295-b6ba-fb3ddce60873'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-12-20T13:12:31.182625+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-12-20T13:12:31.182625+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:d51fd59f-e729-4ffb-a14e-954a9fb4085e'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:4e1af4d4-ff35-4295-b6ba-fb3ddce60873'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-12-20T13:12:31.182625+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-12-20T13:12:31.182625+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:d51fd59f-e729-4ffb-a14e-954a9fb4085e'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: "{'name': 'T\xF3th, Martin', 'email': 'toh.martin9502@gmail.com', 'roleName':
+    ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5973-0401',
+    'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'T\xF3th, Martin', 'email': 'toh.martin9502@gmail.com', 'roleName':
+      ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5973-0401',
+      'affiliation': [], 'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: "{'name': 'R\xF3zsa, M\xE1rton', 'email': 'marton.rozsa@alleninstitute.org
+    ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation':
+    True} is not of type 'string' in /contributor/1"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'R\xF3zsa, M\xE1rton', 'email': 'marton.rozsa@alleninstitute.org
+      ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation':
+      True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation

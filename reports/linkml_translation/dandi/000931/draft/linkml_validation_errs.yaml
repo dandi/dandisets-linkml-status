@@ -1,0 +1,155 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''A. Dehaqani, Alireza'', ''roleName'': [''dcite:Author'',
+    ''dcite:FormalAnalysis'', ''dcite:ProjectLeader''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0009-0007-3575-0425'', ''includeInCitation'': True} is not of
+    type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''A. Dehaqani, Alireza'', ''roleName'': [''dcite:Author'',
+      ''dcite:FormalAnalysis'', ''dcite:ProjectLeader''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0009-0007-3575-0425'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Michelon, Filippo'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+    ''dcite:Investigation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8022-6696'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Michelon, Filippo'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+      ''dcite:Investigation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8022-6696'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Patella, Paola'', ''email'': ''paola.patella@iit.it'', ''roleName'':
+    [''dcite:Author'', ''dcite:Investigation'', ''dcite:DataCurator'', ''dcite:FormalAnalysis''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2409-5182'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Patella, Paola'', ''email'': ''paola.patella@iit.it'',
+      ''roleName'': [''dcite:Author'', ''dcite:Investigation'', ''dcite:DataCurator'',
+      ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2409-5182'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Petrucco, Luigi'', ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4001-0564'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Petrucco, Luigi'', ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4001-0564'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Piasini, Eugenio'', ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0384-7699'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Piasini, Eugenio'', ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0384-7699'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Iurilli, Giuliano'', ''email'': ''giuliano.iurilli@iit.it'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:Supervision'', ''dcite:ProjectManager'',
+    ''dcite:Author'', ''dcite:FundingAcquisition'', ''dcite:Conceptualization''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9037-2489'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Iurilli, Giuliano'', ''email'': ''giuliano.iurilli@iit.it'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Supervision'', ''dcite:ProjectManager'',
+      ''dcite:Author'', ''dcite:FundingAcquisition'', ''dcite:Conceptualization''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9037-2489'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

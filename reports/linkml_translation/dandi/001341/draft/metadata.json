@@ -1,0 +1,117 @@
+{
+  "id": "DANDI:001341/draft",
+  "url": "https://dandiarchive.org/dandiset/001341/draft",
+  "name": "Barrel cortex electrophysiology during tactile VR whisker-guided navigation",
+  "about": [
+    {
+      "schemaKey": "GenericType"
+    }
+  ],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Armstrong, Alex; Vlasov, Yurii (2025) Barrel cortex electrophysiology during tactile VR whisker-guided navigation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001341/draft",
+  "keywords": [
+    "barrel cortex; S1; behavior; decision making; VR "
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001341",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Armstrong, Alex",
+      "email": "alexga2@illinois.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Vlasov, Yurii",
+      "email": "yvlasov@illinois.edu",
+      "roleName": [
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-02-21T16:55:21.578649+00:00",
+  "description": "Electrophysiology in the C2 barrel column of wS1 in mice during continuous tactile VR navigation using only the C2 whiskers. Mice are head-fixed on a suspended ball, with two walls placed either side of the mouse. The lateral movement of these walls is coupled in a closed loop real time system to the trajectory of the mouse so that when the mouse moves to the left, the walls move in from the left. This causes them to orient themselves in the middle of the virtual corridor. Mice are presented with turns to the left (contralateral stimulation to recording site) and right (ipsilateral to recording site) in the virtual environment in a completely unrewarded form of a 2AFC task. Trial structure consists of a 100cm closed loop baseline straight running trial, before an open loop 2 second turn to either the left or right. Mouse trajectories (forward and lateral distance and speed) calculated from ball tracking cameras using custom LabVIEW program.",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 693328344,
+    "numberOfFiles": 2,
+    "numberOfSubjects": 2,
+    "variableMeasured": [
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "20138",
+      "contactPoint": {
+        "schemaKey": "ContactPoint"
+      }
+    },
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "23128",
+      "contactPoint": {
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.03.29.646003v1",
+      "name": "Neural correlates of perceptual decision making in primary somatosensory cortex",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:Preprint"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001341/versions/draft/assets/"
+  ]
+}

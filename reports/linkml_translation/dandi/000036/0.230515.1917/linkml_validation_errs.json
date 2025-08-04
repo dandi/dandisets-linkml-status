@@ -1,0 +1,69 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:8b0ec73b-4456-4318-9157-f93d60882133', 'name': 'DANDI publish', 'endDate': '2023-05-15T19:17:45.768158+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-05-15T19:17:45.768158+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:4bd5bb67-4b4a-4aca-8087-75848cff2543', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:8b0ec73b-4456-4318-9157-f93d60882133', 'name': 'DANDI publish', 'endDate': '2023-05-15T19:17:45.768158+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-05-15T19:17:45.768158+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:4bd5bb67-4b4a-4aca-8087-75848cff2543', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://alleninstitute.org/person/jerome-lecoq/', 'name': 'Lecoq, Jerome', 'email': 'jeromel@alleninstitute.org', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Validation', 'dcite:ContactPerson', 'dcite:Producer'], 'schemaKey': 'Person', 'identifier': '0000-0002-0131-0938', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://alleninstitute.org/person/jerome-lecoq/', 'name': 'Lecoq, Jerome', 'email': 'jeromel@alleninstitute.org', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FundingAcquisition', 'dcite:Methodology', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Validation', 'dcite:ContactPerson', 'dcite:Producer'], 'schemaKey': 'Person', 'identifier': '0000-0002-0131-0938', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://willmayner.com', 'name': 'Mayner, Will', 'email': 'wmayner@gmail.com', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0002-9737-6260', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://willmayner.com', 'name': 'Mayner, Will', 'email': 'wmayner@gmail.com', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0002-9737-6260', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

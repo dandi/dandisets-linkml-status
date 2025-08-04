@@ -1,0 +1,75 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'doi', 'publishedBy'
+    were unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'doi', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''hippocampus-slices'', ''schemaKey'': ''GenericType'', ''identifier'':
+    ''2photon data''} is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''hippocampus-slices'', ''schemaKey'': ''GenericType'', ''identifier'':
+      ''2photon data''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Platholi, Jimcy'', ''email'': ''jip2003@med.cornell.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Platholi, Jimcy'', ''email'': ''jip2003@med.cornell.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '''2015-0023'' does not match ''^(?i:http|https)://[^\\s]+$'' in /protocol/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - protocol
+    - 0
+    absolute_schema_path:
+    - properties
+    - protocol
+    - items
+    - pattern
+    message: '''2015-0023'' does not match ''^(?i:http|https)://[^\\s]+$'''
+    validator: pattern
+    validator_value: ^(?i:http|https)://[^\s]+$
+  type: jsonschema validation

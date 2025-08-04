@@ -1,0 +1,94 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:79563fc3-400b-48c3-a23c-c6fa16e95cf5'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-08-06T00:34:04.861389+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-08-06T00:34:04.861389+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:954571ef-d5c3-4529-8a8c-fbcadc232862'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:79563fc3-400b-48c3-a23c-c6fa16e95cf5'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-08-06T00:34:04.861389+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-08-06T00:34:04.861389+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:954571ef-d5c3-4529-8a8c-fbcadc232862'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Chinta, Suma'', ''email'': ''suma.bits@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chinta, Suma'', ''email'': ''suma.bits@gmail.com'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://www.plutalab.com/'', ''name'': ''Pluta, Scott'', ''email'':
+    ''spluta@purdue.edu'', ''roleName'': [], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-3057-8095'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.plutalab.com/'', ''name'': ''Pluta, Scott'',
+      ''email'': ''spluta@purdue.edu'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-3057-8095'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Whitehall Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Whitehall Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,78 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique: []
+  numberOfBytes: 4476865992
+  numberOfFiles: 73
+  numberOfSubjects: 15
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10029
+    name: Cricetulus griseus - Cricetulus aureus
+    schemaKey: SpeciesType
+  variableMeasured: []
+citation: "Silkuniene, Giedre (2025) Threshold Characterization of Ca2+ Uptake in
+  CHO Cells Following 1-\xB5s Electroporation Pulses (Version draft) [Data set]. DANDI
+  Archive. https://dandiarchive.org/dandiset/001521/draft"
+contributor:
+- affiliation: []
+  email: giedre.silkuniene@gmail.com
+  includeInCitation: true
+  name: Silkuniene, Giedre
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- identifier: 0000-0002-0302-1355
+  name: Semenov, Iurii
+  schemaKey: Person
+- identifier: 0000-0003-3816-3860
+  name: Pakhomov, Andrei
+  roleName:
+  - dcite:ProjectLeader
+  schemaKey: Person
+- awardNumber: 5R21EY034803
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 1R21EY034258
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2025-07-01T14:36:27.179416+00:00'
+description: "This experiment aimed to determine the threshold for calcium uptake
+  in CHO cells subjected to 1-\xB5s electric pulses. Cells were loaded with 2.5 \xB5M
+  Fluo-4, a Ca2+-sensitive dye, for 30 minutes in the dark. Fluo-4 fluorescence was
+  excited using a FITC cube and a CoolLED illumination system. Time-lapse imaging
+  was conducted at 1 frame per second for 5 minutes, with a single 1-\xB5s pulse of
+  varying amplitude applied 1 minute after the start of recording."
+ethicsApproval: []
+id: DANDI:001521/draft
+identifier: DANDI:001521
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001521/versions/draft/assets/
+name: "Threshold Characterization of Ca2+ Uptake in CHO Cells Following 1-\xB5s Electroporation
+  Pulses"
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+url: https://dandiarchive.org/dandiset/001521/draft
+version: draft
+wasGeneratedBy:
+- identifier: 5R21EY034803
+  name: Next Generation Temporal Interference Stimulation for Non-Invasive Neuromodulation
+  schemaKey: Project
+- identifier: 1R21EY034258
+  name: Targeted Neuromodulation by Nanosecond Pulsed Electric Fields
+  schemaKey: Project

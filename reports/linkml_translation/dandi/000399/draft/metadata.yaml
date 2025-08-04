@@ -1,0 +1,65 @@
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 86582248
+  numberOfFiles: 105
+  numberOfSubjects: 19
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectricalSeries
+  - ElectrodeGroup
+citation: Fan, Linlin (2023) All-optical physiology resolves a synaptic basis for
+  behavioral time scale plasticity (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234
+contributor:
+- affiliation: []
+  email: dlinfan@gmail.com
+  includeInCitation: true
+  name: Fan, Linlin
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2022-12-11T06:15:01.030408+00:00'
+datePublished: '2023-06-14T06:20:56.195429+00:00'
+description: Data included in Fan (2022) Cell
+doi: 10.80507/dandi.123456/0.123456.1234
+id: DANDI:000399/draft
+identifier: DANDI:000399
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/000399/versions/draft/assets/
+name: All-optical physiology resolves a synaptic basis for behavioral time scale plasticity
+publishedBy:
+  endDate: '2023-06-14T06:20:56.195429+00:00'
+  id: urn:uuid:93b629c2-43ab-4653-a56c-c5e93893d5ac
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2023-06-14T06:20:56.195429+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:d5beda19-8522-422f-940e-c25920000268
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.3
+url: https://dandiarchive.org/dandiset/000399/draft
+version: draft

@@ -1,0 +1,145 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_016124
+    name: Brain Imaging Data Structure (BIDS)
+    schemaKey: StandardsType
+  measurementTechnique: []
+  numberOfBytes: 12465443
+  numberOfFiles: 57
+  numberOfSamples: 10
+  numberOfSubjects: 8
+  schemaKey: AssetsSummary
+  species: []
+  variableMeasured: []
+citation: "Saliani, Ariane; Duval, Tanguy; Nami, Harris; Husein, Nafisa; Collin, Armand;
+  Zaimi, Aldo; Bourget, Marie-H\xE9l\xE8ne; Foias, Alexandru; Boudreau, Mathieu; Cohen-Adad,
+  Julien (2025) SEM Images of Rat Spinal Cord with Axon and Myelin Segmentations (Version
+  draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001442/draft"
+contributor:
+- identifier: 0000-0002-5369-3264
+  includeInCitation: true
+  name: Saliani, Ariane
+  roleName:
+  - dcite:DataCollector
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-1228-5192
+  includeInCitation: true
+  name: Duval, Tanguy
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  schemaKey: Person
+- includeInCitation: true
+  name: Nami, Harris
+  roleName:
+  - dcite:Author
+  - dcite:DataCurator
+  schemaKey: Person
+- includeInCitation: true
+  name: Husein, Nafisa
+  roleName:
+  - dcite:DataCurator
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  email: armand.collin@polymtl.ca
+  identifier: 0009-0005-3258-122X
+  includeInCitation: true
+  name: Collin, Armand
+  roleName:
+  - dcite:DataCurator
+  - dcite:Author
+  - dcite:Maintainer
+  schemaKey: Person
+- includeInCitation: true
+  name: Zaimi, Aldo
+  roleName:
+  - dcite:Author
+  - dcite:DataCurator
+  schemaKey: Person
+- includeInCitation: true
+  name: "Bourget, Marie-H\xE9l\xE8ne"
+  roleName:
+  - dcite:DataCurator
+  - dcite:Author
+  - dcite:Maintainer
+  schemaKey: Person
+- includeInCitation: true
+  name: Foias, Alexandru
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
+- identifier: 0000-0002-7726-4456
+  includeInCitation: true
+  name: Boudreau, Mathieu
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
+- email: jcohen@polymtl.ca
+  identifier: 0000-0003-3662-9532
+  includeInCitation: true
+  name: Cohen-Adad, Julien
+  roleName:
+  - dcite:Author
+  - dcite:DataManager
+  - dcite:Supervision
+  - dcite:ContactPerson
+  schemaKey: Person
+- name: Antonsanti, Pierre-Louis
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+- name: Herman, Victor
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+- name: Perone, Christian
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+- name: Wabartha, Maxime
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+dateCreated: '2025-05-09T18:20:39.844171+00:00'
+datePublished: '2025-05-12T16:26:19.527099+00:00'
+description: "SEM dataset for AxonDeepSeg (https://axondeepseg.readthedocs.io/)\n\n-
+  10 rat spinal cord samples (cervical level) with axon and myelin manual segmentation
+  labels. \n\n- Isotropic pixel size resolution ranging from 0.05 to 0.18 um\n\n-
+  Every touching fiber is separated by a 1 pixel delineation in the masks.\n\n- This
+  dataset comprises acquisitions conducted by various researchers between 2015 and
+  2017. The images represent small cropped sections extracted from larger mosaic images.\n\nExample
+  dataset containing scanning electron microscopy (SEM) data to illustrate BIDS convention.\n"
+ethicsApproval: []
+id: DANDI:001442/draft
+identifier: DANDI:001442
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001442/versions/draft/assets/
+name: SEM Images of Rat Spinal Cord with Axon and Myelin Segmentations
+publishedBy:
+  endDate: '2025-05-12T16:26:19.527099+00:00'
+  id: urn:uuid:b3a32731-092d-4676-878d-10a480132e97
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-05-12T16:26:19.527099+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:547591db-913e-4a25-bad8-8a770d505c08
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+url: https://dandiarchive.org/dandiset/001442/draft
+version: draft
+wasGeneratedBy: []

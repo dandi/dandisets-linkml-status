@@ -1,0 +1,65 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cerebral cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0000956''} is not of type ''string'' in
+    /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Cerebral cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0000956''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'T\xF3th, Martin', 'email': 'toh.martin9502@gmail.com', 'roleName':
+    ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation':
+    True} is not of type 'string' in /contributor/0"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'T\xF3th, Martin', 'email': 'toh.martin9502@gmail.com', 'roleName':
+      ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation':
+      True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'Sz\xF6ts, Ildik\xF3', 'email': 'szots.ildiko@szte.hu', 'roleName':
+    ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of
+    type 'string' in /contributor/1"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Sz\xF6ts, Ildik\xF3', 'email': 'szots.ildiko@szte.hu', 'roleName':
+      ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of
+      type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,69 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:4163eba3-27b2-4b92-a73f-8512285173e6', 'name': 'DANDI publish', 'endDate': '2023-02-23T12:16:32.676105+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-02-23T12:16:32.676105+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:646512a5-4d84-4717-9803-0e12ecd7d3e5', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:4163eba3-27b2-4b92-a73f-8512285173e6', 'name': 'DANDI publish', 'endDate': '2023-02-23T12:16:32.676105+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2023-02-23T12:16:32.676105+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:646512a5-4d84-4717-9803-0e12ecd7d3e5', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Millman, Dan', 'roleName': ['dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6255-6085', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Millman, Dan', 'roleName': ['dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6255-6085', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Vries, Saskia de', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3704-3499', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Vries, Saskia de', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3704-3499', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

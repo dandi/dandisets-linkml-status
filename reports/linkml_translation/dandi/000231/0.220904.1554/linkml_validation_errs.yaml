@@ -1,0 +1,128 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:f5b95d97-fe00-41ea-8a6d-5217522769ae'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2022-09-04T15:54:35.839699+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2022-09-04T15:54:35.839699+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:5a15f589-d0b1-4fd9-9155-076086648a51'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:f5b95d97-fe00-41ea-8a6d-5217522769ae'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2022-09-04T15:54:35.839699+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2022-09-04T15:54:35.839699+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:5a15f589-d0b1-4fd9-9155-076086648a51'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://chris-rodgers.com'', ''name'': ''Rodgers, Chris'',
+    ''email'': ''xrodgers@gmail.com'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'',
+    ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FundingAcquisition'',
+    ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1762-3450'',
+    ''affiliation'': [{''name'': ''Emory University'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/03czfpz43''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://chris-rodgers.com'', ''name'': ''Rodgers, Chris'',
+      ''email'': ''xrodgers@gmail.com'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'',
+      ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FundingAcquisition'',
+      ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1762-3450'',
+      ''affiliation'': [{''name'': ''Emory University'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/03czfpz43''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kavli Foundation'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/00kztt736'', ''awardNumber'':
+    ''S-2021-GR-040'', ''contactPoint'': [], ''includeInCitation'': False} is not
+    of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kavli Foundation'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/00kztt736'', ''awardNumber'':
+      ''S-2021-GR-040'', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Brain & Behavior Research Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03a63f080'',
+    ''awardNumber'': ''28667'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Brain & Behavior Research Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03a63f080'',
+      ''awardNumber'': ''28667'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''NIH/NINDS'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/01s5ya894'', ''awardNumber'':
+    ''F32NS096819 '', ''contactPoint'': [], ''includeInCitation'': False} is not of
+    type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH/NINDS'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/01s5ya894'', ''awardNumber'':
+      ''F32NS096819 '', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

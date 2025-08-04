@@ -1,0 +1,168 @@
+{
+  "id": "DANDI:001440/draft",
+  "url": "https://dandiarchive.org/dandiset/001440/draft",
+  "name": "Bright-Field Images of Rat Nerves at Different Regeneration Stages with Axon and Myelin Segmentations",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "D\u00e4schler, Simeon; Bourget, Marie-H\u00e9l\u00e8ne; Collin, Armand; Derakhshan, Dorsa; Sharma, Vasudev; Asenov, Stoyan; Gordon, Tessa; Cohen-Adad, Julien; Borschel, Gregory Howard (2025) Bright-Field Images of Rat Nerves at Different Regeneration Stages with Axon and Myelin Segmentations (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001440/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001440",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "D\u00e4schler, Simeon",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:Researcher",
+        "dcite:Conceptualization",
+        "dcite:ProjectMember"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8130-7714",
+      "includeInCitation": true
+    },
+    {
+      "name": "Bourget, Marie-H\u00e9l\u00e8ne",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:DataCurator",
+        "dcite:Researcher",
+        "dcite:ProjectMember"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Collin, Armand",
+      "email": "armand.collin@polymtl.ca",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0009-0005-3258-122X",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Derakhshan, Dorsa",
+      "roleName": [
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Sharma, Vasudev",
+      "roleName": [
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Asenov, Stoyan",
+      "roleName": [
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Gordon, Tessa",
+      "roleName": [
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cohen-Adad, Julien",
+      "email": "jcohen@polymtl.ca",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson",
+        "dcite:DataCurator",
+        "dcite:DataManager",
+        "dcite:Maintainer",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3662-9532",
+      "includeInCitation": true
+    },
+    {
+      "name": "Borschel, Gregory Howard",
+      "roleName": [
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:DataCollector",
+        "dcite:FundingAcquisition",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-7691-5264",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-05-08T13:49:30.165960+00:00",
+  "description": "- Bright-Field Optical Microscopy (BF) dataset for AxonDeepSeg (https://axondeepseg.readthedocs.io/)\n\n- Rat peripheral nerves across different axonal regeneration stages.\n\n- Data collected from adult rats in experimental nerve repair studies.\n\n- 8 samples cropped to ROI used as training data.\n    - sub-uoftRat02\n    - sub-uoftRat04\n    - sub-uoftRat07\n    - sub-uoftRat08\n    - sub-uoftRat09\n    - sub-uoftRat10\n    - sub-uoftRat16\n    - sub-uoftRat17\n\n- Corresponding axon, myelin, axonmyelin manual segmentation \"labels\" in derivatives.\n\n- This dataset is a subset of the full dataset used in this publication:\n\n    - https://www.nature.com/articles/s41598-022-10066-6\n\n    - training set for the AxonDeepSeg model developed and validated in the article\n",
+  "publishedBy": {
+    "id": "urn:uuid:6315c2f4-01de-4f31-bc74-408ac15b8049",
+    "name": "DANDI publish",
+    "endDate": "2025-05-09T19:13:48.527887+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-05-09T19:13:48.527887+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:d9e838ac-f56c-4314-a83f-1c3774f7b75f",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [
+    "rat peripheral nerves",
+    "experimental nerve regeneration study",
+    "axon segmentation",
+    "myelin segmentation"
+  ],
+  "assetsSummary": {
+    "species": [],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Brain Imaging Data Structure (BIDS)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_016124"
+      }
+    ],
+    "numberOfBytes": 144123090,
+    "numberOfFiles": 48,
+    "numberOfSamples": 8,
+    "numberOfSubjects": 8,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2025-05-09T19:13:48.527887+00:00",
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001440/versions/draft/assets/"
+  ]
+}

@@ -1,0 +1,43 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Epilepsy dataset'', ''schemaKey'': ''GenericType'', ''identifier'':
+    ''https://pmc.ncbi.nlm.nih.gov/articles/PMC9034729/''} is not of type ''string''
+    in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Epilepsy dataset'', ''schemaKey'': ''GenericType'', ''identifier'':
+      ''https://pmc.ncbi.nlm.nih.gov/articles/PMC9034729/''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lisgaras, Christos Panagiotis'', ''email'': ''christospanagiotis3@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lisgaras, Christos Panagiotis'', ''email'': ''christospanagiotis3@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

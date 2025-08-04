@@ -1,0 +1,71 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'paper file', 'schemaKey': 'GenericType', 'identifier': '111'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'paper file', 'schemaKey': 'GenericType', 'identifier': '111'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Igarashi, Kei', 'email': 'kei.igarashi@uci.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Igarashi, Kei', 'email': 'kei.igarashi@uci.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "'10.3389/fncir.2024.1437575' does not match '^(?i:http|https)://[^\\\\s]+$' in /protocol/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "'10.3389/fncir.2024.1437575' does not match '^(?i:http|https)://[^\\\\s]+$'",
+      "absolute_path": [
+        "protocol",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "protocol",
+        "items",
+        "pattern"
+      ],
+      "validator": "pattern",
+      "validator_value": "^(?i:http|https)://[^\\s]+$"
+    }
+  }
+]

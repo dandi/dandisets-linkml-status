@@ -1,0 +1,111 @@
+{
+  "id": "DANDI:001431/draft",
+  "url": "https://dandiarchive.org/dandiset/001431/draft",
+  "name": "A dataset of stimulus evoked spiking timestamps from same neurons across multiple days recorded with advanced electrodes",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Zhu, Hanlin; He, Fei; Zolotavin, Pavlo; Patel, Saumil; Tolias, Andreas S; Luan, Lan; Xie, Chong (2025) A dataset of stimulus evoked spiking timestamps from same neurons across multiple days recorded with advanced electrodes (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001431/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001431",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Zhu, Hanlin",
+      "email": "hanlin.zhu@rice.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "awardNumber": "",
+      "includeInCitation": true
+    },
+    {
+      "name": "He, Fei",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Zolotavin, Pavlo",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Patel, Saumil",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Tolias, Andreas S",
+      "schemaKey": "Person",
+      "awardNumber": "UF1NS126566",
+      "includeInCitation": true
+    },
+    {
+      "name": "Luan, Lan",
+      "schemaKey": "Person",
+      "awardNumber": "R01EY036094; R01NS109361",
+      "includeInCitation": true
+    },
+    {
+      "name": "Xie, Chong",
+      "email": "chongxie@rice.edu",
+      "schemaKey": "Person",
+      "awardNumber": "R01NS102917; U01NS115588; R01EY036094",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-04-30T20:36:37.975496+00:00",
+  "description": "Publication: \"Temporal coding carries more stable cortical visual representations than firing rate over time\".The dataset contains spike timestamps (bin number) relative to stimulus onset. 4 types of visual stimuli were displayed with 30+ trials each day for 15 days. Access variables in the _tsXX.nwb for XX stimuli (dg/sg/rfg/ni) with command nwb.units.getRow(XXX) where XXX is the trial number, and the result is timestamps of firings in that trial (multiply 0.5 to get unit in ms). To understand which neuron, which day, which condition, Nth trial of that condition, get information matrix from nwb.acquisition.get('myMatrix') and refer to its first 4 rows, respectively. The condition order is DG: 0:22.5:337.5 degree; SG: [0:30:150 degree, 0.02cpd],[0:30:150 degree 0.04cpd] etc; RFG: [horizontal locations left to right , vertical location top row],[horizontal locations left to right, vertical location second row from top] etc. NI: 100 images not in a particular order.    Access variables in the _tuning.nwb with command nwb.acquisition.get('attendance') the variables are the following 1.'attendance' explains for each 1204 neuron and 15 days, whether that neuron was detected/tracked. 2.'highAttendanceUnit' further shortlists 1037 neurons out of the 1204 that appeared for more than 2 days. 3.'notInleast15percentPoorlyTuned' further shortlist ~830 neurons out of the 1037 high attendance units that are not among the worst 15% in their tuning to natural image stimuli across days. 4-7.'tuned_XX' explains for XX stimuli (DG/SG/RFG/NI) whether the firing rate-based tuning to stimuli was significant for a given high attendance neuron in any given day. 8.'whichAnimalPerUnit' to get the animal from which the unit was recorded from ",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 6227009984,
+    "numberOfFiles": 4,
+    "numberOfSubjects": 2,
+    "variableMeasured": [
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001431/versions/draft/assets/"
+  ]
+}

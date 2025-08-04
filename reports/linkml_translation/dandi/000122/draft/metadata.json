@@ -1,0 +1,81 @@
+{
+  "id": "DANDI:000122/draft",
+  "url": "https://dandiarchive.org/dandiset/000122/draft",
+  "name": "Human fNIRS recordings of motor cortex during finger-tapping task",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Erat Sleiter, Darin (2024) Human fNIRS recordings of motor cortex during finger-tapping task (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000122/draft",
+  "keywords": [
+    "fNIRS",
+    "Haemodynamics",
+    "Motor Cortex",
+    "Finger Tapping Task"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000122",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Erat Sleiter, Darin",
+      "email": "darin@ae.studio",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2021-08-05T13:29:28.558867+00:00",
+  "description": "This experiment examines how the motor cortex is activated during a finger-tapping task. Participants are asked to either tap their left thumb to fingers, tap their right thumb to fingers, or no cue is given (control). Tapping lasts for 5 seconds and is prompted by an auditory cue. Sensors are placed over the motor cortex as described in the montage section in the link below, short channels are attached to the scalp too. Further details about the experiment (including presentation code) can be found at https://github.com/rob-luke/experiment-fNIRS-tapping.",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 49898320,
+    "numberOfFiles": 5,
+    "numberOfSubjects": 5,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://github.com/rob-luke/BIDS-NIRS-Tapping",
+      "name": "Source Dataset In SNIRF Format",
+      "relation": "dcite:IsOriginalFormOf",
+      "schemaKey": "Resource",
+      "repository": "BIDS-NIRS-Tapping"
+    },
+    {
+      "url": "https://github.com/rob-luke/experiment-fNIRS-tapping",
+      "name": "Experiment Definition",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "repository": "experiment-fNIRS-tapping"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000122/versions/draft/assets/"
+  ]
+}

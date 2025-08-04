@@ -1,0 +1,339 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Kondo, Masashi'', ''email'': ''m.kondo.neuro@gmail.com'',
+    ''roleName'': [''dcite:Conceptualization'', ''dcite:FormalAnalysis'', ''dcite:Investigation''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8818-8316'', ''affiliation'':
+    [{''name'': ''Department of Physiology, Graduate School of Medicine'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/057zh3y96''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kondo, Masashi'', ''email'': ''m.kondo.neuro@gmail.com'',
+      ''roleName'': [''dcite:Conceptualization'', ''dcite:FormalAnalysis'', ''dcite:Investigation''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8818-8316'', ''affiliation'':
+      [{''name'': ''Department of Physiology, Graduate School of Medicine'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/057zh3y96''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Sehara, Keisuke'', ''email'': ''seharak@m.u-tokyo.ac.jp'',
+    ''roleName'': [''dcite:DataCurator'', ''dcite:FormalAnalysis'', ''dcite:Methodology''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4368-8143'', ''affiliation'':
+    [{''name'': ''Department of Physiology, Graduate School of Medicine'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/057zh3y96''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sehara, Keisuke'', ''email'': ''seharak@m.u-tokyo.ac.jp'',
+      ''roleName'': [''dcite:DataCurator'', ''dcite:FormalAnalysis'', ''dcite:Methodology''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4368-8143'', ''affiliation'':
+      [{''name'': ''Department of Physiology, Graduate School of Medicine'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/057zh3y96''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Harukuni, Rie'', ''roleName'': [''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Department of Physiology,
+    Graduate School of Medicine'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/057zh3y96''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Harukuni, Rie'', ''roleName'': [''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Department of Physiology,
+      Graduate School of Medicine'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/057zh3y96''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Aoki, Ryo'', ''roleName'': [''dcite:FormalAnalysis'', ''dcite:Methodology'',
+    ''dcite:Validation''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''Brain Science Institute'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05f8a4p63''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Aoki, Ryo'', ''roleName'': [''dcite:FormalAnalysis'', ''dcite:Methodology'',
+      ''dcite:Validation''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Brain Science Institute'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/05f8a4p63''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Sugimoto, Shoya'', ''roleName'': [''dcite:Methodology'',
+    ''dcite:Validation''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''Brain Science Institute'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05f8a4p63''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sugimoto, Shoya'', ''roleName'': [''dcite:Methodology'',
+      ''dcite:Validation''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Brain Science Institute'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/05f8a4p63''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Tanaka, Yasuhiro R'', ''roleName'': [''dcite:Supervision'',
+    ''dcite:FundingAcquisition''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0000-4779-4934'',
+    ''affiliation'': [{''name'': ''Brain Science Institute'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/05f8a4p63''}, {''name'': ''Graduate School of
+    Brain Sciences'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05f8a4p63''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Tanaka, Yasuhiro R'', ''roleName'': [''dcite:Supervision'',
+      ''dcite:FundingAcquisition''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0000-4779-4934'',
+      ''affiliation'': [{''name'': ''Brain Science Institute'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/05f8a4p63''}, {''name'': ''Graduate School
+      of Brain Sciences'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05f8a4p63''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Matsuzaki, Masanori'', ''email'': ''mzakim@m.u-tokyo.ac.jp'',
+    ''roleName'': [''dcite:Conceptualization'', ''dcite:FundingAcquisition'', ''dcite:Supervision''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3872-4322'', ''affiliation'':
+    [{''name'': ''Department of Physiology, Graduate School of Medicine'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/057zh3y96''}, {''name'': ''Brain
+    Functional Dynamics Collaboration Laboratory'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/04j1n1c04''}, {''name'': ''Department of Biological
+    Sciences, Graduate School of Science'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/057zh3y96''}, {''name'': ''International Research Center for
+    Neurointelligence (WPI-IRCN)'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/057zh3y96''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Matsuzaki, Masanori'', ''email'': ''mzakim@m.u-tokyo.ac.jp'',
+      ''roleName'': [''dcite:Conceptualization'', ''dcite:FundingAcquisition'', ''dcite:Supervision''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3872-4322'', ''affiliation'':
+      [{''name'': ''Department of Physiology, Graduate School of Medicine'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/057zh3y96''}, {''name'':
+      ''Brain Functional Dynamics Collaboration Laboratory'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/04j1n1c04''}, {''name'': ''Department of Biological
+      Sciences, Graduate School of Science'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/057zh3y96''}, {''name'': ''International Research Center for
+      Neurointelligence (WPI-IRCN)'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/057zh3y96''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Nakae, Ken'', ''email'': ''ken.nakae@gmail.com'', ''roleName'':
+    [''dcite:Conceptualization'', ''dcite:FundingAcquisition'', ''dcite:Supervision'',
+    ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4183-1532'',
+    ''affiliation'': [{''name'': ''Exploratory Research Center on Life and Living
+    Systems'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/055n47h92''},
+    {''name'': ''Department of Human and Artificial Intelligent Systems'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/00msqp585''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nakae, Ken'', ''email'': ''ken.nakae@gmail.com'', ''roleName'':
+      [''dcite:Conceptualization'', ''dcite:FundingAcquisition'', ''dcite:Supervision'',
+      ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4183-1532'',
+      ''affiliation'': [{''name'': ''Exploratory Research Center on Life and Living
+      Systems'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/055n47h92''},
+      {''name'': ''Department of Human and Artificial Intelligent Systems'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/00msqp585''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''JSPS KAKENHI'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/00hhkn466'', ''awardNumber'':
+    ''JP22H05163, JP22H05160, JP22H05154, JP22H05162, JP23K20309''} is not of type
+    ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''JSPS KAKENHI'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/00hhkn466'', ''awardNumber'':
+      ''JP22H05163, JP22H05160, JP22H05154, JP22H05162, JP23K20309''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''AMED'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/004rtk039'', ''awardNumber'':
+    ''JP19dm0207088, JP24wm0625404, JP24wm0625001, JP24wm0625113''} is not of type
+    ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''AMED'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/004rtk039'', ''awardNumber'':
+      ''JP19dm0207088, JP24wm0625404, JP24wm0625001, JP24wm0625113''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''JST'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/00097mb19'', ''awardNumber'': ''JPMJMS2294''}
+    is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''JST'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/00097mb19'', ''awardNumber'':
+      ''JPMJMS2294''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''ExCELLS'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/005t7z309'', ''awardNumber'':
+    ''Cooperative Study Program no. 19-102''} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''ExCELLS'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/005t7z309'', ''awardNumber'':
+      ''Cooperative Study Program no. 19-102''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

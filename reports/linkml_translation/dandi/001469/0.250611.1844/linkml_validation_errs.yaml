@@ -1,0 +1,127 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:8c844065-8635-424c-8b11-b65ff3b16727'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-06-11T18:44:58.328696+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-06-11T18:44:58.328696+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:b67e28fc-18b2-4893-90c6-739d28409eed'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:8c844065-8635-424c-8b11-b65ff3b16727'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-06-11T18:44:58.328696+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-06-11T18:44:58.328696+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:b67e28fc-18b2-4893-90c6-739d28409eed'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wu, Yu'', ''email'': ''yw94@rice.edu'', ''roleName'': [''dcite:Conceptualization'',
+    ''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5519-5437'', ''affiliation'':
+    [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wu, Yu'', ''email'': ''yw94@rice.edu'', ''roleName'': [''dcite:Conceptualization'',
+      ''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5519-5437'', ''affiliation'':
+      [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Temple, Benjamin'', ''email'': ''btemple@salk.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+    ''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''Salk Institute'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Temple, Benjamin'', ''email'': ''btemple@salk.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+      ''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Salk Institute'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Zhang, Jiaao'', ''email'': ''jz103@rice.edu'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'',
+    ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-9105-5903'',
+    ''affiliation'': [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhang, Jiaao'', ''email'': ''jz103@rice.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'',
+      ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-9105-5903'',
+      ''affiliation'': [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=U01NS131086&arg_ProgOfficeCode=137'',
+    ''name'': ''NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization''} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=U01NS131086&arg_ProgOfficeCode=137'',
+      ''name'': ''NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

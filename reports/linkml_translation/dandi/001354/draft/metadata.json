@@ -1,0 +1,146 @@
+{
+  "id": "DANDI:001354/draft",
+  "url": "https://dandiarchive.org/dandiset/001354/draft",
+  "name": "Hippocampal neuronal responses to programmable antigen-gated G-protein-coupled engineered receptor activation",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Klein, Peter (2025) Hippocampal neuronal responses to programmable antigen-gated G-protein-coupled engineered receptor activation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001354/draft",
+  "keywords": [
+    "CA1",
+    "PAGER",
+    "Chemogenetics",
+    "Antigen-gated"
+  ],
+  "protocol": [
+    "https://doi.org/10.1038/s41586-024-08282-3"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001354",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Klein, Peter",
+      "email": "kleinp@stanford.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1R01MH135934",
+      "includeInCitation": false
+    },
+    {
+      "name": "Phil and Penny Knight Initiative for Brain Resilience",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "KIG-104",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Cancer Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "F32CA257159",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2025-03-06T01:32:11.648954+00:00",
+  "description": "This dataset contains single cell electrophysiological recordings of mouse hippocampal CA1 neurons in response to activation of programmable antigen-gated G-protein-coupled engineered receptors. Recorded neurons were transfected with an AAV1/2-hSyn-a-mCherry-PAGER-Gi-P2A-mEGFP and responses were then recorded in response to DCZ (100 nM) or DCZ + soluble mCherry (1 uM) application.\n\nThe authors are grateful to the St Jude Children\u2019s Research Hospital Collaborative Research Consortium on GPCRs, the Chan Zuckerberg Biohub\u2013San Francisco, Phil and Penny Knight Initiative for Brain Resilience (KIG-104), Stanford Cancer Institute, Wu Tsai Neurosciences Institute of Stanford University and the NIH (MH135934 to A.Y.T. and I.S., F32CA257159 to N.A.K., NS121106 to I.S.) for funding this work. R.T. was supported by the Life Sciences Research Foundation Fellowship (sponsored by Astellas Pharma) and JSPS Overseas Research Fellowship.",
+  "publishedBy": {
+    "id": "urn:uuid:0e8459e8-63c3-4770-bf55-154527ec08c1",
+    "name": "DANDI publish",
+    "endDate": "2025-03-12T00:36:29.554905+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-03-12T00:36:29.554905+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:853ca711-3d9a-494a-989b-60c6ace9e25f",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [
+    "To validate the use of programmable antigen-gated G-protein-coupled engineered receptors to allow targeted modulation of neuronal activity."
+  ],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 1676840284,
+    "numberOfCells": 50,
+    "numberOfFiles": 50,
+    "numberOfSamples": 50,
+    "numberOfSubjects": 8,
+    "variableMeasured": [
+      "CurrentClampSeries",
+      "CurrentClampStimulusSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2025-03-12T00:36:29.554905+00:00",
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "acknowledgement": "The authors are grateful to the St Jude Children\u2019s Research Hospital Collaborative Research Consortium on GPCRs, the Chan Zuckerberg Biohub\u2013San Francisco, Phil and Penny Knight Initiative for Brain Resilience (KIG-104), Stanford Cancer Institute, Wu Tsai Neurosciences Institute of Stanford University and the NIH (MH135934 to A.Y.T. and I.S., F32CA257159 to N.A.K., NS121106 to I.S.) for funding this work. R.T. was supported by the Life Sciences Research Foundation Fellowship (sponsored by Astellas Pharma) and JSPS Overseas Research Fellowship.",
+  "relatedResource": [
+    {
+      "url": "https://www.nature.com/articles/s41586-024-08282-3",
+      "name": "Synthetic GPCRs for programmable sensing and control of cell behaviour",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "identifier": "https://doi.org/10.1038/s41586-024-08282-3",
+      "repository": "Nature",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001354/versions/draft/assets/"
+  ]
+}

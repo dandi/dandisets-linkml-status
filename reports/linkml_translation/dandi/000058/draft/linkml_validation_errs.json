@@ -1,0 +1,25 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Jocelyn Mora', 'email': 'jsmora@mgh.harvard.edu', 'roleName': ['dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jocelyn Mora', 'email': 'jsmora@mgh.harvard.edu', 'roleName': ['dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

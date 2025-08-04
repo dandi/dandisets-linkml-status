@@ -1,0 +1,125 @@
+{
+  "id": "DANDI:001176/draft",
+  "url": "https://dandiarchive.org/dandiset/001176/draft",
+  "name": "Cortical acetylcholine dynamics are predicted by cholinergic axon activity and behavior state",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Reimer, Jacob; Neyhart, Erin (2025) Cortical acetylcholine dynamics are predicted by cholinergic axon activity and behavior state (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001176/draft",
+  "keywords": [
+    "acetylcholine",
+    "brain states",
+    "two-photon-imaging",
+    "neuromodulator",
+    "Axon imaging"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001176",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "RF1 NS128901",
+      "includeInCitation": false
+    },
+    {
+      "name": "Reimer, Jacob",
+      "email": "reimer@bcm.edu",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-4364-8846",
+      "includeInCitation": true
+    },
+    {
+      "name": "Neyhart, Erin",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:DataCurator",
+        "dcite:FormalAnalysis"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-9164-0553",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-08-20T15:21:20.590746+00:00",
+  "description": "This dataset includes simultaneous in vivo imaging data of acetylcholine (ACh) sensors and GCaMP-expressing axons in the cortex during spontaneous changes in behavioral states in awake animals. It features detailed recordings of ACh activity, axon activity, and pupil size, providing valuable insights into the spatiotemporal properties of cortical ACh release and its correlation with axonal activity.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 924191446,
+    "numberOfFiles": 132,
+    "numberOfSubjects": 29,
+    "variableMeasured": [
+      "ImagingPlane",
+      "PlaneSegmentation",
+      "EyeTracking",
+      "PupilTracking",
+      "ProcessingModule",
+      "OpticalChannel",
+      "SpatialSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.8",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001176/versions/draft/assets/"
+  ]
+}

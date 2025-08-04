@@ -1,0 +1,115 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 148803537183
+  numberOfFiles: 61
+  numberOfSubjects: 5
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - ElectricalSeries
+citation: Wu, Yu; Temple, Benjamin; Zhang, Jiaao (2025) SpinalCordNET (Version 0.250611.1844)
+  [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001469/0.250611.1844
+contributor:
+- affiliation:
+  - name: Rice University
+    schemaKey: Affiliation
+  email: yw94@rice.edu
+  identifier: 0000-0002-5519-5437
+  includeInCitation: true
+  name: Wu, Yu
+  roleName:
+  - dcite:Conceptualization
+  - dcite:Author
+  - dcite:ContactPerson
+  - dcite:DataCollector
+  - dcite:DataCurator
+  schemaKey: Person
+- affiliation:
+  - name: Salk Institute
+    schemaKey: Affiliation
+  email: btemple@salk.edu
+  includeInCitation: true
+  name: Temple, Benjamin
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:DataCollector
+  - dcite:DataCurator
+  schemaKey: Person
+- affiliation:
+  - name: Rice University
+    schemaKey: Affiliation
+  email: jz103@rice.edu
+  identifier: 0009-0003-9105-5903
+  includeInCitation: true
+  name: Zhang, Jiaao
+  roleName:
+  - dcite:ContactPerson
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:DataManager
+  - dcite:Author
+  schemaKey: Person
+- name: NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=U01NS131086&arg_ProgOfficeCode=137
+dateCreated: '2025-06-04T13:29:28.232666+00:00'
+datePublished: '2025-06-11T18:44:58.328696+00:00'
+description: Raw in-vivo intra-spinal recordings from 5 mice using Nano-Electric Thread
+  (NET) probes.
+doi: 10.48324/dandi.001469/0.250611.1844
+ethicsApproval: []
+id: DANDI:001469/0.250611.1844
+identifier: DANDI:001469
+keywords:
+- spinal cord
+- extracellular electrophysiology
+- ultraflexible electrodes
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001469/0.250611.1844/assets.yaml
+name: SpinalCordNET
+publishedBy:
+  endDate: '2025-06-11T18:44:58.328696+00:00'
+  id: urn:uuid:8c844065-8635-424c-8b11-b65ff3b16727
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-11T18:44:58.328696+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:b67e28fc-18b2-4893-90c6-739d28409eed
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+studyTarget:
+- Lumbar spinal cord
+url: https://dandiarchive.org/dandiset/001469/0.250611.1844
+version: 0.250611.1844
+wasGeneratedBy: []

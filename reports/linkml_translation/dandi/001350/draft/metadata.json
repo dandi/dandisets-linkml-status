@@ -1,0 +1,166 @@
+{
+  "id": "DANDI:001350/draft",
+  "url": "https://dandiarchive.org/dandiset/001350/draft",
+  "name": "TEM Images of Corpus Callosum in Flox/SRF-cKO Mice",
+  "about": [
+    {
+      "name": "Corpus Callosum",
+      "schemaKey": "Anatomy",
+      "identifier": "UBERON:0002336"
+    }
+  ],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Collin, Armand; Soulaire, Tom; Iram, Tal; Garcia, Miguel; Jorgens, Danielle; Guay-Paquet, Mathieu; Cohen-Adad, Julien; Zuchero, J. Bradley (2025) TEM Images of Corpus Callosum in Flox/SRF-cKO Mice (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001350/draft",
+  "keywords": [
+    "TEM",
+    "Electron Microscopy",
+    "Histology",
+    "CNS",
+    "SRF",
+    "axon",
+    "myelin",
+    "segmentation"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001350",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Collin, Armand",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCurator",
+        "dcite:DataManager"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0009-0005-3258-122X",
+      "includeInCitation": true
+    },
+    {
+      "name": "Soulaire, Tom",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Iram, Tal",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-1606-2009",
+      "includeInCitation": true
+    },
+    {
+      "name": "Garcia, Miguel",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-4181-5372",
+      "includeInCitation": true
+    },
+    {
+      "name": "Jorgens, Danielle",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-7143-0118",
+      "includeInCitation": true
+    },
+    {
+      "name": "Guay-Paquet, Mathieu",
+      "email": "mathieu.guay-paquet@polymtl.ca",
+      "roleName": [
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cohen-Adad, Julien",
+      "email": "jcohen@polymtl.ca",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3662-9532",
+      "includeInCitation": true
+    },
+    {
+      "name": "Zuchero, J. Bradley",
+      "email": "bzuchero@stanford.edu",
+      "roleName": [
+        "dcite:Researcher",
+        "dcite:Supervision",
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4706-2538",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-02-27T22:42:16.138686+00:00",
+  "description": "This dataset contains 8000x transmission EM images of the Corpus Callosum in two groups of mice. The main goal of this project is to study unmyelinated axons. The technique used to prepare the samples is high pressure freezing and freeze substitution. This results in high-definition images where unmyelinated axons are remarkably visible. Imaging was done at UC Berkeley. This data was originally used in https://www.pnas.org/doi/10.1073/pnas.2307250121.  The two mice groups are Wild Type (WT) and SRF conditional knockout (KO). There are 5 animals per group for a total of 10 and multiple images per mouse.  Original magnification: 8000x  This dataset includes segmentation masks for the following semantic classes: (myelinated) axon, (unmyelinated) axon, myelin, oligodendrocyte nucleus and oligodendrocyte processes.     Further details on a deep segmentation model trained on this dataset can be found at https://github.com/axondeepseg/model_seg_unmyelinated_tem",
+  "publishedBy": {
+    "id": "urn:uuid:a9a8770c-c46c-43c7-b2eb-00ab0e4e9192",
+    "name": "DANDI publish",
+    "endDate": "2025-05-11T15:27:55.922218+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-05-11T15:27:55.922218+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:53b74581-0ccb-4088-895f-7e0955d54a36",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [
+    "Role of SRF transcription factor in CNS myelination"
+  ],
+  "assetsSummary": {
+    "species": [],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Brain Imaging Data Structure (BIDS)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_016124"
+      }
+    ],
+    "numberOfBytes": 1041046699,
+    "numberOfFiles": 134,
+    "numberOfSamples": 16,
+    "numberOfSubjects": 10,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2025-05-11T15:27:55.922218+00:00",
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001350/versions/draft/assets/"
+  ]
+}

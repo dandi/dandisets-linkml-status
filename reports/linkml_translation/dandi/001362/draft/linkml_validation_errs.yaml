@@ -1,0 +1,116 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lawrimore, Joshua'', ''email'': ''josh.lawrimore@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-2301-9073'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lawrimore, Joshua'', ''email'': ''josh.lawrimore@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-2301-9073'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Eiden, Lee'', ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'',
+    ''dcite:Resources'', ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-7524-944X'', ''awardNumber'': ''1ZIAMH002386'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Eiden, Lee'', ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'',
+      ''dcite:Resources'', ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-7524-944X'', ''awardNumber'': ''1ZIAMH002386'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Usdin, Ted'', ''roleName'': [''dcite:FundingAcquisition'',
+    ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:Resources'', ''dcite:Software''],
+    ''schemaKey'': ''Person'', ''awardNumber'': ''1ZICMH002963'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Usdin, Ted'', ''roleName'': [''dcite:FundingAcquisition'',
+      ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:Resources'', ''dcite:Software''],
+      ''schemaKey'': ''Person'', ''awardNumber'': ''1ZICMH002963'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZICMH002963'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZICMH002963'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZIAMH002386'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZIAMH002386'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

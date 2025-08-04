@@ -1,0 +1,219 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'D\xE4schler, Simeon', 'roleName': ['dcite:Author', 'dcite:DataCollector',
+    'dcite:Researcher', 'dcite:Conceptualization', 'dcite:ProjectMember'], 'schemaKey':
+    'Person', 'identifier': '0000-0001-8130-7714', 'includeInCitation': True} is not
+    of type 'string' in /contributor/0"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'D\xE4schler, Simeon', 'roleName': ['dcite:Author', 'dcite:DataCollector',
+      'dcite:Researcher', 'dcite:Conceptualization', 'dcite:ProjectMember'], 'schemaKey':
+      'Person', 'identifier': '0000-0001-8130-7714', 'includeInCitation': True} is
+      not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'Bourget, Marie-H\xE9l\xE8ne', 'roleName': ['dcite:Author', 'dcite:DataCollector',
+    'dcite:DataCurator', 'dcite:Researcher', 'dcite:ProjectMember'], 'schemaKey':
+    'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Bourget, Marie-H\xE9l\xE8ne', 'roleName': ['dcite:Author',
+      'dcite:DataCollector', 'dcite:DataCurator', 'dcite:Researcher', 'dcite:ProjectMember'],
+      'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Collin, Armand'', ''email'': ''armand.collin@polymtl.ca'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0009-0005-3258-122X'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Collin, Armand'', ''email'': ''armand.collin@polymtl.ca'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0005-3258-122X'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Derakhshan, Dorsa'', ''roleName'': [''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Derakhshan, Dorsa'', ''roleName'': [''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Sharma, Vasudev'', ''roleName'': [''dcite:DataCurator''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sharma, Vasudev'', ''roleName'': [''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Asenov, Stoyan'', ''roleName'': [''dcite:DataCurator''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Asenov, Stoyan'', ''roleName'': [''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Gordon, Tessa'', ''roleName'': [''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gordon, Tessa'', ''roleName'': [''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cohen-Adad, Julien'', ''email'': ''jcohen@polymtl.ca'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCurator'', ''dcite:DataManager'',
+    ''dcite:Maintainer'', ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-3662-9532'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen-Adad, Julien'', ''email'': ''jcohen@polymtl.ca'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCurator'',
+      ''dcite:DataManager'', ''dcite:Maintainer'', ''dcite:Supervision''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-3662-9532'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Borschel, Gregory Howard'', ''roleName'': [''dcite:Author'',
+    ''dcite:Conceptualization'', ''dcite:DataCollector'', ''dcite:FundingAcquisition'',
+    ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7691-5264'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Borschel, Gregory Howard'', ''roleName'': [''dcite:Author'',
+      ''dcite:Conceptualization'', ''dcite:DataCollector'', ''dcite:FundingAcquisition'',
+      ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7691-5264'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

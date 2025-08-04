@@ -1,0 +1,325 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:ac18f1d8-c685-420d-9081-878ad9d62c9a'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-01-23T18:06:57.538865+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-01-23T18:06:57.538865+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:fc7b6822-5657-4dc7-8c8b-48805f24e7b9'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:ac18f1d8-c685-420d-9081-878ad9d62c9a'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-01-23T18:06:57.538865+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-01-23T18:06:57.538865+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:fc7b6822-5657-4dc7-8c8b-48805f24e7b9'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Medial Temporal Lobe'', ''schemaKey'': ''GenericType''} is
+    not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Medial Temporal Lobe'', ''schemaKey'': ''GenericType''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Medial Frontal Cortex'', ''schemaKey'': ''Anatomy''} is not
+    of type ''string'' in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Medial Frontal Cortex'', ''schemaKey'': ''Anatomy''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kyzar, Michael'', ''email'': ''kyzarnexus@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataManager'',
+    ''dcite:FormalAnalysis'', ''dcite:Investigation'', ''dcite:Maintainer'', ''dcite:Methodology'',
+    ''dcite:ProjectLeader'', ''dcite:ProjectManager'', ''dcite:ProjectMember'', ''dcite:Researcher'',
+    ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0009-0004-4392-9933'', ''affiliation'': [{''name'':
+    ''Department of Neurosurgery, Cedars-Sinai Medical Center, Los Angeles, CA, USA'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kyzar, Michael'', ''email'': ''kyzarnexus@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCurator'',
+      ''dcite:DataManager'', ''dcite:FormalAnalysis'', ''dcite:Investigation'', ''dcite:Maintainer'',
+      ''dcite:Methodology'', ''dcite:ProjectLeader'', ''dcite:ProjectManager'', ''dcite:ProjectMember'',
+      ''dcite:Researcher'', ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0009-0004-4392-9933'', ''affiliation'':
+      [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical Center, Los Angeles,
+      CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kaminski, Jan'', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-8663-7314'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kaminski, Jan'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-8663-7314'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Brzezicka, Aneta'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1950-4180'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Brzezicka, Aneta'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1950-4180'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Reed, Chrystal M.'', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-7157-3645'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Reed, Chrystal M.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-7157-3645'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Chung, Jeffrey M. '', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-4989-0994'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chung, Jeffrey M. '', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-4989-0994'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Mamelak, Adam M.'', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-4245-6431'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mamelak, Adam M.'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-4245-6431'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Rutishauser, Ueli'', ''email'': ''Ueli.Rutishauser@cshs.org'',
+    ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ProjectMember'',
+    ''dcite:FundingAcquisition'', ''dcite:Resources'', ''dcite:Software'', ''dcite:Supervision'',
+    ''dcite:Validation'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-9207-7069'', ''affiliation'': [{''name'': ''Department of Neurosurgery,
+    Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''},
+    {''name'': ''Department of Neurology, Cedars-Sinai Medical Center, Los Angeles,
+    CA, USA'', ''schemaKey'': ''Affiliation''}, {''name'': ''Division of Biology and
+    Biological Engineering, California Institute of Technology, Pasadena, CA, USA'',
+    ''schemaKey'': ''Affiliation''}, {''name'': ''Computational and Neural Systems
+    Program, California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'':
+    ''Affiliation''}, {''name'': ''Center for Neural Science and Medicine, Department
+    of Biomedical Science, Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'':
+    ''Affiliation''}], ''awardNumber'': '''', ''includeInCitation'': True} is not
+    of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Rutishauser, Ueli'', ''email'': ''Ueli.Rutishauser@cshs.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ProjectMember'',
+      ''dcite:FundingAcquisition'', ''dcite:Resources'', ''dcite:Software'', ''dcite:Supervision'',
+      ''dcite:Validation'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-9207-7069'', ''affiliation'': [{''name'': ''Department of Neurosurgery,
+      Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''},
+      {''name'': ''Department of Neurology, Cedars-Sinai Medical Center, Los Angeles,
+      CA, USA'', ''schemaKey'': ''Affiliation''}, {''name'': ''Division of Biology
+      and Biological Engineering, California Institute of Technology, Pasadena, CA,
+      USA'', ''schemaKey'': ''Affiliation''}, {''name'': ''Computational and Neural
+      Systems Program, California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'':
+      ''Affiliation''}, {''name'': ''Center for Neural Science and Medicine, Department
+      of Biomedical Science, Cedars-Sinai Medical Center, Los Angeles, CA, USA'',
+      ''schemaKey'': ''Affiliation''}], ''awardNumber'': '''', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Sponsor''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH110831'', ''contactPoint'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Sponsor''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH110831'', ''contactPoint'':
+      [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sullivan, Shannon'', ''roleName'': [''dcite:DataCollector'',
+    ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1137-8987'',
+    ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
+    /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sullivan, Shannon'', ''roleName'': [''dcite:DataCollector'',
+      ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1137-8987'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Insitute of Neurological Disorders and Stroke'',
+    ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''awardNumber'':
+    ''U01NS117839, U01NS098961'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Insitute of Neurological Disorders and Stroke'',
+      ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''awardNumber'':
+      ''U01NS117839, U01NS098961'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

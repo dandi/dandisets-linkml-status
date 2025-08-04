@@ -1,0 +1,106 @@
+{
+  "id": "DANDI:000012/draft",
+  "url": "https://dandiarchive.org/dandiset/000012/draft",
+  "name": "Kriegstein2020",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements",
+      "contactPoint": {
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Zhou, Li; Kriegstein, Arnold (2025) Kriegstein2020 (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000012/draft",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000012",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Zhou, Li",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [
+        {
+          "name": "Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research UCSF School of Medicine",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Kriegstein, Arnold",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-5742-2990",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2020-03-19T16:21:49.854000+00:00",
+  "description": "Data from the Kriegstein Lab as part of the BICCN",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Human",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 487524911,
+    "numberOfCells": 38,
+    "numberOfFiles": 297,
+    "numberOfSamples": 8,
+    "numberOfSubjects": 4,
+    "variableMeasured": [
+      "VoltageClampStimulusSeries",
+      "VoltageClampSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "voltage clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [
+    {
+      "name": "Brain Initiative Cell Census Network (BICCN)",
+      "schemaKey": "Project",
+      "wasAssociatedWith": []
+    }
+  ],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000012/versions/draft/assets/"
+  ]
+}

@@ -1,0 +1,88 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Samuel R Nason-Tomaszewski'', ''roleName'': [''dcite:Author''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7127-0986'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Samuel R Nason-Tomaszewski'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7127-0986'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Matthew J. Mender'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-9671-7051'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Matthew J. Mender'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9671-7051'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cynthia Chestek'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-9671-7051'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cynthia Chestek'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-9671-7051'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Joel Ye'', ''email'': ''joelye9@gmail.com'', ''roleName'':
+    [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1149-6035'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Joel Ye'', ''email'': ''joelye9@gmail.com'', ''roleName'':
+      [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1149-6035'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

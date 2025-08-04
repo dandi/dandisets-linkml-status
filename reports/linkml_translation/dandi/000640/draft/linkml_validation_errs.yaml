@@ -1,0 +1,67 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Koloski, Miranda '', ''email'': ''mfrancoeur@health.ucsd.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''University of California San Diego'', ''schemaKey'': ''Affiliation''},
+    {''name'': ''VA Hospital San Diego'', ''schemaKey'': ''Affiliation''}], ''awardNumber'':
+    ''Career Development Award IK2BX006125 '', ''includeInCitation'': True} is not
+    of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Koloski, Miranda '', ''email'': ''mfrancoeur@health.ucsd.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of California San Diego'', ''schemaKey'': ''Affiliation''},
+      {''name'': ''VA Hospital San Diego'', ''schemaKey'': ''Affiliation''}], ''awardNumber'':
+      ''Career Development Award IK2BX006125 '', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Ramanathan, Dhakshin'', ''email'': ''dramanathan@health.ucsd.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''awardNumber'': ''National Institutes for Health R01-NS110905'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ramanathan, Dhakshin'', ''email'': ''dramanathan@health.ucsd.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''awardNumber'': ''National Institutes for Health R01-NS110905'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

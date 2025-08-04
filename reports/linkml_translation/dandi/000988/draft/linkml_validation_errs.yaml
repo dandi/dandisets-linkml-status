@@ -1,0 +1,189 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Brooks, Frederick'', ''email'': ''fbrooks@g.harvard.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataCollector'',
+    ''dcite:DataCurator'', ''dcite:Investigation'', ''dcite:Researcher'', ''dcite:Visualization''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4334-8192'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Brooks, Frederick'', ''email'': ''fbrooks@g.harvard.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataCollector'',
+      ''dcite:DataCurator'', ''dcite:Investigation'', ''dcite:Researcher'', ''dcite:Visualization''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4334-8192'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Davis, Hunter C.'', ''roleName'': [''dcite:Conceptualization'',
+    ''dcite:Investigation'', ''dcite:ProjectMember''], ''schemaKey'': ''Person'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Davis, Hunter C.'', ''roleName'': [''dcite:Conceptualization'',
+      ''dcite:Investigation'', ''dcite:ProjectMember''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Park, Pojeong'', ''roleName'': [''dcite:DataCollector'',
+    ''dcite:ProjectMember'', ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-5574-6104'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Park, Pojeong'', ''roleName'': [''dcite:DataCollector'',
+      ''dcite:ProjectMember'', ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-5574-6104'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Qi, Yitong'', ''roleName'': [''dcite:Investigation'', ''dcite:ProjectMember''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Qi, Yitong'', ''roleName'': [''dcite:Investigation'', ''dcite:ProjectMember''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cohen, Adam E.'', ''email'': ''cohen@chemistry.harvard.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'',
+    ''dcite:FundingAcquisition'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-8699-2404'', ''includeInCitation'': True} is not of
+    type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen, Adam E.'', ''email'': ''cohen@chemistry.harvard.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'',
+      ''dcite:FundingAcquisition'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-8699-2404'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''NIH'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''1R01NS133755;
+    1RF1NS126043'', ''includeInCitation'': False} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'':
+      ''1R01NS133755; 1RF1NS126043'', ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''NSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'': ''OMA-2121044'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'':
+      ''OMA-2121044'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Gong, Daozheng'', ''email'': ''dzgong@fas.harvard.edu'',
+    ''roleName'': [''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Investigation'',
+    ''dcite:ProjectMember'', ''dcite:Researcher'', ''dcite:Visualization''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-3951-1890'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gong, Daozheng'', ''email'': ''dzgong@fas.harvard.edu'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Investigation'',
+      ''dcite:ProjectMember'', ''dcite:Researcher'', ''dcite:Visualization''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3951-1890'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,230 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:2dde7ef4-2e29-4a69-a128-119c32df46dd', 'name': 'DANDI publish', 'endDate': '2022-01-24T21:56:16.910044+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-01-24T21:56:16.910044+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a799e99e-6572-4dc1-9a8c-bace7827139c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:2dde7ef4-2e29-4a69-a128-119c32df46dd', 'name': 'DANDI publish', 'endDate': '2022-01-24T21:56:16.910044+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-01-24T21:56:16.910044+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a799e99e-6572-4dc1-9a8c-bace7827139c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'premotor cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0016634'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'premotor cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0016634'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Motor Cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001384'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Motor Cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001384'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sharda, Saksham', 'email': 'saksham20.sharda@gmail.com', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sharda, Saksham', 'email': 'saksham20.sharda@gmail.com', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://orcid.org/0000-0003-2186-5567', 'name': 'Even-Chen, Nir', 'email': ' nirec@stanford.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCurator', 'dcite:FormalAnalysis', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2186-5567', 'affiliation': [{'name': 'Department of Electrical Engineering, Stanford University, Stanford, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://orcid.org/0000-0003-2186-5567', 'name': 'Even-Chen, Nir', 'email': ' nirec@stanford.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCurator', 'dcite:FormalAnalysis', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2186-5567', 'affiliation': [{'name': 'Department of Electrical Engineering, Stanford University, Stanford, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://orcid.org/0000-0003-2753-7150', 'name': 'Sheffer, Blue', 'email': 'bsheffer@stanford.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCurator', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0003-2753-7150', 'affiliation': [{'name': 'Department of Computer Science, Stanford University, Stanford, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://orcid.org/0000-0003-2753-7150', 'name': 'Sheffer, Blue', 'email': 'bsheffer@stanford.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCurator', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0003-2753-7150', 'affiliation': [{'name': 'Department of Computer Science, Stanford University, Stanford, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Vyas, Saurabh', 'email': 'smvyas@stanford.edu', 'roleName': ['dcite:DataCurator', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Department of Bioengineering, Stanford University, Stanford, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Vyas, Saurabh', 'email': 'smvyas@stanford.edu', 'roleName': ['dcite:DataCurator', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Department of Bioengineering, Stanford University, Stanford, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://orcid.org/0000-0002-4607-7447', 'name': 'Ryu, Stephen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4607-7447', 'affiliation': [{'name': 'Department of Neurosurgery, Palo Alto Medical Foundation, Palo Alto, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://orcid.org/0000-0002-4607-7447', 'name': 'Ryu, Stephen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4607-7447', 'affiliation': [{'name': 'Department of Neurosurgery, Palo Alto Medical Foundation, Palo Alto, CA, United States of America', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://orcid.org/0000-0003-1534-9240', 'name': 'Shenoy, Krishna', 'email': 'shenoy@stanford.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCurator', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-1534-9240', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://orcid.org/0000-0003-1534-9240', 'name': 'Shenoy, Krishna', 'email': 'shenoy@stanford.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:DataCurator', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-1534-9240', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03mtd9a03'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.simonsfoundation.org/', 'name': 'Simons Foundation', 'roleName': ['dcite:Funder', 'dcite:Sponsor'], 'schemaKey': 'Organization', 'awardNumber': 'https://www.simonsfoundation.org/collaborations/global-brain/data-sharing-initiatives/', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.simonsfoundation.org/', 'name': 'Simons Foundation', 'roleName': ['dcite:Funder', 'dcite:Sponsor'], 'schemaKey': 'Organization', 'awardNumber': 'https://www.simonsfoundation.org/collaborations/global-brain/data-sharing-initiatives/', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

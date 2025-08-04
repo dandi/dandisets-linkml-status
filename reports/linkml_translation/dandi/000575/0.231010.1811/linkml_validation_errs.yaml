@@ -1,0 +1,245 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:b959e7a2-93ad-4704-8d22-1d3df7b4a905'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-10-10T18:11:40.305685+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-10-10T18:11:40.305685+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:72183488-18c0-4da2-8dd8-a3a6dc42c33f'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:b959e7a2-93ad-4704-8d22-1d3df7b4a905'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-10-10T18:11:40.305685+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-10-10T18:11:40.305685+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:72183488-18c0-4da2-8dd8-a3a6dc42c33f'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Boran, Ece'', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-0395-7575'', ''affiliation'': [{''name'': ''Department
+    of Neurosurgery, University Hospital Zurich (USZ), University of Zurich, Zurich
+    8091, Switzerland'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Boran, Ece'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-0395-7575'', ''affiliation'': [{''name'': ''Department
+      of Neurosurgery, University Hospital Zurich (USZ), University of Zurich, Zurich
+      8091, Switzerland'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Hilfiker, Peter'', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0001-7729-4754'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hilfiker, Peter'', ''roleName'': [], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7729-4754'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Stieglitz, Lennart '', ''roleName'': [], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-3744-5105'', ''affiliation'': [{''name'': ''Department
+    of Neurosurgery, University Hospital Zurich (USZ), University of Zurich, Zurich
+    8091, Switzerland'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Stieglitz, Lennart '', ''roleName'': [], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3744-5105'', ''affiliation'': [{''name'':
+      ''Department of Neurosurgery, University Hospital Zurich (USZ), University of
+      Zurich, Zurich 8091, Switzerland'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/01462r250''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Hohenheim, Jan'', ''email'': ''jan@hohenheim.ch'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-9436-8348'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hohenheim, Jan'', ''email'': ''jan@hohenheim.ch'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-9436-8348'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Klaver, Peter'', ''email'': ''peter.klaver@hfh.ch'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-6541-9975'', ''affiliation'': [{''name'': ''University of Teacher
+    Education in Special Needs, Zurich 8050, Switzerland'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/00w9q2c06''}, {''name'': ''Institute of Psychology,
+    University of Zurich, Zurich 8050, Switzerland'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/02crff812''}, {''name'': ''School of Psychology,
+    University of Surrey, Guildford GU2 7XH, UK'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/00ks66431''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Klaver, Peter'', ''email'': ''peter.klaver@hfh.ch'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-6541-9975'', ''affiliation'': [{''name'': ''University of Teacher
+      Education in Special Needs, Zurich 8050, Switzerland'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/00w9q2c06''}, {''name'': ''Institute of Psychology,
+      University of Zurich, Zurich 8050, Switzerland'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/02crff812''}, {''name'': ''School of Psychology,
+      University of Surrey, Guildford GU2 7XH, UK'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/00ks66431''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sarnthein, Johannes '', ''email'': ''johannes.sarnthein@usz.ch'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0001-9141-381X'', ''affiliation'': [{''name'': ''Department
+    of Neurosurgery, University Hospital Zurich (USZ), University of Zurich, Zurich
+    8091, Switzerland.'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''},
+    {''name'': ''Neuroscience Center Zurich, ETH Zurich, Zurich 8057, Switzerland'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sarnthein, Johannes '', ''email'': ''johannes.sarnthein@usz.ch'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-9141-381X'', ''affiliation'': [{''name'': ''Department
+      of Neurosurgery, University Hospital Zurich (USZ), University of Zurich, Zurich
+      8091, Switzerland.'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''},
+      {''name'': ''Neuroscience Center Zurich, ETH Zurich, Zurich 8057, Switzerland'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01462r250''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://www.snf.ch/en'', ''name'': '' Swiss National Science
+    Foundation'', ''email'': ''projects.ls@snf.ch'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00yjd3n13'',
+    ''awardNumber'': ''204651'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.snf.ch/en'', ''name'': '' Swiss National Science
+      Foundation'', ''email'': ''projects.ls@snf.ch'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00yjd3n13'',
+      ''awardNumber'': ''204651'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://www.kavlifoundation.org/'', ''name'': '' The Kavli
+    Foundation'', ''email'': ''communications@kavlifoundation.org'', ''roleName'':
+    [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00kztt736'',
+    ''awardNumber'': ''2586'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.kavlifoundation.org/'', ''name'': '' The Kavli
+      Foundation'', ''email'': ''communications@kavlifoundation.org'', ''roleName'':
+      [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00kztt736'',
+      ''awardNumber'': ''2586'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

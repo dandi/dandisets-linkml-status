@@ -1,0 +1,25 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://centerforopenneuroscience.org/', 'name': 'Halchenko, Yaroslav O.', 'email': 'yoh@dartmouth.edu', 'roleName': ['dcite:Conceptualization', 'dcite:Author', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3456-2493', 'affiliation': [{'name': 'Dartmouth College', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/049s0rh22'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://centerforopenneuroscience.org/', 'name': 'Halchenko, Yaroslav O.', 'email': 'yoh@dartmouth.edu', 'roleName': ['dcite:Conceptualization', 'dcite:Author', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3456-2493', 'affiliation': [{'name': 'Dartmouth College', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/049s0rh22'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

@@ -1,0 +1,134 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:9faebe17-3d98-4bb7-b8db-d9e38dc13f54'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-03-29T19:26:55.755552+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-03-29T19:26:55.755552+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:d892a4c1-fdff-4970-bdf1-2d5b2ab17c47'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:9faebe17-3d98-4bb7-b8db-d9e38dc13f54'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-03-29T19:26:55.755552+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-03-29T19:26:55.755552+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:d892a4c1-fdff-4970-bdf1-2d5b2ab17c47'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Steinmetz, Nicholas'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7029-2908'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Steinmetz, Nicholas'', ''roleName'': [''dcite:Author'',
+      ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7029-2908'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Zatka-Haas, Peter'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-9054-2599'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zatka-Haas, Peter'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9054-2599'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Carandini, Matteo'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0003-4880-7682'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Carandini, Matteo'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4880-7682'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Harris, Kenneth'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-5930-6456'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Harris, Kenneth'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-5930-6456'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wang, Renee'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wang, Renee'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

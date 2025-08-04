@@ -1,0 +1,180 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('datePublished', 'doi', 'publishedBy' were unexpected) in /",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('datePublished', 'doi', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kamentsky, Lee', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kamentsky, Lee', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Marx, Slayton', 'email': 'smarx@mit.edu', 'roleName': ['dcite:DataManager', 'dcite:DataCurator', 'dcite:Investigation', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision', 'dcite:Visualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8209-0059', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Marx, Slayton', 'email': 'smarx@mit.edu', 'roleName': ['dcite:DataManager', 'dcite:DataCurator', 'dcite:Investigation', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision', 'dcite:Visualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8209-0059', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Park, Juhyuk', 'email': 'juhyuk@mit.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-1429-3399', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Park, Juhyuk', 'email': 'juhyuk@mit.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:ProjectMember', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-1429-3399', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Su-Arcaro, Clover', 'email': 'clover13@mit.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-5658-5800', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Su-Arcaro, Clover', 'email': 'clover13@mit.edu', 'roleName': ['dcite:DataCollector', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0001-5658-5800', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Moukheiber, Mira', 'email': 'miram@mit.edu', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-8475-6048', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Moukheiber, Mira', 'email': 'miram@mit.edu', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-8475-6048', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Zhao, Victor', 'email': 'viczhao@mit.edu', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-9694-7132', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zhao, Victor', 'email': 'viczhao@mit.edu', 'roleName': ['dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0001-9694-7132', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://www.nih.gov/', 'name': 'NIH', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.nih.gov/', 'name': 'NIH', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

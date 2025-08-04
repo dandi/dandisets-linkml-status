@@ -1,0 +1,138 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:234b75eb-c5ae-4fdc-9f21-61a5bde1624c', 'name': 'DANDI publish', 'endDate': '2022-07-08T16:52:50.209948+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-07-08T16:52:50.209948+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a17dbf3f-f81b-4442-b9db-af7a9041a6ed', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:234b75eb-c5ae-4fdc-9f21-61a5bde1624c', 'name': 'DANDI publish', 'endDate': '2022-07-08T16:52:50.209948+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-07-08T16:52:50.209948+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a17dbf3f-f81b-4442-b9db-af7a9041a6ed', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cortex', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0001851'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cortex', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0001851'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Howard, Derek', 'email': 'derekhoward@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-6621-9473', 'affiliation': [{'name': 'Krembil Institute for Neuroinformatics, CAMH', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Howard, Derek', 'email': 'derekhoward@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-6621-9473', 'affiliation': [{'name': 'Krembil Institute for Neuroinformatics, CAMH', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Moradi, Homeira Moradi', 'email': 'homeira.moradi@uhnresearch.ca', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-8009-147X', 'affiliation': [{'name': 'Krembil Brain Institute, University Health Network', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Moradi, Homeira Moradi', 'email': 'homeira.moradi@uhnresearch.ca', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-8009-147X', 'affiliation': [{'name': 'Krembil Brain Institute, University Health Network', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Valiante, Taufik', 'email': 'taufik.valiante@uhn.ca', 'roleName': ['dcite:DataCollector', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-3443-3790', 'affiliation': [{'name': 'Krembil Brain Institute, University Health Network', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Valiante, Taufik', 'email': 'taufik.valiante@uhn.ca', 'roleName': ['dcite:DataCollector', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-3443-3790', 'affiliation': [{'name': 'Krembil Brain Institute, University Health Network', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tripathy, Shreejoy', 'email': 'shreejoy.tripathy@camh.ca', 'roleName': ['dcite:Conceptualization', 'dcite:DataCurator', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-1007-9061', 'affiliation': [{'name': 'Krembil Institute for Neuroinformatics, CAMH', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tripathy, Shreejoy', 'email': 'shreejoy.tripathy@camh.ca', 'roleName': ['dcite:Conceptualization', 'dcite:DataCurator', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-1007-9061', 'affiliation': [{'name': 'Krembil Institute for Neuroinformatics, CAMH', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

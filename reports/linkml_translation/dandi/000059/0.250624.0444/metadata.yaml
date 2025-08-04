@@ -1,0 +1,160 @@
+about: []
+access:
+- contactPoint:
+    email: petersen.peter@gmail.com
+    schemaKey: ContactPoint
+  schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 2935390229648
+  numberOfFiles: 100
+  numberOfSubjects: 5
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - Position
+  - ElectrodeGroup
+  - SpatialSeries
+  - Units
+  - LFP
+  - ElectricalSeries
+citation: "Petersen, Peter; Buzs\xE1ki, Gy\xF6rgy (2025) Cooling of Medial Septum
+  Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies (Version 0.250624.0444)
+  [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000059/0.250624.0444"
+contributor:
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  email: petersen.peter@gmail.com
+  identifier: 0000-0002-2092-4791
+  includeInCitation: true
+  name: Petersen, Peter
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  identifier: 0000-0002-3100-4800
+  includeInCitation: true
+  name: "Buzs\xE1ki, Gy\xF6rgy"
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- awardNumber: NeuroNex 1707316
+  contactPoint: []
+  identifier: https://ror.org/021nxhr62
+  includeInCitation: false
+  name: National Science Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nsf.gov/
+- contactPoint: []
+  identifier: https://ror.org/03hz8wd80
+  includeInCitation: false
+  name: Lundbeck Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: MH122391, MH54671, MH107396, U19 NS107616, U19 NS104590
+  contactPoint: []
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
+- affiliation: []
+  identifier: 0000-0002-0829-4790
+  includeInCitation: false
+  name: Baker, Cody
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
+dateCreated: '2021-02-21T20:41:43.356000+00:00'
+datePublished: '2025-06-24T04:44:25.294809+00:00'
+description: "Hippocampal theta oscillations coordinate neuronal firing to support
+  memory and spatial navigation. The medial septum (MS) is critical in theta generation
+  by two possible mechanisms: either a unitary \u201Cpacemaker\u201D timing signal
+  is imposed on the hippocampal system, or it may assist in organizing target subcircuits
+  within the phase space of theta oscillations. We used temperature manipulation of
+  the MS to test these models. Cooling of the MS reduced both theta frequency and
+  power and was associated with an enhanced incidence of errors in a spatial navigation
+  task, but it did not affect spatial correlates of neurons. MS cooling decreased
+  theta frequency oscillations of place cells and reduced distance-time compression
+  but preserved distance-phase compression of place field sequences within the theta
+  cycle. Thus, the septum is critical for sustaining precise theta phase coordination
+  of cell assemblies in the hippocampal system, a mechanism needed for spatial memory."
+doi: 10.48324/dandi.000059/0.250624.0444
+ethicsApproval: []
+id: DANDI:000059/0.250624.0444
+identifier: DANDI:000059
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/000059/0.250624.0444/assets.yaml
+name: Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal
+  Cell Assemblies
+publishedBy:
+  endDate: '2025-06-24T04:44:25.294809+00:00'
+  id: urn:uuid:1e18b82c-5989-472a-b2f5-d4defcb8a161
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-24T04:44:25.294809+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:0be4b837-7e7f-442a-bacd-be919d852b9d
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource:
+- identifier: https://doi.org/10.1016/j.neuron.2020.05.023
+  name: Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal
+    Cell Assemblies
+  relation: dcite:IsDescribedBy
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0896627320303925
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.0
+url: https://dandiarchive.org/dandiset/000059/0.250624.0444
+version: 0.250624.0444
+wasGeneratedBy: []

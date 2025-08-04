@@ -1,0 +1,134 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Avoidance learning'', ''schemaKey'': ''GenericType''} is
+    not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Avoidance learning'', ''schemaKey'': ''GenericType''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Nucleus Accumbens Dopamine'', ''schemaKey'': ''GenericType''}
+    is not of type ''string'' in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Nucleus Accumbens Dopamine'', ''schemaKey'': ''GenericType''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lopez, Gabriela C.'', ''email'': ''gabriela.lopez@northwestern.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5515-3851'',
+    ''awardNumber'': ''F31DA056200'', ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lopez, Gabriela C.'', ''email'': ''gabriela.lopez@northwestern.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-5515-3851'', ''awardNumber'': ''F31DA056200'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Sherathiya, Venus N'', ''email'': ''venus.sherathiya93@gmail.com'',
+    ''roleName'': [''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-0143-9771'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sherathiya, Venus N'', ''email'': ''venus.sherathiya93@gmail.com'',
+      ''roleName'': [''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-0143-9771'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lerner, Talia N.'', ''email'': ''talia.lerner@northwestern.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-3875-0654'', ''awardNumber'': '''', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lerner, Talia N.'', ''email'': ''talia.lerner@northwestern.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3875-0654'', ''awardNumber'': '''', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''P50DA044121'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''P50DA044121'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

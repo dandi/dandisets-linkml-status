@@ -1,0 +1,119 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 26002918955080
+  numberOfFiles: 120
+  numberOfSubjects: 6
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Position
+  - SpatialSeries
+  - ElectricalSeries
+  - BehavioralEvents
+  - ProcessingModule
+citation: Coulter, Michael; Frank, Loren (2024) Closed-loop modulation of remote hippocampal
+  representations with neurofeedback (Version 0.241218.2300) [Data set]. DANDI archive.
+  https://doi.org/10.48324/dandi.001280/0.241218.2300
+contributor:
+- awardNumber: '542981'
+  includeInCitation: false
+  name: Simons Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- includeInCitation: false
+  name: Howard Hughes Medical Institute
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- email: michael.coulter@ucsf.edu
+  includeInCitation: true
+  name: Coulter, Michael
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- email: loren.frank@ucsf.edu
+  includeInCitation: true
+  name: Frank, Loren
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- awardNumber: F32MH123003
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2024-12-11T19:50:07.481752+00:00'
+datePublished: '2024-12-18T23:00:42.199200+00:00'
+description: 'Dorsal hippocampus CA1 extracellular recordings from male, Long Evans
+  rats. Rats were engaged in a neurofeedback task during recording. This data was
+  collected as part of the manuscript entitled "Closed-loop modulation of remote hippocampal
+  representations with neurofeedback." Link to manuscript: https://www.biorxiv.org/content/10.1101/2024.05.08.593085v2.'
+doi: 10.48324/dandi.001280/0.241218.2300
+ethicsApproval:
+- contactPoint:
+    email: michael.coulter@ucsf.edu
+    schemaKey: ContactPoint
+  identifier: AN191130
+  schemaKey: EthicsApproval
+id: DANDI:001280/0.241218.2300
+identifier: DANDI:001280
+keywords:
+- hippocampus
+- rat
+- tetrode
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001280/0.241218.2300/assets.yaml
+name: Closed-loop modulation of remote hippocampal representations with neurofeedback
+protocol: []
+publishedBy:
+  endDate: '2024-12-18T23:00:42.199200+00:00'
+  id: urn:uuid:2be83905-c7fb-4502-9ee0-13a6de4dbafc
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2024-12-18T23:00:42.199200+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:f00baac4-ee11-4412-8578-8bdb7c0a0142
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource:
+- identifier: Accompanying manuscript
+  name: Closed-loop modulation of remote hippocampal representations with neurofeedback
+  relation: dcite:IsReferencedBy
+  resourceType: dcite:Preprint
+  schemaKey: Resource
+  url: https://www.biorxiv.org/content/10.1101/2024.05.08.593085v2
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.8
+studyTarget: []
+url: https://dandiarchive.org/dandiset/001280/0.241218.2300
+version: 0.241218.2300
+wasGeneratedBy: []

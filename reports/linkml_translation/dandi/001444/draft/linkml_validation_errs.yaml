@@ -1,0 +1,48 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Doherty, Donald'', ''email'': ''donald.doherty@neurosim.downstate.edu'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Researcher''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4973-6225'', ''affiliation'':
+    [{''name'': ''SUNY Downstate Health Sciences University '', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Doherty, Donald'', ''email'': ''donald.doherty@neurosim.downstate.edu'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Researcher''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4973-6225'', ''affiliation'':
+      [{''name'': ''SUNY Downstate Health Sciences University '', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''https://parkinsonsroadmap.org/'', ''name'': "Aligning Science
+    Across Parkinson''s", ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''awardNumber'': ''ASAP-020572''} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://parkinsonsroadmap.org/'', ''name'': "Aligning Science
+      Across Parkinson''s", ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''awardNumber'': ''ASAP-020572''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

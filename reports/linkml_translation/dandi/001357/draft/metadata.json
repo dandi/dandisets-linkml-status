@@ -1,0 +1,180 @@
+{
+  "id": "DANDI:001357/draft",
+  "url": "https://dandiarchive.org/dandiset/001357/draft",
+  "name": "High-Density Recording Reveals Sparse Clusters (But Not Columns) for Shape and Texture Encoding in Macaque V4",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Kim, Taekjun; Namima, Tomoyuki; Pasupathy, Anitha; Kempkes, Erin; Zamarashkina, Polina; Owen, Natalia (2025) High-Density Recording Reveals Sparse Clusters (But Not Columns) for Shape and Texture Encoding in Macaque V4 (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001357/draft",
+  "keywords": [
+    "functional archietecture, monkey, neuropixels, object recognition, shape perception"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001357",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Kim, Taekjun",
+      "email": "taekjunkim1223@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:DataManager"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Namima, Tomoyuki",
+      "email": "t.namima@gmail.com",
+      "roleName": [
+        "dcite:Author",
+        "dcite:Researcher",
+        "dcite:DataCollector",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Pasupathy, Anitha",
+      "email": "pasupat@uw.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ProjectLeader",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Kempkes, Erin",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Zamarashkina, Polina",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Owen, Natalia",
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Eye Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "",
+      "awardNumber": "R01 EY018839, R01 EY029601, P30 EY01730",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Neurological Disorders and Stroke",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "U01 NS131810-01",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute OF Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "P51 OD010425",
+      "includeInCitation": false
+    },
+    {
+      "name": "Japan Society for the Promotion of Science",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "KAKENHI Grant 23K06785 ",
+      "includeInCitation": false
+    },
+    {
+      "name": "Japan Science and Technology",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "ERATO JPMJER1801, CREST JPMJCR18A5",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2025-03-10T17:25:35.044001+00:00",
+  "description": "We used high-density Neuropixels probes in two awake monkeys (one female and one male) to characterize the shape and texture tuning of dozens of neurons simultaneously. The shape set included 15 simple geometric shapes each presented at eight different rotations in 45\u00b0 increments, resulting in a total of 120 shape stimuli. Shapes were filled with a uniform color, either darker or brighter than the background luminance. The texture stimulus set was composed of 40 naturalistic grayscale textures. Each texture image was presented in three versions: original, contrast-reversed, or spectrally-matched noise\n\nMore detailed information associated with this dataset is described in https://doi.org/10.1523/JNEUROSCI.1893-23.2024 ",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca mulatta - Rhesus monkey",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 241533432,
+    "numberOfFiles": 159,
+    "numberOfSubjects": 2,
+    "variableMeasured": [
+      "Units",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1523/JNEUROSCI.1893-23.2024",
+      "name": "High-Density Recording Reveals Sparse Clusters (But Not Columns) for Shape and Texture Encoding in Macaque V4",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "repository": "The Journal of Neuroscience",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001357/versions/draft/assets/"
+  ]
+}

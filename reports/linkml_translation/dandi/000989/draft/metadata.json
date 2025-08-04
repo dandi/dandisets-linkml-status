@@ -1,0 +1,104 @@
+{
+  "id": "DANDI:000989/draft",
+  "url": "https://dandiarchive.org/dandiset/000989/draft",
+  "name": "In vitro electrochemical impedance spectroscopy data - G1 and G2",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Otto, Kevin; Orazem, Mark; Cogan, Stuart (2024) In vitro electrochemical impedance spectroscopy data - G1 and G2 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000989/draft",
+  "keywords": [
+    "ultramicroelectrode array"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000989",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1 UO1 NS 126052-01",
+      "includeInCitation": false
+    },
+    {
+      "name": "Otto, Kevin",
+      "email": "kevin.otto@bme.ufl.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-2317-6194",
+      "includeInCitation": true
+    },
+    {
+      "name": "Orazem, Mark",
+      "email": "morazem@che.ufl.edu",
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3668-7767",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cogan, Stuart",
+      "email": "stuart.cogan@utdallas.edu",
+      "schemaKey": "Person",
+      "identifier": "0000-0001-6316-3032",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-05-14T02:36:55.555253+00:00",
+  "description": "Representative EIS data of G1 and G2 electrodes for all channels in this UO1 project.\nFor G1 electrodes, the relationship between the diameter of electrode contacts and the electrode number is as follows:\n5 (um): 2, 9, 16, 24\n10: 1, 11, 23, 31\n15: 8, 10, 22, 30\n20: 3, 15, 21, 25\n25: 6, 7, 12, 26\n30: 13, 18, 19, 27\n40: 4, 14, 20 28\n50: 5, 17, 29, 32\nFor G2 electrodes, the relationship between the diameter of electrode contacts and the electrode number is as follows:\n5 (um): 2, 3, 4, 5, 6, 7, 17, 18, 19, 20, 22\n10: 9, 12, 13, 14, 15, 16, 25, 26, 27, 28, 29, 32\ncircuit: 1-8, 11-30\nterminal: 23, 31\nreference (4004 um^2): 10, 24",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Unidentified",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_32644"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 52322892,
+    "numberOfFiles": 257,
+    "numberOfSubjects": 8,
+    "variableMeasured": [
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.7",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000989/versions/draft/assets/"
+  ]
+}

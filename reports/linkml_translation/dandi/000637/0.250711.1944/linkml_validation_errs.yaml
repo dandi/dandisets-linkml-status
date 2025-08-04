@@ -1,0 +1,180 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:465a0f65-2b4b-41cb-976c-25e1f661291f'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-07-11T19:44:46.773229+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-07-11T19:44:46.773229+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:6b653806-954f-4569-8bb8-bafe17862acc'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:465a0f65-2b4b-41cb-976c-25e1f661291f'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-07-11T19:44:46.773229+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-07-11T19:44:46.773229+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:6b653806-954f-4569-8bb8-bafe17862acc'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Ramachandran, Sandhya'', ''email'': ''s.ramachandran8@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ramachandran, Sandhya'', ''email'': ''s.ramachandran8@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Gao, Huan'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gao, Huan'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''NIH NS124564'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not of
+    type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH NS124564'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''NIH EB029354'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not of
+    type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NIH EB029354'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Yu, Kai'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yu, Kai'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''He, Bin'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''He, Bin'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Carnegie Mellon University'', ''roleName'': [''dcite:Affiliation''],
+    ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Carnegie Mellon University'', ''roleName'': [''dcite:Affiliation''],
+      ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,224 @@
+{
+  "id": "DANDI:001250/draft",
+  "url": "https://dandiarchive.org/dandiset/001250/draft",
+  "name": "Spike sorting biases and information loss in a detailed cortical model",
+  "about": [
+    {
+      "name": "Primary Somatosensory Cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "UBERON:0008930"
+    }
+  ],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Laquitaine, Steeve; Milo Imbeni; Tharayil, Joseph; Isbister, James; Reimann, Michael (2025) Spike sorting biases and information loss in a detailed cortical model (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001250/draft",
+  "keywords": [
+    "spike sorting quality",
+    " Neuropixels",
+    " biophysical model",
+    "neocortex",
+    "neural manifold",
+    " information geometry ",
+    "population analysis",
+    "Mean- Field Theoretic Manifold Analysis",
+    "Wavemap",
+    "CEBRA",
+    "spike sorting curation",
+    "hybrid synthetic model",
+    "synthetic model",
+    "large-scale extracellular recording",
+    "rat",
+    "dense electrode arrays",
+    "power spectral analysis",
+    "machine learning"
+  ],
+  "protocol": [
+    "https://www.biorxiv.org/content/10.1101/2024.12.04.626805v2"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001250",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "url": "https://steevelaquitaine.github.io",
+      "name": "Laquitaine, Steeve",
+      "email": "laquitainesteeve@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:DataCollector",
+        "dcite:DataCurator",
+        "dcite:DataManager",
+        "dcite:FormalAnalysis",
+        "dcite:Investigation",
+        "dcite:Maintainer",
+        "dcite:Methodology",
+        "dcite:ProjectLeader",
+        "dcite:ProjectMember",
+        "dcite:Researcher",
+        "dcite:Software",
+        "dcite:Supervision",
+        "dcite:Validation",
+        "dcite:Visualization"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-9647-3149",
+      "affiliation": [
+        {
+          "name": "Sorbonne University, Vision Institute",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "url": "https://orcid.org/0000-0002-4482-8390",
+      "name": "Milo Imbeni",
+      "email": "milo.imbeni@maastrichtuniversity.nl",
+      "roleName": [
+        "dcite:Investigation",
+        "dcite:Author",
+        "dcite:Methodology"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4482-8390",
+      "includeInCitation": true
+    },
+    {
+      "url": "https://orcid.org/0000-0002-2390-4104",
+      "name": "Tharayil, Joseph",
+      "email": "tharayiljoe@gmail.com",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:Methodology"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-2390-4104",
+      "includeInCitation": true
+    },
+    {
+      "url": "https://orcid.org/0000-0002-1013-3013",
+      "name": "Isbister, James",
+      "email": "james.isbister@openbraininstitute.org",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:Methodology"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-1013-3013",
+      "includeInCitation": true
+    },
+    {
+      "url": "https://orcid.org/0000-0003-3455-2367",
+      "name": "Reimann, Michael",
+      "email": "michael.reimann@openbraininstitute.org",
+      "roleName": [
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:FundingAcquisition",
+        "dcite:ProjectManager",
+        "dcite:Investigation"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3455-2367",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-11-07T14:18:15.892414+00:00",
+  "description": "Dataset for the publication: \"Spike sorting biases and information loss in a detailed cortical model\" containing:\n- 1) Biophysical simulations of high-density extracellular recordings of an entire cortical microcircuit activity with virtual reconstructions of the Neuropixels 1.0 probe and the Horvath dense probe  Spontaneous and stimulus-evoked regime of activity were simulated for the Neuropixels probe. \n\n- 2) The ground truth spike timestamps of neurons within 50 microns of the electrodes (about 1000 neurons).\n",
+  "studyTarget": [
+    "Spike sorting",
+    "biophysical model",
+    "benchmark",
+    "spike sorting curation",
+    "spike train information content",
+    "spike sorting biases",
+    "spike train quality",
+    "neural code"
+  ],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 700043465811,
+    "numberOfFiles": 84,
+    "numberOfSubjects": 22,
+    "variableMeasured": [
+      "ElectricalSeries",
+      "Units",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.8",
+  "ethicsApproval": [
+    {}
+  ],
+  "wasGeneratedBy": [
+    {}
+  ],
+  "acknowledgement": "Enny Van Beest; Jennifer Colonell; Alessio Buccino; Marius Pachitariu; Ilias Rentzeperis; Cameron Mckenzie; Daniela Egas Santander; Christoph Pokorny; Andras Ecker; Natali Barros Zulaica; Karin Holm; BBP Core Services team; ",
+  "relatedResource": [
+    {
+      "url": "https://github.com/steevelaquitaine/spikebias",
+      "name": "spikebias code repository",
+      "relation": "dcite:IsPartOf",
+      "schemaKey": "Resource",
+      "repository": "spikebias",
+      "resourceType": "dcite:Software"
+    },
+    {
+      "url": "https://doi.org/10.1101/2024.12.04.626805",
+      "name": "Preprint ",
+      "relation": "dcite:Cites",
+      "schemaKey": "Resource",
+      "repository": "bioRxiv",
+      "resourceType": "dcite:Preprint"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001250/versions/draft/assets/"
+  ]
+}

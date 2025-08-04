@@ -1,0 +1,321 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:98642493-a601-4893-8a4b-3b33a550754a'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-06-25T22:39:21.870933+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-06-25T22:39:21.870933+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:3bbfc13b-2501-4bbc-8be4-0bb49d6d6308'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:98642493-a601-4893-8a4b-3b33a550754a'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-06-25T22:39:21.870933+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-06-25T22:39:21.870933+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:3bbfc13b-2501-4bbc-8be4-0bb49d6d6308'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0009-0009-0306-0002'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0009-0306-0002'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sorensen, Staci'', ''email'': ''stacis@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-6799-2126'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sorensen, Staci'', ''email'': ''stacis@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-6799-2126'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Gouwens, Nathan'', ''email'': ''nathang@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-8429-4090'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gouwens, Nathan'', ''email'': ''nathang@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-8429-4090'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wang, Yun'', ''email'': ''yunw@alleninstitute.org'', ''roleName'':
+    [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wang, Yun'', ''email'': ''yunw@alleninstitute.org'', ''roleName'':
+      [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Mallory, Matt'', ''email'': ''matt.mallory@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-8744-3837'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mallory, Matt'', ''email'': ''matt.mallory@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-8744-3837'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Budzillo, Agata'', ''email'': ''agatab@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-2723-3272'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Budzillo, Agata'', ''email'': ''agatab@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-2723-3272'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Dalley, Rachel'', ''email'': ''racheld@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-7461-7845'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dalley, Rachel'', ''email'': ''racheld@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-7461-7845'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-3210-5638'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3210-5638'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Gliko, Olga'', ''email'': ''olgag@alleninstitute.org'', ''roleName'':
+    [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5014-7209'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gliko, Olga'', ''email'': ''olgag@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-5014-7209'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kuo, Hsien-chi'', ''email'': ''hsienchik@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kuo, Hsien-chi'', ''email'': ''hsienchik@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Mann, Rusty'', ''email'': ''rustym@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-0226-2069'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mann, Rusty'', ''email'': ''rustym@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-0226-2069'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Jarsky, Tim'', ''email'': ''timj@alleninstitute.org'', ''roleName'':
+    [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4399-539X'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jarsky, Tim'', ''email'': ''timj@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-4399-539X'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
+    for Brian Science'', ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00dcv1019'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
+      for Brian Science'', ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00dcv1019'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

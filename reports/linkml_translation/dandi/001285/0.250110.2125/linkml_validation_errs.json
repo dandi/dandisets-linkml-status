@@ -1,0 +1,46 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:75a3ef06-87bd-4ed7-9be8-c10e978e5b83', 'name': 'DANDI publish', 'endDate': '2025-01-10T21:25:11.140424+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-01-10T21:25:11.140424+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a8726cee-0d8b-432c-9490-971f789bba17', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:75a3ef06-87bd-4ed7-9be8-c10e978e5b83', 'name': 'DANDI publish', 'endDate': '2025-01-10T21:25:11.140424+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-01-10T21:25:11.140424+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a8726cee-0d8b-432c-9490-971f789bba17', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yousefi, Ali', 'email': 'aliyousefi@uh.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0009-0006-8777-8262', 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yousefi, Ali', 'email': 'aliyousefi@uh.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0009-0006-8777-8262', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

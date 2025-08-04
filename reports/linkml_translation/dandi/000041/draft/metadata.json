@@ -1,0 +1,192 @@
+{
+  "id": "DANDI:000041/draft",
+  "url": "https://dandiarchive.org/dandiset/000041/draft",
+  "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements",
+      "contactPoint": {
+        "schemaKey": "ContactPoint"
+      }
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2025) Network Homeostasis and State Dynamics of Neocortical Sleep (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000041/draft",
+  "keywords": [
+    "Firing patterns",
+    "Sleep/awake states",
+    "Sleep stages",
+    "Homeostasis"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000041",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Watson, Brendon O.",
+      "email": "brendonw@umich.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-9940-4579",
+      "affiliation": [
+        {
+          "name": "New York University Langone Medical Center",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/005dvqh91"
+        },
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Levenstein, Daniel",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-5507-9145",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Greene, J. Palmer",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Gelinas, Jennifer N.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Buzs\u00e1ki, Gy\u00f6rgy",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-3100-4800",
+      "affiliation": [
+        {
+          "name": "New York University Langone Medical Center",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/005dvqh91"
+        },
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Baker, Cody",
+      "roleName": [
+        "dcite:DataCurator"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-0829-4790"
+    }
+  ],
+  "dateCreated": "2020-10-05T16:18:52.896000+00:00",
+  "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
+  "publishedBy": {
+    "id": "urn:uuid:4aeea851-78e6-4b02-a941-44324bc92225",
+    "name": "DANDI publish",
+    "endDate": "2025-06-24T04:19:33.987287+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-06-24T04:19:33.987287+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:1ab72d3c-4949-4a13-bf41-43eaac6ac4d6",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Brown rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 154863459017,
+    "numberOfFiles": 22,
+    "numberOfSubjects": 10,
+    "variableMeasured": [
+      "Units",
+      "LFP",
+      "ElectricalSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "signal filtering technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2025-06-24T04:19:33.987287+00:00",
+  "schemaVersion": "0.4.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0896627316300563",
+      "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "https://doi.org/10.1016/j.neuron.2016.03.036",
+      "repository": "Neuron",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000041/versions/draft/assets/"
+  ]
+}

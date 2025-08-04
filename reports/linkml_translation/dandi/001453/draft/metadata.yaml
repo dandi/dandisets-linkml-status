@@ -1,0 +1,92 @@
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 3823109128
+  numberOfFiles: 37
+  numberOfSubjects: 25
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_7955
+    name: Danio rerio - Zebra fish
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - BehavioralTimeSeries
+citation: Fouke, Kaitlyn (2025) Neural circuits underlying divergent visuomotor strategies
+  of zebrafish and Danionella cerebrum (Version draft) [Data set]. DANDI Archive.
+  https://dandiarchive.org/dandiset/001453/draft
+contributor:
+- affiliation: []
+  email: kaitlyn.fouke@duke.edu
+  includeInCitation: true
+  name: Fouke, Kaitlyn
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2025-05-18T14:33:37.060787+00:00'
+datePublished: '2025-05-18T19:50:10.255848+00:00'
+description: 'This dataset was used in "Neural circuits underlying divergent visuomotor
+  strategies of zebrafish and Danionella cerebrum" (Current Biology, 2025, https://doi.org/10.1016/j.cub.2025.04.027).
+
+
+  Many animals respond to sensory cues with species-specific coordinated movements.1,2
+  A universal visually guided behavior is the optomotor response (OMR),3,4,5,6 which
+  stabilizes the body by following optic flow induced by displacements in currents.7
+  While the brain-wide OMR circuits in zebrafish (Danio rerio) have been characterized,8,9,10,11,12
+  the homologous neural functions across teleost species with different ecological
+  niches, such as Danionella cerebrum,13,14,15 remain largely unexplored. Here, we
+  directly compare larval zebrafish and D. cerebrum to uncover the neural mechanisms
+  underlying the natural variation of visuomotor coordination. Closed-loop behavioral
+  tracking during visual stimulation revealed that D. cerebrum follow optic flow by
+  swimming continuously, punctuated with sharp directional turns, in contrast to the
+  burst-and-glide locomotion of zebrafish.16 Although D. cerebrum swim at higher average
+  speeds, they lack the direction-dependent velocity modulation observed in zebrafish.
+  Two-photon calcium imaging and tail tracking showed that both species exhibit direction-selective
+  encoding in putative homologous regions, with D. cerebrum containing more monocular
+  neurons. D. cerebrum sustain significantly longer directed swims across all stimuli
+  than zebrafish, with zebrafish reducing tail movement duration in response to oblique,
+  turn-inducing stimuli. While locomotion-associated neurons in D. cerebrum display
+  more prolonged activity than zebrafish, lateralized turn-associated neural activity
+  in the hindbrain suggests a shared neural circuit architecture that independently
+  controls movement vigor and direction. These findings highlight the diversity in
+  visuomotor strategies among teleost species with shared circuit motifs, establishing
+  a framework for unraveling the neural mechanisms driving continuous and discrete
+  locomotion.'
+id: DANDI:001453/draft
+identifier: DANDI:001453
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001453/versions/draft/assets/
+name: Neural circuits underlying divergent visuomotor strategies of zebrafish and
+  Danionella cerebrum
+publishedBy:
+  endDate: '2025-05-18T19:50:10.255848+00:00'
+  id: urn:uuid:5dade24c-f7aa-4d58-83ed-71a7079f72c7
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-05-18T19:50:10.255848+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:002891d0-880e-41c8-a63d-b0e40d0e0636
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+url: https://dandiarchive.org/dandiset/001453/draft
+version: draft

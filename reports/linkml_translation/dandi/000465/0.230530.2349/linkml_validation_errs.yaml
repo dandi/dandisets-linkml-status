@@ -1,0 +1,48 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:9d7498b5-0a49-44ce-8ad3-e8849bd61a37'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-05-30T23:49:47.503996+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-05-30T23:49:47.503996+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:3828bba8-a456-4a82-9430-c4245baff79c'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:9d7498b5-0a49-44ce-8ad3-e8849bd61a37'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-05-30T23:49:47.503996+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-05-30T23:49:47.503996+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:3828bba8-a456-4a82-9430-c4245baff79c'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Tchoe, Youngbin'', ''email'': ''ybtchoe@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Tchoe, Youngbin'', ''email'': ''ybtchoe@gmail.com'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,482 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''schemaKey'': ''GenericType''} is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''schemaKey'': ''GenericType''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Temmar, Hisham'', ''email'': ''htemmar@umich.edu'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-4464-4911'', ''affiliation'': [{''name'': ''University of Michigan'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Temmar, Hisham'', ''email'': ''htemmar@umich.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-4464-4911'', ''affiliation'': [{''name'': ''University of Michigan'',
+      ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Gill, Nina'', ''email'': ''nrgill@umich.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCurator'', ''dcite:Validation''], ''schemaKey'':
+    ''Person'', ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'':
+    ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gill, Nina'', ''email'': ''nrgill@umich.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCurator'', ''dcite:Validation''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'':
+      ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Wang, Yixuan'', ''email'': ''yxbwang@umich.edu'', ''roleName'':
+    [''dcite:DataCurator'', ''dcite:Methodology'', ''dcite:Validation'', ''dcite:Visualization'',
+    ''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University
+    of Michigan'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wang, Yixuan'', ''email'': ''yxbwang@umich.edu'', ''roleName'':
+      [''dcite:DataCurator'', ''dcite:Methodology'', ''dcite:Validation'', ''dcite:Visualization'',
+      ''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University
+      of Michigan'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Mellon, Nicholas B.'', ''email'': ''nbmellon@umich.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Methodology''],
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Michigan'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mellon, Nicholas B.'', ''email'': ''nbmellon@umich.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Methodology''],
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University of Michigan'',
+      ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Liu, Chang'', ''email'': ''eddyliu@umich.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Liu, Chang'', ''email'': ''eddyliu@umich.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cubillos, Luis Hernan'', ''email'': ''lhcubill@umich.edu'',
+    ''roleName'': [''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Methodology'',
+    ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9876-6204'',
+    ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cubillos, Luis Hernan'', ''email'': ''lhcubill@umich.edu'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Methodology'',
+      ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9876-6204'',
+      ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Parsons, Rio I.'', ''email'': ''riopar@umich.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0009-0000-3931-7492'', ''affiliation'': [{''name'': ''University of Michigan'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00jmfr291''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Parsons, Rio I.'', ''email'': ''riopar@umich.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0000-3931-7492'', ''affiliation'': [{''name'': ''University of Michigan'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00jmfr291''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Costello, Joseph T.'', ''email'': ''costellj@umich.edu'',
+    ''roleName'': [''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Methodology'',
+    ''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-7608-0885'', ''affiliation'': [{''name'': ''University of Michigan'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Costello, Joseph T.'', ''email'': ''costellj@umich.edu'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:DataManager'', ''dcite:Methodology'',
+      ''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-7608-0885'', ''affiliation'': [{''name'': ''University of Michigan'',
+      ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Ceradini, Matteo'', ''email'': ''mceradin@umich.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8062-4689'',
+    ''affiliation'': [{''name'': "Sant''Anna School of Advanced Studies", ''schemaKey'':
+    ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ceradini, Matteo'', ''email'': ''mceradin@umich.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-8062-4689'', ''affiliation'': [{''name'': "Sant''Anna School of
+      Advanced Studies", ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Kelberman, Madison M.'', ''email'': ''mkelb@umich.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1395-6792'',
+    ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/00jmfr291''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kelberman, Madison M.'', ''email'': ''mkelb@umich.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-1395-6792'', ''affiliation'': [{''name'': ''University of Michigan'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00jmfr291''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Mender, Matthew J.'', ''email'': ''mmender@umich.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University
+    of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00jmfr291''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mender, Matthew J.'', ''email'': ''mmender@umich.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Hite, Aren I.'', ''email'': ''arenhite@umich.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''University
+    of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00jmfr291''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hite, Aren I.'', ''email'': ''arenhite@umich.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Wallace, Dylan M.'', ''email'': ''dywallac@umich.edu'', ''roleName'':
+    [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-2770-3614'', ''affiliation'': [{''name'': ''University of Michigan'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wallace, Dylan M.'', ''email'': ''dywallac@umich.edu'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0003-2770-3614'', ''affiliation'': [{''name'': ''University
+      of Michigan'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Nason-Tomaszewski, Samuel R.'', ''roleName'': [''dcite:Author''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7127-0986'', ''affiliation'':
+    [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/13'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Nason-Tomaszewski, Samuel R.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7127-0986'', ''affiliation'':
+      [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Willsey, Matthew S.'', ''email'': ''mwillsey@umich.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/14'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 14
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Willsey, Matthew S.'', ''email'': ''mwillsey@umich.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Patil, Parag G.'', ''email'': ''pgpatil@umich.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2300-6136'',
+    ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/00jmfr291''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/15'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 15
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Patil, Parag G.'', ''email'': ''pgpatil@umich.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2300-6136'',
+      ''affiliation'': [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/00jmfr291''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''https://draeloslab.org/'', ''name'': ''Draelos, Anne W.'',
+    ''email'': ''adraelos@umich.edu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-9046-3193'', ''affiliation'': [{''name'':
+    ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00jmfr291''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/16'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 16
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://draeloslab.org/'', ''name'': ''Draelos, Anne W.'',
+      ''email'': ''adraelos@umich.edu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-9046-3193'', ''affiliation'': [{''name'':
+      ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Chestek, Cynthia A.'', ''email'': ''cchestek@umich.edu'',
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9671-7051'', ''affiliation'':
+    [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/17'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 17
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chestek, Cynthia A.'', ''email'': ''cchestek@umich.edu'',
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9671-7051'', ''affiliation'':
+      [{''name'': ''University of Michigan'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00jmfr291''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

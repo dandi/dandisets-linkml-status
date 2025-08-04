@@ -1,0 +1,115 @@
+{
+  "id": "DANDI:000064/0.221025.1735",
+  "doi": "10.48324/dandi.000064/0.221025.1735",
+  "url": "https://dandiarchive.org/dandiset/000064/0.221025.1735",
+  "name": "Simulation extension example",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.221025.1735",
+  "citation": "Raikov, Ivan; Milstein, Aaron; Soltesz, Ivan (2022) Simulation extension example (Version 0.221025.1735) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000064/0.221025.1735",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000064",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Raikov, Ivan",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Milstein, Aaron",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Soltesz, Ivan",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "NINDS",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "5U19NS104590",
+      "contactPoint": [],
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2021-04-06T18:52:24.402000+00:00",
+  "description": "This is data produced by the Soltesz Lab NeuroH5 software (https://github.com/iraikov/neuroh5). The data has been converted to NWB using the ndx-simulation-output extension (https://github.com/catalystneuro/ndx-simulation-output).",
+  "publishedBy": {
+    "id": "urn:uuid:90a259e4-310e-49c4-a73f-6b8505295307",
+    "name": "DANDI publish",
+    "endDate": "2022-10-25T17:35:07.605543+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2022-10-25T17:35:07.605543+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:81ce074d-ccf7-406d-a743-94b0e3b4c2ba",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 218366752,
+    "numberOfFiles": 1,
+    "numberOfSubjects": 1,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2022-10-25T17:35:07.605543+00:00",
+  "schemaVersion": "0.6.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://github.com/iraikov/neuroh5",
+      "name": "Neuroh5",
+      "relation": "dcite:IsDerivedFrom",
+      "schemaKey": "Resource",
+      "repository": "GitHub"
+    }
+  ],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000064/0.221025.1735/assets.yaml"
+  ]
+}

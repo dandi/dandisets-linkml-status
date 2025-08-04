@@ -1,0 +1,155 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:f62c82f7-e752-4e89-87db-d30d327a15dc'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-07-01T16:09:41.411542+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-07-01T16:09:41.411542+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:65d82cf0-d28e-476a-869d-cb75f225fb77'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:f62c82f7-e752-4e89-87db-d30d327a15dc'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-07-01T16:09:41.411542+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-07-01T16:09:41.411542+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:65d82cf0-d28e-476a-869d-cb75f225fb77'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Silkuniene, Giedre'', ''email'': ''giedre.silkuniene@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-8436-9718'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Silkuniene, Giedre'', ''email'': ''giedre.silkuniene@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-8436-9718'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Silkunas, Mantas'', ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-4568-9265'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Silkunas, Mantas'', ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-4568-9265'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Pakhomov, Andrei'', ''roleName'': [''dcite:ProjectLeader''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3816-3860'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pakhomov, Andrei'', ''roleName'': [''dcite:ProjectLeader''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3816-3860'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''1R21EY034258'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''1R21EY034258'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Semenov, Iurii'', ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-0302-1355''} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Semenov, Iurii'', ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-0302-1355''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Pakhomova, Olga'', ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-4950-4130''} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pakhomova, Olga'', ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-4950-4130''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,92 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:23f3761e-8c0e-452a-b4b8-c51047caf2a7', 'name': 'DANDI publish', 'endDate': '2022-01-03T21:19:03.905652+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-01-03T21:19:03.905652+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:c95ca03c-7591-46a5-9391-3913c8512076', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:23f3761e-8c0e-452a-b4b8-c51047caf2a7', 'name': 'DANDI publish', 'endDate': '2022-01-03T21:19:03.905652+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-01-03T21:19:03.905652+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:c95ca03c-7591-46a5-9391-3913c8512076', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Smith, Spencer', 'email': 'slabcloudcomp@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-2021-7034', 'affiliation': [{'name': 'University of California Santa Barbara', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02t274463'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Smith, Spencer', 'email': 'slabcloudcomp@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-2021-7034', 'affiliation': [{'name': 'University of California Santa Barbara', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02t274463'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'McGreal, Ryan', 'email': 'ryanpmcgreal@ucsb.edu', 'roleName': ['dcite:ProjectManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-5849-4312', 'affiliation': [{'name': 'University of California Santa Barbara', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02t274463'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'McGreal, Ryan', 'email': 'ryanpmcgreal@ucsb.edu', 'roleName': ['dcite:ProjectManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-5849-4312', 'affiliation': [{'name': 'University of California Santa Barbara', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02t274463'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Canzano, Joseph', 'email': 'jscanzano@ucsb.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-5371-4846', 'affiliation': [{'name': 'University of California Santa Barbara', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02t274463'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Canzano, Joseph', 'email': 'jscanzano@ucsb.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-5371-4846', 'affiliation': [{'name': 'University of California Santa Barbara', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02t274463'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

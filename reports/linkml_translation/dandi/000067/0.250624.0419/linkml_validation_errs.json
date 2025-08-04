@@ -1,0 +1,276 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:3593fb00-323b-444e-9be9-88ca8501ceb1', 'name': 'DANDI publish', 'endDate': '2025-06-24T04:19:36.627030+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-24T04:19:36.627030+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f47c0a92-be87-4f0c-a7fe-2a6f3324ccdd', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:3593fb00-323b-444e-9be9-88ca8501ceb1', 'name': 'DANDI publish', 'endDate': '2025-06-24T04:19:36.627030+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-24T04:19:36.627030+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f47c0a92-be87-4f0c-a7fe-2a6f3324ccdd', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Fujisawa, Shigeyoshi', 'email': 'shigeyoshi.fujisawa@riken.jp', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3963-4281', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fujisawa, Shigeyoshi', 'email': 'shigeyoshi.fujisawa@riken.jp', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-3963-4281', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Amarasingham, Asohan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0722-0538', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Amarasingham, Asohan', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0722-0538', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Harrison, Matthew', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3715-8357', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Harrison, Matthew', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3715-8357', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'NS34994, MH54671, MH064537', 'includeInCitation': False} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'NS34994, MH54671, MH064537', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.jsmf.org/', 'name': 'James S. McDonnell Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03dy4aq19', 'includeInCitation': False} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.jsmf.org/', 'name': 'James S. McDonnell Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03dy4aq19', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.nsf.gov', 'name': 'US National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'DMS-0240019', 'includeInCitation': False} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.nsf.gov', 'name': 'US National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'DMS-0240019', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://www.ueharazaidan.or.jp/', 'name': 'Uehara Memorial Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00gc20a07', 'includeInCitation': False} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.ueharazaidan.or.jp/', 'name': 'Uehara Memorial Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00gc20a07', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.naito-f.or.jp/en/', 'name': 'Naito Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/02s016q17', 'includeInCitation': False} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.naito-f.or.jp/en/', 'name': 'Naito Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/02s016q17', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://www.jsps.org/', 'name': 'Japan Society for the Promotion of Science', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/02m7axw05', 'includeInCitation': False} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.jsps.org/', 'name': 'Japan Society for the Promotion of Science', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/02m7axw05', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Baker, Cody', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790'} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Baker, Cody', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

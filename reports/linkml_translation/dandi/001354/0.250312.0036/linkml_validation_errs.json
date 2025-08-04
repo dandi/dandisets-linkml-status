@@ -1,0 +1,115 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:0e8459e8-63c3-4770-bf55-154527ec08c1', 'name': 'DANDI publish', 'endDate': '2025-03-12T00:36:29.554905+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-03-12T00:36:29.554905+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:853ca711-3d9a-494a-989b-60c6ace9e25f', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:0e8459e8-63c3-4770-bf55-154527ec08c1', 'name': 'DANDI publish', 'endDate': '2025-03-12T00:36:29.554905+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-03-12T00:36:29.554905+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:853ca711-3d9a-494a-989b-60c6ace9e25f', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Klein, Peter', 'email': 'kleinp@stanford.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Klein, Peter', 'email': 'kleinp@stanford.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1R01MH135934', 'includeInCitation': False} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1R01MH135934', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Phil and Penny Knight Initiative for Brain Resilience', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'KIG-104', 'includeInCitation': False} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Phil and Penny Knight Initiative for Brain Resilience', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'KIG-104', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Cancer Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'F32CA257159', 'includeInCitation': False} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Cancer Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'F32CA257159', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

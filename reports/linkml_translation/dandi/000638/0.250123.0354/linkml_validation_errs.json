@@ -1,0 +1,92 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:31c859cc-fe21-42d9-b8b7-ff0f9d3f3e63', 'name': 'DANDI publish', 'endDate': '2025-01-23T03:54:12.778614+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-01-23T03:54:12.778614+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:55a67009-b262-48eb-8325-5e6c19ef6e68', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:31c859cc-fe21-42d9-b8b7-ff0f9d3f3e63', 'name': 'DANDI publish', 'endDate': '2025-01-23T03:54:12.778614+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-01-23T03:54:12.778614+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:55a67009-b262-48eb-8325-5e6c19ef6e68', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yu Feng', 'email': 'susieyufeng@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectManager'], 'schemaKey': 'Organization', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yu Feng', 'email': 'susieyufeng@gmail.com', 'roleName': ['dcite:Author', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectManager'], 'schemaKey': 'Organization', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Zhe Dong', 'email': 'phil.zhe.dong@gmail.com', 'roleName': ['dcite:FormalAnalysis'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zhe Dong', 'email': 'phil.zhe.dong@gmail.com', 'roleName': ['dcite:FormalAnalysis'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tristan Shuman', 'email': 'tristan.shuman@mssm.edu', 'roleName': ['dcite:ContactPerson', 'dcite:FundingAcquisition'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tristan Shuman', 'email': 'tristan.shuman@mssm.edu', 'roleName': ['dcite:ContactPerson', 'dcite:FundingAcquisition'], 'schemaKey': 'Organization', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

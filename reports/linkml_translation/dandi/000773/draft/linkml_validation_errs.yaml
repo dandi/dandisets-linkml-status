@@ -1,0 +1,45 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''5 R01 NS 123899-02''} is not
+    of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''5 R01 NS 123899-02''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Hart, Taylor'', ''email'': ''harttdp@gmail.com'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-9692-8150'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Hart, Taylor'', ''email'': ''harttdp@gmail.com'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-9692-8150'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

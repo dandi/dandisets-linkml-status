@@ -1,0 +1,88 @@
+{
+  "id": "DANDI:001533/draft",
+  "url": "https://dandiarchive.org/dandiset/001533/draft",
+  "name": "IBL - Brain Wide Map",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Raiser, Georg (2025) IBL - Brain Wide Map (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001533/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001533",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Raiser, Georg",
+      "email": "grg2rsr@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-07-10T16:38:59.955109+00:00",
+  "description": "The International Brain lab (IBL) aims to understand the neural basis of decision-making in the mouse by gathering a whole-brain activity map composed of electrophysiological recordings pooled from multiple laboratories. We have systematically recorded from nearly all major brain areas with Neuropixels probes, using a grid system for unbiased sampling and replicating each recording site in at least two laboratories. These data have been used to construct a brain-wide map of activity at single-spike cellular resolution during a decision-making task. In addition to the map, this data set contains other information gathered during the task: sensory stimuli presented to the mouse; mouse decisions and response times; and mouse pose information from video recordings and DeepLabCut analysis.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 422941584596,
+    "numberOfFiles": 459,
+    "numberOfSubjects": 139,
+    "variableMeasured": [
+      "CompassDirection",
+      "Units",
+      "ProcessingModule",
+      "SpatialSeries",
+      "PupilTracking"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.10",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001533/versions/draft/assets/"
+  ]
+}

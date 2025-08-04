@@ -1,0 +1,125 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''DataBase'', ''schemaKey'': ''GenericType''} is not of type
+    ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''DataBase'', ''schemaKey'': ''GenericType''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context:
+  - '''www.inb.unam.mx'' does not match ''^(?i:http|https)://[^\\s]+$'''
+  - '{''url'': ''www.inb.unam.mx'', ''email'': ''pradol@unam.mx'', ''schemaKey'':
+    ''ContactPoint''} is not of type ''null'''
+  instance_index: 0
+  instantiates: Dandiset
+  message: '''www.inb.unam.mx'' does not match ''^(?i:http|https)://[^\\s]+$'' in
+    /access/0/contactPoint/url'
+  severity: ERROR
+  source:
+    absolute_path:
+    - access
+    - 0
+    - contactPoint
+    - url
+    absolute_schema_path:
+    - properties
+    - access
+    - items
+    - properties
+    - contactPoint
+    - anyOf
+    - 0
+    - properties
+    - url
+    - pattern
+    message: '''www.inb.unam.mx'' does not match ''^(?i:http|https)://[^\\s]+$'''
+    validator: pattern
+    validator_value: ^(?i:http|https)://[^\s]+$
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''www.inb.unam.mx'', ''name'': ''Merchant, Hugo'', ''email'':
+    ''hugomerchant@unam.mx'', ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-3488-9501'', ''affiliation'': [], ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''www.inb.unam.mx'', ''name'': ''Merchant, Hugo'', ''email'':
+      ''hugomerchant@unam.mx'', ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-3488-9501'', ''affiliation'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context:
+  - '''www.inb.unam.mx'' does not match ''^(?i:http|https)://[^\\s]+$'''
+  - '{''url'': ''www.inb.unam.mx'', ''email'': ''pradol@unam.mx'', ''schemaKey'':
+    ''ContactPoint''} is not of type ''null'''
+  instance_index: 0
+  instantiates: Dandiset
+  message: '''www.inb.unam.mx'' does not match ''^(?i:http|https)://[^\\s]+$'' in
+    /ethicsApproval/0/contactPoint/url'
+  severity: ERROR
+  source:
+    absolute_path:
+    - ethicsApproval
+    - 0
+    - contactPoint
+    - url
+    absolute_schema_path:
+    - properties
+    - ethicsApproval
+    - items
+    - properties
+    - contactPoint
+    - anyOf
+    - 0
+    - properties
+    - url
+    - pattern
+    message: '''www.inb.unam.mx'' does not match ''^(?i:http|https)://[^\\s]+$'''
+    validator: pattern
+    validator_value: ^(?i:http|https)://[^\s]+$
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '''spdx:CC-BY-NC-4.0'' is not one of [''spdx:CC0-1.0'', ''spdx:CC-BY-4.0'']
+    in /license/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - license
+    - 0
+    absolute_schema_path:
+    - properties
+    - license
+    - items
+    - enum
+    message: '''spdx:CC-BY-NC-4.0'' is not one of [''spdx:CC0-1.0'', ''spdx:CC-BY-4.0'']'
+    validator: enum
+    validator_value:
+    - spdx:CC0-1.0
+    - spdx:CC-BY-4.0
+  type: jsonschema validation

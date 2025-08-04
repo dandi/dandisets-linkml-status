@@ -1,0 +1,141 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 352083757265
+  numberOfFiles: 12
+  numberOfSubjects: 8
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - SpatialSeries
+  - ProcessingModule
+  - PlaneSegmentation
+  - OpticalChannel
+  - TwoPhotonSeries
+  - ImagingPlane
+citation: Pfaffinger, Paul; Hanson, Elizabeth; Pirhayatifard, Delaram; Reimer, Jacob;
+  Hu, Ming; Navlakha, Saket; Arenkiel, Benjamin (2024) Mesoscale Two-Photon Calcium
+  Imaging of Population Level Odor Responses from the Mouse Olfactory Bulb (Version
+  draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001170/draft
+contributor:
+- awardNumber: 1 UF1 NS 111692-01
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- includeInCitation: true
+  name: Pfaffinger, Paul
+  schemaKey: Person
+- email: mosse@ohsu.edu
+  identifier: 0000-0002-5150-8926
+  includeInCitation: true
+  name: Hanson, Elizabeth
+  schemaKey: Person
+- email: dp43@rice.edu
+  includeInCitation: true
+  name: Pirhayatifard, Delaram
+  schemaKey: Person
+- email: reimer@bcm.edu
+  identifier: 0000-0003-4364-8846
+  includeInCitation: true
+  name: Reimer, Jacob
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+  url: https://www.bcm.edu/research/labs/jacob-reimer
+- email: ming.hu@bcm.edu
+  includeInCitation: true
+  name: Hu, Ming
+  schemaKey: Person
+- email: ankitp@bcm.edu
+  identifier: 0000-0001-9678-496X
+  includeInCitation: false
+  name: 'Patel, Ankit '
+  schemaKey: Person
+  url: https://ankitlab.co/
+- email: navlakha@cshl.edu
+  identifier: 0000-0002-5505-9718
+  includeInCitation: true
+  name: Navlakha, Saket
+  schemaKey: Person
+  url: https://facultyprofiles.cshl.edu/saket.navlakha
+- email: arenkiel@bcm.edu
+  identifier: 0000-0001-9047-2420
+  includeInCitation: true
+  name: Arenkiel, Benjamin
+  schemaKey: Person
+dateCreated: '2024-08-08T08:21:13.128356+00:00'
+description: This study explores odor-evoked activity representation in the olfactory
+  bulb (OB) and how odor responses enable odor discrimination. Contrary to some previously
+  cited theories that suggest a sparse representation, we hypothesize a more dense
+  representation during odor presentation. A key question is how odors are reliably
+  encoded in OB activity patterns, and how these patterns contribute to early odor
+  processing. To address this problem, we recorded population level odor responses
+  from the mouse OB with mesoscale two photon calcium imaging and applied machine
+  learning techniques to suggest a model in which sparse coding is largely sufficient
+  for olfaction, but redundant information may make odor coding more robust across
+  different variables.
+ethicsApproval: []
+id: DANDI:001170/draft
+identifier: DANDI:001170
+keywords:
+- odor-evoked activity
+- olfactory bulb
+- two photon calcium imaging
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001170/versions/draft/assets/
+name: Mesoscale Two-Photon Calcium Imaging of Population Level Odor Responses from
+  the Mouse Olfactory Bulb
+protocol: []
+relatedResource:
+- identifier: https://doi.org/10.1101/2023.04.24.538157
+  name: Conserved neural dynamics and computations across species in olfaction
+  relation: dcite:IsDescribedBy
+  repository: bioRxiv
+  resourceType: dcite:Preprint
+  schemaKey: Resource
+  url: https://doi.org/10.1101/2023.04.24.538157
+- name: Dense Odor Coding in the Mouse Olfactory Bulb
+  relation: dcite:IsDescribedBy
+  resourceType: dcite:ConferencePaper
+  schemaKey: Resource
+  url: https://icml-compbio.github.io/2023/papers/WCBICML2023_paper122.pdf
+- identifier: https://github.com/catalystneuro/reimer-arenkiel-lab-to-nwb
+  name: reimer-arenkiel-lab-to-nwb
+  relation: dcite:IsCompiledBy
+  repository: GitHub
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/catalystneuro/reimer-arenkiel-lab-to-nwb
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.8
+studyTarget: []
+url: https://dandiarchive.org/dandiset/001170/draft
+version: draft
+wasGeneratedBy: []

@@ -1,0 +1,83 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+acknowledgement: 'This research was funded by Aligning Science Across Parkinson''s
+  [ASAP-020572] through the Michael J. Fox Foundation for Parkinson''s Research (MJFF)
+  and by the National Institute of Neurological Disorders and Stroke (grant#: R01NS121371).
+  This work used Expanse at San Diego Supercomputing Center through allocation IBN140002
+  from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support
+  (ACCESS) program, which is supported by National Science Foundation grants #2138259,
+  #2138286, #2138307, #2137603, and #2138296.'
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 7376447744
+  numberOfFiles: 17
+  numberOfSubjects: 1
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+citation: Doherty, Donald (2025) Simulated mouse primary motor cortex activity during
+  control and decreased pyramidal tract neuron excitability in the parkinsonian condition
+  (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001444/draft
+contributor:
+- affiliation:
+  - name: 'SUNY Downstate Health Sciences University '
+    schemaKey: Affiliation
+  email: donald.doherty@neurosim.downstate.edu
+  identifier: 0000-0002-4973-6225
+  includeInCitation: true
+  name: Doherty, Donald
+  roleName:
+  - dcite:ContactPerson
+  - dcite:Author
+  - dcite:Researcher
+  schemaKey: Person
+- awardNumber: ASAP-020572
+  name: Aligning Science Across Parkinson's
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://parkinsonsroadmap.org/
+dateCreated: '2025-05-11T04:10:22.203945+00:00'
+description: Each simulation produced 4 files and we collected 4 sets of simulations
+  for a total of 16 files. Each simulation included a control and parkinsonian condition
+  in the rest (quiet wakefulness) and in the activated (movement) state. Parkinsonian
+  M1 simulations were different from controls in that their PT5B neurons had reduced
+  excitability as found in cortical slices of 6-OHDA treated mice.Each MWB file includes
+  a local field potential trace, spike train data from all 10,073 neurons, and membrane
+  potential traces from 400 of the layer 5B pyramidal tract (PT5B) neurons. Simulations
+  were 4.3 seconds in duration. Full information available in our paper https://doi.org/10.1101/2024.05.23.595566
+ethicsApproval: []
+id: DANDI:001444/draft
+identifier: DANDI:001444
+keywords:
+- mouse
+- primary motor cortex
+- Parkinson's disease
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001444/versions/draft/assets/
+name: Simulated mouse primary motor cortex activity during control and decreased pyramidal
+  tract neuron excitability in the parkinsonian condition
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+url: https://dandiarchive.org/dandiset/001444/draft
+version: draft
+wasGeneratedBy: []

@@ -1,0 +1,91 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yin, Jiaze', 'email': 'jiazeyin@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yin, Jiaze', 'email': 'jiazeyin@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "'relation' is a required property in /relatedResource/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "'relation' is a required property",
+      "absolute_path": [
+        "relatedResource",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "relatedResource",
+        "items",
+        "required"
+      ],
+      "validator": "required",
+      "validator_value": [
+        "relation"
+      ]
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{} is not valid under any of the given schemas in /wasGeneratedBy/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [
+      "'name' is a required property",
+      "'name' is a required property",
+      "'name' is a required property",
+      "'name' is a required property"
+    ],
+    "source": {
+      "message": "{} is not valid under any of the given schemas",
+      "absolute_path": [
+        "wasGeneratedBy",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "wasGeneratedBy",
+        "items",
+        "anyOf"
+      ],
+      "validator": "anyOf",
+      "validator_value": [
+        {
+          "$ref": "#/$defs/Activity"
+        },
+        {
+          "$ref": "#/$defs/Project"
+        },
+        {
+          "$ref": "#/$defs/PublishActivity"
+        },
+        {
+          "$ref": "#/$defs/Session"
+        }
+      ]
+    }
+  }
+]

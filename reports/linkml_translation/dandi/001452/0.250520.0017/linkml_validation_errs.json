@@ -1,0 +1,69 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:dc7b7f41-e1b8-42fc-98d0-e1cc6fb68b80', 'name': 'DANDI publish', 'endDate': '2025-05-20T00:17:06.035394+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-05-20T00:17:06.035394+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:0a2deada-ab63-4748-bef5-22c767eda4c0', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:dc7b7f41-e1b8-42fc-98d0-e1cc6fb68b80', 'name': 'DANDI publish', 'endDate': '2025-05-20T00:17:06.035394+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-05-20T00:17:06.035394+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:0a2deada-ab63-4748-bef5-22c767eda4c0', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Whole-cell electrophysiology recordings from murine acute brain slices', 'schemaKey': 'GenericType'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Whole-cell electrophysiology recordings from murine acute brain slices', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Albarran, Eddy', 'email': 'ea3040@columbia.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Albarran, Eddy', 'email': 'ea3040@columbia.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

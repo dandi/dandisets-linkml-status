@@ -1,0 +1,322 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:19088d33-db8c-40f1-8af5-e554b0a852ad', 'name': 'DANDI publish', 'endDate': '2024-08-22T17:59:27.040376+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-08-22T17:59:27.040376+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:fa2ce8cb-86e0-48cb-9c9c-593a6bd3d874', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:19088d33-db8c-40f1-8af5-e554b0a852ad', 'name': 'DANDI publish', 'endDate': '2024-08-22T17:59:27.040376+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-08-22T17:59:27.040376+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:fa2ce8cb-86e0-48cb-9c9c-593a6bd3d874', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mu, Yu', 'email': 'muy@janelia.hhmi.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-9297-4854', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mu, Yu', 'email': 'muy@janelia.hhmi.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0001-9297-4854', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Bennett, Davis V.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5056-407X', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}, {'name': 'University of Chicago', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/024mw5h28'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bennett, Davis V.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5056-407X', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}, {'name': 'University of Chicago', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/024mw5h28'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Rubinov, Mikail', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0002-4787-7075', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}, {'name': 'Vanderbilt University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02vm5rt34'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Rubinov, Mikail', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0002-4787-7075', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}, {'name': 'Vanderbilt University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02vm5rt34'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lim, Jing-Xuan', 'roleName': ['dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0002-5983-9164', 'affiliation': [{'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Lim, Jing-Xuan', 'roleName': ['dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0000-0002-5983-9164', 'affiliation': [{'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yang, Chao-Tsung', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yang, Chao-Tsung', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tanimoto, Masashi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7653-1081', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tanimoto, Masashi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7653-1081', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mensh, Brett D. ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2288-054X', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mensh, Brett D. ', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2288-054X', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Looger, Loren L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7531-1757', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Looger, Loren L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7531-1757', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Narayan, Sujatha', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3741-1319', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Narayan, Sujatha', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3741-1319', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.janelia.org/lab/ahrens-lab', 'name': 'Ahrens, Misha B.', 'email': 'ahrensm@janelia.hhmi.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:ProjectManager', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-3457-4462', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.janelia.org/lab/ahrens-lab', 'name': 'Ahrens, Misha B.', 'email': 'ahrensm@janelia.hhmi.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:ProjectManager', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-3457-4462', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'http://www.hhmi.org/', 'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'awardNumber': '325171', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'http://www.hhmi.org/', 'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'awardNumber': '325171', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.simonsfoundation.org', 'name': 'Simons Collaboration on the Global Brain Awards', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cmst727', 'awardNumber': '542943SPI', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.simonsfoundation.org', 'name': 'Simons Collaboration on the Global Brain Awards', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cmst727', 'awardNumber': '542943SPI', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.catalystneuro.com/team/', 'name': 'Baker, Cody', 'email': 'cody.c.baker.phd@gmail.com', 'roleName': ['dcite:Software', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string' in /contributor/12",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.catalystneuro.com/team/', 'name': 'Baker, Cody', 'email': 'cody.c.baker.phd@gmail.com', 'roleName': ['dcite:Software', 'dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

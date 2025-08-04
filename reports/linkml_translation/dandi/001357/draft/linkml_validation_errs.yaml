@@ -1,0 +1,244 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Kim, Taekjun'', ''email'': ''taekjunkim1223@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kim, Taekjun'', ''email'': ''taekjunkim1223@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Namima, Tomoyuki'', ''email'': ''t.namima@gmail.com'', ''roleName'':
+    [''dcite:Author'', ''dcite:Researcher'', ''dcite:DataCollector'', ''dcite:ContactPerson''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Namima, Tomoyuki'', ''email'': ''t.namima@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:Researcher'', ''dcite:DataCollector'',
+      ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Pasupathy, Anitha'', ''email'': ''pasupat@uw.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:ProjectLeader'', ''dcite:ContactPerson''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pasupathy, Anitha'', ''email'': ''pasupat@uw.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:ProjectLeader'', ''dcite:ContactPerson''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Kempkes, Erin'', ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kempkes, Erin'', ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Zamarashkina, Polina'', ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zamarashkina, Polina'', ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Owen, Natalia'', ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Owen, Natalia'', ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Eye Institute'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': '''', ''awardNumber'': ''R01
+    EY018839, R01 EY029601, P30 EY01730'', ''includeInCitation'': False} is not of
+    type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Eye Institute'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': '''', ''awardNumber'': ''R01
+      EY018839, R01 EY029601, P30 EY01730'', ''includeInCitation'': False} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Neurological Disorders and Stroke'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+    ''U01 NS131810-01'', ''includeInCitation'': False} is not of type ''string'' in
+    /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Neurological Disorders and Stroke'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+      ''U01 NS131810-01'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute OF Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''P51 OD010425'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute OF Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''P51 OD010425'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Japan Society for the Promotion of Science'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'': ''KAKENHI
+    Grant 23K06785 '', ''includeInCitation'': False} is not of type ''string'' in
+    /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Japan Society for the Promotion of Science'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'': ''KAKENHI
+      Grant 23K06785 '', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Japan Science and Technology'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''ERATO JPMJER1801, CREST JPMJCR18A5'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Japan Science and Technology'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''ERATO JPMJER1801, CREST
+      JPMJCR18A5'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

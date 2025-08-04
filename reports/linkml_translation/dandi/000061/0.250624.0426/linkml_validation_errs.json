@@ -1,0 +1,115 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:7fb002f3-9097-409e-b939-c14a6c1a2568', 'name': 'DANDI publish', 'endDate': '2025-06-24T04:26:50.942773+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-24T04:26:50.942773+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:d2ad54dc-f3db-4e34-bfc4-7728700b6587', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:7fb002f3-9097-409e-b939-c14a6c1a2568', 'name': 'DANDI publish', 'endDate': '2025-06-24T04:26:50.942773+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-24T04:26:50.942773+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:d2ad54dc-f3db-4e34-bfc4-7728700b6587', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Girardeau, Gabrielle', 'email': 'gabrielle.girardeau@inserm.fr', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-5265-9697', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Girardeau, Gabrielle', 'email': 'gabrielle.girardeau@inserm.fr', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-5265-9697', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Inema, Ingrid', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Inema, Ingrid', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Buzs\u00e1ki, Gy\u00f6rgy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Baker, Cody', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790'} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Baker, Cody', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0002-0829-4790'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

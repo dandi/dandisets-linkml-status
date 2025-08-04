@@ -1,0 +1,115 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:a18a14d1-da45-4910-9f6f-af6a21f75115', 'name': 'DANDI publish', 'endDate': '2022-01-26T19:07:57.118562+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-01-26T19:07:57.118562+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:15d75e18-28ee-4543-88a8-9f207d6e3dae', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:a18a14d1-da45-4910-9f6f-af6a21f75115', 'name': 'DANDI publish', 'endDate': '2022-01-26T19:07:57.118562+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2022-01-26T19:07:57.118562+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:15d75e18-28ee-4543-88a8-9f207d6e3dae', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Druckmann, Shaul', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-0068-3377', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'roleName': [], 'schemaKey': 'Affiliation', 'contactPoint': [], 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Druckmann, Shaul', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-0068-3377', 'affiliation': [{'name': 'Janelia Research Campus, Howard Hughes Medical Institute', 'roleName': [], 'schemaKey': 'Affiliation', 'contactPoint': [], 'includeInCitation': False}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

@@ -1,0 +1,108 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:a96e9c36-e14b-4ef6-9bc7-49758a0198c6'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-08-04T15:38:54.425185+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-08-04T15:38:54.425185+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:ef7f849f-82b7-466f-9d5b-51cfcbaf290f'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:a96e9c36-e14b-4ef6-9bc7-49758a0198c6'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-08-04T15:38:54.425185+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-08-04T15:38:54.425185+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:ef7f849f-82b7-466f-9d5b-51cfcbaf290f'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Symanski, Claire'', ''schemaKey'': ''Person''} is not of
+    type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Symanski, Claire'', ''schemaKey'': ''Person''} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Shin, Justin'', ''email'': ''jdshin@brandeis.edu'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Shin, Justin'', ''email'': ''jdshin@brandeis.edu'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+    ''awardNumber'': ''R01MH120228''} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+      ''awardNumber'': ''R01MH120228''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+    ''awardNumber'': ''R01MH112661''} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+      ''awardNumber'': ''R01MH112661''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

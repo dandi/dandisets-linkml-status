@@ -1,0 +1,48 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:346a6139-405b-4531-95ee-f05568badcc9'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-11-09T23:57:05.553053+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-11-09T23:57:05.553053+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:caa51057-e96e-4333-a2f5-3cbc20d44858'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:346a6139-405b-4531-95ee-f05568badcc9'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-11-09T23:57:05.553053+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-11-09T23:57:05.553053+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:caa51057-e96e-4333-a2f5-3cbc20d44858'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Ishii, Kentaro'', ''email'': ''ken1223@uw.edu'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ishii, Kentaro'', ''email'': ''ken1223@uw.edu'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

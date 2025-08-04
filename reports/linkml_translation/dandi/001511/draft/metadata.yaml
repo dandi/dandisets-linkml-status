@@ -1,0 +1,76 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 9352284
+  numberOfFiles: 1
+  numberOfSubjects: 1
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - Units
+citation: Caslin, Asha (2025) Optically tagged oxytocin neuron recordings from female
+  mouse PVN (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001511/draft
+contributor:
+- affiliation: []
+  email: ac7878@nyu.edu
+  includeInCitation: true
+  name: Caslin, Asha
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2025-06-19T19:45:52.295854+00:00'
+datePublished: '2025-06-20T16:10:20.375713+00:00'
+description: 'Female mice (either Ai80F;Oxt-Flp or Oxt-Cre with Cre-dependent ChR2
+  virus injection) were implanted with silicon probes from either Cambridge Neurotechnology
+  or Neuronexus. Mice were recorded during pup retrieval. '
+ethicsApproval: []
+id: DANDI:001511/draft
+identifier: DANDI:001511
+keywords:
+- maternal
+- oxytocin
+- PVN
+license:
+- spdx:CC0-1.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001511/versions/draft/assets/
+name: Optically tagged oxytocin neuron recordings from female mouse PVN
+publishedBy:
+  endDate: '2025-06-20T16:10:20.375713+00:00'
+  id: urn:uuid:f488a865-fda3-498c-9e95-767bf3ebac92
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-20T16:10:20.375713+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:7cd32d6a-480f-464f-8558-9d33fd2a7a8d
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+studyTarget:
+- 'What are the temporal dynamics of oxytocin neurons in the PVN '
+url: https://dandiarchive.org/dandiset/001511/draft
+version: draft
+wasGeneratedBy: []

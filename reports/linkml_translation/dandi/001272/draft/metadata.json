@@ -1,0 +1,127 @@
+{
+  "id": "DANDI:001272/draft",
+  "url": "https://dandiarchive.org/dandiset/001272/draft",
+  "name": "The Use of Di8-ANEPPS to Evaluate Neuronal Sensitivity to Unmodulated Sine Waves",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Silkuniene, Giedre; Kim, Vitalii; Semenov, Iurii; Pakhomov, Andrei (2025) The Use of Di8-ANEPPS to Evaluate Neuronal Sensitivity to Unmodulated Sine Waves (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001272/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001272",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Silkuniene, Giedre",
+      "email": "giedre.silkuniene@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8436-9718",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Kim, Vitalii",
+      "schemaKey": "Person",
+      "identifier": "0000-0003-0699-5582",
+      "includeInCitation": true
+    },
+    {
+      "name": "Semenov, Iurii",
+      "schemaKey": "Person",
+      "identifier": "0000-0002-0302-1355",
+      "includeInCitation": true
+    },
+    {
+      "name": "Pakhomov, Andrei",
+      "roleName": [
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3816-3860",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "5R21EY034803",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2024-12-04T14:35:22.871630+00:00",
+  "description": "Experiments were conducted using the potentiometric dye Di8-ANEPPS, which detects voltage through an electrochromic mechanism, differing from the photo-induced electron transfer mechanism. The goal was to ensure that action potentials recorded with FluoVolt (published in other DANDIsets) were not influenced by the dye when applying intense sinewaves. Control experiments were performed using Di8-ANEPPS, chosen for its distinct molecular structure and voltage detection method. This study was partially supported by the NIH Brain Initiative (NEI R21EY034803).",
+  "publishedBy": {
+    "id": "urn:uuid:f3b131f4-b5d1-4d1e-bf25-4c9d1227ff95",
+    "name": "DANDI publish",
+    "endDate": "2025-07-01T16:22:46.849532+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-07-01T16:22:46.849532+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:d00d3948-edf6-4eb4-8627-dc7465984a28",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 44171195,
+    "numberOfFiles": 65,
+    "numberOfSubjects": 3,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2025-07-01T16:22:46.849532+00:00",
+  "schemaVersion": "0.6.8",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [
+    {
+      "name": "Next Gen Temporal Interference Stimulation Non-Invasive Neuromodulation",
+      "schemaKey": "Project",
+      "identifier": "5R21EY034803"
+    }
+  ],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1016/j.xcrp.2025.102660",
+      "name": "Excitation and polarization of isolated neurons by high-frequency sine waves for temporal interference stimulation",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "identifier": "doi.org/10.1016/j.xcrp.2025.102660",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001272/versions/draft/assets/"
+  ]
+}

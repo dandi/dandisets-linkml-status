@@ -1,0 +1,338 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:0e8ad053-3732-44f0-a0ce-0c74006871d3'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-07-10T07:58:08.013433+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-07-10T07:58:08.013433+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:fcdb5507-ae7b-4008-a80d-8d090f31a636'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:0e8ad053-3732-44f0-a0ce-0c74006871d3'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-07-10T07:58:08.013433+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-07-10T07:58:08.013433+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:fcdb5507-ae7b-4008-a80d-8d090f31a636'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Park, Pojeong'', ''email'': ''pojeong_park@fas.harvard.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5574-6104'',
+    ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
+    /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Park, Pojeong'', ''email'': ''pojeong_park@fas.harvard.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-5574-6104'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wong-Campos, David'', ''email'': ''jwongcampos@gmail.com'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wong-Campos, David'', ''email'': ''jwongcampos@gmail.com'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Itkis, Daniel G.'', ''email'': ''ditkis@g.harvard.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-8948-2260'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Itkis, Daniel G.'', ''email'': ''ditkis@g.harvard.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0003-8948-2260'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Lee, Byung Hun'', ''email'': ''byunghun_lee@fas.harvard.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0001-4846'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lee, Byung Hun'', ''email'': ''byunghun_lee@fas.harvard.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-0001-4846'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Qi, Yitong'', ''email'': ''yitongqi@fas.harvard.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Qi, Yitong'', ''email'': ''yitongqi@fas.harvard.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Davis, Hunter C.'', ''email'': ''huntercoledavis@gmail.com'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Davis, Hunter C.'', ''email'': ''huntercoledavis@gmail.com'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Antin, Benjamin'', ''email'': ''ba2617@cumc.columbia.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3361-985X'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Antin, Benjamin'', ''email'': ''ba2617@cumc.columbia.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3361-985X'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Pasarkar, Amol'', ''email'': ''app2139@columbia.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': False} is
+    not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pasarkar, Amol'', ''email'': ''app2139@columbia.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Grimm, Jonathan B.'', ''email'': ''grimmj@janelia.hhmi.org'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0331-4200'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Grimm, Jonathan B.'', ''email'': ''grimmj@janelia.hhmi.org'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-0331-4200'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Plutkis, Sarah E.'', ''email'': ''plutkiss@janelia.hhmi.org'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-1822-0466'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Plutkis, Sarah E.'', ''email'': ''plutkiss@janelia.hhmi.org'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0003-1822-0466'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Holland, Katie L.'', ''email'': ''Katie.Holland@ucsf.edu'',
+    ''schemaKey'': ''Person'', ''identifier'': ''0009-0007-1183-195X'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Holland, Katie L.'', ''email'': ''Katie.Holland@ucsf.edu'',
+      ''schemaKey'': ''Person'', ''identifier'': ''0009-0007-1183-195X'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Paninski, Liam'', ''email'': ''lmp2107@columbia.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0276-7032'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Paninski, Liam'', ''email'': ''lmp2107@columbia.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-0276-7032'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Lavis, Luke D.'', ''email'': ''lavisl@janelia.hhmi.org'',
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0789-6343'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lavis, Luke D.'', ''email'': ''lavisl@janelia.hhmi.org'',
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-0789-6343'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Cohen, Adam E.'', ''email'': ''cohen@chemistry.harvard.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-8699-2404'', ''includeInCitation'': True} is not of
+    type ''string'' in /contributor/13'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen, Adam E.'', ''email'': ''cohen@chemistry.harvard.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-8699-2404'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

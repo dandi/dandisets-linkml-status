@@ -1,0 +1,96 @@
+{
+  "id": "DANDI:001205/0.250602.0251",
+  "doi": "10.48324/dandi.001205/0.250602.0251",
+  "url": "https://dandiarchive.org/dandiset/001205/0.250602.0251",
+  "name": "Adaptation to visual sparsity enhances responses to isolated stimuli",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.250602.0251",
+  "citation": "Gou, Tong (2025) Adaptation to visual sparsity enhances responses to isolated stimuli (Version 0.250602.0251) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001205/0.250602.0251",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001205",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Gou, Tong",
+      "email": "tong.gou@yale.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-10-14T19:11:27.553855+00:00",
+  "description": "Associated Reference Publication: Sensory systems adapt their response properties to the statistics of their inputs. For instance, visual systems adapt to low-order statistics like mean and variance to encode stimuli efficiently or to facilitate specific downstream computations. However, it remains unclear how other statistical features affect sensory adaptation. Here, we explore how Drosophila\u2019s visual motion circuits adapt to stimulus sparsity, a measure of the signal\u2019s intermittency not captured by low-order statistics alone. Early visual neurons in both ON and OFF pathways alter their responses dramatically with stimulus sparsity, responding positively to both light and dark sparse stimuli but linearly to dense stimuli. These changes extend to downstream ON and OFF direction-selective neurons, which are activated by sparse stimuli of both polarities, but respond with opposite signs to light and dark regions of dense stimuli. Thus, sparse stimuli activate both ON and OFF pathways, recruiting a larger fraction of the circuit and potentially enhancing the salience of isolated stimuli. Overall, our results reveal visual response properties that increase the fraction of the circuit responding to sparse, isolated stimuli.",
+  "publishedBy": {
+    "id": "urn:uuid:307ce0ed-de96-48a8-8de5-f3ee241b718d",
+    "name": "DANDI publish",
+    "endDate": "2025-06-02T02:51:02.847775+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-06-02T02:51:02.847775+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:bc0b2e07-f421-428a-a871-5c683abdedac",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Drosophila melanogaster - Fruit fly",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 138946618210,
+    "numberOfFiles": 282,
+    "numberOfSubjects": 282,
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "OpticalChannel",
+      "ImagingPlane"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2025-06-02T02:51:02.847775+00:00",
+  "schemaVersion": "0.6.8",
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/001205/0.250602.0251/assets.yaml"
+  ]
+}

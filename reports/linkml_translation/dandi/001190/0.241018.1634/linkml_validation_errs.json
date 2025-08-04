@@ -1,0 +1,69 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:de43493a-14e4-46d0-8553-2d37a517f216', 'name': 'DANDI publish', 'endDate': '2024-10-18T16:34:10.491088+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-10-18T16:34:10.491088+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f1c046d2-d344-4daf-a3cd-e81ae4f96747', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:de43493a-14e4-46d0-8553-2d37a517f216', 'name': 'DANDI publish', 'endDate': '2024-10-18T16:34:10.491088+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-10-18T16:34:10.491088+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f1c046d2-d344-4daf-a3cd-e81ae4f96747', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Fitting, Sylvia ', 'email': 'sfitting@email.unc.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Author', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:Sponsor'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of North Carolina at Chapel Hill', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fitting, Sylvia ', 'email': 'sfitting@email.unc.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Author', 'dcite:Investigation', 'dcite:ProjectLeader', 'dcite:Sponsor'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of North Carolina at Chapel Hill', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yadav-Samudrala, Barkha', 'email': 'yadavb@email.unc.edu', 'roleName': ['dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectLeader', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Researcher', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-2967-2017', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yadav-Samudrala, Barkha', 'email': 'yadavb@email.unc.edu', 'roleName': ['dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Producer', 'dcite:ProjectLeader', 'dcite:ProjectManager', 'dcite:ProjectMember', 'dcite:ProjectAdministration', 'dcite:Researcher', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-2967-2017', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

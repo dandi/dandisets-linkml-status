@@ -1,0 +1,116 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Wu, Yu'', ''email'': ''yw94@rice.edu'', ''roleName'': [''dcite:Conceptualization'',
+    ''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5519-5437'', ''affiliation'':
+    [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wu, Yu'', ''email'': ''yw94@rice.edu'', ''roleName'': [''dcite:Conceptualization'',
+      ''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5519-5437'', ''affiliation'':
+      [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Temple, Benjamin'', ''email'': ''btemple@salk.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+    ''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''Salk Institute'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Temple, Benjamin'', ''email'': ''btemple@salk.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
+      ''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Salk Institute'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Zhang, Jiaao'', ''email'': ''jz103@rice.edu'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'',
+    ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-9105-5903'',
+    ''affiliation'': [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhang, Jiaao'', ''email'': ''jz103@rice.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'',
+      ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-9105-5903'',
+      ''affiliation'': [{''name'': ''Rice University'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=U01NS131086&arg_ProgOfficeCode=137'',
+    ''name'': ''NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization''} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=U01NS131086&arg_ProgOfficeCode=137'',
+      ''name'': ''NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

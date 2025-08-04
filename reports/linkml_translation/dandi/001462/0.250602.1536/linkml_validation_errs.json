@@ -1,0 +1,46 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:751aebf8-b199-49d4-b40c-1295755bb796', 'name': 'DANDI publish', 'endDate': '2025-06-02T15:36:05.941246+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-02T15:36:05.941246+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:8c8ab2c2-eb0e-4b4b-954c-6263b31c586c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:751aebf8-b199-49d4-b40c-1295755bb796', 'name': 'DANDI publish', 'endDate': '2025-06-02T15:36:05.941246+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-02T15:36:05.941246+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:8c8ab2c2-eb0e-4b4b-954c-6263b31c586c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kitamura, Takashi', 'email': 'Takashi.Kitamura@UTSouthwestern.edu', 'roleName': ['dcite:Supervision', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'awardNumber': '1R01NS138075-01'} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kitamura, Takashi', 'email': 'Takashi.Kitamura@UTSouthwestern.edu', 'roleName': ['dcite:Supervision', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'awardNumber': '1R01NS138075-01'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

@@ -1,0 +1,120 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 317011048
+  numberOfFiles: 229
+  numberOfSubjects: 13
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - Units
+citation: Gao, Huan; Ramachandran, Sandhya; Yu, Kai; He, Bin (2025) Neural Pathways
+  Modulation in the Anesthetized Rat Elicited by Trials of Transcranial Focused Ultrasound
+  Stimulation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001199/draft
+contributor:
+- affiliation: []
+  email: huangao@andrew.cmu.edu
+  includeInCitation: true
+  name: Gao, Huan
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- includeInCitation: true
+  name: Ramachandran, Sandhya
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Yu, Kai
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: He, Bin
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: false
+  name: Carnegie Mellon University
+  roleName:
+  - dcite:Affiliation
+  schemaKey: Organization
+- includeInCitation: false
+  name: NIH NS124564
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- includeInCitation: false
+  name: NIH EB029354
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- includeInCitation: false
+  name: NIH NS13106
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2024-09-30T20:56:27.377399+00:00'
+datePublished: '2025-07-13T11:01:54.514128+00:00'
+description: In these recordings, we recorded neuronal activities from cortical-thalamocortical
+  (CTC) pathway, including the somatosensory cortex (S1) and posteromedial complex
+  (POm) of the thalamus responded to different Pulse Repetition Frequencies (PRFs
+  ) or Pulse Durations (PDs) and Pressure Levels of transcranial ultrasound focused
+  stimulation (tFUS) using a 128-element transducer to stimulate either at S1or PoM.  Recordings
+  for S1 are taken using 64-channel Cambridge or Neuronexus electrodes and recordings
+  for POm are taken using 32-channel Nueronexus electrodes. Ultrasound stimulation
+  is delivered every 2.5 seconds and each recording has 500 trials. The Ultrasound
+  Duration (UD) and pressure level used in each recording is 67ms. The PRFs, PDs and
+  pressure levels for each recording can be found in the identifier field. For example,
+  in BH596_3000_200_67_10, the PRF is 3000Hz, PD is 200us and pressure level is 10V.  Detailed
+  description about this dataset can be found in the following publication. Please
+  cite the paper if you would use a portion of the dataset. Gao, H., Ramachandran,
+  S., Yu, K., & He, B. (2025). Transcranial Focused Ultrasound Modulates Feedforward
+  and Feedback Cortico-Thalamo-Cortical Pathways by Selectively Activating Excitatory
+  Neurons. The Journal of Neuroscience, 45(23), e2218242025. https://doi.org/10.1523/JNEUROSCI.2218-24.2025
+ethicsApproval: []
+id: DANDI:001199/draft
+identifier: DANDI:001199
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001199/versions/draft/assets/
+name: Neural Pathways Modulation in the Anesthetized Rat Elicited by Trials of Transcranial
+  Focused Ultrasound Stimulation
+publishedBy:
+  endDate: '2025-07-13T11:01:54.514128+00:00'
+  id: urn:uuid:b303afcf-c236-4851-b606-a5956bbe46b1
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-07-13T11:01:54.514128+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:fd23dbcf-913a-46af-b562-4b019a7eb658
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.8
+url: https://dandiarchive.org/dandiset/001199/draft
+version: draft
+wasGeneratedBy: []

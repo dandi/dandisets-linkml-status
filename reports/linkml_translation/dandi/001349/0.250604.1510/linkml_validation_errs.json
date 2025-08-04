@@ -1,0 +1,46 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:35749fb2-cf72-4c7e-a1c2-a55258ea3f5c', 'name': 'DANDI publish', 'endDate': '2025-06-04T15:10:26.635924+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-04T15:10:26.635924+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:7d243f90-18c0-461b-885d-d7b36ef0bae2', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:35749fb2-cf72-4c7e-a1c2-a55258ea3f5c', 'name': 'DANDI publish', 'endDate': '2025-06-04T15:10:26.635924+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-06-04T15:10:26.635924+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:7d243f90-18c0-461b-885d-d7b36ef0bae2', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Huang, Jui-Yen', 'email': 'juiyhuan@iu.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Huang, Jui-Yen', 'email': 'juiyhuan@iu.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

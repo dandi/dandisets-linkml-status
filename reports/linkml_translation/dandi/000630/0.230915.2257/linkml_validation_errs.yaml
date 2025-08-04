@@ -1,0 +1,194 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:f86b18c7-b5dd-4bf5-b18e-113c26263d20'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-09-15T22:57:37.467321+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-09-15T22:57:37.467321+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:393c2897-46d4-43d8-82d5-dec03b33322c'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:f86b18c7-b5dd-4bf5-b18e-113c26263d20'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-09-15T22:57:37.467321+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-09-15T22:57:37.467321+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:393c2897-46d4-43d8-82d5-dec03b33322c'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Chartrand, Thomas'', ''email'': ''tom.chartrand@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-7093-8681'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chartrand, Thomas'', ''email'': ''tom.chartrand@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-7093-8681'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-3210-5638'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3210-5638'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Dalley, Rachel'', ''email'': ''racheld@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-7461-7845'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Dalley, Rachel'', ''email'': ''racheld@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-7461-7845'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Lein, Ed'', ''email'': ''edl@alleninstitute.org'', ''roleName'':
+    [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9012-6552'',
+    ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
+    /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lein, Ed'', ''email'': ''edl@alleninstitute.org'', ''roleName'':
+      [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9012-6552'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://www.nimh.nih.gov/'', ''name'': ''National Institute
+    of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''U01MH114812'',
+    ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.nimh.nih.gov/'', ''name'': ''National Institute
+      of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''U01MH114812'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
+    for Brain Science'', ''roleName'': [], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/00dcv1019'', ''awardNumber'': ''UM1MH130981'', ''contactPoint'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
+      for Brain Science'', ''roleName'': [], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/00dcv1019'', ''awardNumber'': ''UM1MH130981'', ''contactPoint'':
+      [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kalmbach, Brian'', ''email'': ''briank@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-3136-8097'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kalmbach, Brian'', ''email'': ''briank@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-3136-8097'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,75 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'test', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'test', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "'identifier' is a required property in /ethicsApproval/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "'identifier' is a required property",
+      "absolute_path": [
+        "ethicsApproval",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "ethicsApproval",
+        "items",
+        "required"
+      ],
+      "validator": "required",
+      "validator_value": [
+        "identifier"
+      ]
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "'relation' is a required property in /relatedResource/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "'relation' is a required property",
+      "absolute_path": [
+        "relatedResource",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "relatedResource",
+        "items",
+        "required"
+      ],
+      "validator": "required",
+      "validator_value": [
+        "relation"
+      ]
+    }
+  }
+]

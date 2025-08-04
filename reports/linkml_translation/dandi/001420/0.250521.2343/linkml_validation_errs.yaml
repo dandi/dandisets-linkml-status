@@ -1,0 +1,118 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:a7fe0d50-a2e6-4789-a9ba-682acb7dbf23'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-05-21T23:43:25.487563+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-05-21T23:43:25.487563+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:22b83b1e-dba3-4246-8e0c-2ff9e9d360f5'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:a7fe0d50-a2e6-4789-a9ba-682acb7dbf23'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-05-21T23:43:25.487563+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-05-21T23:43:25.487563+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:22b83b1e-dba3-4246-8e0c-2ff9e9d360f5'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''1 RF1 NS 128873-01''} is not
+    of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''1 RF1 NS 128873-01''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kato, Hiroyuki'', ''email'': ''kato@email.unc.edu'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5748-3221'',
+    ''affiliation'': [{''name'': ''University of North Carolina at Chapel Hill'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kato, Hiroyuki'', ''email'': ''kato@email.unc.edu'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5748-3221'',
+      ''affiliation'': [{''name'': ''University of North Carolina at Chapel Hill'',
+      ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institute of Neurological Disorders and Stroke '',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+    ''RF1NS128873''} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Neurological Disorders and Stroke
+      '', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+      ''RF1NS128873''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institute on Deafness and Other Communication Disorders'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+    ''R01DC017516''} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute on Deafness and Other Communication
+      Disorders'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''awardNumber'': ''R01DC017516''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

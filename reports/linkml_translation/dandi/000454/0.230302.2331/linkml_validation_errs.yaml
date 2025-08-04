@@ -1,0 +1,214 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:c5b0d82b-e823-4044-86bd-fc596384be61'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2023-03-02T23:31:53.735293+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2023-03-02T23:31:53.735293+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:2287b0ae-2955-472d-b285-189a0377ed92'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:c5b0d82b-e823-4044-86bd-fc596384be61'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2023-03-02T23:31:53.735293+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2023-03-02T23:31:53.735293+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:2287b0ae-2955-472d-b285-189a0377ed92'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Klienfeld, David'', ''email'':
+    ''dk@physics.ucsd.edu'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Klienfeld, David'', ''email'':
+      ''dk@physics.ucsd.edu'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
+      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Yao, Pantong'', ''email'':
+    ''p1yao@health.ucsd.edu'', ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'',
+    ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
+    /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Yao, Pantong'', ''email'':
+      ''p1yao@health.ucsd.edu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Liu, Rui'', ''email'': ''rul087@physics.ucsd.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Liu, Rui'', ''email'': ''rul087@physics.ucsd.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Broginni, Thomas'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://ucsd.edu/'', ''name'': ''Broginni, Thomas'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://www.bu.edu/'', ''name'': ''Thunemann, Martin'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.bu.edu/'', ''name'': ''Thunemann, Martin'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://ucsd.edu/'', ''name'': ''University of California,
+    San Diego'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/0168r3w48'', ''awardNumber'': ''U24 EB028942'',
+    ''contactPoint'': [], ''includeInCitation'': True} is not of type ''string'' in
+    /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://ucsd.edu/'', ''name'': ''University of California,
+      San Diego'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/0168r3w48'', ''awardNumber'': ''U24 EB028942'',
+      ''contactPoint'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://www.bu.edu/'', ''name'': ''Boston University'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/05qwgg493'',
+    ''awardNumber'': ''U19 NS123717'', ''contactPoint'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.bu.edu/'', ''name'': ''Boston University'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/05qwgg493'',
+      ''awardNumber'': ''U19 NS123717'', ''contactPoint'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''http://ucsd.edu/'', ''name'': ''University of California,
+    San Diego'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/0168r3w48'', ''awardNumber'': ''U19 NS107466'',
+    ''contactPoint'': [], ''includeInCitation'': True} is not of type ''string'' in
+    /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://ucsd.edu/'', ''name'': ''University of California,
+      San Diego'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/0168r3w48'', ''awardNumber'': ''U19 NS107466'',
+      ''contactPoint'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

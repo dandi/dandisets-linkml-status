@@ -1,0 +1,299 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:a1c7eda7-729a-4ca0-86ed-d5a925d5d0e2', 'name': 'DANDI publish', 'endDate': '2025-07-05T09:47:54.642381+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-07-05T09:47:54.642381+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:739c66e8-4f6d-462e-875a-2eefc1abcb54', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:a1c7eda7-729a-4ca0-86ed-d5a925d5d0e2', 'name': 'DANDI publish', 'endDate': '2025-07-05T09:47:54.642381+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-07-05T09:47:54.642381+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:739c66e8-4f6d-462e-875a-2eefc1abcb54', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kondo, Masashi', 'email': 'm.kondo.neuro@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Investigation'], 'schemaKey': 'Person', 'identifier': '0000-0001-8818-8316', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kondo, Masashi', 'email': 'm.kondo.neuro@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Investigation'], 'schemaKey': 'Person', 'identifier': '0000-0001-8818-8316', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sehara, Keisuke', 'email': 'seharak@m.u-tokyo.ac.jp', 'roleName': ['dcite:DataCurator', 'dcite:FormalAnalysis', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-4368-8143', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sehara, Keisuke', 'email': 'seharak@m.u-tokyo.ac.jp', 'roleName': ['dcite:DataCurator', 'dcite:FormalAnalysis', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0003-4368-8143', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Harukuni, Rie', 'roleName': ['dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Harukuni, Rie', 'roleName': ['dcite:DataCollector'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Aoki, Ryo', 'roleName': ['dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:Validation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Brain Science Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Aoki, Ryo', 'roleName': ['dcite:FormalAnalysis', 'dcite:Methodology', 'dcite:Validation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Brain Science Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sugimoto, Shoya', 'roleName': ['dcite:Methodology', 'dcite:Validation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Brain Science Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sugimoto, Shoya', 'roleName': ['dcite:Methodology', 'dcite:Validation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Brain Science Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tanaka, Yasuhiro R', 'roleName': ['dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'identifier': '0009-0000-4779-4934', 'affiliation': [{'name': 'Brain Science Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}, {'name': 'Graduate School of Brain Sciences', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tanaka, Yasuhiro R', 'roleName': ['dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'identifier': '0009-0000-4779-4934', 'affiliation': [{'name': 'Brain Science Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}, {'name': 'Graduate School of Brain Sciences', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05f8a4p63'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Matsuzaki, Masanori', 'email': 'mzakim@m.u-tokyo.ac.jp', 'roleName': ['dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-3872-4322', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}, {'name': 'Brain Functional Dynamics Collaboration Laboratory', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04j1n1c04'}, {'name': 'Department of Biological Sciences, Graduate School of Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}, {'name': 'International Research Center for Neurointelligence (WPI-IRCN)', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Matsuzaki, Masanori', 'email': 'mzakim@m.u-tokyo.ac.jp', 'roleName': ['dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-3872-4322', 'affiliation': [{'name': 'Department of Physiology, Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}, {'name': 'Brain Functional Dynamics Collaboration Laboratory', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04j1n1c04'}, {'name': 'Department of Biological Sciences, Graduate School of Science', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}, {'name': 'International Research Center for Neurointelligence (WPI-IRCN)', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Nakae, Ken', 'email': 'ken.nakae@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Supervision', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4183-1532', 'affiliation': [{'name': 'Exploratory Research Center on Life and Living Systems', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/055n47h92'}, {'name': 'Department of Human and Artificial Intelligent Systems', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00msqp585'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Nakae, Ken', 'email': 'ken.nakae@gmail.com', 'roleName': ['dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:Supervision', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4183-1532', 'affiliation': [{'name': 'Exploratory Research Center on Life and Living Systems', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/055n47h92'}, {'name': 'Department of Human and Artificial Intelligent Systems', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00msqp585'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'JSPS KAKENHI', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00hhkn466', 'awardNumber': 'JP22H05163, JP22H05160, JP22H05154, JP22H05162, JP23K20309'} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'JSPS KAKENHI', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00hhkn466', 'awardNumber': 'JP22H05163, JP22H05160, JP22H05154, JP22H05162, JP23K20309'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'AMED', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/004rtk039', 'awardNumber': 'JP19dm0207088, JP24wm0625404, JP24wm0625001, JP24wm0625113'} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'AMED', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/004rtk039', 'awardNumber': 'JP19dm0207088, JP24wm0625404, JP24wm0625001, JP24wm0625113'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'JST', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00097mb19', 'awardNumber': 'JPMJMS2294'} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'JST', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00097mb19', 'awardNumber': 'JPMJMS2294'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'ExCELLS', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/005t7z309', 'awardNumber': 'Cooperative Study Program no. 19-102'} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'ExCELLS', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/005t7z309', 'awardNumber': 'Cooperative Study Program no. 19-102'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

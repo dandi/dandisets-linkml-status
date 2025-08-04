@@ -1,0 +1,164 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:2bec0798-d6b8-49ab-a3d2-1ed6bc3b3268'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-04-02T21:18:56.957752+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-04-02T21:18:56.957752+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:feefc56d-ef63-403a-9421-9057d9efb5cc'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:2bec0798-d6b8-49ab-a3d2-1ed6bc3b3268'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-04-02T21:18:56.957752+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-04-02T21:18:56.957752+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:feefc56d-ef63-403a-9421-9057d9efb5cc'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Suzuki, Ryoga'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+    ''dcite:FormalAnalysis'', ''dcite:Investigation'', ''dcite:ProjectMember'', ''dcite:Researcher'',
+    ''dcite:Software''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Nagoya
+    City University'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Suzuki, Ryoga'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+      ''dcite:FormalAnalysis'', ''dcite:Investigation'', ''dcite:ProjectMember'',
+      ''dcite:Researcher'', ''dcite:Software''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''Nagoya City University'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://github.com/WenChentao'', ''name'': ''Wen, Chentao'',
+    ''email'': ''chentao.wen@riken.jp'', ''roleName'': [''dcite:Author'', ''dcite:Methodology'',
+    ''dcite:Researcher'', ''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-8609-476X'', ''affiliation'': [{''name'': ''RIKEN Center for Biosystems
+    Dynamics Research'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://github.com/WenChentao'', ''name'': ''Wen, Chentao'',
+      ''email'': ''chentao.wen@riken.jp'', ''roleName'': [''dcite:Author'', ''dcite:Methodology'',
+      ''dcite:Researcher'', ''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-8609-476X'', ''affiliation'': [{''name'': ''RIKEN Center for Biosystems
+      Dynamics Research'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sprague, Daniel'', ''email'': ''Daniel.Sprague@ucsf.edu'',
+    ''roleName'': [''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0009-0001-7773-2280'', ''affiliation'': [{''name'': ''UCSF Department of Neurology'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sprague, Daniel'', ''email'': ''Daniel.Sprague@ucsf.edu'',
+      ''roleName'': [''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0001-7773-2280'', ''affiliation'': [{''name'': ''UCSF Department of Neurology'',
+      ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://www.bdr.riken.jp/en/research/labs/onami-s/index.html'',
+    ''name'': ''Onami, Shuichi'', ''email'': ''sonami@riken.jp'', ''roleName'': [''dcite:Author'',
+    ''dcite:Methodology'', ''dcite:Software'', ''dcite:Supervision''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-8255-1724'', ''affiliation'': [{''name'':
+    ''RIKEN Center for Biosystems Dynamics Research'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.bdr.riken.jp/en/research/labs/onami-s/index.html'',
+      ''name'': ''Onami, Shuichi'', ''email'': ''sonami@riken.jp'', ''roleName'':
+      [''dcite:Author'', ''dcite:Methodology'', ''dcite:Software'', ''dcite:Supervision''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-8255-1724'', ''affiliation'':
+      [{''name'': ''RIKEN Center for Biosystems Dynamics Research'', ''schemaKey'':
+      ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kimura, Koutarou D'', ''email'': ''kokimura@nsc.nagoya-cu.ac.jp'',
+    ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'',
+    ''dcite:FundingAcquisition'', ''dcite:Methodology'', ''dcite:ProjectLeader'',
+    ''dcite:Supervision'', ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-3359-1578'', ''affiliation'': [{''name'': ''Nagoya City University'',
+    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kimura, Koutarou D'', ''email'': ''kokimura@nsc.nagoya-cu.ac.jp'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'',
+      ''dcite:FundingAcquisition'', ''dcite:Methodology'', ''dcite:ProjectLeader'',
+      ''dcite:Supervision'', ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3359-1578'', ''affiliation'': [{''name'': ''Nagoya City University'',
+      ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

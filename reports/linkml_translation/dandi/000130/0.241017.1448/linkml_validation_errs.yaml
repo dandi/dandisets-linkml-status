@@ -1,0 +1,120 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:41ab9455-8412-42e7-8672-7e0b8a7d3f1d'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-10-17T14:48:17.698432+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-10-17T14:48:17.698432+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:0bbe9d1e-9c06-4065-9f8a-f5243cd40e51'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:41ab9455-8412-42e7-8672-7e0b8a7d3f1d'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-10-17T14:48:17.698432+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-10-17T14:48:17.698432+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:0bbe9d1e-9c06-4065-9f8a-f5243cd40e51'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Frontal cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''UBERON:0001870''} is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Frontal cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''UBERON:0001870''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Pei, Felix'', ''email'': ''felp8484@gmail.com'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pei, Felix'', ''email'': ''felp8484@gmail.com'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Maintainer''], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Sohn, Hansem'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8593-7473'', ''affiliation'':
+    [{''name'': ''Massachusetts Institute of Technology'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/042nb2s44''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Sohn, Hansem'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8593-7473'', ''affiliation'':
+      [{''name'': ''Massachusetts Institute of Technology'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/042nb2s44''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Jazayeri, Mehrdad'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-9764-6961'', ''affiliation'': [{''name'':
+    ''Massachusetts Institute of Technology'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/042nb2s44''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jazayeri, Mehrdad'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9764-6961'', ''affiliation'':
+      [{''name'': ''Massachusetts Institute of Technology'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/042nb2s44''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

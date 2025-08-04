@@ -1,0 +1,105 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:30518aa9-d7d7-49df-b99e-b9eef47459c7'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-06-24T04:26:53.259210+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-06-24T04:26:53.259210+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:3c93107b-18de-4a82-882a-1093c9e22714'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:30518aa9-d7d7-49df-b99e-b9eef47459c7'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-06-24T04:26:53.259210+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-06-24T04:26:53.259210+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:3c93107b-18de-4a82-882a-1093c9e22714'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Grosmark, Andres D.'', ''email'': ''grosmark@uchc.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-7185-3946'', ''affiliation'': [{''name'': ''New York
+    University Langone Medical Center'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/005dvqh91''}, {''name'': ''New York University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Grosmark, Andres D.'', ''email'': ''grosmark@uchc.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-7185-3946'', ''affiliation'': [{''name'': ''New
+      York University Langone Medical Center'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/005dvqh91''}, {''name'': ''New York University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+    'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York
+    University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier':
+    'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation',
+    'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+    of type 'string' in /contributor/1"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+      'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New
+      York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier':
+      'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation',
+      'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+      of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-0829-4790''} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-0829-4790''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

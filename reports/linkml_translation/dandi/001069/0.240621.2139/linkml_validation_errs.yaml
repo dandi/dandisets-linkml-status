@@ -1,0 +1,53 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:6b0e30f9-a61a-4a64-a479-2f04ad96ef5f'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2024-06-21T21:39:45.609593+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2024-06-21T21:39:45.609593+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:acdf5f31-bd0a-40e8-b00c-84e95600791b'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:6b0e30f9-a61a-4a64-a479-2f04ad96ef5f'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2024-06-21T21:39:45.609593+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2024-06-21T21:39:45.609593+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:acdf5f31-bd0a-40e8-b00c-84e95600791b'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Devergnas, Annaelle'', ''email'': ''adeverg@emory.edu'',
+    ''roleName'': [''dcite:DataCollector'', ''dcite:Author'', ''dcite:ProjectLeader'',
+    ''dcite:Conceptualization'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''affiliation'': [{''name'': ''Emory Primate Center'', ''schemaKey'': ''Affiliation''}],
+    ''awardNumber'': '''', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Devergnas, Annaelle'', ''email'': ''adeverg@emory.edu'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:Author'', ''dcite:ProjectLeader'',
+      ''dcite:Conceptualization'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''affiliation'': [{''name'': ''Emory Primate Center'', ''schemaKey'': ''Affiliation''}],
+      ''awardNumber'': '''', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

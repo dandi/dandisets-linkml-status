@@ -1,0 +1,136 @@
+{
+  "id": "DANDI:001284/0.250701.1610",
+  "doi": "10.48324/dandi.001284/0.250701.1610",
+  "url": "https://dandiarchive.org/dandiset/001284/0.250701.1610",
+  "name": "NG-CANCAN Remote Targeting Electroporation: Focused Cell Electroporation and Ablation in a Pseudo-3D Model",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.250701.1610",
+  "citation": "Silkuniene, Giedre; Silkunas, Mantas; Pakhomov, Andrei (2025) NG-CANCAN Remote Targeting Electroporation: Focused Cell Electroporation and Ablation in a Pseudo-3D Model (Version 0.250701.1610) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001284/0.250701.1610",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001284",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Silkuniene, Giedre",
+      "email": "giedre.silkuniene@gmail.com",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8436-9718",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Silkunas, Mantas",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4568-9265",
+      "includeInCitation": true
+    },
+    {
+      "name": "Pakhomova, Olga ",
+      "schemaKey": "Person",
+      "identifier": "0000-0003-4950-4130"
+    },
+    {
+      "name": "Semenov, Iurii",
+      "schemaKey": "Person",
+      "identifier": "0000-0002-0302-1355"
+    },
+    {
+      "name": "Pakhomov, Andrei",
+      "roleName": [
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-3816-3860",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1R21EY034258",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2025-01-06T18:03:10.569816+00:00",
+  "description": "Experiments were conducted using a four-electrode array with an inter-electrode spacing of 10 mm. A pseudo-3D model was created by elevating the electrode array 0 mm, 1 mm, or 2 mm above the monolayer. Each pulse was 600 ns in duration, and the protocol consisted of nine packets of pulses delivered at 0.2 MHz, repeated twice at 1 Hz. Cell monolayer integrity was assessed with Hoechst staining, and membrane permeability was evaluated using YoPro-1. After 2 hours, cells were stained with propidium iodide to assess cell death. This work was partially supported by NIH grant 1R21EY034258.",
+  "publishedBy": {
+    "id": "urn:uuid:3e542e54-0cac-4a4a-8984-4e28f366a75f",
+    "name": "DANDI publish",
+    "endDate": "2025-07-01T16:10:12.250203+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-07-01T16:10:12.250203+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:6b970052-e443-4c2f-9a11-bf1feb408af3",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 36377439788,
+    "numberOfFiles": 84,
+    "numberOfSubjects": 35,
+    "variableMeasured": [],
+    "measurementTechnique": []
+  },
+  "datePublished": "2025-07-01T16:10:12.250203+00:00",
+  "schemaVersion": "0.6.8",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [
+    {
+      "name": "Targeted Neuromodulation by Nanosecond Pulsed Electric Fields",
+      "schemaKey": "Project",
+      "identifier": "NIH 1R21EY034258"
+    }
+  ],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1016/j.bioelechem.2025.109016",
+      "name": "MHz compression of pulse packets facilitates remote focusing of electroporation",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "identifier": "doi.org/10.1016/j.bioelechem.2025.109016",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/001284/0.250701.1610/assets.yaml"
+  ]
+}

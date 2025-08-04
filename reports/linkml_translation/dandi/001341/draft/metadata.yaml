@@ -1,0 +1,88 @@
+about:
+- schemaKey: GenericType
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 693328344
+  numberOfFiles: 2
+  numberOfSubjects: 2
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+citation: Armstrong, Alex; Vlasov, Yurii (2025) Barrel cortex electrophysiology during
+  tactile VR whisker-guided navigation (Version draft) [Data set]. DANDI Archive.
+  https://dandiarchive.org/dandiset/001341/draft
+contributor:
+- affiliation: []
+  email: alexga2@illinois.edu
+  includeInCitation: true
+  name: Armstrong, Alex
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- email: yvlasov@illinois.edu
+  includeInCitation: true
+  name: Vlasov, Yurii
+  roleName:
+  - dcite:ProjectLeader
+  schemaKey: Person
+dateCreated: '2025-02-21T16:55:21.578649+00:00'
+description: Electrophysiology in the C2 barrel column of wS1 in mice during continuous
+  tactile VR navigation using only the C2 whiskers. Mice are head-fixed on a suspended
+  ball, with two walls placed either side of the mouse. The lateral movement of these
+  walls is coupled in a closed loop real time system to the trajectory of the mouse
+  so that when the mouse moves to the left, the walls move in from the left. This
+  causes them to orient themselves in the middle of the virtual corridor. Mice are
+  presented with turns to the left (contralateral stimulation to recording site) and
+  right (ipsilateral to recording site) in the virtual environment in a completely
+  unrewarded form of a 2AFC task. Trial structure consists of a 100cm closed loop
+  baseline straight running trial, before an open loop 2 second turn to either the
+  left or right. Mouse trajectories (forward and lateral distance and speed) calculated
+  from ball tracking cameras using custom LabVIEW program.
+ethicsApproval:
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: '20138'
+  schemaKey: EthicsApproval
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: '23128'
+  schemaKey: EthicsApproval
+id: DANDI:001341/draft
+identifier: DANDI:001341
+keywords:
+- 'barrel cortex; S1; behavior; decision making; VR '
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001341/versions/draft/assets/
+name: Barrel cortex electrophysiology during tactile VR whisker-guided navigation
+protocol: []
+relatedResource:
+- name: Neural correlates of perceptual decision making in primary somatosensory cortex
+  relation: dcite:IsPublishedIn
+  resourceType: dcite:Preprint
+  schemaKey: Resource
+  url: https://www.biorxiv.org/content/10.1101/2025.03.29.646003v1
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+studyTarget: []
+url: https://dandiarchive.org/dandiset/001341/draft
+version: draft
+wasGeneratedBy: []

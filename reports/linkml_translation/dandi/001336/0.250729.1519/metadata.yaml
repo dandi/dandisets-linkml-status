@@ -1,0 +1,124 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+acknowledgement: We acknowledge Dr. Brett Collar for assistance with wire bonding
+  and Dr. Ashlee Liao for discussions. We also thank Soo Jin Choi and Zhaoyu Liu for
+  their discussions in developing the code used for 3D spatial mapping. This publication
+  was developed under Assistance Agreement No RD83950501, which was awarded by the
+  U.S. Environmental Protection Agency to Drs. Smirnova and Gracias. It has not been
+  formally reviewed by the EPA. EPA does not endorse any products or commercial services
+  mentioned in this publication. Dowlette-Mary Alam El Din was supported by the National
+  Institutes of Health (T32 ES007141) and the International Foundation for Ethical
+  Research Graduate Fellowship. The authors also acknowledge funding from the Johns
+  Hopkins University SURPASS Program and the National Science Foundation (NSF) EFMA-2318093
+  and CBET-2348680. The views expressed in this document are solely those of the authors
+  and do not necessarily reflect those of the funding agencies.
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 34260214888
+  numberOfFiles: 31
+  numberOfSubjects: 3
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9606
+    name: Homo sapiens - Human
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectricalSeries
+  - ElectrodeGroup
+  - Units
+citation: Johnson, Erik; Acha, Chris (2025) Neuromodulation in neural organoids with
+  shell MEAs (Version 0.250729.1519) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001336/0.250729.1519
+contributor:
+- affiliation: []
+  email: ejohns24@gmail.com
+  includeInCitation: true
+  name: Johnson, Erik
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- email: cacha1@jhu.edu
+  includeInCitation: true
+  name: Acha, Chris
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:DataManager
+  - dcite:FormalAnalysis
+  - dcite:Maintainer
+  - dcite:Methodology
+  - dcite:Producer
+  - dcite:Researcher
+  schemaKey: Person
+dateCreated: '2025-02-14T21:58:04.437029+00:00'
+datePublished: '2025-07-29T15:19:12.619289+00:00'
+description: "Neural organoids (NOs) have emerged as important tissue engineering
+  models for brain sciences and biocomputing. Establishing reliable relationships
+  between stimulation and recording traces of electrical activity is essential to
+  monitor the functionality of NOs, especially as it relates to realizing biocomputing
+  paradigms such as reinforcement learning or stimulus discrimination. While researchers
+  have demonstrated neuromodulation in NOs, they have primarily used 2D microelectrode
+  arrays (MEAs) with limited access to the entire 3D contour of the NOs. Here, we
+  report neuromodulation using tiny mimics of macroscale EEG caps or shell MEAs. Specifically,
+  we observe that stimulating current within a specific range (20 to 30 \xB5A) induced
+  a statistically significant increase in neuron firing rate when comparing the activity
+  five seconds before and after stimulation. We observed neuromodulatory behavior
+  using both three- and 16-electrode shells and could generate 3D spatiotemporal maps
+  of neuromodulatory activity around the surface of the NO. Our studies demonstrate
+  a methodology for investigating 3D spatiotemporal neuromodulation in organoids of
+  broad relevance to biomedical engineering and biocomputing. \nThis dataset includes
+  recordings from 3 and 16-channel Shell MEAs from neural organoids, including baselines
+  and in response to stimulation. "
+doi: 10.48324/dandi.001336/0.250729.1519
+ethicsApproval: []
+id: DANDI:001336/0.250729.1519
+identifier: DANDI:001336
+keywords:
+- neural organoid
+- microelectrode array
+- local field potentials
+- single units
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001336/0.250729.1519/assets.yaml
+name: Neuromodulation in neural organoids with shell MEAs
+protocol: []
+publishedBy:
+  endDate: '2025-07-29T15:19:12.619289+00:00'
+  id: urn:uuid:e03611af-7661-4981-83d9-0ff1a05bfc4a
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-07-29T15:19:12.619289+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:8179e8c4-216e-4afa-bca1-33333817e132
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+studyTarget:
+- Development of novel electrodes for in vitro systems.
+url: https://dandiarchive.org/dandiset/001336/0.250729.1519
+version: 0.250729.1519
+wasGeneratedBy: []

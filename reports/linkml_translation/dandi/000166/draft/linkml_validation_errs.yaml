@@ -1,0 +1,238 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Visual cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0000411''} is not of type ''string'' in
+    /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Visual cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0000411''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Senzai, Yuta'', ''email'': ''yuta.senzai@northwestern.edu'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCollector'',
+    ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2990-9889'',
+    ''affiliation'': [{''name'': ''New York University Langone Medical Center'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/005dvqh91''}, {''name'': ''New
+    York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Senzai, Yuta'', ''email'': ''yuta.senzai@northwestern.edu'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCollector'',
+      ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2990-9889'',
+      ''affiliation'': [{''name'': ''New York University Langone Medical Center'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/005dvqh91''},
+      {''name'': ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0190ak572''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Fernandez-Ruiz, Antonio'', ''roleName'': [''dcite:Author''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8481-0796'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fernandez-Ruiz, Antonio'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8481-0796'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+    'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York
+    University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier':
+    'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation',
+    'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+    of type 'string' in /contributor/2"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+      'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New
+      York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier':
+      'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation',
+      'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+      of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://hnf.jp/'', ''name'': ''Heiwa Nakajima Foundation'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/000k40t10'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://hnf.jp/'', ''name'': ''Heiwa Nakajima Foundation'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/000k40t10'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
+    Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH54671,  MH107396, NS090583'',
+    ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
+      Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH54671,  MH107396,
+      NS090583'', ''contactPoint'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://www.nsf.gov/'', ''name'': ''National Science Foundation'',
+    ''email'': ''info@nsf.gov'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'':
+    ''1545858, 1707316'', ''contactPoint'': [], ''includeInCitation'': False} is not
+    of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.nsf.gov/'', ''name'': ''National Science Foundation'',
+      ''email'': ''info@nsf.gov'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'':
+      ''1545858, 1707316'', ''contactPoint'': [], ''includeInCitation'': False} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://www.wellcome.ac.uk/'', ''name'': ''Wellcome Trust'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/029chgv08'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.wellcome.ac.uk/'', ''name'': ''Wellcome Trust'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/029chgv08'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-0829-4790''} is not of type ''string''
+    in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-0829-4790''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

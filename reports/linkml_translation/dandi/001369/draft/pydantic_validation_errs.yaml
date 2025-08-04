@@ -1,0 +1,33 @@
+- ctx:
+    error: relative URL without a base
+  input: '111'
+  loc:
+  - about
+  - 0
+  - GenericType
+  - identifier
+  - function-wrap[wrap_val()]
+  msg: Input should be a valid URL, relative URL without a base
+  type: url_parsing
+  url: https://errors.pydantic.dev/2.10/v/url_parsing
+- ctx:
+    pattern: ^[a-zA-Z0-9-]+:[a-zA-Z0-9-/\._]+$
+  input: '111'
+  loc:
+  - about
+  - 0
+  - GenericType
+  - identifier
+  - constrained-str
+  msg: String should match pattern '^[a-zA-Z0-9-]+:[a-zA-Z0-9-/\._]+$'
+  type: string_pattern_mismatch
+  url: https://errors.pydantic.dev/2.10/v/string_pattern_mismatch
+- ctx:
+    error: relative URL without a base
+  input: 10.3389/fncir.2024.1437575
+  loc:
+  - protocol
+  - 0
+  msg: Input should be a valid URL, relative URL without a base
+  type: url_parsing
+  url: https://errors.pydantic.dev/2.10/v/url_parsing

@@ -1,0 +1,42 @@
+{
+  "id": "DANDI:001332/draft",
+  "url": "https://dandiarchive.org/dandiset/001332/draft",
+  "name": "APOL7C_3D: A High-Resolution 3D Electron Microscopy Dataset for Automated Multiclass Segmentation",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC0-1.0"
+  ],
+  "version": "draft",
+  "citation": "Teo, Wulin (2025) APOL7C_3D: A High-Resolution 3D Electron Microscopy Dataset for Automated Multiclass Segmentation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001332/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001332",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Teo, Wulin",
+      "email": "wulin.teo@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-02-05T03:31:01.440364+00:00",
+  "description": "APOL7C_3D: Automating Multiclass Segmentation of 3D EM Images\nOverview\nThe APOL7C_3D dataset is designed for training and evaluating deep learning models for automated multiclass segmentation of 3D electron microscopy (EM) images. This dataset is curated for DANDIset, providing high-resolution volumetric EM data with corresponding segmentation masks for various subcellular structures.\n\nOriginal Dataset Specifications\nDimensions: 3088 \u00d7 2156 \u00d7 500 (XYZ)\nChannels:\nChannel 1 (Mask): Annotated segmentation mask with five classes (0\u20134).\nChannel 2 (Image): High-resolution grayscale EM image (256 intensity levels).\nSegmentation Classes:\nClass 0: Background\nClass 1: Phagosome Membrane\nClass 2: Phagosome\nClass 3: Mitochondria\nClass 4: Endoplasmic Reticulum\nAnnotated Region (Training Subset)\nCropped Region: 1052 \u00d7 924 \u00d7 50\nClasses Present: 0 (Background), 1 (Phagosome Membrane), 2 (Phagosome), 3 (Mitochondria), 4 (Endoplasmic Reticulum)\nPurpose: Provides a smaller, curated training volume optimized for deep learning model development.\nApplications\nThis dataset facilitates the development of deep learning-based segmentation models for biomedical image analysis, particularly for understanding subcellular structures in electron microscopy data. It is useful for biomedical AI research, neuroscience, cell biology, and computational microscopy.\n\n",
+  "assetsSummary": {
+    "schemaKey": "AssetsSummary",
+    "numberOfBytes": 0,
+    "numberOfFiles": 0
+  },
+  "schemaVersion": "0.6.9",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001332/versions/draft/assets/"
+  ]
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:6d57b715-e21d-4270-bfd4-18b1a44abb78', 'name': 'DANDI publish', 'endDate': '2025-01-22T17:35:47.328807+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-01-22T17:35:47.328807+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:00d04878-e614-431e-9e88-40e25bd1a3d7', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:6d57b715-e21d-4270-bfd4-18b1a44abb78', 'name': 'DANDI publish', 'endDate': '2025-01-22T17:35:47.328807+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-01-22T17:35:47.328807+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:00d04878-e614-431e-9e88-40e25bd1a3d7', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://ma.ttperi.ch/', 'name': 'Perich, Matthew G.', 'email': 'matthew.perich@umontreal.ca', 'roleName': ['dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9800-2386', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://ma.ttperi.ch/', 'name': 'Perich, Matthew G.', 'email': 'matthew.perich@umontreal.ca', 'roleName': ['dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataManager', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9800-2386', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Miller, Lee E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8675-7140', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Miller, Lee E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8675-7140', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'url': 'https://www.mehai.dev/', 'name': 'Azabou, Mehdi', 'email': 'mehdiazabou@gmail.com', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0001-8778-9507', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'url': 'https://www.mehai.dev/', 'name': 'Azabou, Mehdi', 'email': 'mehdiazabou@gmail.com', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0001-8778-9507', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Dyer, Eva L.', 'email': 'evadyer@gatech.edu', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-6962-524X', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Dyer, Eva L.', 'email': 'evadyer@gatech.edu', 'roleName': [], 'schemaKey': 'Person', 'identifier': '0000-0002-6962-524X', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

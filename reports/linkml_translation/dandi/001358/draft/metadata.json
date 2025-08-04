@@ -1,0 +1,130 @@
+{
+  "id": "DANDI:001358/draft",
+  "url": "https://dandiarchive.org/dandiset/001358/draft",
+  "name": "Neural correlates of crowding in macaque area V4",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Kim, Taekjun; Pasupathy, Anitha (2025) Neural correlates of crowding in macaque area V4 (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001358/draft",
+  "keywords": [
+    "object recognition, primate, saliency computation, shape perception, temporal dynamics, ventral visual pathway"
+  ],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001358",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Kim, Taekjun",
+      "email": "taekjunkim1223@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson",
+        "dcite:Author",
+        "dcite:Researcher",
+        "dcite:Investigation",
+        "dcite:FormalAnalysis"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Pasupathy, Anitha",
+      "email": "pasupat@uw.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ProjectLeader",
+        "dcite:FundingAcquisition",
+        "dcite:Supervision",
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Eye Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "R01 EY018839, R01 EY029601, P30 EY01730",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "P51 OD010425",
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2025-03-12T15:46:56.972966+00:00",
+  "description": "We studied the responses of 147 V4 neurons in two awake, fixating macaque monkeys (66 in Monkey 1, 81 in Monkey 2) to examine how their responses and selectivity to an isolated shape are modified by the presence of surrounding clutter stimuli.\n\nMore detailed information associated with this dataset is described in https://doi.org/10.1523/JNEUROSCI.2260-23.2024 ",
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca mulatta - Rhesus monkey",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 71586840,
+    "numberOfFiles": 131,
+    "numberOfSubjects": 2,
+    "variableMeasured": [
+      "Units",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.9",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.1523/JNEUROSCI.2260-23.2024 ",
+      "name": "Neural Correlates of Crowding in Macaque Area V4",
+      "relation": "dcite:IsPublishedIn",
+      "schemaKey": "Resource",
+      "repository": "The Journal of Neuroscience",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001358/versions/draft/assets/"
+  ]
+}

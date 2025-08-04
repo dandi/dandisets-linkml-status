@@ -1,0 +1,387 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
+      "absolute_path": [],
+      "absolute_schema_path": [
+        "additionalProperties"
+      ],
+      "validator": "additionalProperties",
+      "validator_value": false
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Medial Temporal Lobe', 'schemaKey': 'GenericType'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Medial Temporal Lobe', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Medial Frontal Cortex', 'schemaKey': 'GenericType'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Medial Frontal Cortex', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Daume, Jonathan', 'email': 'Jonathan.Daume@cshs.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-6516-7288', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Department of Neurology, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Center for Neural Science and Medicine, Department of Biomedical Sciences, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Daume, Jonathan', 'email': 'Jonathan.Daume@cshs.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-6516-7288', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Department of Neurology, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Center for Neural Science and Medicine, Department of Biomedical Sciences, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kaminski, Jan', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-8663-7314', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Center of Excellence for Neural Plasticity and Brain Disorders: BRAINCITY, Nencki Institute of Experi-15 mental Biology, Polish Academy of Sciences', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kaminski, Jan', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-8663-7314', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Center of Excellence for Neural Plasticity and Brain Disorders: BRAINCITY, Nencki Institute of Experi-15 mental Biology, Polish Academy of Sciences', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Schjetnan, Andrea G. P. ', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-4319-7689', 'affiliation': [{'name': 'Krembil Research Institute and Division of Neurosurgery, University Health Network (UHN), University of Toronto', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Schjetnan, Andrea G. P. ', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-4319-7689', 'affiliation': [{'name': 'Krembil Research Institute and Division of Neurosurgery, University Health Network (UHN), University of Toronto', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Salimpour, Yousef', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-7546-004X', 'affiliation': [{'name': 'Department of Neurosurgery, Johns Hopkins School of Medicine', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Salimpour, Yousef', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-7546-004X', 'affiliation': [{'name': 'Department of Neurosurgery, Johns Hopkins School of Medicine', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Khan, Umais', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0009-0005-5328-3977', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Khan, Umais', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0009-0005-5328-3977', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kyzar, Michael', 'email': 'Michael.Kyzar@cshs.org', 'roleName': ['dcite:Author', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Software', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0009-0004-4392-9933', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kyzar, Michael', 'email': 'Michael.Kyzar@cshs.org', 'roleName': ['dcite:Author', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Software', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0009-0004-4392-9933', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Reed, Chrystal M.', 'roleName': ['dcite:Author', 'dcite:Methodology', 'dcite:DataCollector', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-7157-3645', 'affiliation': [{'name': 'Department of Neurology, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Reed, Chrystal M.', 'roleName': ['dcite:Author', 'dcite:Methodology', 'dcite:DataCollector', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-7157-3645', 'affiliation': [{'name': 'Department of Neurology, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Anderson, William S.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0003-0958-050X', 'affiliation': [{'name': 'Department of Neurosurgery, Johns Hopkins School of Medicine', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Anderson, William S.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0003-0958-050X', 'affiliation': [{'name': 'Department of Neurosurgery, Johns Hopkins School of Medicine', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Valiante, Taufik A.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-3443-3790', 'affiliation': [{'name': 'Krembil Research Institute and Division of Neurosurgery, University Health Network (UHN), University of Toronto', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Valiante, Taufik A.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-3443-3790', 'affiliation': [{'name': 'Krembil Research Institute and Division of Neurosurgery, University Health Network (UHN), University of Toronto', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mamelak, Adam N.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-4245-6431', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mamelak, Adam N.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-4245-6431', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Rutishauser, Ueli', 'email': 'ueli.rutishauser@cshs.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FormalAnalysis', 'dcite:FundingAcquisition', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-9207-7069', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Department of Neurology, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Center for Neural Science and Medicine, Department of Biomedical Sciences, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Division of Biology and Biological Engineering, California Institute of Technology', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Rutishauser, Ueli', 'email': 'ueli.rutishauser@cshs.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FormalAnalysis', 'dcite:FundingAcquisition', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier': '0000-0002-9207-7069', 'affiliation': [{'name': 'Department of Neurosurgery, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Department of Neurology, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Center for Neural Science and Medicine, Department of Biomedical Sciences, Cedars-Sinai Medical Center', 'schemaKey': 'Affiliation'}, {'name': 'Division of Biology and Biological Engineering, California Institute of Technology', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': '5 U01 NS 117839-04', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': '5 U01 NS 117839-04', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': [], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U01NS117839', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/12",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': [], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U01NS117839', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Science Foundation (NSF)', 'roleName': [], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'BCS-2219800', 'contactPoint': [{'schemaKey': 'ContactPoint'}], 'includeInCitation': False} is not of type 'string' in /contributor/13",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Science Foundation (NSF)', 'roleName': [], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'BCS-2219800', 'contactPoint': [{'schemaKey': 'ContactPoint'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

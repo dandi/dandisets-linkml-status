@@ -1,0 +1,162 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:d933dcd1-d7a6-46ad-9d49-bfda4897abb1'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-07-12T14:57:30.899806+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-07-12T14:57:30.899806+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:4edf748f-f245-4955-ae07-eccb2fda73b0'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:d933dcd1-d7a6-46ad-9d49-bfda4897abb1'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-07-12T14:57:30.899806+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-07-12T14:57:30.899806+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:4edf748f-f245-4955-ae07-eccb2fda73b0'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kim, Ian T'', ''email'': ''ian.t.kim@rutgers.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-0482-5523'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kim, Ian T'', ''email'': ''ian.t.kim@rutgers.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-0482-5523'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Huerta, Icnelia'', ''email'': ''huertaocai@chop.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0008-7970-4989'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Huerta, Icnelia'', ''email'': ''huertaocai@chop.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0008-7970-4989'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Urena, Osmalyn'', ''email'': ''osmalyn10@gmail.com'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Urena, Osmalyn'', ''email'': ''osmalyn10@gmail.com'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Yamamoto, Ryo'', ''email'': ''q52464@gmail.com'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Yamamoto, Ryo'', ''email'': ''q52464@gmail.com'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: "{'name': 'Par\xE9, Denis', 'email': 'pare@rutgers.edu', 'roleName': ['dcite:Author',
+    'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0001-5471-8868',
+    'includeInCitation': True} is not of type 'string' in /contributor/4"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Par\xE9, Denis', 'email': 'pare@rutgers.edu', 'roleName':
+      ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier':
+      '0000-0001-5471-8868', 'includeInCitation': True} is not of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''MH-112505, MH-119854, MH-138354'', ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''MH-112505, MH-119854, MH-138354'', ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

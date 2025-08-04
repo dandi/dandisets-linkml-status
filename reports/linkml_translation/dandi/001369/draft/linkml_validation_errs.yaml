@@ -1,0 +1,61 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''paper file'', ''schemaKey'': ''GenericType'', ''identifier'':
+    ''111''} is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''paper file'', ''schemaKey'': ''GenericType'', ''identifier'':
+      ''111''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Igarashi, Kei'', ''email'': ''kei.igarashi@uci.edu'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Igarashi, Kei'', ''email'': ''kei.igarashi@uci.edu'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '''10.3389/fncir.2024.1437575'' does not match ''^(?i:http|https)://[^\\s]+$''
+    in /protocol/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - protocol
+    - 0
+    absolute_schema_path:
+    - properties
+    - protocol
+    - items
+    - pattern
+    message: '''10.3389/fncir.2024.1437575'' does not match ''^(?i:http|https)://[^\\s]+$'''
+    validator: pattern
+    validator_value: ^(?i:http|https)://[^\s]+$
+  type: jsonschema validation

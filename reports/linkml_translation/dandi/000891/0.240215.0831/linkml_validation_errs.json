@@ -1,0 +1,552 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:12d90f4e-5cae-4bde-bdf3-c0836829bf97', 'name': 'DANDI publish', 'endDate': '2024-02-15T08:31:52.665465+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-02-15T08:31:52.665465+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:85993558-a589-442c-8a75-b8a0f63b1262', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:12d90f4e-5cae-4bde-bdf3-c0836829bf97', 'name': 'DANDI publish', 'endDate': '2024-02-15T08:31:52.665465+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-02-15T08:31:52.665465+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:85993558-a589-442c-8a75-b8a0f63b1262', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Zhao, Yue', 'email': 'yzhaoinuw@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Maintainer'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zhao, Yue', 'email': 'yzhaoinuw@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Maintainer'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Beinlich, Felix R.M.', 'email': 'felix.beinlich@sund.ku.dk', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Beinlich, Felix R.M.', 'email': 'felix.beinlich@sund.ku.dk', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Asiminas, Antonios', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Asiminas, Antonios', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Untiet, Verena', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Untiet, Verena', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Bojarowska, Zuzanna', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Bojarowska, Zuzanna', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Pl\u00e1, Virginia ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pl\u00e1, Virginia ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sigurdsson, Bj\u00f6rn ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sigurdsson, Bj\u00f6rn ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Timmel, Vincenzo', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Applied Sciences and Arts Northwestern Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04mq2g308'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Timmel, Vincenzo', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Applied Sciences and Arts Northwestern Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04mq2g308'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gehrig, Lukas', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Applied Sciences and Arts Northwestern Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04mq2g308'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gehrig, Lukas', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Applied Sciences and Arts Northwestern Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04mq2g308'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Graber, Michael H.', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Applied Sciences and Arts Northwestern Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04mq2g308'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Graber, Michael H.', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Applied Sciences and Arts Northwestern Switzerland', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04mq2g308'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Hirase, Hajime ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}, {'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Hirase, Hajime ', 'roleName': [], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}, {'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Nedergaard, Maiken', 'email': 'nedergaard@urmc.rochester.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}, {'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Nedergaard, Maiken', 'email': 'nedergaard@urmc.rochester.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Rochester Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00trqv719'}, {'name': 'University of Copenhagen', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/035b05819'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lundbeckfonden', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03hz8wd80', 'awardNumber': '114955', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/12",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Lundbeckfonden', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/03hz8wd80', 'awardNumber': '114955', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Novo Nordisk Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04txyc737', 'awardNumber': 'NNF19OC0058058', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/13",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Novo Nordisk Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04txyc737', 'awardNumber': 'NNF19OC0058058', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'United States Army Research Office', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05epdh915', 'awardNumber': 'MURI W911NF1910280', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/14",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'United States Army Research Office', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05epdh915', 'awardNumber': 'MURI W911NF1910280', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        14
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'United States Army Research Office', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05epdh915', 'awardNumber': 'W81XWH-16-1-0555', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/15",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'United States Army Research Office', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05epdh915', 'awardNumber': 'W81XWH-16-1-0555', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        15
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'United States Army Research Office', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05epdh915', 'awardNumber': 'W81XWH-22-1-0676', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/16",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'United States Army Research Office', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05epdh915', 'awardNumber': 'W81XWH-22-1-0676', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        16
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Independent Research Fund Denmark', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05svhj534', 'awardNumber': '0134-00107B', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/17",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Independent Research Fund Denmark', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05svhj534', 'awardNumber': '0134-00107B', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        17
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Independent Research Fund Denmark', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05svhj534', 'awardNumber': '3101-00282B', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/18",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Independent Research Fund Denmark', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05svhj534', 'awardNumber': '3101-00282B', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        18
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'R01AT012312', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/19",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'R01AT012312', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        19
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'R01AT011439', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/20",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'R01AT011439', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        20
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'U19 NS128613', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/21",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'U19 NS128613', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        21
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'R01HL122578', 'contactPoint': [{'schemaKey': 'ContactPoint'}], 'includeInCitation': False} is not of type 'string' in /contributor/22",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/05h1kgg64', 'awardNumber': 'R01HL122578', 'contactPoint': [{'schemaKey': 'ContactPoint'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        22
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

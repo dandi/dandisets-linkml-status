@@ -1,0 +1,114 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Kim, Ronald'', ''email'': ''ronald.kim@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:FormalAnalysis'',
+    ''dcite:Investigation'', ''dcite:Methodology''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-7078-0995'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kim, Ronald'', ''email'': ''ronald.kim@nih.gov'', ''roleName'':
+      [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:FormalAnalysis'',
+      ''dcite:Investigation'', ''dcite:Methodology''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0001-7078-0995'', ''includeInCitation'': True} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Ananth, Mala'', ''email'': ''mala.ananth@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ananth, Mala'', ''email'': ''mala.ananth@nih.gov'', ''roleName'':
+      [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Desai, Niraj'', ''email'': ''niraj.s.desai@gmail.com'', ''roleName'':
+    [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Desai, Niraj'', ''email'': ''niraj.s.desai@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Role, Lorna'', ''email'': ''lorna.role@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Supervision'', ''dcite:Conceptualization''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Role, Lorna'', ''email'': ''lorna.role@nih.gov'', ''roleName'':
+      [''dcite:Author'', ''dcite:Supervision'', ''dcite:Conceptualization''], ''schemaKey'':
+      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Talmage, David'', ''email'': ''david.talmage@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:Supervision''], ''schemaKey'':
+    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Talmage, David'', ''email'': ''david.talmage@nih.gov'',
+      ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:Supervision''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

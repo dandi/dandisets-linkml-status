@@ -1,0 +1,39 @@
+[
+  {
+    "type": "string_pattern_mismatch",
+    "loc": [
+      "contributor",
+      0,
+      "Person",
+      "name"
+    ],
+    "msg": "String should match pattern '^([\\w\\s\\-\\.']+),\\s+([\\w\\s\\-\\.']+)$'",
+    "input": "test",
+    "ctx": {
+      "pattern": "^([\\w\\s\\-\\.']+),\\s+([\\w\\s\\-\\.']+)$"
+    },
+    "url": "https://errors.pydantic.dev/2.10/v/string_pattern_mismatch"
+  },
+  {
+    "type": "missing",
+    "loc": [
+      "ethicsApproval",
+      0,
+      "identifier"
+    ],
+    "msg": "Field required",
+    "input": {},
+    "url": "https://errors.pydantic.dev/2.10/v/missing"
+  },
+  {
+    "type": "missing",
+    "loc": [
+      "relatedResource",
+      0,
+      "relation"
+    ],
+    "msg": "Field required",
+    "input": {},
+    "url": "https://errors.pydantic.dev/2.10/v/missing"
+  }
+]

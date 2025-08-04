@@ -1,0 +1,246 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:9868a370-fc45-4253-a384-65c7e024f6d2'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-07-03T18:26:15.280160+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-07-03T18:26:15.280160+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:7292d464-221c-41aa-a675-070920e2bf90'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:9868a370-fc45-4253-a384-65c7e024f6d2'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-07-03T18:26:15.280160+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-07-03T18:26:15.280160+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:7292d464-221c-41aa-a675-070920e2bf90'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Brain Vasculature'', ''schemaKey'': ''GenericType''} is not
+    of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Brain Vasculature'', ''schemaKey'': ''GenericType''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Skull'', ''schemaKey'': ''Anatomy''} is not of type ''string''
+    in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Skull'', ''schemaKey'': ''Anatomy''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Ji, Xiang'', ''email'': ''xj0996@princeton.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:FormalAnalysis'',
+    ''dcite:Methodology'', ''dcite:Software'', ''dcite:Visualization''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-8595-6009'', ''affiliation'': [{''name'':
+    ''University of California, San Diego'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/0168r3w48''}], ''awardNumber'': '''', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ji, Xiang'', ''email'': ''xj0996@princeton.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:FormalAnalysis'',
+      ''dcite:Methodology'', ''dcite:Software'', ''dcite:Visualization''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8595-6009'', ''affiliation'': [{''name'':
+      ''University of California, San Diego'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0168r3w48''}], ''awardNumber'': '''', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Huang, Sincheng'', ''email'': ''sih045@ucsd.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCollector'', ''dcite:FormalAnalysis'', ''dcite:Methodology''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0009-0002-9715-2870'', ''affiliation'':
+    [{''name'': ''University of California, San Diego'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/0168r3w48''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Huang, Sincheng'', ''email'': ''sih045@ucsd.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCollector'', ''dcite:FormalAnalysis'', ''dcite:Methodology''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0009-0002-9715-2870'', ''affiliation'':
+      [{''name'': ''University of California, San Diego'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/0168r3w48''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Friedman, Beth'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-9328-5241'', ''affiliation'': [{''name'':
+    ''University of California, San Diego'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/0168r3w48''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Friedman, Beth'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-9328-5241'', ''affiliation'': [{''name'':
+      ''University of California, San Diego'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0168r3w48''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Rinehart, Duane'', ''email'': ''duane.rinehart@gmail.com'',
+    ''roleName'': [''dcite:DataManager'', ''dcite:DataCurator''], ''schemaKey'': ''Person'',
+    ''affiliation'': [], ''includeInCitation'': False} is not of type ''string'' in
+    /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Rinehart, Duane'', ''email'': ''duane.rinehart@gmail.com'',
+      ''roleName'': [''dcite:DataManager'', ''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''url'': ''https://neurophysics.ucsd.edu/'', ''name'': ''Kleinfeld, David'',
+    ''email'': ''dk@physics.ucsd.edu'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
+    ''dcite:ContactPerson'', ''dcite:FundingAcquisition''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0001-9797-4722'', ''affiliation'': [{''name'': ''University
+    of California, San Diego'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0168r3w48''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://neurophysics.ucsd.edu/'', ''name'': ''Kleinfeld,
+      David'', ''email'': ''dk@physics.ucsd.edu'', ''roleName'': [''dcite:Author'',
+      ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:FundingAcquisition''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9797-4722'', ''affiliation'':
+      [{''name'': ''University of California, San Diego'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/0168r3w48''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''awardNumber'': ''U19NS123717, R35NS097265''} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''U19NS123717, R35NS097265''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''American Heart Association'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/013kjyp64'',
+    ''awardNumber'': ''906077''} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''American Heart Association'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/013kjyp64'',
+      ''awardNumber'': ''906077''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

@@ -1,0 +1,181 @@
+{
+  "id": "DANDI:001534/draft",
+  "url": "https://dandiarchive.org/dandiset/001534/draft",
+  "name": "20250707_Patchseq_BICAN_R01_Neuromodulation_mouse",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Gonzalez, Limary; Lee, Brian; Cohen, Jeremiah; Chandrashekar, Jayaram; Isogai, Yoh; Allen Institute for Brian Science; National Institute of Mental Health (2025) 20250707_Patchseq_BICAN_R01_Neuromodulation_mouse (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001534/draft",
+  "keywords": [
+    "Patch-seq, mouse"
+  ],
+  "protocol": [
+    "https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001534",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Gonzalez, Limary",
+      "email": "limary.gonzalez@alleninstitute.org",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0009-0009-0306-0002",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Lee, Brian",
+      "email": "brianle@alleninstitute.org",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-3210-5638",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cohen, Jeremiah",
+      "email": "jeremiah.cohen@alleninstitute.org",
+      "roleName": [
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4768-7124",
+      "includeInCitation": true
+    },
+    {
+      "name": "Chandrashekar, Jayaram",
+      "email": "jayaramc@alleninstitute.org",
+      "roleName": [
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-6412-0114",
+      "includeInCitation": true
+    },
+    {
+      "name": "Isogai, Yoh",
+      "email": "yoh.isogai@alleninstitute.org",
+      "roleName": [
+        "dcite:ProjectMember"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-7285-1603",
+      "awardNumber": "",
+      "includeInCitation": true
+    },
+    {
+      "url": "https://alleninstitute.org/",
+      "name": "Allen Institute for Brian Science",
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/00dcv1019",
+      "awardNumber": "R01MH134833",
+      "includeInCitation": true
+    },
+    {
+      "url": "https://www.nimh.nih.gov/",
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04xeg9z08",
+      "awardNumber": "R01MH134833",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-07-11T18:49:45.394857+00:00",
+  "description": "BICAN R01 Neuromodulation mouse upload (Q3 2025)",
+  "publishedBy": {
+    "id": "urn:uuid:3052ca53-4961-46c6-98a8-212b49197094",
+    "name": "DANDI publish",
+    "endDate": "2025-07-15T20:16:42.062265+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-07-15T20:16:42.062265+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:995aa035-9bdb-41ed-af33-c3d956d27201",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [
+    "Structure-function cell atlas for norepinephrine and serotonin neurons"
+  ],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 6697463686,
+    "numberOfFiles": 116,
+    "numberOfSubjects": 41,
+    "variableMeasured": [
+      "ProcessingModule",
+      "CurrentClampSeries",
+      "CurrentClampStimulusSeries",
+      "VoltageClampStimulusSeries",
+      "VoltageClampSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "voltage clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2025-07-15T20:16:42.062265+00:00",
+  "schemaVersion": "0.6.10",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [
+    {
+      "name": "BICAN R01 Neuromodulation",
+      "schemaKey": "Project",
+      "identifier": "R01MH134833"
+    }
+  ],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001534/versions/draft/assets/"
+  ]
+}

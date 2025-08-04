@@ -1,0 +1,178 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Jelescu, Ileana'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
+    ''dcite:DataCollector'', ''dcite:Investigation'', ''dcite:Researcher''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-3664-0195'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jelescu, Ileana'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
+      ''dcite:DataCollector'', ''dcite:Investigation'', ''dcite:Researcher''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3664-0195'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Fieremans, Els'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+    ''dcite:FundingAcquisition'', ''dcite:Methodology'', ''dcite:Researcher''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-1384-8591'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Fieremans, Els'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
+      ''dcite:FundingAcquisition'', ''dcite:Methodology'', ''dcite:Researcher''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1384-8591'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Collin, Armand'', ''email'': ''armac@videotron.ca'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:Maintainer''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0009-0005-3258-122X'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Collin, Armand'', ''email'': ''armac@videotron.ca'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:Maintainer''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0009-0005-3258-122X'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Foias, Alexandru'', ''roleName'': [''dcite:DataCurator'',
+    ''dcite:DataManager'', ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Foias, Alexandru'', ''roleName'': [''dcite:DataCurator'',
+      ''dcite:DataManager'', ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Guenther, Nick'', ''roleName'': [''dcite:DataCurator'', ''dcite:DataManager'',
+    ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Guenther, Nick'', ''roleName'': [''dcite:DataCurator'',
+      ''dcite:DataManager'', ''dcite:Maintainer''], ''schemaKey'': ''Person'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Microscopy Core, NYU Langone Medical Center'', ''roleName'':
+    [''dcite:DataCollector''], ''schemaKey'': ''Organization''} is not of type ''string''
+    in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Microscopy Core, NYU Langone Medical Center'', ''roleName'':
+      [''dcite:DataCollector''], ''schemaKey'': ''Organization''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cohen-Adad, Julien'', ''email'': ''jcohen@polymtl.ca'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:Maintainer'',
+    ''dcite:Supervision'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-3662-9532'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen-Adad, Julien'', ''email'': ''jcohen@polymtl.ca'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataManager'',
+      ''dcite:Maintainer'', ''dcite:Supervision'', ''dcite:ContactPerson''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-3662-9532'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

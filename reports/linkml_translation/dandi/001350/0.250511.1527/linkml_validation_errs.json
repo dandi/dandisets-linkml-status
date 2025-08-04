@@ -1,0 +1,230 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:a9a8770c-c46c-43c7-b2eb-00ab0e4e9192', 'name': 'DANDI publish', 'endDate': '2025-05-11T15:27:55.922218+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-05-11T15:27:55.922218+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:53b74581-0ccb-4088-895f-7e0955d54a36', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:a9a8770c-c46c-43c7-b2eb-00ab0e4e9192', 'name': 'DANDI publish', 'endDate': '2025-05-11T15:27:55.922218+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-05-11T15:27:55.922218+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:53b74581-0ccb-4088-895f-7e0955d54a36', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Corpus Callosum', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0002336'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Corpus Callosum', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0002336'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Collin, Armand', 'roleName': ['dcite:Author', 'dcite:DataCurator', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0009-0005-3258-122X', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Collin, Armand', 'roleName': ['dcite:Author', 'dcite:DataCurator', 'dcite:DataManager'], 'schemaKey': 'Person', 'identifier': '0009-0005-3258-122X', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Soulaire, Tom', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Soulaire, Tom', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Iram, Tal', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-1606-2009', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Iram, Tal', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-1606-2009', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Garcia, Miguel', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-4181-5372', 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Garcia, Miguel', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-4181-5372', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Jorgens, Danielle', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-7143-0118', 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jorgens, Danielle', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-7143-0118', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Guay-Paquet, Mathieu', 'email': 'mathieu.guay-paquet@polymtl.ca', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Guay-Paquet, Mathieu', 'email': 'mathieu.guay-paquet@polymtl.ca', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cohen-Adad, Julien', 'email': 'jcohen@polymtl.ca', 'roleName': ['dcite:ContactPerson', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-3662-9532', 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cohen-Adad, Julien', 'email': 'jcohen@polymtl.ca', 'roleName': ['dcite:ContactPerson', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0003-3662-9532', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Zuchero, J. Bradley', 'email': 'bzuchero@stanford.edu', 'roleName': ['dcite:Researcher', 'dcite:Supervision', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-4706-2538', 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Zuchero, J. Bradley', 'email': 'bzuchero@stanford.edu', 'roleName': ['dcite:Researcher', 'dcite:Supervision', 'dcite:DataCollector'], 'schemaKey': 'Person', 'identifier': '0000-0002-4706-2538', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

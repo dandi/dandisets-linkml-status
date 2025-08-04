@@ -1,0 +1,114 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 95296628680
+  numberOfFiles: 38
+  numberOfSubjects: 8
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+  - ElectrodeGroup
+  - ElectricalSeries
+  - SpatialSeries
+  - LFP
+  - Position
+  - ProcessingModule
+citation: Shin, Justin (2025) Odor-Place Spatial Association Task (Version draft)
+  [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001539/draft
+contributor:
+- name: Symanski, Claire
+  schemaKey: Person
+- affiliation: []
+  email: jdshin@brandeis.edu
+  includeInCitation: true
+  name: Shin, Justin
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- awardNumber: R01MH120228
+  name: National Institute of Mental Health
+  schemaKey: Organization
+- awardNumber: R01MH112661
+  name: National Institute of Mental Health
+  schemaKey: Organization
+dateCreated: '2025-07-23T14:51:45.905670+00:00'
+datePublished: '2025-08-04T15:38:54.425185+00:00'
+description: Hippocampal-prefrontal-olfactory bulb recordings in rats during an Odor-Place
+  Spatial Association Task. Data includes spikes from single units, local field potential
+  recordings, position (x, y, velocity), and trial information. Trial information
+  includes nose-poke on/off times, whether the trial was rewarded or not, and time
+  at the reward well. Each file contains sessions from a single day. Behavioral sessions
+  may include data from standard odor-place, novel odor, or no odor sessions.
+ethicsApproval:
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: 'IACUC Protocol #21001'
+  schemaKey: EthicsApproval
+id: DANDI:001539/draft
+identifier: DANDI:001539
+keywords:
+- Associative memory
+- Hippocampus
+- Prefrontal cortex
+- Olfactory bulb
+- Odor-place association
+- 'Beta rhythm '
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001539/versions/draft/assets/
+name: Odor-Place Spatial Association Task
+publishedBy:
+  endDate: '2025-08-04T15:38:54.425185+00:00'
+  id: urn:uuid:a96e9c36-e14b-4ef6-9bc7-49758a0198c6
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-08-04T15:38:54.425185+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:ef7f849f-82b7-466f-9d5b-51cfcbaf290f
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource:
+- name: Rhythmic coordination and ensemble dynamics in the hippocampal-prefrontal
+    network during odor-place associative memory and decision making
+  relation: dcite:IsDescribedBy
+  repository: eLife
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://doi.org/10.7554/eLife.79545
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+url: https://dandiarchive.org/dandiset/001539/draft
+version: draft
+wasGeneratedBy: []

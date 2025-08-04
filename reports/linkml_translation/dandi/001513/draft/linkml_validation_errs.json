@@ -1,0 +1,25 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mazzamuto, Giacomo', 'email': 'mazzamuto@lens.unifi.it', 'roleName': ['dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0003-3077-3904', 'affiliation': [{'name': ' European Laboratory for Non-Linear Spectroscopy', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04x48z588'}, {'name': 'National Research Council - National Institute of Optics', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02dp3a879'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mazzamuto, Giacomo', 'email': 'mazzamuto@lens.unifi.it', 'roleName': ['dcite:ContactPerson', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:Maintainer', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0003-3077-3904', 'affiliation': [{'name': ' European Laboratory for Non-Linear Spectroscopy', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04x48z588'}, {'name': 'National Research Council - National Institute of Optics', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02dp3a879'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

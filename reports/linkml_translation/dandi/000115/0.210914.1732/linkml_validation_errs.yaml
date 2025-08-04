@@ -1,0 +1,237 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:fd736f73-0395-49c5-8aa6-428b08b5980b'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2021-09-14T17:32:35.958060+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2021-09-14T17:32:35.958060+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:c5c8fb01-44ca-4b8b-b6c0-ed319b7034db'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:fd736f73-0395-49c5-8aa6-428b08b5980b'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2021-09-14T17:32:35.958060+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2021-09-14T17:32:35.958060+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:c5c8fb01-44ca-4b8b-b6c0-ed319b7034db'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Gillespie, Anna'', ''email'': ''akgillespie8@gmail.com'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-0980-2408'', ''affiliation'': [{''name'': ''University of California,
+    San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/043mz5j54''}],
+    ''awardNumber'': ''Brain Initiative K99AG068425'', ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gillespie, Anna'', ''email'': ''akgillespie8@gmail.com'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-0980-2408'', ''affiliation'': [{''name'': ''University of California,
+      San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/043mz5j54''}],
+      ''awardNumber'': ''Brain Initiative K99AG068425'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Astudillo Maya, Daniela'', ''email'': ''daniela.astudillo@ucsf.edu'',
+    ''roleName'': [''dcite:DataCollector''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Astudillo Maya, Daniela'', ''email'': ''daniela.astudillo@ucsf.edu'',
+      ''roleName'': [''dcite:DataCollector''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Denovellis, Eric'', ''email'': ''eric.denovellis@ucsf.edu'',
+    ''roleName'': [''dcite:Methodology'', ''dcite:FormalAnalysis''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0003-4606-087X'', ''affiliation'': [{''name'':
+    ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/043mz5j54''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Denovellis, Eric'', ''email'': ''eric.denovellis@ucsf.edu'',
+      ''roleName'': [''dcite:Methodology'', ''dcite:FormalAnalysis''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-4606-087X'', ''affiliation'': [{''name'':
+      ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Liu, Daniel'', ''email'': ''daniel.liu@ucsf.edu'', ''roleName'':
+    [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/043mz5j54''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Liu, Daniel'', ''email'': ''daniel.liu@ucsf.edu'', ''roleName'':
+      [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Kastner, David'', ''email'': ''david.kastner2@ucsf.edu'',
+    ''roleName'': [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kastner, David'', ''email'': ''david.kastner2@ucsf.edu'',
+      ''roleName'': [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Coulter, Michael'', ''email'': ''michael.coulter@ucsf.edu'',
+    ''roleName'': [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Coulter, Michael'', ''email'': ''michael.coulter@ucsf.edu'',
+      ''roleName'': [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Roumis, Demetris'', ''email'': ''roumis.d@gmail.com'', ''roleName'':
+    [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+    ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/043mz5j54''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Roumis, Demetris'', ''email'': ''roumis.d@gmail.com'',
+      ''roleName'': [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'':
+      [{''name'': ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Frank, Loren'', ''email'': ''loren@phy.ucsf.edu'', ''roleName'':
+    [''dcite:DataManager'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [{''name'': ''HHMI'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Frank, Loren'', ''email'': ''loren@phy.ucsf.edu'', ''roleName'':
+      [''dcite:DataManager'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''affiliation'': [{''name'': ''HHMI'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/006w34k90''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

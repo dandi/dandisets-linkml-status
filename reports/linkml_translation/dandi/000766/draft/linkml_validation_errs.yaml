@@ -1,0 +1,66 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Han, Sung'', ''email'': ''sunghan@salk.edu'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Han, Sung'', ''email'': ''sunghan@salk.edu'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Kim, Dong-Il'', ''email'': ''dikim@salk.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Kim, Dong-Il'', ''email'': ''dikim@salk.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Park, Seahyung'', ''email'': ''seapark@salk.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Park, Seahyung'', ''email'': ''seapark@salk.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

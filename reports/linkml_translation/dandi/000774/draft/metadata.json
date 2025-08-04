@@ -1,0 +1,157 @@
+{
+  "id": "DANDI:000774/draft",
+  "doi": "10.80507/dandi.123456/0.123456.1234",
+  "url": "https://dandiarchive.org/dandiset/000774/draft",
+  "name": "Spatial and temporal propagation of spiking activity in response to electrical stimulation in visual cortex",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Denman, Daniel; Jordan Hickman (2024) Spatial and temporal propagation of spiking activity in response to electrical stimulation in visual cortex (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234",
+  "keywords": [],
+  "protocol": [],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000774",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1 R01 NS 120850-01"
+    },
+    {
+      "url": "denmanlab.github.io",
+      "name": "Denman, Daniel",
+      "email": "daniel.denman@cuanschutz.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:ContactPerson",
+        "dcite:FundingAcquisition",
+        "dcite:Investigation",
+        "dcite:Maintainer",
+        "dcite:Methodology",
+        "dcite:ProjectLeader",
+        "dcite:ProjectAdministration",
+        "dcite:Supervision",
+        "dcite:Validation",
+        "dcite:Software"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-1075-1265",
+      "affiliation": [
+        {
+          "name": "University of Colorado Anschutz Medical Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03wmf1y16"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Jordan Hickman",
+      "email": "jordan.hickman@cuanschutz.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:DataCollector",
+        "dcite:DataCurator",
+        "dcite:DataManager",
+        "dcite:FormalAnalysis",
+        "dcite:Methodology",
+        "dcite:Producer",
+        "dcite:ProjectMember",
+        "dcite:Researcher",
+        "dcite:Software",
+        "dcite:Visualization"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-9048-2247",
+      "affiliation": [
+        {
+          "name": "University of Colorado Anschutz Medical Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03wmf1y16"
+        }
+      ],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2024-01-09T05:13:50.004252+00:00",
+  "description": "Three dimensional measurement of electrical activity around a point source of electrical stimulation in neocortex. Electrical stimuli are single pulses with varying  amplitude and polarity. Stimuli are delivered near the middle layers of primary visual cortex; exact positions for each stimulation site in Common Coordinate Framework (CCF) coordinates are provided. Measurements are made with three simultaneous Neuropixels 1.0 electrodes roughly orthogonally placed around the stimulation site. The crossing point is approximately hundreds of microns deeper to the stimulation site. CCF coordinated for each electrode are also provided. Sampling covers at least one millimeter in all directions around stimulation, including across cortical area boundaries and across boundaries to deeper brain structures including hippocampus. ",
+  "publishedBy": {
+    "id": "urn:uuid:4aaa1923-7cae-4355-b9c2-115ec8313a6d",
+    "name": "DANDI publish",
+    "endDate": "2024-01-09T16:30:55.684730+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2024-01-09T16:30:55.684730+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:464c5825-a3be-4f61-a377-7f5dbcc05393",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "studyTarget": [],
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 1358542068,
+    "numberOfFiles": 10,
+    "numberOfSubjects": 10,
+    "variableMeasured": [
+      "Units",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2024-01-09T16:30:55.684730+00:00",
+  "schemaVersion": "0.6.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000774/versions/draft/assets/"
+  ]
+}

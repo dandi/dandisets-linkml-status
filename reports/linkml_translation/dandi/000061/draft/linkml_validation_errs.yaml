@@ -1,0 +1,116 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Girardeau, Gabrielle'', ''email'': ''gabrielle.girardeau@inserm.fr'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-5265-9697'', ''affiliation'': [{''name'': ''New York
+    University Langone Medical Center'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/005dvqh91''}, {''name'': ''New York University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Girardeau, Gabrielle'', ''email'': ''gabrielle.girardeau@inserm.fr'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-5265-9697'', ''affiliation'': [{''name'': ''New
+      York University Langone Medical Center'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/005dvqh91''}, {''name'': ''New York University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Inema, Ingrid'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Inema, Ingrid'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+    'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New York
+    University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier':
+    'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation',
+    'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+    of type 'string' in /contributor/2"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'roleName': ['dcite:Author'], 'schemaKey':
+      'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name': 'New
+      York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier':
+      'https://ror.org/005dvqh91'}, {'name': 'New York University', 'schemaKey': 'Affiliation',
+      'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+      of type 'string'"
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-0829-4790''} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-0829-4790''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

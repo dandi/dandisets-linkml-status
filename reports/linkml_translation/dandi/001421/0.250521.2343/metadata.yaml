@@ -1,0 +1,90 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 455615424
+  numberOfFiles: 26
+  numberOfSubjects: 26
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+  - ElectrodeGroup
+citation: 'Kato, Hiroyuki (2025) Cortical Circuits for the integration of short-latency
+  auditory pathways: MGN linear probe recording (Version 0.250521.2343) [Data set].
+  DANDI Archive. https://doi.org/10.48324/dandi.001421/0.250521.2343'
+contributor:
+- awardNumber: 1 RF1 NS 128873-01
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- affiliation:
+  - name: University of North Carolina at Chapel Hill
+    schemaKey: Affiliation
+  email: kato@email.unc.edu
+  identifier: 0000-0002-5748-3221
+  includeInCitation: true
+  name: Kato, Hiroyuki
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- awardNumber: RF1NS128873
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01DC017516
+  name: 'National Institute on Deafness and Other Communication Disorders '
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2025-04-21T16:48:09.364843+00:00'
+datePublished: '2025-05-21T23:43:39.141155+00:00'
+description: Linear probe recordings from the mouse medial geniculate nucleus during
+  click presentations. Unit activity data are included.
+doi: 10.48324/dandi.001421/0.250521.2343
+ethicsApproval: []
+id: DANDI:001421/0.250521.2343
+identifier: DANDI:001421
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001421/0.250521.2343/assets.yaml
+name: 'Cortical Circuits for the integration of short-latency auditory pathways: MGN
+  linear probe recording'
+publishedBy:
+  endDate: '2025-05-21T23:43:39.141155+00:00'
+  id: urn:uuid:b2a68898-2884-41da-a557-ccb537f2a4f7
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-05-21T23:43:39.141155+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:c5f38895-236f-4ff8-830e-4114daf6b267
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.9
+url: https://dandiarchive.org/dandiset/001421/0.250521.2343
+version: 0.250521.2343
+wasGeneratedBy: []

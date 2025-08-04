@@ -1,0 +1,153 @@
+{
+  "id": "DANDI:000637/0.250711.1944",
+  "doi": "10.48324/dandi.000637/0.250711.1944",
+  "url": "https://dandiarchive.org/dandiset/000637/0.250711.1944",
+  "name": "Neural Spike Time Response Data in Anesthetized Rats in the Primary Somatosensory Cortex with Phased Ultrasound Array Stimulation",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "0.250711.1944",
+  "citation": "Ramachandran, Sandhya; Gao, Huan; Yu, Kai; He, Bin (2025) Neural Spike Time Response Data in Anesthetized Rats in the Primary Somatosensory Cortex with Phased Ultrasound Array Stimulation (Version 0.250711.1944) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000637/0.250711.1944",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000637",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Ramachandran, Sandhya",
+      "email": "s.ramachandran8@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Gao, Huan",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "NIH NS124564",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "contactPoint": [],
+      "includeInCitation": false
+    },
+    {
+      "name": "NIH EB029354",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "contactPoint": [],
+      "includeInCitation": false
+    },
+    {
+      "name": "Yu, Kai",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "He, Bin",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "roleName": [
+        "dcite:Affiliation"
+      ],
+      "schemaKey": "Organization",
+      "contactPoint": [],
+      "includeInCitation": false
+    }
+  ],
+  "dateCreated": "2023-09-18T18:18:09.902793+00:00",
+  "description": "In this study, we investigate the neuronal response to transcranial focused ultrasound (tFUS) stimulation on somatosensory cortex by using a 128-element array transducer. Intracranial recordings were performed using a 32-channel Neuronexus multi-electrode array from somatosensory cortex. Wistar rats were anesthetized using isoflurane at 2%. tFUS with different parameters was applied every 2.5s (\u00b110%). Data was recorded using a TDT system and MUA recordings were sorted using the Plexon Offline Sorter to determine the spike times.This dataset contains spike times of the sorted neural signals and event time for each tFUS trial. In these recordings, we test different pulse repetition frequencies (PRFs) (30Hz, 300Hz, 1500Hz, 3000Hz, and 4500Hz), ultrasound durations (UDs) (100\u00b5s, 200\u00b5s, and 400\u00b5s) of ultrasound stimulation to explore the neuronal response to tFUS. The pulse duration was kept at 67ms. Each recording has 500 trials. Detailed description about this dataset can be found in the following publication. Please cite the paper if you would use a portion of the dataset. Gao, H., Ramachandran, S., Yu, K., & He, B. (2025). Transcranial Focused Ultrasound Modulates Feedforward and Feedback Cortico-Thalamo-Cortical Pathways by Selectively Activating Excitatory Neurons. The Journal of Neuroscience, 45(23), e2218242025. https://doi.org/10.1523/JNEUROSCI.2218-24.2025",
+  "publishedBy": {
+    "id": "urn:uuid:465a0f65-2b4b-41cb-976c-25e1f661291f",
+    "name": "DANDI publish",
+    "endDate": "2025-07-11T19:44:46.773229+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-07-11T19:44:46.773229+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:6b653806-954f-4569-8bb8-bafe17862acc",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 1163422160,
+    "numberOfFiles": 292,
+    "numberOfSubjects": 25,
+    "variableMeasured": [
+      "Units",
+      "ElectrodeGroup"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "datePublished": "2025-07-11T19:44:46.773229+00:00",
+  "schemaVersion": "0.6.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000637/0.250711.1944/assets.yaml"
+  ]
+}

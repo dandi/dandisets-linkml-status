@@ -1,0 +1,460 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:8899374f-d429-4aa7-8246-3ce695a94cf2', 'name': 'DANDI publish', 'endDate': '2024-09-05T01:59:50.643613+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-09-05T01:59:50.643613+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f16088b3-c733-471d-a3aa-93cecec3c7bb', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:8899374f-d429-4aa7-8246-3ce695a94cf2', 'name': 'DANDI publish', 'endDate': '2024-09-05T01:59:50.643613+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2024-09-05T01:59:50.643613+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f16088b3-c733-471d-a3aa-93cecec3c7bb', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Sprague-Dawley', 'schemaKey': 'GenericType'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Sprague-Dawley', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'bilateral subiculum (SUB)', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'bilateral subiculum (SUB)', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'dentate gyrus (DG)', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'dentate gyrus (DG)', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'CA1 subfield of the hippocampus (CA1)', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'CA1 subfield of the hippocampus (CA1)', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'CA3 subfield of the hippocampus (CA3)', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'CA3 subfield of the hippocampus (CA3)', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'amygdala (AMD)', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'amygdala (AMD)', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'anterior nucleus of the thalamus (ANT)', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'anterior nucleus of the thalamus (ANT)', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Haoqi, Ni', 'email': 'nihq@zju.edu.cn', 'roleName': ['dcite:Author', 'dcite:DataManager', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0009-0003-1749-4043', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Haoqi, Ni', 'email': 'nihq@zju.edu.cn', 'roleName': ['dcite:Author', 'dcite:DataManager', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0009-0003-1749-4043', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yufang, Yang', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yufang, Yang', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Fang, Zhang', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2585-4611', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Fang, Zhang', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0003-2585-4611', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yuting, Sun', 'email': 'sunyt@zju.edu.cn', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yuting, Sun', 'email': 'sunyt@zju.edu.cn', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Yongte, Zheng', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-2576-6796', 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Yongte, Zheng', 'roleName': ['dcite:DataCollector', 'dcite:Researcher'], 'schemaKey': 'Person', 'identifier': '0000-0002-2576-6796', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Junming, Zhu', 'roleName': ['dcite:Supervision', 'dcite:Validation'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Junming, Zhu', 'roleName': ['dcite:Supervision', 'dcite:Validation'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kedi, Xu', 'email': 'xukd@zju.edu.cn', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectAdministration', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-9059-3860', 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kedi, Xu', 'email': 'xukd@zju.edu.cn', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectAdministration', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-9059-3860', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'STI 2030\u2014Major Projects', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '2021ZD0200405', 'includeInCitation': False} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'STI 2030\u2014Major Projects', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '2021ZD0200405', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Natural Science Foundation of China', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '82272112', 'includeInCitation': False} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Natural Science Foundation of China', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '82272112', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Outstanding Youth Program of Zhejiang Natural Science Foundation', 'schemaKey': 'Organization', 'awardNumber': 'LR23H180002', 'includeInCitation': False} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Outstanding Youth Program of Zhejiang Natural Science Foundation', 'schemaKey': 'Organization', 'awardNumber': 'LR23H180002', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'the Fundamental Research Funds for the Central Universities', 'schemaKey': 'Organization', 'awardNumber': '2021KYY600403-0001', 'includeInCitation': False} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'the Fundamental Research Funds for the Central Universities', 'schemaKey': 'Organization', 'awardNumber': '2021KYY600403-0001', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'the Starry Night Science Fund of Zhejiang University Shanghai Institute for Advanced Study', 'schemaKey': 'Organization', 'awardNumber': 'SN-ZJU-SIAS-002', 'includeInCitation': False} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'the Starry Night Science Fund of Zhejiang University Shanghai Institute for Advanced Study', 'schemaKey': 'Organization', 'awardNumber': 'SN-ZJU-SIAS-002', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]
