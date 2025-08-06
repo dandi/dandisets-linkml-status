@@ -9,8 +9,8 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique: []
-  numberOfBytes: 6769756104
-  numberOfFiles: 185
+  numberOfBytes: 6953982192
+  numberOfFiles: 190
   numberOfSubjects: 10
   schemaKey: AssetsSummary
   species:
@@ -18,9 +18,9 @@ assetsSummary:
     name: Cricetulus griseus - Cricetulus aureus
     schemaKey: SpeciesType
   variableMeasured: []
-citation: Silkuniene, Giedre (2025) Comparison of FluoVolt and Di-8-ANEPPS Responses
-  to Plasma Membrane Polarization at Varying Electric Field Strengths (Version draft)
-  [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001518/draft
+citation: Silkuniene, Giedre; Semenov, Iurii; Pakhomov, Andrei (2025) Comparison of
+  FluoVolt and Di-8-ANEPPS Responses to Plasma Membrane Polarization at Varying Electric
+  Field Strengths (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001518/draft
 contributor:
 - affiliation: []
   email: giedre.silkuniene@gmail.com
@@ -29,6 +29,19 @@ contributor:
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
+- identifier: 0000-0002-0302-1355
+  includeInCitation: true
+  name: Semenov, Iurii
+  schemaKey: Person
+- identifier: 0000-0003-3816-3860
+  includeInCitation: true
+  name: Pakhomov, Andrei
+  schemaKey: Person
+- awardNumber: 1R21EY034258
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 - awardNumber: 5R21EY034803
   name: National Institutes of Health
   roleName:
@@ -52,4 +65,10 @@ schemaKey: Dandiset
 schemaVersion: 0.6.10
 url: https://dandiarchive.org/dandiset/001518/draft
 version: draft
-wasGeneratedBy: []
+wasGeneratedBy:
+- identifier: 5R21EY034803
+  name: Next Generation Temporal Interference Stimulation for Non-Invasive Neuromodulation
+  schemaKey: Project
+- identifier: 1R21EY034258
+  name: Targeted Neuromodulation by Nanosecond Pulsed Electric Fields
+  schemaKey: Project

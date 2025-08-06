@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:dbecbfbe-dc77-4840-9741-d269dd558a6e'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-08-05T20:02:11.850306+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-08-05T20:02:11.850306+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:c161080c-7ccc-49c0-adec-60bc8d84612c'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:dbecbfbe-dc77-4840-9741-d269dd558a6e'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-08-05T20:02:11.850306+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-08-05T20:02:11.850306+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:c161080c-7ccc-49c0-adec-60bc8d84612c'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Doherty, Donald'', ''email'': ''donald.doherty@neurosim.downstate.edu'',
     ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Researcher''],
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4973-6225'', ''affiliation'':
@@ -41,7 +52,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://parkinsonsroadmap.org/'', ''name'': "Aligning Science
     Across Parkinson''s", ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
     ''awardNumber'': ''ASAP-020572''} is not of type ''string'' in /contributor/1'

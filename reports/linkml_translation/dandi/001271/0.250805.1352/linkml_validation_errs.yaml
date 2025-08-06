@@ -1,10 +1,10 @@
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''id'': ''urn:uuid:374f26b7-28ad-4301-8897-5180a4315cdc'', ''name'':
-    ''DANDI publish'', ''endDate'': ''2025-07-01T16:24:57.039956+00:00'', ''schemaKey'':
-    ''PublishActivity'', ''startDate'': ''2025-07-01T16:24:57.039956+00:00'', ''wasAssociatedWith'':
-    [{''id'': ''urn:uuid:cce03e2a-f08e-43a1-9e94-783a01f27d64'', ''name'': ''DANDI
+  message: '{''id'': ''urn:uuid:d9d90864-5261-4af0-b343-a50538caba57'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-08-05T13:52:30.869747+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-08-05T13:52:30.869747+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:433f16d8-4202-485a-a119-27488e87715a'', ''name'': ''DANDI
     API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
     is not of type ''string'' in /publishedBy'
   severity: ERROR
@@ -15,10 +15,10 @@
     - properties
     - publishedBy
     - type
-    message: '{''id'': ''urn:uuid:374f26b7-28ad-4301-8897-5180a4315cdc'', ''name'':
-      ''DANDI publish'', ''endDate'': ''2025-07-01T16:24:57.039956+00:00'', ''schemaKey'':
-      ''PublishActivity'', ''startDate'': ''2025-07-01T16:24:57.039956+00:00'', ''wasAssociatedWith'':
-      [{''id'': ''urn:uuid:cce03e2a-f08e-43a1-9e94-783a01f27d64'', ''name'': ''DANDI
+    message: '{''id'': ''urn:uuid:d9d90864-5261-4af0-b343-a50538caba57'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-08-05T13:52:30.869747+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-08-05T13:52:30.869747+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:433f16d8-4202-485a-a119-27488e87715a'', ''name'': ''DANDI
       API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
       ''RRID:SCR_017571''}]} is not of type ''string'''
     validator: type
@@ -133,6 +133,28 @@
       ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
       ''awardNumber'': ''5R21EY034803'', ''includeInCitation'': False} is not of type
       ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''1R21EY034258''} is not of
+    type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''1R21EY034258''} is not of
+      type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

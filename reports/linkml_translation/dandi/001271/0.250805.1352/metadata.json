@@ -1,8 +1,8 @@
 {
-  "id": "DANDI:001274/0.250701.1622",
-  "doi": "10.48324/dandi.001274/0.250701.1622",
-  "url": "https://dandiarchive.org/dandiset/001274/0.250701.1622",
-  "name": "Characterization of Plasma Membrane Polarization in Hippocampal Neurons During Sine Wave and Modulated Sine Wave Stimulation",
+  "id": "DANDI:001271/0.250805.1352",
+  "doi": "10.48324/dandi.001271/0.250805.1352",
+  "url": "https://dandiarchive.org/dandiset/001271/0.250805.1352",
+  "name": "Tetrodotoxin Blockade of Sodium Channels Abolishes Action Potential Formation During Intense Sinewave Stimulation",
   "about": [],
   "access": [
     {
@@ -13,10 +13,10 @@
   "license": [
     "spdx:CC-BY-4.0"
   ],
-  "version": "0.250701.1622",
-  "citation": "Silkuniene, Giedre; Kim, Vitalii; Semenov, Iurii ; Pakhomov, Andrei (2025) Characterization of Plasma Membrane Polarization in Hippocampal Neurons During Sine Wave and Modulated Sine Wave Stimulation (Version 0.250701.1622) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001274/0.250701.1622",
+  "version": "0.250805.1352",
+  "citation": "Silkuniene, Giedre; Kim, Vitalii; Semenov, Iurii; Pakhomov, Andrei (2025) Tetrodotoxin Blockade of Sodium Channels Abolishes Action Potential Formation During Intense Sinewave Stimulation (Version 0.250805.1352) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001271/0.250805.1352",
   "schemaKey": "Dandiset",
-  "identifier": "DANDI:001274",
+  "identifier": "DANDI:001271",
   "repository": "https://dandiarchive.org",
   "contributor": [
     {
@@ -37,7 +37,7 @@
       "includeInCitation": true
     },
     {
-      "name": "Semenov, Iurii ",
+      "name": "Semenov, Iurii",
       "schemaKey": "Person",
       "identifier": "0000-0002-0302-1355",
       "includeInCitation": true
@@ -57,21 +57,30 @@
         "dcite:Funder"
       ],
       "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
       "awardNumber": "5R21EY034803",
       "includeInCitation": false
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1R21EY034258"
     }
   ],
-  "dateCreated": "2024-12-04T17:21:53.484014+00:00",
-  "description": "This experimental series aimed to visualize and characterize plasma membrane (PM) polarization dynamics in hippocampal neurons exposed to 2 kHz sine waves or 2 kHz sine waves modulated at 100 Hz or 154 Hz. Neurons were pre-loaded with FluoVolt potentiometric dye to enable visualization of membrane polarization changes. This study was partially supported by the NIH Brain Initiative (NEI R21EY034803).",
+  "dateCreated": "2024-12-04T14:34:50.556074+00:00",
+  "description": "This dataset explores whether blocking sodium channels with tetrodotoxin (TTX) can prevent action potential formation during intense sinewave stimulation. Applying 1 \u00b5M TTX suppressed action potentials, as expected, and completely prevented sustained depolarization. This study was partially supported by the NIH Brain Initiative (NEI R21EY034803).\n\n",
   "publishedBy": {
-    "id": "urn:uuid:c5ca9917-5ebb-4cd6-861e-6baa0bf827a8",
+    "id": "urn:uuid:d9d90864-5261-4af0-b343-a50538caba57",
     "name": "DANDI publish",
-    "endDate": "2025-07-01T16:22:30.955089+00:00",
+    "endDate": "2025-08-05T13:52:30.869747+00:00",
     "schemaKey": "PublishActivity",
-    "startDate": "2025-07-01T16:22:30.955089+00:00",
+    "startDate": "2025-08-05T13:52:30.869747+00:00",
     "wasAssociatedWith": [
       {
-        "id": "urn:uuid:be71effb-546f-4fb4-b547-cf6603775d50",
+        "id": "urn:uuid:433f16d8-4202-485a-a119-27488e87715a",
         "name": "DANDI API",
         "version": "0.1.0",
         "schemaKey": "Software",
@@ -96,13 +105,13 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 25018923207,
-    "numberOfFiles": 232,
+    "numberOfBytes": 203128780,
+    "numberOfFiles": 287,
     "numberOfSubjects": 20,
     "variableMeasured": [],
     "measurementTechnique": []
   },
-  "datePublished": "2025-07-01T16:22:30.955089+00:00",
+  "datePublished": "2025-08-05T13:52:30.869747+00:00",
   "schemaVersion": "0.6.8",
   "ethicsApproval": [],
   "wasGeneratedBy": [
@@ -110,12 +119,17 @@
       "name": "Next Gen Temporal Interference Stimulation Non-Invasive Neuromodulation",
       "schemaKey": "Project",
       "identifier": "5R21EY034803"
+    },
+    {
+      "name": "Targeted Neuromodulation by Nanosecond Pulsed Electric Fields",
+      "schemaKey": "Project",
+      "identifier": "1R21EY034258"
     }
   ],
   "relatedResource": [
     {
       "url": "https://doi.org/10.1016/j.xcrp.2025.102660",
-      "name": "Excitation and polarization of isolated neurons by high-frequency sine waves for temporal interference stimulation",
+      "name": "Excitation and polarization of isolated neurons by high-frequency sine waves in the context of temporal interference stimulation",
       "relation": "dcite:IsPublishedIn",
       "schemaKey": "Resource",
       "identifier": "doi.org/10.1016/j.xcrp.2025.102660",
@@ -123,6 +137,6 @@
     }
   ],
   "manifestLocation": [
-    "https://dandiarchive.s3.amazonaws.com/dandisets/001274/0.250701.1622/assets.yaml"
+    "https://dandiarchive.s3.amazonaws.com/dandisets/001271/0.250805.1352/assets.yaml"
   ]
 }

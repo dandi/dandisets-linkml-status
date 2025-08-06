@@ -2,12 +2,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'id': 'urn:uuid:c5ca9917-5ebb-4cd6-861e-6baa0bf827a8', 'name': 'DANDI publish', 'endDate': '2025-07-01T16:22:30.955089+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-07-01T16:22:30.955089+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:be71effb-546f-4fb4-b547-cf6603775d50', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "message": "{'id': 'urn:uuid:ae94fe76-e262-498b-a68f-23249566840b', 'name': 'DANDI publish', 'endDate': '2025-08-05T14:01:50.567572+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-08-05T14:01:50.567572+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:05e0770b-f27d-44b1-962e-6cae81ff26f2', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
     "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "{'id': 'urn:uuid:c5ca9917-5ebb-4cd6-861e-6baa0bf827a8', 'name': 'DANDI publish', 'endDate': '2025-07-01T16:22:30.955089+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-07-01T16:22:30.955089+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:be71effb-546f-4fb4-b547-cf6603775d50', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "message": "{'id': 'urn:uuid:ae94fe76-e262-498b-a68f-23249566840b', 'name': 'DANDI publish', 'endDate': '2025-08-05T14:01:50.567572+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-08-05T14:01:50.567572+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:05e0770b-f27d-44b1-962e-6cae81ff26f2', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
       "absolute_path": [
         "publishedBy"
       ],
@@ -124,6 +124,29 @@
       "absolute_path": [
         "contributor",
         4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1R21EY034258'} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1R21EY034258'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
       ],
       "absolute_schema_path": [
         "properties",

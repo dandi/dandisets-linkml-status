@@ -1,8 +1,8 @@
 {
-  "id": "DANDI:001272/0.250701.1622",
-  "doi": "10.48324/dandi.001272/0.250701.1622",
-  "url": "https://dandiarchive.org/dandiset/001272/0.250701.1622",
-  "name": "The Use of Di8-ANEPPS to Evaluate Neuronal Sensitivity to Unmodulated Sine Waves",
+  "id": "DANDI:001274/0.250805.1401",
+  "doi": "10.48324/dandi.001274/0.250805.1401",
+  "url": "https://dandiarchive.org/dandiset/001274/0.250805.1401",
+  "name": "Characterization of Plasma Membrane Polarization in Hippocampal Neurons During Sine Wave and Modulated Sine Wave Stimulation",
   "about": [],
   "access": [
     {
@@ -13,10 +13,10 @@
   "license": [
     "spdx:CC-BY-4.0"
   ],
-  "version": "0.250701.1622",
-  "citation": "Silkuniene, Giedre; Kim, Vitalii; Semenov, Iurii; Pakhomov, Andrei (2025) The Use of Di8-ANEPPS to Evaluate Neuronal Sensitivity to Unmodulated Sine Waves (Version 0.250701.1622) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001272/0.250701.1622",
+  "version": "0.250805.1401",
+  "citation": "Silkuniene, Giedre; Kim, Vitalii; Semenov, Iurii ; Pakhomov, Andrei (2025) Characterization of Plasma Membrane Polarization in Hippocampal Neurons During Sine Wave and Modulated Sine Wave Stimulation (Version 0.250805.1401) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001274/0.250805.1401",
   "schemaKey": "Dandiset",
-  "identifier": "DANDI:001272",
+  "identifier": "DANDI:001274",
   "repository": "https://dandiarchive.org",
   "contributor": [
     {
@@ -37,7 +37,7 @@
       "includeInCitation": true
     },
     {
-      "name": "Semenov, Iurii",
+      "name": "Semenov, Iurii ",
       "schemaKey": "Person",
       "identifier": "0000-0002-0302-1355",
       "includeInCitation": true
@@ -59,19 +59,27 @@
       "schemaKey": "Organization",
       "awardNumber": "5R21EY034803",
       "includeInCitation": false
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "1R21EY034258"
     }
   ],
-  "dateCreated": "2024-12-04T14:35:22.871630+00:00",
-  "description": "Experiments were conducted using the potentiometric dye Di8-ANEPPS, which detects voltage through an electrochromic mechanism, differing from the photo-induced electron transfer mechanism. The goal was to ensure that action potentials recorded with FluoVolt (published in other DANDIsets) were not influenced by the dye when applying intense sinewaves. Control experiments were performed using Di8-ANEPPS, chosen for its distinct molecular structure and voltage detection method. This study was partially supported by the NIH Brain Initiative (NEI R21EY034803).",
+  "dateCreated": "2024-12-04T17:21:53.484014+00:00",
+  "description": "This experimental series aimed to visualize and characterize plasma membrane (PM) polarization dynamics in hippocampal neurons exposed to 2 kHz sine waves or 2 kHz sine waves modulated at 100 Hz or 154 Hz. Neurons were pre-loaded with FluoVolt potentiometric dye to enable visualization of membrane polarization changes. This study was partially supported by the NIH Brain Initiative (NEI R21EY034803).",
   "publishedBy": {
-    "id": "urn:uuid:f3b131f4-b5d1-4d1e-bf25-4c9d1227ff95",
+    "id": "urn:uuid:ae94fe76-e262-498b-a68f-23249566840b",
     "name": "DANDI publish",
-    "endDate": "2025-07-01T16:22:46.849532+00:00",
+    "endDate": "2025-08-05T14:01:50.567572+00:00",
     "schemaKey": "PublishActivity",
-    "startDate": "2025-07-01T16:22:46.849532+00:00",
+    "startDate": "2025-08-05T14:01:50.567572+00:00",
     "wasAssociatedWith": [
       {
-        "id": "urn:uuid:d00d3948-edf6-4eb4-8627-dc7465984a28",
+        "id": "urn:uuid:05e0770b-f27d-44b1-962e-6cae81ff26f2",
         "name": "DANDI API",
         "version": "0.1.0",
         "schemaKey": "Software",
@@ -96,13 +104,13 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 44171195,
-    "numberOfFiles": 65,
-    "numberOfSubjects": 3,
+    "numberOfBytes": 25018923207,
+    "numberOfFiles": 232,
+    "numberOfSubjects": 20,
     "variableMeasured": [],
     "measurementTechnique": []
   },
-  "datePublished": "2025-07-01T16:22:46.849532+00:00",
+  "datePublished": "2025-08-05T14:01:50.567572+00:00",
   "schemaVersion": "0.6.8",
   "ethicsApproval": [],
   "wasGeneratedBy": [
@@ -110,6 +118,11 @@
       "name": "Next Gen Temporal Interference Stimulation Non-Invasive Neuromodulation",
       "schemaKey": "Project",
       "identifier": "5R21EY034803"
+    },
+    {
+      "name": "Targeted Neuromodulation by Nanosecond Pulsed Electric Fields",
+      "schemaKey": "Project",
+      "identifier": "1R21EY034258"
     }
   ],
   "relatedResource": [
@@ -123,6 +136,6 @@
     }
   ],
   "manifestLocation": [
-    "https://dandiarchive.s3.amazonaws.com/dandisets/001272/0.250701.1622/assets.yaml"
+    "https://dandiarchive.s3.amazonaws.com/dandisets/001274/0.250805.1401/assets.yaml"
   ]
 }
