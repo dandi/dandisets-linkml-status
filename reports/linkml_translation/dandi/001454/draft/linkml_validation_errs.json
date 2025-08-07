@@ -2,12 +2,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Keyes, Laurel', 'email': 'laurelrr@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'Keyes, Laurel R', 'email': 'lkeyes@salk.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataManager', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5433-9948', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Keyes, Laurel', 'email': 'laurelrr@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Keyes, Laurel R', 'email': 'lkeyes@salk.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataManager', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5433-9948', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -25,12 +25,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Tye, Kay M', 'email': 'tye@salk.edu', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-2435-0182', 'affiliation': [{'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}, {'name': 'Salk Institute for Biological Studies', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03xez1567'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Tye, Kay M', 'email': 'tye@salk.edu', 'roleName': ['dcite:ProjectLeader', 'dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2435-0182', 'affiliation': [{'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}, {'name': 'Salk Institute for Biological Studies', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03xez1567'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Tye, Kay M', 'email': 'tye@salk.edu', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-2435-0182', 'affiliation': [{'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}, {'name': 'Salk Institute for Biological Studies', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03xez1567'}], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Tye, Kay M', 'email': 'tye@salk.edu', 'roleName': ['dcite:ProjectLeader', 'dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2435-0182', 'affiliation': [{'name': 'Howard Hughes Medical Institute', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/006w34k90'}, {'name': 'Salk Institute for Biological Studies', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/03xez1567'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -48,12 +48,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Patel, Reesha R', 'email': 'reesha.patel@northwestern.edu', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Patel, Reesha R', 'email': 'reesha.patel@northwestern.edu', 'roleName': ['dcite:ProjectLeader', 'dcite:Author', 'dcite:ProjectManager'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Patel, Reesha R', 'email': 'reesha.patel@northwestern.edu', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Patel, Reesha R', 'email': 'reesha.patel@northwestern.edu', 'roleName': ['dcite:ProjectLeader', 'dcite:Author', 'dcite:ProjectManager'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -264,6 +264,374 @@
       "absolute_path": [
         "contributor",
         11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Patarino, Makenzie', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9716-0507', 'includeInCitation': True} is not of type 'string' in /contributor/12",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Patarino, Makenzie', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9716-0507', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Kim, Kelly', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/13",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Kim, Kelly', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Paminuan, Rachelle', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/14",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Paminuan, Rachelle', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        14
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Taschbach, Felix H.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/15",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Taschbach, Felix H.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        15
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Li, Hao', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8710-1290', 'includeInCitation': True} is not of type 'string' in /contributor/16",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Li, Hao', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8710-1290', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        16
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Lee, Christopher R.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5952-9924', 'includeInCitation': True} is not of type 'string' in /contributor/17",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Lee, Christopher R.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5952-9924', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        17
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'van Hoek, Aniek', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/18",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'van Hoek, Aniek', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        18
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Cazares, Christian', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8899-2109', 'includeInCitation': True} is not of type 'string' in /contributor/19",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Cazares, Christian', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8899-2109', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        19
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Miranda, Raymundo L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/20",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Miranda, Raymundo L.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        20
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Jia, Caroline', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8077-4852', 'includeInCitation': True} is not of type 'string' in /contributor/21",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Jia, Caroline', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8077-4852', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        21
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Delahanty, Jeremy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/22",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Delahanty, Jeremy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        22
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Batra, Kanha', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6401-4274', 'includeInCitation': True} is not of type 'string' in /contributor/23",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Batra, Kanha', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6401-4274', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        23
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Wichmann, Romy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4506-8813', 'includeInCitation': True} is not of type 'string' in /contributor/24",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Wichmann, Romy', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4506-8813', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        24
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Libster, Avraham', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/25",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Libster, Avraham', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        25
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Pereira, Talmo D', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9075-8365', 'includeInCitation': True} is not of type 'string' in /contributor/26",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Pereira, Talmo D', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9075-8365', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        26
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Benna, Marcus K', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8100-2857', 'includeInCitation': True} is not of type 'string' in /contributor/27",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Benna, Marcus K', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8100-2857', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        27
       ],
       "absolute_schema_path": [
         "properties",

@@ -6,19 +6,56 @@ acknowledgement: "We would like to acknowledge the Scripps Research Animal Model
   Core for their measurements of blood alcohol content. This article is subject to
   HHMI\u2019s Open Access to Publications policy."
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: one-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 98916697091
+  numberOfFiles: 149
+  numberOfSubjects: 35
   schemaKey: AssetsSummary
-citation: 'Keyes, Laurel; Tye, Kay M; Patel, Reesha R (2025) Social isolation recruits
-  amygdala-cortical circuitry to escalate alcohol drinking Part 1: in vivo calcium
-  and behavior data (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001454/draft'
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - OnePhotonSeries
+  - PlaneSegmentation
+  - BehavioralEvents
+  - ProcessingModule
+  - ImagingPlane
+  - OpticalChannel
+citation: 'Keyes, Laurel R; Tye, Kay M; Patel, Reesha R; Patarino, Makenzie; Kim,
+  Kelly; Paminuan, Rachelle; Taschbach, Felix H.; Li, Hao; Lee, Christopher R.; van
+  Hoek, Aniek; Cazares, Christian; Miranda, Raymundo L.; Jia, Caroline; Delahanty,
+  Jeremy; Batra, Kanha; Wichmann, Romy; Libster, Avraham; Pereira, Talmo D; Benna,
+  Marcus K (2025) Social isolation recruits amygdala-cortical circuitry to escalate
+  alcohol drinking Part 1: in vivo calcium and behavior data (Version draft) [Data
+  set]. DANDI Archive. https://dandiarchive.org/dandiset/001454/draft'
 contributor:
 - affiliation: []
-  email: laurelrr@gmail.com
+  email: lkeyes@salk.edu
+  identifier: 0000-0001-5433-9948
   includeInCitation: true
-  name: Keyes, Laurel
+  name: Keyes, Laurel R
   roleName:
   - dcite:ContactPerson
+  - dcite:DataManager
+  - dcite:Author
   schemaKey: Person
 - affiliation:
   - identifier: https://ror.org/006w34k90
@@ -33,12 +70,16 @@ contributor:
   name: Tye, Kay M
   roleName:
   - dcite:ProjectLeader
+  - dcite:ContactPerson
+  - dcite:Author
   schemaKey: Person
 - email: reesha.patel@northwestern.edu
   includeInCitation: true
   name: Patel, Reesha R
   roleName:
   - dcite:ProjectLeader
+  - dcite:Author
+  - dcite:ProjectManager
   schemaKey: Person
 - identifier: https://ror.org/03xez1567
   name: Salk Institute for Biological Studies
@@ -83,6 +124,95 @@ contributor:
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- identifier: 0000-0002-9716-0507
+  includeInCitation: true
+  name: Patarino, Makenzie
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Kim, Kelly
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Paminuan, Rachelle
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Taschbach, Felix H.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0001-8710-1290
+  includeInCitation: true
+  name: Li, Hao
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-5952-9924
+  includeInCitation: true
+  name: Lee, Christopher R.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: van Hoek, Aniek
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-8899-2109
+  includeInCitation: true
+  name: Cazares, Christian
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Miranda, Raymundo L.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-8077-4852
+  includeInCitation: true
+  name: Jia, Caroline
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Delahanty, Jeremy
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0001-6401-4274
+  includeInCitation: true
+  name: Batra, Kanha
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-4506-8813
+  includeInCitation: true
+  name: Wichmann, Romy
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Libster, Avraham
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0001-9075-8365
+  includeInCitation: true
+  name: Pereira, Talmo D
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0001-8100-2857
+  includeInCitation: true
+  name: Benna, Marcus K
+  roleName:
+  - dcite:Author
+  schemaKey: Person
 dateCreated: '2025-05-19T17:55:45.753450+00:00'
 description: 'This dandiset contains the in vivo data used in the manuscript: Patel
   RR, Patarino M, Kim K, Pamintuan R, Taschbach FH, Li H, Lee CR, van Hoek A, Castro
