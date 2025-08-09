@@ -3,9 +3,27 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 278983896
+  numberOfFiles: 47
+  numberOfSubjects: 10
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - CurrentClampSeries
+  - CurrentClampStimulusSeries
 citation: Rajebhosale, Prithviraj; Jiang, Li; Ressa, Haylee; Johnston, Kory; Desai,
   Niraj; Jone, Alice; Role, Lorna; Talmage, David (2025) Diversification of dentate
   gyrus granule cell subtypes is regulated by Nrg1 nuclear back-signaling (Version
