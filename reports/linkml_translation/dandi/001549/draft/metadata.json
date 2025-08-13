@@ -1,0 +1,129 @@
+{
+  "id": "DANDI:001549/draft",
+  "url": "https://dandiarchive.org/dandiset/001549/draft",
+  "name": "Neural Spiking Data Responding to Transcranial Focused Ultrasound Stimulation in Freely Moving Rats",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Kim, Min Gon; Yu, Kai; Herring, Ethan; Morrison, Sara; He, Bin (2025) Neural Spiking Data Responding to Transcranial Focused Ultrasound Stimulation in Freely Moving Rats (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001549/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001549",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "R01 NS124564"
+    },
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "RF1NS131069"
+    },
+    {
+      "name": "Kim, Min Gon",
+      "email": "mingonk@andrew.cmu.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Yu, Kai",
+      "roleName": [
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Herring, Ethan",
+      "roleName": [
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Morrison, Sara",
+      "roleName": [
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "He, Bin",
+      "roleName": [
+        "dcite:ProjectLeader",
+        "dcite:Supervision"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-08-12T20:40:15.567112+00:00",
+  "description": "We performed Pavlovian cue-concurrent transcranial focused ultrasound stimulation (tFUS) stimulation during intracranial single-neuron recordings using a wearable array transducer targeting the nucleus accumbens (NAc) in awake and behaving rats.   The stimulation was delivered with a 64-element array transducer. Experimental parameters included pulse repetition frequency (PRF), tone burst duration (TBD), total sonication time, and input voltage to Vantage ultrasound system (can be converted to pressure level). For example, the notation mou05_50_50_50_5 indicates the animal number, PRF (Hz), input voltage (v), TBD (microseconds), and total sonication time (sec), respectively. ",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 303690160,
+    "numberOfFiles": 31,
+    "numberOfSubjects": 6,
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.10",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001549/versions/draft/assets/"
+  ]
+}
