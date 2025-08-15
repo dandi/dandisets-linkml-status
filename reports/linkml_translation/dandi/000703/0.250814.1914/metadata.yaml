@@ -1,0 +1,87 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 207725605
+  numberOfFiles: 22
+  numberOfSubjects: 24
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_7955
+    name: Danio rerio - Zebra fish
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Position
+  - ProcessingModule
+  - CompassDirection
+  - SpatialSeries
+  - BehavioralTimeSeries
+citation: Balakrishnan, Kaarthik A; Haesemeyer, Martin (2025) Constant temperature
+  behavior 28C (Version 0.250814.1914) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000703/0.250814.1914
+contributor:
+- awardNumber: 5 R01 NS 123887-03
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- affiliation: []
+  email: balakrishnan.64@buckeyemail.osu.edu
+  includeInCitation: true
+  name: Balakrishnan, Kaarthik A
+  roleName:
+  - dcite:DataCollector
+  schemaKey: Person
+- email: haesemeyer.1@osu.edu
+  identifier: 0000-0003-2704-3601
+  includeInCitation: true
+  name: Haesemeyer, Martin
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2023-11-11T16:00:57.024420+00:00'
+datePublished: '2025-08-14T19:14:59.417080+00:00'
+description: Fish swimming behavior in light at constant 28C
+doi: 10.48324/dandi.000703/0.250814.1914
+ethicsApproval: []
+id: DANDI:000703/0.250814.1914
+identifier: DANDI:000703
+keywords: []
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/000703/0.250814.1914/assets.yaml
+name: Constant temperature behavior 28C
+protocol: []
+publishedBy:
+  endDate: '2025-08-14T19:14:59.417080+00:00'
+  id: urn:uuid:dc25b6a0-8293-403e-925e-c15ead5d64f3
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-08-14T19:14:59.417080+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:37e2c770-5a03-4f8d-98ef-70f4bee0697b
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.4
+studyTarget: []
+url: https://dandiarchive.org/dandiset/000703/0.250814.1914
+version: 0.250814.1914
+wasGeneratedBy: []

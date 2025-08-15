@@ -3,9 +3,34 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 28840969612
+  numberOfFiles: 223
+  numberOfSubjects: 223
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_7955
+    name: Danio rerio - Zebra fish
+    schemaKey: SpeciesType
+  variableMeasured:
+  - PlaneSegmentation
+  - ImagingPlane
+  - OpticalChannel
+  - ProcessingModule
+  - TwoPhotonSeries
 citation: Balakrishnan, Kaarthik A; Haesemeyer, Martin (2025) Fixed hot/cold stim
   medulla (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001337/draft
 contributor:
@@ -27,6 +52,7 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2025-02-19T19:22:44.092599+00:00'
+datePublished: '2025-08-14T19:17:21.725668+00:00'
 description: 2-photon calcium imaging in medulla/hindbrain using hot/cold flow stimuli
 ethicsApproval: []
 id: DANDI:001337/draft
@@ -38,6 +64,18 @@ manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001337/versions/draft/assets/
 name: Fixed hot/cold stim medulla
 protocol: []
+publishedBy:
+  endDate: '2025-08-14T19:17:21.725668+00:00'
+  id: urn:uuid:92341521-abfd-4e10-9079-912667f6d90d
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-08-14T19:17:21.725668+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:9cbdfe87-77b0-4421-ac35-63c054eaeff4
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset

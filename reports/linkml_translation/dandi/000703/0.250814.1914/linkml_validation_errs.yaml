@@ -1,0 +1,93 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:dc25b6a0-8293-403e-925e-c15ead5d64f3'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-08-14T19:14:59.417080+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-08-14T19:14:59.417080+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:37e2c770-5a03-4f8d-98ef-70f4bee0697b'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:dc25b6a0-8293-403e-925e-c15ead5d64f3'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-08-14T19:14:59.417080+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-08-14T19:14:59.417080+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:37e2c770-5a03-4f8d-98ef-70f4bee0697b'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''5 R01 NS 123887-03''} is not
+    of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''5 R01 NS 123887-03''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Balakrishnan, Kaarthik A'', ''email'': ''balakrishnan.64@buckeyemail.osu.edu'',
+    ''roleName'': [''dcite:DataCollector''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Balakrishnan, Kaarthik A'', ''email'': ''balakrishnan.64@buckeyemail.osu.edu'',
+      ''roleName'': [''dcite:DataCollector''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Haesemeyer, Martin'', ''email'': ''haesemeyer.1@osu.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-2704-3601'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Haesemeyer, Martin'', ''email'': ''haesemeyer.1@osu.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-2704-3601'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

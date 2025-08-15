@@ -3,9 +3,34 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 4547277886
+  numberOfFiles: 82
+  numberOfSubjects: 82
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_7955
+    name: Danio rerio - Zebra fish
+    schemaKey: SpeciesType
+  variableMeasured:
+  - PlaneSegmentation
+  - ProcessingModule
+  - ImagingPlane
+  - TwoPhotonSeries
+  - OpticalChannel
 citation: Balakrishnan, Kaarthik A; Haesemeyer, Martin (2025) Fixed hot/cold stim
   trigeminal ganglion (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001339/draft
 contributor:
@@ -27,6 +52,7 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2025-02-19T23:00:51.227979+00:00'
+datePublished: '2025-08-14T19:16:53.030597+00:00'
 description: 2-photon calcium imaging in Trigeminal ganglion / lateral hypothalamus
   using hot/cold flow stimuli
 ethicsApproval: []
@@ -39,6 +65,18 @@ manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001339/versions/draft/assets/
 name: Fixed hot/cold stim trigeminal ganglion
 protocol: []
+publishedBy:
+  endDate: '2025-08-14T19:16:53.030597+00:00'
+  id: urn:uuid:1cb16140-a7b7-44da-bf50-07cbe6041d40
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-08-14T19:16:53.030597+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:62649d46-0d29-47cc-8d3e-c17dc44e278c
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
