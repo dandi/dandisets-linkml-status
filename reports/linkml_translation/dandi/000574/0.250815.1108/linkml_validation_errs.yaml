@@ -1,10 +1,10 @@
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''id'': ''urn:uuid:4ea29348-fdfa-4d09-bc70-26b7ff811c8c'', ''name'':
-    ''DANDI publish'', ''endDate'': ''2025-06-10T09:38:50.516294+00:00'', ''schemaKey'':
-    ''PublishActivity'', ''startDate'': ''2025-06-10T09:38:50.516294+00:00'', ''wasAssociatedWith'':
-    [{''id'': ''urn:uuid:a9b9e768-e116-48c9-8033-b4c253b643dc'', ''name'': ''DANDI
+  message: '{''id'': ''urn:uuid:e448b28d-2b9c-43aa-8607-0ed5b42f3a60'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-08-15T11:08:09.790405+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-08-15T11:08:09.790405+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:55cab6a8-162d-446d-a226-2f6e75d1a758'', ''name'': ''DANDI
     API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
     is not of type ''string'' in /publishedBy'
   severity: ERROR
@@ -15,10 +15,10 @@
     - properties
     - publishedBy
     - type
-    message: '{''id'': ''urn:uuid:4ea29348-fdfa-4d09-bc70-26b7ff811c8c'', ''name'':
-      ''DANDI publish'', ''endDate'': ''2025-06-10T09:38:50.516294+00:00'', ''schemaKey'':
-      ''PublishActivity'', ''startDate'': ''2025-06-10T09:38:50.516294+00:00'', ''wasAssociatedWith'':
-      [{''id'': ''urn:uuid:a9b9e768-e116-48c9-8033-b4c253b643dc'', ''name'': ''DANDI
+    message: '{''id'': ''urn:uuid:e448b28d-2b9c-43aa-8607-0ed5b42f3a60'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-08-15T11:08:09.790405+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-08-15T11:08:09.790405+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:55cab6a8-162d-446d-a226-2f6e75d1a758'', ''name'': ''DANDI
       API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
       ''RRID:SCR_017571''}]} is not of type ''string'''
     validator: type
@@ -165,13 +165,12 @@
   instance_index: 0
   instantiates: PublishedDandiset
   message: '{''url'': ''https://www.hohenheim.ch'', ''name'': ''Hohenheim, Jan'',
-    ''email'': ''jan@hohenheim.ch'', ''roleName'': [''dcite:ContactPerson'', ''dcite:DataCurator''],
-    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9436-8348'', ''affiliation'':
-    [{''name'': ''Institute of Neuroinformatics, University of Zurich'', ''schemaKey'':
-    ''Affiliation'', ''identifier'': ''https://ror.org/02crff812''}, {''name'': ''Institute
-    of Neuroinformatics, ETH Zurich'', ''schemaKey'': ''Affiliation'', ''identifier'':
-    ''https://ror.org/05a28rw58''}], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/5'
+    ''email'': ''jan@hohenheim.ch'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-9436-8348'', ''affiliation'': [{''name'':
+    ''Institute of Neuroinformatics, University of Zurich'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/02crff812''}, {''name'': ''Institute of Neuroinformatics,
+    ETH Zurich'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05a28rw58''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
@@ -183,13 +182,36 @@
     - items
     - type
     message: '{''url'': ''https://www.hohenheim.ch'', ''name'': ''Hohenheim, Jan'',
-      ''email'': ''jan@hohenheim.ch'', ''roleName'': [''dcite:ContactPerson'', ''dcite:DataCurator''],
-      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9436-8348'', ''affiliation'':
-      [{''name'': ''Institute of Neuroinformatics, University of Zurich'', ''schemaKey'':
-      ''Affiliation'', ''identifier'': ''https://ror.org/02crff812''}, {''name'':
-      ''Institute of Neuroinformatics, ETH Zurich'', ''schemaKey'': ''Affiliation'',
-      ''identifier'': ''https://ror.org/05a28rw58''}], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''email'': ''jan@hohenheim.ch'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-9436-8348'', ''affiliation'': [{''name'':
+      ''Institute of Neuroinformatics, University of Zurich'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/02crff812''}, {''name'': ''Institute of Neuroinformatics,
+      ETH Zurich'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05a28rw58''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: "{'name': 'Costa, Filippo', 'roleName': ['dcite:Researcher'], 'schemaKey':
+    'Person', 'identifier': '0009-0005-5001-5950', 'affiliation': [{'name': 'Universit\xE4tsspital
+    Z\xFCrich', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of
+    type 'string' in /contributor/6"
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: "{'name': 'Costa, Filippo', 'roleName': ['dcite:Researcher'], 'schemaKey':
+      'Person', 'identifier': '0009-0005-5001-5950', 'affiliation': [{'name': 'Universit\xE4tsspital
+      Z\xFCrich', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not
+      of type 'string'"
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -203,12 +225,12 @@
     8091 Z\xFCrich, Switzerland.', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01462r250'},
     {'name': 'Zentrum f\xFCr Neurowissenschaften Z\xFCrich, ETH Z\xFCrich, Z\xFCrich,
     Switzerland.', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05a28rw58'}],
-    'includeInCitation': True} is not of type 'string' in /contributor/6"
+    'includeInCitation': True} is not of type 'string' in /contributor/7"
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 6
+    - 7
     absolute_schema_path:
     - properties
     - contributor
@@ -232,12 +254,12 @@
     Foundation'', ''email'': ''projects.ls@snf.ch'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00yjd3n13'',
     ''awardNumber'': ''204651'', ''contactPoint'': [], ''includeInCitation'': False}
-    is not of type ''string'' in /contributor/7'
+    is not of type ''string'' in /contributor/8'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 7
+    - 8
     absolute_schema_path:
     - properties
     - contributor
@@ -258,12 +280,12 @@
     Foundation'', ''email'': ''communications@kavlifoundation.org'', ''roleName'':
     [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00kztt736'',
     ''awardNumber'': ''2586'', ''contactPoint'': [], ''includeInCitation'': False}
-    is not of type ''string'' in /contributor/8'
+    is not of type ''string'' in /contributor/9'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 8
+    - 9
     absolute_schema_path:
     - properties
     - contributor

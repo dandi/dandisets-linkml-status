@@ -58,7 +58,8 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
     ''awardNumber'': ''R01MH120228''} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
@@ -70,28 +71,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
       ''awardNumber'': ''R01MH120228''} is not of type ''string'''
-    validator: type
-    validator_value: string
-  type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: Dandiset
-  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-    ''awardNumber'': ''R01MH112661''} is not of type ''string'' in /contributor/3'
-  severity: ERROR
-  source:
-    absolute_path:
-    - contributor
-    - 3
-    absolute_schema_path:
-    - properties
-    - contributor
-    - items
-    - type
-    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-      ''awardNumber'': ''R01MH112661''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
