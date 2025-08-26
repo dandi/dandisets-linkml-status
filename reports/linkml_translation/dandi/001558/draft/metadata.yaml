@@ -1,0 +1,74 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 16757384
+  numberOfFiles: 48
+  numberOfSubjects: 1
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9544
+    name: Macaca mulatta - Rhesus monkey
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+citation: Yeh, Kelly (2025) Multimodal Electrophysiological Recordings in Macaque
+  During Transcranial Focused Ultrasound Neuromodulation (Version draft) [Data set].
+  DANDI Archive. https://dandiarchive.org/dandiset/001558/draft
+contributor:
+- affiliation: []
+  email: chihyuy@andrew.cmu.edu
+  includeInCitation: true
+  name: Yeh, Kelly
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- name: Yu, Kai
+  schemaKey: Person
+- name: Teichert, Tobias
+  schemaKey: Person
+- name: He, Bin
+  schemaKey: Person
+dateCreated: '2025-08-25T16:17:09.373535+00:00'
+description: "In this study, we performed simultaneous recordings of intracranial
+  local field potentials (LFP) and EEG in a macaque monkey implanted with a chronic
+  electrode system during transcranial focused ultrasound stimulation (tFUS). Ultrasound
+  was delivered using a 128-element array transducer targeting multiple brain regions
+  including auditory cortex (A1), somatosensory cortex (S1), and the thalamus (VPLc).
+  All recordings were conducted in an awake, passively resting animal.  Each session
+  includes alternating active and sham trials. In active trials, ultrasound was delivered
+  using parameterized pulse trains with varied pulse repetition frequency (PRF: 40
+  Hz, 300 Hz, 1500 Hz, 3000 Hz) and stimulation amplitude (estimated in situ pressure
+  15 - 255 kPa). Sham trials were interleaved by redirecting ultrasound to a collimator.
+  Ultrasound duration was fixed at 300 ms, and auditory cue (white noise) if delivered
+  was at 200 ms post-tFUS-onset for 25 ms. Raw electrophysiology data includes broadband
+  LFP recordings from around 800 channels across 14 coronal slices and 33-channel
+  EEG data acquired simultaneously, concatenated into [N_channels \xD7 N_timepoints
+  (ms) \xD7 N_trials]."
+ethicsApproval: []
+id: DANDI:001558/draft
+identifier: DANDI:001558
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001558/versions/draft/assets/
+name: Multimodal Electrophysiological Recordings in Macaque During Transcranial Focused
+  Ultrasound Neuromodulation
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+url: https://dandiarchive.org/dandiset/001558/draft
+version: draft
+wasGeneratedBy: []
