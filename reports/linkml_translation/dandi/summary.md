@@ -990,10 +990,10 @@
 | [001546](./001546/) | [draft](./001546/draft/metadata.yaml) | 0 | [1 (1)](./001546/draft/linkml_validation_errs.yaml) | 2025-08-07T15:20:11.731953+00:00 | Valid | 0.6.10 |
 | [001547](./001547/) | [draft](./001547/draft/metadata.yaml) | 0 | [1 (1)](./001547/draft/linkml_validation_errs.yaml) | 2025-08-08T16:37:27.859625+00:00 | Invalid | 0.6.10 |
 | [001549](./001549/) | [draft](./001549/draft/metadata.yaml) | 0 | [7 (7)](./001549/draft/linkml_validation_errs.yaml) | 2025-08-13T00:14:18.943804+00:00 | Valid | 0.6.10 |
-| [001552](./001552/) | [draft](./001552/draft/metadata.yaml) | 0 | [1 (1)](./001552/draft/linkml_validation_errs.yaml) | 2025-08-26T00:49:15.025549+00:00 | Valid | 0.6.10 |
+| [001552](./001552/) | [draft](./001552/draft/metadata.yaml) | 0 | [1 (1)](./001552/draft/linkml_validation_errs.yaml) | 2025-08-27T01:42:24.471539+00:00 | Valid | 0.6.10 |
 | [001553](./001553/) | [draft](./001553/draft/metadata.yaml) | 0 | [1 (1)](./001553/draft/linkml_validation_errs.yaml) | 2025-08-21T23:36:31.630569+00:00 | Invalid | 0.6.10 |
 | [001556](./001556/) | [draft](./001556/draft/metadata.yaml) | 0 | [1 (1)](./001556/draft/linkml_validation_errs.yaml) | 2025-08-24T04:22:05.345563+00:00 | Valid | 0.6.10 |
 | [001557](./001557/) | [draft](./001557/draft/metadata.yaml) | 0 | [1 (1)](./001557/draft/linkml_validation_errs.yaml) | 2025-08-24T21:35:56.746792+00:00 | Invalid | 0.6.10 |
-| [001558](./001558/) | [draft](./001558/draft/metadata.yaml) | 0 | [4 (4)](./001558/draft/linkml_validation_errs.yaml) | 2025-08-25T18:16:14.261703+00:00 | Valid | 0.6.10 |
+| [001558](./001558/) | [draft](./001558/draft/metadata.yaml) | 0 | [4 (4)](./001558/draft/linkml_validation_errs.yaml) | 2025-08-26T18:55:54.647228+00:00 | Invalid | 0.6.10 |
 | [001559](./001559/) | [draft](./001559/draft/metadata.yaml) | 0 | [3 (3)](./001559/draft/linkml_validation_errs.yaml) | 2025-08-25T18:44:13.745993+00:00 | Invalid | 0.6.10 |
 | [001560](./001560/) | [draft](./001560/draft/metadata.yaml) | 0 | [1 (1)](./001560/draft/linkml_validation_errs.yaml) | 2025-08-25T20:56:13.832864+00:00 | Invalid | 0.6.10 |
