@@ -1,0 +1,42 @@
+{
+  "id": "DANDI:001563/draft",
+  "url": "https://dandiarchive.org/dandiset/001563/draft",
+  "name": "Dual Enkephalinase Inhibitor Effects on Stress-Induced Reward Seeking Neural and Behavioral Deficits",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Harris, Alexander (2025) Dual Enkephalinase Inhibitor Effects on Stress-Induced Reward Seeking Neural and Behavioral Deficits (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001563/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001563",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Harris, Alexander",
+      "email": "ah2835@columbia.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-08-27T20:10:01.906121+00:00",
+  "description": "This dataset contains the raw data from behavioral and fiber photometry recording sessions for the first phase of a study investigating the effects of a dual enkephalinase inhibitor on stress-induced deficits in reward-seeking behavior in mice. The data is organized into individual session folders, each containing the files from a single experimental session. Each session folder is named with the following convention: [animal_id]_[session_type]_[session_day]_[YYYYMMDD]_[HHMMSS]. Data Structure within each Session Folder: Each session folder contains a set of synchronized\u00a0files from different recording systems:\n\ntask_data.mat\u00a0/\u00a0test_data.mat:\u00a0A MATLAB\u00a0.mat\u00a0file\u00a0containing the primary trial-structured behavioral data from the task control software. It is structured\u00a0into two main variables:\nsessionInfo: Contains session-level metadata\u00a0such as\u00a0animalID,\u00a0testDay,\u00a0date,\u00a0injectionStatus,\u00a0stressStatus, etc.\ntrialData: A\u00a0structure containing an array of trials. Each trial in the array is a structure with\u00a0the following key fields:\ntrialNum: The trial number.\ncueTime: The absolute timestamp (from the behavioral system's clock) of the auditory cue onset.\nrewardTime: The\u00a0absolute timestamp of the reward delivery.\nITIDuration: The duration\u00a0of the inter-trial interval for that trial.\nresponded: A boolean flag (0 or 1) indicating if the animal successfully licked to receive a reward.\nrewardSize: A scalar value\u00a0indicating the volume or amount of reward delivered on that trial.\nmonitoring_data.mat:\u00a0A MATLAB\u00a0.mat\u00a0file containing continuous, high-temporal-resolution data streams from the behavioral monitoring system. This file is not trial-structured and\u00a0contains raw sensor readings and synchronization signals, including:\nA continuous, high-frequency raw lick sensor signal.\nA TTL signal (sound_ttl) that goes high during the presentation of\u00a0the auditory cue for precise event marking.\nA TTL signal (fp_ttl) sent from the fiber photometry system that goes high for the duration of the recording, used for synchronizing the two systems.\nFPdata[...].csv:\u00a0A CSV file containing the raw data from the fiber photometry system. Each row is a single sample, with the following columns:\nComputerTimestamp: The timestamp (in milliseconds) from the photometry computer's clock.\nLedState: An integer indicating which LED was active for\u00a0that sample (e.g., 1 for 470nm, 2 for\u00a0410nm).\nG0: The raw fluorescence\u00a0value recorded from the photodetector for that channel and timestamp.\nvideo[...].avi:\u00a0A video file recording the animal's behavior during\u00a0the session.\nvideo_timestamps[...].csv:\u00a0A\u00a0CSV file containing the precise timestamp for each frame acquired from the camera, as recorded by the camera\u00a0control computer. This file typically contains a single column of timestamps in milliseconds.\n\nSynchronization Method: The different data streams are synchronized using a shared TTL pulse\u00a0and precise timestamping.\n\nThe fiber photometry system generates a TTL pulse\u00a0(fp_ttl) that is recorded by the behavioral monitoring system. The rising\u00a0and falling edges of this pulse mark the exact start and end of the photometry recording on\u00a0the\u00a0behavioral clock.\nThe\u00a0video_timestamps[...].csv\u00a0provides a timestamp for each video frame on the\u00a0camera's computer clock. The number\u00a0of timestamps is matched against the total number of frames in the\u00a0.avi\u00a0file to ensure\u00a0data integrity.\nBy aligning the start of the\u00a0fp_ttl\u00a0pulse\u00a0from the behavioral data with the first timestamp in the\u00a0FPdata\u00a0CSV, and using\u00a0the\u00a0sound_ttl\u00a0to align behavioral events, all data streams (trial\u00a0events, neural activity, and video) can be precisely aligned in a common time\u00a0base for analysis.\n\nCode Availability: The Jupyter notebooks and Python modules\u00a0used to load, synchronize, and analyze this data are available at the following GitHub\u00a0repository: https://github.com/HarrisNeuralCircuitsLab/Dual-Enkephalinase-Inhibitor-Stress-Effect",
+  "assetsSummary": {
+    "schemaKey": "AssetsSummary",
+    "numberOfBytes": 0,
+    "numberOfFiles": 0
+  },
+  "schemaVersion": "0.6.10",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001563/versions/draft/assets/"
+  ]
+}

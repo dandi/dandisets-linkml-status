@@ -1,7 +1,8 @@
 {
   "id": "DANDI:001203/draft",
   "url": "https://dandiarchive.org/dandiset/001203/draft",
-  "name": "Fergil mills project",
+  "name": "Data supporting \"Amygdalostriatal transition zone neurons encode sustained valence to direct conditioned behaviors\"",
+  "about": [],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -12,20 +13,409 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Keyes, Laurel (2024) Fergil mills project (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001203/draft",
+  "citation": "Keyes, Laurel; Mills, Fergil; Lee, Christopher R.; Howe, James R. ; Li, Hao; Shao, Shan; Keisler, Maria N; Lemieux, Mackenzie E.; Taschbach, Felix H.; Borio, Matilde; Chen, Hannah S.; Patel, Reesha R.; Gross, Alexa L.; Delahanty, Jeremy; Cazares, Christian; Maree, Liezl; Wichmann, Romy; Pereira, Talmo D; Benna, Marcus K.; Root, Cory M.; Tye, Kay M. (2025) Data supporting \"Amygdalostriatal transition zone neurons encode sustained valence to direct conditioned behaviors\" (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001203/draft",
+  "keywords": [
+    "dopamine receptor 1",
+    "dopamine receptor 2",
+    "amygdalostriatal transition zone (ASt)",
+    "mouse",
+    "valence encoding",
+    "Pavlovian discrimination",
+    "animal behavior",
+    "in vivo electrophysiology",
+    "in vivo calcium imaging"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001203",
   "repository": "https://dandiarchive.org",
   "contributor": [
     {
       "name": "Keyes, Laurel",
-      "email": "laurelrr@gmail.com",
+      "email": "lkeyes@salk.edu",
       "roleName": [
         "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0000-0001-5433-9948",
+      "affiliation": [
+        {
+          "name": "Salk Institute for Biological Studies",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03xez1567"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
       "includeInCitation": true
+    },
+    {
+      "name": "Mills, Fergil",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-1413-6713",
+      "affiliation": [
+        {
+          "name": "Salk Institute of Biological Studies",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03xez1567"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Lee, Christopher R.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-5952-9924",
+      "affiliation": [
+        {
+          "name": "Salk Institute for Biological Studies",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03xez1567"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Howe, James R. ",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Li, Hao",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8710-1290",
+      "includeInCitation": true
+    },
+    {
+      "name": "Shao, Shan",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Keisler, Maria N",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Lemieux, Mackenzie E.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-6015-8668",
+      "includeInCitation": true
+    },
+    {
+      "name": "Taschbach, Felix H.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-5345-5787",
+      "includeInCitation": true
+    },
+    {
+      "name": "Borio, Matilde",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Chen, Hannah S.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Patel, Reesha R.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Gross, Alexa L.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Delahanty, Jeremy",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4200-3352",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cazares, Christian",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-8899-2109",
+      "includeInCitation": true
+    },
+    {
+      "name": "Maree, Liezl",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Wichmann, Romy",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-4506-8813",
+      "includeInCitation": true
+    },
+    {
+      "name": "Pereira, Talmo D",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [
+        {
+          "name": "Salk Institute for Biological Studies",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03xez1567"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Benna, Marcus K.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Root, Cory M.",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Tye, Kay M.",
+      "email": "tye@salk.edu",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-2435-0182",
+      "affiliation": [
+        {
+          "name": "Salk Institute for Biological Studies",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03xez1567"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "The JPB Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": false
+    },
+    {
+      "name": "Picower Institute Innovation Fund (PIIF)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "Picower Neurological Disorder Research Fund (PNDRF)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "Junior Faculty Development Program (JFDP)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "The New York Stem Cell Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "The Klingenstein Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "McKnight Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "Salk Institute for Biological Studies",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/03xez1567"
+    },
+    {
+      "name": "Howard Hughes Medical Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/006w34k90"
+    },
+    {
+      "name": "Clayton Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/00qw4ms08"
+    },
+    {
+      "name": "The Kavli Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/00kztt736"
+    },
+    {
+      "name": "The Dolby Family Fund",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization"
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04t0s7x83",
+      "awardNumber": "R01-MH115920"
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04t0s7x83",
+      "awardNumber": "R37-MH102441"
+    },
+    {
+      "name": "The NIH Director\u2019s New Innovator Award (NIDDK)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/00adh9b73",
+      "awardNumber": "DP2DK102256"
+    },
+    {
+      "name": "The NIH Director's Pioneer Award (NCCIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/00190t495",
+      "awardNumber": "DP1-AT009925"
+    },
+    {
+      "name": "K99/R00 NIH Pathways to Independence Award",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/05h1kgg64",
+      "awardNumber": "K99 MH121563"
+    },
+    {
+      "name": "K99/R00 NIH Pathways to Independence Award",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/05h1kgg64",
+      "awardNumber": "K99 DA055111-01"
+    },
+    {
+      "name": "China Scholarship Council ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04atp4p48",
+      "awardNumber": "201806010370"
+    },
+    {
+      "name": "Canadian Institutes of Health Research",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01gavpb45",
+      "awardNumber": "Postdoctoral Fellowship"
     }
   ],
   "dateCreated": "2024-10-02T19:59:38.484877+00:00",
@@ -36,6 +426,19 @@
     "numberOfFiles": 0
   },
   "schemaVersion": "0.6.8",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "acknowledgement": "We thank Chris Leppla, Praneeth Namburi, and Kanha Batra for their contributions to the project. We also thank Alcino Silva, Peyman Golshani, Daniel Aharoni, Tristan Shuman, and Denise Cai for their assistance and contributions to UCLA Miniscope resources used in the project.",
+  "relatedResource": [
+    {
+      "name": "Amygdalostriatal transition zone neurons encode sustained valence to direct conditioned behaviors",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "https://doi.org/10.1101/2022.10.28.514263",
+      "repository": "bioRxiv",
+      "resourceType": "dcite:JournalArticle"
+    }
+  ],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/001203/versions/draft/assets/"
   ]
