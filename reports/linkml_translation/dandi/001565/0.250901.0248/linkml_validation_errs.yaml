@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:c56166ce-5e26-4258-808d-30737f6ecd85'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-09-01T02:48:56.036840+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-09-01T02:48:56.036840+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:17c18feb-1897-4a78-84d1-8e99e3b91bbf'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:c56166ce-5e26-4258-808d-30737f6ecd85'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-09-01T02:48:56.036840+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-09-01T02:48:56.036840+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:17c18feb-1897-4a78-84d1-8e99e3b91bbf'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Ros, Ivo'', ''email'': ''ivoros@caltech.edu'', ''roleName'':
     [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9089-548X'',
     ''affiliation'': [{''name'': ''California Institute of Technology'', ''schemaKey'':
@@ -41,7 +52,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Dickinson, Michael'', ''email'': ''flyman@caltech.edu'',
     ''roleName'': [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-8587-9936'', ''affiliation'': [{''name'': ''California Institute of
@@ -69,7 +80,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Dickson, William'', ''email'': ''wbd@caltech.edu'', ''roleName'':
     [''dcite:Methodology''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
     ''California Institute of Technology'', ''schemaKey'': ''Affiliation'', ''identifier'':
@@ -95,7 +106,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Omoto, Jaison'', ''email'': ''jomoto@caltech.edu'', ''roleName'':
     [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2032-6350'',
     ''affiliation'': [{''name'': ''California Institute of Technology'', ''schemaKey'':
@@ -121,7 +132,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Wang, Ruoxi'', ''email'': ''rwang@caltech.edu'', ''roleName'':
     [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0004-9804-3443'',
     ''affiliation'': [{''name'': ''California Institute of Technology'', ''schemaKey'':
@@ -147,7 +158,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''awardNumber'': ''1 R01 NS 136988-01''} is not
     of type ''string'' in /contributor/5'

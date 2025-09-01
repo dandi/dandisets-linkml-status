@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:c56166ce-5e26-4258-808d-30737f6ecd85', 'name': 'DANDI publish', 'endDate': '2025-09-01T02:48:56.036840+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-09-01T02:48:56.036840+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:17c18feb-1897-4a78-84d1-8e99e3b91bbf', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:c56166ce-5e26-4258-808d-30737f6ecd85', 'name': 'DANDI publish', 'endDate': '2025-09-01T02:48:56.036840+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-09-01T02:48:56.036840+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:17c18feb-1897-4a78-84d1-8e99e3b91bbf', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Ros, Ivo', 'email': 'ivoros@caltech.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-9089-548X', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Ros, Ivo', 'email': 'ivoros@caltech.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-9089-548X', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Dickinson, Michael', 'email': 'flyman@caltech.edu', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-8587-9936', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'awardNumber': '1 R01 NS 136988-01', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Dickinson, Michael', 'email': 'flyman@caltech.edu', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-8587-9936', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'awardNumber': '1 R01 NS 136988-01', 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Dickson, William', 'email': 'wbd@caltech.edu', 'roleName': ['dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Dickson, William', 'email': 'wbd@caltech.edu', 'roleName': ['dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Omoto, Jaison', 'email': 'jomoto@caltech.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2032-6350', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Omoto, Jaison', 'email': 'jomoto@caltech.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2032-6350', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Wang, Ruoxi', 'email': 'rwang@caltech.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0009-0004-9804-3443', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Wang, Ruoxi', 'email': 'rwang@caltech.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0009-0004-9804-3443', 'affiliation': [{'name': 'California Institute of Technology', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05dxps055'}], 'includeInCitation': True} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1 R01 NS 136988-01'} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1 R01 NS 136988-01'} is not of type 'string'",
