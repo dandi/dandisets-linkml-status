@@ -1,21 +1,6 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
-  severity: ERROR
-  source:
-    absolute_path: []
-    absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
-  type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: Dandiset
   message: '{''name'': ''Floeder, Joseph R'', ''email'': ''jfloeder@fordham.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-6800-7730'', ''includeInCitation'': True} is not of
@@ -108,9 +93,9 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R01MH129582''}
-    is not of type ''string'' in /contributor/4'
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''R01MH129582''} is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
@@ -121,9 +106,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R01MH129582''}
-      is not of type ''string'''
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''R01MH129582''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

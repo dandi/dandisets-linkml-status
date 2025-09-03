@@ -1,0 +1,145 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 1993998839930
+  numberOfFiles: 56
+  numberOfSubjects: 18
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - SpikeEventSeries
+  - ElectricalSeries
+  - LFP
+  - ElectrodeGroup
+  - ProcessingModule
+  - Units
+citation: "Zhuang, Xiaowen; Lemak, Julia; Sridhar, Sadhana; Nelson, Alexandra B. (2025)
+  Abnormal Striatal Activity in a Mouse Model of Impulse Control Disorder in Parkinson\u2019s
+  Disease (Version 0.250902.2127) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001177/0.250902.2127"
+contributor:
+- awardNumber: 1 R01 NS 101354-01A1
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: PF-PRF-836910
+  email: xiaowen.Zhuang@ucsf.edu
+  identifier: 0000-0002-9064-4023
+  includeInCitation: true
+  name: Zhuang, Xiaowen
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  schemaKey: Person
+- identifier: 0000-0003-4224-7805
+  includeInCitation: true
+  name: Lemak, Julia
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Sridhar, Sadhana
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- awardNumber: PF-PRF-836910
+  includeInCitation: false
+  name: "Parkinson\u2019s Foundation"
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: ASAP-020529
+  identifier: https://ror.org/03zj4c476
+  includeInCitation: false
+  name: "Aligning Science Across Parkinson\u2019s"
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://parkinsonsroadmap.org/
+- email: alexandra.nelson@ucsf.edu
+  includeInCitation: true
+  name: Nelson, Alexandra B.
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2024-08-21T06:52:49.369009+00:00'
+datePublished: '2025-09-02T21:27:54.495107+00:00'
+description: "In this project, we studied cognitive behavior and striatal activity
+  in a mouse model of impulse control disorder in Parkinson\u2019s disease in which
+  we administered the therapeutic dopamine D2/3R agonist, pramipexole. In food-deprived
+  mice treated with bilateral striatal saline (healthy control) or 6-OHDA (mouse model
+  of Parkinson\u2019s Disease), we performed both open field locomotor assessments
+  and operant testing to assess a cognitive phenomenon called delay discounting (DD).
+  The operant box consisted of two (left and right) choice ports with beam breaks
+  for nosepokes, and a central reward port that delivered milk. In some sessions,
+  we administered pramipexole intraperitoneally prior to behavioral testing. In these
+  mice, we performed simultaneous optically-identified single-unit electrophysiology
+  using optrode arrays implanted in the dorsomedial striatum (DMS) of Drd1-Cre or
+  A2a-Cre mice that expressed Cre-dependent ChR2-eYFP. Electrophysiology recordings
+  were performed during either open field locomotor assessments or operant testing.
+  During each cognitive assessment session, behavior was monitored by video tracking
+  and/or operant box TTL events (nosepokes, cue lights, reward delivery, etc). During
+  each electrophysiology session, DMS voltage signals were acquired using a Blackrock
+  electrophysiology recording system. At the end of each session, blue light pulses
+  (473 nm laser) were delivered to the optrode array (100 msec, 1 Hz, 4000 pulses)
+  at a variety of light powers (0.5, 1, 2, 4 mW) by a lightweight patch cable. After
+  recording sessions, we performed manual spike sorting (Plexon Offline Sorter) to
+  isolate single units. We then aligned spiking activity to light pulses to identify
+  optically-labeled neurons, and aligned all single-unit activity (labeled or not)
+  to behavioral data."
+doi: 10.48324/dandi.001177/0.250902.2127
+ethicsApproval: []
+id: DANDI:001177/0.250902.2127
+identifier: DANDI:001177
+keywords: []
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001177/0.250902.2127/assets.yaml
+name: "Abnormal Striatal Activity in a Mouse Model of Impulse Control Disorder in
+  Parkinson\u2019s Disease"
+protocol: []
+publishedBy:
+  endDate: '2025-09-02T21:27:54.495107+00:00'
+  id: urn:uuid:ea6fb97d-7157-4059-9d8c-4dd224a40c38
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-09-02T21:27:54.495107+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:2501f180-1ca3-4a71-aa2c-d523d5180a62
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.8
+studyTarget: []
+url: https://dandiarchive.org/dandiset/001177/0.250902.2127
+version: 0.250902.2127
+wasGeneratedBy: []

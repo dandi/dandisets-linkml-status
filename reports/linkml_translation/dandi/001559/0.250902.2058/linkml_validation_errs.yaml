@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:99fa5972-587f-4de5-8a08-8b9c8a411650'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-09-02T20:58:29.286613+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-09-02T20:58:29.286613+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:26882da6-4aa1-459c-9c4d-0ece15314c8e'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:99fa5972-587f-4de5-8a08-8b9c8a411650'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-09-02T20:58:29.286613+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-09-02T20:58:29.286613+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:26882da6-4aa1-459c-9c4d-0ece15314c8e'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Du, Haoyang'', ''email'': ''hd367@cornell.edu'', ''roleName'':
     [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
     is not of type ''string'' in /contributor/0'
@@ -37,7 +48,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Nishimura, Nozomi'', ''email'': ''nn62@cornell.edu'', ''roleName'':
     [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''includeInCitation'': True}
     is not of type ''string'' in /contributor/1'
@@ -59,7 +70,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': '' Bizimana, Laurie Anne'', ''schemaKey'': ''Person'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR

@@ -14,11 +14,13 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 2197899
+  numberOfBytes: 44277411
   numberOfFiles: 14
   numberOfSubjects: 1
   schemaKey: AssetsSummary
@@ -27,8 +29,9 @@ assetsSummary:
     name: Mus musculus - House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - ElectrodeGroup
+  - Units
   - ElectricalSeries
+  - ElectrodeGroup
 citation: Baker, Cody (2025) Neuropixels recordings from hippocampus of head-fixed
   mice during odor presentation (Raw - BIDS) (Version draft) [Data set]. DANDI Archive.
   https://dandiarchive.org/dandiset/001470/draft
