@@ -1,6 +1,21 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
+  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
+    unexpected) in /
+  severity: ERROR
+  source:
+    absolute_path: []
+    absolute_schema_path:
+    - additionalProperties
+    message: Additional properties are not allowed ('datePublished', 'publishedBy'
+      were unexpected)
+    validator: additionalProperties
+    validator_value: false
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
   message: '{''name'': ''Floeder, Joseph R'', ''email'': ''jfloeder@fordham.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-6800-7730'', ''includeInCitation'': True} is not of
@@ -115,9 +130,9 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R00MH118422''}
-    is not of type ''string'' in /contributor/5'
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''R00MH118422''} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
@@ -128,18 +143,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R00MH118422''}
-      is not of type ''string'''
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''R00MH118422''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''National Science Foundation'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'': ''GRFP''} is not
-    of type ''string'' in /contributor/6'
+  message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+    ''awardNumber'': ''GRFP''} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
     absolute_path:
@@ -150,18 +165,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Science Foundation'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'': ''GRFP''} is
-      not of type ''string'''
+    message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+      ''awardNumber'': ''GRFP''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Alfred P. Sloan Foundation'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/052csg198'', ''awardNumber'': ''Alfred P Sloan
-    Fellowship''} is not of type ''string'' in /contributor/7'
+  message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198'',
+    ''awardNumber'': ''Alfred P Sloan Fellowship''} is not of type ''string'' in /contributor/7'
   severity: ERROR
   source:
     absolute_path:
@@ -172,18 +187,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Alfred P. Sloan Foundation'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/052csg198'', ''awardNumber'': ''Alfred P Sloan
-      Fellowship''} is not of type ''string'''
+    message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198'',
+      ''awardNumber'': ''Alfred P Sloan Fellowship''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Pew Charitable Trusts'', ''schemaKey'': ''Organization'',
-    ''awardNumber'': ''Pew Biomedical Scholarship''} is not of type ''string'' in
-    /contributor/8'
+  message: '{''name'': ''Pew Charitable Trusts'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''Pew Biomedical Scholarship''}
+    is not of type ''string'' in /contributor/8'
   severity: ERROR
   source:
     absolute_path:
@@ -194,17 +209,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Pew Charitable Trusts'', ''schemaKey'': ''Organization'',
-      ''awardNumber'': ''Pew Biomedical Scholarship''} is not of type ''string'''
+    message: '{''name'': ''Pew Charitable Trusts'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''Pew Biomedical Scholarship''}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/043mz5j54'', ''awardNumber'': ''Scott Alan Myers Endowed Professorship''}
-    is not of type ''string'' in /contributor/9'
+  message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+    ''Scott Alan Myers Endowed Professorship''} is not of type ''string'' in /contributor/9'
   severity: ERROR
   source:
     absolute_path:
@@ -215,18 +231,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-      ''https://ror.org/043mz5j54'', ''awardNumber'': ''Scott Alan Myers Endowed Professorship''}
-      is not of type ''string'''
+    message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+      ''Scott Alan Myers Endowed Professorship''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/043mz5j54'', ''awardNumber'': ''Discovery Fellowship''} is not
-    of type ''string'' in /contributor/10'
+  message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+    ''Discovery Fellowship''} is not of type ''string'' in /contributor/10'
   severity: ERROR
   source:
     absolute_path:
@@ -237,9 +253,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-      ''https://ror.org/043mz5j54'', ''awardNumber'': ''Discovery Fellowship''} is
-      not of type ''string'''
+    message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+      ''Discovery Fellowship''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

@@ -1,10 +1,10 @@
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''id'': ''urn:uuid:46ca2658-3a44-416c-8b5f-9b7a47db39a5'', ''name'':
-    ''DANDI publish'', ''endDate'': ''2025-08-28T17:28:37.103629+00:00'', ''schemaKey'':
-    ''PublishActivity'', ''startDate'': ''2025-08-28T17:28:37.103629+00:00'', ''wasAssociatedWith'':
-    [{''id'': ''urn:uuid:44f040a7-9e21-4961-ad18-c7a2f8f1f128'', ''name'': ''DANDI
+  message: '{''id'': ''urn:uuid:0d1521cf-60f8-4b62-9e7a-75e77fd0c956'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-09-03T18:02:06.324908+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-09-03T18:02:06.324908+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:f81bbf70-c8aa-4dfd-bb13-f5a0104ad6f8'', ''name'': ''DANDI
     API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
     is not of type ''string'' in /publishedBy'
   severity: ERROR
@@ -15,10 +15,10 @@
     - properties
     - publishedBy
     - type
-    message: '{''id'': ''urn:uuid:46ca2658-3a44-416c-8b5f-9b7a47db39a5'', ''name'':
-      ''DANDI publish'', ''endDate'': ''2025-08-28T17:28:37.103629+00:00'', ''schemaKey'':
-      ''PublishActivity'', ''startDate'': ''2025-08-28T17:28:37.103629+00:00'', ''wasAssociatedWith'':
-      [{''id'': ''urn:uuid:44f040a7-9e21-4961-ad18-c7a2f8f1f128'', ''name'': ''DANDI
+    message: '{''id'': ''urn:uuid:0d1521cf-60f8-4b62-9e7a-75e77fd0c956'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-09-03T18:02:06.324908+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-09-03T18:02:06.324908+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:f81bbf70-c8aa-4dfd-bb13-f5a0104ad6f8'', ''name'': ''DANDI
       API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
       ''RRID:SCR_017571''}]} is not of type ''string'''
     validator: type
@@ -119,9 +119,9 @@
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R01MH129582''}
-    is not of type ''string'' in /contributor/4'
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''R01MH129582''} is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
@@ -132,18 +132,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R01MH129582''}
-      is not of type ''string'''
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''R01MH129582''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R00MH118422''}
-    is not of type ''string'' in /contributor/5'
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''R00MH118422''} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
@@ -154,18 +154,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R00MH118422''}
-      is not of type ''string'''
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''R00MH118422''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''National Science Foundation'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'': ''GRFP''} is not
-    of type ''string'' in /contributor/6'
+  message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+    ''awardNumber'': ''GRFP''} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
     absolute_path:
@@ -176,18 +176,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''National Science Foundation'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/021nxhr62'', ''awardNumber'': ''GRFP''} is
-      not of type ''string'''
+    message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+      ''awardNumber'': ''GRFP''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''Alfred P. Sloan Foundation'', ''schemaKey'': ''Organization'',
-    ''identifier'': ''https://ror.org/052csg198'', ''awardNumber'': ''Alfred P Sloan
-    Fellowship''} is not of type ''string'' in /contributor/7'
+  message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198'',
+    ''awardNumber'': ''Alfred P Sloan Fellowship''} is not of type ''string'' in /contributor/7'
   severity: ERROR
   source:
     absolute_path:
@@ -198,18 +198,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Alfred P. Sloan Foundation'', ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/052csg198'', ''awardNumber'': ''Alfred P Sloan
-      Fellowship''} is not of type ''string'''
+    message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198'',
+      ''awardNumber'': ''Alfred P Sloan Fellowship''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''Pew Charitable Trusts'', ''schemaKey'': ''Organization'',
-    ''awardNumber'': ''Pew Biomedical Scholarship''} is not of type ''string'' in
-    /contributor/8'
+  message: '{''name'': ''Pew Charitable Trusts'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''Pew Biomedical Scholarship''}
+    is not of type ''string'' in /contributor/8'
   severity: ERROR
   source:
     absolute_path:
@@ -220,17 +220,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Pew Charitable Trusts'', ''schemaKey'': ''Organization'',
-      ''awardNumber'': ''Pew Biomedical Scholarship''} is not of type ''string'''
+    message: '{''name'': ''Pew Charitable Trusts'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''Pew Biomedical Scholarship''}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/043mz5j54'', ''awardNumber'': ''Scott Alan Myers Endowed Professorship''}
-    is not of type ''string'' in /contributor/9'
+  message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+    ''Scott Alan Myers Endowed Professorship''} is not of type ''string'' in /contributor/9'
   severity: ERROR
   source:
     absolute_path:
@@ -241,18 +242,18 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-      ''https://ror.org/043mz5j54'', ''awardNumber'': ''Scott Alan Myers Endowed Professorship''}
-      is not of type ''string'''
+    message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+      ''Scott Alan Myers Endowed Professorship''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: PublishedDandiset
-  message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/043mz5j54'', ''awardNumber'': ''Discovery Fellowship''} is not
-    of type ''string'' in /contributor/10'
+  message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+    ''Discovery Fellowship''} is not of type ''string'' in /contributor/10'
   severity: ERROR
   source:
     absolute_path:
@@ -263,9 +264,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''UCSF'', ''schemaKey'': ''Organization'', ''identifier'':
-      ''https://ror.org/043mz5j54'', ''awardNumber'': ''Discovery Fellowship''} is
-      not of type ''string'''
+    message: '{''name'': ''UCSF'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''identifier'': ''https://ror.org/043mz5j54'', ''awardNumber'':
+      ''Discovery Fellowship''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
