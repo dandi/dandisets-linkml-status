@@ -2,6 +2,7 @@
   "id": "DANDI:001569/draft",
   "url": "https://dandiarchive.org/dandiset/001569/draft",
   "name": "Data associated with the manuscript \"improv: A software platform for real-time and adaptive neuroscience experiments\"",
+  "about": [],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -31,11 +32,51 @@
   "dateCreated": "2025-09-08T13:38:03.197107+00:00",
   "description": "Calcium fluorescence images acquired during visual and photo stimulations of head-fixed larval zebrafish. ",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Danio rerio - Zebra fish",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_7955"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 1216929616,
+    "numberOfFiles": 5,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "PlaneSegmentation",
+      "ImagingPlane",
+      "ProcessingModule",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/001569/versions/draft/assets/"
   ]
