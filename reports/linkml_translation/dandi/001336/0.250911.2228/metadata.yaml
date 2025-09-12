@@ -29,8 +29,10 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 34260214888
-  numberOfFiles: 31
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 34478821456
+  numberOfFiles: 32
   numberOfSubjects: 3
   schemaKey: AssetsSummary
   species:
@@ -41,8 +43,9 @@ assetsSummary:
   - ElectricalSeries
   - ElectrodeGroup
   - Units
+  - ProcessingModule
 citation: Johnson, Erik; Acha, Chris (2025) Neuromodulation in neural organoids with
-  shell MEAs (Version 0.250729.1519) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001336/0.250729.1519
+  shell MEAs (Version 0.250911.2228) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001336/0.250911.2228
 contributor:
 - affiliation: []
   email: ejohns24@gmail.com
@@ -68,7 +71,7 @@ contributor:
   - dcite:Researcher
   schemaKey: Person
 dateCreated: '2025-02-14T21:58:04.437029+00:00'
-datePublished: '2025-07-29T15:19:12.619289+00:00'
+datePublished: '2025-09-11T22:28:31.648773+00:00'
 description: "Neural organoids (NOs) have emerged as important tissue engineering
   models for brain sciences and biocomputing. Establishing reliable relationships
   between stimulation and recording traces of electrical activity is essential to
@@ -86,9 +89,9 @@ description: "Neural organoids (NOs) have emerged as important tissue engineerin
   broad relevance to biomedical engineering and biocomputing. \nThis dataset includes
   recordings from 3 and 16-channel Shell MEAs from neural organoids, including baselines
   and in response to stimulation. "
-doi: 10.48324/dandi.001336/0.250729.1519
+doi: 10.48324/dandi.001336/0.250911.2228
 ethicsApproval: []
-id: DANDI:001336/0.250729.1519
+id: DANDI:001336/0.250911.2228
 identifier: DANDI:001336
 keywords:
 - neural organoid
@@ -98,17 +101,17 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://dandiarchive.s3.amazonaws.com/dandisets/001336/0.250729.1519/assets.yaml
+- https://dandiarchive.s3.amazonaws.com/dandisets/001336/0.250911.2228/assets.yaml
 name: Neuromodulation in neural organoids with shell MEAs
 protocol: []
 publishedBy:
-  endDate: '2025-07-29T15:19:12.619289+00:00'
-  id: urn:uuid:e03611af-7661-4981-83d9-0ff1a05bfc4a
+  endDate: '2025-09-11T22:28:31.648773+00:00'
+  id: urn:uuid:5fd5a75f-b2b6-4505-9f1d-be82e1de4994
   name: DANDI publish
   schemaKey: PublishActivity
-  startDate: '2025-07-29T15:19:12.619289+00:00'
+  startDate: '2025-09-11T22:28:31.648773+00:00'
   wasAssociatedWith:
-  - id: urn:uuid:8179e8c4-216e-4afa-bca1-33333817e132
+  - id: urn:uuid:2803dd3a-6e6d-429e-9a21-003030e31166
     identifier: RRID:SCR_017571
     name: DANDI API
     schemaKey: Software
@@ -119,6 +122,6 @@ schemaKey: Dandiset
 schemaVersion: 0.6.9
 studyTarget:
 - Development of novel electrodes for in vitro systems.
-url: https://dandiarchive.org/dandiset/001336/0.250729.1519
-version: 0.250729.1519
+url: https://dandiarchive.org/dandiset/001336/0.250911.2228
+version: 0.250911.2228
 wasGeneratedBy: []

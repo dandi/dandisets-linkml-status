@@ -58,14 +58,14 @@
   "dateCreated": "2025-02-14T21:58:04.437029+00:00",
   "description": "Neural organoids (NOs) have emerged as important tissue engineering models for brain sciences and biocomputing. Establishing reliable relationships between stimulation and recording traces of electrical activity is essential to monitor the functionality of NOs, especially as it relates to realizing biocomputing paradigms such as reinforcement learning or stimulus discrimination. While researchers have demonstrated neuromodulation in NOs, they have primarily used 2D microelectrode arrays (MEAs) with limited access to the entire 3D contour of the NOs. Here, we report neuromodulation using tiny mimics of macroscale EEG caps or shell MEAs. Specifically, we observe that stimulating current within a specific range (20 to 30 \u00b5A) induced a statistically significant increase in neuron firing rate when comparing the activity five seconds before and after stimulation. We observed neuromodulatory behavior using both three- and 16-electrode shells and could generate 3D spatiotemporal maps of neuromodulatory activity around the surface of the NO. Our studies demonstrate a methodology for investigating 3D spatiotemporal neuromodulation in organoids of broad relevance to biomedical engineering and biocomputing. \nThis dataset includes recordings from 3 and 16-channel Shell MEAs from neural organoids, including baselines and in response to stimulation. ",
   "publishedBy": {
-    "id": "urn:uuid:e03611af-7661-4981-83d9-0ff1a05bfc4a",
+    "id": "urn:uuid:5fd5a75f-b2b6-4505-9f1d-be82e1de4994",
     "name": "DANDI publish",
-    "endDate": "2025-07-29T15:19:12.619289+00:00",
+    "endDate": "2025-09-11T22:28:31.648773+00:00",
     "schemaKey": "PublishActivity",
-    "startDate": "2025-07-29T15:19:12.619289+00:00",
+    "startDate": "2025-09-11T22:28:31.648773+00:00",
     "wasAssociatedWith": [
       {
-        "id": "urn:uuid:8179e8c4-216e-4afa-bca1-33333817e132",
+        "id": "urn:uuid:2803dd3a-6e6d-429e-9a21-003030e31166",
         "name": "DANDI API",
         "version": "0.1.0",
         "schemaKey": "Software",
@@ -98,13 +98,14 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 34260214888,
-    "numberOfFiles": 31,
+    "numberOfBytes": 34478821456,
+    "numberOfFiles": 32,
     "numberOfSubjects": 3,
     "variableMeasured": [
       "ElectricalSeries",
       "ElectrodeGroup",
-      "Units"
+      "Units",
+      "ProcessingModule"
     ],
     "measurementTechnique": [
       {
@@ -118,10 +119,14 @@
       {
         "name": "spike sorting technique",
         "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
       }
     ]
   },
-  "datePublished": "2025-07-29T15:19:12.619289+00:00",
+  "datePublished": "2025-09-11T22:28:31.648773+00:00",
   "schemaVersion": "0.6.9",
   "ethicsApproval": [],
   "wasGeneratedBy": [],

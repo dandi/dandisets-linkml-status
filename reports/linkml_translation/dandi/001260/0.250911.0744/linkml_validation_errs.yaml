@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:f16f732b-3cf3-4bc6-9d88-434da50c1d38'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-09-11T07:44:30.215697+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-09-11T07:44:30.215697+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:5139c833-aec8-4f66-9bde-8b3c69b52598'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:f16f732b-3cf3-4bc6-9d88-434da50c1d38'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-09-11T07:44:30.215697+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-09-11T07:44:30.215697+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:5139c833-aec8-4f66-9bde-8b3c69b52598'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''prefrontal cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
     ''UBERON:0000451''} is not of type ''string'' in /about/0'
   severity: ERROR
@@ -35,7 +46,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Le Merre, Pierre'', ''email'': ''pierre.le.merre@ki.se'',
     ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Conceptualization'',
     ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:DataManager'', ''dcite:FormalAnalysis'',
@@ -65,7 +76,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Heining, Katharina'', ''email'': ''katharina.heining@ki.se'',
     ''roleName'': [''dcite:Author'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
     ''dcite:Methodology''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1976-3764'',
@@ -89,7 +100,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Slashcheva, Marina'', ''email'': ''marina.slashcheva@ki.se'',
     ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-7918-8151'', ''includeInCitation'': True} is not of
@@ -113,7 +124,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Jung, Felix'', ''email'': ''felix.jung@ki.se'', ''roleName'':
     [''dcite:Author'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-7565-977X'', ''includeInCitation'': True} is not of type ''string''
@@ -136,7 +147,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Moysiadou, Eleni'', ''email'': ''eleni.moysiadou@icm-institute.org'',
     ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
@@ -158,7 +169,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Guyon, Nicolas'', ''email'': ''nicolas.guyon@espci.fr'',
     ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1287-8606'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
@@ -180,7 +191,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Yahya, Ram'', ''email'': ''ram.yahya@outlook.com'', ''roleName'':
     [''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'': True} is
     not of type ''string'' in /contributor/6'
@@ -202,7 +213,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Park, Hyunsoo'', ''email'': ''hyunsoo.park@astrazeneca.com'',
     ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5754-9617'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/7'
@@ -224,7 +235,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Wernstal, Fredrik'', ''email'': ''fredrik.wernstal@ki.se'',
     ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0002-4192-5897'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
@@ -246,7 +257,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: "{'name': 'Carl\xE9n, Marie', 'email': 'marie.carlen@ki.se', 'roleName':
     ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ProjectLeader',
     'dcite:Supervision', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier':
