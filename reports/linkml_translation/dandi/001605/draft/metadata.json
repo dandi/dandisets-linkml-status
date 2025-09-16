@@ -1,0 +1,91 @@
+{
+  "id": "DANDI:001605/draft",
+  "url": "https://dandiarchive.org/dandiset/001605/draft",
+  "name": "Two-photon calcium imaging in mouse PPC/PM during auditory cue\u2013guided virtual navigation (OIST, 2013\u20132014)",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Taniguchi, Masachika (2025) Two-photon calcium imaging in mouse PPC/PM during auditory cue\u2013guided virtual navigation (OIST, 2013\u20132014) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001605/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001605",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Taniguchi, Masachika",
+      "email": "mtanigu-vendor@oist.jp",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-09-15T18:48:21.256096+00:00",
+  "description": "This Dandiset contains session-wise NWB files converted from legacy MATLAB data for in vivo two-photon calcium imaging in head-fixed mice navigating a virtual corridor guided by auditory cues. Imaging targeted posterior parietal cortex (PPC) and adjacent posteromedial cortex (PM) across layers 2/3 and 5 while animals ran on a spherical treadmill in darkness with continuous or intermittent sound feedback. The dataset includes segmented ROI masks and population activity (raw ratio and \u0394F/F) as RoiResponseSeries, together with aligned behavioral signals (locomotion/position, forward\u2013lateral speed, lick rate, sound on/off indicators, and reward events) stored under the behavior module. Sampling is uniform at ~30.9 Hz for imaging and behavior, enabling trial-level analyses of neural dynamics during goal-directed navigation. These data support investigations of multisensory integration and predictive coding in posterior cortical areas and are closely related to the study by Funamizu, Kuhn & Doya (Nature Neuroscience, 2016), which reported PPC/PM representations consistent with dynamic Bayesian inference during an auditory virtual-reality task (doi:10.1038/nn.4390). Please cite that article when using this dataset.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 32134272526,
+    "numberOfFiles": 87,
+    "numberOfSubjects": 8,
+    "variableMeasured": [
+      "ImagingPlane",
+      "Position",
+      "OpticalChannel",
+      "PlaneSegmentation",
+      "SpatialSeries",
+      "ProcessingModule",
+      "BehavioralTimeSeries",
+      "BehavioralEvents"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.10",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001605/versions/draft/assets/"
+  ]
+}
