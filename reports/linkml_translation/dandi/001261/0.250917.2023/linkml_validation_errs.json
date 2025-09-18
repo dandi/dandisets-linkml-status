@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:11b3685f-68de-414c-9a23-16496cad1233', 'name': 'DANDI publish', 'endDate': '2025-09-17T20:23:07.906183+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-09-17T20:23:07.906183+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a4db8b07-0786-4c88-8495-cec36c143943', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:11b3685f-68de-414c-9a23-16496cad1233', 'name': 'DANDI publish', 'endDate': '2025-09-17T20:23:07.906183+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-09-17T20:23:07.906183+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:a4db8b07-0786-4c88-8495-cec36c143943', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Desai, Niraj', 'email': 'niraj.s.desai@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Desai, Niraj', 'email': 'niraj.s.desai@gmail.com', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Luo, Feng', 'email': 'feng.luo@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Luo, Feng', 'email': 'feng.luo@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Jiang, Li', 'email': 'li.jiang2@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Jiang, Li', 'email': 'li.jiang2@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Watkins, Gabrielle', 'email': 'gabrielle.watkins@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Watkins, Gabrielle', 'email': 'gabrielle.watkins@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Talmage, David', 'email': 'david.talmage@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Talmage, David', 'email': 'david.talmage@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Role, Lorna', 'email': 'lorna.role@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Role, Lorna', 'email': 'lorna.role@nih.gov', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
