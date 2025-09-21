@@ -20,3 +20,21 @@
     validator: type
     validator_value: string
   type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

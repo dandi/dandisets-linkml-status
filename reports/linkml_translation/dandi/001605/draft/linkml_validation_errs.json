@@ -21,5 +21,28 @@
       "validator": "type",
       "validator_value": "string"
     }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

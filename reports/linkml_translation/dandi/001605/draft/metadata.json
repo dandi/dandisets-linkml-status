@@ -1,7 +1,8 @@
 {
   "id": "DANDI:001605/draft",
   "url": "https://dandiarchive.org/dandiset/001605/draft",
-  "name": "Two-photon calcium imaging in mouse PPC/PM during auditory cue\u2013guided virtual navigation (OIST, 2013\u20132014)",
+  "name": "Two-photon calcium imaging of mouse PPC/PM during auditory virtual navigation (Funamizu et al. 2016)",
+  "about": [],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -12,7 +13,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Taniguchi, Masachika (2025) Two-photon calcium imaging in mouse PPC/PM during auditory cue\u2013guided virtual navigation (OIST, 2013\u20132014) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001605/draft",
+  "citation": "Taniguchi, Masachika (2025) Two-photon calcium imaging of mouse PPC/PM during auditory virtual navigation (Funamizu et al. 2016) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001605/draft",
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001605",
   "repository": "https://dandiarchive.org",
@@ -26,7 +27,8 @@
       "schemaKey": "Person",
       "affiliation": [],
       "includeInCitation": true
-    }
+    },
+    {}
   ],
   "dateCreated": "2025-09-15T18:48:21.256096+00:00",
   "description": "This Dandiset contains session-wise NWB files converted from legacy MATLAB data for in vivo two-photon calcium imaging in head-fixed mice navigating a virtual corridor guided by auditory cues. Imaging targeted posterior parietal cortex (PPC) and adjacent posteromedial cortex (PM) across layers 2/3 and 5 while animals ran on a spherical treadmill in darkness with continuous or intermittent sound feedback. The dataset includes segmented ROI masks and population activity (raw ratio and \u0394F/F) as RoiResponseSeries, together with aligned behavioral signals (locomotion/position, forward\u2013lateral speed, lick rate, sound on/off indicators, and reward events) stored under the behavior module. Sampling is uniform at ~30.9 Hz for imaging and behavior, enabling trial-level analyses of neural dynamics during goal-directed navigation. These data support investigations of multisensory integration and predictive coding in posterior cortical areas and are closely related to the study by Funamizu, Kuhn & Doya (Nature Neuroscience, 2016), which reported PPC/PM representations consistent with dynamic Bayesian inference during an auditory virtual-reality task (doi:10.1038/nn.4390). Please cite that article when using this dataset.",
@@ -56,8 +58,8 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 33336596008,
-    "numberOfFiles": 90,
+    "numberOfBytes": 34958198803,
+    "numberOfFiles": 94,
     "numberOfSubjects": 8,
     "variableMeasured": [
       "ProcessingModule",
@@ -85,6 +87,10 @@
     ]
   },
   "schemaVersion": "0.6.10",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "acknowledgement": "This work was supported by a Grant-in-Aid for Scientific Research on Innovative Areas: Prediction and Decision Making (23120007) (K.D.), KAKENHI 26730124 (A.F.) and 15H01452 (A.F.), and internal funding from the Okinawa Institute of Science and Technology Graduate University (K.D. and B.K.)",
+  "relatedResource": [],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/001605/versions/draft/assets/"
   ]
