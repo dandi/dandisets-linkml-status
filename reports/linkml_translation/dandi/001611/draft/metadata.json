@@ -1,7 +1,7 @@
 {
   "id": "DANDI:001611/draft",
   "url": "https://dandiarchive.org/dandiset/001611/draft",
-  "name": "Spikes of dissociated rat cortical cultures during repeated-stimulation experiment",
+  "name": "Spiking data of dissociated rat cortical cultures on HD-MEAs during repeated-stimulation experiment",
   "about": [],
   "access": [
     {
@@ -13,7 +13,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Mayama, Teruki (2025) Spikes of dissociated rat cortical cultures during repeated-stimulation experiment (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001611/draft",
+  "citation": "Mayama, Teruki (2025) Spiking data of dissociated rat cortical cultures on HD-MEAs during repeated-stimulation experiment (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001611/draft",
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001611",
   "repository": "https://dandiarchive.org",
@@ -30,11 +30,46 @@
     }
   ],
   "dateCreated": "2025-09-21T19:56:37.142310+00:00",
-  "description": "Detected spikes from extracellular potential and derivatives.",
+  "description": "Detected spikes in each session of each experiment. It has 100 sessions / 1 experiment \u00d7 27 experiment = 2,700 files. Each of them contains information about stimulation time, stimulation electrodes, recorded electrodes and detected spikes.",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 39929261136,
+    "numberOfFiles": 2700,
+    "numberOfSubjects": 12,
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
   "ethicsApproval": [],
