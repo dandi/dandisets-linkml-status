@@ -113,54 +113,5 @@
       "validator": "type",
       "validator_value": "string"
     }
-  },
-  {
-    "type": "jsonschema validation",
-    "severity": "ERROR",
-    "message": "{'id': 'urn:uuid:94d58480-b856-4a78-bbb0-1e5189c7e869', 'name': 'Metadata extraction from DOI', 'endDate': '2024-08-29 16:07:25.409666+02:00', 'schemaKey': 'Activity', 'startDate': '2024-08-29 16:06:42.429178+02:00', 'description': 'Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1038/s41467-023-43250-x by DANDI cli', 'wasAssociatedWith': [{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.63.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'}]} is not valid under any of the given schemas in /wasGeneratedBy/0",
-    "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": [
-      "'2024-08-29 16:07:25.409666+02:00' is not a 'date-time'",
-      "'2024-08-29 16:06:42.429178+02:00' is not a 'date-time'",
-      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.63.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'",
-      "'2024-08-29 16:07:25.409666+02:00' is not a 'date-time'",
-      "'2024-08-29 16:06:42.429178+02:00' is not a 'date-time'",
-      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.63.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'",
-      "'2024-08-29 16:07:25.409666+02:00' is not a 'date-time'",
-      "'2024-08-29 16:06:42.429178+02:00' is not a 'date-time'",
-      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.63.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'",
-      "'2024-08-29 16:07:25.409666+02:00' is not a 'date-time'",
-      "'2024-08-29 16:06:42.429178+02:00' is not a 'date-time'",
-      "{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.63.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'} is not of type 'string'"
-    ],
-    "source": {
-      "message": "{'id': 'urn:uuid:94d58480-b856-4a78-bbb0-1e5189c7e869', 'name': 'Metadata extraction from DOI', 'endDate': '2024-08-29 16:07:25.409666+02:00', 'schemaKey': 'Activity', 'startDate': '2024-08-29 16:06:42.429178+02:00', 'description': 'Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1038/s41467-023-43250-x by DANDI cli', 'wasAssociatedWith': [{'url': 'https://github.com/dandi/dandi-cli', 'name': 'DANDI Command Line Interface', 'version': '0.63.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_019009'}]} is not valid under any of the given schemas",
-      "absolute_path": [
-        "wasGeneratedBy",
-        0
-      ],
-      "absolute_schema_path": [
-        "properties",
-        "wasGeneratedBy",
-        "items",
-        "anyOf"
-      ],
-      "validator": "anyOf",
-      "validator_value": [
-        {
-          "$ref": "#/$defs/Activity"
-        },
-        {
-          "$ref": "#/$defs/Project"
-        },
-        {
-          "$ref": "#/$defs/PublishActivity"
-        },
-        {
-          "$ref": "#/$defs/Session"
-        }
-      ]
-    }
   }
 ]

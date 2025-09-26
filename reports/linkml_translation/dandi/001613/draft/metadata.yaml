@@ -3,14 +3,39 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  approach: []
-  dataStandard: []
-  measurementTechnique: []
-  numberOfBytes: 1349591628
-  numberOfFiles: 5
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 14145074398
+  numberOfFiles: 37
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
-  species: []
-  variableMeasured: []
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9606
+    name: Homo sapiens - Human
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - ElectricalSeries
+  - SpatialSeries
+  - PupilTracking
+  - EyeTracking
+  - ProcessingModule
 citation: Nentwich, Maximilian (2025) Large-scale human intracranial electrophysiology
   and eye-tracking recordings from naturalistic image and movie stimuli (Version draft)
   [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001613/draft
@@ -23,14 +48,15 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2025-09-24T18:19:38.434153+00:00'
-description: "This dataset includes 50 recording sessions of intracranial EEG and
+description: 'This dataset includes 50 recording sessions of intracranial EEG and
   simultaneous eyetracking from 46 individual patients. Implants consist of a total
-  of 10,806 contacts predominantly from depth electrodes, and 988 from ECoG contacts
+  of 10,790 contacts predominantly from depth electrodes, and 988 from ECoG contacts
   (grids and strips). Patients watched up to 53.6 minutes of movies (48 recordings),
   completed resting state (25 recordings) and viewed static images (31 recordings).
-  Data is provided in NWB and BIDS format and includes local field potentials, electrode
-  locations. gaze and pupil size, precise timing of each frame in the movie and annotations
-  of words and phonemes in one of the movies. \n\n"
+  Data is provided in NWB format and includes local field potentials, electrode locations.
+  gaze and pupil size, precise timing of each frame in the movie. The data also includes
+  annotations of words and phonemes in one of the movies, as well as annotions of
+  faces in three movies. '
 ethicsApproval: []
 id: DANDI:001613/draft
 identifier: DANDI:001613

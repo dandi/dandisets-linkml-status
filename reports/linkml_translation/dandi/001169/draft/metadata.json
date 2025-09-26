@@ -14,8 +14,6 @@
   ],
   "version": "draft",
   "citation": "Mah, Andrew; Schiereck, Shannon S.; Bossio, Veronica; Constantinople, Christine M. (2025) Distinct value computations support rapid sequential decisions (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001169/draft",
-  "keywords": [],
-  "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001169",
   "repository": "https://dandiarchive.org",
@@ -70,33 +68,32 @@
   ],
   "dateCreated": "2024-08-08T07:43:25.766173+00:00",
   "description": "The value of the environment determines animals\u2019 motivational states and sets expectations for error-based learning. How are values computed? Reinforcement learning systems can store or cache values of states or actions that are learned from experience, or they can compute values using a model of the environment to simulate possible futures. These value computations have distinct trade-offs, and a central question is how neural systems decide which computations to use or whether/how to combine them. Here we show that rats use distinct value computations for sequential decisions within single trials. We used high-throughput training to collect statistically powerful datasets from 291 rats performing a temporal wagering task with hidden reward states. Rats adjusted how quickly they initiated trials and how long they waited for rewards across states, balancing effort and time costs against expected rewards. Statistical modeling revealed that animals computed the value of the environment differently when initiating trials versus when deciding how long to wait for rewards, even though these decisions were only seconds apart. Moreover, value estimates interacted via a dynamic learning rate. Our results reveal how distinct value computations interact on rapid timescales, and demonstrate the power of using high-throughput training to understand rich, cognitive behaviors.",
-  "studyTarget": [],
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 27542256207,
+    "numberOfFiles": 23034,
+    "numberOfSubjects": 291,
+    "variableMeasured": [],
+    "measurementTechnique": []
   },
   "schemaVersion": "0.6.8",
   "ethicsApproval": [],
-  "wasGeneratedBy": [
-    {
-      "id": "urn:uuid:94d58480-b856-4a78-bbb0-1e5189c7e869",
-      "name": "Metadata extraction from DOI",
-      "endDate": "2024-08-29 16:07:25.409666+02:00",
-      "schemaKey": "Activity",
-      "startDate": "2024-08-29 16:06:42.429178+02:00",
-      "description": "Metadata (contributor, name, relatedResource) was enhanced with data from DOI https://doi.org/10.1038/s41467-023-43250-x by DANDI cli",
-      "wasAssociatedWith": [
-        {
-          "url": "https://github.com/dandi/dandi-cli",
-          "name": "DANDI Command Line Interface",
-          "version": "0.63.0",
-          "schemaKey": "Software",
-          "identifier": "RRID:SCR_019009"
-        }
-      ]
-    }
-  ],
+  "wasGeneratedBy": [],
   "relatedResource": [
     {
       "url": "https://doi.org/https://doi.org/10.1038/s41467-023-43250-x",
