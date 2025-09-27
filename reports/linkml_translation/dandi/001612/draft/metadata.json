@@ -31,9 +31,46 @@
   "dateCreated": "2025-09-24T16:36:45.104372+00:00",
   "description": "Calcium imaging and targeted optogenetic stimulation of the anterior lateral motor cortex during multi-directional tongue-reaching behavior",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 2387625144,
+    "numberOfFiles": 2,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "ImagingPlane",
+      "PlaneSegmentation",
+      "ProcessingModule",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
   "manifestLocation": [

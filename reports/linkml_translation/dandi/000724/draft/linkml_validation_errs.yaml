@@ -2,8 +2,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Gunalan, Kabilar'', ''email'': ''kabilar@datajoint.com'',
-    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+    ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -15,8 +16,9 @@
     - items
     - type
     message: '{''name'': ''Gunalan, Kabilar'', ''email'': ''kabilar@datajoint.com'',
-      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-      [], ''includeInCitation'': True} is not of type ''string'''
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+      ''Person'', ''affiliation'': [], ''includeInCitation'': False} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
