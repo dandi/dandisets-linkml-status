@@ -217,6 +217,16 @@
         "name": "Homo sapiens - Human",
         "schemaKey": "SpeciesType",
         "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      },
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      },
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
       }
     ],
     "approach": [
@@ -233,12 +243,14 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 78070384,
-    "numberOfFiles": 4,
-    "numberOfSubjects": 1,
+    "numberOfBytes": 298334403145,
+    "numberOfFiles": 108,
+    "numberOfSubjects": 36,
     "variableMeasured": [
       "Units",
-      "ProcessingModule"
+      "ProcessingModule",
+      "ElectricalSeries",
+      "ElectrodeGroup"
     ],
     "measurementTechnique": [
       {
@@ -247,6 +259,14 @@
       },
       {
         "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
         "schemaKey": "MeasurementTechniqueType"
       }
     ]
