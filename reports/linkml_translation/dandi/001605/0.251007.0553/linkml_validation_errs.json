@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:c397d537-42dc-4a4b-87e8-d54f8fa261b0', 'name': 'DANDI publish', 'endDate': '2025-10-07T05:53:53.586907+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-07T05:53:53.586907+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f9701546-dde5-4a7d-a69c-0ac90e068353', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:c397d537-42dc-4a4b-87e8-d54f8fa261b0', 'name': 'DANDI publish', 'endDate': '2025-10-07T05:53:53.586907+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-07T05:53:53.586907+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:f9701546-dde5-4a7d-a69c-0ac90e068353', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Taniguchi, Masachika', 'email': 'mtanigu-vendor@oist.jp', 'roleName': ['dcite:DataCurator', 'dcite:Maintainer', 'dcite:Software'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Taniguchi, Masachika', 'email': 'mtanigu-vendor@oist.jp', 'roleName': ['dcite:DataCurator', 'dcite:Maintainer', 'dcite:Software'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://www.oist.jp/ncu', 'name': 'Doya, Kenji', 'email': 'doya@oist.jp', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FormalAnalysis', 'dcite:Supervision', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-2446-6820', 'affiliation': [{'name': 'Okinawa Institute of Science and Technology Graduate University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02qg15b79'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://www.oist.jp/ncu', 'name': 'Doya, Kenji', 'email': 'doya@oist.jp', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FormalAnalysis', 'dcite:Supervision', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-2446-6820', 'affiliation': [{'name': 'Okinawa Institute of Science and Technology Graduate University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02qg15b79'}], 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://sites.google.com/g.ecc.u-tokyo.ac.jp/funamizu-lab/home_eng', 'name': 'Funamizu, Akihiro', 'email': 'funamizu@iqb.u-tokyo.ac.jp', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Software', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0001-8085-1048', 'affiliation': [{'name': 'The University of Tokyo', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}]} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://sites.google.com/g.ecc.u-tokyo.ac.jp/funamizu-lab/home_eng', 'name': 'Funamizu, Akihiro', 'email': 'funamizu@iqb.u-tokyo.ac.jp', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:DataCollector', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Researcher', 'dcite:Software', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0001-8085-1048', 'affiliation': [{'name': 'The University of Tokyo', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/057zh3y96'}]} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://www.oist.jp/onu', 'name': 'Kuhn, Bernd', 'email': 'bkuhn@oist.jp', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Resources', 'dcite:Researcher', 'dcite:Validation'], 'schemaKey': 'Person', 'identifier': '0000-0002-6852-2433', 'affiliation': [{'name': 'Okinawa Institute of Science and Technology Graduate University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02qg15b79'}]} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://www.oist.jp/onu', 'name': 'Kuhn, Bernd', 'email': 'bkuhn@oist.jp', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Resources', 'dcite:Researcher', 'dcite:Validation'], 'schemaKey': 'Person', 'identifier': '0000-0002-6852-2433', 'affiliation': [{'name': 'Okinawa Institute of Science and Technology Graduate University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02qg15b79'}]} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'url': 'http://www.jsps.go.jp/', 'name': 'Japan Society for the Promotion of Science', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00hhkn466', 'awardNumber': '23120007, 26730124'} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'http://www.jsps.go.jp/', 'name': 'Japan Society for the Promotion of Science', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00hhkn466', 'awardNumber': '23120007, 26730124'} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://www.oist.jp', 'name': 'Okinawa Institute of Science and Technology Graduate University', 'roleName': ['dcite:Resources', 'dcite:Funder', 'dcite:Affiliation', 'dcite:EthicsApproval'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/02qg15b79', 'awardNumber': 'Internal funding'} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://www.oist.jp', 'name': 'Okinawa Institute of Science and Technology Graduate University', 'roleName': ['dcite:Resources', 'dcite:Funder', 'dcite:Affiliation', 'dcite:EthicsApproval'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/02qg15b79', 'awardNumber': 'Internal funding'} is not of type 'string'",

@@ -1,0 +1,71 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Spinal Cord', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Spinal Cord', 'schemaKey': 'Anatomy'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'McLoughlin, Hayley', 'email': 'hayleymc@umich.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'McLoughlin, Hayley', 'email': 'hayleymc@umich.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Emerson, Jacen', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person'} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Emerson, Jacen', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]

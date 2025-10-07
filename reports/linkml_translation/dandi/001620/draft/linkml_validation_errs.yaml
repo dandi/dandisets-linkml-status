@@ -1,0 +1,62 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Spinal Cord'', ''schemaKey'': ''Anatomy''} is not of type
+    ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Spinal Cord'', ''schemaKey'': ''Anatomy''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''McLoughlin, Hayley'', ''email'': ''hayleymc@umich.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''McLoughlin, Hayley'', ''email'': ''hayleymc@umich.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Emerson, Jacen'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+    ''schemaKey'': ''Person''} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Emerson, Jacen'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
+      ''schemaKey'': ''Person''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

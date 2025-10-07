@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:c397d537-42dc-4a4b-87e8-d54f8fa261b0'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-10-07T05:53:53.586907+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-10-07T05:53:53.586907+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:f9701546-dde5-4a7d-a69c-0ac90e068353'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:c397d537-42dc-4a4b-87e8-d54f8fa261b0'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-10-07T05:53:53.586907+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-10-07T05:53:53.586907+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:f9701546-dde5-4a7d-a69c-0ac90e068353'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Taniguchi, Masachika'', ''email'': ''mtanigu-vendor@oist.jp'',
     ''roleName'': [''dcite:DataCurator'', ''dcite:Maintainer'', ''dcite:Software''],
     ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
@@ -39,7 +50,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.oist.jp/ncu'', ''name'': ''Doya, Kenji'', ''email'':
     ''doya@oist.jp'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
     ''dcite:ContactPerson'', ''dcite:FormalAnalysis'', ''dcite:Supervision'', ''dcite:Investigation'',
@@ -71,7 +82,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://sites.google.com/g.ecc.u-tokyo.ac.jp/funamizu-lab/home_eng'',
     ''name'': ''Funamizu, Akihiro'', ''email'': ''funamizu@iqb.u-tokyo.ac.jp'', ''roleName'':
     [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:DataCollector'',
@@ -103,7 +114,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.oist.jp/onu'', ''name'': ''Kuhn, Bernd'', ''email'':
     ''bkuhn@oist.jp'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:Investigation'',
     ''dcite:Methodology'', ''dcite:Resources'', ''dcite:Researcher'', ''dcite:Validation''],
@@ -133,7 +144,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''http://www.jsps.go.jp/'', ''name'': ''Japan Society for the
     Promotion of Science'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/00hhkn466'', ''awardNumber'': ''23120007, 26730124''}
@@ -157,7 +168,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.oist.jp'', ''name'': ''Okinawa Institute of Science
     and Technology Graduate University'', ''roleName'': [''dcite:Resources'', ''dcite:Funder'',
     ''dcite:Affiliation'', ''dcite:EthicsApproval''], ''schemaKey'': ''Organization'',
