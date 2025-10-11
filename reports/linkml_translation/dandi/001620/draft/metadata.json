@@ -50,11 +50,47 @@
     }
   ],
   "dateCreated": "2025-10-06T13:12:37.489463+00:00",
-  "description": "Raw image files of spinal cord histology from Transcriptional dysregulation in the spinal cord of SCA3 provides insights into disease mechanisms.",
+  "description": "Raw image files of spinal cord histology from Transcriptional dysregulation in the spinal cord of SCA3 provides insights into disease mechanisms. These data were acquired using basic light microscopy.",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 130023768,
+    "numberOfFiles": 54,
+    "numberOfSubjects": 22,
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "OpticalChannel",
+      "ImagingPlane"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
   "ethicsApproval": [],

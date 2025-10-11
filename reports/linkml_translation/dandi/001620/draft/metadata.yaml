@@ -5,9 +5,30 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 130023768
+  numberOfFiles: 54
+  numberOfSubjects: 22
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - TwoPhotonSeries
+  - OpticalChannel
+  - ImagingPlane
 citation: McLoughlin, Hayley (2025) Transcriptional dysregulation in the spinal cord
   of SCA3 provides insights into disease mechanisms (Version draft) [Data set]. DANDI
   Archive. https://dandiarchive.org/dandiset/001620/draft
@@ -26,7 +47,8 @@ contributor:
   schemaKey: Person
 dateCreated: '2025-10-06T13:12:37.489463+00:00'
 description: Raw image files of spinal cord histology from Transcriptional dysregulation
-  in the spinal cord of SCA3 provides insights into disease mechanisms.
+  in the spinal cord of SCA3 provides insights into disease mechanisms. These data
+  were acquired using basic light microscopy.
 ethicsApproval: []
 id: DANDI:001620/draft
 identifier: DANDI:001620
