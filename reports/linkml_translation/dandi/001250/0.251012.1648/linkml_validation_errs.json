@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:326f0499-3cae-4580-b286-8db00382b954', 'name': 'DANDI publish', 'endDate': '2025-10-12T16:48:00.413790+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-12T16:48:00.413790+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:eff26f99-0e91-4049-a3d5-a2a4412e01bf', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:326f0499-3cae-4580-b286-8db00382b954', 'name': 'DANDI publish', 'endDate': '2025-10-12T16:48:00.413790+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-12T16:48:00.413790+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:eff26f99-0e91-4049-a3d5-a2a4412e01bf', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Primary Somatosensory Cortex', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0008930'} is not of type 'string' in /about/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Primary Somatosensory Cortex', 'schemaKey': 'Anatomy', 'identifier': 'UBERON:0008930'} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://steevelaquitaine.github.io', 'name': 'Laquitaine, Steeve', 'email': 'laquitainesteeve@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Maintainer', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-9647-3149', 'affiliation': [{'name': 'Sorbonne University, Vision Institute', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://steevelaquitaine.github.io', 'name': 'Laquitaine, Steeve', 'email': 'laquitainesteeve@gmail.com', 'roleName': ['dcite:ContactPerson', 'dcite:Author', 'dcite:Conceptualization', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:DataManager', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Maintainer', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:ProjectMember', 'dcite:Researcher', 'dcite:Software', 'dcite:Supervision', 'dcite:Validation', 'dcite:Visualization'], 'schemaKey': 'Person', 'identifier': '0000-0002-9647-3149', 'affiliation': [{'name': 'Sorbonne University, Vision Institute', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://orcid.org/0000-0002-4482-8390', 'name': 'Imbeni, Milo', 'email': 'milo.imbeni@maastrichtuniversity.nl', 'roleName': ['dcite:Investigation', 'dcite:Author', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-4482-8390', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://orcid.org/0000-0002-4482-8390', 'name': 'Imbeni, Milo', 'email': 'milo.imbeni@maastrichtuniversity.nl', 'roleName': ['dcite:Investigation', 'dcite:Author', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-4482-8390', 'includeInCitation': True} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://orcid.org/0000-0002-2390-4104', 'name': 'Tharayil, Joseph', 'email': 'tharayiljoe@gmail.com', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-2390-4104', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://orcid.org/0000-0002-2390-4104', 'name': 'Tharayil, Joseph', 'email': 'tharayiljoe@gmail.com', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-2390-4104', 'includeInCitation': True} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://orcid.org/0000-0002-1013-3013', 'name': 'Isbister, James', 'email': 'james.isbister@openbraininstitute.org', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-1013-3013', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://orcid.org/0000-0002-1013-3013', 'name': 'Isbister, James', 'email': 'james.isbister@openbraininstitute.org', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:Methodology'], 'schemaKey': 'Person', 'identifier': '0000-0002-1013-3013', 'includeInCitation': True} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://orcid.org/0000-0003-3455-2367', 'name': 'Reimann, Michael', 'email': 'michael.reimann@openbraininstitute.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ProjectManager', 'dcite:Investigation'], 'schemaKey': 'Person', 'identifier': '0000-0003-3455-2367', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://orcid.org/0000-0003-3455-2367', 'name': 'Reimann, Michael', 'email': 'michael.reimann@openbraininstitute.org', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition', 'dcite:ProjectManager', 'dcite:Investigation'], 'schemaKey': 'Person', 'identifier': '0000-0003-3455-2367', 'includeInCitation': True} is not of type 'string'",
