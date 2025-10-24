@@ -29,9 +29,13 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: two-photon microscopy technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 48552386880
-  numberOfFiles: 4
-  numberOfSubjects: 5
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 188128840120
+  numberOfFiles: 5
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
@@ -53,6 +57,11 @@ assetsSummary:
   - OpticalChannel
   - ImagingPlane
   - TwoPhotonSeries
+  - LFP
+  - Position
+  - Units
+  - EyeTracking
+  - SpatialSeries
 citation: NWB Cloud Benchmarks - HDF5 (2024). (Version draft) [Data set]. DANDI archive.
   https://dandiarchive.org/dandiset/000717/draft
 contributor: []

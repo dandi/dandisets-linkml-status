@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:a43ca9f1-fbf6-4a30-a544-4604eedea8fa', 'name': 'DANDI publish', 'endDate': '2025-10-23T23:36:27.168202+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-23T23:36:27.168202+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:ab1ce676-c97c-49e0-98eb-346d3bb32284', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:a43ca9f1-fbf6-4a30-a544-4604eedea8fa', 'name': 'DANDI publish', 'endDate': '2025-10-23T23:36:27.168202+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-23T23:36:27.168202+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:ab1ce676-c97c-49e0-98eb-346d3bb32284', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Motor Cortex', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Motor Cortex', 'schemaKey': 'Anatomy'} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Temmar, Hisham', 'email': 'htemmar@umich.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4464-4911', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Temmar, Hisham', 'email': 'htemmar@umich.edu', 'roleName': ['dcite:ContactPerson', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4464-4911', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Gill, Nina', 'email': 'nrgill@umich.edu', 'roleName': ['dcite:Author', 'dcite:DataCurator', 'dcite:Validation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Gill, Nina', 'email': 'nrgill@umich.edu', 'roleName': ['dcite:Author', 'dcite:DataCurator', 'dcite:Validation'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Wang, Yixuan', 'email': 'yxbwang@umich.edu', 'roleName': ['dcite:DataCurator', 'dcite:Methodology', 'dcite:Validation', 'dcite:Visualization', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Wang, Yixuan', 'email': 'yxbwang@umich.edu', 'roleName': ['dcite:DataCurator', 'dcite:Methodology', 'dcite:Validation', 'dcite:Visualization', 'dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Mellon, Nicholas B.', 'email': 'nbmellon@umich.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis', 'dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Mellon, Nicholas B.', 'email': 'nbmellon@umich.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis', 'dcite:Methodology'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Liu, Chang', 'email': 'eddyliu@umich.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Liu, Chang', 'email': 'eddyliu@umich.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -159,7 +163,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Cubillos, Luis Hernan', 'email': 'lhcubill@umich.edu', 'roleName': ['dcite:DataCollector', 'dcite:DataManager', 'dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9876-6204', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Cubillos, Luis Hernan', 'email': 'lhcubill@umich.edu', 'roleName': ['dcite:DataCollector', 'dcite:DataManager', 'dcite:Methodology', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9876-6204', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -182,7 +186,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Parsons, Rio I.', 'email': 'riopar@umich.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0009-0000-3931-7492', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Parsons, Rio I.', 'email': 'riopar@umich.edu', 'roleName': ['dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0009-0000-3931-7492', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -205,7 +209,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Costello, Joseph T.', 'email': 'costellj@umich.edu', 'roleName': ['dcite:DataCollector', 'dcite:DataManager', 'dcite:Methodology', 'dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0001-7608-0885', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Costello, Joseph T.', 'email': 'costellj@umich.edu', 'roleName': ['dcite:DataCollector', 'dcite:DataManager', 'dcite:Methodology', 'dcite:Author', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0001-7608-0885', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -228,7 +232,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Ceradini, Matteo', 'email': 'mceradin@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8062-4689', 'affiliation': [{'name': \"Sant'Anna School of Advanced Studies\", 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Ceradini, Matteo', 'email': 'mceradin@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8062-4689', 'affiliation': [{'name': \"Sant'Anna School of Advanced Studies\", 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -251,7 +255,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Kelberman, Madison M.', 'email': 'mkelb@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1395-6792', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Kelberman, Madison M.', 'email': 'mkelb@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1395-6792', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -274,7 +278,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Mender, Matthew J.', 'email': 'mmender@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Mender, Matthew J.', 'email': 'mmender@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -297,7 +301,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Hite, Aren I.', 'email': 'arenhite@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Hite, Aren I.', 'email': 'arenhite@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -320,7 +324,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Wallace, Dylan M.', 'email': 'dywallac@umich.edu', 'roleName': ['dcite:DataCollector', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2770-3614', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string' in /contributor/12",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Wallace, Dylan M.', 'email': 'dywallac@umich.edu', 'roleName': ['dcite:DataCollector', 'dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2770-3614', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation'}], 'includeInCitation': True} is not of type 'string'",
@@ -343,7 +347,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Nason-Tomaszewski, Samuel R.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7127-0986', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/13",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Nason-Tomaszewski, Samuel R.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7127-0986', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -366,7 +370,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Willsey, Matthew S.', 'email': 'mwillsey@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/14",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Willsey, Matthew S.', 'email': 'mwillsey@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -389,7 +393,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Patil, Parag G.', 'email': 'pgpatil@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2300-6136', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/15",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Patil, Parag G.', 'email': 'pgpatil@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2300-6136', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -412,7 +416,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://draeloslab.org/', 'name': 'Draelos, Anne W.', 'email': 'adraelos@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9046-3193', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/16",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://draeloslab.org/', 'name': 'Draelos, Anne W.', 'email': 'adraelos@umich.edu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-9046-3193', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -435,7 +439,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Chestek, Cynthia A.', 'email': 'cchestek@umich.edu', 'schemaKey': 'Person', 'identifier': '0000-0002-9671-7051', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string' in /contributor/17",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Chestek, Cynthia A.', 'email': 'cchestek@umich.edu', 'schemaKey': 'Person', 'identifier': '0000-0002-9671-7051', 'affiliation': [{'name': 'University of Michigan', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'}], 'includeInCitation': True} is not of type 'string'",
@@ -458,7 +462,7 @@
     "severity": "ERROR",
     "message": "{'name': 'NSF', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '2223822'} is not of type 'string' in /contributor/18",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'NSF', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '2223822'} is not of type 'string'",
@@ -481,7 +485,7 @@
     "severity": "ERROR",
     "message": "{'name': 'NSF', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1926576'} is not of type 'string' in /contributor/19",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'NSF', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1926576'} is not of type 'string'",
@@ -504,7 +508,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Kahn, Dan D. and Betty, Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'AWD011321'} is not of type 'string' in /contributor/20",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Kahn, Dan D. and Betty, Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'AWD011321'} is not of type 'string'",
@@ -527,7 +531,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Agencia Nacional de Investigacion y Desarrollo (ANID) of Chile', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization'} is not of type 'string' in /contributor/21",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Agencia Nacional de Investigacion y Desarrollo (ANID) of Chile', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization'} is not of type 'string'",
@@ -550,7 +554,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Burroughs Wellcome Fund', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'CASI Award #1021865.01'} is not of type 'string' in /contributor/22",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Burroughs Wellcome Fund', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'CASI Award #1021865.01'} is not of type 'string'",

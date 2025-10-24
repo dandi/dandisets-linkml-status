@@ -62,9 +62,9 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 48552386880,
-    "numberOfFiles": 4,
-    "numberOfSubjects": 5,
+    "numberOfBytes": 188128840120,
+    "numberOfFiles": 5,
+    "numberOfSubjects": 6,
     "variableMeasured": [
       "ElectricalSeries",
       "ElectrodeGroup",
@@ -77,7 +77,12 @@
       "PlaneSegmentation",
       "OpticalChannel",
       "ImagingPlane",
-      "TwoPhotonSeries"
+      "TwoPhotonSeries",
+      "LFP",
+      "Position",
+      "Units",
+      "EyeTracking",
+      "SpatialSeries"
     ],
     "measurementTechnique": [
       {
@@ -106,6 +111,14 @@
       },
       {
         "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "signal filtering technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
         "schemaKey": "MeasurementTechniqueType"
       }
     ]
