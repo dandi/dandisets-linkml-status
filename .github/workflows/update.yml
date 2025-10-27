@@ -14,6 +14,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Ensure pip is installed
+        run: python -m ensurepip --upgrade
+
       - name: Configure git environment
         run: |
           git config --global user.email "team@dandiarchive.org"
