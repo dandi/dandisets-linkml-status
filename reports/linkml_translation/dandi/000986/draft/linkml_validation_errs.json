@@ -2,12 +2,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Papadopoulos, Lia', 'email': 'liap@uoregon.edu', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'Papadopoulos, Lia', 'email': 'liap@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Software'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Papadopoulos, Lia', 'email': 'liap@uoregon.edu', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Papadopoulos, Lia', 'email': 'liap@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Software'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -25,12 +25,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Jaramillo, Santiago', 'email': 'sjara@uoregon.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:FundingAcquisition', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0002-6595-8450', 'affiliation': [], 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Jo, Suhyun ', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Jaramillo, Santiago', 'email': 'sjara@uoregon.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:FundingAcquisition', 'dcite:Software'], 'schemaKey': 'Person', 'identifier': '0000-0002-6595-8450', 'affiliation': [], 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Jo, Suhyun ', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -48,12 +48,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Mazzucato, Luca', 'schemaKey': 'Person', 'identifier': '0000-0002-8525-7539', 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Zumwalt, Kevin', 'email': 'kzumwalt@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Mazzucato, Luca', 'schemaKey': 'Person', 'identifier': '0000-0002-8525-7539', 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Zumwalt, Kevin', 'email': 'kzumwalt@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -71,12 +71,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'R01NS118461', 'includeInCitation': False} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'Wehr, Michael', 'email': 'wehr@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'National Institute of Neurological Disorders and Stroke', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'R01NS118461', 'includeInCitation': False} is not of type 'string'",
+      "message": "{'name': 'Wehr, Michael', 'email': 'wehr@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         3
@@ -94,15 +94,222 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Suhyun Jo', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "message": "{'name': 'Jaramillo, Santiago', 'email': 'sjara@uoregon.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:FundingAcquisition', 'dcite:Software', 'dcite:Author', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-6595-8450', 'affiliation': [], 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Suhyun Jo', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Jaramillo, Santiago', 'email': 'sjara@uoregon.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:FundingAcquisition', 'dcite:Software', 'dcite:Author', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-6595-8450', 'affiliation': [], 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'McCormick, David A.', 'email': 'davidmc@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition', 'dcite:Supervision', 'dcite:Conceptualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'McCormick, David A.', 'email': 'davidmc@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition', 'dcite:Supervision', 'dcite:Conceptualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        5
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Mazzucato, Luca', 'email': 'lmazzuca@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8525-7539', 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Mazzucato, Luca', 'email': 'lmazzuca@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8525-7539', 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS118461', 'includeInCitation': False} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS118461', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R35NS097287'} is not of type 'string' in /contributor/8",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R35NS097287'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01MH127375'} is not of type 'string' in /contributor/9",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01MH127375'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01DA055439'} is not of type 'string' in /contributor/10",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01DA055439'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01AG077681'} is not of type 'string' in /contributor/11",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01AG077681'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        11
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS127305'} is not of type 'string' in /contributor/12",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS127305'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        12
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'CAREER Award 2238247'} is not of type 'string' in /contributor/13",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'CAREER Award 2238247'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        13
       ],
       "absolute_schema_path": [
         "properties",
