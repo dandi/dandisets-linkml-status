@@ -3,9 +3,40 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: voltage clamp technique
+    schemaKey: MeasurementTechniqueType
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 6914021635
+  numberOfFiles: 123
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9544
+    name: Macaca mulatta - Rhesus monkey
+    schemaKey: SpeciesType
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9541
+    name: Macaca fascicularis - Cynomolgus monkeys
+    schemaKey: SpeciesType
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9545
+    name: Macaca nemestrina
+    schemaKey: SpeciesType
+  variableMeasured:
+  - CurrentClampStimulusSeries
+  - VoltageClampSeries
+  - VoltageClampStimulusSeries
+  - CurrentClampSeries
+  - ProcessingModule
 citation: Gonzalez, Limary; Lee, Brian; Allen Institute for Brian Science; National
   Institute of Mental Health; Kalmbach, Brian; Dalley, Rachel; Lein, Ed (2025) 20251020_AIBS_Patchseq_nhp
   (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001626/draft
