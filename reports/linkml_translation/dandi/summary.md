@@ -954,7 +954,7 @@
 | [001470](./001470/) | [draft](./001470/draft/metadata.yaml) | 0 | [1 (1)](./001470/draft/linkml_validation_errs.yaml) | 2025-09-02T18:18:46.121563+00:00 | Valid | 0.6.9 |
 | [001472](./001472/) | [draft](./001472/draft/metadata.yaml) | 0 | [8 (8)](./001472/draft/linkml_validation_errs.yaml) | 2025-07-08T12:51:40.796727+00:00 | Invalid | 0.6.10 |
 | [001473](./001473/) | [draft](./001473/draft/metadata.yaml) | 0 | [2 (2)](./001473/draft/linkml_validation_errs.yaml) | 2025-06-30T21:35:37.754750+00:00 | Valid | 0.6.10 |
-| [001474](./001474/) | [draft](./001474/draft/metadata.yaml) | 0 | [1 (1)](./001474/draft/linkml_validation_errs.yaml) | 2025-10-06T18:10:40.065256+00:00 | Valid | 0.6.10 |
+| [001474](./001474/) | [draft](./001474/draft/metadata.yaml) | 0 | [1 (1)](./001474/draft/linkml_validation_errs.yaml) | 2025-10-28T16:48:37.926939+00:00 | Valid | 0.6.10 |
 | [001475](./001475/) | [draft](./001475/draft/metadata.yaml) | [1 (1 missing)](./001475/draft/pydantic_validation_errs.yaml) | [2 (1 + 1)](./001475/draft/linkml_validation_errs.yaml) | 2025-06-24T18:53:54.898966+00:00 | Invalid | 0.6.10 |
 | [001476](./001476/) | [draft](./001476/draft/metadata.yaml) | 0 | [1 (1)](./001476/draft/linkml_validation_errs.yaml) | 2025-06-16T14:46:01.046639+00:00 | Invalid | 0.6.10 |
 | [001509](./001509/) | [0.250630.1940](./001509/0.250630.1940/metadata.yaml) | 0 | [3 (3)](./001509/0.250630.1940/linkml_validation_errs.yaml) | 2025-06-30T19:40:51.485107+00:00 | Valid | 0.6.10 |
@@ -1037,4 +1037,5 @@
 | [001624](./001624/) | [draft](./001624/draft/metadata.yaml) | 0 | [7 (7)](./001624/draft/linkml_validation_errs.yaml) | 2025-10-10T18:47:29.653675+00:00 | Invalid | 0.6.10 |
 | [001625](./001625/) | [0.251020.1639](./001625/0.251020.1639/metadata.yaml) | 0 | [8 (8)](./001625/0.251020.1639/linkml_validation_errs.yaml) | 2025-10-20T16:39:42.074113+00:00 | Valid | 0.6.10 |
 | [001625](./001625/) | [draft](./001625/draft/metadata.yaml) | 0 | [8 (1 + 7)](./001625/draft/linkml_validation_errs.yaml) | 2025-10-20T16:39:40.995381+00:00 | Published | 0.6.10 |
-| [001626](./001626/) | [draft](./001626/draft/metadata.yaml) | 0 | [7 (7)](./001626/draft/linkml_validation_errs.yaml) | 2025-10-27T22:29:36.499607+00:00 | Valid | 0.6.10 |
+| [001626](./001626/) | [0.251028.1747](./001626/0.251028.1747/metadata.yaml) | 0 | [8 (8)](./001626/0.251028.1747/linkml_validation_errs.yaml) | 2025-10-28T17:47:10.881592+00:00 | Valid | 0.6.10 |
+| [001626](./001626/) | [draft](./001626/draft/metadata.yaml) | 0 | [8 (1 + 7)](./001626/draft/linkml_validation_errs.yaml) | 2025-10-28T17:47:09.903814+00:00 | Published | 0.6.10 |

@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:8f53f359-af42-4f96-a53f-1869defaeeb7'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-10-28T17:47:06.323623+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-10-28T17:47:06.323623+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:89e02567-0df1-49c4-b695-70e57dc9d48b'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:8f53f359-af42-4f96-a53f-1869defaeeb7'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-10-28T17:47:06.323623+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-10-28T17:47:06.323623+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:89e02567-0df1-49c4-b695-70e57dc9d48b'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0009-0009-0306-0002'', ''affiliation'': [], ''includeInCitation'': True} is
@@ -39,7 +50,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-3210-5638'', ''includeInCitation'': True} is not of type ''string''
@@ -62,7 +73,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
     for Brian Science'', ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00dcv1019'',
     ''awardNumber'': ''UM1MH130981'', ''includeInCitation'': True} is not of type
@@ -86,7 +97,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.nimh.nih.gov/'', ''name'': ''National Institute
     of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''UM1MH130981'',
@@ -110,7 +121,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Kalmbach, Brian'', ''email'': ''briank@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0003-3136-8097'', ''includeInCitation'': True} is not of type ''string''
@@ -133,7 +144,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Dalley, Rachel'', ''email'': ''racheld@alleninstitute.org'',
     ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0001-7461-7845'', ''includeInCitation'': True} is not of type ''string''
@@ -156,7 +167,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Lein, Ed'', ''email'': ''edl@alleninstitute.org'', ''roleName'':
     [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9012-6552'',
     ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
