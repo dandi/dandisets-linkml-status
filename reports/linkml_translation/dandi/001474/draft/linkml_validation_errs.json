@@ -21,5 +21,28 @@
       "validator": "type",
       "validator_value": "string"
     }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Andermann, Mark', 'email': 'manderma@bidmc.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Author'], 'schemaKey': 'Person', 'awardNumber': '1DP1DK139958-01'} is not of type 'string' in /contributor/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Andermann, Mark', 'email': 'manderma@bidmc.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Author'], 'schemaKey': 'Person', 'awardNumber': '1DP1DK139958-01'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
   }
 ]

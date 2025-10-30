@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:33393e62-83e0-4a54-8eab-a61d562173d9'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-10-29T16:44:38.680917+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-10-29T16:44:38.680917+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:b6e5fc84-8bfc-47c7-999f-c4f66e600bfb'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:33393e62-83e0-4a54-8eab-a61d562173d9'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-10-29T16:44:38.680917+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-10-29T16:44:38.680917+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:b6e5fc84-8bfc-47c7-999f-c4f66e600bfb'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Spinal Cord'', ''schemaKey'': ''Anatomy''} is not of type
     ''string'' in /about/0'
   severity: ERROR
@@ -35,7 +46,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''McLoughlin, Hayley'', ''email'': ''hayleymc@umich.edu'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
@@ -57,7 +68,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Emerson, Jacen'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
     ''schemaKey'': ''Person''} is not of type ''string'' in /contributor/1'
   severity: ERROR

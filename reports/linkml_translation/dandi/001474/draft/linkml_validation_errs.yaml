@@ -20,3 +20,27 @@
     validator: type
     validator_value: string
   type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Andermann, Mark'', ''email'': ''manderma@bidmc.harvard.edu'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:ProjectLeader'', ''dcite:Supervision'',
+    ''dcite:Author''], ''schemaKey'': ''Person'', ''awardNumber'': ''1DP1DK139958-01''}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Andermann, Mark'', ''email'': ''manderma@bidmc.harvard.edu'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:ProjectLeader'', ''dcite:Supervision'',
+      ''dcite:Author''], ''schemaKey'': ''Person'', ''awardNumber'': ''1DP1DK139958-01''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

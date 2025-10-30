@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:33393e62-83e0-4a54-8eab-a61d562173d9', 'name': 'DANDI publish', 'endDate': '2025-10-29T16:44:38.680917+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-29T16:44:38.680917+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:b6e5fc84-8bfc-47c7-999f-c4f66e600bfb', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:33393e62-83e0-4a54-8eab-a61d562173d9', 'name': 'DANDI publish', 'endDate': '2025-10-29T16:44:38.680917+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-29T16:44:38.680917+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:b6e5fc84-8bfc-47c7-999f-c4f66e600bfb', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Spinal Cord', 'schemaKey': 'Anatomy'} is not of type 'string' in /about/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Spinal Cord', 'schemaKey': 'Anatomy'} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'McLoughlin, Hayley', 'email': 'hayleymc@umich.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'McLoughlin, Hayley', 'email': 'hayleymc@umich.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Emerson, Jacen', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person'} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Emerson, Jacen', 'roleName': ['dcite:Author', 'dcite:DataCollector'], 'schemaKey': 'Person'} is not of type 'string'",
