@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:b2e29d91-5a0b-4390-af5a-21bf336546b9', 'name': 'DANDI publish', 'endDate': '2025-10-31T17:25:25.302668+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-31T17:25:25.302668+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:545423df-fac3-40da-9d34-46319c871ecc', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:b2e29d91-5a0b-4390-af5a-21bf336546b9', 'name': 'DANDI publish', 'endDate': '2025-10-31T17:25:25.302668+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-31T17:25:25.302668+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:545423df-fac3-40da-9d34-46319c871ecc', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Porniece, Marta', 'email': 'mporniec@bidmc.harvard.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Porniece, Marta', 'email': 'mporniec@bidmc.harvard.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Andermann, Mark', 'email': 'manderma@bidmc.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Author'], 'schemaKey': 'Person', 'awardNumber': '1DP1DK139958-01'} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Andermann, Mark', 'email': 'manderma@bidmc.harvard.edu', 'roleName': ['dcite:ContactPerson', 'dcite:ProjectLeader', 'dcite:Supervision', 'dcite:Author'], 'schemaKey': 'Person', 'awardNumber': '1DP1DK139958-01'} is not of type 'string'",

@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:5a91aed5-5f57-4d9d-aa57-b872833de659'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-10-31T19:39:47.771443+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-10-31T19:39:47.771443+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:1efbcc38-72e1-4655-96ee-62deb18f1060'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:5a91aed5-5f57-4d9d-aa57-b872833de659'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-10-31T19:39:47.771443+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-10-31T19:39:47.771443+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:1efbcc38-72e1-4655-96ee-62deb18f1060'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Papadopoulos, Lia'', ''email'': ''liap@uoregon.edu'', ''roleName'':
     [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
     ''dcite:Methodology'', ''dcite:Software''], ''schemaKey'': ''Person'', ''includeInCitation'':
@@ -39,7 +50,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Jo, Suhyun '', ''roleName'': [''dcite:Author'', ''dcite:DataCollector'',
     ''dcite:DataCurator'', ''dcite:Investigation'', ''dcite:Methodology''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
@@ -61,7 +72,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Zumwalt, Kevin'', ''email'': ''kzumwalt@uoregon.edu'', ''roleName'':
     [''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
@@ -83,7 +94,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Wehr, Michael'', ''email'': ''wehr@uoregon.edu'', ''roleName'':
     [''dcite:Author'', ''dcite:Supervision'', ''dcite:FundingAcquisition''], ''schemaKey'':
     ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
@@ -105,7 +116,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Jaramillo, Santiago'', ''email'': ''sjara@uoregon.edu'',
     ''roleName'': [''dcite:ContactPerson'', ''dcite:DataCurator'', ''dcite:FundingAcquisition'',
     ''dcite:Software'', ''dcite:Author'', ''dcite:Supervision''], ''schemaKey'': ''Person'',
@@ -131,7 +142,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''McCormick, David A.'', ''email'': ''davidmc@uoregon.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'', ''dcite:Supervision'',
     ''dcite:Conceptualization'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
@@ -155,7 +166,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Mazzucato, Luca'', ''email'': ''lmazzuca@uoregon.edu'', ''roleName'':
     [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ContactPerson'', ''dcite:FundingAcquisition'',
     ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:ProjectLeader'', ''dcite:Supervision''],
@@ -182,7 +193,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
     ''awardNumber'': ''R01NS118461'', ''includeInCitation'': False} is not of type
@@ -206,7 +217,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
     ''awardNumber'': ''R35NS097287''} is not of type ''string'' in /contributor/8'
@@ -228,7 +239,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health'', ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''R01MH127375''}
     is not of type ''string'' in /contributor/9'
@@ -250,7 +261,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
     ''awardNumber'': ''R01DA055439''} is not of type ''string'' in /contributor/10'
@@ -272,7 +283,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
     ''awardNumber'': ''R01AG077681''} is not of type ''string'' in /contributor/11'
@@ -294,7 +305,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
     ''awardNumber'': ''R01NS127305''} is not of type ''string'' in /contributor/12'
@@ -316,7 +327,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
     ''awardNumber'': ''CAREER Award 2238247''} is not of type ''string'' in /contributor/13'

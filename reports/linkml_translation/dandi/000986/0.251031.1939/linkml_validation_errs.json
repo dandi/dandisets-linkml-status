@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:5a91aed5-5f57-4d9d-aa57-b872833de659', 'name': 'DANDI publish', 'endDate': '2025-10-31T19:39:47.771443+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-31T19:39:47.771443+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:1efbcc38-72e1-4655-96ee-62deb18f1060', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:5a91aed5-5f57-4d9d-aa57-b872833de659', 'name': 'DANDI publish', 'endDate': '2025-10-31T19:39:47.771443+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-10-31T19:39:47.771443+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:1efbcc38-72e1-4655-96ee-62deb18f1060', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Papadopoulos, Lia', 'email': 'liap@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Software'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Papadopoulos, Lia', 'email': 'liap@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FormalAnalysis', 'dcite:Investigation', 'dcite:Methodology', 'dcite:Software'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Jo, Suhyun ', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Jo, Suhyun ', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator', 'dcite:Investigation', 'dcite:Methodology'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Zumwalt, Kevin', 'email': 'kzumwalt@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Zumwalt, Kevin', 'email': 'kzumwalt@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:DataCurator'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Wehr, Michael', 'email': 'wehr@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Wehr, Michael', 'email': 'wehr@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Supervision', 'dcite:FundingAcquisition'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Jaramillo, Santiago', 'email': 'sjara@uoregon.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:FundingAcquisition', 'dcite:Software', 'dcite:Author', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-6595-8450', 'affiliation': [], 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Jaramillo, Santiago', 'email': 'sjara@uoregon.edu', 'roleName': ['dcite:ContactPerson', 'dcite:DataCurator', 'dcite:FundingAcquisition', 'dcite:Software', 'dcite:Author', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-6595-8450', 'affiliation': [], 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'name': 'McCormick, David A.', 'email': 'davidmc@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition', 'dcite:Supervision', 'dcite:Conceptualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'McCormick, David A.', 'email': 'davidmc@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition', 'dcite:Supervision', 'dcite:Conceptualization', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -159,7 +163,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Mazzucato, Luca', 'email': 'lmazzuca@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8525-7539', 'awardNumber': '', 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Mazzucato, Luca', 'email': 'lmazzuca@uoregon.edu', 'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:ContactPerson', 'dcite:FundingAcquisition', 'dcite:Investigation', 'dcite:Methodology', 'dcite:ProjectLeader', 'dcite:Supervision'], 'schemaKey': 'Person', 'identifier': '0000-0002-8525-7539', 'awardNumber': '', 'includeInCitation': True} is not of type 'string'",
@@ -182,7 +186,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS118461', 'includeInCitation': False} is not of type 'string' in /contributor/7",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS118461', 'includeInCitation': False} is not of type 'string'",
@@ -205,7 +209,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R35NS097287'} is not of type 'string' in /contributor/8",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R35NS097287'} is not of type 'string'",
@@ -228,7 +232,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01MH127375'} is not of type 'string' in /contributor/9",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health', 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01MH127375'} is not of type 'string'",
@@ -251,7 +255,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01DA055439'} is not of type 'string' in /contributor/10",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01DA055439'} is not of type 'string'",
@@ -274,7 +278,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01AG077681'} is not of type 'string' in /contributor/11",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01AG077681'} is not of type 'string'",
@@ -297,7 +301,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS127305'} is not of type 'string' in /contributor/12",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'R01NS127305'} is not of type 'string'",
@@ -320,7 +324,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'CAREER Award 2238247'} is not of type 'string' in /contributor/13",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Science Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/021nxhr62', 'awardNumber': 'CAREER Award 2238247'} is not of type 'string'",
