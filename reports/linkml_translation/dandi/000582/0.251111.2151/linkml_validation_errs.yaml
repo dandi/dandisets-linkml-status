@@ -1,21 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:c5262220-25e9-4bd7-bb4b-b75e21435606'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-11-11T21:51:30.911130+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-11-11T21:51:30.911130+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:632a6042-ea11-444e-bcac-2d4cab4408b1'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - publishedBy
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:c5262220-25e9-4bd7-bb4b-b75e21435606'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-11-11T21:51:30.911130+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-11-11T21:51:30.911130+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:632a6042-ea11-444e-bcac-2d4cab4408b1'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Sargolini, Francesca'', ''roleName'': [''dcite:Author''],
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-5038-3746'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
@@ -37,7 +48,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Fyhn, Marianne'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
@@ -59,7 +70,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Hafting, Torkel'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/2'
@@ -81,7 +92,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''McNaughton, Bruce L.'', ''roleName'': [''dcite:Author''],
     ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
     not of type ''string'' in /contributor/3'
@@ -103,7 +114,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Witter, Menno P.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/4'
@@ -125,7 +136,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Moser, May-Britt'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/5'
@@ -147,7 +158,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Moser, Edvard I.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
     in /contributor/6'
@@ -169,7 +180,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Waade, Haagen'', ''email'': ''haagen.waade@ntnu.no'', ''roleName'':
     [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-4675-2569'',
     ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
@@ -192,7 +203,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Ball, Simon'', ''email'': ''simon.ball@ntnu.no'', ''roleName'':
     [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/8'
@@ -226,7 +237,7 @@
     Interface'', ''version'': ''0.55.1'', ''schemaKey'': ''Software'', ''identifier'':
     ''RRID:SCR_019009''} is not of type ''string'''
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''id'': ''urn:uuid:b5a3e1e4-7c9d-4247-ab5b-ac772a85ba59'', ''name'':
     ''Metadata extraction from DOI'', ''used'': [], ''schemaKey'': ''Project'', ''description'':
     ''Metadata (contributor, name, relatedResource) was enhanced with data from DOI

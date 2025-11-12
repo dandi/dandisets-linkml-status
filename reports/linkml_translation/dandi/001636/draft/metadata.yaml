@@ -1,0 +1,160 @@
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001384
+  name: primary motor cortex
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0002152
+  name: middle cerebellar peduncle
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0002435
+  name: striatum
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001897
+  name: thalamus
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001900
+  name: ventral thalamus
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001461
+  name: elbow
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001460
+  name: arm
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/DOID_14330
+  name: Parkinson's disease
+  schemaKey: Disorder
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 4401695725
+  numberOfFiles: 286
+  numberOfSubjects: 1
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9544
+    name: Macaca mulatta - Rhesus monkey
+    schemaKey: SpeciesType
+  variableMeasured:
+  - SpatialSeries
+  - ProcessingModule
+  - ElectricalSeries
+  - Units
+  - CompassDirection
+  - ElectrodeGroup
+citation: Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2025) Pyramidal
+  tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor
+  tasks (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001636/draft
+contributor:
+- affiliation:
+  - identifier: https://ror.org/01an3r305
+    name: University of Pittsburgh
+    schemaKey: Affiliation
+  email: rturner@pitt.edu
+  identifier: 0000-0002-6074-4365
+  includeInCitation: true
+  name: Turner, Robert
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  schemaKey: Person
+- identifier: 0000-0003-2855-0672
+  includeInCitation: true
+  name: Pasquereau, Benjamin
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation: []
+  email: h.mayorquin@gmail.com
+  includeInCitation: false
+  name: Mayorquin, Heberto
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/03czfpz43
+    name: Emory University
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: DeLong, Mahlon R.
+  schemaKey: Person
+- awardNumber: NS044551
+  identifier: https://ror.org/01s5ya894
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS044551
+  identifier: https://ror.org/01cwqze88
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2025-11-11T15:48:24.913269+00:00'
+description: 'Electrophysiology recordings from primary motor cortex (M1) of macaque
+  monkeys (Macaca mulatta) during visuomotor step-tracking tasks, collected before
+  and after MPTP-induced parkinsonism. Recorded neuron types: Pyramidal tract neurons
+  (PTNs) and corticostriatal neurons (CSNs) identified through antidromic stimulation
+  from chronically implanted electrodes in the cerebral peduncle and posterior putamen.
+  Behavioral paradigm: Visuomotor step-tracking task requiring flexion or extension
+  elbow movements to align a cursor with visual targets. Trials included center hold,
+  target presentation, movement execution, target hold, and liquid reward delivery.
+  Unexpected torque perturbations were applied during a subset of trials to elicit
+  stretch reflexes.'
+ethicsApproval: []
+id: DANDI:001636/draft
+identifier: DANDI:001636
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001636/versions/draft/assets/
+name: Pyramidal tract and corticostriatal neuron recordings in MPTP-treated macaque
+  performing visuomotor tasks
+relatedResource:
+- identifier: https://doi.org/10.3389/fnsys.2013.00098
+  name: 'Primary motor cortex of the parkinsonian monkey: altered neuronal responses
+    to muscle stretch'
+  relation: dcite:IsDescribedBy
+  repository: Frontiers in Systems Neuroscience
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+- identifier: https://doi.org/10.1093/cercor/bhq217
+  name: 'Primary Motor Cortex of the Parkinsonian Monkey: Differential Effects on
+    the Spontaneous Activity of Pyramidal Tract-Type Neurons'
+  relation: dcite:IsDescribedBy
+  repository: Cerebral Cortex
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+- identifier: https://doi.org/10.1093/brain/awv312
+  name: 'Primary motor cortex of the parkinsonian monkey: altered encoding of active
+    movement'
+  relation: dcite:IsDescribedBy
+  repository: Brain A Journal of Neurology
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+url: https://dandiarchive.org/dandiset/001636/draft
+version: draft
+wasGeneratedBy: []

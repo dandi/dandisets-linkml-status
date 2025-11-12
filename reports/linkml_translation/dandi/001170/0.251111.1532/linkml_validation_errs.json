@@ -2,18 +2,22 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'id': 'urn:uuid:443d54ee-c86a-42c4-b805-86c15e74d2a7', 'name': 'DANDI publish', 'endDate': '2025-11-11T15:32:07.045664+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-11-11T15:32:07.045664+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:594e1422-8c8d-4703-b65b-da297ce74457', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'id': 'urn:uuid:443d54ee-c86a-42c4-b805-86c15e74d2a7', 'name': 'DANDI publish', 'endDate': '2025-11-11T15:32:07.045664+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-11-11T15:32:07.045664+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:594e1422-8c8d-4703-b65b-da297ce74457', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
@@ -21,7 +25,7 @@
     "severity": "ERROR",
     "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1 UF1 NS 111692-01'} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1 UF1 NS 111692-01'} is not of type 'string'",
@@ -44,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Pfaffinger, Paul', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Pfaffinger, Paul', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -67,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Hanson, Elizabeth', 'email': 'mosse@ohsu.edu', 'schemaKey': 'Person', 'identifier': '0000-0002-5150-8926', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Hanson, Elizabeth', 'email': 'mosse@ohsu.edu', 'schemaKey': 'Person', 'identifier': '0000-0002-5150-8926', 'includeInCitation': True} is not of type 'string'",
@@ -90,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Pirhayatifard, Delaram', 'email': 'dp43@rice.edu', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Pirhayatifard, Delaram', 'email': 'dp43@rice.edu', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -113,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://www.bcm.edu/research/labs/jacob-reimer', 'name': 'Reimer, Jacob', 'email': 'reimer@bcm.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4364-8846', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://www.bcm.edu/research/labs/jacob-reimer', 'name': 'Reimer, Jacob', 'email': 'reimer@bcm.edu', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-4364-8846', 'includeInCitation': True} is not of type 'string'",
@@ -136,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Hu, Ming', 'email': 'ming.hu@bcm.edu', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Hu, Ming', 'email': 'ming.hu@bcm.edu', 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
@@ -159,7 +163,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://ankitlab.co/', 'name': 'Patel, Ankit ', 'email': 'ankitp@bcm.edu', 'schemaKey': 'Person', 'identifier': '0000-0001-9678-496X', 'includeInCitation': False} is not of type 'string' in /contributor/6",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://ankitlab.co/', 'name': 'Patel, Ankit ', 'email': 'ankitp@bcm.edu', 'schemaKey': 'Person', 'identifier': '0000-0001-9678-496X', 'includeInCitation': False} is not of type 'string'",
@@ -182,7 +186,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://facultyprofiles.cshl.edu/saket.navlakha', 'name': 'Navlakha, Saket', 'email': 'navlakha@cshl.edu', 'schemaKey': 'Person', 'identifier': '0000-0002-5505-9718', 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://facultyprofiles.cshl.edu/saket.navlakha', 'name': 'Navlakha, Saket', 'email': 'navlakha@cshl.edu', 'schemaKey': 'Person', 'identifier': '0000-0002-5505-9718', 'includeInCitation': True} is not of type 'string'",
@@ -205,7 +209,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Arenkiel, Benjamin', 'email': 'arenkiel@bcm.edu', 'schemaKey': 'Person', 'identifier': '0000-0001-9047-2420', 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Arenkiel, Benjamin', 'email': 'arenkiel@bcm.edu', 'schemaKey': 'Person', 'identifier': '0000-0001-9047-2420', 'includeInCitation': True} is not of type 'string'",
