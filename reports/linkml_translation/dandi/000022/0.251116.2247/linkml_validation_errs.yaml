@@ -1,0 +1,222 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:291f93c4-2198-4326-bb3f-36ea963a87b9'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-11-16T22:47:01.731059+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-11-16T22:47:01.731059+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:11437249-50ad-4e9f-b48b-c65aed543d42'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:291f93c4-2198-4326-bb3f-36ea963a87b9'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-11-16T22:47:01.731059+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-11-16T22:47:01.731059+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:11437249-50ad-4e9f-b48b-c65aed543d42'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Siegle, Josh'', ''email'': ''joshs@alleninstitute.org'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7736-4844'', ''affiliation'':
+    [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Siegle, Josh'', ''email'': ''joshs@alleninstitute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7736-4844'', ''affiliation'':
+      [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Wakeman, Wayne'', ''email'': ''waynew@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-3693-3609'', ''affiliation'': [{''name'':
+    ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wakeman, Wayne'', ''email'': ''waynew@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:DataManager''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-3693-3609'', ''affiliation'': [{''name'':
+      ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Jia, Xiaoxuan'', ''roleName'': [''dcite:Validation''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-5484-9331'', ''affiliation'': [{''name'':
+    ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jia, Xiaoxuan'', ''roleName'': [''dcite:Validation''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5484-9331'', ''affiliation'':
+      [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Durand, Severine'', ''roleName'': [''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7788-0200'', ''affiliation'':
+    [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Durand, Severine'', ''roleName'': [''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7788-0200'', ''affiliation'':
+      [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Heller, Gregg'', ''roleName'': [''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3552-996X'', ''affiliation'':
+    [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Heller, Gregg'', ''roleName'': [''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3552-996X'', ''affiliation'':
+      [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Ramirez, Tamina'', ''roleName'': [''dcite:DataCollector''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6569-5291'', ''affiliation'':
+    [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Ramirez, Tamina'', ''roleName'': [''dcite:DataCollector''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6569-5291'', ''affiliation'':
+      [{''name'': ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Graddis, Nile'', ''roleName'': [''dcite:Software''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0003-1290-3912'', ''affiliation'': [{''name'':
+    ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Graddis, Nile'', ''roleName'': [''dcite:Software''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0003-1290-3912'', ''affiliation'': [{''name'':
+      ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Mei, Nicholas'', ''roleName'': [''dcite:Software''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-8893-1763'', ''affiliation'': [{''name'':
+    ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mei, Nicholas'', ''roleName'': [''dcite:Software''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8893-1763'', ''affiliation'': [{''name'':
+      ''Allen Institute for Brain Science'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

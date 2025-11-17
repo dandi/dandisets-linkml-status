@@ -1,7 +1,8 @@
 {
-  "id": "DANDI:000022/draft",
-  "url": "https://dandiarchive.org/dandiset/000022/draft",
-  "name": "Allen Institute - Visual Coding - Neuropixels (Functional Connectivity Stimulus Set)",
+  "id": "DANDI:000021/0.251116.2246",
+  "doi": "10.48324/dandi.000021/0.251116.2246",
+  "url": "https://dandiarchive.org/dandiset/000021/0.251116.2246",
+  "name": "Allen Institute - Visual Coding - Neuropixels (Brain Observatory 1.1 Stimulus Set)",
   "about": [],
   "access": [
     {
@@ -12,8 +13,8 @@
   "license": [
     "spdx:CC-BY-4.0"
   ],
-  "version": "draft",
-  "citation": "Siegle, Josh; Wakeman, Wayne; Jia, Xiaoxuan; Durand, Severine; Heller, Gregg; Ramirez, Tamina; Graddis, Nile; Mei, Nicholas (2025) Allen Institute - Visual Coding - Neuropixels (Functional Connectivity Stimulus Set) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000022/draft",
+  "version": "0.251116.2246",
+  "citation": "Siegle, Josh; Wakeman, Wayne; Jia, Xiaoxuan; Heller, Gregg; Ramirez, Tamina; Graddis, Nile; Mei, Nicholas; Durand, Severine (2025) Allen Institute - Visual Coding - Neuropixels (Brain Observatory 1.1 Stimulus Set) (Version 0.251116.2246) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000021/0.251116.2246",
   "keywords": [
     "electrophysiology",
     "life sciences",
@@ -22,7 +23,7 @@
     "signal processing"
   ],
   "schemaKey": "Dandiset",
-  "identifier": "DANDI:000022",
+  "identifier": "DANDI:000021",
   "repository": "https://dandiarchive.org",
   "contributor": [
     {
@@ -47,8 +48,8 @@
       "name": "Wakeman, Wayne",
       "email": "waynew@alleninstitute.org",
       "roleName": [
-        "dcite:ContactPerson",
-        "dcite:DataManager"
+        "dcite:DataManager",
+        "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-3693-3609",
@@ -67,21 +68,6 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0001-5484-9331",
-      "affiliation": [
-        {
-          "name": "Allen Institute for Brain Science",
-          "schemaKey": "Affiliation"
-        }
-      ],
-      "includeInCitation": true
-    },
-    {
-      "name": "Durand, Severine",
-      "roleName": [
-        "dcite:DataCollector"
-      ],
-      "schemaKey": "Person",
-      "identifier": "0000-0001-7788-0200",
       "affiliation": [
         {
           "name": "Allen Institute for Brain Science",
@@ -149,10 +135,41 @@
         }
       ],
       "includeInCitation": true
+    },
+    {
+      "name": "Durand, Severine",
+      "roleName": [
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-7788-0200",
+      "affiliation": [
+        {
+          "name": "Allen Institute for Brain Science",
+          "schemaKey": "Affiliation"
+        }
+      ],
+      "includeInCitation": true
     }
   ],
-  "dateCreated": "2020-05-26T16:48:28.855000+00:00",
-  "description": "Allen Institute October 2019 Mouse extracellular electrophysiology data, collected under analogous conditions to the two-photon Brain Observatory imaging experiments, with mice shown a subset of stimuli with a higher number of repeats. \n\nFor more information, see https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels\n\nData are subject to Allen Institute Terms of Use policy, available at: http://www.alleninstitute.org/legal/terms-use/\n",
+  "dateCreated": "2020-05-26T16:47:47.341000+00:00",
+  "description": "Allen Institute October 2019 Mouse extracellular electrophysiology data approximately matching two-photon brain observatory stimulus set. \n\nFor more information, see https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels\n\nData are subject to Allen Institute terms of use, available at: http://www.alleninstitute.org/legal/terms-use/",
+  "publishedBy": {
+    "id": "urn:uuid:8d2dd92e-8009-4d49-92f4-7cdfb4b03ddc",
+    "name": "DANDI publish",
+    "endDate": "2025-11-16T22:46:42.638124+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-11-16T22:46:42.638124+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:30a39d33-fa6b-47d5-ac94-8245d7eba364",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
   "assetsSummary": {
     "species": [
       {
@@ -175,12 +192,12 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 374956840341,
-    "numberOfFiles": 169,
-    "numberOfSubjects": 26,
+    "numberOfBytes": 477562344354,
+    "numberOfFiles": 214,
+    "numberOfSubjects": 32,
     "variableMeasured": [
-      "LFP",
       "ProcessingModule",
+      "LFP",
       "Units"
     ],
     "measurementTechnique": [
@@ -198,11 +215,12 @@
       }
     ]
   },
+  "datePublished": "2025-11-16T22:46:42.638124+00:00",
   "schemaVersion": "0.6.0",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
   "relatedResource": [],
   "manifestLocation": [
-    "https://api.dandiarchive.org/api/dandisets/000022/versions/draft/assets/"
+    "https://dandiarchive.s3.amazonaws.com/dandisets/000021/0.251116.2246/assets.yaml"
   ]
 }

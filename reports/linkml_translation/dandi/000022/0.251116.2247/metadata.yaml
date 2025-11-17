@@ -17,22 +17,22 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 477562344354
-  numberOfFiles: 214
-  numberOfSubjects: 32
+  numberOfBytes: 374956840341
+  numberOfFiles: 169
+  numberOfSubjects: 26
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
     name: House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - ProcessingModule
   - LFP
+  - ProcessingModule
   - Units
-citation: Siegle, Josh; Wakeman, Wayne; Jia, Xiaoxuan; Heller, Gregg; Ramirez, Tamina;
-  Graddis, Nile; Mei, Nicholas; Durand, Severine (2025) Allen Institute - Visual Coding
-  - Neuropixels (Brain Observatory 1.1 Stimulus Set) (Version draft) [Data set]. DANDI
-  Archive. https://dandiarchive.org/dandiset/000021/draft
+citation: Siegle, Josh; Wakeman, Wayne; Jia, Xiaoxuan; Durand, Severine; Heller, Gregg;
+  Ramirez, Tamina; Graddis, Nile; Mei, Nicholas (2025) Allen Institute - Visual Coding
+  - Neuropixels (Functional Connectivity Stimulus Set) (Version 0.251116.2247) [Data
+  set]. DANDI Archive. https://doi.org/10.48324/dandi.000022/0.251116.2247
 contributor:
 - affiliation:
   - name: Allen Institute for Brain Science
@@ -54,8 +54,8 @@ contributor:
   includeInCitation: true
   name: Wakeman, Wayne
   roleName:
-  - dcite:DataManager
   - dcite:ContactPerson
+  - dcite:DataManager
   schemaKey: Person
 - affiliation:
   - name: Allen Institute for Brain Science
@@ -65,6 +65,15 @@ contributor:
   name: Jia, Xiaoxuan
   roleName:
   - dcite:Validation
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  identifier: 0000-0001-7788-0200
+  includeInCitation: true
+  name: Durand, Severine
+  roleName:
+  - dcite:DataCollector
   schemaKey: Person
 - affiliation:
   - name: Allen Institute for Brain Science
@@ -102,23 +111,17 @@ contributor:
   roleName:
   - dcite:Software
   schemaKey: Person
-- affiliation:
-  - name: Allen Institute for Brain Science
-    schemaKey: Affiliation
-  identifier: 0000-0001-7788-0200
-  includeInCitation: true
-  name: Durand, Severine
-  roleName:
-  - dcite:DataCollector
-  schemaKey: Person
-dateCreated: '2020-05-26T16:47:47.341000+00:00'
-description: "Allen Institute October 2019 Mouse extracellular electrophysiology data
-  approximately matching two-photon brain observatory stimulus set. \n\nFor more information,
-  see https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels\n\nData
-  are subject to Allen Institute terms of use, available at: http://www.alleninstitute.org/legal/terms-use/"
+dateCreated: '2020-05-26T16:48:28.855000+00:00'
+datePublished: '2025-11-16T22:47:01.731059+00:00'
+description: "Allen Institute October 2019 Mouse extracellular electrophysiology data,
+  collected under analogous conditions to the two-photon Brain Observatory imaging
+  experiments, with mice shown a subset of stimuli with a higher number of repeats.
+  \n\nFor more information, see https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels\n\nData
+  are subject to Allen Institute Terms of Use policy, available at: http://www.alleninstitute.org/legal/terms-use/\n"
+doi: 10.48324/dandi.000022/0.251116.2247
 ethicsApproval: []
-id: DANDI:000021/draft
-identifier: DANDI:000021
+id: DANDI:000022/0.251116.2247
+identifier: DANDI:000022
 keywords:
 - electrophysiology
 - life sciences
@@ -128,13 +131,25 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000021/versions/draft/assets/
-name: Allen Institute - Visual Coding - Neuropixels (Brain Observatory 1.1 Stimulus
+- https://dandiarchive.s3.amazonaws.com/dandisets/000022/0.251116.2247/assets.yaml
+name: Allen Institute - Visual Coding - Neuropixels (Functional Connectivity Stimulus
   Set)
+publishedBy:
+  endDate: '2025-11-16T22:47:01.731059+00:00'
+  id: urn:uuid:291f93c4-2198-4326-bb3f-36ea963a87b9
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-11-16T22:47:01.731059+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:11437249-50ad-4e9f-b48b-c65aed543d42
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.0
-url: https://dandiarchive.org/dandiset/000021/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000022/0.251116.2247
+version: 0.251116.2247
 wasGeneratedBy: []
