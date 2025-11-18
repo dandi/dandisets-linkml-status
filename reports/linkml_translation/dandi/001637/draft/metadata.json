@@ -31,9 +31,59 @@
   "dateCreated": "2025-11-12T00:42:06.696184+00:00",
   "description": "This dataset contains data acquired on the Ecephys platform as part of the OpenScope predictive processing community project",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 28060240548,
+    "numberOfFiles": 2,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "LFP",
+      "ProcessingModule",
+      "ElectricalSeries",
+      "ElectrodeGroup",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "signal filtering technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
   "manifestLocation": [
