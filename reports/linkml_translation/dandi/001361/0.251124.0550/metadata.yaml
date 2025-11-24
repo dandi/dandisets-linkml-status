@@ -6,24 +6,24 @@ access:
   status: dandi:OpenAccess
 assetsSummary:
   approach:
-  - name: microscopy approach; cell population imaging
-    schemaKey: ApproachType
   - name: behavioral approach
+    schemaKey: ApproachType
+  - name: microscopy approach; cell population imaging
     schemaKey: ApproachType
   dataStandard:
   - identifier: RRID:SCR_015242
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: two-photon microscopy technique
-    schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 92560251500
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 92448350544
   numberOfFiles: 152
   numberOfSubjects: 11
   schemaKey: AssetsSummary
@@ -32,15 +32,15 @@ assetsSummary:
     name: Mus musculus - House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - TwoPhotonSeries
-  - PlaneSegmentation
-  - BehavioralTimeSeries
   - ProcessingModule
-  - ImagingPlane
+  - BehavioralTimeSeries
   - OpticalChannel
+  - ImagingPlane
+  - PlaneSegmentation
+  - TwoPhotonSeries
 citation: Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal
-  population code for experience relative to reward (Version 0.250609.2249) [Data
-  set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250609.2249
+  population code for experience relative to reward (Version 0.251124.0550) [Data
+  set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.251124.0550
 contributor:
 - awardNumber: 1 K99 MH 135993-01
   name: National Institutes of Health (NIH)
@@ -68,16 +68,14 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2025-03-13T06:23:11.234153+00:00'
-datePublished: '2025-06-09T22:49:34.908136+00:00'
-description: '2-photon imaging and behavioral data from hippocampal area CA1 during
-  virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, "A flexible
-  hippocampal population code for experience relative to reward," Nature Neuroscience.
-
-
-  To reinforce rewarding behaviors, events leading up to and following rewards must
-  be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes,
-  but whether hippocampal activity encodes entire sequences of events relative to
-  reward is unknown. To test this, we performed two-photon imaging of hippocampal
+datePublished: '2025-11-24T05:50:32.837787+00:00'
+description: 2-photon imaging and behavioral data from hippocampal area CA1 during
+  virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo (2025), "A
+  flexible hippocampal population code for experience relative to reward," Nature
+  Neuroscience.To reinforce rewarding behaviors, events leading up to and following
+  rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial
+  episodes, but whether hippocampal activity encodes entire sequences of events relative
+  to reward is unknown. To test this, we performed two-photon imaging of hippocampal
   CA1 as mice navigated virtual environments with changing hidden reward locations.
   When the reward moved, a subpopulation of neurons updated their firing fields to
   the same relative position with respect to reward, constructing behavioral timescale
@@ -87,26 +85,26 @@ description: '2-photon imaging and behavioral data from hippocampal area CA1 dur
   the spatial environment code was maintained through a parallel, dynamic subpopulation
   rather than through dedicated cell classes. These findings reveal how hippocampal
   ensembles flexibly encode multiple aspects of experience while amplifying behaviorally
-  relevant information.'
-doi: 10.48324/dandi.001361/0.250609.2249
+  relevant information.
+doi: 10.48324/dandi.001361/0.251124.0550
 ethicsApproval: []
-id: DANDI:001361/0.250609.2249
+id: DANDI:001361/0.251124.0550
 identifier: DANDI:001361
 keywords:
 - hippocampus, navigation, learning, memory, 2-photon imaging, place cells
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://dandiarchive.s3.amazonaws.com/dandisets/001361/0.250609.2249/assets.yaml
+- https://dandiarchive.s3.amazonaws.com/dandisets/001361/0.251124.0550/assets.yaml
 name: A flexible hippocampal population code for experience relative to reward
 publishedBy:
-  endDate: '2025-06-09T22:49:34.908136+00:00'
-  id: urn:uuid:b123739e-b5a3-42cc-a145-f4248068ef08
+  endDate: '2025-11-24T05:50:32.837787+00:00'
+  id: urn:uuid:1feda27d-7349-4273-bbe1-902870947690
   name: DANDI publish
   schemaKey: PublishActivity
-  startDate: '2025-06-09T22:49:34.908136+00:00'
+  startDate: '2025-11-24T05:50:32.837787+00:00'
   wasAssociatedWith:
-  - id: urn:uuid:01482b9e-c4f1-4e12-b82b-aabf5edb998b
+  - id: urn:uuid:3a26b6c0-7222-4ebd-9315-15125188d7d3
     identifier: RRID:SCR_017571
     name: DANDI API
     schemaKey: Software
@@ -128,8 +126,8 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.9
-url: https://dandiarchive.org/dandiset/001361/0.250609.2249
-version: 0.250609.2249
+url: https://dandiarchive.org/dandiset/001361/0.251124.0550
+version: 0.251124.0550
 wasGeneratedBy:
 - description: BRAIN Initiative K99
   endDate: '2026-04-30T23:59:00-07:00'

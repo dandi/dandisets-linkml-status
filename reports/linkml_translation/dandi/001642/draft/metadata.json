@@ -1,0 +1,82 @@
+{
+  "id": "DANDI:001642/draft",
+  "url": "https://dandiarchive.org/dandiset/001642/draft",
+  "name": "Neural activity in dorsolateral, dorsomedial, and ventral striatum during fixed- and free-choice decision-making in rats (Ito & Doya 2015)",
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Taniguchi, Masachika (2025) Neural activity in dorsolateral, dorsomedial, and ventral striatum during fixed- and free-choice decision-making in rats (Ito & Doya 2015) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001642/draft",
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:001642",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "Taniguchi, Masachika",
+      "email": "mtanigu-vendor@oist.jp",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2025-11-23T17:12:46.825061+00:00",
+  "description": "This Dandiset contains Neurodata Without Borders (NWB) files with behavioral and extracellular electrophysiological recordings from seven male Long\u2013Evans rats performing fixed-choice and free-choice nose-poke tasks with probabilistic rewards. In each trial, rats initiated a center nose-poke, received one of three cue tones (left, right, or choice), maintained the poke during the cue, and then chose the left or right port; sucrose pellets were delivered according to cue- and action-dependent reward probabilities. For left and right cues, reward probabilities were fixed at (left, right) = (50%, 0%) and (0%, 50%), respectively, whereas for the choice cue they varied blockwise across four schedules: (90%, 50%), (50%, 90%), (50%, 10%), and (10%, 50%). \nNeural activity was recorded with movable microwire bundles implanted in dorsolateral striatum (DLS), dorsomedial striatum (DMS), and ventral striatum (VS), yielding phasically active neurons (putative medium spiny neurons) from each subregion across 86 sessions and ~78,000 trials. For each session, the NWB files provide spike times (and associated unit metadata where available) together with detailed behavioral event timestamps (tone onsets/offsets, nose-poke entries/exits, reward/no-reward tones, pellet detection), block type (single fixed-choice, double fixed-choice, free-choice, extinction), cue identity, chosen action, and reward outcome, all aligned in session time. These data were originally collected for the Journal of Neuroscience article \u201cDistinct neural representation in the dorsolateral, dorsomedial, and ventral parts of the striatum during fixed- and free-choice tasks\u201d (Ito & Doya, 2015, J Neurosci 35(8):3499\u20133514, DOI: 10.1523/JNEUROSCI.1962-14.2015), which analyzed how state value, action value, reward outcome, and action commands are differentially represented across striatal subregions. This dataset enables re-analysis of decision-making strategies, model-based and model-free value coding, and hierarchical reinforcement-learning hypotheses in cortico-basal ganglia circuits.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 542008910,
+    "numberOfFiles": 87,
+    "numberOfSubjects": 7,
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "Units",
+      "ProcessingModule"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.10",
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/001642/versions/draft/assets/"
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "id": "DANDI:001361/0.250609.2249",
-  "doi": "10.48324/dandi.001361/0.250609.2249",
-  "url": "https://dandiarchive.org/dandiset/001361/0.250609.2249",
+  "id": "DANDI:001361/0.251124.0550",
+  "doi": "10.48324/dandi.001361/0.251124.0550",
+  "url": "https://dandiarchive.org/dandiset/001361/0.251124.0550",
   "name": "A flexible hippocampal population code for experience relative to reward",
   "about": [
     {
@@ -18,8 +18,8 @@
   "license": [
     "spdx:CC-BY-4.0"
   ],
-  "version": "0.250609.2249",
-  "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250609.2249) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250609.2249",
+  "version": "0.251124.0550",
+  "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.251124.0550) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.251124.0550",
   "keywords": [
     "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
   ],
@@ -66,16 +66,16 @@
     }
   ],
   "dateCreated": "2025-03-13T06:23:11.234153+00:00",
-  "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+  "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo (2025), \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.To reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
   "publishedBy": {
-    "id": "urn:uuid:b123739e-b5a3-42cc-a145-f4248068ef08",
+    "id": "urn:uuid:1feda27d-7349-4273-bbe1-902870947690",
     "name": "DANDI publish",
-    "endDate": "2025-06-09T22:49:34.908136+00:00",
+    "endDate": "2025-11-24T05:50:32.837787+00:00",
     "schemaKey": "PublishActivity",
-    "startDate": "2025-06-09T22:49:34.908136+00:00",
+    "startDate": "2025-11-24T05:50:32.837787+00:00",
     "wasAssociatedWith": [
       {
-        "id": "urn:uuid:01482b9e-c4f1-4e12-b82b-aabf5edb998b",
+        "id": "urn:uuid:3a26b6c0-7222-4ebd-9315-15125188d7d3",
         "name": "DANDI API",
         "version": "0.1.0",
         "schemaKey": "Software",
@@ -93,11 +93,11 @@
     ],
     "approach": [
       {
-        "name": "microscopy approach; cell population imaging",
+        "name": "behavioral approach",
         "schemaKey": "ApproachType"
       },
       {
-        "name": "behavioral approach",
+        "name": "microscopy approach; cell population imaging",
         "schemaKey": "ApproachType"
       }
     ],
@@ -109,22 +109,18 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 92560251500,
+    "numberOfBytes": 92448350544,
     "numberOfFiles": 152,
     "numberOfSubjects": 11,
     "variableMeasured": [
-      "TwoPhotonSeries",
-      "PlaneSegmentation",
-      "BehavioralTimeSeries",
       "ProcessingModule",
+      "BehavioralTimeSeries",
+      "OpticalChannel",
       "ImagingPlane",
-      "OpticalChannel"
+      "PlaneSegmentation",
+      "TwoPhotonSeries"
     ],
     "measurementTechnique": [
-      {
-        "name": "two-photon microscopy technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
       {
         "name": "analytical technique",
         "schemaKey": "MeasurementTechniqueType"
@@ -136,10 +132,14 @@
       {
         "name": "surgical technique",
         "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
       }
     ]
   },
-  "datePublished": "2025-06-09T22:49:34.908136+00:00",
+  "datePublished": "2025-11-24T05:50:32.837787+00:00",
   "schemaVersion": "0.6.9",
   "ethicsApproval": [],
   "wasGeneratedBy": [
@@ -172,6 +172,6 @@
     }
   ],
   "manifestLocation": [
-    "https://dandiarchive.s3.amazonaws.com/dandisets/001361/0.250609.2249/assets.yaml"
+    "https://dandiarchive.s3.amazonaws.com/dandisets/001361/0.251124.0550/assets.yaml"
   ]
 }
