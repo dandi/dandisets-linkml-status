@@ -1,0 +1,46 @@
+[
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:9d7139f2-16b2-41d1-a66c-1f15b8a74875', 'name': 'DANDI publish', 'endDate': '2025-11-25T05:04:33.296743+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-11-25T05:04:33.296743+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:cf9bf18f-b62a-4754-9a6f-7c01be6e375c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:9d7139f2-16b2-41d1-a66c-1f15b8a74875', 'name': 'DANDI publish', 'endDate': '2025-11-25T05:04:33.296743+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2025-11-25T05:04:33.296743+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:cf9bf18f-b62a-4754-9a6f-7c01be6e375c', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Inagaki, Hidehiko', 'email': 'hidehiko.inagaki@mpfi.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Inagaki, Hidehiko', 'email': 'hidehiko.inagaki@mpfi.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  }
+]
