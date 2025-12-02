@@ -1,0 +1,322 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Skromne Carrasco, Sofia'', ''email'': ''sofia.skromnecarrasco@mail.mcgill.ca'',
+    ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Conceptualization'',
+    ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:FormalAnalysis'', ''dcite:Researcher'',
+    ''dcite:Visualization'', ''dcite:Validation'', ''dcite:Investigation'', ''dcite:Software''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0009-0007-2288-7203'', ''affiliation'':
+    [{''name'': ''McGill University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/01pxwe438''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Skromne Carrasco, Sofia'', ''email'': ''sofia.skromnecarrasco@mail.mcgill.ca'',
+      ''roleName'': [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:Conceptualization'',
+      ''dcite:DataCollector'', ''dcite:DataCurator'', ''dcite:FormalAnalysis'', ''dcite:Researcher'',
+      ''dcite:Visualization'', ''dcite:Validation'', ''dcite:Investigation'', ''dcite:Software''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0009-0007-2288-7203'', ''affiliation'':
+      [{''name'': ''McGill University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/01pxwe438''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Viejo, Guillaume'', ''email'': ''gviejo@flatironinstitute.org'',
+    ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator'',
+    ''dcite:FormalAnalysis'', ''dcite:Methodology'', ''dcite:Conceptualization'',
+    ''dcite:Researcher'', ''dcite:Visualization'', ''dcite:Validation'', ''dcite:Investigation'',
+    ''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2450-7397'',
+    ''affiliation'': [{''name'': ''Flatiron Institute'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/00sekdz59''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Viejo, Guillaume'', ''email'': ''gviejo@flatironinstitute.org'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator'',
+      ''dcite:FormalAnalysis'', ''dcite:Methodology'', ''dcite:Conceptualization'',
+      ''dcite:Researcher'', ''dcite:Visualization'', ''dcite:Validation'', ''dcite:Investigation'',
+      ''dcite:Software''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2450-7397'',
+      ''affiliation'': [{''name'': ''Flatiron Institute'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/00sekdz59''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''https://peyrachelab.com'', ''name'': ''Peyrache, Adrien'',
+    ''email'': ''adrien.peyrache@mcgill.ca'', ''roleName'': [''dcite:Author'', ''dcite:ProjectLeader'',
+    ''dcite:Supervision'', ''dcite:ContactPerson'', ''dcite:Conceptualization'', ''dcite:Methodology'',
+    ''dcite:Software'', ''dcite:Validation'', ''dcite:FormalAnalysis'', ''dcite:Investigation'',
+    ''dcite:Resources'', ''dcite:Visualization'', ''dcite:ProjectAdministration'',
+    ''dcite:FundingAcquisition''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9708-309X'',
+    ''affiliation'': [{''name'': ''McGill University'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/01pxwe438''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://peyrachelab.com'', ''name'': ''Peyrache, Adrien'',
+      ''email'': ''adrien.peyrache@mcgill.ca'', ''roleName'': [''dcite:Author'', ''dcite:ProjectLeader'',
+      ''dcite:Supervision'', ''dcite:ContactPerson'', ''dcite:Conceptualization'',
+      ''dcite:Methodology'', ''dcite:Software'', ''dcite:Validation'', ''dcite:FormalAnalysis'',
+      ''dcite:Investigation'', ''dcite:Resources'', ''dcite:Visualization'', ''dcite:ProjectAdministration'',
+      ''dcite:FundingAcquisition''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9708-309X'',
+      ''affiliation'': [{''name'': ''McGill University'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/01pxwe438''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''CIHR Project Grant'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'', ''awardNumber'':
+    ''155957''} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''CIHR Project Grant'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'',
+      ''awardNumber'': ''155957''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''CIHR Project Grant'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'', ''awardNumber'':
+    ''180330''} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''CIHR Project Grant'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'',
+      ''awardNumber'': ''180330''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''NSERC Discovery Grant'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01h531d29'',
+    ''awardNumber'': ''RGPIN-2018-04600''} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''NSERC Discovery Grant'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01h531d29'',
+      ''awardNumber'': ''RGPIN-2018-04600''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'',
+    ''awardNumber'': ''108877-001'', ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'',
+      ''awardNumber'': ''108877-001'', ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04sazxf24'',
+    ''awardNumber'': ''108877-001''} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04sazxf24'',
+      ''awardNumber'': ''108877-001''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0445x0472'',
+    ''awardNumber'': ''108877-001''} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0445x0472'',
+      ''awardNumber'': ''108877-001''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/009svts64'',
+    ''awardNumber'': ''108877-001''} is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Canada-Israel Health Research Initiative'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/009svts64'',
+      ''awardNumber'': ''108877-001''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Healthy Brains for Healthy Lives Innovative Ideas grant'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/01pxwe438'', ''awardNumber'': ''1c-II-15''} is not of type ''string''
+    in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Healthy Brains for Healthy Lives Innovative Ideas grant'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/01pxwe438'', ''awardNumber'': ''1c-II-15''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Vanier Canada Graduate Scholarships'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'',
+    ''awardNumber'': ''CGV-180719''} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Vanier Canada Graduate Scholarships'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01gavpb45'',
+      ''awardNumber'': ''CGV-180719''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''New Frontiers in Research Fund Exploration grant'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04j5jqy92'',
+    ''awardNumber'': ''NFRFE-2021-00926''} is not of type ''string'' in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''New Frontiers in Research Fund Exploration grant'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04j5jqy92'',
+      ''awardNumber'': ''NFRFE-2021-00926''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
