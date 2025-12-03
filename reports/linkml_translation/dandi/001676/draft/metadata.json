@@ -204,14 +204,71 @@
     }
   ],
   "dateCreated": "2025-12-01T16:54:50.900169+00:00",
-  "description": "This Dandiset includes longitudinal 1-photon imaging (UCLA miniscope) recordings in the Postsubiculum of freely-moving mice. All sessions are part of one of five longitudinal experiments: one month in a single environment, two months where the environment changes every two weeks, probe test of the memory of orientation following the two-month experiment, random visits of four environments over four weeks, and sparse explorations of two environments over five weeks.",
+  "description": "This Dandiset includes longitudinal 1-photon imaging (UCLA miniscope) recordings in the Postsubiculum of freely-moving mice. All sessions are part of one of five longitudinal experiments: one month in a single environment, two months where the environment changes every two weeks, probe test of the memory of orientation following the two-month experiment, random visits of four environments over four weeks, and sparse explorations of two environments over five weeks.  The Dandiset also includes electrophysiological recordings from four animals exploring three enviroments in a single day.",
   "studyTarget": [
     "Representational stability"
   ],
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 50935091520,
+    "numberOfFiles": 406,
+    "numberOfSubjects": 14,
+    "variableMeasured": [
+      "Position",
+      "OpticalChannel",
+      "ProcessingModule",
+      "SpatialSeries",
+      "ImagingPlane",
+      "PlaneSegmentation",
+      "ElectrodeGroup",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
   "ethicsApproval": [

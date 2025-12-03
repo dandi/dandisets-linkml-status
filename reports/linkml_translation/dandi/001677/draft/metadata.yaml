@@ -1,0 +1,60 @@
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 312900856
+  numberOfFiles: 6
+  numberOfSubjects: 12
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+citation: Rudzite, Andra (2025) Multi-electrode array recordings of rat retinal ganglion
+  cells with LED stimulation for retinotectal cell identification via ReaChR phototagging
+  (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001677/draft
+contributor:
+- affiliation: []
+  email: amr82@duke.edu
+  includeInCitation: true
+  name: Rudzite, Andra
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2025-12-02T21:15:04.120621+00:00'
+description: 'Retinal tissue was obtained from Long-Evans rats that received stereotactic
+  injections of AAV2retro-CAG-ReaChR-mCitrine into the superior colliculus. This retrograde
+  viral approach resulted in expression of the red-shifted channelrhodopsin ReaChR
+  and the fluorophore mCitrine in retinotectal RGCs.
+
+  Ex vivo retinal recordings were performed on 512-electrode arrays following pharmacological
+  blockade of photoreceptor-mediated responses using L-AP4, DL-AP5, and CNQX. LED
+  flashes at 565 nm were delivered at multiple intensities and durations (10, 30,
+  100, and 200 ms) to selectively activate ReaChR-expressing cells. The dataset contains
+  recordings from 6 experiments, each capturing responses from hundreds of RGCs to
+  the LED stimulation protocol.'
+id: DANDI:001677/draft
+identifier: DANDI:001677
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001677/versions/draft/assets/
+name: Multi-electrode array recordings of rat retinal ganglion cells with LED stimulation
+  for retinotectal cell identification via ReaChR phototagging
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+url: https://dandiarchive.org/dandiset/001677/draft
+version: draft
