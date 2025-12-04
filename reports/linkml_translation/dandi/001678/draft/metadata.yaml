@@ -1,0 +1,48 @@
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  numberOfBytes: 0
+  numberOfFiles: 0
+  schemaKey: AssetsSummary
+citation: Bell Vila, Monica (2025) Data for parametrizing alternating current stimulation
+  for neuromodulation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001678/draft
+contributor:
+- affiliation: []
+  email: monica.bellvila@gmail.com
+  includeInCitation: true
+  name: Bell Vila, Monica
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+dateCreated: '2025-12-03T21:30:49.761609+00:00'
+description: "Data collected using a 4x4 multielectrode array (Microprobes) in propofol
+  anesthetized rats receiving subcutaneous alternating current stimulation.\n\nRecording
+  electrodes had platinum iridium shanks with a tip width of 125\u03BCm, an impedance
+  of 0.4 MOhm, and were spaced 0.5mm apart in the lateral plane. An additional shank
+  with 10 kOhm impedance served as a reference. Electrodes were inserted ~300\u03BCm
+  into the craniotomy exposed sensorimotor cortex (L2/3). Data was acquired with a
+  sampling rate of 24 kHz (Tucker-Davis Technologies).\n\nStimulation electrodes were
+  adhered directly to the skull, medial and lateral the cranial window.\n\n\n\nThere
+  are two data files.\n\nThe first contains experiments where 9 three-month old Sprague-Dawley
+  rats received a randomized order of stimulation parameters (frequencies: 5, 10,
+  20, 40, and 140 Hz, amplitudes: 50, 100, 200, and 400 \u03BCA). Each dated folder
+  contains recordings for a single rat, with subfolders for each stimulation parameter
+  delivery (1-min baseline + 1-min sACS + 1-min baseline).\n\nThe second data file
+  contains experiments where 13 rats received a single 20-min delivery of 40 Hz, 100
+  \u03BCA stimulation. Each dated folder contains experiments from a single rat. Baseline
+  activity was recorded for 20-min before stimulation onset and subsequently following
+  sACS for 10 minutes. Additional subfolders contain further 20-min of post stimulation
+  baseline activity, collected to an hour following stimulation offset."
+id: DANDI:001678/draft
+identifier: DANDI:001678
+license:
+- spdx:CC0-1.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001678/versions/draft/assets/
+name: Data for parametrizing alternating current stimulation for neuromodulation
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+url: https://dandiarchive.org/dandiset/001678/draft
+version: draft
