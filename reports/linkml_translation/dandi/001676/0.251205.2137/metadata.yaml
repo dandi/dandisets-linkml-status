@@ -1,0 +1,234 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+assetsSummary:
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 50935091520
+  numberOfFiles: 406
+  numberOfSubjects: 14
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Position
+  - OpticalChannel
+  - ProcessingModule
+  - SpatialSeries
+  - ImagingPlane
+  - PlaneSegmentation
+  - ElectrodeGroup
+  - Units
+citation: Skromne Carrasco, Sofia; Viejo, Guillaume; Peyrache, Adrien (2025) Months-long
+  stability of the head-direction system (Version 0.251205.2137) [Data set]. DANDI
+  Archive. https://doi.org/10.48324/dandi.001676/0.251205.2137
+contributor:
+- affiliation:
+  - identifier: https://ror.org/01pxwe438
+    name: McGill University
+    schemaKey: Affiliation
+  email: sofia.skromnecarrasco@mail.mcgill.ca
+  identifier: 0009-0007-2288-7203
+  includeInCitation: true
+  name: Skromne Carrasco, Sofia
+  roleName:
+  - dcite:ContactPerson
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:FormalAnalysis
+  - dcite:Researcher
+  - dcite:Visualization
+  - dcite:Validation
+  - dcite:Investigation
+  - dcite:Software
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/00sekdz59
+    name: Flatiron Institute
+    schemaKey: Affiliation
+  email: gviejo@flatironinstitute.org
+  identifier: 0000-0002-2450-7397
+  includeInCitation: true
+  name: Viejo, Guillaume
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:FormalAnalysis
+  - dcite:Methodology
+  - dcite:Conceptualization
+  - dcite:Researcher
+  - dcite:Visualization
+  - dcite:Validation
+  - dcite:Investigation
+  - dcite:Software
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/01pxwe438
+    name: McGill University
+    schemaKey: Affiliation
+  email: adrien.peyrache@mcgill.ca
+  identifier: 0000-0001-9708-309X
+  includeInCitation: true
+  name: Peyrache, Adrien
+  roleName:
+  - dcite:Author
+  - dcite:ProjectLeader
+  - dcite:Supervision
+  - dcite:ContactPerson
+  - dcite:Conceptualization
+  - dcite:Methodology
+  - dcite:Software
+  - dcite:Validation
+  - dcite:FormalAnalysis
+  - dcite:Investigation
+  - dcite:Resources
+  - dcite:Visualization
+  - dcite:ProjectAdministration
+  - dcite:FundingAcquisition
+  schemaKey: Person
+  url: https://peyrachelab.com
+- awardNumber: '155957'
+  identifier: https://ror.org/01gavpb45
+  name: CIHR Project Grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: '180330'
+  identifier: https://ror.org/01gavpb45
+  name: CIHR Project Grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: RGPIN-2018-04600
+  identifier: https://ror.org/01h531d29
+  name: NSERC Discovery Grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 108877-001
+  identifier: https://ror.org/01gavpb45
+  includeInCitation: false
+  name: Canada-Israel Health Research Initiative
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 108877-001
+  identifier: https://ror.org/04sazxf24
+  name: Canada-Israel Health Research Initiative
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 108877-001
+  identifier: https://ror.org/0445x0472
+  name: Canada-Israel Health Research Initiative
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 108877-001
+  identifier: https://ror.org/009svts64
+  name: Canada-Israel Health Research Initiative
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 1c-II-15
+  identifier: https://ror.org/01pxwe438
+  name: Healthy Brains for Healthy Lives Innovative Ideas grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: CGV-180719
+  identifier: https://ror.org/01gavpb45
+  name: Vanier Canada Graduate Scholarships
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NFRFE-2021-00926
+  identifier: https://ror.org/04j5jqy92
+  name: New Frontiers in Research Fund Exploration grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2025-12-01T16:54:50.900169+00:00'
+datePublished: '2025-12-05T21:37:39.322891+00:00'
+description: 'This Dandiset includes longitudinal 1-photon imaging (UCLA miniscope)
+  recordings in the Postsubiculum of freely-moving mice. All sessions are part of
+  a longitudinal experiment: one month in a single environment, two months where the
+  environment changes every two weeks, random visits of four environments over four
+  weeks, and sparse explorations of two environments over five weeks.  The Dandiset
+  also includes electrophysiological recordings from four animals exploring three
+  enviroments in a single day.'
+doi: 10.48324/dandi.001676/0.251205.2137
+ethicsApproval:
+- contactPoint:
+    email: acc.mni@mcgill.ca
+    schemaKey: ContactPoint
+    url: https://www.mcgill.ca/neuro/research/animal-care-committee
+  identifier: MNI-7839
+  schemaKey: EthicsApproval
+id: DANDI:001676/0.251205.2137
+identifier: DANDI:001676
+keywords:
+- calcium imaging
+- head-direction cells
+- representational stability
+- electrophysiology
+- postsubiculum
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://dandiarchive.s3.amazonaws.com/dandisets/001676/0.251205.2137/assets.yaml
+name: Months-long stability of the head-direction system
+protocol:
+- https://www.biorxiv.org/content/10.1101/2024.06.13.598909v1
+publishedBy:
+  endDate: '2025-12-05T21:37:39.322891+00:00'
+  id: urn:uuid:9be4ad44-463e-40ab-8bf2-db505f77102b
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-12-05T21:37:39.322891+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:2ba47493-27b1-4220-982e-40d1d2c1f802
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
+relatedResource:
+- identifier: Associated publication
+  name: Months-long stability of the head-direction system
+  relation: dcite:IsPublishedIn
+  repository: BIORXIV
+  resourceType: dcite:Preprint
+  schemaKey: Resource
+  url: https://www.biorxiv.org/content/10.1101/2024.06.13.598909v1
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.6.10
+studyTarget:
+- Representational stability
+url: https://dandiarchive.org/dandiset/001676/0.251205.2137
+version: 0.251205.2137
+wasGeneratedBy: []
