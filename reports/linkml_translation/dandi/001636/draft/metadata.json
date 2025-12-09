@@ -139,11 +139,11 @@
     ],
     "approach": [
       {
-        "name": "behavioral approach",
+        "name": "electrophysiological approach",
         "schemaKey": "ApproachType"
       },
       {
-        "name": "electrophysiological approach",
+        "name": "behavioral approach",
         "schemaKey": "ApproachType"
       }
     ],
@@ -155,18 +155,22 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 4401695725,
-    "numberOfFiles": 286,
+    "numberOfBytes": 4257127501,
+    "numberOfFiles": 281,
     "numberOfSubjects": 1,
     "variableMeasured": [
-      "SpatialSeries",
-      "ProcessingModule",
-      "ElectricalSeries",
-      "Units",
+      "ElectrodeGroup",
       "CompassDirection",
-      "ElectrodeGroup"
+      "Units",
+      "ElectricalSeries",
+      "SpatialSeries",
+      "ProcessingModule"
     ],
     "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
       {
         "name": "multi electrode extracellular electrophysiology recording technique",
         "schemaKey": "MeasurementTechniqueType"
@@ -176,15 +180,11 @@
         "schemaKey": "MeasurementTechniqueType"
       },
       {
-        "name": "spike sorting technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
-      {
         "name": "analytical technique",
         "schemaKey": "MeasurementTechniqueType"
       },
       {
-        "name": "behavioral technique",
+        "name": "spike sorting technique",
         "schemaKey": "MeasurementTechniqueType"
       }
     ]
