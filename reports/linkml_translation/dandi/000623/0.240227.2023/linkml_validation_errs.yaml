@@ -268,24 +268,3 @@
     validator: type
     validator_value: string
   type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: PublishedDandiset
-  message: '''doi'' is a required property in /'
-  severity: ERROR
-  source:
-    absolute_path: []
-    absolute_schema_path:
-    - required
-    message: '''doi'' is a required property'
-    validator: required
-    validator_value:
-    - doi
-    - datePublished
-    - publishedBy
-    - assetsSummary
-    - citation
-    - identifier
-    - manifestLocation
-    - version
-  type: jsonschema validation

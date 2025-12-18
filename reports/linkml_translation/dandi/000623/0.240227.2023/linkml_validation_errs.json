@@ -272,31 +272,5 @@
       "validator": "type",
       "validator_value": "string"
     }
-  },
-  {
-    "type": "jsonschema validation",
-    "severity": "ERROR",
-    "message": "'doi' is a required property in /",
-    "instance_index": 0,
-    "instantiates": "PublishedDandiset",
-    "context": [],
-    "source": {
-      "message": "'doi' is a required property",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "required"
-      ],
-      "validator": "required",
-      "validator_value": [
-        "doi",
-        "datePublished",
-        "publishedBy",
-        "assetsSummary",
-        "citation",
-        "identifier",
-        "manifestLocation",
-        "version"
-      ]
-    }
   }
 ]
