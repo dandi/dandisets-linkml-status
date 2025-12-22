@@ -98,9 +98,44 @@
   "dateCreated": "2025-12-11T00:53:03.068149+00:00",
   "description": "In this dataset, we recorded 32-channel EEG and 64-channel intracranial signals from wild-type male rats and male rats with seizures induced by repeated 4-AP injections to investigate the effects of white-matter-targeted transcranial focused ultrasound (tFUS) on seizure inhibition. The 4-AP cocktail was injected into the right S1, and intracranial recordings were obtained from the left S1. The \"labeled data\" include seizure onset and offset times for each seizure, which were used to compare the tFUS and sham (no tFUS) conditions for each rat. Each rat has data from 4\u20135 sessions, each lasting approximately one hour: baseline (pre-tFUS or pre-sham), condition (tFUS or sham), post_1 (first hour post-stimulation), post_2 (second hour post-stimulation), and post_3 (third hour post-stimulation).\n\ntFUS was delivered using a 128-element transducer targeting the corpus callosum (CC, predominantly white matter) with a 1 Hz pulse repetition frequency (PRF), 2% duty cycle (DC), and ~127 kPa peak pressure. The \"analyzed data\" include seizure-related metrics used to assess tFUS-induced inhibition, such as seizure duration, seizure count, percent time in seizure, and inter-seizure interval. The \"explanation data\" include absolute spectral power, asymmetry index (AI), and phase lag index (PLI), which were analyzed to characterize tFUS-induced changes in brain activity and to clarify potential mechanisms of efficacy. The \"EP data\" contain evoked potentials used to verify accurate targeting of the stimulation site.\n\nDetailed description of this dataset can be found in the following publication. Please cite the paper if you would use a portion of the dataset. Gao, H., Frake, A., Durand, DM., & He, B. Transcranial Focused Ultrasound Stimulation Targeting White Matter Inhibits Seizures in a Rat Model of Epilepsy. IEEE Transactions on Neural Systems and Rehabilitation Engineering.",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 67441573496,
+    "numberOfFiles": 23,
+    "numberOfSubjects": 5,
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "ElectricalSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.6.10",
   "ethicsApproval": [],
