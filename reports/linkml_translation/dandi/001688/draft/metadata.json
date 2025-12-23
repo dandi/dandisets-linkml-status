@@ -13,7 +13,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "O'Connell, Sean (2025) EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings with 3D motion tracking during treadmill locomotion (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001688/draft",
+  "citation": "O'Connell, Sean; Wang, Runming (2025) EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings with 3D motion tracking during treadmill locomotion (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001688/draft",
   "keywords": [
     "EMUsort",
     "motor unit",
@@ -46,17 +46,34 @@
   "contributor": [
     {
       "name": "O'Connell, Sean",
-      "email": "sean_oc@emory.edu",
+      "email": "smarkoco@proton.me",
       "roleName": [
-        "dcite:ContactPerson"
+        "dcite:ContactPerson",
+        "dcite:Author",
+        "dcite:DataCollector",
+        "dcite:DataCurator",
+        "dcite:Supervision"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0002-2499-8595",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Wang, Runming",
+      "email": "rwang152@jh.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0009-0007-8185-3505",
       "affiliation": [],
       "includeInCitation": true
     }
   ],
   "dateCreated": "2025-12-19T20:55:15.940815+00:00",
-  "description": "This Dandiset contains 3 high-resolution EMG recordings (16-channel bipolar) from rat triceps brachii along with synchronized 3D motion tracking for 10 keypoints during treadmill locomotion. The motion tracking was acquired at 125Hz using 4 BlackFly S cameras (BFS-U3-16S2M-CS) and labeled with DeepLabCut. The calibration and triangulation was performed with Anipose and this Dandiset contains the 3D points outputted in the pose-3d folder, along with the confidence values. A small proportion of these values (outliers) were interpolated by the cubic spline method if they had a confidence below 0.8 or if crossing an jump threshold of 6 pixels compared to a 7-frame median-filtered history (i.e., score_threshold=0.8, medfilt=7, offset_threshold=6). No filtering was performed on the 3D pose estimates. Along with these, this Dandiset also contains labels for the initial contact and initial swing times for the forelimb palm of the implanted side (left; i.e., palm_L).",
+  "description": "This Dandiset contains 3 high-resolution EMG recordings (16-channel bipolar) from rat triceps brachii along with synchronized 3D motion tracking for 10 keypoints during treadmill locomotion. The motion tracking was acquired at 125Hz using 4 BlackFly S cameras (BFS-U3-16S2M-CS) and labeled with DeepLabCut. The calibration and triangulation was performed with Anipose and this Dandiset contains the 3D points outputted in the pose-3d folder, along with the confidence values. A small proportion of these values (outliers) were interpolated by the cubic spline method if they had a confidence below 0.8 or if crossing a jump threshold of 6 pixels compared to a 7-frame median-filtered history (i.e., score_threshold=0.8, medfilt=7, offset_threshold=6, see Anipose documentation). The interpolation of a time point is represented by a NaN value for the confidence score of a given keypoint. No further filtering was performed on the 3D pose estimates. Along with these, this Dandiset also contains labels for the initial contact and initial swing times for the forelimb palm of the implanted side (left; i.e., palm_L).",
   "assetsSummary": {
     "species": [
       {
@@ -114,7 +131,16 @@
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
-  "relatedResource": [],
+  "relatedResource": [
+    {
+      "url": "https://github.com/snel-repo/EMUsort",
+      "name": "EMUsort",
+      "relation": "dcite:IsSupplementTo",
+      "schemaKey": "Resource",
+      "repository": "EMUsort",
+      "resourceType": "dcite:Software"
+    }
+  ],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/001688/versions/draft/assets/"
   ]

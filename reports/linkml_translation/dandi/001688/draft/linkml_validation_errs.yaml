@@ -1,9 +1,11 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': "O''Connell, Sean", ''email'': ''sean_oc@emory.edu'', ''roleName'':
-    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/0'
+  message: '{''name'': "O''Connell, Sean", ''email'': ''smarkoco@proton.me'', ''roleName'':
+    [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator'',
+    ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2499-8595'',
+    ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
+    /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -14,9 +16,34 @@
     - contributor
     - items
     - type
-    message: '{''name'': "O''Connell, Sean", ''email'': ''sean_oc@emory.edu'', ''roleName'':
-      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+    message: '{''name'': "O''Connell, Sean", ''email'': ''smarkoco@proton.me'', ''roleName'':
+      [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator'',
+      ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2499-8595'',
+      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Wang, Runming'', ''email'': ''rwang152@jh.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0009-0007-8185-3505'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wang, Runming'', ''email'': ''rwang152@jh.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0007-8185-3505'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
