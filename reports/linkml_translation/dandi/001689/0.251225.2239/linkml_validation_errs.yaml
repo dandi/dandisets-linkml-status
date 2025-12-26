@@ -1,0 +1,48 @@
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:e1979868-884e-4170-a351-99b7c3103684'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-12-25T22:39:11.751203+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-12-25T22:39:11.751203+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:f7648a41-e9f6-4ecd-88b4-1b486c2bc6d8'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:e1979868-884e-4170-a351-99b7c3103684'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-12-25T22:39:11.751203+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-12-25T22:39:11.751203+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:f7648a41-e9f6-4ecd-88b4-1b486c2bc6d8'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
+  message: '{''name'': ''Aksenov, Daniil'', ''email'': ''daniil.aksenov@northwestern.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Aksenov, Daniil'', ''email'': ''daniil.aksenov@northwestern.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
