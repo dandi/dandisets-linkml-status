@@ -1,6 +1,7 @@
 {
-  "id": "DANDI:001688/draft",
-  "url": "https://dandiarchive.org/dandiset/001688/draft",
+  "id": "DANDI:001688/0.251231.0329",
+  "doi": "10.48324/dandi.001688/0.251231.0329",
+  "url": "https://dandiarchive.org/dandiset/001688/0.251231.0329",
   "name": "EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings with 3D motion tracking during treadmill locomotion",
   "about": [],
   "access": [
@@ -12,8 +13,8 @@
   "license": [
     "spdx:CC-BY-4.0"
   ],
-  "version": "draft",
-  "citation": "O'Connell, Sean; Wang, Runming (2025) EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings with 3D motion tracking during treadmill locomotion (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001688/draft",
+  "version": "0.251231.0329",
+  "citation": "O'Connell, Sean; Wang, Runming (2025) EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings with 3D motion tracking during treadmill locomotion (Version 0.251231.0329) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001688/0.251231.0329",
   "keywords": [
     "EMUsort",
     "motor unit",
@@ -116,6 +117,22 @@
   ],
   "dateCreated": "2025-12-19T20:55:15.940815+00:00",
   "description": "This Dandiset contains 3 high-resolution EMG recordings (16-channel bipolar) from rat triceps brachii along with synchronized 3D motion tracking for 10 keypoints during treadmill locomotion. The motion tracking was acquired at 125Hz using 4 BlackFly S cameras (BFS-U3-16S2M-CS) and labeled with DeepLabCut. The calibration and triangulation was performed with Anipose and this Dandiset contains the 3D points outputted in the pose-3d folder, along with the confidence values. A small proportion of these values (outliers) were interpolated by the cubic spline method if they had a confidence below 0.8 or if crossing a jump threshold of 6 pixels compared to a 7-frame median-filtered history (i.e., score_threshold=0.8, medfilt=7, offset_threshold=6, see Anipose documentation). The interpolation of a time point is represented by a NaN value for the confidence score of a given keypoint. No further filtering was performed on the 3D pose estimates. Along with these, this Dandiset also contains labels for the initial contact and initial swing times for the forelimb palm of the implanted side (left; i.e., palm_L).",
+  "publishedBy": {
+    "id": "urn:uuid:f5e6cc4f-716b-478e-b097-a381b7b73988",
+    "name": "DANDI publish",
+    "endDate": "2025-12-31T03:29:11.834821+00:00",
+    "schemaKey": "PublishActivity",
+    "startDate": "2025-12-31T03:29:11.834821+00:00",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:f410c128-8cdc-407f-8aec-ff8b28343a76",
+        "name": "DANDI API",
+        "version": "0.1.0",
+        "schemaKey": "Software",
+        "identifier": "RRID:SCR_017571"
+      }
+    ]
+  },
   "assetsSummary": {
     "species": [
       {
@@ -170,6 +187,7 @@
       }
     ]
   },
+  "datePublished": "2025-12-31T03:29:11.834821+00:00",
   "schemaVersion": "0.7.0",
   "ethicsApproval": [
     {
@@ -194,6 +212,6 @@
     }
   ],
   "manifestLocation": [
-    "https://api.dandiarchive.org/api/dandisets/001688/versions/draft/assets/"
+    "https://dandiarchive.s3.amazonaws.com/dandisets/001688/0.251231.0329/assets.yaml"
   ]
 }

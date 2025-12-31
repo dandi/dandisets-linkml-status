@@ -36,7 +36,7 @@ assetsSummary:
   - ProcessingModule
 citation: 'O''Connell, Sean; Wang, Runming (2025) EMUsort Rat Datasets (Acquired):
   high-resolution multichannel EMG recordings with 3D motion tracking during treadmill
-  locomotion (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001688/draft'
+  locomotion (Version 0.251231.0329) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001688/0.251231.0329'
 contributor:
 - affiliation: []
   email: smarkoco@proton.me
@@ -90,6 +90,7 @@ contributor:
   schemaKey: Organization
   url: https://med.emory.edu/
 dateCreated: '2025-12-19T20:55:15.940815+00:00'
+datePublished: '2025-12-31T03:29:11.834821+00:00'
 description: This Dandiset contains 3 high-resolution EMG recordings (16-channel bipolar)
   from rat triceps brachii along with synchronized 3D motion tracking for 10 keypoints
   during treadmill locomotion. The motion tracking was acquired at 125Hz using 4 BlackFly
@@ -103,13 +104,14 @@ description: This Dandiset contains 3 high-resolution EMG recordings (16-channel
   score of a given keypoint. No further filtering was performed on the 3D pose estimates.
   Along with these, this Dandiset also contains labels for the initial contact and
   initial swing times for the forelimb palm of the implanted side (left; i.e., palm_L).
+doi: 10.48324/dandi.001688/0.251231.0329
 ethicsApproval:
 - contactPoint:
     email: iacuc@emory.edu
     schemaKey: ContactPoint
   identifier: '201700525'
   schemaKey: EthicsApproval
-id: DANDI:001688/draft
+id: DANDI:001688/0.251231.0329
 identifier: DANDI:001688
 keywords:
 - EMUsort
@@ -139,9 +141,21 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/001688/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/001688/0.251231.0329/assets.yaml
 name: 'EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings
   with 3D motion tracking during treadmill locomotion'
+publishedBy:
+  endDate: '2025-12-31T03:29:11.834821+00:00'
+  id: urn:uuid:f5e6cc4f-716b-478e-b097-a381b7b73988
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-12-31T03:29:11.834821+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:f410c128-8cdc-407f-8aec-ff8b28343a76
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://archive.softwareheritage.org/swh:1:rev:873b67a5c8d5035615ddf9d41cb26ea1508e6365;origin=https://github.com/snel-repo/EMUsort;visit=swh:1:snp:eadfee3f6f627e01915a8294f7a348c56d7be0b2
   name: EMUsort
@@ -153,6 +167,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
-url: https://dandiarchive.org/dandiset/001688/draft
-version: draft
+url: https://dandiarchive.org/dandiset/001688/0.251231.0329
+version: 0.251231.0329
 wasGeneratedBy: []

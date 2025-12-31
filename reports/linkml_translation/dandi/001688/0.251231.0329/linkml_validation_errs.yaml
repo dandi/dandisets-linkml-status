@@ -1,6 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:f5e6cc4f-716b-478e-b097-a381b7b73988'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2025-12-31T03:29:11.834821+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2025-12-31T03:29:11.834821+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:f410c128-8cdc-407f-8aec-ff8b28343a76'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:f5e6cc4f-716b-478e-b097-a381b7b73988'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2025-12-31T03:29:11.834821+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2025-12-31T03:29:11.834821+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:f410c128-8cdc-407f-8aec-ff8b28343a76'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': "O''Connell, Sean", ''email'': ''smarkoco@proton.me'', ''roleName'':
     [''dcite:ContactPerson'', ''dcite:Author'', ''dcite:DataCollector'', ''dcite:DataCurator'',
     ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2499-8595'',
@@ -25,7 +51,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Wang, Runming'', ''email'': ''rwang152@jh.edu'', ''roleName'':
     [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'', ''identifier'':
     ''0009-0007-8185-3505'', ''affiliation'': [], ''includeInCitation'': True} is
@@ -49,7 +75,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.nih.gov/'', ''name'': ''National Institute of
     Health'', ''email'': ''grantsinfo@nih.gov'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''awardNumber'': ''R01NS109237''} is not of type
@@ -73,7 +99,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.nih.gov/'', ''name'': ''National Institute of
     Health'', ''email'': ''grantsinfo@nih.gov'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''awardNumber'': ''U24NS126936''} is not of type
@@ -97,7 +123,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.simonsfoundation.org/'', ''name'': ''Simons Foundation'',
     ''email'': ''allgrants@simonsfoundation.org'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cmst727'',
@@ -123,7 +149,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://med.emory.edu/'', ''name'': ''Emory School of Medicine'',
     ''email'': ''SOMResearch@emory.edu'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
     ''Organization'', ''identifier'': ''https://ror.org/03czfpz43'', ''awardNumber'':
