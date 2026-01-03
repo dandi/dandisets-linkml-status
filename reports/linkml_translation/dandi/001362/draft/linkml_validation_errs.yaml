@@ -1,10 +1,11 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Lawrimore, Joshua'', ''email'': ''josh.lawrimore@gmail.com'',
-    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
-    ''0000-0003-2301-9073'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/0'
+  message: '{''name'': ''Bakalar, Dana'', ''email'': ''dana.bakalar@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataCollector'', ''dcite:DataManager'',
+    ''dcite:Investigation'', ''dcite:Software'', ''dcite:Visualization''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-8257-4427'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -15,19 +16,20 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Lawrimore, Joshua'', ''email'': ''josh.lawrimore@gmail.com'',
-      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
-      ''0000-0003-2301-9073'', ''affiliation'': [], ''includeInCitation'': True} is
-      not of type ''string'''
+    message: '{''name'': ''Bakalar, Dana'', ''email'': ''dana.bakalar@nih.gov'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCurator'', ''dcite:DataCollector'', ''dcite:DataManager'',
+      ''dcite:Investigation'', ''dcite:Software'', ''dcite:Visualization''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8257-4427'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Eiden, Lee'', ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'',
-    ''dcite:Resources'', ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'':
-    ''0000-0001-7524-944X'', ''awardNumber'': ''1ZIAMH002386'', ''includeInCitation'':
+  message: '{''name'': ''Gavrilova, Oksana'', ''email'': ''oksanag@bdg10.niddk.nih.gov'',
+    ''roleName'': [''dcite:Investigation'', ''dcite:Researcher'', ''dcite:Resources'',
+    ''dcite:Methodology'', ''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
@@ -39,9 +41,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Eiden, Lee'', ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'',
-      ''dcite:Resources'', ''dcite:Supervision''], ''schemaKey'': ''Person'', ''identifier'':
-      ''0000-0001-7524-944X'', ''awardNumber'': ''1ZIAMH002386'', ''includeInCitation'':
+    message: '{''name'': ''Gavrilova, Oksana'', ''email'': ''oksanag@bdg10.niddk.nih.gov'',
+      ''roleName'': [''dcite:Investigation'', ''dcite:Researcher'', ''dcite:Resources'',
+      ''dcite:Methodology'', ''dcite:Author''], ''schemaKey'': ''Person'', ''includeInCitation'':
       True} is not of type ''string'''
     validator: type
     validator_value: string
@@ -49,9 +51,8 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Usdin, Ted'', ''roleName'': [''dcite:FundingAcquisition'',
-    ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:Resources'', ''dcite:Software''],
-    ''schemaKey'': ''Person'', ''awardNumber'': ''1ZICMH002963'', ''includeInCitation'':
+  message: '{''name'': ''Jiang, Sunny Z'', ''email'': ''zhihong.jiang@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
@@ -63,10 +64,170 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Usdin, Ted'', ''roleName'': [''dcite:FundingAcquisition'',
-      ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:Resources'', ''dcite:Software''],
-      ''schemaKey'': ''Person'', ''awardNumber'': ''1ZICMH002963'', ''includeInCitation'':
+    message: '{''name'': ''Jiang, Sunny Z'', ''email'': ''zhihong.jiang@nih.gov'',
+      ''roleName'': [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Zhang, Hai-ying'', ''email'': ''haiying.zhang@nih.gov'',
+    ''roleName'': [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Zhang, Hai-ying'', ''email'': ''haiying.zhang@nih.gov'',
+      ''roleName'': [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Roy, Snehasish'', ''email'': ''snehashis.roy@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Software''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Roy, Snehasish'', ''email'': ''snehashis.roy@nih.gov'',
+      ''roleName'': [''dcite:Author'', ''dcite:Software''], ''schemaKey'': ''Person'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Avram, Sarah K. Williams'', ''email'': ''sarah.williams@nih.gov'',
+    ''roleName'': [''dcite:Author'', ''dcite:Investigation'', ''dcite:Methodology'',
+    ''dcite:Resources''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9898-5420'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Avram, Sarah K. Williams'', ''email'': ''sarah.williams@nih.gov'',
+      ''roleName'': [''dcite:Author'', ''dcite:Investigation'', ''dcite:Methodology'',
+      ''dcite:Resources''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9898-5420'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Liu, Naili'', ''email'': ''naili.liu@nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Liu, Naili'', ''email'': ''naili.liu@nih.gov'', ''roleName'':
+      [''dcite:Author'', ''dcite:Investigation''], ''schemaKey'': ''Person'', ''includeInCitation'':
       True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Wisser, Stephen C'', ''roleName'': [''dcite:Author'', ''dcite:Software''],
+    ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
+    in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Wisser, Stephen C'', ''roleName'': [''dcite:Author'', ''dcite:Software''],
+      ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Usdin, Ted'', ''email'': ''usdint@mail.nih.gov'', ''roleName'':
+    [''dcite:FundingAcquisition'', ''dcite:Investigation'', ''dcite:Methodology'',
+    ''dcite:Resources'', ''dcite:Software''], ''schemaKey'': ''Person'', ''awardNumber'':
+    ''1ZICMH002963'', ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Usdin, Ted'', ''email'': ''usdint@mail.nih.gov'', ''roleName'':
+      [''dcite:FundingAcquisition'', ''dcite:Investigation'', ''dcite:Methodology'',
+      ''dcite:Resources'', ''dcite:Software''], ''schemaKey'': ''Person'', ''awardNumber'':
+      ''1ZICMH002963'', ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Eiden, Lee'', ''email'': ''eidenl@mail.nih.gov'', ''roleName'':
+    [''dcite:Author'', ''dcite:FundingAcquisition'', ''dcite:Resources'', ''dcite:Supervision'',
+    ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7524-944X'',
+    ''awardNumber'': ''1ZIAMH002386'', ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Eiden, Lee'', ''email'': ''eidenl@mail.nih.gov'', ''roleName'':
+      [''dcite:Author'', ''dcite:FundingAcquisition'', ''dcite:Resources'', ''dcite:Supervision'',
+      ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7524-944X'',
+      ''awardNumber'': ''1ZIAMH002386'', ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -75,12 +236,12 @@
   instantiates: Dandiset
   message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZICMH002963'',
-    ''includeInCitation'': False} is not of type ''string'' in /contributor/3'
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/10'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 3
+    - 10
     absolute_schema_path:
     - properties
     - contributor
@@ -97,12 +258,12 @@
   instantiates: Dandiset
   message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZIAMH002386'',
-    ''includeInCitation'': False} is not of type ''string'' in /contributor/4'
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/11'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 4
+    - 11
     absolute_schema_path:
     - properties
     - contributor
@@ -111,6 +272,30 @@
     message: '{''name'': ''National Institute of Mental Health'', ''schemaKey'': ''Organization'',
       ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''ZIAMH002386'',
       ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lawrimore, Joshua'', ''email'': ''josh.lawrimore@gmail.com'',
+    ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0003-2301-9073'', ''affiliation'': [], ''includeInCitation'': False} is
+    not of type ''string'' in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lawrimore, Joshua'', ''email'': ''josh.lawrimore@gmail.com'',
+      ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0003-2301-9073'', ''affiliation'': [], ''includeInCitation'': False}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
