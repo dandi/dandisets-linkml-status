@@ -1,24 +1,6 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{} is not of type ''string'' in /about/0'
-  severity: ERROR
-  source:
-    absolute_path:
-    - about
-    - 0
-    absolute_schema_path:
-    - properties
-    - about
-    - items
-    - type
-    message: '{} is not of type ''string'''
-    validator: type
-    validator_value: string
-  type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: Dandiset
   message: '{''name'': ''Magland, Jeremy'', ''email'': ''jmagland@flatironinstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
@@ -208,30 +190,4 @@
       ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
-  type: jsonschema validation
-- context:
-  - '''name'' is a required property'
-  - '''name'' is a required property'
-  - '''name'' is a required property'
-  - '''name'' is a required property'
-  instance_index: 0
-  instantiates: Dandiset
-  message: '{} is not valid under any of the given schemas in /wasGeneratedBy/0'
-  severity: ERROR
-  source:
-    absolute_path:
-    - wasGeneratedBy
-    - 0
-    absolute_schema_path:
-    - properties
-    - wasGeneratedBy
-    - items
-    - anyOf
-    message: '{} is not valid under any of the given schemas'
-    validator: anyOf
-    validator_value:
-    - $ref: '#/$defs/Activity'
-    - $ref: '#/$defs/Project'
-    - $ref: '#/$defs/PublishActivity'
-    - $ref: '#/$defs/Session'
   type: jsonschema validation

@@ -2,9 +2,7 @@
   "id": "DANDI:000618/draft",
   "url": "https://dandiarchive.org/dandiset/000618/draft",
   "name": "SpikeForest ground truth datasets",
-  "about": [
-    {}
-  ],
+  "about": [],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -15,8 +13,14 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Magland, Jeremy; Jun, James J; Lovero, Elizabeth; Morley, Alexander J; Hurwitz, Cole Lincoln; Buccino, Alessio Paolo; Garcia, Samuel; Barnett, Alex H; English, Daniel (2023) SpikeForest ground truth datasets (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000618/draft",
-  "keywords": [],
+  "citation": "Magland, Jeremy; Jun, James J; Lovero, Elizabeth; Morley, Alexander J; Hurwitz, Cole Lincoln; Buccino, Alessio Paolo; Garcia, Samuel; Barnett, Alex H; English, Daniel (2026) SpikeForest ground truth datasets (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000618/draft",
+  "keywords": [
+    "electrophysiology",
+    "spike-sorting",
+    "ground-truth",
+    "benchmark",
+    "SpikeForest"
+  ],
   "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000618",
@@ -119,8 +123,8 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 145521718882,
-    "numberOfFiles": 124,
+    "numberOfBytes": 145522643652,
+    "numberOfFiles": 125,
     "numberOfSubjects": 4,
     "variableMeasured": [
       "Units",
@@ -149,9 +153,7 @@
   },
   "schemaVersion": "0.6.4",
   "ethicsApproval": [],
-  "wasGeneratedBy": [
-    {}
-  ],
+  "wasGeneratedBy": [],
   "relatedResource": [
     {
       "url": "https://www.biorxiv.org/content/10.1101/370080v1",
@@ -166,6 +168,20 @@
       "relation": "dcite:HasPart",
       "schemaKey": "Resource",
       "identifier": "paired-boyden"
+    },
+    {
+      "url": "https://elifesciences.org/articles/55167",
+      "name": "SpikeForest data descriptor (eLife)",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:JournalArticle"
+    },
+    {
+      "url": "https://github.com/flatironinstitute/spikeforest/blob/main/devel/dandiset/prepare_dandiset.py",
+      "name": "prepare_dandiset.py (SpikeForest conversion script)",
+      "relation": "dcite:IsSupplementTo",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:Software"
     }
   ],
   "manifestLocation": [
