@@ -2,6 +2,98 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
+    "message": "{'name': 'extracellular electrophysiology', 'schemaKey': 'GenericType'} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'extracellular electrophysiology', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'spike sorting', 'schemaKey': 'GenericType'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'spike sorting', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'action potential', 'schemaKey': 'GenericType'} is not of type 'string' in /about/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'action potential', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'ground-truth dataset', 'schemaKey': 'GenericType'} is not of type 'string' in /about/3",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'ground-truth dataset', 'schemaKey': 'GenericType'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
     "message": "{'name': 'Magland, Jeremy', 'email': 'jmagland@flatironinstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",

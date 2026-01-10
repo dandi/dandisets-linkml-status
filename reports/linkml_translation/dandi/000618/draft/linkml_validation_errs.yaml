@@ -1,6 +1,86 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
+  message: '{''name'': ''extracellular electrophysiology'', ''schemaKey'': ''GenericType''}
+    is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''extracellular electrophysiology'', ''schemaKey'': ''GenericType''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''spike sorting'', ''schemaKey'': ''GenericType''} is not of
+    type ''string'' in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''spike sorting'', ''schemaKey'': ''GenericType''} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''action potential'', ''schemaKey'': ''GenericType''} is not
+    of type ''string'' in /about/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 2
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''action potential'', ''schemaKey'': ''GenericType''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''ground-truth dataset'', ''schemaKey'': ''GenericType''} is
+    not of type ''string'' in /about/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 3
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''ground-truth dataset'', ''schemaKey'': ''GenericType''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
   message: '{''name'': ''Magland, Jeremy'', ''email'': ''jmagland@flatironinstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
