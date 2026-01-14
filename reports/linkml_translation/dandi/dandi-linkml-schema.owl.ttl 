@@ -1,0 +1,2829 @@
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix test_schema: <http://example.org/test-schema/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+test_schema:Agent a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Agent" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Agent Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Any a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Any" ;
+    skos:definition "Any object" ;
+    skos:exactMatch linkml:Any ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:GenericType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "GenericType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the GenericType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:GenotypeInfo a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "GenotypeInfo" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Locus ;
+            owl:onProperty test_schema:locus ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:locus ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:alleles ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:locus ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Allele ;
+            owl:onProperty test_schema:alleles ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasGeneratedBy ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Session ;
+            owl:onProperty test_schema:wasGeneratedBy ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the GenotypeInfo Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Person a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Person" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Affiliation ;
+            owl:onProperty test_schema:affiliation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$" ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:affiliation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:Contributor ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the name slot. The slot representation of the name field in the Person Pydantic model has changes in value in meta slots: ['required'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Person Pydantic model has changes in value in meta slots: ['any_of', 'ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Project a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Project" ;
+    rdfs:subClassOf test_schema:Activity ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Project Pydantic model has changes in value in meta slots: ['any_of', 'ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:PublishActivity a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PublishActivity" ;
+    rdfs:subClassOf test_schema:Activity ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the PublishActivity Pydantic model has changes in value in meta slots: ['any_of', 'ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:PublishedAsset a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PublishedAsset" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^dandiasset:[a-f0-9]{8}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{12}$" ] ) ] ;
+            owl:onProperty test_schema:id ],
+        test_schema:Asset,
+        test_schema:Publishable ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the PublishedAsset Pydantic model has changes in value in meta slots: ['notes'] .",
+        "pydantic2linkml: Warning: LinkML does not support multiple inheritance. Publishable is not specified as a parent, through the `is_a` meta slot, but as a mixin." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:PublishedDandiset a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PublishedDandiset" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:releaseNotes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:doi ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:releaseNotes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(10\\.\\d{4,}/[a-z][-a-z]*\\.\\d{6}/\\d+\\.\\d+\\.\\d+|)$" ] ) ] ) ] ;
+            owl:onProperty test_schema:doi ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:releaseNotes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:doi ],
+        test_schema:Dandiset,
+        test_schema:Publishable ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the id slot. The slot representation of the id field in the PublishedDandiset Pydantic model has changes in value in meta slots: ['pattern'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the PublishedDandiset Pydantic model has changes in value in meta slots: ['notes'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the url slot. The slot representation of the url field in the PublishedDandiset Pydantic model has changes in value in meta slots: ['notes', 'required'] .",
+        "pydantic2linkml: Warning: LinkML does not support multiple inheritance. Publishable is not specified as a parent, through the `is_a` meta slot, but as a mixin." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Software a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Software" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^RRID:.*" ] ) ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Software Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Asset a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Asset" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?:urn:uuid:)?[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?4[0-9a-fA-F]{3}-?[89abAB][0-9a-fA-F]{3}-?[0-9a-fA-F]{12}$" ] ) ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:contentUrl ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:contentUrl ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:BareAsset ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the id slot. The slot representation of the id field in the Asset Pydantic model has changes in value in meta slots: ['required'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:BareAsset a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "BareAsset" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dataType ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:digest ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:variableMeasured ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:dataType ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:encodingFormat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:digest ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:PropertyValue ;
+            owl:onProperty test_schema:variableMeasured ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:blobDateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:blobDateModified ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasDerivedFrom ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:encodingFormat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:path ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:BioSample ;
+            owl:onProperty test_schema:wasDerivedFrom ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ApproachType ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:path ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dataType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:contentSize ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:path ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:blobDateModified ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:contentSize ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:digest ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasAttributedTo ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:encodingFormat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:MeasurementTechniqueType ;
+            owl:onProperty test_schema:measurementTechnique ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:measurementTechnique ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Participant ;
+            owl:onProperty test_schema:wasAttributedTo ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:contentSize ],
+        test_schema:CommonModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the access slot. The slot representation of the access field in the BareAsset Pydantic model has changes in value in meta slots: ['notes'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the BareAsset Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy slot. The slot representation of the wasGeneratedBy field in the BareAsset Pydantic model lacks meta slots: ['range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Dandiset a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Dandiset" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:dateCreated ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AssetsSummary ;
+            owl:onProperty test_schema:assetsSummary ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:citation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:citation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:manifestLocation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^[A-Z][-A-Z]*:\\d{6}$" ] ) ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:assetsSummary ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:citation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:manifestLocation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:assetsSummary ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dateCreated ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dateCreated ],
+        test_schema:CommonModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the contributor slot. The slot representation of the contributor field in the Dandiset Pydantic model has changes in value in meta slots: ['notes', 'required'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the description slot. The slot representation of the description field in the Dandiset Pydantic model has changes in value in meta slots: ['required'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the id slot. The slot representation of the id field in the Dandiset Pydantic model has changes in value in meta slots: ['required'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the license slot. The slot representation of the license field in the Dandiset Pydantic model has changes in value in meta slots: ['required'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the name slot. The slot representation of the name field in the Dandiset Pydantic model has changes in value in meta slots: ['required'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Dandiset Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic model has changes in value in meta slots: ['range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Session a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Session" ;
+    rdfs:subClassOf test_schema:Activity ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Session Pydantic model has changes in value in meta slots: ['any_of', 'ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+<dandi:BirthReference> a test_schema:AgeReferenceType,
+        owl:Class ;
+    rdfs:label "dandi:BirthReference" ;
+    rdfs:subClassOf test_schema:AgeReferenceType .
+
+<dandi:EmbargoedAccess> a test_schema:AccessType,
+        owl:Class ;
+    rdfs:label "dandi:EmbargoedAccess" ;
+    rdfs:subClassOf test_schema:AccessType .
+
+<dandi:GestationalReference> a test_schema:AgeReferenceType,
+        owl:Class ;
+    rdfs:label "dandi:GestationalReference" ;
+    rdfs:subClassOf test_schema:AgeReferenceType .
+
+<dandi:OpenAccess> a test_schema:AccessType,
+        owl:Class ;
+    rdfs:label "dandi:OpenAccess" ;
+    rdfs:subClassOf test_schema:AccessType .
+
+<dandi:blake2b-256> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:blake2b-256" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:blake3> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:blake3" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:dandi> a test_schema:IdentifierType,
+        owl:Class ;
+    rdfs:label "dandi:dandi" ;
+    rdfs:subClassOf test_schema:IdentifierType .
+
+<dandi:dandi-etag> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:dandi-etag" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:dandi-zarr-checksum> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:dandi-zarr-checksum" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:doi> a test_schema:IdentifierType,
+        owl:Class ;
+    rdfs:label "dandi:doi" ;
+    rdfs:subClassOf test_schema:IdentifierType .
+
+<dandi:isChildOf> a test_schema:ParticipantRelationType,
+        owl:Class ;
+    rdfs:label "dandi:isChildOf" ;
+    rdfs:subClassOf test_schema:ParticipantRelationType .
+
+<dandi:isDizygoticTwinOf> a test_schema:ParticipantRelationType,
+        owl:Class ;
+    rdfs:label "dandi:isDizygoticTwinOf" ;
+    rdfs:subClassOf test_schema:ParticipantRelationType .
+
+<dandi:isMonozygoticTwinOf> a test_schema:ParticipantRelationType,
+        owl:Class ;
+    rdfs:label "dandi:isMonozygoticTwinOf" ;
+    rdfs:subClassOf test_schema:ParticipantRelationType .
+
+<dandi:isParentOf> a test_schema:ParticipantRelationType,
+        owl:Class ;
+    rdfs:label "dandi:isParentOf" ;
+    rdfs:subClassOf test_schema:ParticipantRelationType .
+
+<dandi:isSiblingOf> a test_schema:ParticipantRelationType,
+        owl:Class ;
+    rdfs:label "dandi:isSiblingOf" ;
+    rdfs:subClassOf test_schema:ParticipantRelationType .
+
+<dandi:md5> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:md5" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:orcid> a test_schema:IdentifierType,
+        owl:Class ;
+    rdfs:label "dandi:orcid" ;
+    rdfs:subClassOf test_schema:IdentifierType .
+
+<dandi:ror> a test_schema:IdentifierType,
+        owl:Class ;
+    rdfs:label "dandi:ror" ;
+    rdfs:subClassOf test_schema:IdentifierType .
+
+<dandi:rrid> a test_schema:IdentifierType,
+        owl:Class ;
+    rdfs:label "dandi:rrid" ;
+    rdfs:subClassOf test_schema:IdentifierType .
+
+<dandi:sha1> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:sha1" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:sha2-256> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:sha2-256" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dandi:sha3-256> a test_schema:DigestType,
+        owl:Class ;
+    rdfs:label "dandi:sha3-256" ;
+    rdfs:subClassOf test_schema:DigestType .
+
+<dcite:Affiliation> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Affiliation" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Audiovisual> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Audiovisual" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Author> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Author" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Book> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Book" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:BookChapter> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:BookChapter" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Cites> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Cites" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Collection> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Collection" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Compiles> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Compiles" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:ComputationalNotebook> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:ComputationalNotebook" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Conceptualization> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Conceptualization" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:ConferencePaper> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:ConferencePaper" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:ConferenceProceeding> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:ConferenceProceeding" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:ContactPerson> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:ContactPerson" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Continues> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Continues" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:DataCollector> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:DataCollector" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:DataCurator> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:DataCurator" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:DataManager> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:DataManager" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:DataPaper> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:DataPaper" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Dataset> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Dataset" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Describes> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Describes" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Dissertation> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Dissertation" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Documents> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Documents" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:EthicsApproval> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:EthicsApproval" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Event> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Event" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:FormalAnalysis> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:FormalAnalysis" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Funder> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Funder" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:FundingAcquisition> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:FundingAcquisition" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:HasMetadata> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:HasMetadata" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:HasPart> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:HasPart" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:HasVersion> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:HasVersion" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Image> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Image" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Instrument> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Instrument" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:InteractiveResource> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:InteractiveResource" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Investigation> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Investigation" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:IsCitedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsCitedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsCompiledBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsCompiledBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsContinuedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsContinuedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsDerivedFrom> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsDerivedFrom" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsDescribedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsDescribedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsDocumentedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsDocumentedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsIdenticalTo> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsIdenticalTo" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsMetadataFor> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsMetadataFor" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsNewVersionOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsNewVersionOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsObsoletedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsObsoletedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsOriginalFormOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsOriginalFormOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsPartOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsPartOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsPreviousVersionOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsPreviousVersionOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsPublishedIn> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsPublishedIn" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsReferencedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsReferencedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsRequiredBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsRequiredBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsReviewedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsReviewedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsSourceOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsSourceOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsSupplementTo> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsSupplementTo" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsSupplementedBy> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsSupplementedBy" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsVariantFormOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsVariantFormOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:IsVersionOf> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:IsVersionOf" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Journal> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Journal" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:JournalArticle> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:JournalArticle" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Maintainer> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Maintainer" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Methodology> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Methodology" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Model> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Model" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Obsoletes> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Obsoletes" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:OutputManagementPlan> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:OutputManagementPlan" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:PeerReview> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:PeerReview" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:PhysicalObject> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:PhysicalObject" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Preprint> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Preprint" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Producer> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Producer" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:ProjectAdministration> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:ProjectAdministration" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:ProjectLeader> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:ProjectLeader" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:ProjectManager> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:ProjectManager" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:ProjectMember> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:ProjectMember" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:References> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:References" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Report> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Report" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Requires> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Requires" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Researcher> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Researcher" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Resources> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Resources" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Reviews> a test_schema:RelationType,
+        owl:Class ;
+    rdfs:label "dcite:Reviews" ;
+    rdfs:subClassOf test_schema:RelationType .
+
+<dcite:Service> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Service" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Sound> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Sound" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Sponsor> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Sponsor" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Standard> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Standard" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:StudyParticipant> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:StudyParticipant" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:StudyRegistration> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:StudyRegistration" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Supervision> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Supervision" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Text> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Text" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+<dcite:Validation> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Validation" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Visualization> a test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Visualization" ;
+    rdfs:subClassOf test_schema:RoleType .
+
+<dcite:Workflow> a test_schema:ResourceType,
+        owl:Class ;
+    rdfs:label "dcite:Workflow" ;
+    rdfs:subClassOf test_schema:ResourceType .
+
+test_schema:AccessRequirements a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "AccessRequirements" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Date ;
+            owl:onProperty test_schema:embargoedUntil ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:embargoedUntil ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:status ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AccessType ;
+            owl:onProperty test_schema:status ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:status ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ContactPoint ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:embargoedUntil ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the AccessRequirements Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Affiliation a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Affiliation" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^https://ror.org/[a-z0-9]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Affiliation Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Allele a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Allele" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:alleleSymbol ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:alleleType ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:alleleSymbol ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:alleleType ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:alleleSymbol ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:alleleType ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Allele Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Anatomy a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Anatomy" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Anatomy Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:AssayType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "AssayType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the AssayType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:AssetsSummary a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "AssetsSummary" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:numberOfSamples ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:variableMeasured ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfSamples ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfSubjects ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:StandardsType ;
+            owl:onProperty test_schema:dataStandard ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfFiles ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:numberOfSubjects ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfFiles ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ApproachType ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfBytes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:MeasurementTechniqueType ;
+            owl:onProperty test_schema:measurementTechnique ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:numberOfFiles ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfCells ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfBytes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfCells ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dataStandard ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:numberOfCells ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfSamples ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfSubjects ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:numberOfBytes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:variableMeasured ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:measurementTechnique ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:SpeciesType ;
+            owl:onProperty test_schema:species ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the AssetsSummary Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:CommonModel a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "CommonModel" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:acknowledgement ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?=.{,150}$)" ] ) ] ) ] ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasGeneratedBy ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:license ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:keywords ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AccessRequirements ;
+            owl:onProperty test_schema:access ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:acknowledgement ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:studyTarget ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:LicenseType ;
+            owl:onProperty test_schema:license ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:acknowledgement ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:contributor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:about ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:studyTarget ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Activity ;
+            owl:onProperty test_schema:wasGeneratedBy ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:protocol ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:schemaVersion ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:about ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:EthicsApproval ;
+            owl:onProperty test_schema:ethicsApproval ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:ethicsApproval ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:schemaVersion ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:protocol ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:contributor ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:schemaVersion ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Resource ;
+            owl:onProperty test_schema:relatedResource ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:access ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:keywords ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:relatedResource ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the CommonModel Pydantic model has changes in value in meta slots: ['ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Contributor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Contributor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Boolean ;
+            owl:onProperty test_schema:includeInCitation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:RoleType ;
+            owl:onProperty test_schema:roleName ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:awardNumber ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:roleName ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:awardNumber ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:awardNumber ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:includeInCitation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:includeInCitation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Contributor Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Disorder a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Disorder" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dxdate ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:dxdate ],
+        test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Disorder Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Equipment a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Equipment" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?=.{,150}$)" ] ) ] ) ] ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Equipment Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:EthicsApproval a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "EthicsApproval" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ContactPoint ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the EthicsApproval Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Locus a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Locus" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:locusType ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:locusType ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:locusType ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Locus Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Organization a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Organization" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^https://ror.org/[a-z0-9]+$" ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ContactPoint ;
+            owl:onProperty test_schema:contactPoint ],
+        test_schema:Contributor ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation slot. The slot representation of the includeInCitation field in the Organization Pydantic model has changes in value in meta slots: ['ifabsent'] .",
+        "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Organization Pydantic model has changes in value in meta slots: ['any_of', 'ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Publishable a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Publishable" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:datePublished ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:publishedBy ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:publishedBy ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:datePublished ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:publishedBy ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:datePublished ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Publishable Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:RelatedParticipant a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "RelatedParticipant" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ParticipantRelationType ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the RelatedParticipant Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Resource a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Resource" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ResourceType ;
+            owl:onProperty test_schema:resourceType ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:resourceType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:RelationType ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:resourceType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Resource Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:SampleType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SampleType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the SampleType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:SexType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SexType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the SexType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:StandardsType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "StandardsType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the StandardsType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:StrainType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "StrainType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the StrainType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:about a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "about" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. Tagged union types are yet to be supported." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:access a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "access" ;
+    rdfs:range test_schema:AccessRequirements ;
+    skos:editorialNote "pydantic2linkml: Unable to express the default factory, <function CommonModel.<lambda> at 0x7fbff5f9e480>, in LinkML.",
+        "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function AccessRequirements.open_or_embargoed at 0x7fbff5e174c0>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:affiliation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "affiliation" ;
+    rdfs:range test_schema:Affiliation ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:alleles a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "alleles" ;
+    rdfs:range test_schema:Allele ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:altName a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "altName" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:anatomy a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "anatomy" ;
+    rdfs:range test_schema:Anatomy ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:assayType a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "assayType" ;
+    rdfs:range test_schema:AssayType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:contentUrl a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "contentUrl" ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                        owl:onDatatype xsd:string ;
+                        owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e17880>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:contributor a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "contributor" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. Tagged union types are yet to be supported." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:dataStandard a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dataStandard" ;
+    rdfs:range test_schema:StandardsType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:disorder a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "disorder" ;
+    rdfs:range test_schema:Disorder ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:dxdate a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dxdate" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type date. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'date'}, {'type': 'datetime', 'microseconds_precision': 'truncate'}]})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:ethicsApproval a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ethicsApproval" ;
+    rdfs:range test_schema:EthicsApproval ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:hasMember a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "hasMember" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:keywords a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "keywords" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:license a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "license" ;
+    rdfs:range test_schema:LicenseType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:manifestLocation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "manifestLocation" ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                        owl:onDatatype xsd:string ;
+                        owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5f9f560>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:protocol a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "protocol" ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                        owl:onDatatype xsd:string ;
+                        owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5f9e3e0>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:relatedParticipant a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "relatedParticipant" ;
+    rdfs:range test_schema:RelatedParticipant ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:relatedResource a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "relatedResource" ;
+    rdfs:range test_schema:Resource ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function Resource.identifier_or_url at 0x7fbff5e16ca0>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:roleName a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "roleName" ;
+    rdfs:range test_schema:RoleType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:studyTarget a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "studyTarget" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:used a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "used" ;
+    rdfs:range test_schema:Equipment ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:wasAssociatedWith a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "wasAssociatedWith" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. Tagged union types are yet to be supported." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+<spdx:CC-BY-4.0> a test_schema:LicenseType,
+        owl:Class ;
+    rdfs:label "spdx:CC-BY-4.0" ;
+    rdfs:subClassOf test_schema:LicenseType .
+
+<spdx:CC0-1.0> a test_schema:LicenseType,
+        owl:Class ;
+    rdfs:label "spdx:CC0-1.0" ;
+    rdfs:subClassOf test_schema:LicenseType .
+
+test_schema:ApproachType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "ApproachType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the ApproachType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:BioSample a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "BioSample" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:hasMember ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasDerivedFrom ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasAttributedTo ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Participant ;
+            owl:onProperty test_schema:wasAttributedTo ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:hasMember ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Anatomy ;
+            owl:onProperty test_schema:anatomy ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:sampleType ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:assayType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:BioSample ;
+            owl:onProperty test_schema:wasDerivedFrom ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:sampleType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:SampleType ;
+            owl:onProperty test_schema:sampleType ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:anatomy ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AssayType ;
+            owl:onProperty test_schema:assayType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the BioSample Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:MeasurementTechniqueType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MeasurementTechniqueType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the MeasurementTechniqueType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:Participant a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Participant" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:genotype ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:cellLine ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:PropertyValue ;
+            owl:onProperty test_schema:age ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:genotype ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:altName ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:SpeciesType ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:sex ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Organization ;
+            owl:onProperty test_schema:vendor ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:strain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:RelatedParticipant ;
+            owl:onProperty test_schema:relatedParticipant ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:sex ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:age ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:genotype ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:vendor ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:vendor ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:cellLine ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Disorder ;
+            owl:onProperty test_schema:disorder ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:altName ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:age ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:cellLine ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:StrainType ;
+            owl:onProperty test_schema:strain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:disorder ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:relatedParticipant ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:strain ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:SexType ;
+            owl:onProperty test_schema:sex ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Participant Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:SpeciesType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SpeciesType" ;
+    rdfs:subClassOf test_schema:BaseType ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the SpeciesType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:acknowledgement a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "acknowledgement" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:age a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "age" ;
+    rdfs:range test_schema:PropertyValue ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:alleleSymbol a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "alleleSymbol" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:alleleType a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "alleleType" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:assetsSummary a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "assetsSummary" ;
+    rdfs:range test_schema:AssetsSummary ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:awardNumber a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "awardNumber" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:blobDateModified a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "blobDateModified" ;
+    rdfs:range linkml:Datetime ;
+    skos:editorialNote "pydantic2linkml: Unable to express the microseconds precision constraint of truncate. LinkML lacks direct support for this restriction." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:cellLine a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "cellLine" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:citation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "citation" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:contentSize a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "contentSize" ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <bound method ByteSize._validate of <class 'pydantic.types.ByteSize'>>.",
+        "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type str. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'str', 'pattern': '^\\\\s*(\\\\d*\\\\.?\\\\d+)\\\\s*(\\\\w+)?'}, {'type': 'int', 'ge': 0}], 'custom_error_type': 'byte_size', 'custom_error_message': 'could not parse value and unit from byte string'})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:dataType a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dataType" ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                        owl:onDatatype xsd:string ;
+                        owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e17240>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:dateCreated a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dateCreated" ;
+    rdfs:range linkml:Datetime ;
+    skos:editorialNote "pydantic2linkml: Unable to express the microseconds precision constraint of truncate. LinkML lacks direct support for this restriction." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:datePublished a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "datePublished" ;
+    rdfs:range linkml:Datetime ;
+    skos:editorialNote "pydantic2linkml: Unable to express the microseconds precision constraint of truncate. LinkML lacks direct support for this restriction." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:digest a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "digest" ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <bound method BareAsset.digest_check of <class 'dandischema.models.BareAsset'>>.",
+        "pydantic2linkml: Warning: The translation is incomplete. `dict` types are yet to be supported." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:doi a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "doi" ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                        owl:onDatatype xsd:string ;
+                        owl:withRestrictions ( [ xsd:pattern "^(10\\.\\d{4,}/[a-z][-a-z]*\\.\\d{6}/\\d+\\.\\d+\\.\\d+|)$" ] ) ] ) ] ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:embargoedUntil a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "embargoedUntil" ;
+    rdfs:range linkml:Date ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:encodingFormat a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "encodingFormat" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type function-wrap. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e172e0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}, {'type': 'str'}]})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:endDate a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "endDate" ;
+    rdfs:range linkml:Datetime ;
+    skos:editorialNote "pydantic2linkml: Unable to express the microseconds precision constraint of truncate. LinkML lacks direct support for this restriction." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:genotype a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "genotype" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type list. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.GenotypeInfo'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.GenotypeInfo'>>}, 'schema': {'type': 'literal', 'expected': ['GenotypeInfo']}, 'type': 'function-after'}, 'default': 'GenotypeInfo', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'locus': {'type': 'model-field', 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Locus'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Locus'>>}, 'schema': {'type': 'literal', 'expected': ['Locus']}, 'type': 'function-after'}, 'default': 'Locus', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'union', 'choices': [{'type': 'str'}, {'type': 'list', 'items_schema': {'type': 'str'}}]}, 'metadata': {'pydantic_js_updates': {'description': 'Identifier for genotyping locus.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'locusType': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}}, 'model_name': 'Locus', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Locus'}, 'ref': 'dandischema.models.Locus:94664764666448', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Locus'>>]}}, 'metadata': {'pydantic_js_updates': {'description': 'Locus at which information was extracted.'}}}, 'alleles': {'type': 'model-field', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Allele'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Allele'>>}, 'schema': {'type': 'literal', 'expected': ['Allele']}, 'type': 'function-after'}, 'default': 'Allele', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'union', 'choices': [{'type': 'str'}, {'type': 'list', 'items_schema': {'type': 'str'}}]}, 'metadata': {'pydantic_js_updates': {'description': 'Identifier for genotyping allele.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'alleleSymbol': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}, 'alleleType': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}}, 'model_name': 'Allele', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Allele'}, 'ref': 'dandischema.models.Allele:94664764684880', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Allele'>>]}}}, 'metadata': {'pydantic_js_updates': {'description': 'Information about alleles at the locus.'}}}, 'wasGeneratedBy': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Session'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Session'>>}, 'schema': {'type': 'literal', 'expected': ['Session']}, 'type': 'function-after'}, 'default': 'Session', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Name of session', 'description': 'The name of the logical session associated with the asset.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A brief description of the session.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'startDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'endDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'wasAssociatedWith': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'tagged-union', 'choices': {'Person': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7fbff5e165c0>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Person'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Person'>>}, 'schema': {'type': 'literal', 'expected': ['Person']}, 'type': 'function-after'}, 'default': 'Person', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^\\\\d{4}-\\\\d{4}-\\\\d{4}-(\\\\d{3}X|\\\\d{4})$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'An ORCID identifier', 'description': 'An ORCID (orcid.org) identifier for an individual.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'pattern': \"^([\\\\w\\\\s\\\\-\\\\.']+),\\\\s+([\\\\w\\\\s\\\\-\\\\.']+)$\"}, 'metadata': {'pydantic_js_updates': {'title': 'Use Last, First. Example: Lovelace, Augusta Ada', 'description': 'Use the format: familyname, given names ...'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e168e0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94664761398384'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': True}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'affiliation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Affiliation'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Affiliation'>>}, 'schema': {'type': 'literal', 'expected': ['Affiliation']}, 'type': 'function-after'}, 'default': 'Affiliation', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_updates': {'description': 'Name of organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Affiliation', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Affiliation'}, 'ref': 'dandischema.models.Affiliation:94664762075296', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Affiliation'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'An organization that this person is affiliated with.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Person', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Person'}}, 'ref': 'dandischema.models.Person:94664762094480', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Person'>>]}, 'type': 'function-after'}, 'Organization': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.Organization:94664762008480'}, 'Software': {'type': 'model', 'cls': <class 'dandischema.models.Software'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Software'>>}, 'schema': {'type': 'literal', 'expected': ['Software']}, 'type': 'function-after'}, 'default': 'Software', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^RRID:.*'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Research resource identifier', 'description': 'RRID of the software from scicrunch.org.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'version': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e16d40>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Web page for the software.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Software', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Software'}, 'ref': 'dandischema.models.Software:94664761936288', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Software'>>]}}, 'Agent': {'type': 'model', 'cls': <class 'dandischema.models.Agent'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Agent'>>}, 'schema': {'type': 'literal', 'expected': ['Agent']}, 'type': 'function-after'}, 'default': 'Agent', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier', 'description': 'Identifier for an agent.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e17100>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Agent', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Agent'}, 'ref': 'dandischema.models.Agent:94664762156256', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Agent'>>]}}}, 'discriminator': 'schemaKey', 'strict': False, 'from_attributes': True, 'metadata': {}}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'prov'}}}, 'used': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Equipment'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Equipment'>>}, 'schema': {'type': 'literal', 'expected': ['Equipment']}, 'type': 'function-after'}, 'default': 'Equipment', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'A name for the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Equipment', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Equipment'}, 'ref': 'dandischema.models.Equipment:94664761280608', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Equipment'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A listing of equipment used for the activity.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'Session', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Session'}, 'ref': 'dandischema.models.Session:94664763622416', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Session'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Information about session activity used to determine genotype.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'GenotypeInfo', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'GenotypeInfo'}, 'ref': 'dandischema.models.GenotypeInfo:94664764707328', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.GenotypeInfo'>>]}}}, {'type': 'str'}]})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:includeInCitation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "includeInCitation" ;
+    rdfs:range linkml:Boolean ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:locus a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "locus" ;
+    rdfs:range test_schema:Locus ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:locusType a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "locusType" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:maxValue a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "maxValue" ;
+    rdfs:range linkml:Float ;
+    skos:editorialNote "pydantic2linkml: LinkML does not have support for `'+inf'`, `'-inf'`, and `'NaN'` values. Support for these values is not translated." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:minValue a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "minValue" ;
+    rdfs:range linkml:Float ;
+    skos:editorialNote "pydantic2linkml: LinkML does not have support for `'+inf'`, `'-inf'`, and `'NaN'` values. Support for these values is not translated." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:numberOfBytes a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "numberOfBytes" ;
+    rdfs:range linkml:Integer ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:numberOfCells a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "numberOfCells" ;
+    rdfs:range linkml:Integer ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:numberOfFiles a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "numberOfFiles" ;
+    rdfs:range linkml:Integer ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:numberOfSamples a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "numberOfSamples" ;
+    rdfs:range linkml:Integer ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:numberOfSubjects a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "numberOfSubjects" ;
+    rdfs:range linkml:Integer ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:path a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "path" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:propertyID a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "propertyID" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type definition-ref. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'definition-ref', 'schema_ref': 'dandischema.models.IdentifierType:94664761461216'}, {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5fbaca0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}]})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:publishedBy a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "publishedBy" ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type function-wrap. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e17c40>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}, {'type': 'model', 'cls': <class 'dandischema.models.PublishActivity'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.PublishActivity'>>}, 'schema': {'type': 'literal', 'expected': ['PublishActivity']}, 'type': 'function-after'}, 'default': 'PublishActivity', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'The name of the activity.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the activity.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'startDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'endDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'wasAssociatedWith': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'tagged-union', 'choices': {'Person': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7fbff5e165c0>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Person'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Person'>>}, 'schema': {'type': 'literal', 'expected': ['Person']}, 'type': 'function-after'}, 'default': 'Person', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^\\\\d{4}-\\\\d{4}-\\\\d{4}-(\\\\d{3}X|\\\\d{4})$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'An ORCID identifier', 'description': 'An ORCID (orcid.org) identifier for an individual.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'pattern': \"^([\\\\w\\\\s\\\\-\\\\.']+),\\\\s+([\\\\w\\\\s\\\\-\\\\.']+)$\"}, 'metadata': {'pydantic_js_updates': {'title': 'Use Last, First. Example: Lovelace, Augusta Ada', 'description': 'Use the format: familyname, given names ...'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e168e0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94664761398384'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': True}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'affiliation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Affiliation'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Affiliation'>>}, 'schema': {'type': 'literal', 'expected': ['Affiliation']}, 'type': 'function-after'}, 'default': 'Affiliation', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_updates': {'description': 'Name of organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Affiliation', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Affiliation'}, 'ref': 'dandischema.models.Affiliation:94664762075296', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Affiliation'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'An organization that this person is affiliated with.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Person', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Person'}}, 'ref': 'dandischema.models.Person:94664762094480', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Person'>>]}, 'type': 'function-after'}, 'Organization': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7fbff5e165c0>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Organization'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Organization'>>}, 'schema': {'type': 'literal', 'expected': ['Organization']}, 'type': 'function-after'}, 'default': 'Organization', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e16480>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94664761398384'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': False}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'contactPoint': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.ContactPoint'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.ContactPoint'>>}, 'schema': {'type': 'literal', 'expected': ['ContactPoint']}, 'type': 'function-after'}, 'default': 'ContactPoint', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Email address of contact.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5fb99e0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A Web page to find information on how to contact.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'ContactPoint', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'ContactPoint'}, 'ref': 'dandischema.models.ContactPoint:94664761778160', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.ContactPoint'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Organization contact information', 'description': 'Contact for the organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Organization', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Organization'}}, 'ref': 'dandischema.models.Organization:94664762008480', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Organization'>>]}, 'type': 'function-after'}, 'Software': {'type': 'model', 'cls': <class 'dandischema.models.Software'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Software'>>}, 'schema': {'type': 'literal', 'expected': ['Software']}, 'type': 'function-after'}, 'default': 'Software', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^RRID:.*'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Research resource identifier', 'description': 'RRID of the software from scicrunch.org.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'version': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e16d40>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Web page for the software.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Software', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Software'}, 'ref': 'dandischema.models.Software:94664761936288', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Software'>>]}}, 'Agent': {'type': 'model', 'cls': <class 'dandischema.models.Agent'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Agent'>>}, 'schema': {'type': 'literal', 'expected': ['Agent']}, 'type': 'function-after'}, 'default': 'Agent', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier', 'description': 'Identifier for an agent.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7fbff5e17100>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Agent', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Agent'}, 'ref': 'dandischema.models.Agent:94664762156256', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Agent'>>]}}}, 'discriminator': 'schemaKey', 'strict': False, 'from_attributes': True, 'metadata': {}}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'prov'}}}, 'used': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Equipment'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Equipment'>>}, 'schema': {'type': 'literal', 'expected': ['Equipment']}, 'type': 'function-after'}, 'default': 'Equipment', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'A name for the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Equipment', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Equipment'}, 'ref': 'dandischema.models.Equipment:94664761280608', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Equipment'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A listing of equipment used for the activity.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'PublishActivity', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'PublishActivity'}, 'ref': 'dandischema.models.PublishActivity:94664763928400', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.PublishActivity'>>]}}]})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:releaseNotes a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "releaseNotes" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:resourceType a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "resourceType" ;
+    rdfs:range test_schema:ResourceType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:sampleType a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "sampleType" ;
+    rdfs:range test_schema:SampleType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:schemaKey a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "schemaKey" ;
+    rdfs:range linkml:String ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.DandiBaseModel'>>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:schemaVersion a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "schemaVersion" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:sex a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "sex" ;
+    rdfs:range test_schema:SexType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:startDate a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "startDate" ;
+    rdfs:range linkml:Datetime ;
+    skos:editorialNote "pydantic2linkml: Unable to express the microseconds precision constraint of truncate. LinkML lacks direct support for this restriction." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:status a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "status" ;
+    rdfs:range test_schema:AccessType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:strain a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "strain" ;
+    rdfs:range test_schema:StrainType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:unitText a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "unitText" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:value a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "value" ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <bound method PropertyValue.ensure_value of <class 'dandischema.models.PropertyValue'>>.",
+        "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type any. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'any'}, {'type': 'list', 'items_schema': {'type': 'any'}}]})." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:valueReference a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "valueReference" ;
+    rdfs:range test_schema:PropertyValue ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:vendor a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "vendor" ;
+    rdfs:range test_schema:Organization ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function Contributor.ensure_contact_person_has_email at 0x7fbff5e165c0>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+<dcite:Other> a test_schema:ResourceType,
+        test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Other" ;
+    rdfs:subClassOf test_schema:ResourceType,
+        test_schema:RoleType .
+
+<dcite:Software> a test_schema:ResourceType,
+        test_schema:RoleType,
+        owl:Class ;
+    rdfs:label "dcite:Software" ;
+    rdfs:subClassOf test_schema:ResourceType,
+        test_schema:RoleType .
+
+test_schema:Activity a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Activity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:endDate ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:startDate ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:endDate ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:used ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasAssociatedWith ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Equipment ;
+            owl:onProperty test_schema:used ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:startDate ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:startDate ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?=.{,150}$)" ] ) ] ) ] ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:wasAssociatedWith ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:endDate ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Activity Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:AgeReferenceType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dandi:BirthReference> <dandi:GestationalReference> ) ;
+    linkml:permissible_values <dandi:BirthReference>,
+        <dandi:GestationalReference> .
+
+test_schema:ContactPoint a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "ContactPoint" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:email ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the ContactPoint Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:approach a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "approach" ;
+    rdfs:range test_schema:ApproachType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:measurementTechnique a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "measurementTechnique" ;
+    rdfs:range test_schema:MeasurementTechniqueType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:variableMeasured a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "variableMeasured" ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:wasAttributedTo a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "wasAttributedTo" ;
+    rdfs:range test_schema:Participant ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:wasDerivedFrom a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "wasDerivedFrom" ;
+    rdfs:range test_schema:BioSample ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:wasGeneratedBy a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "wasGeneratedBy" ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:PropertyValue a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PropertyValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:PropertyValue ;
+            owl:onProperty test_schema:valueReference ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:minValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty test_schema:maxValue ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:unitText ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:propertyID ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:valueReference ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:maxValue ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:minValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:maxValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:unitText ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:valueReference ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:propertyID ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:unitText ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty test_schema:minValue ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:propertyID ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the PropertyValue Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:species a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "species" ;
+    rdfs:range test_schema:SpeciesType ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:AccessType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dandi:OpenAccess> <dandi:EmbargoedAccess> ) ;
+    linkml:permissible_values <dandi:EmbargoedAccess>,
+        <dandi:OpenAccess> .
+
+test_schema:LicenseType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
+    linkml:permissible_values <spdx:CC-BY-4.0>,
+        <spdx:CC0-1.0> .
+
+test_schema:dateModified a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dateModified" ;
+    rdfs:range linkml:Datetime ;
+    skos:editorialNote "pydantic2linkml: Unable to express the microseconds precision constraint of truncate. LinkML lacks direct support for this restriction." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:email a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "email" ;
+    rdfs:range linkml:String ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:id a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "id" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:relation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "relation" ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:repository a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "repository" ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:sameAs a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "sameAs" ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:version a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "version" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:contactPoint a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "contactPoint" ;
+    rdfs:range test_schema:ContactPoint ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:IdentifierType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dandi:doi> <dandi:orcid> <dandi:ror> <dandi:dandi> <dandi:rrid> ) ;
+    linkml:permissible_values <dandi:dandi>,
+        <dandi:doi>,
+        <dandi:orcid>,
+        <dandi:ror>,
+        <dandi:rrid> .
+
+test_schema:BaseType a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "BaseType" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?=.{,150}$)" ] ) ] ) ] ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        test_schema:DandiBaseModel ;
+    skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the BaseType Pydantic model has changes in value in meta slots: ['ifabsent', 'notes'] ." ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:ParticipantRelationType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dandi:isChildOf> <dandi:isParentOf> <dandi:isSiblingOf> <dandi:isMonozygoticTwinOf> <dandi:isDizygoticTwinOf> ) ;
+    linkml:permissible_values <dandi:isChildOf>,
+        <dandi:isDizygoticTwinOf>,
+        <dandi:isMonozygoticTwinOf>,
+        <dandi:isParentOf>,
+        <dandi:isSiblingOf> .
+
+test_schema:description a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "description" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:DigestType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dandi:md5> <dandi:sha1> <dandi:sha2-256> <dandi:sha3-256> <dandi:blake2b-256> <dandi:blake3> <dandi:dandi-etag> <dandi:dandi-zarr-checksum> ) ;
+    linkml:permissible_values <dandi:blake2b-256>,
+        <dandi:blake3>,
+        <dandi:dandi-etag>,
+        <dandi:dandi-zarr-checksum>,
+        <dandi:md5>,
+        <dandi:sha1>,
+        <dandi:sha2-256>,
+        <dandi:sha3-256> .
+
+test_schema:DandiBaseModel a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "DandiBaseModel" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:schemaKey ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:schemaKey ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:schemaKey ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:id ] ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:url a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "url" ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                        owl:onDatatype xsd:string ;
+                        owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "name" ;
+    rdfs:range linkml:String ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:identifier a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "identifier" ;
+    skos:inScheme <http://example.org/test-schema> .
+
+test_schema:RoleType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dcite:Author> <dcite:Conceptualization> <dcite:ContactPerson> <dcite:DataCollector> <dcite:DataCurator> <dcite:DataManager> <dcite:FormalAnalysis> <dcite:FundingAcquisition> <dcite:Investigation> <dcite:Maintainer> <dcite:Methodology> <dcite:Producer> <dcite:ProjectLeader> <dcite:ProjectManager> <dcite:ProjectMember> <dcite:ProjectAdministration> <dcite:Researcher> <dcite:Resources> <dcite:Software> <dcite:Supervision> <dcite:Validation> <dcite:Visualization> <dcite:Funder> <dcite:Sponsor> <dcite:StudyParticipant> <dcite:Affiliation> <dcite:EthicsApproval> <dcite:Other> ) ;
+    linkml:permissible_values <dcite:Affiliation>,
+        <dcite:Author>,
+        <dcite:Conceptualization>,
+        <dcite:ContactPerson>,
+        <dcite:DataCollector>,
+        <dcite:DataCurator>,
+        <dcite:DataManager>,
+        <dcite:EthicsApproval>,
+        <dcite:FormalAnalysis>,
+        <dcite:Funder>,
+        <dcite:FundingAcquisition>,
+        <dcite:Investigation>,
+        <dcite:Maintainer>,
+        <dcite:Methodology>,
+        <dcite:Other>,
+        <dcite:Producer>,
+        <dcite:ProjectAdministration>,
+        <dcite:ProjectLeader>,
+        <dcite:ProjectManager>,
+        <dcite:ProjectMember>,
+        <dcite:Researcher>,
+        <dcite:Resources>,
+        <dcite:Software>,
+        <dcite:Sponsor>,
+        <dcite:StudyParticipant>,
+        <dcite:Supervision>,
+        <dcite:Validation>,
+        <dcite:Visualization> .
+
+test_schema:ResourceType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dcite:Audiovisual> <dcite:Book> <dcite:BookChapter> <dcite:Collection> <dcite:ComputationalNotebook> <dcite:ConferencePaper> <dcite:ConferenceProceeding> <dcite:DataPaper> <dcite:Dataset> <dcite:Dissertation> <dcite:Event> <dcite:Image> <dcite:Instrument> <dcite:InteractiveResource> <dcite:Journal> <dcite:JournalArticle> <dcite:Model> <dcite:OutputManagementPlan> <dcite:PeerReview> <dcite:PhysicalObject> <dcite:Preprint> <dcite:Report> <dcite:Service> <dcite:Software> <dcite:Sound> <dcite:Standard> <dcite:StudyRegistration> <dcite:Text> <dcite:Workflow> <dcite:Other> ) ;
+    linkml:permissible_values <dcite:Audiovisual>,
+        <dcite:Book>,
+        <dcite:BookChapter>,
+        <dcite:Collection>,
+        <dcite:ComputationalNotebook>,
+        <dcite:ConferencePaper>,
+        <dcite:ConferenceProceeding>,
+        <dcite:DataPaper>,
+        <dcite:Dataset>,
+        <dcite:Dissertation>,
+        <dcite:Event>,
+        <dcite:Image>,
+        <dcite:Instrument>,
+        <dcite:InteractiveResource>,
+        <dcite:Journal>,
+        <dcite:JournalArticle>,
+        <dcite:Model>,
+        <dcite:Other>,
+        <dcite:OutputManagementPlan>,
+        <dcite:PeerReview>,
+        <dcite:PhysicalObject>,
+        <dcite:Preprint>,
+        <dcite:Report>,
+        <dcite:Service>,
+        <dcite:Software>,
+        <dcite:Sound>,
+        <dcite:Standard>,
+        <dcite:StudyRegistration>,
+        <dcite:Text>,
+        <dcite:Workflow> .
+
+test_schema:RelationType a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <dcite:IsCitedBy> <dcite:Cites> <dcite:IsSupplementTo> <dcite:IsSupplementedBy> <dcite:IsContinuedBy> <dcite:Continues> <dcite:Describes> <dcite:IsDescribedBy> <dcite:HasMetadata> <dcite:IsMetadataFor> <dcite:HasVersion> <dcite:IsVersionOf> <dcite:IsNewVersionOf> <dcite:IsPreviousVersionOf> <dcite:IsPartOf> <dcite:HasPart> <dcite:IsReferencedBy> <dcite:References> <dcite:IsDocumentedBy> <dcite:Documents> <dcite:IsCompiledBy> <dcite:Compiles> <dcite:IsVariantFormOf> <dcite:IsOriginalFormOf> <dcite:IsIdenticalTo> <dcite:IsReviewedBy> <dcite:Reviews> <dcite:IsDerivedFrom> <dcite:IsSourceOf> <dcite:IsRequiredBy> <dcite:Requires> <dcite:Obsoletes> <dcite:IsObsoletedBy> <dcite:IsPublishedIn> ) ;
+    linkml:permissible_values <dcite:Cites>,
+        <dcite:Compiles>,
+        <dcite:Continues>,
+        <dcite:Describes>,
+        <dcite:Documents>,
+        <dcite:HasMetadata>,
+        <dcite:HasPart>,
+        <dcite:HasVersion>,
+        <dcite:IsCitedBy>,
+        <dcite:IsCompiledBy>,
+        <dcite:IsContinuedBy>,
+        <dcite:IsDerivedFrom>,
+        <dcite:IsDescribedBy>,
+        <dcite:IsDocumentedBy>,
+        <dcite:IsIdenticalTo>,
+        <dcite:IsMetadataFor>,
+        <dcite:IsNewVersionOf>,
+        <dcite:IsObsoletedBy>,
+        <dcite:IsOriginalFormOf>,
+        <dcite:IsPartOf>,
+        <dcite:IsPreviousVersionOf>,
+        <dcite:IsPublishedIn>,
+        <dcite:IsReferencedBy>,
+        <dcite:IsRequiredBy>,
+        <dcite:IsReviewedBy>,
+        <dcite:IsSourceOf>,
+        <dcite:IsSupplementTo>,
+        <dcite:IsSupplementedBy>,
+        <dcite:IsVariantFormOf>,
+        <dcite:IsVersionOf>,
+        <dcite:Obsoletes>,
+        <dcite:References>,
+        <dcite:Requires>,
+        <dcite:Reviews> .
+
+<http://example.org/test-schema> a owl:Ontology ;
+    rdfs:label "test-schema" .
+
