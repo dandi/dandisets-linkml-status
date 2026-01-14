@@ -1,6 +1,6 @@
-[DANDI LinkML schema](./dandi-linkml-schema.yml) (LinkML schema used in the LinkML validations)
-[DANDI LinkML schema as OWL](./dandi-linkml-schema.owl.ttl )
-[DANDI LinkML schema as SHACL](./dandi-linkml-schema.shacl.ttl)
+- [DANDI LinkML schema](./dandi-linkml-schema.yml) (LinkML schema used in the LinkML validations)
+- [DANDI LinkML schema as OWL](./dandi-linkml-schema.owl.ttl)
+- [DANDI LinkML schema as SHACL](./dandi-linkml-schema.shacl.ttl)
 
 | dandiset | version | pydantic | linkml | modified | api_status | schema_version |
 |----------|---------|----------|--------|----------|------------|----------------|
