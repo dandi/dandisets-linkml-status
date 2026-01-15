@@ -1,8 +1,9 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Medial Temporal Lobe'', ''schemaKey'': ''GenericType''} is
-    not of type ''string'' in /about/0'
+  message: '{''name'': ''temporal lobe'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0001871''} is not of type ''string'' in
+    /about/0'
   severity: ERROR
   source:
     absolute_path:
@@ -13,8 +14,8 @@
     - about
     - items
     - type
-    message: '{''name'': ''Medial Temporal Lobe'', ''schemaKey'': ''GenericType''}
-      is not of type ''string'''
+    message: '{''name'': ''temporal lobe'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0001871''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -28,8 +29,8 @@
     ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''], ''schemaKey'':
     ''Person'', ''identifier'': ''0000-0003-0161-4007'', ''affiliation'': [{''name'':
     ''Department of Neurosurgery, Cedars-Sinai Medical Center, Los Angeles, CA, USA'',
-    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
-    ''string'' in /contributor/0'
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -47,8 +48,8 @@
       ''dcite:Researcher'', ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''],
       ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0161-4007'', ''affiliation'':
       [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical Center, Los Angeles,
-      CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is
-      not of type ''string'''
+      CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -57,11 +58,12 @@
   instantiates: Dandiset
   message: '{''name'': ''Liang, Dehua'', ''email'': ''liang134@mail.chapman.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:Methodology'', ''dcite:ProjectMember'',
-    ''dcite:Software'', ''dcite:Validation''], ''schemaKey'': ''Person'', ''affiliation'':
-    [{''name'': ''Institute for Interdisciplinary Brain and Behavioral Sciences, Crean
-    College of Health and Behavioral Sciences, Schmid College of Science and Technology,
-    Chapman University, Orange, CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/1'
+    ''dcite:Software'', ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-6220-4979'', ''affiliation'': [{''name'': ''Institute for Interdisciplinary
+    Brain and Behavioral Sciences, Crean College of Health and Behavioral Sciences,
+    Schmid College of Science and Technology, Chapman University, Orange, CA, USA'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0452jzg20''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -74,10 +76,11 @@
     - type
     message: '{''name'': ''Liang, Dehua'', ''email'': ''liang134@mail.chapman.edu'',
       ''roleName'': [''dcite:Author'', ''dcite:Methodology'', ''dcite:ProjectMember'',
-      ''dcite:Software'', ''dcite:Validation''], ''schemaKey'': ''Person'', ''affiliation'':
-      [{''name'': ''Institute for Interdisciplinary Brain and Behavioral Sciences,
-      Crean College of Health and Behavioral Sciences, Schmid College of Science and
-      Technology, Chapman University, Orange, CA, USA'', ''schemaKey'': ''Affiliation''}],
+      ''dcite:Software'', ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-6220-4979'', ''affiliation'': [{''name'': ''Institute for Interdisciplinary
+      Brain and Behavioral Sciences, Crean College of Health and Behavioral Sciences,
+      Schmid College of Science and Technology, Chapman University, Orange, CA, USA'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0452jzg20''}],
       ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
@@ -89,8 +92,8 @@
     ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:ProjectMember'',
     ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4319-7689'',
     ''affiliation'': [{''name'': ''Krembil Brain Institute, Toronto Western Hospital,
-    Toronto, Canada'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/2'
+    Toronto, Canada'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03qv8yq19''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -105,8 +108,8 @@
       ''roleName'': [''dcite:Author'', ''dcite:DataCollector'', ''dcite:ProjectMember'',
       ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4319-7689'',
       ''affiliation'': [{''name'': ''Krembil Brain Institute, Toronto Western Hospital,
-      Toronto, Canada'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-      True} is not of type ''string'''
+      Toronto, Canada'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03qv8yq19''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -117,8 +120,9 @@
     ''roleName'': [''dcite:Author'', ''dcite:DataCurator'', ''dcite:ProjectMember'',
     ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9207-7069'',
     ''affiliation'': [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical
-    Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/3'
+    Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/02pammg90''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -133,8 +137,9 @@
       ''roleName'': [''dcite:Author'', ''dcite:DataCurator'', ''dcite:ProjectMember'',
       ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9207-7069'',
       ''affiliation'': [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical
-      Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-      True} is not of type ''string'''
+      Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02pammg90''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -197,8 +202,9 @@
   instantiates: Dandiset
   message: '{''name'': ''Reed, Chrystal M.'', ''email'': ''Chrystal.Reed@csmc.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Department of Neurology,
-    Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7157-3645'', ''affiliation'':
+    [{''name'': ''Department of Neurology, Cedars-Sinai Medical Center, Los Angeles,
+    CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
@@ -212,8 +218,9 @@
     - type
     message: '{''name'': ''Reed, Chrystal M.'', ''email'': ''Chrystal.Reed@csmc.edu'',
       ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Department of Neurology,
-      Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7157-3645'', ''affiliation'':
+      [{''name'': ''Department of Neurology, Cedars-Sinai Medical Center, Los Angeles,
+      CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}],
       ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
@@ -221,13 +228,15 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Dichter, Ben'', ''email'': ''ben.dichter@gmail.com'', ''roleName'':
-    [''dcite:Author'', ''dcite:Software'', ''dcite:ProjectMember'', ''dcite:Validation''],
-    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Biological Systems &
-    Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA'',
-    ''schemaKey'': ''Affiliation''}, {''name'': ''Department of Neurosurgery, Stanford
-    University, Stanford, CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/7'
+  message: '{''name'': ''Dichter, Benjamin'', ''email'': ''ben.dichter@gmail.com'',
+    ''roleName'': [''dcite:Author'', ''dcite:Software'', ''dcite:ProjectMember'',
+    ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5725-6910'',
+    ''affiliation'': [{''name'': ''Biological Systems & Engineering Division, Lawrence
+    Berkeley National Laboratory, Berkeley, CA, USA'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/02jbv0t02''}, {''name'': ''Department of Neurosurgery,
+    Stanford University, Stanford, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/7'
   severity: ERROR
   source:
     absolute_path:
@@ -238,13 +247,15 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Dichter, Ben'', ''email'': ''ben.dichter@gmail.com'', ''roleName'':
-      [''dcite:Author'', ''dcite:Software'', ''dcite:ProjectMember'', ''dcite:Validation''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Biological Systems
-      & Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA,
-      USA'', ''schemaKey'': ''Affiliation''}, {''name'': ''Department of Neurosurgery,
-      Stanford University, Stanford, CA, USA'', ''schemaKey'': ''Affiliation''}],
-      ''includeInCitation'': True} is not of type ''string'''
+    message: '{''name'': ''Dichter, Benjamin'', ''email'': ''ben.dichter@gmail.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:Software'', ''dcite:ProjectMember'',
+      ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5725-6910'',
+      ''affiliation'': [{''name'': ''Biological Systems & Engineering Division, Lawrence
+      Berkeley National Laboratory, Berkeley, CA, USA'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/02jbv0t02''}, {''name'': ''Department of Neurosurgery,
+      Stanford University, Stanford, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00f54p054''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -253,12 +264,14 @@
   instantiates: Dandiset
   message: '{''name'': ''Maoz, Uri'', ''email'': ''maoz.uri@gmail.com'', ''roleName'':
     [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ProjectMember'', ''dcite:Validation''],
-    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Institute for Interdisciplinary
-    Brain and Behavioral Sciences, Crean College of Health and Behavioral Sciences,
-    Schmid College of Science and Technology, Chapman University, Orange, CA, USA'',
-    ''schemaKey'': ''Affiliation''}, {''name'': ''Division of Biology and Biological
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7899-1241'', ''affiliation'':
+    [{''name'': ''Institute for Interdisciplinary Brain and Behavioral Sciences, Crean
+    College of Health and Behavioral Sciences, Schmid College of Science and Technology,
+    Chapman University, Orange, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/0452jzg20''}, {''name'': ''Division of Biology and Biological
     Engineering, California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'':
-    ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
+    ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/8'
   severity: ERROR
   source:
     absolute_path:
@@ -271,12 +284,14 @@
     - type
     message: '{''name'': ''Maoz, Uri'', ''email'': ''maoz.uri@gmail.com'', ''roleName'':
       [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:ProjectMember'', ''dcite:Validation''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Institute for Interdisciplinary
-      Brain and Behavioral Sciences, Crean College of Health and Behavioral Sciences,
-      Schmid College of Science and Technology, Chapman University, Orange, CA, USA'',
-      ''schemaKey'': ''Affiliation''}, {''name'': ''Division of Biology and Biological
-      Engineering, California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'':
-      ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'''
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7899-1241'', ''affiliation'':
+      [{''name'': ''Institute for Interdisciplinary Brain and Behavioral Sciences,
+      Crean College of Health and Behavioral Sciences, Schmid College of Science and
+      Technology, Chapman University, Orange, CA, USA'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/0452jzg20''}, {''name'': ''Division of Biology
+      and Biological Engineering, California Institute of Technology, Pasadena, CA,
+      USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -285,11 +300,12 @@
   instantiates: Dandiset
   message: '{''name'': ''Kalia, Suneil K.'', ''email'': ''suneil.kalia@uhn.ca'', ''roleName'':
     [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''], ''schemaKey'':
-    ''Person'', ''affiliation'': [{''name'': ''Division of Neurosurgery, Department
-    of Surgery, University of Toronto, Toronto, Canada'', ''schemaKey'': ''Affiliation''},
+    ''Person'', ''identifier'': ''0000-0003-2054-1915'', ''affiliation'': [{''name'':
+    ''Division of Neurosurgery, Department of Surgery, University of Toronto, Toronto,
+    Canada'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03dbr7087''},
     {''name'': ''Krembil Brain Institute, Toronto Western Hospital, Toronto, Canada'',
-    ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True} is not of type
-    ''string'' in /contributor/9'
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03qv8yq19''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/9'
   severity: ERROR
   source:
     absolute_path:
@@ -302,11 +318,13 @@
     - type
     message: '{''name'': ''Kalia, Suneil K.'', ''email'': ''suneil.kalia@uhn.ca'',
       ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Division of Neurosurgery,
-      Department of Surgery, University of Toronto, Toronto, Canada'', ''schemaKey'':
-      ''Affiliation''}, {''name'': ''Krembil Brain Institute, Toronto Western Hospital,
-      Toronto, Canada'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-      True} is not of type ''string'''
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-2054-1915'', ''affiliation'':
+      [{''name'': ''Division of Neurosurgery, Department of Surgery, University of
+      Toronto, Toronto, Canada'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03dbr7087''}, {''name'': ''Krembil Brain Institute, Toronto
+      Western Hospital, Toronto, Canada'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03qv8yq19''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -315,11 +333,12 @@
   instantiates: Dandiset
   message: '{''name'': ''Valiante, Taufik A.'', ''email'': ''Taufik.Valiante@uhn.ca'',
     ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Krembil Brain Institute,
-    Toronto Western Hospital, Toronto, Canada'', ''schemaKey'': ''Affiliation''},
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3443-3790'', ''affiliation'':
+    [{''name'': ''Krembil Brain Institute, Toronto Western Hospital, Toronto, Canada'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03qv8yq19''},
     {''name'': ''Division of Neurosurgery, Department of Surgery, University of Toronto,
-    Toronto, Canada'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/10'
+    Toronto, Canada'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03dbr7087''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/10'
   severity: ERROR
   source:
     absolute_path:
@@ -332,11 +351,13 @@
     - type
     message: '{''name'': ''Valiante, Taufik A.'', ''email'': ''Taufik.Valiante@uhn.ca'',
       ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Krembil Brain Institute,
-      Toronto Western Hospital, Toronto, Canada'', ''schemaKey'': ''Affiliation''},
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3443-3790'', ''affiliation'':
+      [{''name'': ''Krembil Brain Institute, Toronto Western Hospital, Toronto, Canada'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/03qv8yq19''},
       {''name'': ''Division of Neurosurgery, Department of Surgery, University of
-      Toronto, Toronto, Canada'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-      True} is not of type ''string'''
+      Toronto, Toronto, Canada'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/03dbr7087''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -345,8 +366,9 @@
   instantiates: Dandiset
   message: '{''name'': ''Mamelak, Adam N.'', ''email'': ''Adam.Mamelak@cshs.org'',
     ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Department of Neurosurgery,
-    Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4245-6431'', ''affiliation'':
+    [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical Center, Los Angeles,
+    CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}],
     ''includeInCitation'': True} is not of type ''string'' in /contributor/11'
   severity: ERROR
   source:
@@ -360,8 +382,9 @@
     - type
     message: '{''name'': ''Mamelak, Adam N.'', ''email'': ''Adam.Mamelak@cshs.org'',
       ''roleName'': [''dcite:Author'', ''dcite:ProjectMember'', ''dcite:Validation''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Department of Neurosurgery,
-      Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4245-6431'', ''affiliation'':
+      [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical Center, Los Angeles,
+      CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}],
       ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
@@ -374,15 +397,18 @@
     ''dcite:ProjectMember'', ''dcite:Resources'', ''dcite:Software'', ''dcite:Supervision'',
     ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9207-7069'',
     ''affiliation'': [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical
-    Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}, {''name'': ''Department
-    of Neurology, Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'':
-    ''Affiliation''}, {''name'': ''Division of Biology and Biological Engineering,
-    California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'': ''Affiliation''},
-    {''name'': ''Computational and Neural Systems Program, California Institute of
-    Technology, Pasadena, CA, USA'', ''schemaKey'': ''Affiliation''}, {''name'': ''Center
-    for Neural Science and Medicine, Department of Biomedical Science, Cedars-Sinai
-    Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/12'
+    Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/02pammg90''}, {''name'': ''Department of Neurology, Cedars-Sinai
+    Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/02pammg90''}, {''name'': ''Division of Biology and Biological
+    Engineering, California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}, {''name'': ''Computational
+    and Neural Systems Program, California Institute of Technology, Pasadena, CA,
+    USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''},
+    {''name'': ''Center for Neural Science and Medicine, Department of Biomedical
+    Science, Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/02pammg90''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/12'
   severity: ERROR
   source:
     absolute_path:
@@ -398,15 +424,18 @@
       ''dcite:ProjectMember'', ''dcite:Resources'', ''dcite:Software'', ''dcite:Supervision'',
       ''dcite:Validation''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9207-7069'',
       ''affiliation'': [{''name'': ''Department of Neurosurgery, Cedars-Sinai Medical
-      Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation''}, {''name'':
-      ''Department of Neurology, Cedars-Sinai Medical Center, Los Angeles, CA, USA'',
-      ''schemaKey'': ''Affiliation''}, {''name'': ''Division of Biology and Biological
+      Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02pammg90''}, {''name'': ''Department of Neurology, Cedars-Sinai
+      Medical Center, Los Angeles, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02pammg90''}, {''name'': ''Division of Biology and Biological
       Engineering, California Institute of Technology, Pasadena, CA, USA'', ''schemaKey'':
-      ''Affiliation''}, {''name'': ''Computational and Neural Systems Program, California
-      Institute of Technology, Pasadena, CA, USA'', ''schemaKey'': ''Affiliation''},
+      ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''}, {''name'':
+      ''Computational and Neural Systems Program, California Institute of Technology,
+      Pasadena, CA, USA'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/05dxps055''},
       {''name'': ''Center for Neural Science and Medicine, Department of Biomedical
       Science, Cedars-Sinai Medical Center, Los Angeles, CA, USA'', ''schemaKey'':
-      ''Affiliation''}], ''includeInCitation'': True} is not of type ''string'''
+      ''Affiliation'', ''identifier'': ''https://ror.org/02pammg90''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -414,9 +443,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''National Institute of Neurological Disorders and Stroke'',
-    ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''awardNumber'':
-    ''U01NS103792'', ''contactPoint'': [], ''includeInCitation'': False} is not of
-    type ''string'' in /contributor/13'
+    ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/01s5ya894'', ''awardNumber'': ''U01NS103792'', ''contactPoint'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/13'
   severity: ERROR
   source:
     absolute_path:
@@ -428,9 +457,9 @@
     - items
     - type
     message: '{''name'': ''National Institute of Neurological Disorders and Stroke'',
-      ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''awardNumber'':
-      ''U01NS103792'', ''contactPoint'': [], ''includeInCitation'': False} is not
-      of type ''string'''
+      ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/01s5ya894'', ''awardNumber'': ''U01NS103792'', ''contactPoint'':
+      [], ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -438,8 +467,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Sponsor''],
-    ''schemaKey'': ''Organization'', ''awardNumber'': ''1554105'', ''contactPoint'':
-    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/14'
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+    ''awardNumber'': ''1554105'', ''contactPoint'': [], ''includeInCitation'': False}
+    is not of type ''string'' in /contributor/14'
   severity: ERROR
   source:
     absolute_path:
@@ -451,8 +481,9 @@
     - items
     - type
     message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Sponsor''],
-      ''schemaKey'': ''Organization'', ''awardNumber'': ''1554105'', ''contactPoint'':
-      [], ''includeInCitation'': False} is not of type ''string'''
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+      ''awardNumber'': ''1554105'', ''contactPoint'': [], ''includeInCitation'': False}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -460,8 +491,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Sponsor''],
-    ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH110831'', ''contactPoint'':
-    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/15'
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''R01MH110831'', ''contactPoint'': [], ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/15'
   severity: ERROR
   source:
     absolute_path:
@@ -473,8 +505,9 @@
     - items
     - type
     message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Sponsor''],
-      ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH110831'', ''contactPoint'':
-      [], ''includeInCitation'': False} is not of type ''string'''
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''R01MH110831'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -482,8 +515,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''McKnight Endowment for Neuroscience'', ''roleName'': [''dcite:Sponsor''],
-    ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
-    False} is not of type ''string'' in /contributor/16'
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00vsf1v04'',
+    ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
+    in /contributor/16'
   severity: ERROR
   source:
     absolute_path:
@@ -495,8 +529,8 @@
     - items
     - type
     message: '{''name'': ''McKnight Endowment for Neuroscience'', ''roleName'': [''dcite:Sponsor''],
-      ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
-      False} is not of type ''string'''
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00vsf1v04'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -505,8 +539,8 @@
   instantiates: Dandiset
   message: '{''name'': ''NARSAD Young Investigator grant from the Brain & Behavior
     Research Foundation'', ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'',
-    ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
-    in /contributor/17'
+    ''identifier'': ''https://ror.org/03a63f080'', ''contactPoint'': [], ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/17'
   severity: ERROR
   source:
     absolute_path:
@@ -519,7 +553,8 @@
     - type
     message: '{''name'': ''NARSAD Young Investigator grant from the Brain & Behavior
       Research Foundation'', ''roleName'': [''dcite:Sponsor''], ''schemaKey'': ''Organization'',
-      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
+      ''identifier'': ''https://ror.org/03a63f080'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -527,8 +562,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Kavli Foundation'', ''roleName'': [''dcite:Sponsor''], ''schemaKey'':
-    ''Organization'', ''contactPoint'': [], ''includeInCitation'': False} is not of
-    type ''string'' in /contributor/18'
+    ''Organization'', ''identifier'': ''https://ror.org/00kztt736'', ''contactPoint'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/18'
   severity: ERROR
   source:
     absolute_path:
@@ -540,8 +575,8 @@
     - items
     - type
     message: '{''name'': ''Kavli Foundation'', ''roleName'': [''dcite:Sponsor''],
-      ''schemaKey'': ''Organization'', ''contactPoint'': [], ''includeInCitation'':
-      False} is not of type ''string'''
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00kztt736'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
