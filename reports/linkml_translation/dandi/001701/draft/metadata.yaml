@@ -1,0 +1,156 @@
+about: []
+access:
+- schemaKey: AccessRequirements
+  status: dandi:OpenAccess
+acknowledgement: '   '
+assetsSummary:
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 6231885174
+  numberOfFiles: 218
+  numberOfSubjects: 12
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - CompassDirection
+  - ProcessingModule
+  - LFP
+  - Position
+  - Units
+  - ElectricalSeries
+  - ElectrodeGroup
+  - SpatialSeries
+citation: Aery Jones, Emily; Low, Isabel; Cho, Frances; Giocomo, Lisa (2026) Aery
+  Jones et al (2026) Entorhinal cortex represents task-relevant remote locations independent
+  of CA1 (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001701/draft
+contributor:
+- affiliation: []
+  email: emily.aster.jones@gmail.com
+  identifier: 0000-0001-8180-3267
+  includeInCitation: true
+  name: Aery Jones, Emily
+  roleName:
+  - dcite:ContactPerson
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:FormalAnalysis
+  - dcite:FundingAcquisition
+  - dcite:Software
+  schemaKey: Person
+- identifier: 0000-0001-6465-8459
+  includeInCitation: true
+  name: Low, Isabel
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:FundingAcquisition
+  schemaKey: Person
+- identifier: 0000-0002-2576-7801
+  includeInCitation: true
+  name: Cho, Frances
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:FundingAcquisition
+  schemaKey: Person
+- identifier: 0000-0003-0416-2528
+  includeInCitation: true
+  name: Giocomo, Lisa
+  roleName:
+  - dcite:Author
+  - dcite:FundingAcquisition
+  - dcite:Supervision
+  schemaKey: Person
+- awardNumber: K99NS134734, F32NS138225, U19NS118284
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01MH106475, R01MS118284
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 542987SPI
+  name: Simons Foundation Collaboration on the Global Brain
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: "Dean\u2019s Postdoctoral Fellowship, Jump Start Award, Interdisciplinary
+    Graduate Fellowship"
+  name: Stanford University
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: Postdoctoral Fellowship
+  name: A.P. Giannini Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: Scholar Award
+  name: James S McDonnell Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: Scholar Award
+  name: Vallee Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+dateCreated: '2026-01-19T19:58:21.760625+00:00'
+description: 'This dataset contains Neuropixels recordings from medial entorhinal
+  cortex and hippocampus while mice learned a spatial match-to-sample task. Data includes
+  spike times, LFP from select channels, trial information, 2D position, and head
+  direction.
+
+  '
+ethicsApproval: []
+id: DANDI:001701/draft
+identifier: DANDI:001701
+keywords:
+- entorhinal cortex
+- hippocampus
+- spatial navigation
+- population decoding
+license:
+- spdx:CC-BY-4.0
+manifestLocation:
+- https://api.dandiarchive.org/api/dandisets/001701/versions/draft/assets/
+name: Aery Jones et al (2026) Entorhinal cortex represents task-relevant remote locations
+  independent of CA1
+protocol:
+- https://dx.doi.org/10.17504/protocols.io.e6nvwjo87lmk/v2
+relatedResource: []
+repository: https://dandiarchive.org
+schemaKey: Dandiset
+schemaVersion: 0.7.0
+studyTarget:
+- Population representations in CA1 and MEC during immobility
+url: https://dandiarchive.org/dandiset/001701/draft
+version: draft
+wasGeneratedBy: []
