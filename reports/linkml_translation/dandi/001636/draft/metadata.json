@@ -42,6 +42,21 @@
       "name": "Parkinson's disease",
       "schemaKey": "Disorder",
       "identifier": "http://purl.obolibrary.org/obo/DOID_14330"
+    },
+    {
+      "name": "Parkinsonism",
+      "schemaKey": "Disorder",
+      "identifier": "http://purl.obolibrary.org/obo/DOID_0080855"
+    },
+    {
+      "name": "cerebral peduncle",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0002623"
+    },
+    {
+      "name": "putamen",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0001874"
     }
   ],
   "access": [
@@ -54,7 +69,18 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2025) Pyramidal tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor tasks (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001636/draft",
+  "citation": "Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2026) Pyramidal tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor tasks (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001636/draft",
+  "keywords": [
+    "visuomotor",
+    "Pyramidal tract neurons",
+    "corticostriatal neurons",
+    "MPTP",
+    "macaque",
+    "electrophysiology",
+    "Parkinsonism",
+    "primary motor cortex",
+    "stretch reflex"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001636",
   "repository": "https://dandiarchive.org",
@@ -73,6 +99,11 @@
           "name": "University of Pittsburgh",
           "schemaKey": "Affiliation",
           "identifier": "https://ror.org/01an3r305"
+        },
+        {
+          "name": "Center for the Neural Basis of Cognition",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/00jfeg660"
         }
       ],
       "includeInCitation": true
@@ -139,11 +170,11 @@
     ],
     "approach": [
       {
-        "name": "electrophysiological approach",
+        "name": "behavioral approach",
         "schemaKey": "ApproachType"
       },
       {
-        "name": "behavioral approach",
+        "name": "electrophysiological approach",
         "schemaKey": "ApproachType"
       }
     ],
@@ -155,25 +186,17 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 5769918046,
-    "numberOfFiles": 283,
+    "numberOfBytes": 5234698260,
+    "numberOfFiles": 269,
     "numberOfSubjects": 1,
     "variableMeasured": [
       "ElectrodeGroup",
       "ElectricalSeries",
+      "ProcessingModule",
       "Units",
-      "SpatialSeries",
-      "ProcessingModule"
+      "SpatialSeries"
     ],
     "measurementTechnique": [
-      {
-        "name": "multi electrode extracellular electrophysiology recording technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
-      {
-        "name": "behavioral technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
       {
         "name": "analytical technique",
         "schemaKey": "MeasurementTechniqueType"
@@ -183,7 +206,15 @@
         "schemaKey": "MeasurementTechniqueType"
       },
       {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
         "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
         "schemaKey": "MeasurementTechniqueType"
       }
     ]

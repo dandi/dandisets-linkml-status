@@ -23,32 +23,41 @@ about:
 - identifier: http://purl.obolibrary.org/obo/DOID_14330
   name: Parkinson's disease
   schemaKey: Disorder
+- identifier: http://purl.obolibrary.org/obo/DOID_0080855
+  name: Parkinsonism
+  schemaKey: Disorder
+- identifier: http://purl.obolibrary.org/obo/UBERON_0002623
+  name: cerebral peduncle
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001874
+  name: putamen
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
   approach:
-  - name: electrophysiological approach
-    schemaKey: ApproachType
   - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
     schemaKey: ApproachType
   dataStandard:
   - identifier: RRID:SCR_015242
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: multi electrode extracellular electrophysiology recording technique
-    schemaKey: MeasurementTechniqueType
-  - name: behavioral technique
-    schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 5769918046
-  numberOfFiles: 283
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 5234698260
+  numberOfFiles: 269
   numberOfSubjects: 1
   schemaKey: AssetsSummary
   species:
@@ -58,16 +67,19 @@ assetsSummary:
   variableMeasured:
   - ElectrodeGroup
   - ElectricalSeries
+  - ProcessingModule
   - Units
   - SpatialSeries
-  - ProcessingModule
-citation: Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2025) Pyramidal
+citation: Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2026) Pyramidal
   tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor
   tasks (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001636/draft
 contributor:
 - affiliation:
   - identifier: https://ror.org/01an3r305
     name: University of Pittsburgh
+    schemaKey: Affiliation
+  - identifier: https://ror.org/00jfeg660
+    name: Center for the Neural Basis of Cognition
     schemaKey: Affiliation
   email: rturner@pitt.edu
   identifier: 0000-0002-6074-4365
@@ -123,6 +135,16 @@ description: 'Electrophysiology recordings from primary motor cortex (M1) of mac
 ethicsApproval: []
 id: DANDI:001636/draft
 identifier: DANDI:001636
+keywords:
+- visuomotor
+- Pyramidal tract neurons
+- corticostriatal neurons
+- MPTP
+- macaque
+- electrophysiology
+- Parkinsonism
+- primary motor cortex
+- stretch reflex
 license:
 - spdx:CC-BY-4.0
 manifestLocation:

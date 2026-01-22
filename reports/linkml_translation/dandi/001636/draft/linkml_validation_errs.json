@@ -186,12 +186,81 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Turner, Robert', 'email': 'rturner@pitt.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6074-4365', 'affiliation': [{'name': 'University of Pittsburgh', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01an3r305'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'Parkinsonism', 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_0080855'} is not of type 'string' in /about/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Turner, Robert', 'email': 'rturner@pitt.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6074-4365', 'affiliation': [{'name': 'University of Pittsburgh', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01an3r305'}], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Parkinsonism', 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_0080855'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        8
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'cerebral peduncle', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002623'} is not of type 'string' in /about/9",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'cerebral peduncle', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002623'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        9
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'putamen', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001874'} is not of type 'string' in /about/10",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'putamen', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001874'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        10
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Turner, Robert', 'email': 'rturner@pitt.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6074-4365', 'affiliation': [{'name': 'University of Pittsburgh', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01an3r305'}, {'name': 'Center for the Neural Basis of Cognition', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jfeg660'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Turner, Robert', 'email': 'rturner@pitt.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6074-4365', 'affiliation': [{'name': 'University of Pittsburgh', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01an3r305'}, {'name': 'Center for the Neural Basis of Cognition', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jfeg660'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
