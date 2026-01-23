@@ -79,7 +79,12 @@
     "electrophysiology",
     "Parkinsonism",
     "primary motor cortex",
-    "stretch reflex"
+    "stretch reflex",
+    "PT neurons",
+    "IT neurons",
+    "Extratelencephalic neurons",
+    "Intratelencephalic neurons",
+    "cortical projection neurons"
   ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001636",
@@ -156,6 +161,14 @@
       "schemaKey": "Organization",
       "identifier": "https://ror.org/01cwqze88",
       "awardNumber": "NS044551"
+    },
+    {
+      "name": "Aligning Science Across Parkinson's (ASAP)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/03zj4c476"
     }
   ],
   "dateCreated": "2025-11-11T15:48:24.913269+00:00",
@@ -186,17 +199,25 @@
         "identifier": "RRID:SCR_015242"
       }
     ],
-    "numberOfBytes": 5234698260,
-    "numberOfFiles": 269,
+    "numberOfBytes": 6194317506,
+    "numberOfFiles": 298,
     "numberOfSubjects": 1,
     "variableMeasured": [
+      "SpatialSeries",
       "ElectrodeGroup",
-      "ElectricalSeries",
-      "ProcessingModule",
       "Units",
-      "SpatialSeries"
+      "ProcessingModule",
+      "ElectricalSeries"
     ],
     "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
       {
         "name": "analytical technique",
         "schemaKey": "MeasurementTechniqueType"
@@ -207,14 +228,6 @@
       },
       {
         "name": "multi electrode extracellular electrophysiology recording technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
-      {
-        "name": "surgical technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
-      {
-        "name": "behavioral technique",
         "schemaKey": "MeasurementTechniqueType"
       }
     ]

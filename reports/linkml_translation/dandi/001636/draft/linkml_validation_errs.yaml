@@ -368,3 +368,25 @@
     validator: type
     validator_value: string
   type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': "Aligning Science Across Parkinson''s (ASAP)", ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03zj4c476''}
+    is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': "Aligning Science Across Parkinson''s (ASAP)", ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/03zj4c476''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

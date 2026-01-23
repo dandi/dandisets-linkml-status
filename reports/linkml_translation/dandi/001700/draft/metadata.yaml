@@ -3,13 +3,23 @@ access:
   status: dandi:OpenAccess
 assetsSummary:
   approach: []
-  dataStandard: []
-  measurementTechnique: []
-  numberOfBytes: 653529486
-  numberOfFiles: 1
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 22444898807
+  numberOfFiles: 81
+  numberOfSubjects: 40
   schemaKey: AssetsSummary
-  species: []
-  variableMeasured: []
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_79684
+    name: Microtus ochrogaster - Prairie voles
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
 citation: Hoglen, Nerissa (2026) Loss of oxytocin receptor function disrupts neural
   signatures of pair bonding and fidelity in the nucleus accumbens (Version draft)
   [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001700/draft

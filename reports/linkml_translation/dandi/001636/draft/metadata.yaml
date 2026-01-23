@@ -46,18 +46,18 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  - name: surgical technique
-    schemaKey: MeasurementTechniqueType
-  - name: behavioral technique
-    schemaKey: MeasurementTechniqueType
-  numberOfBytes: 5234698260
-  numberOfFiles: 269
+  numberOfBytes: 6194317506
+  numberOfFiles: 298
   numberOfSubjects: 1
   schemaKey: AssetsSummary
   species:
@@ -65,11 +65,11 @@ assetsSummary:
     name: Macaca mulatta - Rhesus monkey
     schemaKey: SpeciesType
   variableMeasured:
-  - ElectrodeGroup
-  - ElectricalSeries
-  - ProcessingModule
-  - Units
   - SpatialSeries
+  - ElectrodeGroup
+  - Units
+  - ProcessingModule
+  - ElectricalSeries
 citation: Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2026) Pyramidal
   tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor
   tasks (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001636/draft
@@ -121,6 +121,11 @@ contributor:
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- identifier: https://ror.org/03zj4c476
+  name: Aligning Science Across Parkinson's (ASAP)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2025-11-11T15:48:24.913269+00:00'
 description: 'Electrophysiology recordings from primary motor cortex (M1) of macaque
   monkeys (Macaca mulatta) during visuomotor step-tracking tasks, collected before
@@ -145,6 +150,11 @@ keywords:
 - Parkinsonism
 - primary motor cortex
 - stretch reflex
+- PT neurons
+- IT neurons
+- Extratelencephalic neurons
+- Intratelencephalic neurons
+- cortical projection neurons
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
