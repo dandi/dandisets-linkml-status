@@ -1,0 +1,151 @@
+{
+  "id": "DANDI:000620/draft",
+  "url": "https://dandiarchive.org/dandiset/000620/draft",
+  "name": "Multi-object working memory in macaque frontal cortex (N. Watters, J. Gabel, J. Tenenbaum, M. Jazayeri)",
+  "about": [],
+  "access": [
+    {
+      "status": "dandi:OpenAccess",
+      "schemaKey": "AccessRequirements"
+    }
+  ],
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "version": "draft",
+  "citation": "Watters, Nick; Gabel, John; Jazayeri, Mehrdad (2026) Multi-object working memory in macaque frontal cortex (N. Watters, J. Gabel, J. Tenenbaum, M. Jazayeri) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000620/draft",
+  "keywords": [
+    "macaque",
+    "primate",
+    "electrophysiology",
+    "neuropixels",
+    "working memory",
+    "frontal cortex",
+    "FEF",
+    "DMFC"
+  ],
+  "schemaKey": "Dandiset",
+  "identifier": "DANDI:000620",
+  "repository": "https://dandiarchive.org",
+  "contributor": [
+    {
+      "name": "National Institutes of Health (NIH)",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "5 R01 NS 119519-03"
+    },
+    {
+      "name": "Watters, Nick",
+      "email": "nwatters@mit.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson",
+        "dcite:DataCollector",
+        "dcite:DataManager",
+        "dcite:FormalAnalysis",
+        "dcite:Maintainer",
+        "dcite:Investigation",
+        "dcite:Methodology",
+        "dcite:ProjectLeader",
+        "dcite:Researcher"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-7757-7700",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Gabel, John",
+      "email": "gabel@mit.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    },
+    {
+      "name": "Jazayeri, Mehrdad",
+      "email": "mjaz@mit.edu",
+      "roleName": [
+        "dcite:Author",
+        "dcite:Conceptualization",
+        "dcite:FundingAcquisition"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [],
+      "includeInCitation": true
+    }
+  ],
+  "dateCreated": "2023-08-09T18:02:50.024110+00:00",
+  "description": "Dataset for macaque multi-object working memory task with frontal cortex neurophysiology recordings. See https://github.com/jazlab/multi_object_memory_2025 for usage instructions.",
+  "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca mulatta - Rhesus monkey",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9544"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
+    "schemaKey": "AssetsSummary",
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 5490107572879,
+    "numberOfFiles": 142,
+    "numberOfSubjects": 2,
+    "variableMeasured": [
+      "ElectricalSeries",
+      "ElectrodeGroup",
+      "ProcessingModule",
+      "Units",
+      "SpatialSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "multi electrode extracellular electrophysiology recording technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  },
+  "schemaVersion": "0.6.4",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [],
+  "manifestLocation": [
+    "https://api.dandiarchive.org/api/dandisets/000620/versions/draft/assets/"
+  ]
+}

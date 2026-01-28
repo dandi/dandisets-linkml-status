@@ -1,0 +1,44 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Brain'', ''schemaKey'': ''Anatomy'', ''identifier'': ''UBERON:0014602''}
+    is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Brain'', ''schemaKey'': ''Anatomy'', ''identifier'': ''UBERON:0014602''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Xu, Yuanzhong'', ''email'': ''yuanzhong.xu@uth.tmc.edu'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-5264-5324'', ''affiliation'': [], ''awardNumber'': ''MH133228 '',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Xu, Yuanzhong'', ''email'': ''yuanzhong.xu@uth.tmc.edu'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-5264-5324'', ''affiliation'': [], ''awardNumber'': ''MH133228 '',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation

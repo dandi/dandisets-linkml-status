@@ -1,0 +1,96 @@
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''5 R01 NS 119519-03''} is not
+    of type ''string'' in /contributor/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 0
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''5 R01 NS 119519-03''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Watters, Nick'', ''email'': ''nwatters@mit.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataManager'',
+    ''dcite:FormalAnalysis'', ''dcite:Maintainer'', ''dcite:Investigation'', ''dcite:Methodology'',
+    ''dcite:ProjectLeader'', ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-7757-7700'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Watters, Nick'', ''email'': ''nwatters@mit.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataManager'',
+      ''dcite:FormalAnalysis'', ''dcite:Maintainer'', ''dcite:Investigation'', ''dcite:Methodology'',
+      ''dcite:ProjectLeader'', ''dcite:Researcher''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-7757-7700'', ''affiliation'': [], ''includeInCitation'': True} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Gabel, John'', ''email'': ''gabel@mit.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gabel, John'', ''email'': ''gabel@mit.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Jazayeri, Mehrdad'', ''email'': ''mjaz@mit.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:FundingAcquisition''],
+    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
+    not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Jazayeri, Mehrdad'', ''email'': ''mjaz@mit.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:FundingAcquisition''],
+      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
