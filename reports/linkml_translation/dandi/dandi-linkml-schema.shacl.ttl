@@ -8,6 +8,12 @@ test_schema:Agent a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:name ],
+        [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -15,60 +21,60 @@ test_schema:Agent a sh:NodeShape ;
             sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:name ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+            sh:order 3 ;
+            sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
             sh:path test_schema:identifier ],
-        [ sh:datatype xsd:string ;
+        [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:id ] ;
+            sh:order 2 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ] ;
     sh:targetClass test_schema:Agent .
 
 test_schema:Asset a sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( test_schema:publishedBy test_schema:datePublished rdf:type ) ;
-    sh:property [ sh:class test_schema:BioSample ;
+    sh:ignoredProperties ( test_schema:datePublished test_schema:publishedBy rdf:type ) ;
+    sh:property [ sh:class test_schema:Resource ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 14 ;
-            sh:path test_schema:wasDerivedFrom ],
+            sh:order 25 ;
+            sh:path test_schema:relatedResource ],
+        [ sh:class test_schema:Activity ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 30 ;
+            sh:path test_schema:wasGeneratedBy ],
         [ sh:datatype xsd:string ;
             sh:nodeKind sh:Literal ;
-            sh:order 18 ;
-            sh:path test_schema:contributor ],
-        [ sh:class test_schema:Participant ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 13 ;
-            sh:path test_schema:wasAttributedTo ],
+            sh:order 21 ;
+            sh:path test_schema:keywords ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 29 ;
-            sh:path test_schema:url ;
+            sh:order 26 ;
+            sh:path test_schema:repository ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:digest ],
-        [ sh:datatype xsd:dateTime ;
+            sh:order 8 ;
+            sh:path test_schema:encodingFormat ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:dateModified ],
+            sh:order 32 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:anyURI ;
+            sh:nodeKind sh:Literal ;
+            sh:order 24 ;
+            sh:path test_schema:protocol ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -76,87 +82,58 @@ test_schema:Asset a sh:NodeShape ;
             sh:path test_schema:dataType ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 21 ;
-            sh:path test_schema:keywords ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 17 ;
-            sh:path test_schema:acknowledgement ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:contentSize ],
-        [ sh:in ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
-            sh:order 22 ;
-            sh:path test_schema:license ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 19 ;
-            sh:path test_schema:description ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:blobDateModified ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 15 ;
-            sh:path test_schema:about ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 31 ;
-            sh:path test_schema:id ],
-        [ sh:class test_schema:EthicsApproval ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 20 ;
-            sh:path test_schema:ethicsApproval ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 28 ;
-            sh:path test_schema:studyTarget ],
-        [ sh:class test_schema:PropertyValue ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 12 ;
-            sh:path test_schema:variableMeasured ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "0.7.0"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 27 ;
-            sh:path test_schema:schemaVersion ],
-        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:identifier ;
             sh:pattern "^(?:urn:uuid:)?[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?4[0-9a-fA-F]{3}-?[89abAB][0-9a-fA-F]{3}-?[0-9a-fA-F]{12}$" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 26 ;
-            sh:path test_schema:repository ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:class test_schema:MeasurementTechniqueType ;
+        [ sh:class test_schema:AccessRequirements ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 9 ;
-            sh:path test_schema:measurementTechnique ],
-        [ sh:class test_schema:Resource ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 25 ;
-            sh:path test_schema:relatedResource ],
+            sh:order 16 ;
+            sh:path test_schema:access ],
         [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 28 ;
+            sh:path test_schema:studyTarget ],
+        [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 32 ;
-            sh:path test_schema:schemaKey ],
+            sh:order 6 ;
+            sh:path test_schema:dateModified ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "0.7.0"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 27 ;
+            sh:path test_schema:schemaVersion ],
+        [ sh:class test_schema:EthicsApproval ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 20 ;
+            sh:path test_schema:ethicsApproval ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:contentSize ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 10 ;
+            sh:path test_schema:path ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:blobDateModified ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:digest ],
         [ sh:datatype xsd:anyURI ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -166,63 +143,203 @@ test_schema:Asset a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
+            sh:order 31 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 29 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:anyURI ;
+            sh:nodeKind sh:Literal ;
+            sh:order 11 ;
+            sh:path test_schema:sameAs ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 15 ;
+            sh:path test_schema:about ],
+        [ sh:class test_schema:BioSample ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 14 ;
+            sh:path test_schema:wasDerivedFrom ],
+        [ sh:in ( <spdx:CC-BY-4.0> <spdx:CC0-1.0> ) ;
+            sh:order 22 ;
+            sh:path test_schema:license ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 18 ;
+            sh:path test_schema:contributor ],
+        [ sh:class test_schema:ApproachType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 2 ;
+            sh:path test_schema:approach ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 19 ;
+            sh:path test_schema:description ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
             sh:order 23 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 17 ;
+            sh:path test_schema:acknowledgement ],
+        [ sh:class test_schema:Participant ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 13 ;
+            sh:path test_schema:wasAttributedTo ],
+        [ sh:class test_schema:PropertyValue ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 12 ;
+            sh:path test_schema:variableMeasured ],
+        [ sh:class test_schema:MeasurementTechniqueType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 9 ;
+            sh:path test_schema:measurementTechnique ] ;
+    sh:targetClass test_schema:Asset .
+
+test_schema:BareAsset a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( test_schema:identifier test_schema:contentUrl test_schema:datePublished test_schema:publishedBy rdf:type ) ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 17 ;
+            sh:path test_schema:description ],
+        [ sh:datatype xsd:anyURI ;
+            sh:nodeKind sh:Literal ;
+            sh:order 22 ;
+            sh:path test_schema:protocol ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 15 ;
+            sh:path test_schema:acknowledgement ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 24 ;
+            sh:path test_schema:repository ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:class test_schema:ApproachType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path test_schema:approach ],
+        [ sh:class test_schema:PropertyValue ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 10 ;
+            sh:path test_schema:variableMeasured ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 21 ;
             sh:path test_schema:name ;
             sh:pattern "^(?=.{,150}$)" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:encodingFormat ],
-        [ sh:class test_schema:AccessRequirements ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 16 ;
-            sh:path test_schema:access ],
-        [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 11 ;
-            sh:path test_schema:sameAs ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 24 ;
-            sh:path test_schema:protocol ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:class test_schema:Activity ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 30 ;
-            sh:path test_schema:wasGeneratedBy ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 10 ;
-            sh:path test_schema:path ],
-        [ sh:class test_schema:ApproachType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 2 ;
-            sh:path test_schema:approach ] ;
-    sh:targetClass test_schema:Asset .
-
-test_schema:BareAsset a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type test_schema:identifier test_schema:publishedBy test_schema:contentUrl test_schema:datePublished ) ;
-    sh:property [ sh:datatype xsd:string ;
+            sh:order 5 ;
+            sh:path test_schema:digest ],
+        [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 17 ;
-            sh:path test_schema:description ],
+            sh:order 4 ;
+            sh:path test_schema:dateModified ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "0.7.0"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 25 ;
             sh:path test_schema:schemaVersion ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:dataType ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:anyURI ;
+            sh:nodeKind sh:Literal ;
+            sh:order 9 ;
+            sh:path test_schema:sameAs ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 30 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:class test_schema:Activity ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 28 ;
+            sh:path test_schema:wasGeneratedBy ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 26 ;
+            sh:path test_schema:studyTarget ],
         [ sh:class test_schema:MeasurementTechniqueType ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 7 ;
             sh:path test_schema:measurementTechnique ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:contentSize ],
+        [ sh:class test_schema:BioSample ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 12 ;
+            sh:path test_schema:wasDerivedFrom ],
+        [ sh:class test_schema:AccessRequirements ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 14 ;
+            sh:path test_schema:access ],
+        [ sh:in ( <spdx:CC-BY-4.0> <spdx:CC0-1.0> ) ;
+            sh:order 20 ;
+            sh:path test_schema:license ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 16 ;
+            sh:path test_schema:contributor ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path test_schema:encodingFormat ],
+        [ sh:class test_schema:EthicsApproval ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 18 ;
+            sh:path test_schema:ethicsApproval ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 29 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:blobDateModified ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 13 ;
+            sh:path test_schema:about ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 27 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:class test_schema:Resource ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 23 ;
@@ -232,149 +349,21 @@ test_schema:BareAsset a sh:NodeShape ;
             sh:order 11 ;
             sh:path test_schema:wasAttributedTo ],
         [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 19 ;
+            sh:path test_schema:keywords ],
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 8 ;
-            sh:path test_schema:path ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 27 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 30 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path test_schema:sameAs ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 22 ;
-            sh:path test_schema:protocol ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 26 ;
-            sh:path test_schema:studyTarget ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 21 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:dataType ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 19 ;
-            sh:path test_schema:keywords ],
-        [ sh:class test_schema:ApproachType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 0 ;
-            sh:path test_schema:approach ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 15 ;
-            sh:path test_schema:acknowledgement ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:encodingFormat ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 24 ;
-            sh:path test_schema:repository ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:class test_schema:AccessRequirements ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 14 ;
-            sh:path test_schema:access ],
-        [ sh:class test_schema:BioSample ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 12 ;
-            sh:path test_schema:wasDerivedFrom ],
-        [ sh:class test_schema:Activity ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 28 ;
-            sh:path test_schema:wasGeneratedBy ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:blobDateModified ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:dateModified ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 16 ;
-            sh:path test_schema:contributor ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 29 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path test_schema:digest ],
-        [ sh:class test_schema:PropertyValue ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 10 ;
-            sh:path test_schema:variableMeasured ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:contentSize ],
-        [ sh:class test_schema:EthicsApproval ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 18 ;
-            sh:path test_schema:ethicsApproval ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 13 ;
-            sh:path test_schema:about ],
-        [ sh:in ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
-            sh:order 20 ;
-            sh:path test_schema:license ] ;
+            sh:path test_schema:path ] ;
     sh:targetClass test_schema:BareAsset .
 
 test_schema:BaseType a sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( test_schema:dxdate rdf:type ) ;
+    sh:ignoredProperties ( rdf:type test_schema:dxdate ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
@@ -384,84 +373,32 @@ test_schema:BaseType a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path test_schema:identifier ] ;
-    sh:targetClass test_schema:BaseType .
-
-test_schema:CommonModel a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( test_schema:identifier test_schema:assetsSummary test_schema:dateModified test_schema:measurementTechnique test_schema:manifestLocation test_schema:releaseNotes test_schema:version test_schema:sameAs test_schema:digest test_schema:wasDerivedFrom test_schema:encodingFormat test_schema:publishedBy test_schema:blobDateModified test_schema:dateCreated test_schema:doi test_schema:wasAttributedTo test_schema:path test_schema:contentUrl test_schema:variableMeasured rdf:type test_schema:citation test_schema:contentSize test_schema:datePublished test_schema:dataType test_schema:approach ) ;
-    sh:property [ sh:class test_schema:EthicsApproval ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 5 ;
-            sh:path test_schema:ethicsApproval ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:keywords ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 13 ;
-            sh:path test_schema:studyTarget ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "0.7.0"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 12 ;
-            sh:path test_schema:schemaVersion ],
+            sh:path test_schema:identifier ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 17 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 11 ;
-            sh:path test_schema:repository ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
             sh:order 3 ;
-            sh:path test_schema:contributor ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 16 ;
-            sh:path test_schema:id ],
-        [ sh:in ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
-            sh:order 7 ;
-            sh:path test_schema:license ],
-        [ sh:class test_schema:Activity ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 15 ;
-            sh:path test_schema:wasGeneratedBy ],
-        [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path test_schema:protocol ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:class test_schema:AccessRequirements ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 1 ;
-            sh:path test_schema:access ],
+            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path test_schema:acknowledgement ],
+            sh:path test_schema:id ] ;
+    sh:targetClass test_schema:BaseType .
+
+test_schema:CommonModel a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( test_schema:manifestLocation test_schema:wasDerivedFrom test_schema:digest test_schema:dataType test_schema:variableMeasured test_schema:assetsSummary test_schema:sameAs test_schema:version test_schema:blobDateModified test_schema:releaseNotes test_schema:identifier test_schema:contentUrl test_schema:approach test_schema:doi test_schema:path test_schema:dateCreated test_schema:encodingFormat test_schema:dateModified test_schema:datePublished test_schema:citation test_schema:publishedBy test_schema:contentSize test_schema:measurementTechnique test_schema:wasAttributedTo rdf:type ) ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:description ],
         [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 14 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+            sh:order 6 ;
+            sh:path test_schema:keywords ],
         [ sh:class test_schema:Resource ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 10 ;
@@ -469,47 +406,86 @@ test_schema:CommonModel a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:description ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:about ] ;
-    sh:targetClass test_schema:CommonModel .
-
-test_schema:Contributor a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type test_schema:contactPoint test_schema:affiliation ) ;
-    sh:property [ sh:datatype xsd:boolean ;
-            sh:defaultValue true ;
+            sh:order 8 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:class test_schema:Activity ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 15 ;
+            sh:path test_schema:wasGeneratedBy ],
+        [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:includeInCitation ],
+            sh:order 11 ;
+            sh:path test_schema:repository ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path test_schema:identifier ],
+            sh:path test_schema:acknowledgement ],
         [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:name ],
+            sh:order 0 ;
+            sh:path test_schema:about ],
+        [ sh:in ( <spdx:CC-BY-4.0> <spdx:CC0-1.0> ) ;
+            sh:order 7 ;
+            sh:path test_schema:license ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 13 ;
+            sh:path test_schema:studyTarget ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 8 ;
+            sh:order 17 ;
             sh:path test_schema:schemaKey ],
+        [ sh:class test_schema:AccessRequirements ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path test_schema:access ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:awardNumber ],
-        [ sh:in ( <dcite:Author> <dcite:Conceptualization> <dcite:ContactPerson> <dcite:DataCollector> <dcite:DataCurator> <dcite:DataManager> <dcite:FormalAnalysis> <dcite:FundingAcquisition> <dcite:Investigation> <dcite:Maintainer> <dcite:Methodology> <dcite:Producer> <dcite:ProjectLeader> <dcite:ProjectManager> <dcite:ProjectMember> <dcite:ProjectAdministration> <dcite:Researcher> <dcite:Resources> <dcite:Software> <dcite:Supervision> <dcite:Validation> <dcite:Visualization> <dcite:Funder> <dcite:Sponsor> <dcite:StudyParticipant> <dcite:Affiliation> <dcite:EthicsApproval> <dcite:Other> ) ;
+            sh:order 16 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 14 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:class test_schema:EthicsApproval ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 5 ;
-            sh:path test_schema:roleName ],
+            sh:path test_schema:ethicsApproval ],
+        [ sh:datatype xsd:anyURI ;
+            sh:nodeKind sh:Literal ;
+            sh:order 9 ;
+            sh:path test_schema:protocol ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:contributor ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "0.7.0"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 12 ;
+            sh:path test_schema:schemaVersion ] ;
+    sh:targetClass test_schema:CommonModel .
+
+test_schema:Contributor a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type test_schema:affiliation test_schema:contactPoint ) ;
+    sh:property [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -518,54 +494,77 @@ test_schema:Contributor a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:name ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
             sh:order 7 ;
             sh:path test_schema:id ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ] ;
-    sh:targetClass test_schema:Contributor .
-
-test_schema:DandiBaseModel a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( test_schema:wasGeneratedBy test_schema:roleName test_schema:dataStandard test_schema:identifier test_schema:assetsSummary test_schema:valueReference test_schema:measurementTechnique test_schema:endDate test_schema:value test_schema:version test_schema:releaseNotes test_schema:sameAs test_schema:digest test_schema:resourceType test_schema:keywords test_schema:encodingFormat test_schema:publishedBy test_schema:contactPoint test_schema:name test_schema:altName test_schema:numberOfBytes test_schema:doi test_schema:numberOfSubjects test_schema:access test_schema:locusType test_schema:schemaVersion test_schema:wasAttributedTo test_schema:disorder test_schema:numberOfSamples test_schema:anatomy test_schema:relatedResource test_schema:path test_schema:email test_schema:numberOfFiles test_schema:hasMember test_schema:genotype test_schema:wasAssociatedWith test_schema:maxValue test_schema:contributor test_schema:numberOfCells test_schema:repository test_schema:vendor test_schema:alleleSymbol test_schema:propertyID test_schema:dateModified test_schema:dxdate test_schema:dataType test_schema:assayType test_schema:datePublished test_schema:ethicsApproval test_schema:studyTarget test_schema:cellLine test_schema:contentSize test_schema:unitText test_schema:manifestLocation test_schema:minValue test_schema:wasDerivedFrom test_schema:startDate test_schema:alleles test_schema:locus test_schema:blobDateModified test_schema:dateCreated test_schema:about test_schema:embargoedUntil test_schema:affiliation test_schema:sex test_schema:awardNumber test_schema:description test_schema:alleleType test_schema:age test_schema:contentUrl test_schema:license test_schema:protocol test_schema:variableMeasured test_schema:relation rdf:type test_schema:status test_schema:relatedParticipant test_schema:strain test_schema:used test_schema:citation test_schema:species test_schema:acknowledgement test_schema:url test_schema:approach test_schema:sampleType test_schema:includeInCitation ) ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path test_schema:id ] ;
+            sh:path test_schema:awardNumber ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:in ( <dcite:Author> <dcite:Conceptualization> <dcite:ContactPerson> <dcite:DataCollector> <dcite:DataCurator> <dcite:DataManager> <dcite:FormalAnalysis> <dcite:FundingAcquisition> <dcite:Investigation> <dcite:Maintainer> <dcite:Methodology> <dcite:Producer> <dcite:ProjectLeader> <dcite:ProjectManager> <dcite:ProjectMember> <dcite:ProjectAdministration> <dcite:Researcher> <dcite:Resources> <dcite:Software> <dcite:Supervision> <dcite:Validation> <dcite:Visualization> <dcite:Funder> <dcite:Sponsor> <dcite:StudyParticipant> <dcite:Affiliation> <dcite:EthicsApproval> <dcite:Other> ) ;
+            sh:order 5 ;
+            sh:path test_schema:roleName ],
+        [ sh:datatype xsd:boolean ;
+            sh:defaultValue true ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:includeInCitation ] ;
+    sh:targetClass test_schema:Contributor .
+
+test_schema:DandiBaseModel a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( test_schema:email test_schema:numberOfFiles test_schema:numberOfSubjects test_schema:manifestLocation test_schema:vendor test_schema:keywords test_schema:dataType test_schema:about test_schema:minValue test_schema:strain test_schema:name test_schema:sex test_schema:assayType test_schema:contentUrl test_schema:sampleType test_schema:affiliation test_schema:alleleSymbol test_schema:anatomy test_schema:relatedParticipant test_schema:numberOfSamples test_schema:numberOfCells test_schema:altName test_schema:dateModified test_schema:citation test_schema:unitText test_schema:contentSize test_schema:measurementTechnique test_schema:studyTarget test_schema:wasAttributedTo test_schema:status test_schema:disorder test_schema:dataStandard test_schema:dxdate test_schema:value test_schema:awardNumber test_schema:contactPoint test_schema:relatedResource rdf:type test_schema:wasAssociatedWith test_schema:wasDerivedFrom test_schema:digest test_schema:maxValue test_schema:numberOfBytes test_schema:locus test_schema:variableMeasured test_schema:license test_schema:genotype test_schema:assetsSummary test_schema:sameAs test_schema:age test_schema:version test_schema:propertyID test_schema:blobDateModified test_schema:releaseNotes test_schema:identifier test_schema:endDate test_schema:hasMember test_schema:approach test_schema:doi test_schema:species test_schema:ethicsApproval test_schema:acknowledgement test_schema:access test_schema:path test_schema:roleName test_schema:dateCreated test_schema:valueReference test_schema:startDate test_schema:url test_schema:encodingFormat test_schema:alleleType test_schema:protocol test_schema:datePublished test_schema:publishedBy test_schema:relation test_schema:description test_schema:embargoedUntil test_schema:cellLine test_schema:contributor test_schema:wasGeneratedBy test_schema:includeInCitation test_schema:locusType test_schema:resourceType test_schema:schemaVersion test_schema:alleles test_schema:repository test_schema:used ) ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:schemaKey ] ;
     sh:targetClass test_schema:DandiBaseModel .
 
 test_schema:Dandiset a sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( test_schema:doi test_schema:releaseNotes rdf:type test_schema:publishedBy test_schema:datePublished ) ;
+    sh:ignoredProperties ( test_schema:releaseNotes test_schema:doi test_schema:datePublished test_schema:publishedBy rdf:type ) ;
     sh:property [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 16 ;
-            sh:path test_schema:protocol ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:class test_schema:Activity ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 22 ;
-            sh:path test_schema:wasGeneratedBy ],
-        [ sh:class test_schema:AccessRequirements ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 8 ;
-            sh:path test_schema:access ],
-        [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 21 ;
-            sh:path test_schema:url ;
+            sh:order 18 ;
+            sh:path test_schema:repository ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:dateModified ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:identifier ;
+            sh:pattern "^[A-Z][-A-Z]*:\\d{6}$" ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
@@ -573,49 +572,20 @@ test_schema:Dandiset a sh:NodeShape ;
             sh:order 24 ;
             sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:about ],
-        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 11 ;
             sh:path test_schema:description ],
         [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:citation ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "0.7.0"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 19 ;
-            sh:path test_schema:schemaVersion ],
+            sh:order 20 ;
+            sh:path test_schema:studyTarget ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 6 ;
             sh:path test_schema:version ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:dateCreated ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 20 ;
-            sh:path test_schema:studyTarget ],
-        [ sh:in ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
-            sh:order 14 ;
-            sh:path test_schema:license ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 23 ;
-            sh:path test_schema:id ],
         [ sh:class test_schema:EthicsApproval ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 12 ;
@@ -629,66 +599,96 @@ test_schema:Dandiset a sh:NodeShape ;
         [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:dateModified ],
+            sh:order 2 ;
+            sh:path test_schema:dateCreated ],
         [ sh:datatype xsd:string ;
             sh:nodeKind sh:Literal ;
             sh:order 13 ;
             sh:path test_schema:keywords ],
-        [ sh:class test_schema:AssetsSummary ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
+        [ sh:in ( <spdx:CC-BY-4.0> <spdx:CC0-1.0> ) ;
+            sh:order 14 ;
+            sh:path test_schema:license ],
+        [ sh:class test_schema:Activity ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 0 ;
-            sh:path test_schema:assetsSummary ],
-        [ sh:class test_schema:Resource ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 17 ;
-            sh:path test_schema:relatedResource ],
+            sh:order 22 ;
+            sh:path test_schema:wasGeneratedBy ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path test_schema:acknowledgement ],
+            sh:order 23 ;
+            sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:identifier ;
-            sh:pattern "^[A-Z][-A-Z]*:\\d{6}$" ],
+            sh:order 1 ;
+            sh:path test_schema:citation ],
+        [ sh:datatype xsd:anyURI ;
+            sh:nodeKind sh:Literal ;
+            sh:order 16 ;
+            sh:path test_schema:protocol ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:class test_schema:AccessRequirements ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 8 ;
+            sh:path test_schema:access ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:about ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 10 ;
+            sh:path test_schema:contributor ],
         [ sh:datatype xsd:anyURI ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path test_schema:manifestLocation ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 10 ;
-            sh:path test_schema:contributor ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 18 ;
-            sh:path test_schema:repository ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ] ;
+            sh:order 21 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:class test_schema:Resource ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 17 ;
+            sh:path test_schema:relatedResource ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "0.7.0"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 19 ;
+            sh:path test_schema:schemaVersion ],
+        [ sh:class test_schema:AssetsSummary ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path test_schema:assetsSummary ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 9 ;
+            sh:path test_schema:acknowledgement ] ;
     sh:targetClass test_schema:Dandiset .
 
 test_schema:GenericType a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -705,18 +705,7 @@ test_schema:GenericType a sh:NodeShape ;
 test_schema:GenotypeInfo a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:id ],
-        [ sh:class test_schema:Locus ;
+    sh:property [ sh:class test_schema:Locus ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
@@ -726,11 +715,22 @@ test_schema:GenotypeInfo a sh:NodeShape ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 2 ;
             sh:path test_schema:wasGeneratedBy ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:id ],
         [ sh:class test_schema:Allele ;
             sh:minCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 0 ;
-            sh:path test_schema:alleles ] ;
+            sh:path test_schema:alleles ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:schemaKey ] ;
     sh:targetClass test_schema:GenotypeInfo .
 
 test_schema:Person a sh:NodeShape ;
@@ -739,8 +739,9 @@ test_schema:Person a sh:NodeShape ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:email ],
+            sh:order 3 ;
+            sh:path test_schema:identifier ;
+            sh:pattern "^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$" ],
         [ sh:datatype xsd:boolean ;
             sh:defaultValue true ;
             sh:maxCount 1 ;
@@ -757,27 +758,6 @@ test_schema:Person a sh:NodeShape ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 0 ;
             sh:path test_schema:affiliation ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path test_schema:name ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:identifier ;
-            sh:pattern "^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$" ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:awardNumber ],
         [ sh:in ( <dcite:Author> <dcite:Conceptualization> <dcite:ContactPerson> <dcite:DataCollector> <dcite:DataCurator> <dcite:DataManager> <dcite:FormalAnalysis> <dcite:FundingAcquisition> <dcite:Investigation> <dcite:Maintainer> <dcite:Methodology> <dcite:Producer> <dcite:ProjectLeader> <dcite:ProjectManager> <dcite:ProjectMember> <dcite:ProjectAdministration> <dcite:Researcher> <dcite:Resources> <dcite:Software> <dcite:Supervision> <dcite:Validation> <dcite:Visualization> <dcite:Funder> <dcite:Sponsor> <dcite:StudyParticipant> <dcite:Affiliation> <dcite:EthicsApproval> <dcite:Other> ) ;
             sh:order 6 ;
             sh:path test_schema:roleName ],
@@ -786,21 +766,43 @@ test_schema:Person a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 7 ;
             sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ] ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:awardNumber ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:email ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 5 ;
+            sh:path test_schema:name ] ;
     sh:targetClass test_schema:Person .
 
 test_schema:Project a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:dateTime ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:startDate ],
+            sh:order 8 ;
+            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:wasAssociatedWith ],
+            sh:order 0 ;
+            sh:path test_schema:description ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -811,22 +813,11 @@ test_schema:Project a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:identifier ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:description ],
         [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:endDate ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:schemaKey ],
+            sh:order 4 ;
+            sh:path test_schema:startDate ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -837,38 +828,25 @@ test_schema:Project a sh:NodeShape ;
         [ sh:class test_schema:Equipment ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 5 ;
-            sh:path test_schema:used ] ;
+            sh:path test_schema:used ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path test_schema:wasAssociatedWith ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:endDate ] ;
     sh:targetClass test_schema:Project .
 
 test_schema:PublishActivity a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:description ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:endDate ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:startDate ],
-        [ sh:class test_schema:Equipment ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 5 ;
-            sh:path test_schema:used ],
+            sh:order 6 ;
+            sh:path test_schema:wasAssociatedWith ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
@@ -878,17 +856,39 @@ test_schema:PublishActivity a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:wasAssociatedWith ],
+            sh:order 0 ;
+            sh:path test_schema:description ],
+        [ sh:class test_schema:Equipment ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 5 ;
+            sh:path test_schema:used ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path test_schema:identifier ] ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:endDate ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:startDate ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:id ] ;
     sh:targetClass test_schema:PublishActivity .
 
 test_schema:Publishable a sh:NodeShape ;
@@ -896,12 +896,6 @@ test_schema:Publishable a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:publishedBy ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:id ],
@@ -916,101 +910,71 @@ test_schema:Publishable a sh:NodeShape ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path test_schema:datePublished ] ;
+            sh:path test_schema:datePublished ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:publishedBy ] ;
     sh:targetClass test_schema:Publishable .
 
 test_schema:PublishedAsset a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:publishedBy ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:contentSize ],
-        [ sh:class test_schema:MeasurementTechniqueType ;
+    sh:property [ sh:class test_schema:EthicsApproval ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 11 ;
-            sh:path test_schema:measurementTechnique ],
-        [ sh:in ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
+            sh:order 22 ;
+            sh:path test_schema:ethicsApproval ],
+        [ sh:in ( <spdx:CC-BY-4.0> <spdx:CC0-1.0> ) ;
             sh:order 24 ;
             sh:path test_schema:license ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 33 ;
-            sh:path test_schema:id ;
-            sh:pattern "^dandiasset:[a-f0-9]{8}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{12}$" ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 25 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
-        [ sh:class test_schema:Participant ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 15 ;
-            sh:path test_schema:wasAttributedTo ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 30 ;
-            sh:path test_schema:studyTarget ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:dateModified ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 23 ;
-            sh:path test_schema:keywords ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 17 ;
-            sh:path test_schema:about ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 34 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 21 ;
-            sh:path test_schema:description ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:datePublished ],
         [ sh:datatype xsd:anyURI ;
             sh:nodeKind sh:Literal ;
             sh:order 26 ;
             sh:path test_schema:protocol ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:anyURI ;
-            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:contentUrl ;
+            sh:order 13 ;
+            sh:path test_schema:sameAs ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:class test_schema:Activity ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 32 ;
+            sh:path test_schema:wasGeneratedBy ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 20 ;
+            sh:path test_schema:contributor ],
+        [ sh:class test_schema:MeasurementTechniqueType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 11 ;
+            sh:path test_schema:measurementTechnique ],
         [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path test_schema:blobDateModified ],
-        [ sh:class test_schema:EthicsApproval ;
+        [ sh:class test_schema:ApproachType ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 22 ;
-            sh:path test_schema:ethicsApproval ],
+            sh:order 4 ;
+            sh:path test_schema:approach ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 19 ;
+            sh:path test_schema:acknowledgement ],
+        [ sh:class test_schema:AccessRequirements ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 18 ;
+            sh:path test_schema:access ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 33 ;
+            sh:path test_schema:id ;
+            sh:pattern "^dandiasset:[a-f0-9]{8}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{12}$" ],
         [ sh:class test_schema:BioSample ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 16 ;
@@ -1019,8 +983,68 @@ test_schema:PublishedAsset a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path test_schema:contentSize ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 12 ;
+            sh:path test_schema:path ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 34 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:identifier ;
+            sh:pattern "^(?:urn:uuid:)?[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?4[0-9a-fA-F]{3}-?[89abAB][0-9a-fA-F]{3}-?[0-9a-fA-F]{12}$" ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:datePublished ],
+        [ sh:class test_schema:Resource ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 27 ;
+            sh:path test_schema:relatedResource ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 31 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:dateModified ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "0.7.0"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 29 ;
+            sh:path test_schema:schemaVersion ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
             sh:order 9 ;
             sh:path test_schema:digest ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 23 ;
+            sh:path test_schema:keywords ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 17 ;
+            sh:path test_schema:about ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -1031,130 +1055,188 @@ test_schema:PublishedAsset a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:identifier ;
-            sh:pattern "^(?:urn:uuid:)?[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?4[0-9a-fA-F]{3}-?[89abAB][0-9a-fA-F]{3}-?[0-9a-fA-F]{12}$" ],
-        [ sh:class test_schema:Resource ;
+            sh:order 1 ;
+            sh:path test_schema:publishedBy ],
+        [ sh:class test_schema:PropertyValue ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 27 ;
-            sh:path test_schema:relatedResource ],
-        [ sh:class test_schema:Activity ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 32 ;
-            sh:path test_schema:wasGeneratedBy ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 19 ;
-            sh:path test_schema:acknowledgement ],
+            sh:order 14 ;
+            sh:path test_schema:variableMeasured ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 28 ;
             sh:path test_schema:repository ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 25 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:class test_schema:Participant ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 15 ;
+            sh:path test_schema:wasAttributedTo ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 7 ;
             sh:path test_schema:dataType ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 31 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 30 ;
+            sh:path test_schema:studyTarget ],
+        [ sh:datatype xsd:anyURI ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 12 ;
-            sh:path test_schema:path ],
-        [ sh:class test_schema:ApproachType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 4 ;
-            sh:path test_schema:approach ],
-        [ sh:class test_schema:PropertyValue ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 14 ;
-            sh:path test_schema:variableMeasured ],
-        [ sh:datatype xsd:anyURI ;
-            sh:nodeKind sh:Literal ;
-            sh:order 13 ;
-            sh:path test_schema:sameAs ;
+            sh:order 2 ;
+            sh:path test_schema:contentUrl ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:class test_schema:AccessRequirements ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 18 ;
-            sh:path test_schema:access ],
         [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 20 ;
-            sh:path test_schema:contributor ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "0.7.0"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 29 ;
-            sh:path test_schema:schemaVersion ] ;
+            sh:order 21 ;
+            sh:path test_schema:description ] ;
     sh:targetClass test_schema:PublishedAsset .
 
 test_schema:PublishedDandiset a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
+    sh:property [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 13 ;
-            sh:path test_schema:acknowledgement ],
-        [ sh:datatype xsd:dateTime ;
+            sh:order 25 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:dateCreated ],
-        [ sh:class test_schema:Resource ;
+            sh:order 19 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "0.7.0"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 23 ;
+            sh:path test_schema:schemaVersion ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 24 ;
+            sh:path test_schema:studyTarget ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 17 ;
+            sh:path test_schema:keywords ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 11 ;
+            sh:path test_schema:about ],
+        [ sh:class test_schema:Activity ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 21 ;
-            sh:path test_schema:relatedResource ],
+            sh:order 26 ;
+            sh:path test_schema:wasGeneratedBy ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:doi ;
+            sh:pattern "^(10\\.\\d{4,}/[a-z][-a-z]*\\.\\d{6}/\\d+\\.\\d+\\.\\d+|)$" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path test_schema:citation ],
-        [ sh:datatype xsd:string ;
+        [ sh:datatype xsd:anyURI ;
+            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 14 ;
-            sh:path test_schema:contributor ],
-        [ sh:datatype xsd:dateTime ;
+            sh:order 9 ;
+            sh:path test_schema:manifestLocation ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:class test_schema:AccessRequirements ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 12 ;
+            sh:path test_schema:access ],
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:dateModified ],
+            sh:order 13 ;
+            sh:path test_schema:acknowledgement ],
+        [ sh:class test_schema:Resource ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 21 ;
+            sh:path test_schema:relatedResource ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:releaseNotes ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 10 ;
             sh:path test_schema:version ],
-        [ sh:class test_schema:EthicsApproval ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 16 ;
-            sh:path test_schema:ethicsApproval ],
-        [ sh:in ( <spdx:CC0-1.0> <spdx:CC-BY-4.0> ) ;
-            sh:order 18 ;
-            sh:path test_schema:license ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 14 ;
+            sh:path test_schema:contributor ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 28 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 22 ;
+            sh:path test_schema:repository ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:publishedBy ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:dateModified ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path test_schema:dateCreated ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:identifier ;
+            sh:pattern "^[A-Z][-A-Z]*:\\d{6}$" ],
         [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:datePublished ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 17 ;
-            sh:path test_schema:keywords ],
+        [ sh:class test_schema:AssetsSummary ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 4 ;
+            sh:path test_schema:assetsSummary ],
+        [ sh:in ( <spdx:CC-BY-4.0> <spdx:CC0-1.0> ) ;
+            sh:order 18 ;
+            sh:path test_schema:license ],
+        [ sh:class test_schema:EthicsApproval ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 16 ;
+            sh:path test_schema:ethicsApproval ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1165,104 +1247,34 @@ test_schema:PublishedDandiset a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 27 ;
             sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:publishedBy ],
-        [ sh:class test_schema:AssetsSummary ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 4 ;
-            sh:path test_schema:assetsSummary ],
         [ sh:datatype xsd:anyURI ;
             sh:nodeKind sh:Literal ;
             sh:order 20 ;
             sh:path test_schema:protocol ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 11 ;
-            sh:path test_schema:about ],
-        [ sh:class test_schema:AccessRequirements ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 12 ;
-            sh:path test_schema:access ],
-        [ sh:class test_schema:Activity ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 26 ;
-            sh:path test_schema:wasGeneratedBy ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:releaseNotes ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 19 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:identifier ;
-            sh:pattern "^[A-Z][-A-Z]*:\\d{6}$" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 22 ;
-            sh:path test_schema:repository ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:doi ;
-            sh:pattern "^(10\\.\\d{4,}/[a-z][-a-z]*\\.\\d{6}/\\d+\\.\\d+\\.\\d+|)$" ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 25 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "0.7.0"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 23 ;
-            sh:path test_schema:schemaVersion ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 28 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 24 ;
-            sh:path test_schema:studyTarget ],
-        [ sh:datatype xsd:anyURI ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path test_schema:manifestLocation ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ] ;
     sh:targetClass test_schema:PublishedDandiset .
 
 test_schema:Software a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
+    sh:property [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:name ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 5 ;
+            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1275,18 +1287,6 @@ test_schema:Software a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path test_schema:version ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1304,6 +1304,12 @@ test_schema:Affiliation a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
@@ -1314,12 +1320,6 @@ test_schema:Affiliation a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:name ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1333,9 +1333,10 @@ test_schema:Allele a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
+            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:id ],
+            sh:order 2 ;
+            sh:path test_schema:identifier ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1343,27 +1344,37 @@ test_schema:Allele a sh:NodeShape ;
             sh:path test_schema:alleleSymbol ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:identifier ],
+            sh:order 3 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:alleleType ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 4 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:alleleType ] ;
+            sh:path test_schema:schemaKey ] ;
     sh:targetClass test_schema:Allele .
 
 test_schema:Anatomy a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
@@ -1373,18 +1384,7 @@ test_schema:Anatomy a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path test_schema:identifier ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ] ;
+            sh:path test_schema:identifier ] ;
     sh:targetClass test_schema:Anatomy .
 
 test_schema:AssayType a sh:NodeShape ;
@@ -1393,8 +1393,9 @@ test_schema:AssayType a sh:NodeShape ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:identifier ],
+            sh:order 1 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
@@ -1404,14 +1405,13 @@ test_schema:AssayType a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
+            sh:order 2 ;
+            sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:id ] ;
+            sh:order 0 ;
+            sh:path test_schema:identifier ] ;
     sh:targetClass test_schema:AssayType .
 
 test_schema:Disorder a sh:NodeShape ;
@@ -1425,6 +1425,11 @@ test_schema:Disorder a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:name ;
             sh:pattern "^(?=.{,150}$)" ],
@@ -1435,11 +1440,6 @@ test_schema:Disorder a sh:NodeShape ;
             sh:order 4 ;
             sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:identifier ],
-        [ sh:datatype xsd:string ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
             sh:path test_schema:dxdate ] ;
@@ -1449,21 +1449,21 @@ test_schema:Locus a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ],
+            sh:order 1 ;
+            sh:path test_schema:locusType ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:locusType ],
+            sh:order 3 ;
+            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -1475,17 +1475,9 @@ test_schema:Locus a sh:NodeShape ;
 test_schema:Organization a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:identifier ;
-            sh:pattern "^https://ror.org/[a-z0-9]+$" ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:email ],
+    sh:property [ sh:in ( <dcite:Author> <dcite:Conceptualization> <dcite:ContactPerson> <dcite:DataCollector> <dcite:DataCurator> <dcite:DataManager> <dcite:FormalAnalysis> <dcite:FundingAcquisition> <dcite:Investigation> <dcite:Maintainer> <dcite:Methodology> <dcite:Producer> <dcite:ProjectLeader> <dcite:ProjectManager> <dcite:ProjectMember> <dcite:ProjectAdministration> <dcite:Researcher> <dcite:Resources> <dcite:Software> <dcite:Supervision> <dcite:Validation> <dcite:Visualization> <dcite:Funder> <dcite:Sponsor> <dcite:StudyParticipant> <dcite:Affiliation> <dcite:EthicsApproval> <dcite:Other> ) ;
+            sh:order 6 ;
+            sh:path test_schema:roleName ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1494,11 +1486,9 @@ test_schema:Organization a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path test_schema:name ],
-        [ sh:in ( <dcite:Author> <dcite:Conceptualization> <dcite:ContactPerson> <dcite:DataCollector> <dcite:DataCurator> <dcite:DataManager> <dcite:FormalAnalysis> <dcite:FundingAcquisition> <dcite:Investigation> <dcite:Maintainer> <dcite:Methodology> <dcite:Producer> <dcite:ProjectLeader> <dcite:ProjectManager> <dcite:ProjectMember> <dcite:ProjectAdministration> <dcite:Researcher> <dcite:Resources> <dcite:Software> <dcite:Supervision> <dcite:Validation> <dcite:Visualization> <dcite:Funder> <dcite:Sponsor> <dcite:StudyParticipant> <dcite:Affiliation> <dcite:EthicsApproval> <dcite:Other> ) ;
-            sh:order 6 ;
-            sh:path test_schema:roleName ],
+            sh:order 3 ;
+            sh:path test_schema:identifier ;
+            sh:pattern "^https://ror.org/[a-z0-9]+$" ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1514,24 +1504,44 @@ test_schema:Organization a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:id ],
-        [ sh:class test_schema:ContactPoint ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 0 ;
-            sh:path test_schema:contactPoint ],
+            sh:order 5 ;
+            sh:path test_schema:name ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:email ],
         [ sh:datatype xsd:boolean ;
             sh:defaultValue true ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 4 ;
-            sh:path test_schema:includeInCitation ] ;
+            sh:path test_schema:includeInCitation ],
+        [ sh:class test_schema:ContactPoint ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path test_schema:contactPoint ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:id ] ;
     sh:targetClass test_schema:Organization .
 
 test_schema:RelatedParticipant a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:in ( <dandi:isChildOf> <dandi:isParentOf> <dandi:isSiblingOf> <dandi:isMonozygoticTwinOf> <dandi:isDizygoticTwinOf> ) ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:identifier ],
+        [ sh:in ( <dandi:isChildOf> <dandi:isParentOf> <dandi:isSiblingOf> <dandi:isMonozygoticTwinOf> <dandi:isDizygoticTwinOf> ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 2 ;
@@ -1542,16 +1552,6 @@ test_schema:RelatedParticipant a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:identifier ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1577,11 +1577,6 @@ test_schema:SampleType a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:identifier ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
@@ -1589,7 +1584,12 @@ test_schema:SampleType a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ] ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:identifier ] ;
     sh:targetClass test_schema:SampleType .
 
 test_schema:Session a sh:NodeShape ;
@@ -1598,27 +1598,33 @@ test_schema:Session a sh:NodeShape ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:class test_schema:Equipment ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 5 ;
-            sh:path test_schema:used ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 0 ;
             sh:path test_schema:description ],
         [ sh:datatype xsd:string ;
             sh:nodeKind sh:Literal ;
             sh:order 6 ;
             sh:path test_schema:wasAssociatedWith ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:startDate ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:endDate ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -1626,37 +1632,31 @@ test_schema:Session a sh:NodeShape ;
             sh:order 3 ;
             sh:path test_schema:name ;
             sh:pattern "^(?=.{,150}$)" ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:endDate ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:startDate ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:identifier ] ;
+            sh:order 7 ;
+            sh:path test_schema:id ],
+        [ sh:class test_schema:Equipment ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 5 ;
+            sh:path test_schema:used ] ;
     sh:targetClass test_schema:Session .
 
 test_schema:SexType a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:identifier ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1676,14 +1676,14 @@ test_schema:StandardsType a sh:NodeShape ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:name ;
             sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
@@ -1711,44 +1711,23 @@ test_schema:StrainType a sh:NodeShape ;
             sh:order 0 ;
             sh:path test_schema:identifier ],
         [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ] ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:schemaKey ] ;
     sh:targetClass test_schema:StrainType .
 
 test_schema:AssetsSummary a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:integer ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:numberOfBytes ],
-        [ sh:datatype xsd:integer ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path test_schema:numberOfFiles ],
-        [ sh:class test_schema:MeasurementTechniqueType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 2 ;
-            sh:path test_schema:measurementTechnique ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 10 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:integer ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 7 ;
@@ -1758,6 +1737,22 @@ test_schema:AssetsSummary a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 4 ;
             sh:path test_schema:numberOfCells ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 11 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 5 ;
+            sh:path test_schema:numberOfFiles ],
+        [ sh:class test_schema:StandardsType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path test_schema:dataStandard ],
         [ sh:class test_schema:ApproachType ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 0 ;
@@ -1767,36 +1762,35 @@ test_schema:AssetsSummary a sh:NodeShape ;
             sh:order 8 ;
             sh:path test_schema:species ],
         [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 11 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
             sh:nodeKind sh:Literal ;
             sh:order 9 ;
             sh:path test_schema:variableMeasured ],
-        [ sh:class test_schema:StandardsType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 1 ;
-            sh:path test_schema:dataStandard ],
         [ sh:datatype xsd:integer ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 6 ;
-            sh:path test_schema:numberOfSamples ] ;
+            sh:path test_schema:numberOfSamples ],
+        [ sh:class test_schema:MeasurementTechniqueType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 2 ;
+            sh:path test_schema:measurementTechnique ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:numberOfBytes ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 10 ;
+            sh:path test_schema:id ] ;
     sh:targetClass test_schema:AssetsSummary .
 
 test_schema:SpeciesType a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ],
-        [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1811,7 +1805,13 @@ test_schema:SpeciesType a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path test_schema:id ] ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ] ;
     sh:targetClass test_schema:SpeciesType .
 
 test_schema:ContactPoint a sh:NodeShape ;
@@ -1822,6 +1822,12 @@ test_schema:ContactPoint a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:id ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:url ;
+            sh:pattern "^(?i:http|https)://[^\\s]+$" ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1832,30 +1838,24 @@ test_schema:ContactPoint a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:url ;
-            sh:pattern "^(?i:http|https)://[^\\s]+$" ] ;
+            sh:path test_schema:schemaKey ] ;
     sh:targetClass test_schema:ContactPoint .
 
 test_schema:ApproachType a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:name ;
             sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1872,58 +1872,75 @@ test_schema:BioSample a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:sameAs ],
-        [ sh:class test_schema:Participant ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 6 ;
-            sh:path test_schema:wasAttributedTo ],
-        [ sh:class test_schema:Anatomy ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 0 ;
-            sh:path test_schema:anatomy ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
+            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path test_schema:schemaKey ],
+            sh:order 3 ;
+            sh:path test_schema:identifier ],
         [ sh:class test_schema:AssayType ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 1 ;
             sh:path test_schema:assayType ],
+        [ sh:class test_schema:Anatomy ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path test_schema:anatomy ],
+        [ sh:class test_schema:Participant ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 6 ;
+            sh:path test_schema:wasAttributedTo ],
+        [ sh:class test_schema:SampleType ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 5 ;
+            sh:path test_schema:sampleType ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:hasMember ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 8 ;
             sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:hasMember ],
+            sh:order 9 ;
+            sh:path test_schema:schemaKey ],
         [ sh:class test_schema:BioSample ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 7 ;
             sh:path test_schema:wasDerivedFrom ],
         [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:identifier ],
-        [ sh:class test_schema:SampleType ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 5 ;
-            sh:path test_schema:sampleType ] ;
+            sh:order 4 ;
+            sh:path test_schema:sameAs ] ;
     sh:targetClass test_schema:BioSample .
 
 test_schema:Equipment a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:name ;
+            sh:pattern "^(?=.{,150}$)" ],
+        [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1932,41 +1949,24 @@ test_schema:Equipment a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:identifier ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path test_schema:description ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:name ;
-            sh:pattern "^(?=.{,150}$)" ] ;
+            sh:path test_schema:description ] ;
     sh:targetClass test_schema:Equipment .
 
 test_schema:MeasurementTechniqueType a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
             sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:id ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -1987,49 +1987,11 @@ test_schema:Participant a sh:NodeShape ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 6 ;
             sh:path test_schema:relatedParticipant ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:sameAs ],
-        [ sh:class test_schema:StrainType ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 10 ;
-            sh:path test_schema:strain ],
-        [ sh:class test_schema:Disorder ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 3 ;
-            sh:path test_schema:disorder ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:genotype ],
         [ sh:class test_schema:SexType ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 8 ;
             sh:path test_schema:sex ],
-        [ sh:class test_schema:PropertyValue ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 0 ;
-            sh:path test_schema:age ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 13 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:altName ],
-        [ sh:class test_schema:Organization ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 11 ;
-            sh:path test_schema:vendor ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -2039,33 +2001,77 @@ test_schema:Participant a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path test_schema:cellLine ],
+            sh:order 12 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:altName ],
+        [ sh:class test_schema:Disorder ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 3 ;
+            sh:path test_schema:disorder ],
+        [ sh:datatype xsd:string ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:sameAs ],
         [ sh:class test_schema:SpeciesType ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 9 ;
             sh:path test_schema:species ],
+        [ sh:class test_schema:StrainType ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 10 ;
+            sh:path test_schema:strain ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 12 ;
-            sh:path test_schema:id ] ;
+            sh:order 2 ;
+            sh:path test_schema:cellLine ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 13 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:class test_schema:PropertyValue ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path test_schema:age ],
+        [ sh:class test_schema:Organization ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 11 ;
+            sh:path test_schema:vendor ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:genotype ] ;
     sh:targetClass test_schema:Participant .
 
 test_schema:PropertyValue a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:float ;
+    sh:property [ sh:datatype xsd:float ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path test_schema:minValue ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:class test_schema:PropertyValue ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 5 ;
+            sh:path test_schema:valueReference ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -2074,45 +2080,38 @@ test_schema:PropertyValue a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:value ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path test_schema:propertyID ],
-        [ sh:class test_schema:PropertyValue ;
+        [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 5 ;
-            sh:path test_schema:valueReference ],
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:value ],
         [ sh:datatype xsd:float ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path test_schema:maxValue ] ;
+            sh:path test_schema:maxValue ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path test_schema:id ] ;
     sh:targetClass test_schema:PropertyValue .
 
 test_schema:AccessRequirements a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class test_schema:ContactPoint ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 0 ;
-            sh:path test_schema:contactPoint ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+    sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path test_schema:schemaKey ],
+            sh:order 4 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:description ],
         [ sh:in ( <dandi:OpenAccess> <dandi:EmbargoedAccess> ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -2124,34 +2123,36 @@ test_schema:AccessRequirements a sh:NodeShape ;
             sh:order 2 ;
             sh:path test_schema:embargoedUntil ],
         [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
+            sh:order 5 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:class test_schema:ContactPoint ;
             sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:description ] ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path test_schema:contactPoint ] ;
     sh:targetClass test_schema:AccessRequirements .
 
 test_schema:Activity a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class test_schema:Equipment ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:order 5 ;
-            sh:path test_schema:used ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
+    sh:property [ sh:datatype xsd:string ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path test_schema:startDate ],
+            sh:order 6 ;
+            sh:path test_schema:wasAssociatedWith ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path test_schema:description ],
+            sh:order 7 ;
+            sh:path test_schema:id ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path test_schema:schemaKey ],
         [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -2167,29 +2168,40 @@ test_schema:Activity a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:wasAssociatedWith ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path test_schema:identifier ] ;
+            sh:path test_schema:identifier ],
+        [ sh:class test_schema:Equipment ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 5 ;
+            sh:path test_schema:used ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path test_schema:startDate ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path test_schema:description ] ;
     sh:targetClass test_schema:Activity .
 
 test_schema:EthicsApproval a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class test_schema:ContactPoint ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:identifier ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:class test_schema:ContactPoint ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:order 0 ;
@@ -2198,19 +2210,7 @@ test_schema:EthicsApproval a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path test_schema:id ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path test_schema:schemaKey ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:identifier ] ;
+            sh:path test_schema:id ] ;
     sh:targetClass test_schema:EthicsApproval .
 
 test_schema:Resource a sh:NodeShape ;
@@ -2221,26 +2221,32 @@ test_schema:Resource a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path test_schema:repository ],
+        [ sh:datatype xsd:string ;
+            sh:defaultValue "DandiBaseModel"^^xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path test_schema:schemaKey ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path test_schema:name ],
+        [ sh:in ( <dcite:Audiovisual> <dcite:Book> <dcite:BookChapter> <dcite:Collection> <dcite:ComputationalNotebook> <dcite:ConferencePaper> <dcite:ConferenceProceeding> <dcite:DataPaper> <dcite:Dataset> <dcite:Dissertation> <dcite:Event> <dcite:Image> <dcite:Instrument> <dcite:InteractiveResource> <dcite:Journal> <dcite:JournalArticle> <dcite:Model> <dcite:OutputManagementPlan> <dcite:PeerReview> <dcite:PhysicalObject> <dcite:Preprint> <dcite:Report> <dcite:Service> <dcite:Software> <dcite:Sound> <dcite:Standard> <dcite:StudyRegistration> <dcite:Text> <dcite:Workflow> <dcite:Other> ) ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path test_schema:resourceType ],
+        [ sh:in ( <dcite:IsCitedBy> <dcite:Cites> <dcite:IsSupplementTo> <dcite:IsSupplementedBy> <dcite:IsContinuedBy> <dcite:Continues> <dcite:Describes> <dcite:IsDescribedBy> <dcite:HasMetadata> <dcite:IsMetadataFor> <dcite:HasVersion> <dcite:IsVersionOf> <dcite:IsNewVersionOf> <dcite:IsPreviousVersionOf> <dcite:IsPartOf> <dcite:HasPart> <dcite:IsReferencedBy> <dcite:References> <dcite:IsDocumentedBy> <dcite:Documents> <dcite:IsCompiledBy> <dcite:Compiles> <dcite:IsVariantFormOf> <dcite:IsOriginalFormOf> <dcite:IsIdenticalTo> <dcite:IsReviewedBy> <dcite:Reviews> <dcite:IsDerivedFrom> <dcite:IsSourceOf> <dcite:IsRequiredBy> <dcite:Requires> <dcite:Obsoletes> <dcite:IsObsoletedBy> <dcite:IsPublishedIn> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path test_schema:relation ],
         [ sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path test_schema:url ;
             sh:pattern "^(?i:http|https)://[^\\s]+$" ],
-        [ sh:in ( <dcite:IsCitedBy> <dcite:Cites> <dcite:IsSupplementTo> <dcite:IsSupplementedBy> <dcite:IsContinuedBy> <dcite:Continues> <dcite:Describes> <dcite:IsDescribedBy> <dcite:HasMetadata> <dcite:IsMetadataFor> <dcite:HasVersion> <dcite:IsVersionOf> <dcite:IsNewVersionOf> <dcite:IsPreviousVersionOf> <dcite:IsPartOf> <dcite:HasPart> <dcite:IsReferencedBy> <dcite:References> <dcite:IsDocumentedBy> <dcite:Documents> <dcite:IsCompiledBy> <dcite:Compiles> <dcite:IsVariantFormOf> <dcite:IsOriginalFormOf> <dcite:IsIdenticalTo> <dcite:IsReviewedBy> <dcite:Reviews> <dcite:IsDerivedFrom> <dcite:IsSourceOf> <dcite:IsRequiredBy> <dcite:Requires> <dcite:Obsoletes> <dcite:IsObsoletedBy> <dcite:IsPublishedIn> ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:order 2 ;
-            sh:path test_schema:relation ],
-        [ sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path test_schema:id ],
-        [ sh:in ( <dcite:Audiovisual> <dcite:Book> <dcite:BookChapter> <dcite:Collection> <dcite:ComputationalNotebook> <dcite:ConferencePaper> <dcite:ConferenceProceeding> <dcite:DataPaper> <dcite:Dataset> <dcite:Dissertation> <dcite:Event> <dcite:Image> <dcite:Instrument> <dcite:InteractiveResource> <dcite:Journal> <dcite:JournalArticle> <dcite:Model> <dcite:OutputManagementPlan> <dcite:PeerReview> <dcite:PhysicalObject> <dcite:Preprint> <dcite:Report> <dcite:Service> <dcite:Software> <dcite:Sound> <dcite:Standard> <dcite:StudyRegistration> <dcite:Text> <dcite:Workflow> <dcite:Other> ) ;
-            sh:maxCount 1 ;
-            sh:order 4 ;
-            sh:path test_schema:resourceType ],
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -2249,13 +2255,7 @@ test_schema:Resource a sh:NodeShape ;
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path test_schema:name ],
-        [ sh:datatype xsd:string ;
-            sh:defaultValue "DandiBaseModel"^^xsd:string ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path test_schema:schemaKey ] ;
+            sh:order 6 ;
+            sh:path test_schema:id ] ;
     sh:targetClass test_schema:Resource .
 
