@@ -407,9 +407,9 @@ slots:
     name: access
     notes:
     - 'pydantic2linkml: Unable to express the default factory, <function CommonModel.<lambda>
-      at 0x7f5db07f7b00>, in LinkML.'
+      at 0x7f88242faf20>, in LinkML.'
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function AccessRequirements.open_or_embargoed at 0x7f5db082fec0>.'
+      function, <function AccessRequirements.open_or_embargoed at 0x7f88242fb100>.'
     range: AccessRequirements
     required: false
     multivalued: true
@@ -503,7 +503,7 @@ slots:
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
       function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db04b8360>.'
+      at 0x7f8823f7c360>.'
     range: uri
     required: true
     multivalued: true
@@ -525,7 +525,7 @@ slots:
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
       function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db07aff60>.'
+      at 0x7f88242f8540>.'
     range: uri
     required: false
     pattern: ^(?i:http|https)://[^\s]+$
@@ -600,7 +600,7 @@ slots:
       contains a choice of type function-wrap. The choice type is yet to be supported.
       (core schema: {''type'': ''union'', ''choices'': [{''type'': ''function-wrap'',
       ''function'': {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db07afec0>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242fa980>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -653,7 +653,7 @@ slots:
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''str''}}, ''default'': None}, ''metadata'': {}}}, ''model_name'': ''Locus'',
       ''computed_fields'': []}, ''custom_init'': False, ''root_model'': False, ''post_init'':
-      ''model_post_init'', ''config'': {''title'': ''Locus''}, ''ref'': ''dandischema.models.Locus:93909829050960'',
+      ''model_post_init'', ''config'': {''title'': ''Locus''}, ''ref'': ''dandischema.models.Locus:94888918807520'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Locus''>>]}}, ''metadata'': {''pydantic_js_updates'':
       {''description'': ''Locus at which information was extracted.''}}}, ''alleles'':
@@ -679,7 +679,7 @@ slots:
       ''nullable'', ''schema'': {''type'': ''str''}}, ''default'': None}, ''metadata'':
       {}}}, ''model_name'': ''Allele'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''Allele''}, ''ref'': ''dandischema.models.Allele:93909829069392'',
+      {''title'': ''Allele''}, ''ref'': ''dandischema.models.Allele:94888918825952'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Allele''>>]}}}, ''metadata'': {''pydantic_js_updates'':
       {''description'': ''Information about alleles at the locus.''}}}, ''wasGeneratedBy'':
@@ -717,7 +717,7 @@ slots:
       {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
       {''type'': ''tagged-union'', ''choices'': {''Person'': {''function'': {''type'':
       ''no-info'', ''function'': <function Contributor.ensure_contact_person_has_email
-      at 0x7f5db082efc0>}, ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
+      at 0x7f88242fa5c0>}, ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
       {''type'': ''str''}}, ''default'': None}, ''metadata'': {''pydantic_js_updates'':
@@ -746,7 +746,7 @@ slots:
       {''nskey'': ''schema''}}}, ''url'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''function-wrap'', ''function'': {''type'': ''no-info'', ''function'': <function
-      _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f5db082f2e0>},
+      _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f88242bbec0>},
       ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'', ''https'']},
       ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
@@ -755,7 +755,7 @@ slots:
       ''metadata'': {''pydantic_js_extra'': {''nskey'': ''schema''}}}, ''roleName'':
       {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
-      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:93909825822816''}}},
+      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94888915542000''}}},
       ''default'': None}, ''metadata'': {''pydantic_js_updates'': {''title'': ''Role'',
       ''description'': ''Role(s) of the contributor. Multiple roles can be selected.''},
       ''pydantic_js_extra'': {''nskey'': ''schema''}}}, ''includeInCitation'': {''type'':
@@ -790,17 +790,17 @@ slots:
       ''Name of organization''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}},
       ''model_name'': ''Affiliation'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:93909826455824'',
+      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:94888916208896'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Affiliation''>>]}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_updates'': {''description'': ''An organization that this person
       is affiliated with.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Person'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Person''}},
-      ''ref'': ''dandischema.models.Person:93909826477904'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Person:94888916228352'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Person''>>]},
       ''type'': ''function-after''}, ''Organization'': {''type'': ''definition-ref'',
-      ''schema_ref'': ''dandischema.models.Organization:93909826387824''}, ''Software'':
+      ''schema_ref'': ''dandischema.models.Organization:94888916141904''}, ''Software'':
       {''type'': ''model'', ''cls'': <class ''dandischema.models.Software''>, ''schema'':
       {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
@@ -823,7 +823,7 @@ slots:
       {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''function-wrap'', ''function'':
       {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db082f740>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242fafc0>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -832,7 +832,7 @@ slots:
       software.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Software'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Software''},
-      ''ref'': ''dandischema.models.Software:93909826321328'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Software:94888916096752'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Software''>>]}},
       ''Agent'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Agent''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
@@ -853,7 +853,7 @@ slots:
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''function-wrap'', ''function'':
       {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db082fb00>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242faa20>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -861,7 +861,7 @@ slots:
       ''metadata'': {''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Agent'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Agent''},
-      ''ref'': ''dandischema.models.Agent:93909826543152'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Agent:94888916336256'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Agent''>>]}}},
       ''discriminator'': ''schemaKey'', ''strict'': False, ''from_attributes'': True,
       ''metadata'': {}}}}, ''default'': None}, ''metadata'': {''pydantic_js_extra'':
@@ -890,20 +890,20 @@ slots:
       of the equipment.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Equipment'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Equipment''},
-      ''ref'': ''dandischema.models.Equipment:93909825729200'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Equipment:94888915443248'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Equipment''>>]}}}},
       ''default'': None}, ''metadata'': {''pydantic_js_updates'': {''description'':
       ''A listing of equipment used for the activity.''}, ''pydantic_js_extra'': {''nskey'':
       ''prov''}}}}, ''model_name'': ''Session'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''Session''}, ''ref'': ''dandischema.models.Session:93909828012592'',
+      {''title'': ''Session''}, ''ref'': ''dandischema.models.Session:94888917769168'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Session''>>]}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_updates'': {''description'': ''Information about session activity
       used to determine genotype.''}, ''pydantic_js_extra'': {''nskey'': ''prov''}}}},
       ''model_name'': ''GenotypeInfo'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''GenotypeInfo''}, ''ref'': ''dandischema.models.GenotypeInfo:93909829091856'',
+      {''title'': ''GenotypeInfo''}, ''ref'': ''dandischema.models.GenotypeInfo:94888918848416'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.GenotypeInfo''>>]}}}, {''type'': ''str''}]}).'
     required: false
@@ -946,7 +946,7 @@ slots:
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
       function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db07f63e0>.'
+      at 0x7f88242fb240>.'
     range: uri
     required: true
     multivalued: true
@@ -1004,9 +1004,9 @@ slots:
     - 'pydantic2linkml: Warning: The translation is incomplete. The union core schema
       contains a choice of type definition-ref. The choice type is yet to be supported.
       (core schema: {''type'': ''union'', ''choices'': [{''type'': ''definition-ref'',
-      ''schema_ref'': ''dandischema.models.IdentifierType:93909825773104''}, {''type'':
+      ''schema_ref'': ''dandischema.models.IdentifierType:94888915459136''}, {''type'':
       ''function-wrap'', ''function'': {''type'': ''no-info'', ''function'': <function
-      _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f5db07f76a0>},
+      _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f88242a4cc0>},
       ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'', ''https'']},
       ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
@@ -1018,7 +1018,7 @@ slots:
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
       function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db07f79c0>.'
+      at 0x7f88242fae80>.'
     range: uri
     required: false
     multivalued: true
@@ -1030,7 +1030,7 @@ slots:
       contains a choice of type function-wrap. The choice type is yet to be supported.
       (core schema: {''type'': ''union'', ''choices'': [{''type'': ''function-wrap'',
       ''function'': {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db04b8680>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f8823f7c680>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -1066,7 +1066,7 @@ slots:
       ''model-field'', ''schema'': {''type'': ''default'', ''schema'': {''type'':
       ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'': {''type'':
       ''tagged-union'', ''choices'': {''Person'': {''function'': {''type'': ''no-info'',
-      ''function'': <function Contributor.ensure_contact_person_has_email at 0x7f5db082efc0>},
+      ''function'': <function Contributor.ensure_contact_person_has_email at 0x7f88242fa5c0>},
       ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Person''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
@@ -1096,7 +1096,7 @@ slots:
       {''nskey'': ''schema''}}}, ''url'': {''type'': ''model-field'', ''schema'':
       {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'': {''type'':
       ''function-wrap'', ''function'': {''type'': ''no-info'', ''function'': <function
-      _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f5db082f2e0>},
+      _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f88242bbec0>},
       ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'', ''https'']},
       ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
@@ -1105,7 +1105,7 @@ slots:
       ''metadata'': {''pydantic_js_extra'': {''nskey'': ''schema''}}}, ''roleName'':
       {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
-      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:93909825822816''}}},
+      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94888915542000''}}},
       ''default'': None}, ''metadata'': {''pydantic_js_updates'': {''title'': ''Role'',
       ''description'': ''Role(s) of the contributor. Multiple roles can be selected.''},
       ''pydantic_js_extra'': {''nskey'': ''schema''}}}, ''includeInCitation'': {''type'':
@@ -1140,17 +1140,17 @@ slots:
       ''Name of organization''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}},
       ''model_name'': ''Affiliation'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:93909826455824'',
+      {''title'': ''Affiliation''}, ''ref'': ''dandischema.models.Affiliation:94888916208896'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Affiliation''>>]}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_updates'': {''description'': ''An organization that this person
       is affiliated with.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Person'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Person''}},
-      ''ref'': ''dandischema.models.Person:93909826477904'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Person:94888916228352'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Person''>>]},
       ''type'': ''function-after''}, ''Organization'': {''function'': {''type'': ''no-info'',
-      ''function'': <function Contributor.ensure_contact_person_has_email at 0x7f5db082efc0>},
+      ''function'': <function Contributor.ensure_contact_person_has_email at 0x7f88242fa5c0>},
       ''schema'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Organization''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
       ''schema'': {''type'': ''default'', ''schema'': {''type'': ''nullable'', ''schema'':
@@ -1179,7 +1179,7 @@ slots:
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''function-wrap'', ''function'':
       {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db082ee80>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242fa480>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -1187,7 +1187,7 @@ slots:
       ''metadata'': {''pydantic_js_extra'': {''nskey'': ''schema''}}}, ''roleName'':
       {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''list'', ''items_schema'':
-      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:93909825822816''}}},
+      {''type'': ''definition-ref'', ''schema_ref'': ''dandischema.models.RoleType:94888915542000''}}},
       ''default'': None}, ''metadata'': {''pydantic_js_updates'': {''title'': ''Role'',
       ''description'': ''Role(s) of the contributor. Multiple roles can be selected.''},
       ''pydantic_js_extra'': {''nskey'': ''schema''}}}, ''includeInCitation'': {''type'':
@@ -1223,7 +1223,7 @@ slots:
       ''schema''}}}, ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'',
       ''schema'': {''type'': ''nullable'', ''schema'': {''type'': ''function-wrap'',
       ''function'': {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db07f6e80>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242bbba0>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -1232,14 +1232,14 @@ slots:
       information on how to contact.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}},
       ''model_name'': ''ContactPoint'', ''computed_fields'': []}, ''custom_init'':
       False, ''root_model'': False, ''post_init'': ''model_post_init'', ''config'':
-      {''title'': ''ContactPoint''}, ''ref'': ''dandischema.models.ContactPoint:93909826155952'',
+      {''title'': ''ContactPoint''}, ''ref'': ''dandischema.models.ContactPoint:94888915912640'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.ContactPoint''>>]}}}}, ''default'': None}, ''metadata'':
       {''pydantic_js_updates'': {''title'': ''Organization contact information'',
       ''description'': ''Contact for the organization''}, ''pydantic_js_extra'': {''nskey'':
       ''schema''}}}}, ''model_name'': ''Organization'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''Organization''}}, ''ref'': ''dandischema.models.Organization:93909826387824'',
+      ''config'': {''title'': ''Organization''}}, ''ref'': ''dandischema.models.Organization:94888916141904'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.Organization''>>]}, ''type'': ''function-after''},
       ''Software'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Software''>,
@@ -1264,7 +1264,7 @@ slots:
       {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''function-wrap'', ''function'':
       {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db082f740>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242fafc0>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -1273,7 +1273,7 @@ slots:
       software.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Software'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Software''},
-      ''ref'': ''dandischema.models.Software:93909826321328'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Software:94888916096752'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Software''>>]}},
       ''Agent'': {''type'': ''model'', ''cls'': <class ''dandischema.models.Agent''>,
       ''schema'': {''type'': ''model-fields'', ''fields'': {''id'': {''type'': ''model-field'',
@@ -1294,7 +1294,7 @@ slots:
       ''url'': {''type'': ''model-field'', ''schema'': {''type'': ''default'', ''schema'':
       {''type'': ''nullable'', ''schema'': {''type'': ''function-wrap'', ''function'':
       {''type'': ''no-info'', ''function'': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-      at 0x7f5db082fb00>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
+      at 0x7f88242faa20>}, ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'',
       ''https'']}, ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
       of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
       ''function-plain'', ''function'': <bound method _BaseUrl.serialize_url of <class
@@ -1302,7 +1302,7 @@ slots:
       ''metadata'': {''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Agent'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Agent''},
-      ''ref'': ''dandischema.models.Agent:93909826543152'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Agent:94888916336256'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Agent''>>]}}},
       ''discriminator'': ''schemaKey'', ''strict'': False, ''from_attributes'': True,
       ''metadata'': {}}}}, ''default'': None}, ''metadata'': {''pydantic_js_extra'':
@@ -1331,13 +1331,13 @@ slots:
       of the equipment.''}, ''pydantic_js_extra'': {''nskey'': ''schema''}}}}, ''model_name'':
       ''Equipment'', ''computed_fields'': []}, ''custom_init'': False, ''root_model'':
       False, ''post_init'': ''model_post_init'', ''config'': {''title'': ''Equipment''},
-      ''ref'': ''dandischema.models.Equipment:93909825729200'', ''metadata'': {''pydantic_js_functions'':
+      ''ref'': ''dandischema.models.Equipment:94888915443248'', ''metadata'': {''pydantic_js_functions'':
       [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class ''dandischema.models.Equipment''>>]}}}},
       ''default'': None}, ''metadata'': {''pydantic_js_updates'': {''description'':
       ''A listing of equipment used for the activity.''}, ''pydantic_js_extra'': {''nskey'':
       ''prov''}}}}, ''model_name'': ''PublishActivity'', ''computed_fields'': []},
       ''custom_init'': False, ''root_model'': False, ''post_init'': ''model_post_init'',
-      ''config'': {''title'': ''PublishActivity''}, ''ref'': ''dandischema.models.PublishActivity:93909828302640'',
+      ''config'': {''title'': ''PublishActivity''}, ''ref'': ''dandischema.models.PublishActivity:94888918065952'',
       ''metadata'': {''pydantic_js_functions'': [<bound method DandiBaseModel.__get_pydantic_json_schema__
       of <class ''dandischema.models.PublishActivity''>>]}}]}).'
     required: true
@@ -1350,7 +1350,7 @@ slots:
     name: relatedResource
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function Resource.identifier_or_url at 0x7f5db082f6a0>.'
+      function, <function Resource.identifier_or_url at 0x7f88242fa520>.'
     range: Resource
     required: false
     multivalued: true
@@ -1458,7 +1458,7 @@ slots:
     name: vendor
     notes:
     - 'pydantic2linkml: Unable to translate the logic contained in the after validation
-      function, <function Contributor.ensure_contact_person_has_email at 0x7f5db082efc0>.'
+      function, <function Contributor.ensure_contact_person_has_email at 0x7f88242fa5c0>.'
     range: Organization
     required: false
   version:
@@ -1577,7 +1577,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db082fb00>.'
+          at 0x7f88242faa20>.'
   Allele:
     name: Allele
     notes:
@@ -1668,16 +1668,16 @@ classes:
   BareAsset:
     name: BareAsset
     notes:
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
-      slot. The slot representation of the schemaKey field in the BareAsset Pydantic
-      model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
-      .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the access slot.
       The slot representation of the access field in the BareAsset Pydantic model
       has changes in value in meta slots: [''notes''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
       slot. The slot representation of the wasGeneratedBy field in the BareAsset Pydantic
       model lacks meta slots: [''range''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
+      slot. The slot representation of the schemaKey field in the BareAsset Pydantic
+      model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
+      .'
     is_a: CommonModel
     slots:
     - approach
@@ -1699,7 +1699,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db07aed40>.'
+          at 0x7f88242fbba0>.'
         range: uri
         pattern: ^(?i:http|https)://[^\s]+$
       variableMeasured:
@@ -1723,7 +1723,7 @@ classes:
           schema contains a choice of type function-wrap. The choice type is yet to
           be supported. (core schema: {''type'': ''union'', ''choices'': [{''type'':
           ''function-wrap'', ''function'': {''type'': ''no-info'', ''function'': <function
-          _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f5db07f74c0>},
+          _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f88242a4e00>},
           ''schema'': {''type'': ''url'', ''allowed_schemes'': [''http'', ''https'']},
           ''metadata'': {''pydantic_js_functions'': [<bound method _BaseUrl.__get_pydantic_json_schema__
           of <class ''pydantic.networks.AnyHttpUrl''>>]}, ''serialization'': {''type'':
@@ -1803,7 +1803,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db07f7060>.'
+          at 0x7f88242fb420>.'
         range: uri
         pattern: ^(?i:http|https)://[^\s]+$
       url:
@@ -1811,7 +1811,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db07f7380>.'
+          at 0x7f88242faca0>.'
       wasGeneratedBy:
         name: wasGeneratedBy
         range: Activity
@@ -1832,7 +1832,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db07f6e80>.'
+          at 0x7f88242bbba0>.'
   Contributor:
     name: Contributor
     notes:
@@ -1862,7 +1862,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db07f6700>.'
+          at 0x7f88242fa660>.'
   DandiBaseModel:
     name: DandiBaseModel
     slots:
@@ -1871,28 +1871,28 @@ classes:
   Dandiset:
     name: Dandiset
     notes:
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
-      slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic
-      model has changes in value in meta slots: [''range''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the contributor
       slot. The slot representation of the contributor field in the Dandiset Pydantic
       model has changes in value in meta slots: [''notes'', ''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
-      slot representation of the id field in the Dandiset Pydantic model has changes
-      in value in meta slots: [''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the description
-      slot. The slot representation of the description field in the Dandiset Pydantic
-      model has changes in value in meta slots: [''required''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the license slot.
-      The slot representation of the license field in the Dandiset Pydantic model
-      has changes in value in meta slots: [''required''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
+      The slot representation of the name field in the Dandiset Pydantic model has
+      changes in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Dandiset Pydantic
       model has changes in value in meta slots: [''ifabsent'', ''notes'', ''range'']
       .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
-      The slot representation of the name field in the Dandiset Pydantic model has
-      changes in value in meta slots: [''required''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
+      slot representation of the id field in the Dandiset Pydantic model has changes
+      in value in meta slots: [''required''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the wasGeneratedBy
+      slot. The slot representation of the wasGeneratedBy field in the Dandiset Pydantic
+      model has changes in value in meta slots: [''range''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the license slot.
+      The slot representation of the license field in the Dandiset Pydantic model
+      has changes in value in meta slots: [''required''] .'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the description
+      slot. The slot representation of the description field in the Dandiset Pydantic
+      model has changes in value in meta slots: [''required''] .'
     is_a: CommonModel
     slots:
     - assetsSummary
@@ -2013,13 +2013,13 @@ classes:
   Organization:
     name: Organization
     notes:
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation
+      slot. The slot representation of the includeInCitation field in the Organization
+      Pydantic model has changes in value in meta slots: [''ifabsent''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Organization Pydantic
       model has changes in value in meta slots: [''any_of'', ''ifabsent'', ''notes'']
       .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation
-      slot. The slot representation of the includeInCitation field in the Organization
-      Pydantic model has changes in value in meta slots: [''ifabsent''] .'
     is_a: Contributor
     slots:
     - contactPoint
@@ -2062,13 +2062,13 @@ classes:
   Person:
     name: Person
     notes:
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
+      The slot representation of the name field in the Person Pydantic model has changes
+      in value in meta slots: [''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the Person Pydantic
       model has changes in value in meta slots: [''any_of'', ''ifabsent'', ''notes'']
       .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the name slot.
-      The slot representation of the name field in the Person Pydantic model has changes
-      in value in meta slots: [''required''] .'
     is_a: Contributor
     slots:
     - affiliation
@@ -2138,15 +2138,15 @@ classes:
     notes:
     - 'pydantic2linkml: Warning: LinkML does not support multiple inheritance. Publishable
       is not specified as a parent, through the `is_a` meta slot, but as a mixin.'
+    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
+      slot representation of the id field in the PublishedDandiset Pydantic model
+      has changes in value in meta slots: [''pattern''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the url slot.
       The slot representation of the url field in the PublishedDandiset Pydantic model
       has changes in value in meta slots: [''notes'', ''required''] .'
     - 'pydantic2linkml: Impossible to generate slot usage entry for the schemaKey
       slot. The slot representation of the schemaKey field in the PublishedDandiset
       Pydantic model has changes in value in meta slots: [''notes''] .'
-    - 'pydantic2linkml: Impossible to generate slot usage entry for the id slot. The
-      slot representation of the id field in the PublishedDandiset Pydantic model
-      has changes in value in meta slots: [''pattern''] .'
     is_a: Dandiset
     mixins:
     - Publishable
@@ -2182,7 +2182,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db082f880>.'
+          at 0x7f88242a40e0>.'
   Resource:
     name: Resource
     notes:
@@ -2217,7 +2217,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db082f600>.'
+          at 0x7f88242fa340>.'
   SampleType:
     name: SampleType
     notes:
@@ -2269,7 +2269,7 @@ classes:
         notes:
         - 'pydantic2linkml: Unable to translate the logic contained in the wrap validation
           function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val
-          at 0x7f5db082f740>.'
+          at 0x7f88242fafc0>.'
   SpeciesType:
     name: SpeciesType
     notes:
