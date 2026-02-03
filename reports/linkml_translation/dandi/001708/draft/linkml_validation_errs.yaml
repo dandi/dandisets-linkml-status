@@ -1,9 +1,31 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Ashworth, Carl'', ''email'': ''carlashworth31@gmail.com'',
-    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+  message: '{''name'': ''Rostral Ventromedial Medulla'', ''schemaKey'': ''GenericType''}
+    is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''Rostral Ventromedial Medulla'', ''schemaKey'': ''GenericType''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Ashworth, Carl'', ''email'': ''ca541@cam.ac.uk'', ''roleName'':
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-3532-0274'',
+    ''affiliation'': [{''name'': ''University of Cambridge'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/013meh722''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -14,9 +36,275 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Ashworth, Carl'', ''email'': ''carlashworth31@gmail.com'',
-      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-      [], ''includeInCitation'': True} is not of type ''string'''
+    message: '{''name'': ''Ashworth, Carl'', ''email'': ''ca541@cam.ac.uk'', ''roleName'':
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0009-0003-3532-0274'',
+      ''affiliation'': [{''name'': ''University of Cambridge'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/013meh722''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Mancini, Flavia'', ''email'': ''fm456@cam.ac.uk'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-8441-9236'', ''affiliation'': [{''name'':
+    ''University of Cambridge'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013meh722''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mancini, Flavia'', ''email'': ''fm456@cam.ac.uk'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8441-9236'', ''affiliation'': [{''name'':
+      ''University of Cambridge'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013meh722''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Heinricher, Mary'', ''email'': ''heinricm@oshu.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Oregon
+    Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Heinricher, Mary'', ''email'': ''heinricm@oshu.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Oregon Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Shi, Zhigang'', ''email'': ''shiz@oshu.edu'', ''roleName'':
+    [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-5828-1904'', ''affiliation'': [{''name'': ''Oregon Health and Science
+    University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Shi, Zhigang'', ''email'': ''shiz@oshu.edu'', ''roleName'':
+      [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-5828-1904'', ''affiliation'': [{''name'': ''Oregon Health and Science
+      University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''De Preter, Caitlynn C'', ''email'': ''depreterc@outlook.com'',
+    ''roleName'': [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-6499-5372'', ''affiliation'': [{''name'': ''Oregon
+    Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''De Preter, Caitlynn C'', ''email'': ''depreterc@outlook.com'',
+      ''roleName'': [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-6499-5372'', ''affiliation'': [{''name'': ''Oregon
+      Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Martenson, Melissa'', ''email'': ''melissa.martenson@yahoo.com'',
+    ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+    ''affiliation'': [{''name'': ''Oregon Health and Science University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Martenson, Melissa'', ''email'': ''melissa.martenson@yahoo.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+      ''affiliation'': [{''name'': ''Oregon Health and Science University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''NS098660, NS120486''} is not
+    of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''NS098660, NS120486''} is
+      not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''MRC Career Development Award'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''MR/T010614/1''} is not of
+    type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''MRC Career Development Award'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''MR/T010614/1''} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''UKRI Advanced Pain Discovery Platform grant'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'': ''MR/ W027593/1'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''UKRI Advanced Pain Discovery Platform grant'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'': ''MR/
+      W027593/1'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''EPSRC/MRC Programme Grant'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''UKRI1970''} is not of type
+    ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''EPSRC/MRC Programme Grant'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''UKRI1970''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Dental and Craniofacial Research'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+    ''F31 DE030677''} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Dental and Craniofacial Research'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+      ''F31 DE030677''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''EPSRC DTP'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''awardNumber'': ''EP/W524633/1''} is not of type ''string''
+    in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''EPSRC DTP'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+      ''Organization'', ''awardNumber'': ''EP/W524633/1''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

@@ -10,16 +10,7 @@ test_schema:Agent a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Agent" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
@@ -28,17 +19,26 @@ test_schema:Agent a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
             owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Agent Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -61,23 +61,23 @@ test_schema:GenotypeInfo a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "GenotypeInfo" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:locus ],
-        [ a owl:Restriction ;
             owl:allValuesFrom test_schema:Locus ;
             owl:onProperty test_schema:locus ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Allele ;
-            owl:onProperty test_schema:alleles ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Session ;
-            owl:onProperty test_schema:wasGeneratedBy ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:wasGeneratedBy ],
         [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Allele ;
+            owl:onProperty test_schema:alleles ],
+        [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:alleles ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:locus ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Session ;
+            owl:onProperty test_schema:wasGeneratedBy ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:locus ],
@@ -89,21 +89,21 @@ test_schema:Person a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Person" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom [ a rdfs:Datatype ;
-                    owl:onDatatype xsd:string ;
-                    owl:withRestrictions ( [ xsd:pattern "^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$" ] ) ] ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:affiliation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^\\d{4}-\\d{4}-\\d{4}-(\\d{3}X|\\d{4})$" ] ) ] ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:Affiliation ;
-            owl:onProperty test_schema:affiliation ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty test_schema:affiliation ],
         test_schema:Contributor ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the name slot. The slot representation of the name field in the Person Pydantic model has changes in value in meta slots: ['required'] .",
@@ -128,12 +128,12 @@ test_schema:PublishedAsset a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "PublishedAsset" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:id ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:onDatatype xsd:string ;
                     owl:withRestrictions ( [ xsd:pattern "^dandiasset:[a-f0-9]{8}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{4}[-]*[a-f0-9]{12}$" ] ) ] ;
+            owl:onProperty test_schema:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:id ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
@@ -149,15 +149,6 @@ test_schema:PublishedDandiset a owl:Class,
     rdfs:label "PublishedDandiset" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:doi ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:releaseNotes ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:doi ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
             owl:onProperty test_schema:releaseNotes ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
@@ -166,7 +157,16 @@ test_schema:PublishedDandiset a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^(10\\.\\d{4,}/[a-z][-a-z]*\\.\\d{6}/\\d+\\.\\d+\\.\\d+|)$" ] ) ] ) ] ;
             owl:onProperty test_schema:doi ],
         [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:releaseNotes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:doi ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
+            owl:onProperty test_schema:doi ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:releaseNotes ],
         test_schema:Dandiset,
         test_schema:Publishable ;
@@ -180,29 +180,17 @@ test_schema:Software a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Software" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:version ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:version ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:version ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
@@ -210,10 +198,7 @@ test_schema:Software a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^RRID:.*" ] ) ] ) ] ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
@@ -221,6 +206,21 @@ test_schema:Software a owl:Class,
                                 owl:onDatatype xsd:string ;
                                 owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:version ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Software Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -229,6 +229,9 @@ test_schema:Asset a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Asset" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
                                 owl:onDatatype xsd:string ;
@@ -246,9 +249,6 @@ test_schema:Asset a owl:Class,
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
         test_schema:BareAsset ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the id slot. The slot representation of the id field in the Asset Pydantic model has changes in value in meta slots: ['required'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -260,86 +260,80 @@ test_schema:BareAsset a owl:Class,
             owl:minCardinality 1 ;
             owl:onProperty test_schema:digest ],
         [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:BioSample ;
-            owl:onProperty test_schema:wasDerivedFrom ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Datetime ;
-            owl:onProperty test_schema:blobDateModified ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:dateModified ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:dataType ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:wasDerivedFrom ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:ApproachType ;
-            owl:onProperty test_schema:approach ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom [ a rdfs:Datatype ;
-                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
-                                owl:onDatatype xsd:string ;
-                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-            owl:onProperty test_schema:sameAs ],
+            owl:onProperty test_schema:path ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:wasAttributedTo ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:path ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:digest ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:path ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:MeasurementTechniqueType ;
-            owl:onProperty test_schema:measurementTechnique ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:sameAs ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:encodingFormat ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:measurementTechnique ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:encodingFormat ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:blobDateModified ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:blobDateModified ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:digest ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:approach ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Datetime ;
-            owl:onProperty test_schema:dateModified ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:contentSize ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:Participant ;
             owl:onProperty test_schema:wasAttributedTo ],
         [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:PropertyValue ;
-            owl:onProperty test_schema:variableMeasured ],
+            owl:allValuesFrom test_schema:MeasurementTechniqueType ;
+            owl:onProperty test_schema:measurementTechnique ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:digest ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:measurementTechnique ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ApproachType ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:blobDateModified ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:contentSize ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:blobDateModified ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:dataType ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty test_schema:encodingFormat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:contentSize ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:variableMeasured ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dataType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:BioSample ;
+            owl:onProperty test_schema:wasDerivedFrom ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:path ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:digest ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasDerivedFrom ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
@@ -347,20 +341,26 @@ test_schema:BareAsset a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:dataType ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:variableMeasured ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:encodingFormat ],
-        [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:path ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:dateModified ],
+            owl:onProperty test_schema:sameAs ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty test_schema:contentSize ],
+            owl:onProperty test_schema:encodingFormat ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:blobDateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:encodingFormat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:PropertyValue ;
+            owl:onProperty test_schema:variableMeasured ],
         test_schema:CommonModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the access slot. The slot representation of the access field in the BareAsset Pydantic model has changes in value in meta slots: ['notes'] .",
         "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the BareAsset Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] .",
@@ -371,29 +371,23 @@ test_schema:Dandiset a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Dandiset" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:assetsSummary ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:manifestLocation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:citation ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
                                 owl:onDatatype xsd:string ;
                                 owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:manifestLocation ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:dateModified ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Datetime ;
-            owl:onProperty test_schema:dateModified ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:dateModified ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:dateCreated ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:citation ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
@@ -402,40 +396,46 @@ test_schema:Dandiset a owl:Class,
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
+            owl:onProperty test_schema:citation ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:manifestLocation ],
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:dateCreated ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dateCreated ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:version ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:version ],
+            owl:onProperty test_schema:citation ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:dateCreated ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty test_schema:assetsSummary ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:citation ],
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dateModified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:version ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:AssetsSummary ;
             owl:onProperty test_schema:assetsSummary ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:version ],
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:dateModified ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:Datetime ;
             owl:onProperty test_schema:dateCreated ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty test_schema:citation ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:assetsSummary ],
+            owl:onProperty test_schema:version ],
         test_schema:CommonModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the contributor slot. The slot representation of the contributor field in the Dandiset Pydantic model has changes in value in meta slots: ['notes', 'required'] .",
         "pydantic2linkml: Impossible to generate slot usage entry for the description slot. The slot representation of the description field in the Dandiset Pydantic model has changes in value in meta slots: ['required'] .",
@@ -1007,17 +1007,8 @@ test_schema:AccessRequirements a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "AccessRequirements" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:status ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:status ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:AccessType ;
-            owl:onProperty test_schema:status ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:embargoedUntil ],
@@ -1025,23 +1016,32 @@ test_schema:AccessRequirements a owl:Class,
             owl:allValuesFrom test_schema:ContactPoint ;
             owl:onProperty test_schema:contactPoint ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:contactPoint ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:embargoedUntil ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:contactPoint ],
         [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AccessType ;
+            owl:onProperty test_schema:status ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:status ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
             owl:allValuesFrom linkml:Date ;
             owl:onProperty test_schema:embargoedUntil ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:embargoedUntil ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:status ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the AccessRequirements Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1050,26 +1050,26 @@ test_schema:Affiliation a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Affiliation" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
                                 owl:onDatatype xsd:string ;
                                 owl:withRestrictions ( [ xsd:pattern "^https://ror.org/[a-z0-9]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Affiliation Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1079,31 +1079,31 @@ test_schema:Allele a owl:Class,
     rdfs:label "Allele" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
+            owl:onProperty test_schema:alleleType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:alleleSymbol ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:alleleSymbol ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:alleleType ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:alleleSymbol ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:alleleType ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:alleleSymbol ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:alleleType ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:alleleType ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Allele Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1126,80 +1126,80 @@ test_schema:AssetsSummary a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "AssetsSummary" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:SpeciesType ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
             owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfFiles ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfFiles ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfBytes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:dataStandard ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty test_schema:numberOfSubjects ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfSamples ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:numberOfSubjects ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:numberOfSamples ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:measurementTechnique ],
         [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:ApproachType ;
-            owl:onProperty test_schema:approach ],
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:numberOfCells ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom linkml:Integer ;
             owl:onProperty test_schema:numberOfSamples ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:numberOfFiles ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:SpeciesType ;
-            owl:onProperty test_schema:species ],
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:numberOfCells ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:Integer ;
-            owl:onProperty test_schema:numberOfCells ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:numberOfCells ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:variableMeasured ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:numberOfSubjects ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:StandardsType ;
-            owl:onProperty test_schema:dataStandard ],
+            owl:onProperty test_schema:numberOfBytes ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:species ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:variableMeasured ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Integer ;
-            owl:onProperty test_schema:numberOfFiles ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:MeasurementTechniqueType ;
             owl:onProperty test_schema:measurementTechnique ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:Integer ;
-            owl:onProperty test_schema:numberOfSubjects ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:numberOfSubjects ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:approach ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:numberOfSamples ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:numberOfFiles ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:dataStandard ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Integer ;
-            owl:onProperty test_schema:numberOfBytes ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty test_schema:numberOfCells ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:numberOfBytes ],
         [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:numberOfFiles ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:variableMeasured ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:StandardsType ;
+            owl:onProperty test_schema:dataStandard ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ApproachType ;
+            owl:onProperty test_schema:approach ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:numberOfBytes ],
+            owl:onProperty test_schema:numberOfSubjects ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the AssetsSummary Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1208,26 +1208,23 @@ test_schema:CommonModel a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "CommonModel" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
+            owl:allValuesFrom test_schema:Activity ;
+            owl:onProperty test_schema:wasGeneratedBy ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:acknowledgement ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:studyTarget ],
+            owl:onProperty test_schema:contributor ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
+            owl:onProperty test_schema:schemaVersion ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:LicenseType ;
+            owl:onProperty test_schema:license ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:access ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:keywords ],
+            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:protocol ],
@@ -1235,14 +1232,77 @@ test_schema:CommonModel a owl:Class,
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:description ],
         [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:protocol ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:acknowledgement ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AccessRequirements ;
+            owl:onProperty test_schema:access ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:license ],
+            owl:onProperty test_schema:keywords ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:studyTarget ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:keywords ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Resource ;
+            owl:onProperty test_schema:relatedResource ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:ethicsApproval ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:EthicsApproval ;
+            owl:onProperty test_schema:ethicsApproval ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:relatedResource ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:schemaVersion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:about ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:acknowledgement ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:schemaVersion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:access ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:contributor ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:studyTarget ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:repository ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
@@ -1251,46 +1311,16 @@ test_schema:CommonModel a owl:Class,
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:contributor ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Activity ;
-            owl:onProperty test_schema:wasGeneratedBy ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty test_schema:about ],
         [ a owl:Restriction ;
-            owl:allValuesFrom [ a rdfs:Datatype ;
-                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
-                                owl:onDatatype xsd:string ;
-                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-            owl:onProperty test_schema:repository ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Resource ;
-            owl:onProperty test_schema:relatedResource ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:AccessRequirements ;
-            owl:onProperty test_schema:access ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:acknowledgement ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:description ],
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:keywords ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:ethicsApproval ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:acknowledgement ],
+            owl:onProperty test_schema:wasGeneratedBy ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:schemaVersion ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:EthicsApproval ;
-            owl:onProperty test_schema:ethicsApproval ],
+            owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
@@ -1298,41 +1328,11 @@ test_schema:CommonModel a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:about ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:repository ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:repository ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:wasGeneratedBy ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:studyTarget ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:relatedResource ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom [ a rdfs:Datatype ;
-                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
-                                owl:onDatatype xsd:string ;
-                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-            owl:onProperty test_schema:protocol ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:LicenseType ;
             owl:onProperty test_schema:license ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:schemaVersion ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:schemaVersion ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the CommonModel Pydantic model has changes in value in meta slots: ['ifabsent', 'notes'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1341,26 +1341,17 @@ test_schema:Contributor a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Contributor" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:url ],
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:email ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:awardNumber ],
+            owl:onProperty test_schema:email ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
+            owl:onProperty test_schema:awardNumber ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:includeInCitation ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
@@ -1368,41 +1359,50 @@ test_schema:Contributor a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Boolean ;
-            owl:onProperty test_schema:includeInCitation ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:email ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:includeInCitation ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:awardNumber ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:roleName ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:awardNumber ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:email ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:email ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:roleName ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:awardNumber ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Boolean ;
+            owl:onProperty test_schema:includeInCitation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
             owl:allValuesFrom test_schema:RoleType ;
             owl:onProperty test_schema:roleName ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:awardNumber ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Contributor Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1425,19 +1425,13 @@ test_schema:Equipment a owl:Class,
     rdfs:label "Equipment" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
             owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
@@ -1446,13 +1440,19 @@ test_schema:Equipment a owl:Class,
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Equipment Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1461,23 +1461,23 @@ test_schema:EthicsApproval a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "EthicsApproval" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:contactPoint ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:ContactPoint ;
             owl:onProperty test_schema:contactPoint ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:contactPoint ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:contactPoint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the EthicsApproval Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1486,10 +1486,10 @@ test_schema:Locus a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Locus" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
+            owl:minCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:locusType ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
@@ -1498,10 +1498,10 @@ test_schema:Locus a owl:Class,
             owl:minCardinality 0 ;
             owl:onProperty test_schema:locusType ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
+            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:locusType ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Locus Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
@@ -1511,13 +1511,8 @@ test_schema:Organization a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Organization" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom test_schema:ContactPoint ;
             owl:onProperty test_schema:contactPoint ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom [ a rdfs:Datatype ;
-                    owl:onDatatype xsd:string ;
-                    owl:withRestrictions ( [ xsd:pattern "^https://ror.org/[a-z0-9]+$" ] ) ] ;
-            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:identifier ],
@@ -1525,7 +1520,12 @@ test_schema:Organization a owl:Class,
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:ContactPoint ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^https://ror.org/[a-z0-9]+$" ] ) ] ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:contactPoint ],
         test_schema:Contributor ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the includeInCitation slot. The slot representation of the includeInCitation field in the Organization Pydantic model has changes in value in meta slots: ['ifabsent'] .",
@@ -1536,23 +1536,23 @@ test_schema:Publishable a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Publishable" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:datePublished ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:datePublished ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:publishedBy ],
-        [ a owl:Restriction ;
             owl:allValuesFrom linkml:Datetime ;
             owl:onProperty test_schema:datePublished ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:publishedBy ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:publishedBy ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:publishedBy ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:datePublished ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:datePublished ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Publishable Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1561,8 +1561,35 @@ test_schema:RelatedParticipant a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "RelatedParticipant" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:ParticipantRelationType ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:relation ],
@@ -1571,34 +1598,7 @@ test_schema:RelatedParticipant a owl:Class,
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:ParticipantRelationType ;
-            owl:onProperty test_schema:relation ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom [ a rdfs:Datatype ;
-                    owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
-                                owl:onDatatype xsd:string ;
-                                owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the RelatedParticipant Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -1607,32 +1607,23 @@ test_schema:Resource a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Resource" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:repository ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:RelationType ;
-            owl:onProperty test_schema:relation ],
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
+            owl:onProperty test_schema:resourceType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:repository ],
+            owl:onProperty test_schema:resourceType ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:ResourceType ;
             owl:onProperty test_schema:resourceType ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:relation ],
@@ -1640,11 +1631,26 @@ test_schema:Resource a owl:Class,
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:RelationType ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:resourceType ],
+            owl:onProperty test_schema:repository ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:resourceType ],
+            owl:onProperty test_schema:url ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:relation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:repository ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
@@ -1653,13 +1659,7 @@ test_schema:Resource a owl:Class,
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:repository ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:relation ],
+            owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty test_schema:identifier ],
@@ -1705,8 +1705,8 @@ test_schema:access a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "access" ;
     rdfs:range test_schema:AccessRequirements ;
-    skos:editorialNote "pydantic2linkml: Unable to express the default factory, <function CommonModel.<lambda> at 0x7f7398696c00>, in LinkML.",
-        "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function AccessRequirements.open_or_embargoed at 0x7f73986ebc40>." ;
+    skos:editorialNote "pydantic2linkml: Unable to express the default factory, <function CommonModel.<lambda> at 0x7f0b50ae2c00>, in LinkML.",
+        "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function AccessRequirements.open_or_embargoed at 0x7f0b50b37c40>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:affiliation a owl:ObjectProperty,
@@ -1746,7 +1746,7 @@ test_schema:contentUrl a owl:ObjectProperty,
             owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
                         owl:onDatatype xsd:string ;
                         owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73983740e0>." ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b507c00e0>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:contributor a owl:ObjectProperty,
@@ -1804,7 +1804,7 @@ test_schema:manifestLocation a owl:ObjectProperty,
             owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
                         owl:onDatatype xsd:string ;
                         owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f7398697ce0>." ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50ae3ce0>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:protocol a owl:ObjectProperty,
@@ -1814,7 +1814,7 @@ test_schema:protocol a owl:ObjectProperty,
             owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
                         owl:onDatatype xsd:string ;
                         owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f7398696b60>." ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50ae2b60>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:relatedParticipant a owl:ObjectProperty,
@@ -1827,7 +1827,7 @@ test_schema:relatedResource a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "relatedResource" ;
     rdfs:range test_schema:Resource ;
-    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function Resource.identifier_or_url at 0x7f73986eb420>." ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function Resource.identifier_or_url at 0x7f0b50b37420>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:roleName a owl:ObjectProperty,
@@ -1875,56 +1875,56 @@ test_schema:BioSample a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "BioSample" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:sameAs ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Anatomy ;
-            owl:onProperty test_schema:anatomy ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:AssayType ;
-            owl:onProperty test_schema:assayType ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:sampleType ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:anatomy ],
-        [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:hasMember ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:assayType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:hasMember ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:wasDerivedFrom ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Participant ;
+            owl:onProperty test_schema:wasAttributedTo ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:BioSample ;
             owl:onProperty test_schema:wasDerivedFrom ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:sameAs ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:assayType ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty test_schema:sampleType ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Participant ;
-            owl:onProperty test_schema:wasAttributedTo ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:wasDerivedFrom ],
+            owl:allValuesFrom test_schema:Anatomy ;
+            owl:onProperty test_schema:anatomy ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:SampleType ;
             owl:onProperty test_schema:sampleType ],
         [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:sampleType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:AssayType ;
+            owl:onProperty test_schema:assayType ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:hasMember ],
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:sampleType ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:anatomy ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:wasAttributedTo ],
@@ -1944,100 +1944,100 @@ test_schema:Participant a owl:Class,
     rdfs:label "Participant" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:relatedParticipant ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:sameAs ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:PropertyValue ;
-            owl:onProperty test_schema:age ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:sex ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:genotype ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:sex ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:StrainType ;
-            owl:onProperty test_schema:strain ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:altName ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:altName ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:species ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty test_schema:disorder ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:vendor ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:strain ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Organization ;
-            owl:onProperty test_schema:vendor ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:age ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:strain ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:genotype ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:sameAs ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:SexType ;
-            owl:onProperty test_schema:sex ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:RelatedParticipant ;
-            owl:onProperty test_schema:relatedParticipant ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Disorder ;
-            owl:onProperty test_schema:disorder ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:cellLine ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:age ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:genotype ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:vendor ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:cellLine ],
         [ a owl:Restriction ;
             owl:allValuesFrom test_schema:SpeciesType ;
             owl:onProperty test_schema:species ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:species ],
+            owl:onProperty test_schema:sex ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
+            owl:allValuesFrom test_schema:RelatedParticipant ;
+            owl:onProperty test_schema:relatedParticipant ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:vendor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:cellLine ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Organization ;
+            owl:onProperty test_schema:vendor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:strain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:age ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:strain ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:PropertyValue ;
+            owl:onProperty test_schema:age ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty test_schema:sex ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:cellLine ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:cellLine ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:altName ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Disorder ;
+            owl:onProperty test_schema:disorder ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:genotype ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:altName ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:SexType ;
+            owl:onProperty test_schema:sex ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:sameAs ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:age ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:StrainType ;
+            owl:onProperty test_schema:strain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:relatedParticipant ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:species ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:genotype ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:vendor ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:genotype ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Participant Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -2118,7 +2118,7 @@ test_schema:dataType a owl:ObjectProperty,
             owl:intersectionOf ( linkml:Uri [ a rdfs:Datatype ;
                         owl:onDatatype xsd:string ;
                         owl:withRestrictions ( [ xsd:pattern "^(?i:http|https)://[^\\s]+$" ] ) ] ) ] ;
-    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb9c0>." ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the wrap validation function, <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b379c0>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:dateCreated a owl:ObjectProperty,
@@ -2160,7 +2160,7 @@ test_schema:embargoedUntil a owl:ObjectProperty,
 test_schema:encodingFormat a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "encodingFormat" ;
-    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type function-wrap. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eba60>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}, {'type': 'str'}]})." ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type function-wrap. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b37a60>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}, {'type': 'str'}]})." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:endDate a owl:ObjectProperty,
@@ -2173,7 +2173,7 @@ test_schema:endDate a owl:ObjectProperty,
 test_schema:genotype a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "genotype" ;
-    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type list. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.GenotypeInfo'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.GenotypeInfo'>>}, 'schema': {'type': 'literal', 'expected': ['GenotypeInfo']}, 'type': 'function-after'}, 'default': 'GenotypeInfo', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'locus': {'type': 'model-field', 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Locus'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Locus'>>}, 'schema': {'type': 'literal', 'expected': ['Locus']}, 'type': 'function-after'}, 'default': 'Locus', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'union', 'choices': [{'type': 'str'}, {'type': 'list', 'items_schema': {'type': 'str'}}]}, 'metadata': {'pydantic_js_updates': {'description': 'Identifier for genotyping locus.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'locusType': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}}, 'model_name': 'Locus', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Locus'}, 'ref': 'dandischema.models.Locus:94132991296384', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Locus'>>]}}, 'metadata': {'pydantic_js_updates': {'description': 'Locus at which information was extracted.'}}}, 'alleles': {'type': 'model-field', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Allele'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Allele'>>}, 'schema': {'type': 'literal', 'expected': ['Allele']}, 'type': 'function-after'}, 'default': 'Allele', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'union', 'choices': [{'type': 'str'}, {'type': 'list', 'items_schema': {'type': 'str'}}]}, 'metadata': {'pydantic_js_updates': {'description': 'Identifier for genotyping allele.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'alleleSymbol': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}, 'alleleType': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}}, 'model_name': 'Allele', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Allele'}, 'ref': 'dandischema.models.Allele:94132991314816', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Allele'>>]}}}, 'metadata': {'pydantic_js_updates': {'description': 'Information about alleles at the locus.'}}}, 'wasGeneratedBy': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Session'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Session'>>}, 'schema': {'type': 'literal', 'expected': ['Session']}, 'type': 'function-after'}, 'default': 'Session', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Name of session', 'description': 'The name of the logical session associated with the asset.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A brief description of the session.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'startDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'endDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'wasAssociatedWith': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'tagged-union', 'choices': {'Person': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7f73986ead40>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Person'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Person'>>}, 'schema': {'type': 'literal', 'expected': ['Person']}, 'type': 'function-after'}, 'default': 'Person', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^\\\\d{4}-\\\\d{4}-\\\\d{4}-(\\\\d{3}X|\\\\d{4})$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'An ORCID identifier', 'description': 'An ORCID (orcid.org) identifier for an individual.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'pattern': \"^([\\\\w\\\\s\\\\-\\\\.']+),\\\\s+([\\\\w\\\\s\\\\-\\\\.']+)$\"}, 'metadata': {'pydantic_js_updates': {'title': 'Use Last, First. Example: Lovelace, Augusta Ada', 'description': 'Use the format: familyname, given names ...'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb060>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94132987981136'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': True}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'affiliation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Affiliation'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Affiliation'>>}, 'schema': {'type': 'literal', 'expected': ['Affiliation']}, 'type': 'function-after'}, 'default': 'Affiliation', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_updates': {'description': 'Name of organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Affiliation', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Affiliation'}, 'ref': 'dandischema.models.Affiliation:94132988702640', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Affiliation'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'An organization that this person is affiliated with.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Person', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Person'}}, 'ref': 'dandischema.models.Person:94132988724064', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Person'>>]}, 'type': 'function-after'}, 'Organization': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.Organization:94132988634640'}, 'Software': {'type': 'model', 'cls': <class 'dandischema.models.Software'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Software'>>}, 'schema': {'type': 'literal', 'expected': ['Software']}, 'type': 'function-after'}, 'default': 'Software', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^RRID:.*'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Research resource identifier', 'description': 'RRID of the software from scicrunch.org.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'version': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb4c0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Web page for the software.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Software', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Software'}, 'ref': 'dandischema.models.Software:94132988580480', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Software'>>]}}, 'Agent': {'type': 'model', 'cls': <class 'dandischema.models.Agent'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Agent'>>}, 'schema': {'type': 'literal', 'expected': ['Agent']}, 'type': 'function-after'}, 'default': 'Agent', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier', 'description': 'Identifier for an agent.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb880>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Agent', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Agent'}, 'ref': 'dandischema.models.Agent:94132988550224', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Agent'>>]}}}, 'discriminator': 'schemaKey', 'strict': False, 'from_attributes': True, 'metadata': {}}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'prov'}}}, 'used': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Equipment'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Equipment'>>}, 'schema': {'type': 'literal', 'expected': ['Equipment']}, 'type': 'function-after'}, 'default': 'Equipment', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'A name for the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Equipment', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Equipment'}, 'ref': 'dandischema.models.Equipment:94132987881040', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Equipment'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A listing of equipment used for the activity.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'Session', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Session'}, 'ref': 'dandischema.models.Session:94132990253024', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Session'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Information about session activity used to determine genotype.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'GenotypeInfo', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'GenotypeInfo'}, 'ref': 'dandischema.models.GenotypeInfo:94132991337280', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.GenotypeInfo'>>]}}}, {'type': 'str'}]})." ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type list. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.GenotypeInfo'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.GenotypeInfo'>>}, 'schema': {'type': 'literal', 'expected': ['GenotypeInfo']}, 'type': 'function-after'}, 'default': 'GenotypeInfo', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'locus': {'type': 'model-field', 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Locus'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Locus'>>}, 'schema': {'type': 'literal', 'expected': ['Locus']}, 'type': 'function-after'}, 'default': 'Locus', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'union', 'choices': [{'type': 'str'}, {'type': 'list', 'items_schema': {'type': 'str'}}]}, 'metadata': {'pydantic_js_updates': {'description': 'Identifier for genotyping locus.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'locusType': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}}, 'model_name': 'Locus', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Locus'}, 'ref': 'dandischema.models.Locus:94662900034160', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Locus'>>]}}, 'metadata': {'pydantic_js_updates': {'description': 'Locus at which information was extracted.'}}}, 'alleles': {'type': 'model-field', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Allele'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Allele'>>}, 'schema': {'type': 'literal', 'expected': ['Allele']}, 'type': 'function-after'}, 'default': 'Allele', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'union', 'choices': [{'type': 'str'}, {'type': 'list', 'items_schema': {'type': 'str'}}]}, 'metadata': {'pydantic_js_updates': {'description': 'Identifier for genotyping allele.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'alleleSymbol': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}, 'alleleType': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {}}}, 'model_name': 'Allele', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Allele'}, 'ref': 'dandischema.models.Allele:94662900053392', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Allele'>>]}}}, 'metadata': {'pydantic_js_updates': {'description': 'Information about alleles at the locus.'}}}, 'wasGeneratedBy': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Session'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Session'>>}, 'schema': {'type': 'literal', 'expected': ['Session']}, 'type': 'function-after'}, 'default': 'Session', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Name of session', 'description': 'The name of the logical session associated with the asset.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A brief description of the session.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'startDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'endDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'wasAssociatedWith': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'tagged-union', 'choices': {'Person': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7f0b50b36d40>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Person'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Person'>>}, 'schema': {'type': 'literal', 'expected': ['Person']}, 'type': 'function-after'}, 'default': 'Person', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^\\\\d{4}-\\\\d{4}-\\\\d{4}-(\\\\d{3}X|\\\\d{4})$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'An ORCID identifier', 'description': 'An ORCID (orcid.org) identifier for an individual.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'pattern': \"^([\\\\w\\\\s\\\\-\\\\.']+),\\\\s+([\\\\w\\\\s\\\\-\\\\.']+)$\"}, 'metadata': {'pydantic_js_updates': {'title': 'Use Last, First. Example: Lovelace, Augusta Ada', 'description': 'Use the format: familyname, given names ...'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b37060>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94662896846752'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': True}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'affiliation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Affiliation'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Affiliation'>>}, 'schema': {'type': 'literal', 'expected': ['Affiliation']}, 'type': 'function-after'}, 'default': 'Affiliation', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_updates': {'description': 'Name of organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Affiliation', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Affiliation'}, 'ref': 'dandischema.models.Affiliation:94662897452784', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Affiliation'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'An organization that this person is affiliated with.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Person', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Person'}}, 'ref': 'dandischema.models.Person:94662897474208', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Person'>>]}, 'type': 'function-after'}, 'Organization': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.Organization:94662897384208'}, 'Software': {'type': 'model', 'cls': <class 'dandischema.models.Software'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Software'>>}, 'schema': {'type': 'literal', 'expected': ['Software']}, 'type': 'function-after'}, 'default': 'Software', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^RRID:.*'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Research resource identifier', 'description': 'RRID of the software from scicrunch.org.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'version': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b374c0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Web page for the software.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Software', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Software'}, 'ref': 'dandischema.models.Software:94662897775648', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Software'>>]}}, 'Agent': {'type': 'model', 'cls': <class 'dandischema.models.Agent'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Agent'>>}, 'schema': {'type': 'literal', 'expected': ['Agent']}, 'type': 'function-after'}, 'default': 'Agent', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier', 'description': 'Identifier for an agent.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b37880>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Agent', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Agent'}, 'ref': 'dandischema.models.Agent:94662897311344', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Agent'>>]}}}, 'discriminator': 'schemaKey', 'strict': False, 'from_attributes': True, 'metadata': {}}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'prov'}}}, 'used': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Equipment'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Equipment'>>}, 'schema': {'type': 'literal', 'expected': ['Equipment']}, 'type': 'function-after'}, 'default': 'Equipment', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'A name for the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Equipment', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Equipment'}, 'ref': 'dandischema.models.Equipment:94662896620736', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Equipment'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A listing of equipment used for the activity.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'Session', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Session'}, 'ref': 'dandischema.models.Session:94662899001856', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Session'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Information about session activity used to determine genotype.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'GenotypeInfo', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'GenotypeInfo'}, 'ref': 'dandischema.models.GenotypeInfo:94662900075760', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.GenotypeInfo'>>]}}}, {'type': 'str'}]})." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:includeInCitation a owl:ObjectProperty,
@@ -2247,13 +2247,13 @@ test_schema:path a owl:ObjectProperty,
 test_schema:propertyID a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "propertyID" ;
-    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type definition-ref. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'definition-ref', 'schema_ref': 'dandischema.models.IdentifierType:94132987942304'}, {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986b3420>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}]})." ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type definition-ref. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'definition-ref', 'schema_ref': 'dandischema.models.IdentifierType:94662896681056'}, {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50aff420>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}]})." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:publishedBy a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "publishedBy" ;
-    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type function-wrap. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f7398374400>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}, {'type': 'model', 'cls': <class 'dandischema.models.PublishActivity'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.PublishActivity'>>}, 'schema': {'type': 'literal', 'expected': ['PublishActivity']}, 'type': 'function-after'}, 'default': 'PublishActivity', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'The name of the activity.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the activity.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'startDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'endDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'wasAssociatedWith': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'tagged-union', 'choices': {'Person': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7f73986ead40>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Person'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Person'>>}, 'schema': {'type': 'literal', 'expected': ['Person']}, 'type': 'function-after'}, 'default': 'Person', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^\\\\d{4}-\\\\d{4}-\\\\d{4}-(\\\\d{3}X|\\\\d{4})$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'An ORCID identifier', 'description': 'An ORCID (orcid.org) identifier for an individual.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'pattern': \"^([\\\\w\\\\s\\\\-\\\\.']+),\\\\s+([\\\\w\\\\s\\\\-\\\\.']+)$\"}, 'metadata': {'pydantic_js_updates': {'title': 'Use Last, First. Example: Lovelace, Augusta Ada', 'description': 'Use the format: familyname, given names ...'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb060>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94132987981136'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': True}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'affiliation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Affiliation'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Affiliation'>>}, 'schema': {'type': 'literal', 'expected': ['Affiliation']}, 'type': 'function-after'}, 'default': 'Affiliation', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_updates': {'description': 'Name of organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Affiliation', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Affiliation'}, 'ref': 'dandischema.models.Affiliation:94132988702640', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Affiliation'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'An organization that this person is affiliated with.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Person', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Person'}}, 'ref': 'dandischema.models.Person:94132988724064', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Person'>>]}, 'type': 'function-after'}, 'Organization': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7f73986ead40>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Organization'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Organization'>>}, 'schema': {'type': 'literal', 'expected': ['Organization']}, 'type': 'function-after'}, 'default': 'Organization', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eac00>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94132987981136'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': False}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'contactPoint': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.ContactPoint'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.ContactPoint'>>}, 'schema': {'type': 'literal', 'expected': ['ContactPoint']}, 'type': 'function-after'}, 'default': 'ContactPoint', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Email address of contact.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986b3b00>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A Web page to find information on how to contact.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'ContactPoint', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'ContactPoint'}, 'ref': 'dandischema.models.ContactPoint:94132988403424', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.ContactPoint'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Organization contact information', 'description': 'Contact for the organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Organization', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Organization'}}, 'ref': 'dandischema.models.Organization:94132988634640', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Organization'>>]}, 'type': 'function-after'}, 'Software': {'type': 'model', 'cls': <class 'dandischema.models.Software'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Software'>>}, 'schema': {'type': 'literal', 'expected': ['Software']}, 'type': 'function-after'}, 'default': 'Software', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^RRID:.*'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Research resource identifier', 'description': 'RRID of the software from scicrunch.org.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'version': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb4c0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Web page for the software.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Software', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Software'}, 'ref': 'dandischema.models.Software:94132988580480', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Software'>>]}}, 'Agent': {'type': 'model', 'cls': <class 'dandischema.models.Agent'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Agent'>>}, 'schema': {'type': 'literal', 'expected': ['Agent']}, 'type': 'function-after'}, 'default': 'Agent', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier', 'description': 'Identifier for an agent.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f73986eb880>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Agent', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Agent'}, 'ref': 'dandischema.models.Agent:94132988550224', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Agent'>>]}}}, 'discriminator': 'schemaKey', 'strict': False, 'from_attributes': True, 'metadata': {}}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'prov'}}}, 'used': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Equipment'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Equipment'>>}, 'schema': {'type': 'literal', 'expected': ['Equipment']}, 'type': 'function-after'}, 'default': 'Equipment', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'A name for the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Equipment', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Equipment'}, 'ref': 'dandischema.models.Equipment:94132987881040', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Equipment'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A listing of equipment used for the activity.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'PublishActivity', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'PublishActivity'}, 'ref': 'dandischema.models.PublishActivity:94132990547008', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.PublishActivity'>>]}}]})." ;
+    skos:editorialNote "pydantic2linkml: Warning: The translation is incomplete. The union core schema contains a choice of type function-wrap. The choice type is yet to be supported. (core schema: {'type': 'union', 'choices': [{'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b507c0400>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}, {'type': 'model', 'cls': <class 'dandischema.models.PublishActivity'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.PublishActivity'>>}, 'schema': {'type': 'literal', 'expected': ['PublishActivity']}, 'type': 'function-after'}, 'default': 'PublishActivity', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'The name of the activity.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the activity.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'startDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'endDate': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'datetime', 'microseconds_precision': 'truncate'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'wasAssociatedWith': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'tagged-union', 'choices': {'Person': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7f0b50b36d40>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Person'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Person'>>}, 'schema': {'type': 'literal', 'expected': ['Person']}, 'type': 'function-after'}, 'default': 'Person', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^\\\\d{4}-\\\\d{4}-\\\\d{4}-(\\\\d{3}X|\\\\d{4})$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'An ORCID identifier', 'description': 'An ORCID (orcid.org) identifier for an individual.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'pattern': \"^([\\\\w\\\\s\\\\-\\\\.']+),\\\\s+([\\\\w\\\\s\\\\-\\\\.']+)$\"}, 'metadata': {'pydantic_js_updates': {'title': 'Use Last, First. Example: Lovelace, Augusta Ada', 'description': 'Use the format: familyname, given names ...'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b37060>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94662896846752'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': True}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'affiliation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Affiliation'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Affiliation'>>}, 'schema': {'type': 'literal', 'expected': ['Affiliation']}, 'type': 'function-after'}, 'default': 'Affiliation', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_updates': {'description': 'Name of organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Affiliation', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Affiliation'}, 'ref': 'dandischema.models.Affiliation:94662897452784', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Affiliation'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'An organization that this person is affiliated with.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Person', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Person'}}, 'ref': 'dandischema.models.Person:94662897474208', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Person'>>]}, 'type': 'function-after'}, 'Organization': {'function': {'type': 'no-info', 'function': <function Contributor.ensure_contact_person_has_email at 0x7f0b50b36d40>}, 'schema': {'type': 'model', 'cls': <class 'dandischema.models.Organization'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Organization'>>}, 'schema': {'type': 'literal', 'expected': ['Organization']}, 'type': 'function-after'}, 'default': 'Organization', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^https://ror.org/[a-z0-9]+$'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'A ror.org identifier', 'description': 'Use an ror.org identifier for institutions.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b36c00>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'roleName': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'definition-ref', 'schema_ref': 'dandischema.models.RoleType:94662896846752'}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Role', 'description': 'Role(s) of the contributor. Multiple roles can be selected.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'includeInCitation': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'bool'}, 'default': False}, 'metadata': {'pydantic_js_updates': {'title': 'Include contributor in citation', 'description': 'A flag to indicate whether a contributor should be included when generating a citation for the item'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'awardNumber': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier for an award', 'description': 'Identifier associated with a sponsored or gift award.'}, 'pydantic_js_extra': {'nskey': 'dandi'}}}, 'contactPoint': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.ContactPoint'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.ContactPoint'>>}, 'schema': {'type': 'literal', 'expected': ['ContactPoint']}, 'type': 'function-after'}, 'default': 'ContactPoint', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'email': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'function': {'type': 'no-info', 'function': <bound method EmailStr._validate of <class 'pydantic.networks.EmailStr'>>}, 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_functions': [<bound method EmailStr.__get_pydantic_json_schema__ of <class 'pydantic.networks.EmailStr'>>]}, 'type': 'function-after'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Email address of contact.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50affb00>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A Web page to find information on how to contact.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'ContactPoint', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'ContactPoint'}, 'ref': 'dandischema.models.ContactPoint:94662897153536', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.ContactPoint'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Organization contact information', 'description': 'Contact for the organization'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Organization', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Organization'}}, 'ref': 'dandischema.models.Organization:94662897384208', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Organization'>>]}, 'type': 'function-after'}, 'Software': {'type': 'model', 'cls': <class 'dandischema.models.Software'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Software'>>}, 'schema': {'type': 'literal', 'expected': ['Software']}, 'type': 'function-after'}, 'default': 'Software', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str', 'pattern': '^RRID:.*'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Research resource identifier', 'description': 'RRID of the software from scicrunch.org.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'version': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b374c0>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Web page for the software.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Software', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Software'}, 'ref': 'dandischema.models.Software:94662897775648', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Software'>>]}}, 'Agent': {'type': 'model', 'cls': <class 'dandischema.models.Agent'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Agent'>>}, 'schema': {'type': 'literal', 'expected': ['Agent']}, 'type': 'function-after'}, 'default': 'Agent', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'title': 'Identifier', 'description': 'Identifier for an agent.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str'}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'url': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'function-wrap', 'function': {'type': 'no-info', 'function': <function _BaseUrl.__get_pydantic_core_schema__.<locals>.wrap_val at 0x7f0b50b37880>}, 'schema': {'type': 'url', 'allowed_schemes': ['http', 'https']}, 'metadata': {'pydantic_js_functions': [<bound method _BaseUrl.__get_pydantic_json_schema__ of <class 'pydantic.networks.AnyHttpUrl'>>]}, 'serialization': {'type': 'function-plain', 'function': <bound method _BaseUrl.serialize_url of <class 'pydantic.networks.AnyHttpUrl'>>, 'info_arg': True}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Agent', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Agent'}, 'ref': 'dandischema.models.Agent:94662897311344', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Agent'>>]}}}, 'discriminator': 'schemaKey', 'strict': False, 'from_attributes': True, 'metadata': {}}}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'prov'}}}, 'used': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'list', 'items_schema': {'type': 'model', 'cls': <class 'dandischema.models.Equipment'>, 'schema': {'type': 'model-fields', 'fields': {'id': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'Uniform resource identifier'}, 'pydantic_js_extra': {'readOnly': True}}}, 'schemaKey': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'function': {'type': 'no-info', 'function': <bound method DandiBaseModel.ensure_schemakey of <class 'dandischema.models.Equipment'>>}, 'schema': {'type': 'literal', 'expected': ['Equipment']}, 'type': 'function-after'}, 'default': 'Equipment', 'validate_default': True}, 'metadata': {'pydantic_js_extra': {'readOnly': True}}}, 'identifier': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_extra': {'nskey': 'schema'}}}, 'name': {'type': 'model-field', 'schema': {'type': 'str', 'max_length': 150}, 'metadata': {'pydantic_js_updates': {'title': 'Title', 'description': 'A name for the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}, 'description': {'type': 'model-field', 'schema': {'type': 'default', 'schema': {'type': 'nullable', 'schema': {'type': 'str'}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'The description of the equipment.'}, 'pydantic_js_extra': {'nskey': 'schema'}}}}, 'model_name': 'Equipment', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'Equipment'}, 'ref': 'dandischema.models.Equipment:94662896620736', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.Equipment'>>]}}}}, 'default': None}, 'metadata': {'pydantic_js_updates': {'description': 'A listing of equipment used for the activity.'}, 'pydantic_js_extra': {'nskey': 'prov'}}}}, 'model_name': 'PublishActivity', 'computed_fields': []}, 'custom_init': False, 'root_model': False, 'post_init': 'model_post_init', 'config': {'title': 'PublishActivity'}, 'ref': 'dandischema.models.PublishActivity:94662899304160', 'metadata': {'pydantic_js_functions': [<bound method DandiBaseModel.__get_pydantic_json_schema__ of <class 'dandischema.models.PublishActivity'>>]}}]})." ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:releaseNotes a owl:ObjectProperty,
@@ -2335,7 +2335,7 @@ test_schema:vendor a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "vendor" ;
     rdfs:range test_schema:Organization ;
-    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function Contributor.ensure_contact_person_has_email at 0x7f73986ead40>." ;
+    skos:editorialNote "pydantic2linkml: Unable to translate the logic contained in the after validation function, <function Contributor.ensure_contact_person_has_email at 0x7f0b50b36d40>." ;
     skos:inScheme <http://example.org/test-schema> .
 
 <dcite:Other> a test_schema:ResourceType,
@@ -2356,23 +2356,38 @@ test_schema:Activity a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Activity" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom test_schema:Equipment ;
+            owl:onProperty test_schema:used ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:identifier ],
+        [ a owl:Restriction ;
             owl:allValuesFrom linkml:Datetime ;
             owl:onProperty test_schema:endDate ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:startDate ],
+            owl:minCardinality 1 ;
+            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty test_schema:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:endDate ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:wasAssociatedWith ],
+            owl:allValuesFrom linkml:Datetime ;
+            owl:onProperty test_schema:startDate ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:identifier ],
+            owl:onProperty test_schema:used ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:wasAssociatedWith ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
@@ -2380,41 +2395,26 @@ test_schema:Activity a owl:Class,
                                 owl:withRestrictions ( [ xsd:pattern "^(?=.{,150}$)" ] ) ] ) ] ;
             owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
-            owl:allValuesFrom test_schema:Equipment ;
-            owl:onProperty test_schema:used ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:startDate ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:endDate ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Datetime ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:startDate ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:endDate ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty test_schema:wasAssociatedWith ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:used ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:description ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:description ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:startDate ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the Activity Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -2432,10 +2432,10 @@ test_schema:ContactPoint a owl:Class,
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:email ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:url ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
+            owl:onProperty test_schema:email ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
@@ -2448,7 +2448,7 @@ test_schema:ContactPoint a owl:Class,
             owl:onProperty test_schema:url ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty test_schema:email ],
+            owl:onProperty test_schema:url ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the ContactPoint Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -2491,59 +2491,59 @@ test_schema:PropertyValue a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "PropertyValue" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:propertyID ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Float ;
-            owl:onProperty test_schema:maxValue ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:value ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:maxValue ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:unitText ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:maxValue ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:unitText ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:value ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:propertyID ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:value ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty test_schema:valueReference ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:unitText ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:minValue ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:propertyID ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:Float ;
-            owl:onProperty test_schema:minValue ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:valueReference ],
-        [ a owl:Restriction ;
             owl:allValuesFrom test_schema:PropertyValue ;
             owl:onProperty test_schema:valueReference ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:minValue ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:valueReference ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:valueReference ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:minValue ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:maxValue ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:propertyID ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:maxValue ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:propertyID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:unitText ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:unitText ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:unitText ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty test_schema:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:propertyID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty test_schema:maxValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty test_schema:minValue ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:value ],
         test_schema:DandiBaseModel ;
     skos:editorialNote "pydantic2linkml: Impossible to generate slot usage entry for the schemaKey slot. The slot representation of the schemaKey field in the PropertyValue Pydantic model has changes in value in meta slots: ['ifabsent', 'notes', 'range'] ." ;
     skos:inScheme <http://example.org/test-schema> .
@@ -2627,13 +2627,13 @@ test_schema:BaseType a owl:Class,
     rdfs:label "BaseType" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty test_schema:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty test_schema:identifier ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty test_schema:identifier ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty test_schema:name ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:name ],
@@ -2681,23 +2681,23 @@ test_schema:DandiBaseModel a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "DandiBaseModel" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:id ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:schemaKey ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty test_schema:id ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty test_schema:schemaKey ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty test_schema:id ],
+            owl:onProperty test_schema:schemaKey ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
-            owl:onProperty test_schema:schemaKey ] ;
+            owl:onProperty test_schema:schemaKey ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty test_schema:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty test_schema:id ] ;
     skos:inScheme <http://example.org/test-schema> .
 
 test_schema:url a owl:ObjectProperty,

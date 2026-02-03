@@ -2,6 +2,12 @@
   "id": "DANDI:001708/draft",
   "url": "https://dandiarchive.org/dandiset/001708/draft",
   "name": "Noxious stimulation and baseline recordings of ON, OFF and Neutral cells in the rat rostral ventromedial medulla",
+  "about": [
+    {
+      "name": "Rostral Ventromedial Medulla",
+      "schemaKey": "GenericType"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -12,30 +18,230 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Ashworth, Carl (2026) Noxious stimulation and baseline recordings of ON, OFF and Neutral cells in the rat rostral ventromedial medulla (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001708/draft",
+  "citation": "Ashworth, Carl; Mancini, Flavia; Heinricher, Mary; Shi, Zhigang; De Preter, Caitlynn C; Martenson, Melissa (2026) Noxious stimulation and baseline recordings of ON, OFF and Neutral cells in the rat rostral ventromedial medulla (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001708/draft",
+  "keywords": [
+    "Nociception",
+    "Descending Pain Modulation",
+    "Rostral Ventromedial Medulla",
+    "Pain",
+    "single-neurons",
+    "Multi-Timescale Dynamics",
+    "noxious stimulation",
+    "brainstem",
+    "ON- and OFF-cells"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:001708",
   "repository": "https://dandiarchive.org",
   "contributor": [
     {
       "name": "Ashworth, Carl",
-      "email": "carlashworth31@gmail.com",
+      "email": "ca541@cam.ac.uk",
       "roleName": [
         "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0009-0003-3532-0274",
+      "affiliation": [
+        {
+          "name": "University of Cambridge",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013meh722"
+        }
+      ],
       "includeInCitation": true
+    },
+    {
+      "name": "Mancini, Flavia",
+      "email": "fm456@cam.ac.uk",
+      "roleName": [
+        "dcite:Author",
+        "dcite:ContactPerson",
+        "dcite:ProjectLeader"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-8441-9236",
+      "affiliation": [
+        {
+          "name": "University of Cambridge",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013meh722"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Heinricher, Mary",
+      "email": "heinricm@oshu.edu",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [
+        {
+          "name": "Oregon Health and Science University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/009avj582"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Shi, Zhigang",
+      "email": "shiz@oshu.edu",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-5828-1904",
+      "affiliation": [
+        {
+          "name": "Oregon Health and Science University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/009avj582"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "De Preter, Caitlynn C",
+      "email": "depreterc@outlook.com",
+      "roleName": [
+        "dcite:DataCollector",
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-6499-5372",
+      "affiliation": [
+        {
+          "name": "Oregon Health and Science University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/009avj582"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Martenson, Melissa",
+      "email": "melissa.martenson@yahoo.com",
+      "roleName": [
+        "dcite:Author",
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "affiliation": [
+        {
+          "name": "Oregon Health and Science University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/009avj582"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "NS098660, NS120486"
+    },
+    {
+      "name": "MRC Career Development Award",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "MR/T010614/1"
+    },
+    {
+      "name": "UKRI Advanced Pain Discovery Platform grant",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "MR/ W027593/1",
+      "includeInCitation": false
+    },
+    {
+      "name": "EPSRC/MRC Programme Grant",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "UKRI1970"
+    },
+    {
+      "name": "National Institute of Dental and Craniofacial Research",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "F31 DE030677"
+    },
+    {
+      "name": "EPSRC DTP",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "EP/W524633/1"
     }
   ],
   "dateCreated": "2026-01-30T13:28:33.991160+00:00",
   "description": "Dataset consisting of single-electrode recordings in lightly anesthetized Sprague-Dawley rats, during both unstimulated periods of activity lasting roughly 25 minutes, and multiple episodes of noxious hind paw stimulation with heat ramp and noxious pinch. For the accompanying preprint see https://doi.org/10.64898/2025.12.15.693905.",
+  "studyTarget": [
+    "Computational modelling of ON- and OFF-cells in the rostral ventromedial medulla during noxious stimulation and ongoing activity"
+  ],
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Rattus norvegicus - Norway rat",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 104228048,
+    "numberOfFiles": 101,
+    "numberOfSubjects": 83,
+    "variableMeasured": [
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
+  "ethicsApproval": [],
+  "wasGeneratedBy": [],
+  "relatedResource": [
+    {
+      "url": "https://doi.org/10.64898/2025.12.15.693905",
+      "name": "Multi-timescale Rhythmic Dynamics in Rostral Ventromedial Medulla Neurons",
+      "relation": "dcite:IsCitedBy",
+      "schemaKey": "Resource",
+      "repository": "bioarxiv",
+      "resourceType": "dcite:Preprint"
+    }
+  ],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/001708/versions/draft/assets/"
   ]

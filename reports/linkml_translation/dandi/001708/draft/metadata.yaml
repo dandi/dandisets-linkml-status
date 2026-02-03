@@ -1,36 +1,172 @@
+about:
+- name: Rostral Ventromedial Medulla
+  schemaKey: GenericType
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 104228048
+  numberOfFiles: 101
+  numberOfSubjects: 83
   schemaKey: AssetsSummary
-citation: Ashworth, Carl (2026) Noxious stimulation and baseline recordings of ON,
-  OFF and Neutral cells in the rat rostral ventromedial medulla (Version draft) [Data
-  set]. DANDI Archive. https://dandiarchive.org/dandiset/001708/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+citation: Ashworth, Carl; Mancini, Flavia; Heinricher, Mary; Shi, Zhigang; De Preter,
+  Caitlynn C; Martenson, Melissa (2026) Noxious stimulation and baseline recordings
+  of ON, OFF and Neutral cells in the rat rostral ventromedial medulla (Version draft)
+  [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001708/draft
 contributor:
-- affiliation: []
-  email: carlashworth31@gmail.com
+- affiliation:
+  - identifier: https://ror.org/013meh722
+    name: University of Cambridge
+    schemaKey: Affiliation
+  email: ca541@cam.ac.uk
+  identifier: 0009-0003-3532-0274
   includeInCitation: true
   name: Ashworth, Carl
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013meh722
+    name: University of Cambridge
+    schemaKey: Affiliation
+  email: fm456@cam.ac.uk
+  identifier: 0000-0001-8441-9236
+  includeInCitation: true
+  name: Mancini, Flavia
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  - dcite:ProjectLeader
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/009avj582
+    name: Oregon Health and Science University
+    schemaKey: Affiliation
+  email: heinricm@oshu.edu
+  includeInCitation: true
+  name: Heinricher, Mary
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/009avj582
+    name: Oregon Health and Science University
+    schemaKey: Affiliation
+  email: shiz@oshu.edu
+  identifier: 0000-0002-5828-1904
+  includeInCitation: true
+  name: Shi, Zhigang
+  roleName:
+  - dcite:DataCollector
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/009avj582
+    name: Oregon Health and Science University
+    schemaKey: Affiliation
+  email: depreterc@outlook.com
+  identifier: 0000-0002-6499-5372
+  includeInCitation: true
+  name: De Preter, Caitlynn C
+  roleName:
+  - dcite:DataCollector
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/009avj582
+    name: Oregon Health and Science University
+    schemaKey: Affiliation
+  email: melissa.martenson@yahoo.com
+  includeInCitation: true
+  name: Martenson, Melissa
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  schemaKey: Person
+- awardNumber: NS098660, NS120486
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: MR/T010614/1
+  name: MRC Career Development Award
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: MR/ W027593/1
+  includeInCitation: false
+  name: UKRI Advanced Pain Discovery Platform grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: UKRI1970
+  name: EPSRC/MRC Programme Grant
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: F31 DE030677
+  name: National Institute of Dental and Craniofacial Research
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: EP/W524633/1
+  name: EPSRC DTP
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2026-01-30T13:28:33.991160+00:00'
 description: Dataset consisting of single-electrode recordings in lightly anesthetized
   Sprague-Dawley rats, during both unstimulated periods of activity lasting roughly
   25 minutes, and multiple episodes of noxious hind paw stimulation with heat ramp
   and noxious pinch. For the accompanying preprint see https://doi.org/10.64898/2025.12.15.693905.
+ethicsApproval: []
 id: DANDI:001708/draft
 identifier: DANDI:001708
+keywords:
+- Nociception
+- Descending Pain Modulation
+- Rostral Ventromedial Medulla
+- Pain
+- single-neurons
+- Multi-Timescale Dynamics
+- noxious stimulation
+- brainstem
+- ON- and OFF-cells
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001708/versions/draft/assets/
 name: Noxious stimulation and baseline recordings of ON, OFF and Neutral cells in
   the rat rostral ventromedial medulla
+relatedResource:
+- name: Multi-timescale Rhythmic Dynamics in Rostral Ventromedial Medulla Neurons
+  relation: dcite:IsCitedBy
+  repository: bioarxiv
+  resourceType: dcite:Preprint
+  schemaKey: Resource
+  url: https://doi.org/10.64898/2025.12.15.693905
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
+studyTarget:
+- Computational modelling of ON- and OFF-cells in the rostral ventromedial medulla
+  during noxious stimulation and ongoing activity
 url: https://dandiarchive.org/dandiset/001708/draft
 version: draft
+wasGeneratedBy: []
