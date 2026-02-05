@@ -1,6 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:843e26d0-7e03-4016-8858-26d8ed692f68'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2026-02-05T01:53:29.566481+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2026-02-05T01:53:29.566481+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:364dac09-905f-4de2-872a-fd21a13aaa31'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:843e26d0-7e03-4016-8858-26d8ed692f68'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2026-02-05T01:53:29.566481+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2026-02-05T01:53:29.566481+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:364dac09-905f-4de2-872a-fd21a13aaa31'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.oist.jp/ncu'', ''name'': ''Doya, Kenji'', ''email'':
     ''doya@oist.jp'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
     ''dcite:ContactPerson'', ''dcite:DataManager'', ''dcite:FormalAnalysis'', ''dcite:FundingAcquisition'',
@@ -28,7 +54,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Ito, Makoto'', ''roleName'': [''dcite:Author'', ''dcite:Conceptualization'',
     ''dcite:DataCollector'', ''dcite:FormalAnalysis'', ''dcite:Investigation'', ''dcite:ProjectMember'',
     ''dcite:Researcher''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
@@ -54,7 +80,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Taniguchi, Masachika'', ''email'': ''mtanigu-vendor@oist.jp'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
     [], ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
