@@ -32,9 +32,55 @@
   "dateCreated": "2026-02-04T03:53:18.654776+00:00",
   "description": "Suite2 processed and curated two photon data and associated behavioral data included in publication. ",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "behavioral approach",
+        "schemaKey": "ApproachType"
+      },
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 73381470480,
+    "numberOfFiles": 128,
+    "numberOfSubjects": 22,
+    "variableMeasured": [
+      "OpticalChannel",
+      "BehavioralTimeSeries",
+      "ImagingPlane",
+      "ProcessingModule",
+      "PlaneSegmentation"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
