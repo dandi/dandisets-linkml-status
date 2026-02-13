@@ -27,7 +27,9 @@
     ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:ProjectAdministration'',
     ''dcite:FormalAnalysis'', ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''],
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7860-577X'', ''affiliation'':
-    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+    [{''name'': ''NYU Langone Health'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/005dvqh91''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -44,7 +46,9 @@
       ''dcite:Investigation'', ''dcite:Methodology'', ''dcite:ProjectAdministration'',
       ''dcite:FormalAnalysis'', ''dcite:Software'', ''dcite:Validation'', ''dcite:Visualization''],
       ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-7860-577X'', ''affiliation'':
-      [], ''includeInCitation'': True} is not of type ''string'''
+      [{''name'': ''NYU Langone Health'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/005dvqh91''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -53,8 +57,9 @@
   instantiates: Dandiset
   message: '{''name'': '' Zutshi, Ipshita'', ''roleName'': [''dcite:Methodology'',
     ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8180-0816'',
-    ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'' in
-    /contributor/1'
+    ''affiliation'': [{''name'': ''NYU Langone Health'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/005dvqh91''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -67,17 +72,21 @@
     - type
     message: '{''name'': '' Zutshi, Ipshita'', ''roleName'': [''dcite:Methodology'',
       ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8180-0816'',
-      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+      ''affiliation'': [{''name'': ''NYU Langone Health'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/005dvqh91''}], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Yoon, Euisik'', ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'',
-    ''dcite:Supervision'', ''dcite:ProjectAdministration''], ''schemaKey'': ''Person'',
-    ''identifier'': ''0000-0002-2127-1200'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/2'
+  message: "{'name': 'Yoon, Euisik', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition',
+    'dcite:Supervision', 'dcite:ProjectAdministration'], 'schemaKey': 'Person', 'identifier':
+    '0000-0002-2127-1200', 'affiliation': [{'name': 'University of Michigan\u2013Ann
+    Arbor', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'},
+    {'name': 'Yonsei University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01wjejq96'}],
+    'includeInCitation': True} is not of type 'string' in /contributor/2"
   severity: ERROR
   source:
     absolute_path:
@@ -88,10 +97,12 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Yoon, Euisik'', ''roleName'': [''dcite:Author'', ''dcite:FundingAcquisition'',
-      ''dcite:Supervision'', ''dcite:ProjectAdministration''], ''schemaKey'': ''Person'',
-      ''identifier'': ''0000-0002-2127-1200'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+    message: "{'name': 'Yoon, Euisik', 'roleName': ['dcite:Author', 'dcite:FundingAcquisition',
+      'dcite:Supervision', 'dcite:ProjectAdministration'], 'schemaKey': 'Person',
+      'identifier': '0000-0002-2127-1200', 'affiliation': [{'name': 'University of
+      Michigan\u2013Ann Arbor', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00jmfr291'},
+      {'name': 'Yonsei University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01wjejq96'}],
+      'includeInCitation': True} is not of type 'string'"
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -101,7 +112,9 @@
   message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'email': 'gyorgy.buzsaki@nyumc.org',
     'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition',
     'dcite:Methodology', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Researcher'],
-    'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [],
+    'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name':
+    'NYU Langone Health', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'},
+    {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}],
     'includeInCitation': True} is not of type 'string' in /contributor/3"
   severity: ERROR
   source:
@@ -116,7 +129,9 @@
     message: "{'name': 'Buzs\xE1ki, Gy\xF6rgy', 'email': 'gyorgy.buzsaki@nyumc.org',
       'roleName': ['dcite:Author', 'dcite:Conceptualization', 'dcite:FundingAcquisition',
       'dcite:Methodology', 'dcite:ProjectAdministration', 'dcite:Supervision', 'dcite:Researcher'],
-      'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [],
+      'schemaKey': 'Person', 'identifier': '0000-0002-3100-4800', 'affiliation': [{'name':
+      'NYU Langone Health', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'},
+      {'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}],
       'includeInCitation': True} is not of type 'string'"
     validator: type
     validator_value: string
@@ -154,7 +169,7 @@
   instantiates: Dandiset
   message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
     Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH107396, U19NS107616'', ''contactPoint'':
+    ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH107396'', ''contactPoint'':
     [], ''includeInCitation'': False} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
@@ -168,9 +183,8 @@
     - type
     message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
       Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH107396,
-      U19NS107616'', ''contactPoint'': [], ''includeInCitation'': False} is not of
-      type ''string'''
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH107396'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -255,9 +269,8 @@
   instantiates: Dandiset
   message: '{''url'': ''http://leonlevyfoundation.org/'', ''name'': ''Leon Levy Foundation'',
     ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/033hnyq61'', ''awardNumber'': ''NIH MH107396,  NS 090583 NSF
-    PIRE, 1545858, U19 NS107616'', ''contactPoint'': [], ''includeInCitation'': False}
-    is not of type ''string'' in /contributor/9'
+    ''https://ror.org/033hnyq61'', ''awardNumber'': ''Leon Levy Fellowship'', ''contactPoint'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/9'
   severity: ERROR
   source:
     absolute_path:
@@ -270,9 +283,9 @@
     - type
     message: '{''url'': ''http://leonlevyfoundation.org/'', ''name'': ''Leon Levy
       Foundation'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/033hnyq61'', ''awardNumber'': ''NIH MH107396,  NS
-      090583 NSF PIRE, 1545858, U19 NS107616'', ''contactPoint'': [], ''includeInCitation'':
-      False} is not of type ''string'''
+      ''identifier'': ''https://ror.org/033hnyq61'', ''awardNumber'': ''Leon Levy
+      Fellowship'', ''contactPoint'': [], ''includeInCitation'': False} is not of
+      type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -281,7 +294,9 @@
   instantiates: Dandiset
   message: '{''name'': ''Mayorquin, Heberto'', ''email'': ''h.mayorquin@gmail.com'',
     ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'':
-    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/10'
+    [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/01d74sk53''}], ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/10'
   severity: ERROR
   source:
     absolute_path:
@@ -294,7 +309,81 @@
     - type
     message: '{''name'': ''Mayorquin, Heberto'', ''email'': ''h.mayorquin@gmail.com'',
       ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''affiliation'':
-      [], ''includeInCitation'': False} is not of type ''string'''
+      [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/01d74sk53''}], ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
+    Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/01cwqze88'', ''awardNumber'': ''U19NS107616'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
+      Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''U19NS107616'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
+    Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/01cwqze88'', ''awardNumber'': ''NS 090583'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/12'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 12
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
+      Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''NS 090583'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''http://www.nsf.gov/'', ''name'': ''National Science Foundation'',
+    ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+    ''https://ror.org/021nxhr62'', ''awardNumber'': ''NSF PIRE 1545858'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/13'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 13
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''http://www.nsf.gov/'', ''name'': ''National Science Foundation'',
+      ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
+      ''https://ror.org/021nxhr62'', ''awardNumber'': ''NSF PIRE 1545858'', ''includeInCitation'':
+      False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

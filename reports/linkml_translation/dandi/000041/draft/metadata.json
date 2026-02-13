@@ -2,7 +2,18 @@
   "id": "DANDI:000041/draft",
   "url": "https://dandiarchive.org/dandiset/000041/draft",
   "name": "Network Homeostasis and State Dynamics of Neocortical Sleep",
-  "about": [],
+  "about": [
+    {
+      "name": "frontal cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0001870"
+    },
+    {
+      "name": "neocortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0001950"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -16,12 +27,16 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2025) Network Homeostasis and State Dynamics of Neocortical Sleep (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000041/draft",
+  "citation": "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer N.; Buzs\u00e1ki, Gy\u00f6rgy (2026) Network Homeostasis and State Dynamics of Neocortical Sleep (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000041/draft",
   "keywords": [
     "Firing patterns",
     "Sleep/awake states",
     "Sleep stages",
-    "Homeostasis"
+    "Homeostasis",
+    "extracellular electrophysiology",
+    "silicon probes",
+    "LFP",
+    "spike sorting"
   ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000041",
@@ -46,6 +61,11 @@
           "name": "New York University",
           "schemaKey": "Affiliation",
           "identifier": "https://ror.org/0190ak572"
+        },
+        {
+          "name": "Cornell University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05bnh6r87"
         }
       ],
       "includeInCitation": true
@@ -57,7 +77,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-5507-9145",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -66,7 +92,14 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0000-0002-2859-0781",
+      "affiliation": [
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -75,7 +108,14 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0000-0002-1164-638X",
+      "affiliation": [
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -110,22 +150,6 @@
   ],
   "dateCreated": "2020-10-05T16:18:52.896000+00:00",
   "description": "Data was recorded using silicon probe electrodes in the frontal cortices of male Long Evans rats between 4-7 months of age. The design was to have no specific behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage (which it lives in at all\ntimes). Data includes both local field potentials (LFP) and spikes. 11 total animals, 27 recording sessions, 1360 total units recorded, 1121 units considered stable, 995 putative excitatory units and 126 putative inhibitory units. Only recordings including a \u201cWAKE-SLEEP\u201d episode wherein at least 7 minutes of wake are followed by 20 minutes of sleep. On average 2 such WAKE-SLEEP episodes per recording session. ",
-  "publishedBy": {
-    "id": "urn:uuid:4aeea851-78e6-4b02-a941-44324bc92225",
-    "name": "DANDI publish",
-    "endDate": "2025-06-24T04:19:33.987287+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-06-24T04:19:33.987287+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:1ab72d3c-4949-4a13-bf41-43eaac6ac4d6",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "assetsSummary": {
     "species": [
       {
@@ -171,7 +195,6 @@
       }
     ]
   },
-  "datePublished": "2025-06-24T04:19:33.987287+00:00",
   "schemaVersion": "0.4.4",
   "ethicsApproval": [],
   "wasGeneratedBy": [],

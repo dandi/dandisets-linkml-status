@@ -2,7 +2,13 @@
   "id": "DANDI:000010/draft",
   "url": "https://dandiarchive.org/dandiset/000010/draft",
   "name": "A motor cortex circuit for motor planning and movement",
-  "about": [],
+  "about": [
+    {
+      "name": "premotor cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0016634"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -13,8 +19,15 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Li, Nuo; Chen, Tsai-Wen; Guo, Zengcai V.; Gerfen, Charles R.; Svoboda, Karel (2024) A motor cortex circuit for motor planning and movement (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000010/draft",
-  "keywords": [],
+  "citation": "Li, Nuo; Chen, Tsai-Wen; Guo, Zengcai V.; Gerfen, Charles R.; Svoboda, Karel (2026) A motor cortex circuit for motor planning and movement (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000010/draft",
+  "keywords": [
+    "motor planning",
+    "anterior lateral motor cortex",
+    "ALM",
+    "optogenetics",
+    "extracellular recording",
+    "calcium imaging"
+  ],
   "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000010",
@@ -22,12 +35,25 @@
   "contributor": [
     {
       "name": "Li, Nuo",
+      "email": "linuo@janelia.hhmi.org",
       "roleName": [
         "dcite:Author",
         "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-6613-5018",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -36,7 +62,19 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0002-3407-8223",
+      "identifier": "0000-0001-6782-3819",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -46,6 +84,18 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-4140-7961",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -55,6 +105,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0001-9008-4882",
+      "affiliation": [
+        {
+          "name": "National Institute of Mental Health",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/04xeg9z08"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -64,11 +121,32 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-6670-7362",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        },
+        {
+          "name": "Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/006w34k90"
+        }
+      ],
       "includeInCitation": true
+    },
+    {
+      "name": "Howard Hughes Medical Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/006w34k90",
+      "includeInCitation": false
     }
   ],
   "dateCreated": "2020-03-19T15:44:00.241000+00:00",
-  "description": "Data from \"A motor cortex circuit for motor planning and movement\" Li et al. Nature 2015",
+  "description": "This dataset contains electrophysiological and calcium imaging data from the mouse motor cortex during a delayed response task. The study identifies the anterior lateral motor cortex (ALM) as a key node for motor planning. It includes extracellular recordings from ALM and parts of the thalamus, alongside population calcium imaging, to characterize neuronal activity during the planning and execution of voluntary movements. The data explores how motor plans are maintained in a motor cortex circuit and the role of thalamocortical loops in this process.",
   "studyTarget": [],
   "assetsSummary": {
     "species": [

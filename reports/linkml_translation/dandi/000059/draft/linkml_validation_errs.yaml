@@ -1,17 +1,44 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  message: '{''name'': ''medial septal nucleus'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0001877''} is not of type ''string'' in
+    /about/0'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - about
+    - 0
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''medial septal nucleus'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0001877''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': "Ammon''s horn", ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0001954''} is not of type ''string'' in
+    /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': "Ammon''s horn", ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0001954''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -123,9 +150,8 @@
   instantiates: Dandiset
   message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
     Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'':
-    ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH122391, MH54671, MH107396,
-    U19 NS107616, U19 NS104590'', ''contactPoint'': [], ''includeInCitation'': False}
-    is not of type ''string'' in /contributor/4'
+    ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH122391'', ''contactPoint'':
+    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
@@ -138,9 +164,8 @@
     - type
     message: '{''url'': ''http://www.nih.gov/'', ''name'': ''National Institutes of
       Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
-      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH122391,
-      MH54671, MH107396, U19 NS107616, U19 NS104590'', ''contactPoint'': [], ''includeInCitation'':
-      False} is not of type ''string'''
+      ''identifier'': ''https://ror.org/01cwqze88'', ''awardNumber'': ''MH122391'',
+      ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -163,6 +188,101 @@
     message: '{''name'': ''Baker, Cody'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
       ''Person'', ''identifier'': ''0000-0002-0829-4790'', ''affiliation'': [], ''includeInCitation'':
       False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''awardNumber'': ''MH54671'', ''includeInCitation'': False} is not of type ''string''
+    in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''MH54671'', ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''awardNumber'': ''MH107396'', ''includeInCitation'': False} is not of type ''string''
+    in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''MH107396'', ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''awardNumber'': ''U19 NS107616'', ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''U19 NS107616'', ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''awardNumber'': ''U19 NS104590'', ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''awardNumber'': ''U19 NS104590'', ''includeInCitation'': False} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

@@ -1,9 +1,54 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Najafi, Farzaneh'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
-    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6454-2448'', ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/0'
+  message: '{''name'': ''posterior parietal cortex'', ''schemaKey'': ''Anatomy'',
+    ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0034889''} is not of type
+    ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''posterior parietal cortex'', ''schemaKey'': ''Anatomy'',
+      ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0034889''} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''neocortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0001950''} is not of type ''string'' in
+    /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''neocortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0001950''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Najafi, Farzaneh'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-6454-2448'', ''affiliation'': [{''name'':
+    ''Cold Spring Harbor Laboratory'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/02qz8b764''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -14,18 +59,22 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Najafi, Farzaneh'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
-      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-6454-2448'', ''includeInCitation'':
-      True} is not of type ''string'''
+    message: '{''name'': ''Najafi, Farzaneh'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-6454-2448'', ''affiliation'': [{''name'':
+      ''Cold Spring Harbor Laboratory'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02qz8b764''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Churchland, Anne K.'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3205-3794'', ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/1'
+  message: '{''name'': ''Elsayed, Gamaleldin F.'', ''email'': ''achurchl@cshl.edu'',
+    ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4676-4220'',
+    ''affiliation'': [{''name'': ''Columbia University'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/00hj8s172''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -36,9 +85,252 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Churchland, Anne K.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3205-3794'', ''includeInCitation'':
-      True} is not of type ''string'''
+    message: '{''name'': ''Elsayed, Gamaleldin F.'', ''email'': ''achurchl@cshl.edu'',
+      ''roleName'': [''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-4676-4220'', ''affiliation'': [{''name'': ''Columbia University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hj8s172''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cao, Robin'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-4676-4220'', ''affiliation'': [{''name'':
+    ''University College London'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/02jx3x895''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cao, Robin'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-4676-4220'', ''affiliation'': [{''name'':
+      ''University College London'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02jx3x895''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Pnevmatikakis, Eftychios A.'', ''roleName'': [''dcite:Author''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1509-6394'', ''affiliation'':
+    [{''name'': ''Flatiron Institute'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00sekdz59''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pnevmatikakis, Eftychios A.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1509-6394'', ''affiliation'':
+      [{''name'': ''Flatiron Institute'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00sekdz59''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Latham, Peter E.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-8713-9328'', ''affiliation'': [{''name'':
+    ''University College London'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/02jx3x895''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Latham, Peter E.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8713-9328'', ''affiliation'': [{''name'':
+      ''University College London'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02jx3x895''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cunningham, John P.'', ''roleName'': [''dcite:Author''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9125-3027'', ''affiliation'':
+    [{''name'': ''Columbia University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00hj8s172''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cunningham, John P.'', ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9125-3027'', ''affiliation'':
+      [{''name'': ''Columbia University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00hj8s172''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Churchland, Anne K.'', ''email'': ''achurchl@cshl.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0002-3205-3794'', ''affiliation'': [{''name'': ''Cold Spring
+    Harbor Laboratory'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/02qz8b764''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Churchland, Anne K.'', ''email'': ''achurchl@cshl.edu'',
+      ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+      ''identifier'': ''0000-0002-3205-3794'', ''affiliation'': [{''name'': ''Cold
+      Spring Harbor Laboratory'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/02qz8b764''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Pew Charitable Trusts'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/02xhk2825'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Pew Charitable Trusts'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/02xhk2825'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Simons Foundation'', ''roleName'': [''dcite:Funder''], ''schemaKey'':
+    ''Organization'', ''identifier'': ''https://ror.org/01cmst727'', ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Simons Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cmst727'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Esther A. and Joseph Klingenstein Fund'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01q222b25'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Esther A. and Joseph Klingenstein Fund'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01q222b25'',
+      ''includeInCitation'': False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Gatsby Charitable Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0290hax27'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/11'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 11
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Gatsby Charitable Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/0290hax27'',
+      ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

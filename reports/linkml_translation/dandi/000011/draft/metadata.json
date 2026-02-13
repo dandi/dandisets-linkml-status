@@ -2,7 +2,13 @@
   "id": "DANDI:000011/draft",
   "url": "https://dandiarchive.org/dandiset/000011/draft",
   "name": "Robust neuronal dynamics in premotor cortex during motor planning",
-  "about": [],
+  "about": [
+    {
+      "name": "premotor cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0016634"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -16,8 +22,10 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2025) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000011/draft",
-  "keywords": [],
+  "citation": "Li, Nuo; Daie, Kayvon; Svoboda, Karel; Druckmann, Shaul (2026) Robust neuronal dynamics in premotor cortex during motor planning (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000011/draft",
+  "keywords": [
+    "optogenetics"
+  ],
   "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000011",
@@ -34,7 +42,8 @@
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
         }
       ],
       "includeInCitation": true
@@ -45,10 +54,12 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-4584-8227",
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
         }
       ],
       "includeInCitation": true
@@ -59,16 +70,19 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0002-6670-7362",
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
         }
       ],
       "includeInCitation": true
     },
     {
       "name": "Druckmann, Shaul",
+      "email": "shauld@stanford.edu",
       "roleName": [
         "dcite:Author",
         "dcite:ContactPerson"
@@ -78,14 +92,25 @@
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
         }
       ],
       "includeInCitation": true
+    },
+    {
+      "name": "Howard Hughes Medical Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/006w34k90",
+      "awardNumber": "HHMI",
+      "includeInCitation": false
     }
   ],
   "dateCreated": "2020-03-19T16:07:28.472000+00:00",
-  "description": "Data from \"Robust neuronal dynamics in premotor cortex during motor planning\" Nature 2016",
+  "description": "Neural activity in the premotor cortex maintains representations that bridge past and future events, such as motor planning, often over several seconds. This study uses electrophysiology and optogenetic perturbations in the mouse premotor cortex (specifically the anterior lateral motor cortex, ALM) to probe the robustness of these persistent neural representations. The research demonstrates that preparatory activity is remarkably robust to large-scale unilateral silencing, with detailed neural dynamics being quickly and selectively restored by the network. However, this selectivity does not recover after bilateral silencing, suggesting that perturbations in one hemisphere are corrected by information from the other. This redundancy across selectively coupled modules is a hallmark of robust control systems. The dataset includes silicon probe recordings and optogenetic perturbation data (using VGAT-ChR2-EYFP and PV-ires-cre mice) during an object location discrimination task.",
   "studyTarget": [],
   "assetsSummary": {
     "species": [

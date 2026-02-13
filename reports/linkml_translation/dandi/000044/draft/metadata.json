@@ -2,7 +2,23 @@
   "id": "DANDI:000044/draft",
   "url": "https://dandiarchive.org/dandiset/000044/draft",
   "name": "Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences",
-  "about": [],
+  "about": [
+    {
+      "name": "CA1 field of hippocampus",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0003881"
+    },
+    {
+      "name": "Ammon's horn",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0001954"
+    },
+    {
+      "name": "pyramidal neuron",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/CL_0000598"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -17,7 +33,15 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Grosmark, Andres D.; Buzs\u00e1ki, Gy\u00f6rgy (2025) Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000044/draft",
+  "citation": "Grosmark, Andres D.; Buzs\u00e1ki, Gy\u00f6rgy (2026) Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000044/draft",
+  "keywords": [
+    "Place cell",
+    "Memory consolidation",
+    "Pyramidal cell",
+    "Long-Evans rat",
+    "Spatial learning",
+    "Sharp wave ripples"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000044",
   "repository": "https://dandiarchive.org",
@@ -73,26 +97,47 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-0829-4790"
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04xeg9z08",
+      "awardNumber": "R01 MH054665",
+      "includeInCitation": false
+    },
+    {
+      "name": "Simons Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cmst727",
+      "includeInCitation": false
+    },
+    {
+      "name": "G. Harold and Leila Y. Mathers Charitable Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/02a7hjv13",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Neurological Disorders and Stroke",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "NS034994",
+      "includeInCitation": false
     }
   ],
   "dateCreated": "2020-11-14T23:49:43.396000+00:00",
   "description": "This data set is composed of eight bilateral silicon-probe multi-cellular electrophysiological recordings performed on four male Long-Evans rats in the Buzs\u00e1ki lab at NYU. These recordings were performed to assess the effect of novel spatial learning on hippocampal CA1 neural firing and LFP patterns in na\u00efve animals. Each session consisted of a long (~4 hour) PRE rest/sleep epoch home-cage recordings performed in a familiar room, followed by a Novel MAZE running epoch (~45 minutes) in which the animals were transferred to a novel room, and water-rewarded to run on a novel maze. These mazes were either A) a wooden 1.6m linear platform, B) a wooden 1m diameter circular platform or C) a 2m metal linear platform. Animals were rewarded either at both ends of the linear platform, or at a predetermined location on the circular platform. The animal was gently encouraged to run unidirectionally on the circular platform. After the MAZE epochs the animals were transferred back to their home-cage in the familiar room where a long (~4 hour) POST rest/sleep was recorded. All eight sessions were concatenated from the PRE, MAZE, and POST recording epochs. In addition to hippocampal electrophysiological recordings, neck EMG and head-mounted accelerometer signals were recorded, and the animal\u2019s position during MAZE running epochs was tracked via head-mounted LEDs.",
-  "publishedBy": {
-    "id": "urn:uuid:30518aa9-d7d7-49df-b99e-b9eef47459c7",
-    "name": "DANDI publish",
-    "endDate": "2025-06-24T04:26:53.259210+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-06-24T04:26:53.259210+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:3c93107b-18de-4a82-882a-1093c9e22714",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "assetsSummary": {
     "species": [
       {
@@ -138,7 +183,6 @@
       }
     ]
   },
-  "datePublished": "2025-06-24T04:26:53.259210+00:00",
   "schemaVersion": "0.4.4",
   "ethicsApproval": [],
   "wasGeneratedBy": [],

@@ -2,12 +2,35 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Chen, Tsai-Wen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'primary motor cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001384'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Chen, Tsai-Wen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'primary motor cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001384'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Chen, Tsai-Wen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6782-3819', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}, {'name': 'National Yang Ming Chiao Tung University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00se2k293'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chen, Tsai-Wen', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-6782-3819', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}, {'name': 'National Yang Ming Chiao Tung University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00se2k293'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -25,12 +48,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -48,12 +71,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4584-8227', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Daie, Kayvon', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4584-8227', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -71,15 +94,38 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6670-7362', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'Svoboda, Karel', 'email': 'svobodak@janelia.hhmi.org', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6670-7362', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6670-7362', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Svoboda, Karel', 'email': 'svobodak@janelia.hhmi.org', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6670-7362', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'awardNumber': 'HHMI', 'includeInCitation': False} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'awardNumber': 'HHMI', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
       ],
       "absolute_schema_path": [
         "properties",

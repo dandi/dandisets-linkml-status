@@ -1,4 +1,10 @@
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001950
+  name: neocortex
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0025595
+  name: cholinergic system
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -35,49 +41,127 @@ assetsSummary:
   - ProcessingModule
   - ImagingPlane
   - EyeTracking
-citation: Moberly, Andrew ; Benisty, Hadas; Landa, Boris; Jing, Miao; Li, Yulong;
-  Higley, Michael; Cardin, Jessica (2026) Dual-color mesoscopic imaging of both ACh
-  and calcium across the neocortex of awake mice (Version draft) [Data set]. DANDI
-  Archive. https://dandiarchive.org/dandiset/001172/draft
+citation: Lohani, Sweyta; Moberly, Andrew H.; Benisty, Hadas; Landa, Boris; Jing,
+  Miao; Li, Yulong; Higley, Michael J.; Cardin, Jessica A. (2026) Dual-color mesoscopic
+  imaging of both ACh and calcium across the neocortex of awake mice (Version draft)
+  [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001172/draft
 contributor:
 - awardNumber: 5 R01 MH 099045-10
   name: National Institutes of Health (NIH)
   roleName:
   - dcite:Funder
   schemaKey: Organization
-- includeInCitation: false
-  name: Lohani, Sweyta
-  schemaKey: Person
-- email: andrew.moberly@yale.edu
+- affiliation:
+  - identifier: https://ror.org/03v76x132
+    name: Yale University
+    schemaKey: Affiliation
+  identifier: 0000-0001-8209-5303
   includeInCitation: true
-  name: 'Moberly, Andrew '
+  name: Lohani, Sweyta
+  roleName:
+  - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- affiliation:
+  - identifier: https://ror.org/03v76x132
+    name: Yale University
+    schemaKey: Affiliation
+  identifier: 0000-0001-8209-5303
+  includeInCitation: true
+  name: Moberly, Andrew H.
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/03v76x132
+    name: Yale University
+    schemaKey: Affiliation
+  identifier: 0000-0001-6308-2267
+  includeInCitation: true
   name: Benisty, Hadas
+  roleName:
+  - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- affiliation:
+  - identifier: https://ror.org/03v76x132
+    name: Yale University
+    schemaKey: Affiliation
+  - identifier: https://ror.org/03seew607
+    name: Applied Mathematics (United States)
+    schemaKey: Affiliation
+  includeInCitation: true
   name: Landa, Boris
+  roleName:
+  - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- affiliation:
+  - identifier: https://ror.org/029819q61
+    name: Chinese Institute for Brain Research
+    schemaKey: Affiliation
+  identifier: 0000-0002-7782-5065
+  includeInCitation: true
   name: Jing, Miao
+  roleName:
+  - dcite:Author
   schemaKey: Person
-- identifier: 0000-0002-9166-9919
+- affiliation:
+  - identifier: https://ror.org/02v51f717
+    name: Peking University
+    schemaKey: Affiliation
+  - identifier: https://ror.org/029819q61
+    name: Chinese Institute for Brain Research
+    schemaKey: Affiliation
+  - identifier: https://ror.org/05kje8j93
+    name: Center for Life Sciences
+    schemaKey: Affiliation
+  identifier: 0000-0002-9166-9919
   includeInCitation: true
   name: Li, Yulong
-  schemaKey: Person
-  url: http://www.yulonglilab.org/
-- email: michael.higley@yale.edu
-  identifier: 0000-0001-9047-2420
-  includeInCitation: true
-  name: Higley, Michael
   roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/03v76x132
+    name: Yale University
+    schemaKey: Affiliation
+  email: michael.higley@yale.edu
+  identifier: 0000-0002-5424-6730
+  includeInCitation: true
+  name: Higley, Michael J.
+  roleName:
+  - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
-- email: jess.cardin@yale.edu
+- affiliation:
+  - identifier: https://ror.org/03v76x132
+    name: Yale University
+    schemaKey: Affiliation
+  email: jess.cardin@yale.edu
   identifier: 0000-0002-8209-5466
   includeInCitation: true
-  name: Cardin, Jessica
+  name: Cardin, Jessica A.
+  roleName:
+  - dcite:Author
   schemaKey: Person
+- identifier: https://ror.org/03a63f080
+  name: Brain and Behavior Research Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- identifier: https://ror.org/01cmst727
+  name: Simons Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- identifier: https://ror.org/04xeg9z08
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- identifier: https://ror.org/03wkg3b53
+  name: National Eye Institute
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2024-08-14T12:41:51.861328+00:00'
 description: 'Dual-color mesoscopic imaging of both ACh and calcium across the neocortex
   of awake mice to investigate their relationships with behavioral variables. We find

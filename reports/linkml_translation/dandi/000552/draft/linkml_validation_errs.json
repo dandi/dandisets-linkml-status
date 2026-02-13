@@ -25,6 +25,52 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
+    "message": "{'name': 'hippocampal pyramidal neuron', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/CL_1001571'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'hippocampal pyramidal neuron', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/CL_1001571'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'neurogenesis', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/GO_0022008'} is not of type 'string' in /about/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'neurogenesis', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/GO_0022008'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
     "message": "{'name': 'Husz\u00e1r, Roman', 'email': 'rh2618@nyu.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-8426-8308', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
@@ -48,12 +94,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Zhang, Yunchang', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Zhang, Yunchang', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3294-7373', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Zhang, Yunchang', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Zhang, Yunchang', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-3294-7373', 'affiliation': [{'name': 'New York University Langone Medical Center', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/005dvqh91'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -71,12 +117,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Blockus, Heike', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5274-2805', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Blockus, Heike', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5274-2805', 'affiliation': [{'name': 'Columbia University, New York, NY, USA', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00hj8s172'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Blockus, Heike', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5274-2805', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Blockus, Heike', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5274-2805', 'affiliation': [{'name': 'Columbia University, New York, NY, USA', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00hj8s172'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -117,12 +163,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'url': 'http://www.nih.gov/', 'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U19NS104590-01, MH122391', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/4",
+    "message": "{'url': 'http://www.nih.gov/', 'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U19NS104590-01', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'url': 'http://www.nih.gov/', 'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U19NS104590-01, MH122391', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "message": "{'url': 'http://www.nih.gov/', 'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'U19NS104590-01', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
       "absolute_path": [
         "contributor",
         4
@@ -172,6 +218,29 @@
       "absolute_path": [
         "contributor",
         6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'MH122391', 'includeInCitation': False} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88', 'awardNumber': 'MH122391', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
       ],
       "absolute_schema_path": [
         "properties",

@@ -1,21 +1,6 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
-  severity: ERROR
-  source:
-    absolute_path: []
-    absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
-  type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: Dandiset
   message: '{''name'': ''Baker, Cody'', ''email'': ''cody.c.baker.phd@gmail.com'',
     ''roleName'': [''dcite:DataCurator''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-0829-4790'', ''affiliation'': [], ''includeInCitation'': False} is
@@ -41,7 +26,10 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Randi, Francesco'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
-    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6200-7254'', ''includeInCitation'':
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6200-7254'', ''affiliation'':
+    [{''name'': ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/00hx57361''}, {''name'': ''Regeneron Pharmaceuticals'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/02f51rf24''}], ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
@@ -54,7 +42,10 @@
     - items
     - type
     message: '{''name'': ''Randi, Francesco'', ''roleName'': [''dcite:Author'', ''dcite:DataCollector''],
-      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6200-7254'', ''includeInCitation'':
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-6200-7254'', ''affiliation'':
+      [{''name'': ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/00hx57361''}, {''name'': ''Regeneron Pharmaceuticals'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/02f51rf24''}], ''includeInCitation'':
       True} is not of type ''string'''
     validator: type
     validator_value: string
@@ -63,8 +54,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Sharma, Anuj'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0001-5061-9731'', ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/2'
+    ''Person'', ''identifier'': ''0000-0001-5061-9731'', ''affiliation'': [{''name'':
+    ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hx57361''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -76,8 +68,9 @@
     - items
     - type
     message: '{''name'': ''Sharma, Anuj'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0001-5061-9731'', ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0001-5061-9731'', ''affiliation'': [{''name'':
+      ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hx57361''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -85,8 +78,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Dvali, Sophie'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0001-8565-7148'', ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/3'
+    ''Person'', ''identifier'': ''0000-0001-8565-7148'', ''affiliation'': [{''name'':
+    ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hx57361''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -98,8 +92,9 @@
     - items
     - type
     message: '{''name'': ''Dvali, Sophie'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0001-8565-7148'', ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0001-8565-7148'', ''affiliation'': [{''name'':
+      ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hx57361''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -109,7 +104,10 @@
   message: '{''url'': ''https://phy.princeton.edu/people/andrew-leifer'', ''name'':
     ''Leifer, Andrew M.'', ''email'': ''leifer@princeton.edu'', ''roleName'': [''dcite:ContactPerson'',
     ''dcite:Author'', ''dcite:Conceptualization''], ''schemaKey'': ''Person'', ''identifier'':
-    ''0000-0002-5362-5093'', ''includeInCitation'': True} is not of type ''string''
+    ''0000-0002-5362-5093'', ''affiliation'': [{''name'': ''Princeton University'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hx57361''},
+    {''name'': ''Neurosciences Institute'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/0460vf117''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/4'
   severity: ERROR
   source:
@@ -124,7 +122,11 @@
     message: '{''url'': ''https://phy.princeton.edu/people/andrew-leifer'', ''name'':
       ''Leifer, Andrew M.'', ''email'': ''leifer@princeton.edu'', ''roleName'': [''dcite:ContactPerson'',
       ''dcite:Author'', ''dcite:Conceptualization''], ''schemaKey'': ''Person'', ''identifier'':
-      ''0000-0002-5362-5093'', ''includeInCitation'': True} is not of type ''string'''
+      ''0000-0002-5362-5093'', ''affiliation'': [{''name'': ''Princeton University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00hx57361''},
+      {''name'': ''Neurosciences Institute'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0460vf117''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

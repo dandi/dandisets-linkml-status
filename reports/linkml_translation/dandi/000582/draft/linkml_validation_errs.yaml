@@ -1,17 +1,45 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  message: '{''name'': ''medial entorhinal cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0007224''} is not of type ''string'' in
+    /about/0'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - about
+    - 0
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''medial entorhinal cortex'', ''schemaKey'': ''Anatomy'',
+      ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0007224''} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''cortical layer II'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0005391''} is not of type ''string'' in
+    /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''cortical layer II'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0005391''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -39,8 +67,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Fyhn, Marianne'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/1'
+    ''Person'', ''identifier'': ''0000-0003-0808-4555'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -52,8 +80,8 @@
     - items
     - type
     message: '{''name'': ''Fyhn, Marianne'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0003-0808-4555'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -61,8 +89,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Hafting, Torkel'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/2'
+    ''Person'', ''identifier'': ''0000-0002-0928-3487'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -74,8 +102,8 @@
     - items
     - type
     message: '{''name'': ''Hafting, Torkel'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0002-0928-3487'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -83,8 +111,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''McNaughton, Bruce L.'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/3'
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2080-5258'', ''affiliation'':
+    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -96,8 +124,8 @@
     - items
     - type
     message: '{''name'': ''McNaughton, Bruce L.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-2080-5258'', ''affiliation'':
+      [], ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -105,8 +133,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Witter, Menno P.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/4'
+    ''Person'', ''identifier'': ''0000-0003-0285-1637'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
@@ -118,8 +146,8 @@
     - items
     - type
     message: '{''name'': ''Witter, Menno P.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0003-0285-1637'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -127,8 +155,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Moser, May-Britt'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/5'
+    ''Person'', ''identifier'': ''0000-0001-7884-3049'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
@@ -140,8 +168,8 @@
     - items
     - type
     message: '{''name'': ''Moser, May-Britt'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0001-7884-3049'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -149,8 +177,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Moser, Edvard I.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/6'
+    ''Person'', ''identifier'': ''0000-0003-0226-5566'', ''affiliation'': [], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
     absolute_path:
@@ -162,8 +190,8 @@
     - items
     - type
     message: '{''name'': ''Moser, Edvard I.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0003-0226-5566'', ''affiliation'': [], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

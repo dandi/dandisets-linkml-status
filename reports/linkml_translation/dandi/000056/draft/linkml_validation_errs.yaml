@@ -1,17 +1,45 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  message: '{''name'': ''anterodorsal nucleus of thalamus'', ''schemaKey'': ''Anatomy'',
+    ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0002679''} is not of type
+    ''string'' in /about/0'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - about
+    - 0
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''anterodorsal nucleus of thalamus'', ''schemaKey'': ''Anatomy'',
+      ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0002679''} is not of
+      type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''postsubiculum'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0035971''} is not of type ''string'' in
+    /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''postsubiculum'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0035971''} is not of type ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
@@ -47,8 +75,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Lacroix, Marie M'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/1'
+    ''Person'', ''identifier'': ''0000-0001-9472-5106'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -60,8 +89,9 @@
     - items
     - type
     message: '{''name'': ''Lacroix, Marie M'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0001-9472-5106'', ''affiliation'': [{''name'':
+      ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

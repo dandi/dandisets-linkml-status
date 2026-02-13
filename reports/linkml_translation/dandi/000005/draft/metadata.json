@@ -7,6 +7,16 @@
       "name": "dorsal plus ventral thalamus",
       "schemaKey": "Anatomy",
       "identifier": "UBERON:0001897"
+    },
+    {
+      "name": "barrel cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0010415"
+    },
+    {
+      "name": "ventral posterolateral nucleus",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0002942"
     }
   ],
   "access": [
@@ -22,8 +32,18 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Yu, Jianing; Gutnisky, Diego A; Hires, S Andrew; Svoboda, Karel (2025) Electrophysiology data from thalamic and cortical neurons during somatosensation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000005/draft",
-  "keywords": [],
+  "citation": "Yu, Jianing; Gutnisky, Diego A; Hires, Samuel Andrew; Svoboda, Karel (2026) Electrophysiology data from thalamic and cortical neurons during somatosensation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000005/draft",
+  "keywords": [
+    "Electrophysiology",
+    "Thalamus",
+    "Cortex",
+    "Somatosensation",
+    "Barrel cortex",
+    "Ventral posterolateral nucleus",
+    "Mouse",
+    "Whisker",
+    "Neurons"
+  ],
   "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000005",
@@ -35,10 +55,12 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-2271-0639",
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
         }
       ],
       "includeInCitation": true
@@ -49,30 +71,40 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0002-8578-0039",
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
         }
       ],
       "includeInCitation": true
     },
     {
-      "name": "Hires, S Andrew",
+      "name": "Hires, Samuel Andrew",
       "roleName": [
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-3498-0388",
       "affiliation": [
         {
           "name": "Janelia Research Campus, Howard Hughes Medical Institute",
-          "schemaKey": "Affiliation"
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        },
+        {
+          "name": "University of Southern California",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/03taz7m60"
         }
       ],
       "includeInCitation": true
     },
     {
       "name": "Svoboda, Karel",
+      "email": "svobodak@janelia.hhmi.org",
       "roleName": [
         "dcite:Author",
         "dcite:ContactPerson"
@@ -87,6 +119,14 @@
         }
       ],
       "includeInCitation": true
+    },
+    {
+      "name": "Howard Hughes Medical Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/006w34k90"
     }
   ],
   "dateCreated": "2020-03-16T22:52:44.757000+00:00",
@@ -122,17 +162,13 @@
     "numberOfFiles": 148,
     "numberOfSubjects": 55,
     "variableMeasured": [
+      "ElectrodeGroup",
+      "Units",
       "CurrentClampStimulusSeries",
       "CurrentClampSeries",
-      "OptogeneticSeries",
-      "ElectrodeGroup",
-      "Units"
+      "OptogeneticSeries"
     ],
     "measurementTechnique": [
-      {
-        "name": "current clamp technique",
-        "schemaKey": "MeasurementTechniqueType"
-      },
       {
         "name": "surgical technique",
         "schemaKey": "MeasurementTechniqueType"
@@ -140,11 +176,20 @@
       {
         "name": "spike sorting technique",
         "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
       }
     ]
   },
   "schemaVersion": "0.6.0",
-  "ethicsApproval": [],
+  "ethicsApproval": [
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "Approved by Howard Hughes Medical Institute Janelia Research Campus Institutional Animal Care and Use Committee"
+    }
+  ],
   "wasGeneratedBy": [],
   "relatedResource": [
     {
@@ -152,7 +197,8 @@
       "name": "Layer 4 fast-spiking interneurons filter thalamocortical signals during active somatosensation",
       "relation": "dcite:IsDescribedBy",
       "schemaKey": "Resource",
-      "identifier": "doi:10.1038/nn.4412"
+      "identifier": "doi:10.1038/nn.4412",
+      "repository": "Nature Neuroscience"
     }
   ],
   "manifestLocation": [

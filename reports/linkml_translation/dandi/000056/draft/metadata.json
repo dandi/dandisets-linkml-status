@@ -2,7 +2,18 @@
   "id": "DANDI:000056/draft",
   "url": "https://dandiarchive.org/dandiset/000056/draft",
   "name": "Internally organized mechanisms of the head direction sense",
-  "about": [],
+  "about": [
+    {
+      "name": "anterodorsal nucleus of thalamus",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0002679"
+    },
+    {
+      "name": "postsubiculum",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0035971"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -17,9 +28,14 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter; Buzs\u00e1ki, Gy\u00f6rgy (2025) Internally organized mechanisms of the head direction sense (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000056/draft",
+  "citation": "Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter; Buzs\u00e1ki, Gy\u00f6rgy (2026) Internally organized mechanisms of the head direction sense (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000056/draft",
   "keywords": [
-    ""
+    "Head direction cells",
+    "Attractor network",
+    "Thalamocortical circuit",
+    "Sleep",
+    "Anterodorsal thalamic nucleus",
+    "Spatial Navigation"
   ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000056",
@@ -54,7 +70,14 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0000-0001-9472-5106",
+      "affiliation": [
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -110,22 +133,6 @@
   ],
   "dateCreated": "2021-01-25T20:20:10.836000+00:00",
   "description": "The head-direction (HD) system functions as a compass, with member neurons robustly increasing their firing rates when the animal's head points in a specific direction. HD neurons may be driven by peripheral sensors or, as computational models postulate, internally generated (attractor) mechanisms. We addressed the contributions of stimulus-driven and internally generated activity by recording ensembles of HD neurons in the antero-dorsal thalamic nucleus and the post-subiculum of mice by comparing their activity in various brain states. The temporal correlation structure of HD neurons was preserved during sleep, characterized by a 60\u00b0-wide correlated neuronal firing (activity packet), both within and across these two brain structures. During rapid eye movement sleep, the spontaneous drift of the activity packet was similar to that observed during waking and accelerated tenfold during slow-wave sleep. These findings demonstrate that peripheral inputs impinge on an internally organized network, which provides amplification and enhanced precision of the HD signal.",
-  "publishedBy": {
-    "id": "urn:uuid:cf42f87a-5385-42ca-8524-9998e7c7799c",
-    "name": "DANDI publish",
-    "endDate": "2025-06-24T04:30:50.891430+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-06-24T04:30:50.891430+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:8400e492-4592-4d99-9312-d4464d59c1f2",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "assetsSummary": {
     "species": [
       {
@@ -185,17 +192,16 @@
       }
     ]
   },
-  "datePublished": "2025-06-24T04:30:50.891430+00:00",
   "schemaVersion": "0.4.4",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
   "relatedResource": [
     {
       "url": "https://www.nature.com/articles/nn.3968",
-      "name": "nternally organized mechanisms of the head direction sense",
+      "name": "Internally organized mechanisms of the head direction sense",
       "relation": "dcite:IsDescribedBy",
       "schemaKey": "Resource",
-      "identifier": "nternally organized mechanisms of the head direction sense",
+      "identifier": "doi:10.1038/nn.3968",
       "repository": "Nature Neuroscience",
       "resourceType": "dcite:JournalArticle"
     }

@@ -1,10 +1,55 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Hires, Samuel'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'',
-    ''dcite:DataCollector'', ''dcite:DataManager''], ''schemaKey'': ''Person'', ''identifier'':
-    ''0000-0003-3498-0388'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/0'
+  message: '{''name'': ''barrel cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0010415''} is not of type ''string'' in
+    /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''barrel cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0010415''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''vibrissa unit'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0011933''} is not of type ''string'' in
+    /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''vibrissa unit'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0011933''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Hires, Samuel'', ''email'': ''shires@usc.edu'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataManager''],
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3498-0388'', ''affiliation'':
+    [{''name'': ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/013sk6x84''}, {''name'': ''Howard Hughes Medical Institute'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -15,10 +60,13 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Hires, Samuel'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'',
-      ''dcite:DataCollector'', ''dcite:DataManager''], ''schemaKey'': ''Person'',
-      ''identifier'': ''0000-0003-3498-0388'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+    message: '{''name'': ''Hires, Samuel'', ''email'': ''shires@usc.edu'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector'', ''dcite:DataManager''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-3498-0388'', ''affiliation'':
+      [{''name'': ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013sk6x84''}, {''name'': ''Howard Hughes Medical Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -26,8 +74,11 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Gutnisky, Diego'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0002-8578-0039'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/1'
+    ''Person'', ''identifier'': ''0000-0002-8578-0039'', ''affiliation'': [{''name'':
+    ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013sk6x84''},
+    {''name'': ''Howard Hughes Medical Institute'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/006w34k90''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -39,8 +90,11 @@
     - items
     - type
     message: '{''name'': ''Gutnisky, Diego'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0002-8578-0039'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0002-8578-0039'', ''affiliation'': [{''name'':
+      ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013sk6x84''}, {''name'': ''Howard Hughes Medical Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -48,8 +102,11 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Yu, Jianing'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/2'
+    ''Person'', ''identifier'': ''0000-0003-2271-0639'', ''affiliation'': [{''name'':
+    ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013sk6x84''},
+    {''name'': ''Howard Hughes Medical Institute'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/006w34k90''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -61,17 +118,23 @@
     - items
     - type
     message: '{''name'': ''Yu, Jianing'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0003-2271-0639'', ''affiliation'': [{''name'':
+      ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013sk6x84''}, {''name'': ''Howard Hughes Medical Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': "O''Connor, Daniel H", ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/3'
+  message: '{''name'': "O''Connor, Daniel H.", ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-9193-6714'', ''affiliation'': [{''name'':
+    ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013sk6x84''},
+    {''name'': ''Howard Hughes Medical Institute'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/006w34k90''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -82,9 +145,12 @@
     - contributor
     - items
     - type
-    message: '{''name'': "O''Connor, Daniel H", ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+    message: '{''name'': "O''Connor, Daniel H.", ''roleName'': [''dcite:Author''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-9193-6714'', ''affiliation'':
+      [{''name'': ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013sk6x84''}, {''name'': ''Howard Hughes Medical Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -92,8 +158,11 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Svoboda, Karel'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0002-6670-7362'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/4'
+    ''Person'', ''identifier'': ''0000-0002-6670-7362'', ''affiliation'': [{''name'':
+    ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013sk6x84''},
+    {''name'': ''Howard Hughes Medical Institute'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/006w34k90''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
@@ -105,8 +174,35 @@
     - items
     - type
     message: '{''name'': ''Svoboda, Karel'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0002-6670-7362'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0002-6670-7362'', ''affiliation'': [{''name'':
+      ''Janelia Research Campus'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013sk6x84''}, {''name'': ''Howard Hughes Medical Institute'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/006w34k90''}],
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Howard Hughes Medical Institute'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/006w34k90'',
+    ''awardNumber'': ''12345 (placeholder - OpenAlex did not provide specific number)'',
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Howard Hughes Medical Institute'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/006w34k90'',
+      ''awardNumber'': ''12345 (placeholder - OpenAlex did not provide specific number)'',
+      ''includeInCitation'': False} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

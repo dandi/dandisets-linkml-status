@@ -2,7 +2,18 @@
   "id": "DANDI:000059/draft",
   "url": "https://dandiarchive.org/dandiset/000059/draft",
   "name": "Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies",
-  "about": [],
+  "about": [
+    {
+      "name": "medial septal nucleus",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0001877"
+    },
+    {
+      "name": "Ammon's horn",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0001954"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -17,7 +28,16 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Petersen, Peter; Buzs\u00e1ki, Gy\u00f6rgy (2025) Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000059/draft",
+  "citation": "Petersen, Peter; Buzs\u00e1ki, Gy\u00f6rgy (2026) Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000059/draft",
+  "keywords": [
+    "Theta oscillations",
+    "Medial septum",
+    "Place cells",
+    "Hippocampus",
+    "Spatial navigation",
+    "Cell assemblies",
+    "Phase-at-theta-lag coordination"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000059",
   "repository": "https://dandiarchive.org",
@@ -96,7 +116,7 @@
       ],
       "schemaKey": "Organization",
       "identifier": "https://ror.org/01cwqze88",
-      "awardNumber": "MH122391, MH54671, MH107396, U19 NS107616, U19 NS104590",
+      "awardNumber": "MH122391",
       "contactPoint": [],
       "includeInCitation": false
     },
@@ -109,26 +129,50 @@
       "identifier": "0000-0002-0829-4790",
       "affiliation": [],
       "includeInCitation": false
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "MH54671",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "MH107396",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "U19 NS107616",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "U19 NS104590",
+      "includeInCitation": false
     }
   ],
   "dateCreated": "2021-02-21T20:41:43.356000+00:00",
   "description": "Hippocampal theta oscillations coordinate neuronal firing to support memory and spatial navigation. The medial septum (MS) is critical in theta generation by two possible mechanisms: either a unitary \u201cpacemaker\u201d timing signal is imposed on the hippocampal system, or it may assist in organizing target subcircuits within the phase space of theta oscillations. We used temperature manipulation of the MS to test these models. Cooling of the MS reduced both theta frequency and power and was associated with an enhanced incidence of errors in a spatial navigation task, but it did not affect spatial correlates of neurons. MS cooling decreased theta frequency oscillations of place cells and reduced distance-time compression but preserved distance-phase compression of place field sequences within the theta cycle. Thus, the septum is critical for sustaining precise theta phase coordination of cell assemblies in the hippocampal system, a mechanism needed for spatial memory.",
-  "publishedBy": {
-    "id": "urn:uuid:1e18b82c-5989-472a-b2f5-d4defcb8a161",
-    "name": "DANDI publish",
-    "endDate": "2025-06-24T04:44:25.294809+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-06-24T04:44:25.294809+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:0be4b837-7e7f-442a-bacd-be919d852b9d",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "assetsSummary": {
     "species": [
       {
@@ -194,7 +238,6 @@
       }
     ]
   },
-  "datePublished": "2025-06-24T04:44:25.294809+00:00",
   "schemaVersion": "0.6.0",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
@@ -205,6 +248,7 @@
       "relation": "dcite:IsDescribedBy",
       "schemaKey": "Resource",
       "identifier": "https://doi.org/10.1016/j.neuron.2020.05.023",
+      "repository": "Neuron",
       "resourceType": "dcite:JournalArticle"
     }
   ],

@@ -2,7 +2,18 @@
   "id": "DANDI:000006/draft",
   "url": "https://dandiarchive.org/dandiset/000006/draft",
   "name": "Mouse anterior lateral motor cortex (ALM) in delay response task",
-  "about": [],
+  "about": [
+    {
+      "name": "premotor cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0016634"
+    },
+    {
+      "name": "pyramidal tract",
+      "schemaKey": "Anatomy",
+      "identifier": "https://purl.brain-bican.org/ontology/dhbao/DHBA_12773"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -16,7 +27,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Economo, Michael N.; Svoboda, Karel (2024) Mouse anterior lateral motor cortex (ALM) in delay response task (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000006/draft",
+  "citation": "Economo, Michael N.; Svoboda, Karel (2026) Mouse anterior lateral motor cortex (ALM) in delay response task (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000006/draft",
   "keywords": [],
   "protocol": [],
   "schemaKey": "Dandiset",
@@ -29,19 +40,51 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "identifier": "0000-0001-9893-1505",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
     },
     {
       "name": "Svoboda, Karel",
+      "email": "svobodak@janelia.hhmi.org",
       "roleName": [
         "dcite:Author",
         "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-6670-7362",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus, Howard Hughes Medical Institute",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
+    },
+    {
+      "name": "Howard Hughes Medical Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/006w34k90",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04xeg9z08",
+      "includeInCitation": false
     }
   ],
   "dateCreated": "2020-03-17T13:30:38.667000+00:00",
@@ -108,6 +151,14 @@
       "identifier": "doi:10.1038/s41586-018-0642-9",
       "repository": "Nature",
       "resourceType": "dcite:JournalArticle"
+    },
+    {
+      "url": "http://datasets.datalad.org/?dir=/labs/svoboda/Economo_2018",
+      "name": "DataLad - labs/svoboda/Economo_2018",
+      "relation": "dcite:IsDerivedFrom",
+      "schemaKey": "Resource",
+      "repository": "DataLad",
+      "resourceType": "dcite:Dataset"
     }
   ],
   "manifestLocation": [

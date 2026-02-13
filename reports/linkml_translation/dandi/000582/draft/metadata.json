@@ -2,7 +2,18 @@
   "id": "DANDI:000582/draft",
   "url": "https://dandiarchive.org/dandiset/000582/draft",
   "name": "Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex",
-  "about": [],
+  "about": [
+    {
+      "name": "medial entorhinal cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0007224"
+    },
+    {
+      "name": "cortical layer II",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0005391"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -13,8 +24,13 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2025) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000582/draft",
-  "keywords": [],
+  "citation": "Sargolini, Francesca; Fyhn, Marianne; Hafting, Torkel; McNaughton, Bruce L.; Witter, Menno P.; Moser, May-Britt; Moser, Edvard I.; Waade, Haagen; Ball, Simon (2026) Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000582/draft",
+  "keywords": [
+    "Grid cell",
+    "Path integration",
+    "Entorhinal cortex",
+    "Spatial navigation"
+  ],
   "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000582",
@@ -36,6 +52,7 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-0808-4555",
       "affiliation": [],
       "includeInCitation": true
     },
@@ -45,6 +62,7 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0002-0928-3487",
       "affiliation": [],
       "includeInCitation": true
     },
@@ -54,6 +72,7 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0002-2080-5258",
       "affiliation": [],
       "includeInCitation": true
     },
@@ -63,6 +82,7 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-0285-1637",
       "affiliation": [],
       "includeInCitation": true
     },
@@ -72,6 +92,7 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0001-7884-3049",
       "affiliation": [],
       "includeInCitation": true
     },
@@ -81,6 +102,7 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-0226-5566",
       "affiliation": [],
       "includeInCitation": true
     },
@@ -108,22 +130,6 @@
   ],
   "dateCreated": "2023-07-17T08:18:23.034598+00:00",
   "description": "The dataset includes spike times for recorded grid cells from the medial entorhinal cortex (MEC) in rats that explored two-dimensional environments. The behavioral data includes position from the tracking LEDs. \n\nThis sample was published in Sargolini et al. (Science, 2006).\n\nGrid cells in the medial entorhinal cortex (MEC) are part of an environment-independent spatial coordinate system. To determine how information about location, direction, and distance is integrated in the grid-cell network, we recorded from each principal cell layer of MEC in rats that explored two-dimensional environments. Whereas layer II was predominated by grid cells, grid cells colocalized with head-direction cells and conjunctive grid x head-direction cells in the deeper layers. All cell types were modulated by running speed. The conjunction of positional, directional, and translational information in a single MEC cell type may enable grid coordinates to be updated during self-motion-based navigation.\n",
-  "publishedBy": {
-    "id": "urn:uuid:c5262220-25e9-4bd7-bb4b-b75e21435606",
-    "name": "DANDI publish",
-    "endDate": "2025-11-11T21:51:30.911130+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-11-11T21:51:30.911130+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:632a6042-ea11-444e-bcac-2d4cab4408b1",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "studyTarget": [],
   "assetsSummary": {
     "species": [
@@ -190,7 +196,6 @@
       }
     ]
   },
-  "datePublished": "2025-11-11T21:51:30.911130+00:00",
   "schemaVersion": "0.6.4",
   "ethicsApproval": [],
   "wasGeneratedBy": [

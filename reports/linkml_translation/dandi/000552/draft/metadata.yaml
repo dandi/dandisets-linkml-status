@@ -2,6 +2,12 @@ about:
 - identifier: UBERON:0002421
   name: hippocampus
   schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/CL_1001571
+  name: hippocampal pyramidal neuron
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/GO_0022008
+  name: neurogenesis
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -45,7 +51,7 @@ assetsSummary:
   - Position
   - Units
 citation: "Husz\xE1r, Roman; Zhang, Yunchang; Blockus, Heike; Buzs\xE1ki, Gy\xF6rgy
-  (2025) Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
+  (2026) Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
   and rate of neurogenesis (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000552/draft"
 contributor:
 - affiliation:
@@ -64,12 +70,16 @@ contributor:
   - identifier: https://ror.org/005dvqh91
     name: New York University Langone Medical Center
     schemaKey: Affiliation
+  identifier: 0000-0003-3294-7373
   includeInCitation: true
   name: Zhang, Yunchang
   roleName:
   - dcite:Author
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/00hj8s172
+    name: Columbia University, New York, NY, USA
+    schemaKey: Affiliation
   identifier: 0000-0001-5274-2805
   includeInCitation: true
   name: Blockus, Heike
@@ -86,7 +96,7 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
-- awardNumber: U19NS104590-01, MH122391
+- awardNumber: U19NS104590-01
   contactPoint: []
   identifier: https://ror.org/01cwqze88
   includeInCitation: false
@@ -107,6 +117,13 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
+- awardNumber: MH122391
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2023-05-23T17:23:37.163308+00:00'
 description: "The incorporation of novel information into the hippocampal network
   is likely be constrained by its innate architecture and internally generated activity
@@ -135,6 +152,8 @@ keywords:
 - Hippocampus
 - Neural circuits
 - Development of the nervous system
+- CA1 pyramidal neurons
+- In-utero electroporation
 license:
 - spdx:CC-BY-4.0
 manifestLocation:

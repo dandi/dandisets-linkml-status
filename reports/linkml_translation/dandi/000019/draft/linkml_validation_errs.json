@@ -25,6 +25,29 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
+    "message": "{'name': 'focal epilepsy', 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_2234'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'focal epilepsy', 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_2234'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
     "message": "{'name': 'Bouchard, Kristofer E.', 'roleName': ['dcite:Author', 'dcite:DataCollector', 'dcite:FormalAnalysis'], 'schemaKey': 'Person', 'identifier': '0000-0002-1974-4603', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
@@ -48,12 +71,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Chang, Edward F.', 'email': 'Edward.Chang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2480-4700', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Mesgarani, Nima', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2987-759X', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Chang, Edward F.', 'email': 'Edward.Chang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2480-4700', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Mesgarani, Nima', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2987-759X', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -71,12 +94,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88'} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Johnson, Keith', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2569-8121', 'affiliation': [{'name': 'University of California, Berkeley', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01an7q238'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88'} is not of type 'string'",
+      "message": "{'name': 'Johnson, Keith', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2569-8121', 'affiliation': [{'name': 'University of California, Berkeley', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01an7q238'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -94,7 +117,53 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Dichter, Benjamin', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person'} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'Chang, Edward F.', 'email': 'Edward.Chang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2480-4700', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Chang, Edward F.', 'email': 'Edward.Chang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2480-4700', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88'} is not of type 'string' in /contributor/4",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01cwqze88'} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Dichter, Benjamin', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person'} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
@@ -102,7 +171,7 @@
       "message": "{'name': 'Dichter, Benjamin', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person'} is not of type 'string'",
       "absolute_path": [
         "contributor",
-        3
+        5
       ],
       "absolute_schema_path": [
         "properties",

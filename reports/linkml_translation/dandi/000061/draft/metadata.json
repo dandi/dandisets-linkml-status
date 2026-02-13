@@ -2,7 +2,23 @@
   "id": "DANDI:000061/draft",
   "url": "https://dandiarchive.org/dandiset/000061/draft",
   "name": "Reactivations of emotional memory in the hippocampus\u2013amygdala system during sleep",
-  "about": [],
+  "about": [
+    {
+      "name": "CA1 field of hippocampus",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0003881"
+    },
+    {
+      "name": "basal amygdaloid nucleus",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0002887"
+    },
+    {
+      "name": "hippocampal formation",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0002421"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -17,7 +33,15 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Girardeau, Gabrielle; Inema, Ingrid; Buzs\u00e1ki, Gy\u00f6rgy (2025) Reactivations of emotional memory in the hippocampus\u2013amygdala system during sleep (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000061/draft",
+  "citation": "Girardeau, Gabrielle; Inema, Ingrid; Buzs\u00e1ki, Gy\u00f6rgy (2026) Reactivations of emotional memory in the hippocampus\u2013amygdala system during sleep (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000061/draft",
+  "keywords": [
+    "emotional memory",
+    "basolateral amygdala",
+    "hippocampus",
+    "sharp wave-ripples",
+    "memory consolidation",
+    "non-REM sleep"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000061",
   "repository": "https://dandiarchive.org",
@@ -51,7 +75,13 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "New York University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/0190ak572"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -82,26 +112,29 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-0829-4790"
+    },
+    {
+      "name": "National Institutes of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "R01 MH054676, R01 NS034994, R01 NS074015",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Science Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/021nxhr62",
+      "includeInCitation": false
     }
   ],
   "dateCreated": "2021-03-17T17:56:38.739000+00:00",
   "description": "The consolidation of context-dependent emotional memory requires communication between the hippocampus and the basolateral amygdala (BLA), but the mechanisms of this process are unknown. We recorded neuronal ensembles in the hippocampus and BLA while rats learned the location of an aversive air puff on a linear track, as well as during sleep before and after training. We found coordinated reactivations between the hippocampus and the BLA during non-REM sleep following training. These reactivations peaked during hippocampal sharp wave\u2013ripples (SPW-Rs) and involved a subgroup of BLA cells positively modulated during hippocampal SPW-Rs. Notably, reactivation was stronger for the hippocampus\u2013BLA correlation patterns representing the run direction that involved the air puff than for the 'safe' direction. These findings suggest that consolidation of contextual emotional memory occurs during ripple-reactivation of hippocampus\u2013amygdala circuits.",
-  "publishedBy": {
-    "id": "urn:uuid:7fb002f3-9097-409e-b939-c14a6c1a2568",
-    "name": "DANDI publish",
-    "endDate": "2025-06-24T04:26:50.942773+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-06-24T04:26:50.942773+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:d2ad54dc-f3db-4e34-bfc4-7728700b6587",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "assetsSummary": {
     "species": [
       {
@@ -152,9 +185,13 @@
       }
     ]
   },
-  "datePublished": "2025-06-24T04:26:50.942773+00:00",
   "schemaVersion": "0.4.4",
-  "ethicsApproval": [],
+  "ethicsApproval": [
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "Institutional Animal Care and Use Committee of New York University Medical Center"
+    }
+  ],
   "wasGeneratedBy": [],
   "relatedResource": [
     {

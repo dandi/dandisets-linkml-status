@@ -1,4 +1,10 @@
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001870
+  name: frontal cortex
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001950
+  name: neocortex
+  schemaKey: Anatomy
 access:
 - contactPoint:
     schemaKey: ContactPoint
@@ -32,7 +38,7 @@ assetsSummary:
   - LFP
   - ElectricalSeries
 citation: "Watson, Brendon O.; Levenstein, Daniel; Greene, J. Palmer; Gelinas, Jennifer
-  N.; Buzs\xE1ki, Gy\xF6rgy (2025) Network Homeostasis and State Dynamics of Neocortical
+  N.; Buzs\xE1ki, Gy\xF6rgy (2026) Network Homeostasis and State Dynamics of Neocortical
   Sleep (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000041/draft"
 contributor:
 - affiliation:
@@ -42,6 +48,9 @@ contributor:
   - identifier: https://ror.org/0190ak572
     name: New York University
     schemaKey: Affiliation
+  - identifier: https://ror.org/05bnh6r87
+    name: Cornell University
+    schemaKey: Affiliation
   email: brendonw@umich.edu
   identifier: 0000-0002-9940-4579
   includeInCitation: true
@@ -50,20 +59,31 @@ contributor:
   - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
   identifier: 0000-0002-5507-9145
   includeInCitation: true
   name: Levenstein, Daniel
   roleName:
   - dcite:Author
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  identifier: 0000-0002-2859-0781
   includeInCitation: true
   name: Greene, J. Palmer
   roleName:
   - dcite:Author
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  identifier: 0000-0002-1164-638X
   includeInCitation: true
   name: Gelinas, Jennifer N.
   roleName:
@@ -88,7 +108,6 @@ contributor:
   - dcite:DataCurator
   schemaKey: Person
 dateCreated: '2020-10-05T16:18:52.896000+00:00'
-datePublished: '2025-06-24T04:19:33.987287+00:00'
 description: "Data was recorded using silicon probe electrodes in the frontal cortices
   of male Long Evans rats between 4-7 months of age. The design was to have no specific
   behavior, task or stimulus, rather the animal was left alone in it\u2019s home cage
@@ -106,23 +125,15 @@ keywords:
 - Sleep/awake states
 - Sleep stages
 - Homeostasis
+- extracellular electrophysiology
+- silicon probes
+- LFP
+- spike sorting
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000041/versions/draft/assets/
 name: Network Homeostasis and State Dynamics of Neocortical Sleep
-publishedBy:
-  endDate: '2025-06-24T04:19:33.987287+00:00'
-  id: urn:uuid:4aeea851-78e6-4b02-a941-44324bc92225
-  name: DANDI publish
-  schemaKey: PublishActivity
-  startDate: '2025-06-24T04:19:33.987287+00:00'
-  wasAssociatedWith:
-  - id: urn:uuid:1ab72d3c-4949-4a13-bf41-43eaac6ac4d6
-    identifier: RRID:SCR_017571
-    name: DANDI API
-    schemaKey: Software
-    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1016/j.neuron.2016.03.036
   name: Network Homeostasis and State Dynamics of Neocortical Sleep

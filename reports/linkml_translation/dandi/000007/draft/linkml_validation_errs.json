@@ -2,12 +2,81 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Gao, Zhenyu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'premotor cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0016634'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Gao, Zhenyu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'premotor cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0016634'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'cerebellum', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002037'} is not of type 'string' in /about/1",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'cerebellum', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002037'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Thalamus', 'schemaKey': 'Anatomy', 'identifier': 'https://purl.brain-bican.org/ontology/mbao/MBA_549'} is not of type 'string' in /about/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Thalamus', 'schemaKey': 'Anatomy', 'identifier': 'https://purl.brain-bican.org/ontology/mbao/MBA_549'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Gao, Zhenyu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4979-2366', 'affiliation': [{'name': 'Erasmus MC', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/018906e22'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Gao, Zhenyu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4979-2366', 'affiliation': [{'name': 'Erasmus MC', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/018906e22'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -48,12 +117,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Thomas, Alyse M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6070-4769', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Thomas, Alyse M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6070-4769', 'affiliation': [{'name': 'Baylor College of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02pttbw34'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Thomas, Alyse M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6070-4769', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Thomas, Alyse M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6070-4769', 'affiliation': [{'name': 'Baylor College of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02pttbw34'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -71,12 +140,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Economo, Michael N.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9893-1505', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'Economo, Michael N.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9893-1505', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Economo, Michael N.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9893-1505', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Economo, Michael N.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9893-1505', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         3
@@ -94,12 +163,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Abrego, Amada M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0311-5244', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "message": "{'name': 'Abrego, Amada M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0311-5244', 'affiliation': [{'name': 'Baylor College of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02pttbw34'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Abrego, Amada M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0311-5244', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Abrego, Amada M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-0311-5244', 'affiliation': [{'name': 'Baylor College of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02pttbw34'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         4
@@ -117,12 +186,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6670-7362', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Svoboda, Karel', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-6670-7362', 'affiliation': [{'name': 'Janelia Research Campus', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/013sk6x84'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         5
@@ -140,12 +209,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Zeeuw, Chris I. De', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5628-8187', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "message": "{'name': 'Zeeuw, Chris I. De', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5628-8187', 'affiliation': [{'name': 'Erasmus MC', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/018906e22'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Zeeuw, Chris I. De', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5628-8187', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Zeeuw, Chris I. De', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5628-8187', 'affiliation': [{'name': 'Erasmus MC', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/018906e22'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         6
@@ -163,12 +232,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "message": "{'name': 'Li, Nuo', 'email': 'nuo.li@bcm.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Baylor College of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02pttbw34'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Li, Nuo', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Li, Nuo', 'email': 'nuo.li@bcm.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-6613-5018', 'affiliation': [{'name': 'Baylor College of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/02pttbw34'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         7

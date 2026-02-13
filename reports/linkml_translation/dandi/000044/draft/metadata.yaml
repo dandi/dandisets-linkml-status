@@ -1,4 +1,13 @@
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0003881
+  name: CA1 field of hippocampus
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001954
+  name: Ammon's horn
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/CL_0000598
+  name: pyramidal neuron
+  schemaKey: Anatomy
 access:
 - contactPoint:
     email: petersen.peter@gmail.com
@@ -32,7 +41,7 @@ assetsSummary:
   - ElectricalSeries
   - LFP
   - Units
-citation: "Grosmark, Andres D.; Buzs\xE1ki, Gy\xF6rgy (2025) Diversity in neural firing
+citation: "Grosmark, Andres D.; Buzs\xE1ki, Gy\xF6rgy (2026) Diversity in neural firing
   dynamics supports both rigid and learned hippocampal sequences (Version draft) [Data
   set]. DANDI Archive. https://dandiarchive.org/dandiset/000044/draft"
 contributor:
@@ -69,8 +78,32 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
+- awardNumber: R01 MH054665
+  identifier: https://ror.org/04xeg9z08
+  includeInCitation: false
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- identifier: https://ror.org/01cmst727
+  includeInCitation: false
+  name: Simons Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- identifier: https://ror.org/02a7hjv13
+  includeInCitation: false
+  name: G. Harold and Leila Y. Mathers Charitable Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS034994
+  includeInCitation: false
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2020-11-14T23:49:43.396000+00:00'
-datePublished: '2025-06-24T04:26:53.259210+00:00'
 description: "This data set is composed of eight bilateral silicon-probe multi-cellular
   electrophysiological recordings performed on four male Long-Evans rats in the Buzs\xE1ki
   lab at NYU. These recordings were performed to assess the effect of novel spatial
@@ -91,24 +124,19 @@ description: "This data set is composed of eight bilateral silicon-probe multi-c
 ethicsApproval: []
 id: DANDI:000044/draft
 identifier: DANDI:000044
+keywords:
+- Place cell
+- Memory consolidation
+- Pyramidal cell
+- Long-Evans rat
+- Spatial learning
+- Sharp wave ripples
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000044/versions/draft/assets/
 name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
   sequences
-publishedBy:
-  endDate: '2025-06-24T04:26:53.259210+00:00'
-  id: urn:uuid:30518aa9-d7d7-49df-b99e-b9eef47459c7
-  name: DANDI publish
-  schemaKey: PublishActivity
-  startDate: '2025-06-24T04:26:53.259210+00:00'
-  wasAssociatedWith:
-  - id: urn:uuid:3c93107b-18de-4a82-882a-1093c9e22714
-    identifier: RRID:SCR_017571
-    name: DANDI API
-    schemaKey: Software
-    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1126/science.aad1935
   name: Diversity in neural firing dynamics supports both rigid and learned hippocampal

@@ -2,7 +2,13 @@
   "id": "DANDI:000009/draft",
   "url": "https://dandiarchive.org/dandiset/000009/draft",
   "name": "Maintenance of persistent activity in a frontal thalamocortical loop",
-  "about": [],
+  "about": [
+    {
+      "name": "Thalamus",
+      "schemaKey": "Anatomy",
+      "identifier": "https://purl.brain-bican.org/ontology/mbao/MBA_549"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -13,8 +19,13 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Guo, Zengcai; Inagaki, Hidehiko; Daie, Kayvon; Druckmann, Shaul; Gerfen, Charles R.; Svoboda, Karel (2024) Maintenance of persistent activity in a frontal thalamocortical loop (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000009/draft",
-  "keywords": [],
+  "citation": "Guo, Zengcai; Inagaki, Hidehiko; Daie, Kayvon; Druckmann, Shaul; Gerfen, Charles R.; Svoboda, Karel (2026) Maintenance of persistent activity in a frontal thalamocortical loop (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000009/draft",
+  "keywords": [
+    "frontal thalamocortical loop",
+    "persistent activity",
+    "tactile discrimination",
+    "photoinhibition"
+  ],
   "protocol": [],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000009",
@@ -27,6 +38,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-4140-7961",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -36,6 +54,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0003-4580-2763",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -44,6 +69,14 @@
         "dcite:Author"
       ],
       "schemaKey": "Person",
+      "identifier": "0000-0003-4584-8227",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -53,6 +86,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0003-0068-3377",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -62,17 +102,56 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0001-9008-4882",
+      "affiliation": [
+        {
+          "name": "National Institute of Mental Health",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/04xeg9z08"
+        }
+      ],
       "includeInCitation": true
     },
     {
       "name": "Svoboda, Karel",
+      "email": "svobodak@janelia.hhmi.org",
       "roleName": [
         "dcite:Author",
         "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-6670-7362",
+      "affiliation": [
+        {
+          "name": "Janelia Research Campus",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/013sk6x84"
+        }
+      ],
       "includeInCitation": true
+    },
+    {
+      "name": "Howard Hughes Medical Institute",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/006w34k90"
+    },
+    {
+      "name": "Helen Hay Whitney Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/037ebw447"
+    },
+    {
+      "name": "Simons Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cmst727"
     }
   ],
   "dateCreated": "2020-03-18T20:26:50.059000+00:00",
@@ -143,7 +222,12 @@
     ]
   },
   "schemaVersion": "0.6.0",
-  "ethicsApproval": [],
+  "ethicsApproval": [
+    {
+      "schemaKey": "EthicsApproval",
+      "identifier": "Approved by Janelia Institutional Animal Care and Use Committee"
+    }
+  ],
   "wasGeneratedBy": [],
   "relatedResource": [
     {

@@ -21,6 +21,26 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
+  message: '{''name'': ''focal epilepsy'', ''schemaKey'': ''Disorder'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/DOID_2234''} is not of type ''string'' in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''focal epilepsy'', ''schemaKey'': ''Disorder'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/DOID_2234''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
   message: '{''name'': ''Bouchard, Kristofer E.'', ''roleName'': [''dcite:Author'',
     ''dcite:DataCollector'', ''dcite:FormalAnalysis''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-1974-4603'', ''affiliation'': [{''name'': ''University
@@ -49,10 +69,9 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Chang, Edward F.'', ''email'': ''Edward.Chang@ucsf.edu'',
-    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
-    ''identifier'': ''0000-0003-2480-4700'', ''affiliation'': [{''name'': ''University
-    of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+  message: '{''name'': ''Mesgarani, Nima'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-2987-759X'', ''affiliation'': [{''name'':
+    ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
     ''https://ror.org/043mz5j54''}], ''includeInCitation'': True} is not of type ''string''
     in /contributor/1'
   severity: ERROR
@@ -60,6 +79,59 @@
     absolute_path:
     - contributor
     - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Mesgarani, Nima'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-2987-759X'', ''affiliation'': [{''name'':
+      ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Johnson, Keith'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0002-2569-8121'', ''affiliation'': [{''name'':
+    ''University of California, Berkeley'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/01an7q238''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Johnson, Keith'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0002-2569-8121'', ''affiliation'': [{''name'':
+      ''University of California, Berkeley'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/01an7q238''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Chang, Edward F.'', ''email'': ''Edward.Chang@ucsf.edu'',
+    ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
+    ''identifier'': ''0000-0003-2480-4700'', ''affiliation'': [{''name'': ''University
+    of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/043mz5j54''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
     absolute_schema_path:
     - properties
     - contributor
@@ -79,12 +151,12 @@
   instantiates: Dandiset
   message: '{''name'': ''National Institutes of Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01cwqze88''}
-    is not of type ''string'' in /contributor/2'
+    is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 2
+    - 4
     absolute_schema_path:
     - properties
     - contributor
@@ -100,12 +172,12 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Dichter, Benjamin'', ''roleName'': [''dcite:DataCurator''],
-    ''schemaKey'': ''Person''} is not of type ''string'' in /contributor/3'
+    ''schemaKey'': ''Person''} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 3
+    - 5
     absolute_schema_path:
     - properties
     - contributor

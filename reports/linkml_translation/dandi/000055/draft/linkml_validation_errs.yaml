@@ -21,6 +21,26 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
+  message: '{''name'': ''focal epilepsy'', ''schemaKey'': ''Disorder'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/DOID_2234''} is not of type ''string'' in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''focal epilepsy'', ''schemaKey'': ''Disorder'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/DOID_2234''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
   message: '{''name'': ''Peterson, Steven M.'', ''roleName'': [''dcite:Author''],
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-0782-5788'', ''affiliation'':
     [{''name'': ''University of Washington'', ''schemaKey'': ''Affiliation'', ''identifier'':
@@ -75,8 +95,8 @@
   instantiates: Dandiset
   message: '{''name'': ''Dichter, Benjamin'', ''roleName'': [''dcite:Author''], ''schemaKey'':
     ''Person'', ''identifier'': ''0000-0001-5725-6910'', ''affiliation'': [{''name'':
-    ''CatalystNeuro'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/2'
+    ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01d74sk53''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -89,17 +109,19 @@
     - type
     message: '{''name'': ''Dichter, Benjamin'', ''roleName'': [''dcite:Author''],
       ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5725-6910'', ''affiliation'':
-      [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation''}], ''includeInCitation'':
-      True} is not of type ''string'''
+      [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/01d74sk53''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Scheid, Micheal'', ''roleName'': [], ''schemaKey'': ''Person'',
-    ''affiliation'': [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation''}],
-    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+  message: '{''name'': ''Scheid, Micheal'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+    ''Person'', ''affiliation'': [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/01d74sk53''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -110,9 +132,10 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Scheid, Micheal'', ''roleName'': [], ''schemaKey'': ''Person'',
-      ''affiliation'': [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation''}],
-      ''includeInCitation'': True} is not of type ''string'''
+    message: '{''name'': ''Scheid, Micheal'', ''roleName'': [''dcite:Author''], ''schemaKey'':
+      ''Person'', ''affiliation'': [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/01d74sk53''}], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -165,6 +188,116 @@
       ''0000-0002-4831-3466'', ''affiliation'': [{''name'': ''University of Washington'',
       ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00cvxb145''}],
       ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+    ''awardNumber'': ''1630178''} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+      ''awardNumber'': ''1630178''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+    ''awardNumber'': ''1028725''} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Science Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/021nxhr62'',
+      ''awardNumber'': ''1028725''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198''}
+    is not of type ''string'' in /contributor/8'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 8
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Alfred P. Sloan Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/052csg198''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Washington Research Foundation'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00hasdx88''}
+    is not of type ''string'' in /contributor/9'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 9
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Washington Research Foundation'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00hasdx88''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Defense Advanced Research Projects Agency'', ''roleName'':
+    [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/02caytj08'',
+    ''awardNumber'': ''FA8750-18-2-0259''} is not of type ''string'' in /contributor/10'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 10
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Defense Advanced Research Projects Agency'', ''roleName'':
+      [''dcite:Funder''], ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/02caytj08'',
+      ''awardNumber'': ''FA8750-18-2-0259''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
