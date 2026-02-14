@@ -2,7 +2,13 @@
   "id": "DANDI:000067/draft",
   "url": "https://dandiarchive.org/dandiset/000067/draft",
   "name": "Behavior-dependent short-term assembly dynamics in the medial prefrontal cortex",
-  "about": [],
+  "about": [
+    {
+      "name": "medial prefrontal cortex",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_4450000"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -17,7 +23,15 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Fujisawa, Shigeyoshi; Amarasingham, Asohan; Harrison, Matthew; Buzs\u00e1ki, Gy\u00f6rgy (2025) Behavior-dependent short-term assembly dynamics in the medial prefrontal cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000067/draft",
+  "citation": "Fujisawa, Shigeyoshi; Amarasingham, Asohan; Harrison, Matthew; Buzs\u00e1ki, Gy\u00f6rgy (2026) Behavior-dependent short-term assembly dynamics in the medial prefrontal cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000067/draft",
+  "keywords": [
+    "working memory",
+    "short-term plasticity",
+    "pyramidal cells",
+    "interneurons",
+    "assembly dynamics",
+    "medial prefrontal cortex"
+  ],
   "schemaKey": "Dandiset",
   "identifier": "DANDI:000067",
   "repository": "https://dandiarchive.org",
@@ -33,14 +47,9 @@
       "identifier": "0000-0003-3963-4281",
       "affiliation": [
         {
-          "name": "New York University Langone Medical Center",
+          "name": "Rutgers, The State University of New Jersey",
           "schemaKey": "Affiliation",
-          "identifier": "https://ror.org/005dvqh91"
-        },
-        {
-          "name": "New York University",
-          "schemaKey": "Affiliation",
-          "identifier": "https://ror.org/0190ak572"
+          "identifier": "https://ror.org/05vt9qd57"
         }
       ],
       "includeInCitation": true
@@ -52,7 +61,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0002-0722-0538",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "Rutgers, The State University of New Jersey",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05vt9qd57"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -62,7 +77,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0003-3715-8357",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "Carnegie Mellon University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05x2bcf33"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -74,14 +95,9 @@
       "identifier": "0000-0002-3100-4800",
       "affiliation": [
         {
-          "name": "New York University Langone Medical Center",
+          "name": "Rutgers, The State University of New Jersey",
           "schemaKey": "Affiliation",
-          "identifier": "https://ror.org/005dvqh91"
-        },
-        {
-          "name": "New York University",
-          "schemaKey": "Affiliation",
-          "identifier": "https://ror.org/0190ak572"
+          "identifier": "https://ror.org/05vt9qd57"
         }
       ],
       "includeInCitation": true
@@ -93,7 +109,27 @@
       ],
       "schemaKey": "Organization",
       "identifier": "https://ror.org/01cwqze88",
-      "awardNumber": "NS34994, MH54671, MH064537",
+      "awardNumber": "NS34994",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "MH54671",
+      "includeInCitation": false
+    },
+    {
+      "name": "National Institute of Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/01cwqze88",
+      "awardNumber": "MH064537",
       "includeInCitation": false
     },
     {
@@ -153,27 +189,18 @@
         "dcite:DataCurator"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0002-0829-4790"
+      "identifier": "0000-0002-0829-4790",
+      "affiliation": [
+        {
+          "name": "CatalystNeuro",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/01d74sk53"
+        }
+      ]
     }
   ],
   "dateCreated": "2021-04-19T17:30:57.429000+00:00",
   "description": "Although short-term plasticity is believed to play a fundamental role in cortical computation, empirical evidence bearing on its role during behavior is scarce. Here we looked for the signature of short-term plasticity in the fine-timescale spiking relationships of a simultaneously recorded population of physiologically identified pyramidal cells and interneurons, in the medial prefrontal cortex of the rat, in a working memory task. On broader timescales, sequentially organized and transiently active neurons reliably differentiated between different trajectories of the rat in the maze. On finer timescales, putative monosynaptic interactions reflected short-term plasticity in their dynamic and predictable modulation across various aspects of the task, beyond a statistical accounting for the effect of the neurons' co-varying firing rates. Seeking potential mechanisms for such effects, we found evidence for both firing pattern\u2013dependent facilitation and depression, as well as for a supralinear effect of presynaptic coincidence on the firing of postsynaptic targets.",
-  "publishedBy": {
-    "id": "urn:uuid:3593fb00-323b-444e-9be9-88ca8501ceb1",
-    "name": "DANDI publish",
-    "endDate": "2025-06-24T04:19:36.627030+00:00",
-    "schemaKey": "PublishActivity",
-    "startDate": "2025-06-24T04:19:36.627030+00:00",
-    "wasAssociatedWith": [
-      {
-        "id": "urn:uuid:f47c0a92-be87-4f0c-a7fe-2a6f3324ccdd",
-        "name": "DANDI API",
-        "version": "0.1.0",
-        "schemaKey": "Software",
-        "identifier": "RRID:SCR_017571"
-      }
-    ]
-  },
   "assetsSummary": {
     "species": [
       {
@@ -224,7 +251,6 @@
       }
     ]
   },
-  "datePublished": "2025-06-24T04:19:36.627030+00:00",
   "schemaVersion": "0.4.4",
   "ethicsApproval": [],
   "wasGeneratedBy": [],

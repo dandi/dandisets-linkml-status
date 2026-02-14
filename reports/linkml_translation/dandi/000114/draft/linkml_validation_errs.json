@@ -25,12 +25,35 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Carcea, Ioana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4459-9321', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'auditory cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001393'} is not of type 'string' in /about/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Carcea, Ioana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4459-9321', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'auditory cortex', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001393'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Carcea, Ioana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4459-9321', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Rutgers, The State University of New Jersey', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05vt9qd57'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Carcea, Ioana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4459-9321', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Rutgers, The State University of New Jersey', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05vt9qd57'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -48,12 +71,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Caraballo, Naomi L\u00f3pez', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Caraballo, Naomi L\u00f3pez', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Caraballo, Naomi L\u00f3pez', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Caraballo, Naomi L\u00f3pez', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -71,12 +94,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Marlin, Bianca J.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Marlin, Bianca J.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4275-7891', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Marlin, Bianca J.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Marlin, Bianca J.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4275-7891', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -94,12 +117,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Ooyama, Rumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'Ooyama, Rumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Azabu University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00wzjq897'}, {'name': 'Rutgers, The State University of New Jersey', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05vt9qd57'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Ooyama, Rumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Ooyama, Rumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Azabu University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00wzjq897'}, {'name': 'Rutgers, The State University of New Jersey', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/05vt9qd57'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         3
@@ -117,12 +140,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Riceberg, Justin S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "message": "{'name': 'Riceberg, Justin S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7046-1502', 'affiliation': [{'name': 'Icahn School of Medicine at Mount Sinai', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04a9tmd77'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Riceberg, Justin S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Riceberg, Justin S.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-7046-1502', 'affiliation': [{'name': 'Icahn School of Medicine at Mount Sinai', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04a9tmd77'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         4
@@ -140,12 +163,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Mendoza Navarro, Joyce M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "message": "{'name': 'Mendoza Navarro, Joyce M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Mendoza Navarro, Joyce M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Mendoza Navarro, Joyce M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         5
@@ -163,12 +186,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Opendak, Maya', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "message": "{'name': 'Opendak, Maya', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4334-3188', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Nathan Kline Institute for Psychiatric Research', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01s434164'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Opendak, Maya', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Opendak, Maya', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4334-3188', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Nathan Kline Institute for Psychiatric Research', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01s434164'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         6
@@ -186,12 +209,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Diaz, Veronica E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "message": "{'name': 'Diaz, Veronica E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1626-6105', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Diaz, Veronica E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Diaz, Veronica E.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-1626-6105', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         7
@@ -209,12 +232,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Schuster, Luisa', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "message": "{'name': 'Schuster, Luisa', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8954-0737', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Schuster, Luisa', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Schuster, Luisa', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-8954-0737', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         8
@@ -416,12 +439,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Falkner, Annegret', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9756-7887', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/17",
+    "message": "{'name': 'Falkner, Annegret', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9756-7887', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Princeton University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04tr90w50'}], 'includeInCitation': True} is not of type 'string' in /contributor/17",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Falkner, Annegret', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9756-7887', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Falkner, Annegret', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9756-7887', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Princeton University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04tr90w50'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         17
@@ -439,12 +462,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Lin, Dayu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2006-0791', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/18",
+    "message": "{'name': 'Lin, Dayu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2006-0791', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/18",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Lin, Dayu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2006-0791', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Lin, Dayu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2006-0791', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         18
@@ -462,12 +485,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Mar, Adam', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/19",
+    "message": "{'name': 'Mar, Adam', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/19",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Mar, Adam', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Mar, Adam', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         19
@@ -485,12 +508,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Wadghiri, Youssef Z.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/20",
+    "message": "{'name': 'Wadghiri, Youssef Z.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/20",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Wadghiri, Youssef Z.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Wadghiri, Youssef Z.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         20
@@ -508,12 +531,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Nishimori, Katsuhiko', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/21",
+    "message": "{'name': 'Nishimori, Katsuhiko', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Tohoku University Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04trw8v67'}], 'includeInCitation': True} is not of type 'string' in /contributor/21",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Nishimori, Katsuhiko', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Nishimori, Katsuhiko', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Tohoku University Graduate School of Medicine', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/04trw8v67'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         21
@@ -531,12 +554,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Kikusui, Takefumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/22",
+    "message": "{'name': 'Kikusui, Takefumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Azabu University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00wzjq897'}], 'includeInCitation': True} is not of type 'string' in /contributor/22",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Kikusui, Takefumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Kikusui, Takefumi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Azabu University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00wzjq897'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         22
@@ -554,12 +577,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Mogi, Kazutaka', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/23",
+    "message": "{'name': 'Mogi, Kazutaka', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Azabu University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00wzjq897'}], 'includeInCitation': True} is not of type 'string' in /contributor/23",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Mogi, Kazutaka', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Mogi, Kazutaka', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Azabu University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00wzjq897'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         23
@@ -577,12 +600,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Sullivan, Regina M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/24",
+    "message": "{'name': 'Sullivan, Regina M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Nathan Kline Institute for Psychiatric Research', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01s434164'}], 'includeInCitation': True} is not of type 'string' in /contributor/24",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Sullivan, Regina M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Sullivan, Regina M.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}, {'name': 'Nathan Kline Institute for Psychiatric Research', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01s434164'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         24
@@ -600,12 +623,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Froemke, Robert C.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-1230-6811', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/25",
+    "message": "{'name': 'Froemke, Robert C.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-1230-6811', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string' in /contributor/25",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Froemke, Robert C.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-1230-6811', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Froemke, Robert C.', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-1230-6811', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         25
@@ -669,12 +692,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'K99/R00 MH106744, F32 MH112232, T32 MH019524', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/28",
+    "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'K99/R00 MH106744', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/28",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'K99/R00 MH106744, F32 MH112232, T32 MH019524', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'K99/R00 MH106744', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
       "absolute_path": [
         "contributor",
         28
@@ -692,12 +715,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/29",
+    "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'F32 MH112232', 'includeInCitation': False} is not of type 'string' in /contributor/29",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'F32 MH112232', 'includeInCitation': False} is not of type 'string'",
       "absolute_path": [
         "contributor",
         29
@@ -715,7 +738,53 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Dichter, Benjamin', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0001-5725-6910', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string' in /contributor/30",
+    "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'T32 MH019524', 'includeInCitation': False} is not of type 'string' in /contributor/30",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'T32 MH019524', 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        30
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'contactPoint': [], 'includeInCitation': False} is not of type 'string' in /contributor/31",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Howard Hughes Medical Institute', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/006w34k90', 'contactPoint': [], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        31
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Dichter, Benjamin', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0001-5725-6910', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string' in /contributor/32",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
@@ -723,7 +792,7 @@
       "message": "{'name': 'Dichter, Benjamin', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0001-5725-6910', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string'",
       "absolute_path": [
         "contributor",
-        30
+        32
       ],
       "absolute_schema_path": [
         "properties",

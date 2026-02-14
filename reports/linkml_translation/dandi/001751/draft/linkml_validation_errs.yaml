@@ -22,9 +22,9 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Jing, Junzhan'', ''email'': ''jingjunzhan@gmail.com'', ''roleName'':
-    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/0'
+  message: '{''name'': ''Jing, Junzhan'', ''email'': ''junzhan.jing@bcm.edu'', ''roleName'':
+    [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -35,9 +35,9 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Jing, Junzhan'', ''email'': ''jingjunzhan@gmail.com'',
-      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-      [], ''includeInCitation'': True} is not of type ''string'''
+    message: '{''name'': ''Jing, Junzhan'', ''email'': ''junzhan.jing@bcm.edu'', ''roleName'':
+      [], ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -45,12 +45,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Liu, Rui-Feng'', ''email'': ''rfengliu@gmail.com'', ''roleName'':
-    [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataCollector'', ''dcite:DataCurator'',
-    ''dcite:DataManager'', ''dcite:FormalAnalysis'', ''dcite:FundingAcquisition'',
-    ''dcite:Investigation'', ''dcite:Maintainer'', ''dcite:ProjectMember'', ''dcite:Researcher'',
-    ''dcite:Resources'', ''dcite:Software'', ''dcite:Validation''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0002-3319-9939''} is not of type ''string''
-    in /contributor/1'
+    [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3319-9939'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -62,11 +58,118 @@
     - items
     - type
     message: '{''name'': ''Liu, Rui-Feng'', ''email'': ''rfengliu@gmail.com'', ''roleName'':
-      [''dcite:Author'', ''dcite:Conceptualization'', ''dcite:DataCollector'', ''dcite:DataCurator'',
-      ''dcite:DataManager'', ''dcite:FormalAnalysis'', ''dcite:FundingAcquisition'',
-      ''dcite:Investigation'', ''dcite:Maintainer'', ''dcite:ProjectMember'', ''dcite:Researcher'',
-      ''dcite:Resources'', ''dcite:Software'', ''dcite:Validation''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0002-3319-9939''} is not of type ''string'''
+      [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-3319-9939'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Mental Health '', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH122169, R01MH120404''}
+    is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health '', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''R01MH122169, R01MH120404''}
+      is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Natural Science Foundation of China'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''82425016, 82371095, 81961128021,
+    82301254''} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Natural Science Foundation of China'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''82425016, 82371095, 81961128021,
+      82301254''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Key R&D Program of China'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''awardNumber'': ''2022YEF0203200''} is not of
+    type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Key R&D Program of China'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''awardNumber'': ''2022YEF0203200''} is not
+      of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Science and Technology Innovation 2030 Major Program
+    of China'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''awardNumber'': ''2021ZD0200100''} is not of type ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Science and Technology Innovation 2030 Major Program
+      of China'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''awardNumber'': ''2021ZD0200100''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''The Key Science and Technology Project of Guangdong Province,
+    China'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'', ''awardNumber'':
+    ''2023B0303020002''} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''The Key Science and Technology Project of Guangdong Province,
+      China'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''awardNumber'': ''2023B0303020002''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

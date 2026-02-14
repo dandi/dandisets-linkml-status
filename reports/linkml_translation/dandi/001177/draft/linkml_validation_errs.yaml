@@ -1,24 +1,71 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: Additional properties are not allowed ('datePublished', 'publishedBy' were
-    unexpected) in /
+  message: '{''name'': ''striatum'', ''schemaKey'': ''Anatomy'', ''identifier'': ''http://purl.obolibrary.org/obo/UBERON_0002435''}
+    is not of type ''string'' in /about/0'
   severity: ERROR
   source:
-    absolute_path: []
+    absolute_path:
+    - about
+    - 0
     absolute_schema_path:
-    - additionalProperties
-    message: Additional properties are not allowed ('datePublished', 'publishedBy'
-      were unexpected)
-    validator: additionalProperties
-    validator_value: false
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''striatum'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0002435''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': "Parkinson''s disease", ''schemaKey'': ''Disorder'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/DOID_14330''} is not of type ''string'' in /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': "Parkinson''s disease", ''schemaKey'': ''Disorder'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/DOID_14330''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''impulse control disorder'', ''schemaKey'': ''Disorder'',
+    ''identifier'': ''http://purl.obolibrary.org/obo/DOID_10937''} is not of type
+    ''string'' in /about/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 2
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''impulse control disorder'', ''schemaKey'': ''Disorder'',
+      ''identifier'': ''http://purl.obolibrary.org/obo/DOID_10937''} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
   type: jsonschema validation
 - context: []
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
-    ''schemaKey'': ''Organization'', ''awardNumber'': ''1 R01 NS 101354-01A1''} is
-    not of type ''string'' in /contributor/0'
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01s5ya894'',
+    ''awardNumber'': ''1 R01 NS 101354-01A1''} is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -30,8 +77,8 @@
     - items
     - type
     message: '{''name'': ''National Institutes of Health (NIH)'', ''roleName'': [''dcite:Funder''],
-      ''schemaKey'': ''Organization'', ''awardNumber'': ''1 R01 NS 101354-01A1''}
-      is not of type ''string'''
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/01s5ya894'',
+      ''awardNumber'': ''1 R01 NS 101354-01A1''} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -40,7 +87,9 @@
   instantiates: Dandiset
   message: '{''name'': ''Zhuang, Xiaowen'', ''email'': ''xiaowen.Zhuang@ucsf.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
-    ''identifier'': ''0000-0002-9064-4023'', ''awardNumber'': ''PF-PRF-836910'', ''includeInCitation'':
+    ''identifier'': ''0000-0002-9064-4023'', ''affiliation'': [{''name'': ''University
+    of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/043mz5j54''}], ''awardNumber'': ''PF-PRF-836910'', ''includeInCitation'':
     True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
@@ -54,8 +103,10 @@
     - type
     message: '{''name'': ''Zhuang, Xiaowen'', ''email'': ''xiaowen.Zhuang@ucsf.edu'',
       ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
-      ''identifier'': ''0000-0002-9064-4023'', ''awardNumber'': ''PF-PRF-836910'',
-      ''includeInCitation'': True} is not of type ''string'''
+      ''identifier'': ''0000-0002-9064-4023'', ''affiliation'': [{''name'': ''University
+      of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/043mz5j54''}], ''awardNumber'': ''PF-PRF-836910'', ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -63,8 +114,10 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Lemak, Julia'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0003-4224-7805'', ''includeInCitation'': True}
-    is not of type ''string'' in /contributor/2'
+    ''Person'', ''identifier'': ''0000-0003-4224-7805'', ''affiliation'': [{''name'':
+    ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/043mz5j54''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -76,8 +129,10 @@
     - items
     - type
     message: '{''name'': ''Lemak, Julia'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0003-4224-7805'', ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0003-4224-7805'', ''affiliation'': [{''name'':
+      ''University of California, San Francisco'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -85,7 +140,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Sridhar, Sadhana'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+    ''Person'', ''affiliation'': [{''name'': ''University of California, San Francisco'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/043mz5j54''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -97,7 +154,9 @@
     - items
     - type
     message: '{''name'': ''Sridhar, Sadhana'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''includeInCitation'': True} is not of type ''string'''
+      ''Person'', ''affiliation'': [{''name'': ''University of California, San Francisco'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/043mz5j54''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -105,8 +164,8 @@
   instance_index: 0
   instantiates: Dandiset
   message: "{'name': 'Parkinson\u2019s Foundation', 'roleName': ['dcite:Funder'],
-    'schemaKey': 'Organization', 'awardNumber': 'PF-PRF-836910', 'includeInCitation':
-    False} is not of type 'string' in /contributor/4"
+    'schemaKey': 'Organization', 'identifier': 'https://ror.org/005aa3k38', 'awardNumber':
+    'PF-PRF-836910', 'includeInCitation': False} is not of type 'string' in /contributor/4"
   severity: ERROR
   source:
     absolute_path:
@@ -118,8 +177,8 @@
     - items
     - type
     message: "{'name': 'Parkinson\u2019s Foundation', 'roleName': ['dcite:Funder'],
-      'schemaKey': 'Organization', 'awardNumber': 'PF-PRF-836910', 'includeInCitation':
-      False} is not of type 'string'"
+      'schemaKey': 'Organization', 'identifier': 'https://ror.org/005aa3k38', 'awardNumber':
+      'PF-PRF-836910', 'includeInCitation': False} is not of type 'string'"
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -152,7 +211,9 @@
   instantiates: Dandiset
   message: '{''name'': ''Nelson, Alexandra B.'', ''email'': ''alexandra.nelson@ucsf.edu'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
-    ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
+    ''affiliation'': [{''name'': ''University of California, San Francisco'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
     absolute_path:
@@ -165,7 +226,34 @@
     - type
     message: '{''name'': ''Nelson, Alexandra B.'', ''email'': ''alexandra.nelson@ucsf.edu'',
       ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''], ''schemaKey'': ''Person'',
-      ''includeInCitation'': True} is not of type ''string'''
+      ''affiliation'': [{''name'': ''University of California, San Francisco'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/043mz5j54''}], ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Tauffer, Luiz'', ''roleName'': [''dcite:DataCurator''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0003-1147-2954'', ''affiliation'': [{''name'':
+    ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/01d74sk53''}],
+    ''includeInCitation'': False} is not of type ''string'' in /contributor/7'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 7
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Tauffer, Luiz'', ''roleName'': [''dcite:DataCurator''],
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1147-2954'', ''affiliation'':
+      [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/01d74sk53''}], ''includeInCitation'': False} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

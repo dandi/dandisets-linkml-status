@@ -19,7 +19,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Jing, Junzhan (2026) Electrophysiological Dataset of Neuronal Post-Synaptic Currents in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001752/draft",
+  "citation": "Jing, Junzhan; Liu, Rui-Feng (2026) Electrophysiological Dataset of Neuronal Post-Synaptic Currents in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001752/draft",
   "keywords": [
     "Post-synaptic current",
     "Monkey",
@@ -32,29 +32,103 @@
   "contributor": [
     {
       "name": "Jing, Junzhan",
-      "email": "jingjunzhan@gmail.com",
-      "roleName": [
-        "dcite:ContactPerson"
-      ],
+      "email": "junzhan.jing@bcm.edu",
+      "roleName": [],
       "schemaKey": "Person",
       "affiliation": [],
       "includeInCitation": true
+    },
+    {
+      "name": "Liu, Rui-Feng",
+      "email": "rfengliu@gmail.com",
+      "roleName": [
+        "dcite:ContactPerson"
+      ],
+      "schemaKey": "Organization",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institute of Mental Health ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "R01MH122169, R01MH120404"
+    },
+    {
+      "name": "Natural Science Foundation of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "82425016, 82371095, 81961128021, 82301254"
+    },
+    {
+      "name": "National Key R&D Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2022YEF0203200"
+    },
+    {
+      "name": "National Science and Technology Innovation 2030 Major Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2021ZD0200100"
+    },
+    {
+      "name": " The Key Science and Technology Project of Guangdong Province, China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2023B0303020002"
     }
   ],
   "dateCreated": "2026-02-13T06:03:14.607267+00:00",
-  "description": "The dataset contains the intracellular recordings from Macaque Anterior Insular Cortex neurons. We used recorded neuronal post-synaptic currents from monkeyanterior insular cortex. The dataset contains miniature E/IPSCs and spontaneous E/IPSCs recorded from VENs and PCs in moneky AIC.",
-  "studyTarget": [
-    "We recoded miniature E/IPSCs and spontaneous E/IPSCs from VENs and PCs in monkey AIC to confirm the neuronal connection differences between the cell types."
-  ],
+  "description": "This dataset includes intracellular recordings from neurons in the anterior insular cortex of macaque monkeys. Postsynaptic currents were measured, comprising miniature and spontaneous excitatory and inhibitory postsynaptic currents (E/IPSCs) recorded from von Economo neurons (VENs) and pyramidal cells (PCs).",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca fascicularis - Cynomolgus monkeys",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9541"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 181662688,
+    "numberOfFiles": 84,
+    "numberOfSubjects": 5,
+    "variableMeasured": [
+      "VoltageClampSeries",
+      "VoltageClampStimulusSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "voltage clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
-  "acknowledgement": "This work was supported by  Natural Science Foundation of China.",
   "relatedResource": [
     {
       "name": "Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex",

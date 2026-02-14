@@ -1,4 +1,13 @@
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0002435
+  name: striatum
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/DOID_14330
+  name: Parkinson's disease
+  schemaKey: Disorder
+- identifier: http://purl.obolibrary.org/obo/DOID_10937
+  name: impulse control disorder
+  schemaKey: Disorder
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -36,16 +45,21 @@ assetsSummary:
   - ElectrodeGroup
   - ProcessingModule
   - Units
-citation: "Zhuang, Xiaowen; Lemak, Julia; Sridhar, Sadhana; Nelson, Alexandra B. (2025)
+citation: "Zhuang, Xiaowen; Lemak, Julia; Sridhar, Sadhana; Nelson, Alexandra B. (2026)
   Abnormal Striatal Activity in a Mouse Model of Impulse Control Disorder in Parkinson\u2019s
   Disease (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001177/draft"
 contributor:
 - awardNumber: 1 R01 NS 101354-01A1
+  identifier: https://ror.org/01s5ya894
   name: National Institutes of Health (NIH)
   roleName:
   - dcite:Funder
   schemaKey: Organization
-- awardNumber: PF-PRF-836910
+- affiliation:
+  - identifier: https://ror.org/043mz5j54
+    name: University of California, San Francisco
+    schemaKey: Affiliation
+  awardNumber: PF-PRF-836910
   email: xiaowen.Zhuang@ucsf.edu
   identifier: 0000-0002-9064-4023
   includeInCitation: true
@@ -54,18 +68,27 @@ contributor:
   - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
-- identifier: 0000-0003-4224-7805
+- affiliation:
+  - identifier: https://ror.org/043mz5j54
+    name: University of California, San Francisco
+    schemaKey: Affiliation
+  identifier: 0000-0003-4224-7805
   includeInCitation: true
   name: Lemak, Julia
   roleName:
   - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- affiliation:
+  - identifier: https://ror.org/043mz5j54
+    name: University of California, San Francisco
+    schemaKey: Affiliation
+  includeInCitation: true
   name: Sridhar, Sadhana
   roleName:
   - dcite:Author
   schemaKey: Person
 - awardNumber: PF-PRF-836910
+  identifier: https://ror.org/005aa3k38
   includeInCitation: false
   name: "Parkinson\u2019s Foundation"
   roleName:
@@ -79,15 +102,28 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
   url: https://parkinsonsroadmap.org/
-- email: alexandra.nelson@ucsf.edu
+- affiliation:
+  - identifier: https://ror.org/043mz5j54
+    name: University of California, San Francisco
+    schemaKey: Affiliation
+  email: alexandra.nelson@ucsf.edu
   includeInCitation: true
   name: Nelson, Alexandra B.
   roleName:
   - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/01d74sk53
+    name: CatalystNeuro
+    schemaKey: Affiliation
+  identifier: 0000-0003-1147-2954
+  includeInCitation: false
+  name: Tauffer, Luiz
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
 dateCreated: '2024-08-21T06:52:49.369009+00:00'
-datePublished: '2025-09-02T21:27:54.495107+00:00'
 description: "In this project, we studied cognitive behavior and striatal activity
   in a mouse model of impulse control disorder in Parkinson\u2019s disease in which
   we administered the therapeutic dopamine D2/3R agonist, pramipexole. In food-deprived
@@ -122,19 +158,15 @@ manifestLocation:
 name: "Abnormal Striatal Activity in a Mouse Model of Impulse Control Disorder in
   Parkinson\u2019s Disease"
 protocol: []
-publishedBy:
-  endDate: '2025-09-02T21:27:54.495107+00:00'
-  id: urn:uuid:ea6fb97d-7157-4059-9d8c-4dd224a40c38
-  name: DANDI publish
-  schemaKey: PublishActivity
-  startDate: '2025-09-02T21:27:54.495107+00:00'
-  wasAssociatedWith:
-  - id: urn:uuid:2501f180-1ca3-4a71-aa2c-d523d5180a62
-    identifier: RRID:SCR_017571
-    name: DANDI API
-    schemaKey: Software
-    version: 0.1.0
-relatedResource: []
+relatedResource:
+- identifier: 10.1093/brain/awaf312
+  name: Aberrant striatal firing mediates impulsive decision-making in a mouse model
+    of Parkinson's disease
+  relation: dcite:IsDescribedBy
+  repository: Brain
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://doi.org/10.1093/brain/awaf312
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.8

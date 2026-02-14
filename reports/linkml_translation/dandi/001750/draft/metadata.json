@@ -1,7 +1,7 @@
 {
   "id": "DANDI:001750/draft",
   "url": "https://dandiarchive.org/dandiset/001750/draft",
-  "name": "Elecophysioloical Dataset of Somatic Sodium Channel Current Using Outside-out Recording in the Primate Anterior Insular Cortex",
+  "name": "Electrophysiological Dataset of Somatic Sodium Channel Current Using Outside-out Recording in the Primate Anterior Insular Cortex",
   "about": [
     {
       "name": "Macaca fascicularis",
@@ -19,7 +19,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Jing, Junzhan (2026) Elecophysioloical Dataset of Somatic Sodium Channel Current Using Outside-out Recording in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001750/draft",
+  "citation": "Jing, Junzhan; Liu, Rui-Feng (2026) Electrophysiological Dataset of Somatic Sodium Channel Current Using Outside-out Recording in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001750/draft",
   "keywords": [
     "Sodium channel",
     "Outside-out recording",
@@ -31,10 +31,8 @@
   "contributor": [
     {
       "name": "Jing, Junzhan",
-      "email": "jingjunzhan@gmail.com",
-      "roleName": [
-        "dcite:ContactPerson"
-      ],
+      "email": "junzhan.jing@bcm.edu",
+      "roleName": [],
       "schemaKey": "Person",
       "affiliation": [],
       "includeInCitation": true
@@ -52,21 +50,91 @@
         "dcite:Investigation",
         "dcite:FundingAcquisition",
         "dcite:Researcher",
-        "dcite:Software"
+        "dcite:Software",
+        "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0002-3319-9939"
+      "identifier": "0000-0002-3319-9939",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institute of Mental Health ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "R01MH122169, R01MH120404"
+    },
+    {
+      "name": "Natural Science Foundation of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "82425016, 82371095, 81961128021, 82301254"
+    },
+    {
+      "name": "National Key R&D Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2022YEF0203200"
+    },
+    {
+      "name": "National Science and Technology Innovation 2030 Major Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2021ZD0200100"
+    },
+    {
+      "name": "The Key Science and Technology Project of Guangdong Province, China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2023B0303020002"
     }
   ],
   "dateCreated": "2026-02-13T05:35:43.587320+00:00",
-  "description": "The dataset contains the intracellular recordings from Macaque Anterior Insular Cortex neurons. We used outside-out patch-clamp recording to collecte the sodium channel current of anterior insular cortex neurons in crab-eating monkeys.",
-  "studyTarget": [
-    "To investigate the differnce of sodium channel currents between VENs and PCs "
-  ],
+  "description": "This dataset includes intracellular recordings from neurons in the anterior insular cortex of macaque monkeys. Somatic sodium channel currents were recorded using the outside-out patch-clamp configuration in neurons from crab-eating monkeys.",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca fascicularis - Cynomolgus monkeys",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9541"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 332531856,
+    "numberOfFiles": 35,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "VoltageClampSeries",
+      "VoltageClampStimulusSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "voltage clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
@@ -74,8 +142,17 @@
   "relatedResource": [
     {
       "name": "Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "resourceType": "dcite:PeerReview"
+    },
+    {
+      "url": "https://github.com/RFLiu2021/AIC_proj",
+      "name": "Github: Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex",
       "relation": "dcite:IsSourceOf",
-      "schemaKey": "Resource"
+      "schemaKey": "Resource",
+      "repository": "Github: Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex",
+      "resourceType": "dcite:Software"
     }
   ],
   "manifestLocation": [

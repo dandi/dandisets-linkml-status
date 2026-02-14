@@ -2,8 +2,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
-    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0009-0009-0306-0002'', ''affiliation'': [], ''awardNumber'': ''R01MH134833'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -15,8 +16,153 @@
     - items
     - type
     message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
-      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''affiliation'':
-      [], ''includeInCitation'': True} is not of type ''string'''
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0009-0009-0306-0002'', ''affiliation'': [], ''awardNumber'': ''R01MH134833'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
+    ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-3210-5638'', ''affiliation'': [], ''awardNumber'': ''R01MH134833'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 1
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
+      ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-3210-5638'', ''affiliation'': [], ''awardNumber'': ''R01MH134833'',
+      ''includeInCitation'': True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Cohen, Jeremiah '', ''email'': ''jeremiah.cohen@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0002-4768-7124'', ''awardNumber'': ''R01MH134833'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/2'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 2
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Cohen, Jeremiah '', ''email'': ''jeremiah.cohen@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0002-4768-7124'', ''awardNumber'': ''R01MH134833'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Chandrashekar, Jayaram'', ''email'': ''jayaramc@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-6412-0114'', ''awardNumber'': ''R01MH134833'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/3'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 3
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Chandrashekar, Jayaram'', ''email'': ''jayaramc@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-6412-0114'', ''awardNumber'': ''R01MH134833'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Isogai, Yoh '', ''email'': ''yoh.isogai@alleninstitute.org'',
+    ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+    ''0000-0001-7285-1603'', ''awardNumber'': ''R01MH134833'', ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Isogai, Yoh '', ''email'': ''yoh.isogai@alleninstitute.org'',
+      ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
+      ''0000-0001-7285-1603'', ''awardNumber'': ''R01MH134833'', ''includeInCitation'':
+      True} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
+    for Brian Science'', ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00dcv1019'',
+    ''awardNumber'': ''R01MH134833'', ''includeInCitation'': True} is not of type
+    ''string'' in /contributor/5'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 5
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
+      for Brian Science'', ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/00dcv1019'',
+      ''awardNumber'': ''R01MH134833'', ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''url'': ''https://www.nimh.nih.gov/'', ''name'': ''National Institute
+    of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+    ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R01MH134833'',
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/6'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 6
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''url'': ''https://www.nimh.nih.gov/'', ''name'': ''National Institute
+      of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
+      ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''R01MH134833'',
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

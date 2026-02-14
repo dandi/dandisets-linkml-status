@@ -19,11 +19,12 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Jing, Junzhan (2026) Electrophysiological Dataset of Local Neuronal Microcircuits in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001751/draft",
+  "citation": "Jing, Junzhan; Liu, Rui-Feng (2026) Electrophysiological Dataset of Local Neuronal Microcircuits in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001751/draft",
   "keywords": [
     "Anterior insular cortex",
     "Monkey",
-    "neuronal connection"
+    "neuronal connection",
+    "Von Economo Neuron"
   ],
   "protocol": [
     "http://doi.org/10.1126/science.aaf6102"
@@ -34,10 +35,8 @@
   "contributor": [
     {
       "name": "Jing, Junzhan",
-      "email": "jingjunzhan@gmail.com",
-      "roleName": [
-        "dcite:ContactPerson"
-      ],
+      "email": "junzhan.jing@bcm.edu",
+      "roleName": [],
       "schemaKey": "Person",
       "affiliation": [],
       "includeInCitation": true
@@ -46,40 +45,94 @@
       "name": "Liu, Rui-Feng",
       "email": "rfengliu@gmail.com",
       "roleName": [
-        "dcite:Author",
-        "dcite:Conceptualization",
-        "dcite:DataCollector",
-        "dcite:DataCurator",
-        "dcite:DataManager",
-        "dcite:FormalAnalysis",
-        "dcite:FundingAcquisition",
-        "dcite:Investigation",
-        "dcite:Maintainer",
-        "dcite:ProjectMember",
-        "dcite:Researcher",
-        "dcite:Resources",
-        "dcite:Software",
-        "dcite:Validation"
+        "dcite:ContactPerson"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0002-3319-9939"
+      "identifier": "0000-0002-3319-9939",
+      "includeInCitation": true
+    },
+    {
+      "name": "National Institute of Mental Health ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "R01MH122169, R01MH120404"
+    },
+    {
+      "name": "Natural Science Foundation of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "82425016, 82371095, 81961128021, 82301254"
+    },
+    {
+      "name": "National Key R&D Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2022YEF0203200"
+    },
+    {
+      "name": "National Science and Technology Innovation 2030 Major Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2021ZD0200100"
+    },
+    {
+      "name": "The Key Science and Technology Project of Guangdong Province, China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2023B0303020002"
     }
   ],
   "dateCreated": "2026-02-13T05:50:56.132747+00:00",
-  "description": "The dataset contains the intracellular recordings from Macaque Anterior Insular Cortex neurons. We used simutaneous multiple patch-clamp recording to collecte the neuronal connectivity data of anterior insular cortex neurons in crab-eating monkeys.",
-  "studyTarget": [
-    "We simutaneously recorded multiple neurons in monkey AIC to investigate the connection differences of VEN and PCs. ",
-    "We found VEN has sparse connections with their neiboring neurons compared to PCs."
-  ],
+  "description": "This dataset includes intracellular recordings from neurons in the anterior insular cortex of macaque monkeys. Neuronal connectivity was assessed using simultaneous multi\u2013patch-clamp recordings in crab-eating monkeys.",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca fascicularis - Cynomolgus monkeys",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9541"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 6964257080,
+    "numberOfFiles": 301,
+    "numberOfSubjects": 6,
+    "variableMeasured": [
+      "CurrentClampStimulusSeries",
+      "CurrentClampSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
   "wasGeneratedBy": [],
-  "acknowledgement": "This work was supported by  Natural Science Foundation of China.",
   "relatedResource": [
     {
       "name": "Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex",

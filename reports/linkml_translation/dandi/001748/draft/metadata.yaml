@@ -1,31 +1,117 @@
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  - name: voltage clamp technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 9299725051
+  numberOfFiles: 162
+  numberOfSubjects: 54
   schemaKey: AssetsSummary
-citation: Gonzalez, Limary (2026) bican_r01_26q1 (Version draft) [Data set]. DANDI
-  Archive. https://dandiarchive.org/dandiset/001748/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - CurrentClampSeries
+  - VoltageClampSeries
+  - VoltageClampStimulusSeries
+  - ProcessingModule
+  - CurrentClampStimulusSeries
+citation: Gonzalez, Limary; Lee, Brian; Cohen, Jeremiah ; Chandrashekar, Jayaram;
+  Isogai, Yoh ; Allen Institute for Brian Science; National Institute of Mental Health
+  (2026) 20260213_Patchseq_BICAN_R01_Neuromodulation_mouse (Version draft) [Data set].
+  DANDI Archive. https://dandiarchive.org/dandiset/001748/draft
 contributor:
 - affiliation: []
+  awardNumber: R01MH134833
   email: limary.gonzalez@alleninstitute.org
+  identifier: 0009-0009-0306-0002
   includeInCitation: true
   name: Gonzalez, Limary
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
+- affiliation: []
+  awardNumber: R01MH134833
+  email: brianle@alleninstitute.org
+  identifier: 0000-0002-3210-5638
+  includeInCitation: true
+  name: Lee, Brian
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- awardNumber: R01MH134833
+  email: jeremiah.cohen@alleninstitute.org
+  identifier: 0000-0002-4768-7124
+  includeInCitation: true
+  name: 'Cohen, Jeremiah '
+  roleName:
+  - dcite:ProjectLeader
+  schemaKey: Person
+- awardNumber: R01MH134833
+  email: jayaramc@alleninstitute.org
+  identifier: 0000-0001-6412-0114
+  includeInCitation: true
+  name: Chandrashekar, Jayaram
+  roleName:
+  - dcite:ProjectLeader
+  schemaKey: Person
+- awardNumber: R01MH134833
+  email: yoh.isogai@alleninstitute.org
+  identifier: 0000-0001-7285-1603
+  includeInCitation: true
+  name: 'Isogai, Yoh '
+  roleName:
+  - dcite:ProjectMember
+  schemaKey: Person
+- awardNumber: R01MH134833
+  identifier: https://ror.org/00dcv1019
+  includeInCitation: true
+  name: Allen Institute for Brian Science
+  schemaKey: Organization
+  url: https://alleninstitute.org/
+- awardNumber: R01MH134833
+  identifier: https://ror.org/04xeg9z08
+  includeInCitation: true
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://www.nimh.nih.gov/
 dateCreated: '2026-02-10T19:51:39.147947+00:00'
-description: placeholder
+description: BICAN R01 Neuromodulation mouse upload (Q1 2026)
+ethicsApproval: []
 id: DANDI:001748/draft
 identifier: DANDI:001748
+keywords:
+- Patch-seq, mouse
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001748/versions/draft/assets/
-name: bican_r01_26q1
+name: 20260213_Patchseq_BICAN_R01_Neuromodulation_mouse
+protocol:
+- https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
+studyTarget:
+- Structure-function cell atlas for norepinephrine and serotonin neurons
 url: https://dandiarchive.org/dandiset/001748/draft
 version: draft
+wasGeneratedBy: []

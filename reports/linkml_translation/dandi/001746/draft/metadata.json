@@ -1,7 +1,7 @@
 {
   "id": "DANDI:001746/draft",
   "url": "https://dandiarchive.org/dandiset/001746/draft",
-  "name": "Elecophysioloical Dataset of Patch-seq Recording in non-Human Primate Anterior Insular Cortex",
+  "name": "Electrophysiological Dataset of Patch-seq Recording in non-Human Primate Anterior Insular Cortex",
   "about": [
     {
       "name": "Macaca fascicularis",
@@ -19,11 +19,12 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Jing, Junzhan; Liu, Rui-Feng (2026) Elecophysioloical Dataset of Patch-seq Recording in non-Human Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001746/draft",
+  "citation": "Jing, Junzhan; Liu, Rui-Feng (2026) Electrophysiological Dataset of Patch-seq Recording in non-Human Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001746/draft",
   "keywords": [
     "Anterior insular cortex ",
     " Patch-seq",
-    "Monkey"
+    "Monkey",
+    "Von Economo Neuron"
   ],
   "protocol": [
     "https://doi.org/10.1038/nprot.2017.120"
@@ -34,10 +35,8 @@
   "contributor": [
     {
       "name": "Jing, Junzhan",
-      "email": "jingjunzhan@gmail.com",
-      "roleName": [
-        "dcite:ContactPerson"
-      ],
+      "email": "junzhan.jing@bcm.edu",
+      "roleName": [],
       "schemaKey": "Person",
       "affiliation": [],
       "includeInCitation": true
@@ -63,17 +62,109 @@
       "identifier": "0000-0002-3319-9939",
       "affiliation": [],
       "includeInCitation": true
+    },
+    {
+      "name": "Shen, Yuhui",
+      "email": "shenyh8@mail2.sysu.edu.cn",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person"
+    },
+    {
+      "name": "Huang, Mengyao",
+      "email": "huangmy36@mail2.sysu.edu.cn",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person"
+    },
+    {
+      "name": "Shao, Mingting",
+      "email": "shaomingtingJNU@163.com",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person"
+    },
+    {
+      "name": "National Institute of Mental Health ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "R01MH122169, R01MH120404"
+    },
+    {
+      "name": "Natural Science Foundation of China ",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "82425016, 82371095, 81961128021, 82301254"
+    },
+    {
+      "name": "National Key R&D Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2022YEF0203200"
+    },
+    {
+      "name": "National Science and Technology Innovation 2030 Major Program of China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2021ZD0200100"
+    },
+    {
+      "name": "The Key Science and Technology Project of Guangdong Province, China",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "2023B0303020002"
     }
   ],
   "dateCreated": "2026-02-10T02:02:10.507823+00:00",
-  "description": "The dataset contains the intracellular recordings from Macaque Anterior Insular Cortex neurons.  We used Patch-seq to combine electrophysiology, morphology, and transcriptome of single cells in acute slices. This dataset is electrophysiological data annotated with transcriptomic types (metadata).",
-  "studyTarget": [
-    "We used Patch-seq to combine patch-clamp recording, biocytin staining, and single-cell RNA sequencing of monkey AIC individual neuons."
-  ],
+  "description": "This dataset contains intracellular recordings from neurons in the macaque anterior insular cortex. Using Patch-seq, we integrated electrophysiological, morphological, and transcriptomic profiling at the single-cell level in acute brain slices. The dataset primarily comprises electrophysiological recordings annotated with transcriptomic cell types as metadata.",
   "assetsSummary": {
+    "species": [
+      {
+        "name": "Macaca fascicularis - Cynomolgus monkeys",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_9541"
+      }
+    ],
+    "approach": [
+      {
+        "name": "electrophysiological approach",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "numberOfBytes": 0,
-    "numberOfFiles": 0
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 14735339376,
+    "numberOfFiles": 462,
+    "numberOfSubjects": 10,
+    "variableMeasured": [
+      "CurrentClampStimulusSeries",
+      "CurrentClampSeries"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "current clamp technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
@@ -84,7 +175,6 @@
       "description": "An investigation of macaque anterior insular cortex"
     }
   ],
-  "acknowledgement": "This work was supported by  Natural Science Foundation of China.",
   "relatedResource": [
     {
       "name": "Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex",

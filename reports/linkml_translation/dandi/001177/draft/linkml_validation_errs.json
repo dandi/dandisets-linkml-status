@@ -2,29 +2,81 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
+    "message": "{'name': 'striatum', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002435'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
+      "message": "{'name': 'striatum', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002435'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
       ],
-      "validator": "additionalProperties",
-      "validator_value": false
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
     }
   },
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1 R01 NS 101354-01A1'} is not of type 'string' in /contributor/0",
+    "message": "{'name': \"Parkinson's disease\", 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_14330'} is not of type 'string' in /about/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': '1 R01 NS 101354-01A1'} is not of type 'string'",
+      "message": "{'name': \"Parkinson's disease\", 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_14330'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        1
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'impulse control disorder', 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_10937'} is not of type 'string' in /about/2",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'impulse control disorder', 'schemaKey': 'Disorder', 'identifier': 'http://purl.obolibrary.org/obo/DOID_10937'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': '1 R01 NS 101354-01A1'} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'National Institutes of Health (NIH)', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/01s5ya894', 'awardNumber': '1 R01 NS 101354-01A1'} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -42,12 +94,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Zhuang, Xiaowen', 'email': 'xiaowen.Zhuang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-9064-4023', 'awardNumber': 'PF-PRF-836910', 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Zhuang, Xiaowen', 'email': 'xiaowen.Zhuang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-9064-4023', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'awardNumber': 'PF-PRF-836910', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Zhuang, Xiaowen', 'email': 'xiaowen.Zhuang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-9064-4023', 'awardNumber': 'PF-PRF-836910', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Zhuang, Xiaowen', 'email': 'xiaowen.Zhuang@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-9064-4023', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'awardNumber': 'PF-PRF-836910', 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -65,12 +117,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Lemak, Julia', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4224-7805', 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Lemak, Julia', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4224-7805', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Lemak, Julia', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4224-7805', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Lemak, Julia', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-4224-7805', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -88,12 +140,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Sridhar, Sadhana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'Sridhar, Sadhana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Sridhar, Sadhana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Sridhar, Sadhana', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         3
@@ -111,12 +163,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Parkinson\u2019s Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'PF-PRF-836910', 'includeInCitation': False} is not of type 'string' in /contributor/4",
+    "message": "{'name': 'Parkinson\u2019s Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/005aa3k38', 'awardNumber': 'PF-PRF-836910', 'includeInCitation': False} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Parkinson\u2019s Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'awardNumber': 'PF-PRF-836910', 'includeInCitation': False} is not of type 'string'",
+      "message": "{'name': 'Parkinson\u2019s Foundation', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/005aa3k38', 'awardNumber': 'PF-PRF-836910', 'includeInCitation': False} is not of type 'string'",
       "absolute_path": [
         "contributor",
         4
@@ -157,15 +209,38 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Nelson, Alexandra B.', 'email': 'alexandra.nelson@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "message": "{'name': 'Nelson, Alexandra B.', 'email': 'alexandra.nelson@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Nelson, Alexandra B.', 'email': 'alexandra.nelson@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Nelson, Alexandra B.', 'email': 'alexandra.nelson@ucsf.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'affiliation': [{'name': 'University of California, San Francisco', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/043mz5j54'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         6
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "contributor",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Tauffer, Luiz', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0003-1147-2954', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string' in /contributor/7",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Tauffer, Luiz', 'roleName': ['dcite:DataCurator'], 'schemaKey': 'Person', 'identifier': '0000-0003-1147-2954', 'affiliation': [{'name': 'CatalystNeuro', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/01d74sk53'}], 'includeInCitation': False} is not of type 'string'",
+      "absolute_path": [
+        "contributor",
+        7
       ],
       "absolute_schema_path": [
         "properties",

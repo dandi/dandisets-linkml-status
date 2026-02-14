@@ -23,9 +23,33 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
+  message: '{''name'': ''auditory cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+    ''http://purl.obolibrary.org/obo/UBERON_0001393''} is not of type ''string'' in
+    /about/1'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 1
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{''name'': ''auditory cortex'', ''schemaKey'': ''Anatomy'', ''identifier'':
+      ''http://purl.obolibrary.org/obo/UBERON_0001393''} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
   message: '{''name'': ''Carcea, Ioana'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0002-4459-9321'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/0'
+    ''Person'', ''identifier'': ''0000-0002-4459-9321'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+    {''name'': ''Rutgers, The State University of New Jersey'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/05vt9qd57''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -37,8 +61,11 @@
     - items
     - type
     message: '{''name'': ''Carcea, Ioana'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0002-4459-9321'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0002-4459-9321'', ''affiliation'': [{''name'':
+      ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+      {''name'': ''Rutgers, The State University of New Jersey'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/05vt9qd57''}], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -46,8 +73,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: "{'name': 'Caraballo, Naomi L\xF3pez', 'roleName': ['dcite:Author'], 'schemaKey':
-    'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'
-    in /contributor/1"
+    'Person', 'affiliation': [{'name': 'New York University', 'schemaKey': 'Affiliation',
+    'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation': True} is not
+    of type 'string' in /contributor/1"
   severity: ERROR
   source:
     absolute_path:
@@ -59,8 +87,9 @@
     - items
     - type
     message: "{'name': 'Caraballo, Naomi L\xF3pez', 'roleName': ['dcite:Author'],
-      'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not
-      of type 'string'"
+      'schemaKey': 'Person', 'affiliation': [{'name': 'New York University', 'schemaKey':
+      'Affiliation', 'identifier': 'https://ror.org/0190ak572'}], 'includeInCitation':
+      True} is not of type 'string'"
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -68,8 +97,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Marlin, Bianca J.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/2'
+    ''Person'', ''identifier'': ''0000-0002-4275-7891'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
@@ -81,8 +111,10 @@
     - items
     - type
     message: '{''name'': ''Marlin, Bianca J.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-4275-7891'', ''affiliation'':
+      [{''name'': ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0190ak572''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -90,8 +122,12 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Ooyama, Rumi'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/3'
+    ''Person'', ''affiliation'': [{''name'': ''New York University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}, {''name'': ''Azabu
+    University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00wzjq897''},
+    {''name'': ''Rutgers, The State University of New Jersey'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/05vt9qd57''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
@@ -103,8 +139,12 @@
     - items
     - type
     message: '{''name'': ''Ooyama, Rumi'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''affiliation'': [{''name'': ''New York University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}, {''name'':
+      ''Azabu University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00wzjq897''},
+      {''name'': ''Rutgers, The State University of New Jersey'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/05vt9qd57''}], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -112,8 +152,10 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Riceberg, Justin S.'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/4'
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7046-1502'', ''affiliation'':
+    [{''name'': ''Icahn School of Medicine at Mount Sinai'', ''schemaKey'': ''Affiliation'',
+    ''identifier'': ''https://ror.org/04a9tmd77''}], ''includeInCitation'': True}
+    is not of type ''string'' in /contributor/4'
   severity: ERROR
   source:
     absolute_path:
@@ -125,7 +167,9 @@
     - items
     - type
     message: '{''name'': ''Riceberg, Justin S.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-7046-1502'', ''affiliation'':
+      [{''name'': ''Icahn School of Medicine at Mount Sinai'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/04a9tmd77''}], ''includeInCitation'': True}
       is not of type ''string'''
     validator: type
     validator_value: string
@@ -134,8 +178,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Mendoza Navarro, Joyce M.'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/5'
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''New York University'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
@@ -147,8 +192,9 @@
     - items
     - type
     message: '{''name'': ''Mendoza Navarro, Joyce M.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''New York University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -156,8 +202,11 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Opendak, Maya'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/6'
+    ''Person'', ''identifier'': ''0000-0003-4334-3188'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+    {''name'': ''Nathan Kline Institute for Psychiatric Research'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/01s434164''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/6'
   severity: ERROR
   source:
     absolute_path:
@@ -169,8 +218,11 @@
     - items
     - type
     message: '{''name'': ''Opendak, Maya'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0003-4334-3188'', ''affiliation'': [{''name'':
+      ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+      {''name'': ''Nathan Kline Institute for Psychiatric Research'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/01s434164''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -178,8 +230,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Diaz, Veronica E.'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/7'
+    ''Person'', ''identifier'': ''0000-0003-1626-6105'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/7'
   severity: ERROR
   source:
     absolute_path:
@@ -191,8 +244,10 @@
     - items
     - type
     message: '{''name'': ''Diaz, Veronica E.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0003-1626-6105'', ''affiliation'':
+      [{''name'': ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0190ak572''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -200,8 +255,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Schuster, Luisa'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/8'
+    ''Person'', ''identifier'': ''0000-0002-8954-0737'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/8'
   severity: ERROR
   source:
     absolute_path:
@@ -213,8 +269,9 @@
     - items
     - type
     message: '{''name'': ''Schuster, Luisa'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''identifier'': ''0000-0002-8954-0737'', ''affiliation'': [{''name'':
+      ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -398,8 +455,11 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Falkner, Annegret'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0001-9756-7887'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/17'
+    ''Person'', ''identifier'': ''0000-0001-9756-7887'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+    {''name'': ''Princeton University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/04tr90w50''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/17'
   severity: ERROR
   source:
     absolute_path:
@@ -412,7 +472,10 @@
     - type
     message: '{''name'': ''Falkner, Annegret'', ''roleName'': [''dcite:Author''],
       ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9756-7887'', ''affiliation'':
-      [], ''includeInCitation'': True} is not of type ''string'''
+      [{''name'': ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/0190ak572''}, {''name'': ''Princeton University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/04tr90w50''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -420,8 +483,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Lin, Dayu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0003-2006-0791'', ''affiliation'': [], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/18'
+    ''Person'', ''identifier'': ''0000-0003-2006-0791'', ''affiliation'': [{''name'':
+    ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/18'
   severity: ERROR
   source:
     absolute_path:
@@ -433,8 +497,9 @@
     - items
     - type
     message: '{''name'': ''Lin, Dayu'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0003-2006-0791'', ''affiliation'': [], ''includeInCitation'':
-      True} is not of type ''string'''
+      ''Person'', ''identifier'': ''0000-0003-2006-0791'', ''affiliation'': [{''name'':
+      ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -442,8 +507,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Mar, Adam'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/19'
+    ''Person'', ''affiliation'': [{''name'': ''New York University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/19'
   severity: ERROR
   source:
     absolute_path:
@@ -455,8 +521,9 @@
     - items
     - type
     message: '{''name'': ''Mar, Adam'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''affiliation'': [{''name'': ''New York University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -464,8 +531,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Wadghiri, Youssef Z.'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/20'
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''New York University'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/20'
   severity: ERROR
   source:
     absolute_path:
@@ -477,8 +545,9 @@
     - items
     - type
     message: '{''name'': ''Wadghiri, Youssef Z.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''New York University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -486,8 +555,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Nishimori, Katsuhiko'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/21'
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Tohoku University Graduate
+    School of Medicine'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/04trw8v67''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/21'
   severity: ERROR
   source:
     absolute_path:
@@ -499,8 +569,10 @@
     - items
     - type
     message: '{''name'': ''Nishimori, Katsuhiko'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Tohoku University
+      Graduate School of Medicine'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/04trw8v67''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -508,8 +580,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Kikusui, Takefumi'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/22'
+    ''Person'', ''affiliation'': [{''name'': ''Azabu University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/00wzjq897''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/22'
   severity: ERROR
   source:
     absolute_path:
@@ -521,8 +594,9 @@
     - items
     - type
     message: '{''name'': ''Kikusui, Takefumi'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Azabu University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/00wzjq897''}],
+      ''includeInCitation'': True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -530,8 +604,9 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Mogi, Kazutaka'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-    ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/23'
+    ''Person'', ''affiliation'': [{''name'': ''Azabu University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/00wzjq897''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/23'
   severity: ERROR
   source:
     absolute_path:
@@ -543,8 +618,9 @@
     - items
     - type
     message: '{''name'': ''Mogi, Kazutaka'', ''roleName'': [''dcite:Author''], ''schemaKey'':
-      ''Person'', ''affiliation'': [], ''includeInCitation'': True} is not of type
-      ''string'''
+      ''Person'', ''affiliation'': [{''name'': ''Azabu University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/00wzjq897''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -552,8 +628,11 @@
   instance_index: 0
   instantiates: Dandiset
   message: '{''name'': ''Sullivan, Regina M.'', ''roleName'': [''dcite:Author''],
-    ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True} is
-    not of type ''string'' in /contributor/24'
+    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''New York University'',
+    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+    {''name'': ''Nathan Kline Institute for Psychiatric Research'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/01s434164''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/24'
   severity: ERROR
   source:
     absolute_path:
@@ -565,8 +644,11 @@
     - items
     - type
     message: '{''name'': ''Sullivan, Regina M.'', ''roleName'': [''dcite:Author''],
-      ''schemaKey'': ''Person'', ''affiliation'': [], ''includeInCitation'': True}
-      is not of type ''string'''
+      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''New York University'',
+      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/0190ak572''},
+      {''name'': ''Nathan Kline Institute for Psychiatric Research'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/01s434164''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -575,7 +657,9 @@
   instantiates: Dandiset
   message: '{''name'': ''Froemke, Robert C.'', ''roleName'': [''dcite:Author'', ''dcite:ContactPerson''],
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1230-6811'', ''affiliation'':
-    [], ''includeInCitation'': True} is not of type ''string'' in /contributor/25'
+    [{''name'': ''New York University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/0190ak572''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/25'
   severity: ERROR
   source:
     absolute_path:
@@ -588,7 +672,9 @@
     - type
     message: '{''name'': ''Froemke, Robert C.'', ''roleName'': [''dcite:Author'',
       ''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0002-1230-6811'',
-      ''affiliation'': [], ''includeInCitation'': True} is not of type ''string'''
+      ''affiliation'': [{''name'': ''New York University'', ''schemaKey'': ''Affiliation'',
+      ''identifier'': ''https://ror.org/0190ak572''}], ''includeInCitation'': True}
+      is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -646,8 +732,8 @@
   instantiates: Dandiset
   message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
-    ''awardNumber'': ''K99/R00 MH106744, F32 MH112232, T32 MH019524'', ''contactPoint'':
-    [], ''includeInCitation'': False} is not of type ''string'' in /contributor/28'
+    ''awardNumber'': ''K99/R00 MH106744'', ''contactPoint'': [], ''includeInCitation'':
+    False} is not of type ''string'' in /contributor/28'
   severity: ERROR
   source:
     absolute_path:
@@ -660,8 +746,56 @@
     - type
     message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
       ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
-      ''awardNumber'': ''K99/R00 MH106744, F32 MH112232, T32 MH019524'', ''contactPoint'':
-      [], ''includeInCitation'': False} is not of type ''string'''
+      ''awardNumber'': ''K99/R00 MH106744'', ''contactPoint'': [], ''includeInCitation'':
+      False} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''F32 MH112232'', ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/29'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 29
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''F32 MH112232'', ''includeInCitation'': False} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+    ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+    ''awardNumber'': ''T32 MH019524'', ''includeInCitation'': False} is not of type
+    ''string'' in /contributor/30'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 30
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''National Institute of Mental Health'', ''roleName'': [''dcite:Funder''],
+      ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/04xeg9z08'',
+      ''awardNumber'': ''T32 MH019524'', ''includeInCitation'': False} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -671,12 +805,12 @@
   message: '{''name'': ''Howard Hughes Medical Institute'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/006w34k90'',
     ''contactPoint'': [], ''includeInCitation'': False} is not of type ''string''
-    in /contributor/29'
+    in /contributor/31'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 29
+    - 31
     absolute_schema_path:
     - properties
     - contributor
@@ -695,12 +829,12 @@
     ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-5725-6910'', ''affiliation'':
     [{''name'': ''CatalystNeuro'', ''schemaKey'': ''Affiliation'', ''identifier'':
     ''https://ror.org/01d74sk53''}], ''includeInCitation'': False} is not of type
-    ''string'' in /contributor/30'
+    ''string'' in /contributor/32'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 30
+    - 32
     absolute_schema_path:
     - properties
     - contributor
