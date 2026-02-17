@@ -1,6 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:46f66978-0b54-4ed5-873d-8bd53e41502e'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2026-02-16T23:23:10.885770+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2026-02-16T23:23:10.885770+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:bf8b0d30-df37-4570-8aad-cbe8d4e3d834'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:46f66978-0b54-4ed5-873d-8bd53e41502e'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2026-02-16T23:23:10.885770+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2026-02-16T23:23:10.885770+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:bf8b0d30-df37-4570-8aad-cbe8d4e3d834'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: "{'name': 'Neurodegeneration and Alzheimer\u2019s disease', 'schemaKey':
     'GenericType'} is not of type 'string' in /about/0"
   severity: ERROR
@@ -20,7 +46,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Hippocampal circuitry and memory'', ''schemaKey'': ''GenericType''}
     is not of type ''string'' in /about/1'
   severity: ERROR
@@ -40,7 +66,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Social cognition and memory'', ''schemaKey'': ''GenericType''}
     is not of type ''string'' in /about/2'
   severity: ERROR
@@ -60,7 +86,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Extracellular matrix and perineuronal nets'', ''schemaKey'':
     ''GenericType''} is not of type ''string'' in /about/3'
   severity: ERROR
@@ -80,7 +106,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Behavioral neuroscience'', ''schemaKey'': ''GenericType''}
     is not of type ''string'' in /about/4'
   severity: ERROR
@@ -100,7 +126,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Sontheimer, Harald'', ''email'': ''sontheimer@virginia.edu'',
     ''roleName'': [''dcite:ContactPerson'', ''dcite:Funder''], ''schemaKey'': ''Person'',
     ''identifier'': ''0000-0002-5843-9871'', ''affiliation'': [{''name'': ''University
@@ -127,7 +153,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Escalante, Miguel'', ''email'': ''gze2vv@virginia.edu'',
     ''roleName'': [''dcite:DataManager''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-7251-6634'', ''affiliation'': [{''name'': ''University of Virginia'',
@@ -154,7 +180,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''National Institute on Aging'', ''roleName'': [''dcite:Funder''],
     ''schemaKey'': ''Organization'', ''identifier'': ''https://ror.org/049v75w11'',
     ''awardNumber'': ''R01AG085359'', ''contactPoint'': [{''schemaKey'': ''ContactPoint''}]}
@@ -178,7 +204,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Fleischel, Erik'', ''roleName'': [''dcite:DataCurator''],
     ''schemaKey'': ''Person'', ''includeInCitation'': True} is not of type ''string''
     in /contributor/3'

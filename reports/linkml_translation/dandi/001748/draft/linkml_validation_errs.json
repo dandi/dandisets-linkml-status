@@ -2,6 +2,29 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
+    "message": "{} is not of type 'string' in /about/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        0
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
     "message": "{'name': 'Gonzalez, Limary', 'email': 'limary.gonzalez@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0009-0009-0306-0002', 'affiliation': [], 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
     "instantiates": "Dandiset",

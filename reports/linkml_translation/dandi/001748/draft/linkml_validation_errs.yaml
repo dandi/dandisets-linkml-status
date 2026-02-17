@@ -1,6 +1,24 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
+  message: '{} is not of type ''string'' in /about/0'
+  severity: ERROR
+  source:
+    absolute_path:
+    - about
+    - 0
+    absolute_schema_path:
+    - properties
+    - about
+    - items
+    - type
+    message: '{} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
   message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0009-0009-0306-0002'', ''affiliation'': [], ''awardNumber'': ''R01MH134833'',
