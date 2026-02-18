@@ -47,11 +47,11 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Mancini, Flavia'', ''email'': ''fm456@cam.ac.uk'', ''roleName'':
-    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''], ''schemaKey'':
-    ''Person'', ''identifier'': ''0000-0001-8441-9236'', ''affiliation'': [{''name'':
-    ''University of Cambridge'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013meh722''}],
-    ''includeInCitation'': True} is not of type ''string'' in /contributor/1'
+  message: '{''name'': ''Martenson, Melissa'', ''email'': ''melissa.martenson@yahoo.com'',
+    ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+    ''affiliation'': [{''name'': ''Oregon Health and Science University'', ''schemaKey'':
+    ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}], ''includeInCitation'':
+    True} is not of type ''string'' in /contributor/1'
   severity: ERROR
   source:
     absolute_path:
@@ -62,38 +62,11 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Mancini, Flavia'', ''email'': ''fm456@cam.ac.uk'', ''roleName'':
-      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''], ''schemaKey'':
-      ''Person'', ''identifier'': ''0000-0001-8441-9236'', ''affiliation'': [{''name'':
-      ''University of Cambridge'', ''schemaKey'': ''Affiliation'', ''identifier'':
-      ''https://ror.org/013meh722''}], ''includeInCitation'': True} is not of type
-      ''string'''
-    validator: type
-    validator_value: string
-  type: jsonschema validation
-- context: []
-  instance_index: 0
-  instantiates: Dandiset
-  message: '{''name'': ''Heinricher, Mary'', ''email'': ''heinricm@oshu.edu'', ''roleName'':
-    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Oregon
-    Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
-    ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/2'
-  severity: ERROR
-  source:
-    absolute_path:
-    - contributor
-    - 2
-    absolute_schema_path:
-    - properties
-    - contributor
-    - items
-    - type
-    message: '{''name'': ''Heinricher, Mary'', ''email'': ''heinricm@oshu.edu'', ''roleName'':
-      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
-      ''Oregon Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
-      ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type
-      ''string'''
+    message: '{''name'': ''Martenson, Melissa'', ''email'': ''melissa.martenson@yahoo.com'',
+      ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
+      ''affiliation'': [{''name'': ''Oregon Health and Science University'', ''schemaKey'':
+      ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}], ''includeInCitation'':
+      True} is not of type ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation
@@ -104,12 +77,12 @@
     [''dcite:DataCollector'', ''dcite:Author''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-5828-1904'', ''affiliation'': [{''name'': ''Oregon Health and Science
     University'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}],
-    ''includeInCitation'': True} is not of type ''string'' in /contributor/3'
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/2'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 3
+    - 2
     absolute_schema_path:
     - properties
     - contributor
@@ -131,12 +104,12 @@
     ''identifier'': ''0000-0002-6499-5372'', ''affiliation'': [{''name'': ''Oregon
     Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
     ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type ''string''
-    in /contributor/4'
+    in /contributor/3'
   severity: ERROR
   source:
     absolute_path:
     - contributor
-    - 4
+    - 3
     absolute_schema_path:
     - properties
     - contributor
@@ -154,11 +127,37 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Martenson, Melissa'', ''email'': ''melissa.martenson@yahoo.com'',
-    ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
-    ''affiliation'': [{''name'': ''Oregon Health and Science University'', ''schemaKey'':
-    ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}], ''includeInCitation'':
-    True} is not of type ''string'' in /contributor/5'
+  message: '{''name'': ''Heinricher, Mary'', ''email'': ''heinricm@oshu.edu'', ''roleName'':
+    [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Oregon
+    Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/4'
+  severity: ERROR
+  source:
+    absolute_path:
+    - contributor
+    - 4
+    absolute_schema_path:
+    - properties
+    - contributor
+    - items
+    - type
+    message: '{''name'': ''Heinricher, Mary'', ''email'': ''heinricm@oshu.edu'', ''roleName'':
+      [''dcite:Author''], ''schemaKey'': ''Person'', ''affiliation'': [{''name'':
+      ''Oregon Health and Science University'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/009avj582''}], ''includeInCitation'': True} is not of type
+      ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: Dandiset
+  message: '{''name'': ''Mancini, Flavia'', ''email'': ''fm456@cam.ac.uk'', ''roleName'':
+    [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''], ''schemaKey'':
+    ''Person'', ''identifier'': ''0000-0001-8441-9236'', ''affiliation'': [{''name'':
+    ''University of Cambridge'', ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/013meh722''}],
+    ''includeInCitation'': True} is not of type ''string'' in /contributor/5'
   severity: ERROR
   source:
     absolute_path:
@@ -169,11 +168,12 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Martenson, Melissa'', ''email'': ''melissa.martenson@yahoo.com'',
-      ''roleName'': [''dcite:Author'', ''dcite:DataCollector''], ''schemaKey'': ''Person'',
-      ''affiliation'': [{''name'': ''Oregon Health and Science University'', ''schemaKey'':
-      ''Affiliation'', ''identifier'': ''https://ror.org/009avj582''}], ''includeInCitation'':
-      True} is not of type ''string'''
+    message: '{''name'': ''Mancini, Flavia'', ''email'': ''fm456@cam.ac.uk'', ''roleName'':
+      [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:ProjectLeader''], ''schemaKey'':
+      ''Person'', ''identifier'': ''0000-0001-8441-9236'', ''affiliation'': [{''name'':
+      ''University of Cambridge'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/013meh722''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

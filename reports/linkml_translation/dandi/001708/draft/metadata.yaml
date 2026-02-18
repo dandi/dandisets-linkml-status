@@ -15,9 +15,9 @@ assetsSummary:
   measurementTechnique:
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 12059032
-  numberOfFiles: 24
-  numberOfSubjects: 24
+  numberOfBytes: 89989624
+  numberOfFiles: 101
+  numberOfSubjects: 83
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
@@ -25,8 +25,8 @@ assetsSummary:
     schemaKey: SpeciesType
   variableMeasured:
   - Units
-citation: Ashworth, Carl; Mancini, Flavia; Heinricher, Mary; Shi, Zhigang; De Preter,
-  Caitlynn C; Martenson, Melissa (2026) Noxious stimulation and baseline recordings
+citation: Ashworth, Carl; Martenson, Melissa; Shi, Zhigang; De Preter, Caitlynn C;
+  Heinricher, Mary; Mancini, Flavia (2026) Noxious stimulation and baseline recordings
   of ON, OFF and Neutral cells in the rat rostral ventromedial medulla (Version draft)
   [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001708/draft
 contributor:
@@ -42,27 +42,15 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 - affiliation:
-  - identifier: https://ror.org/013meh722
-    name: University of Cambridge
-    schemaKey: Affiliation
-  email: fm456@cam.ac.uk
-  identifier: 0000-0001-8441-9236
-  includeInCitation: true
-  name: Mancini, Flavia
-  roleName:
-  - dcite:Author
-  - dcite:ContactPerson
-  - dcite:ProjectLeader
-  schemaKey: Person
-- affiliation:
   - identifier: https://ror.org/009avj582
     name: Oregon Health and Science University
     schemaKey: Affiliation
-  email: heinricm@oshu.edu
+  email: melissa.martenson@yahoo.com
   includeInCitation: true
-  name: Heinricher, Mary
+  name: Martenson, Melissa
   roleName:
   - dcite:Author
+  - dcite:DataCollector
   schemaKey: Person
 - affiliation:
   - identifier: https://ror.org/009avj582
@@ -92,12 +80,24 @@ contributor:
   - identifier: https://ror.org/009avj582
     name: Oregon Health and Science University
     schemaKey: Affiliation
-  email: melissa.martenson@yahoo.com
+  email: heinricm@oshu.edu
   includeInCitation: true
-  name: Martenson, Melissa
+  name: Heinricher, Mary
   roleName:
   - dcite:Author
-  - dcite:DataCollector
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013meh722
+    name: University of Cambridge
+    schemaKey: Affiliation
+  email: fm456@cam.ac.uk
+  identifier: 0000-0001-8441-9236
+  includeInCitation: true
+  name: Mancini, Flavia
+  roleName:
+  - dcite:Author
+  - dcite:ContactPerson
+  - dcite:ProjectLeader
   schemaKey: Person
 - awardNumber: NS098660, NS120486
   name: National Institutes of Health

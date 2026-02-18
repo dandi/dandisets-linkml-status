@@ -2,9 +2,30 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
+    "message": "{'id': 'urn:uuid:07890238-6280-4721-a58d-fe0c0c4a372e', 'name': 'DANDI publish', 'endDate': '2026-02-17T19:16:54.267577+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2026-02-17T19:16:54.267577+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:03f27f17-7cfc-4caa-ba38-48bc1e412a23', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string' in /publishedBy",
+    "instance_index": 0,
+    "instantiates": "PublishedDandiset",
+    "context": [],
+    "source": {
+      "message": "{'id': 'urn:uuid:07890238-6280-4721-a58d-fe0c0c4a372e', 'name': 'DANDI publish', 'endDate': '2026-02-17T19:16:54.267577+00:00', 'schemaKey': 'PublishActivity', 'startDate': '2026-02-17T19:16:54.267577+00:00', 'wasAssociatedWith': [{'id': 'urn:uuid:03f27f17-7cfc-4caa-ba38-48bc1e412a23', 'name': 'DANDI API', 'version': '0.1.0', 'schemaKey': 'Software', 'identifier': 'RRID:SCR_017571'}]} is not of type 'string'",
+      "absolute_path": [
+        "publishedBy"
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "publishedBy",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
     "message": "{'name': 'Gonzalez, Limary', 'email': 'limary.gonzalez@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0009-0009-0306-0002', 'affiliation': [], 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/0",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Gonzalez, Limary', 'email': 'limary.gonzalez@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0009-0009-0306-0002', 'affiliation': [], 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
@@ -27,7 +48,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Lee, Brian', 'email': 'brianle@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-3210-5638', 'affiliation': [], 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Lee, Brian', 'email': 'brianle@alleninstitute.org', 'roleName': ['dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0002-3210-5638', 'affiliation': [], 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
@@ -50,7 +71,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Cohen, Jeremiah ', 'email': 'jeremiah.cohen@alleninstitute.org', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-4768-7124', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Cohen, Jeremiah ', 'email': 'jeremiah.cohen@alleninstitute.org', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0002-4768-7124', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
@@ -73,7 +94,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Chandrashekar, Jayaram', 'email': 'jayaramc@alleninstitute.org', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0001-6412-0114', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Chandrashekar, Jayaram', 'email': 'jayaramc@alleninstitute.org', 'roleName': ['dcite:ProjectLeader'], 'schemaKey': 'Person', 'identifier': '0000-0001-6412-0114', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
@@ -96,7 +117,7 @@
     "severity": "ERROR",
     "message": "{'name': 'Isogai, Yoh ', 'email': 'yoh.isogai@alleninstitute.org', 'roleName': ['dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0001-7285-1603', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'name': 'Isogai, Yoh ', 'email': 'yoh.isogai@alleninstitute.org', 'roleName': ['dcite:ProjectMember'], 'schemaKey': 'Person', 'identifier': '0000-0001-7285-1603', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
@@ -119,7 +140,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://alleninstitute.org/', 'name': 'Allen Institute for Brian Science', 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00dcv1019', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://alleninstitute.org/', 'name': 'Allen Institute for Brian Science', 'schemaKey': 'Organization', 'identifier': 'https://ror.org/00dcv1019', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
@@ -142,7 +163,7 @@
     "severity": "ERROR",
     "message": "{'url': 'https://www.nimh.nih.gov/', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
-    "instantiates": "Dandiset",
+    "instantiates": "PublishedDandiset",
     "context": [],
     "source": {
       "message": "{'url': 'https://www.nimh.nih.gov/', 'name': 'National Institute of Mental Health', 'roleName': ['dcite:Funder'], 'schemaKey': 'Organization', 'identifier': 'https://ror.org/04xeg9z08', 'awardNumber': 'R01MH134833', 'includeInCitation': True} is not of type 'string'",
