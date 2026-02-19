@@ -1,10 +1,39 @@
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: voltage clamp technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 5877679819
+  numberOfFiles: 112
+  numberOfSubjects: 11
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9545
+    name: Macaca nemestrina
+    schemaKey: SpeciesType
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9541
+    name: Macaca fascicularis - Cynomolgus monkeys
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - CurrentClampStimulusSeries
+  - CurrentClampSeries
+  - VoltageClampSeries
+  - VoltageClampStimulusSeries
 citation: Gonzalez, Limary (2026) 20260220_AIBS_Patchseq_BICAN_HMBA_macaque (Version
   draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001753/draft
 contributor:
@@ -16,16 +45,28 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2026-02-16T22:51:33.839464+00:00'
-description: <PLACEHOLDER>
+description: BICAN HMBA Lein PatchSeq upload (nonhuman primate) (Q1 2026)
+ethicsApproval: []
 id: DANDI:001753/draft
 identifier: DANDI:001753
+keywords:
+- Patch-seq, nonhuman primate, macaque, multimodal
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001753/versions/draft/assets/
 name: 20260220_AIBS_Patchseq_BICAN_HMBA_macaque
+protocol:
+- https://www.protocols.io/view/patch-seq-recording-and-extraction-8epv51n45l1b/v3
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
+studyTarget:
+- 'Multimodal classifcation of cell types in the nonhuman primate. '
 url: https://dandiarchive.org/dandiset/001753/draft
 version: draft
+wasGeneratedBy:
+- identifier: UM1MH130981
+  name: BICAN HMBA
+  schemaKey: Project
