@@ -43,11 +43,12 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '{''name'': ''Mahopatra, Manish'', ''email'': ''manishofyore@gmail.com'',
+  message: '{''name'': ''Mohapatra, Manish'', ''email'': ''manishofyore@gmail.com'',
     ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector''],
-    ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Dartmouth College'',
-    ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/049s0rh22''}],
-    ''includeInCitation'': True} is not of type ''string'' in /contributor/0'
+    ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8686-1140'', ''affiliation'':
+    [{''name'': ''Dartmouth College'', ''schemaKey'': ''Affiliation'', ''identifier'':
+    ''https://ror.org/049s0rh22''}], ''includeInCitation'': True} is not of type ''string''
+    in /contributor/0'
   severity: ERROR
   source:
     absolute_path:
@@ -58,11 +59,12 @@
     - contributor
     - items
     - type
-    message: '{''name'': ''Mahopatra, Manish'', ''email'': ''manishofyore@gmail.com'',
+    message: '{''name'': ''Mohapatra, Manish'', ''email'': ''manishofyore@gmail.com'',
       ''roleName'': [''dcite:Author'', ''dcite:ContactPerson'', ''dcite:DataCollector''],
-      ''schemaKey'': ''Person'', ''affiliation'': [{''name'': ''Dartmouth College'',
-      ''schemaKey'': ''Affiliation'', ''identifier'': ''https://ror.org/049s0rh22''}],
-      ''includeInCitation'': True} is not of type ''string'''
+      ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-8686-1140'', ''affiliation'':
+      [{''name'': ''Dartmouth College'', ''schemaKey'': ''Affiliation'', ''identifier'':
+      ''https://ror.org/049s0rh22''}], ''includeInCitation'': True} is not of type
+      ''string'''
     validator: type
     validator_value: string
   type: jsonschema validation

@@ -2,23 +2,6 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected) in /",
-    "instance_index": 0,
-    "instantiates": "Dandiset",
-    "context": [],
-    "source": {
-      "message": "Additional properties are not allowed ('datePublished', 'publishedBy' were unexpected)",
-      "absolute_path": [],
-      "absolute_schema_path": [
-        "additionalProperties"
-      ],
-      "validator": "additionalProperties",
-      "validator_value": false
-    }
-  },
-  {
-    "type": "jsonschema validation",
-    "severity": "ERROR",
     "message": "{'name': 'substantia nigra pars compacta', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0001965'} is not of type 'string' in /about/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
@@ -65,12 +48,81 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Azcorra, Maite', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2919-3825', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "message": "{'name': 'striatum', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002435'} is not of type 'string' in /about/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Azcorra, Maite', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2919-3825', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'striatum', 'schemaKey': 'Anatomy', 'identifier': 'http://purl.obolibrary.org/obo/UBERON_0002435'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        2
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Slc17a6 (Mmus)', 'schemaKey': 'Anatomy', 'identifier': 'http://identifiers.org/ncbigene/140919'} is not of type 'string' in /about/3",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Slc17a6 (Mmus)', 'schemaKey': 'Anatomy', 'identifier': 'http://identifiers.org/ncbigene/140919'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        3
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'CALB1', 'schemaKey': 'Anatomy', 'identifier': 'http://identifiers.org/ncbigene/793'} is not of type 'string' in /about/4",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'CALB1', 'schemaKey': 'Anatomy', 'identifier': 'http://identifiers.org/ncbigene/793'} is not of type 'string'",
+      "absolute_path": [
+        "about",
+        4
+      ],
+      "absolute_schema_path": [
+        "properties",
+        "about",
+        "items",
+        "type"
+      ],
+      "validator": "type",
+      "validator_value": "string"
+    }
+  },
+  {
+    "type": "jsonschema validation",
+    "severity": "ERROR",
+    "message": "{'name': 'Azcorra, Maite', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2919-3825', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/0",
+    "instance_index": 0,
+    "instantiates": "Dandiset",
+    "context": [],
+    "source": {
+      "message": "{'name': 'Azcorra, Maite', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-2919-3825', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         0
@@ -88,12 +140,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Gaertner, Zachary', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1760-6549', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/1",
+    "message": "{'name': 'Gaertner, Zachary', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1760-6549', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/1",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Gaertner, Zachary', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1760-6549', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Gaertner, Zachary', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-1760-6549', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         1
@@ -111,12 +163,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Davidson, Connor', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/2",
+    "message": "{'name': 'Davidson, Connor', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/2",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Davidson, Connor', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Davidson, Connor', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         2
@@ -134,12 +186,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'He, Qianzi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/3",
+    "message": "{'name': 'He, Qianzi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4607-166X', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/3",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'He, Qianzi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'He, Qianzi', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-4607-166X', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         3
@@ -157,12 +209,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Kim, Hailey', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/4",
+    "message": "{'name': 'Kim, Hailey', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/4",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Kim, Hailey', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Kim, Hailey', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         4
@@ -180,12 +232,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Nagappan, Shivathmihai', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/5",
+    "message": "{'name': 'Nagappan, Shivathmihai', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5910-040X', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/5",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Nagappan, Shivathmihai', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Nagappan, Shivathmihai', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-5910-040X', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         5
@@ -203,12 +255,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Hayes, Cooper K.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2419-0286', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/6",
+    "message": "{'name': 'Hayes, Cooper K.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2419-0286', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/6",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Hayes, Cooper K.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2419-0286', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Hayes, Cooper K.', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0003-2419-0286', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         6
@@ -226,12 +278,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Ramakrishnan, Charu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3474-6332', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/7",
+    "message": "{'name': 'Ramakrishnan, Charu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3474-6332', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/7",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Ramakrishnan, Charu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3474-6332', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Ramakrishnan, Charu', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-3474-6332', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         7
@@ -249,12 +301,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Fenno, Lief', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5237-6179', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/8",
+    "message": "{'name': 'Fenno, Lief', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5237-6179', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/8",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Fenno, Lief', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5237-6179', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Fenno, Lief', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-5237-6179', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         8
@@ -272,12 +324,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Kim, Yoon Seok', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/9",
+    "message": "{'name': 'Kim, Yoon Seok', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8940-6741', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/9",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Kim, Yoon Seok', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Kim, Yoon Seok', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-8940-6741', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         9
@@ -295,12 +347,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Deisseroth, Karl', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9440-3967', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/10",
+    "message": "{'name': 'Deisseroth, Karl', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9440-3967', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string' in /contributor/10",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Deisseroth, Karl', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9440-3967', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Deisseroth, Karl', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-9440-3967', 'affiliation': [{'name': 'Stanford University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/00f54p054'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         10
@@ -318,12 +370,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Longnecker, Richard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/11",
+    "message": "{'name': 'Longnecker, Richard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7175-6217', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/11",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Longnecker, Richard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Longnecker, Richard', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0001-7175-6217', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         11
@@ -341,12 +393,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Awatramani, Rajeshwar', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0713-2140', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/12",
+    "message": "{'name': 'Awatramani, Rajeshwar', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0713-2140', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/12",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Awatramani, Rajeshwar', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0713-2140', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Awatramani, Rajeshwar', 'roleName': ['dcite:Author'], 'schemaKey': 'Person', 'identifier': '0000-0002-0713-2140', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         12
@@ -364,12 +416,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "{'name': 'Dombeck, Daniel A.', 'email': 'd-dombeck@northwestern.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2576-5918', 'affiliation': [], 'includeInCitation': True} is not of type 'string' in /contributor/13",
+    "message": "{'name': 'Dombeck, Daniel A.', 'email': 'd-dombeck@northwestern.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2576-5918', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string' in /contributor/13",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "{'name': 'Dombeck, Daniel A.', 'email': 'd-dombeck@northwestern.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2576-5918', 'affiliation': [], 'includeInCitation': True} is not of type 'string'",
+      "message": "{'name': 'Dombeck, Daniel A.', 'email': 'd-dombeck@northwestern.edu', 'roleName': ['dcite:Author', 'dcite:ContactPerson'], 'schemaKey': 'Person', 'identifier': '0000-0003-2576-5918', 'affiliation': [{'name': 'Northwestern University', 'schemaKey': 'Affiliation', 'identifier': 'https://ror.org/000e0be47'}], 'includeInCitation': True} is not of type 'string'",
       "absolute_path": [
         "contributor",
         13

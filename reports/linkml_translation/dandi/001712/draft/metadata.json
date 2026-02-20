@@ -33,14 +33,45 @@
   "dateCreated": "2026-02-09T12:17:08.388995+00:00",
   "description": "Work in progress examples for Widefield data collected by IBL.",
   "assetsSummary": {
-    "species": [],
-    "approach": [],
+    "species": [
+      {
+        "name": "Mus musculus - House mouse",
+        "schemaKey": "SpeciesType",
+        "identifier": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      }
+    ],
+    "approach": [
+      {
+        "name": "microscopy approach; cell population imaging",
+        "schemaKey": "ApproachType"
+      }
+    ],
     "schemaKey": "AssetsSummary",
-    "dataStandard": [],
-    "numberOfBytes": 9755954390,
-    "numberOfFiles": 3,
-    "variableMeasured": [],
-    "measurementTechnique": []
+    "dataStandard": [
+      {
+        "name": "Neurodata Without Borders (NWB)",
+        "schemaKey": "StandardsType",
+        "identifier": "RRID:SCR_015242"
+      }
+    ],
+    "numberOfBytes": 52749692397,
+    "numberOfFiles": 7,
+    "numberOfSubjects": 1,
+    "variableMeasured": [
+      "OnePhotonSeries",
+      "OpticalChannel",
+      "ImagingPlane"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "one-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
   },
   "schemaVersion": "0.7.0",
   "ethicsApproval": [],
