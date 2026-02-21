@@ -2,7 +2,23 @@
   "id": "DANDI:001692/draft",
   "url": "https://dandiarchive.org/dandiset/001692/draft",
   "name": "An anatomical hotspot for striatal dopamine-acetylcholine interactions during reward and movement",
-  "about": [],
+  "about": [
+    {
+      "name": "striatum",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/UBERON_0002435"
+    },
+    {
+      "name": "dopamine",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/CHEBI_18243"
+    },
+    {
+      "name": "acetylcholine",
+      "schemaKey": "Anatomy",
+      "identifier": "http://purl.obolibrary.org/obo/CHEBI_15355"
+    }
+  ],
   "access": [
     {
       "status": "dandi:OpenAccess",
@@ -13,7 +29,7 @@
     "spdx:CC-BY-4.0"
   ],
   "version": "draft",
-  "citation": "Vu, Mai-Anh; Bouabid, Safa (2026) An anatomical hotspot for striatal dopamine-acetylcholine interactions during reward and movement (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001692/draft",
+  "citation": "Vu, Mai-Anh; Bouabid, Safa; Noggle, Christian; Vietti-Michelina, Stefania; Brimblecombe, Katherine; Platt, Nicola; Zhang, Liangzhu; Joshi, Anil; Cragg, Stephanie; Howe, Mark (2026) An anatomical hotspot for striatal dopamine-acetylcholine interactions during reward and movement (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001692/draft",
   "keywords": [
     "striatum",
     "dopamine",
@@ -47,7 +63,13 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0003-4766-1159",
-      "affiliation": [],
+      "affiliation": [
+        {
+          "name": "Boston University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05qwgg493"
+        }
+      ],
       "includeInCitation": true
     },
     {
@@ -67,6 +89,83 @@
       ],
       "schemaKey": "Person",
       "identifier": "0000-0003-4184-3795",
+      "affiliation": [
+        {
+          "name": "Boston University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05qwgg493"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Noggle, Christian",
+      "roleName": [
+        "dcite:DataCollector"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0009-0003-0225-3677",
+      "affiliation": [
+        {
+          "name": "Boston University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05qwgg493"
+        }
+      ],
+      "awardNumber": "",
+      "includeInCitation": true
+    },
+    {
+      "name": "Vietti-Michelina, Stefania",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-0166-4055",
+      "includeInCitation": true
+    },
+    {
+      "name": "Brimblecombe, Katherine",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0003-0809-7292",
+      "includeInCitation": true
+    },
+    {
+      "name": "Platt, Nicola",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "includeInCitation": true
+    },
+    {
+      "name": "Zhang, Liangzhu",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0009-0005-2862-4928",
+      "includeInCitation": true
+    },
+    {
+      "name": "Joshi, Anil",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0002-8443-8354",
+      "includeInCitation": true
+    },
+    {
+      "name": "Cragg, Stephanie",
+      "roleName": [
+        "dcite:Author"
+      ],
+      "schemaKey": "Person",
+      "identifier": "0000-0001-9677-2256",
       "includeInCitation": true
     },
     {
@@ -83,7 +182,84 @@
         "dcite:ProjectLeader"
       ],
       "schemaKey": "Person",
-      "identifier": "0000-0002-6865-5084"
+      "identifier": "0000-0002-6865-5084",
+      "affiliation": [
+        {
+          "name": "Boston University",
+          "schemaKey": "Affiliation",
+          "identifier": "https://ror.org/05qwgg493"
+        }
+      ],
+      "includeInCitation": true
+    },
+    {
+      "name": "Michael J. Fox Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/03arq3225",
+      "awardNumber": "ASAP-020370"
+    },
+    {
+      "name": "Michael J. Fox Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/03arq3225",
+      "awardNumber": "ASAP-025192"
+    },
+    {
+      "name": "Parkinson's Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/05mx85j86",
+      "awardNumber": "PF-SF-JFA-836662"
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04xeg9z08",
+      "awardNumber": "R01 MH125835"
+    },
+    {
+      "name": "National Institute of Mental Health",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "identifier": "https://ror.org/04xeg9z08",
+      "awardNumber": "F32MH120894"
+    },
+    {
+      "name": "Whitehall Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "Whitehall Foundation Fellowship"
+    },
+    {
+      "name": "Klingenstein Fund",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "Klingenstein-Simons Fellowship"
+    },
+    {
+      "name": "Simons Foundation",
+      "roleName": [
+        "dcite:Funder"
+      ],
+      "schemaKey": "Organization",
+      "awardNumber": "Klingenstein-Simons Fellowship"
     }
   ],
   "dateCreated": "2026-01-09T17:13:03.135765+00:00",
@@ -98,7 +274,41 @@
   "wasGeneratedBy": [
     {}
   ],
-  "relatedResource": [],
+  "relatedResource": [
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.20.700614v1",
+      "name": "An anatomical hotspot for striatal dopamine-acetylcholine interactions during reward and movement",
+      "relation": "dcite:IsDescribedBy",
+      "schemaKey": "Resource",
+      "identifier": "https://doi.org/10.64898/2026.01.20.700614",
+      "repository": "bioRxiv",
+      "resourceType": "dcite:Preprint"
+    },
+    {
+      "url": "https://github.com/catalystneuro/howe-lab-to-nwb",
+      "name": "howe-lab-to-nwb (2024)",
+      "relation": "dcite:IsCompiledBy",
+      "schemaKey": "Resource",
+      "repository": "GitHub",
+      "resourceType": "dcite:Software"
+    },
+    {
+      "url": "https://github.com/HoweLab/howe-lab-to-nwb",
+      "name": "howe-lab-to-nwb (2026)",
+      "relation": "dcite:IsCompiledBy",
+      "schemaKey": "Resource",
+      "repository": "GitHub",
+      "resourceType": "dcite:Software"
+    },
+    {
+      "url": "https://github.com/HoweLab",
+      "name": "Howe Lab GitHub",
+      "relation": "dcite:IsSupplementedBy",
+      "schemaKey": "Resource",
+      "repository": "GitHub",
+      "resourceType": "dcite:Software"
+    }
+  ],
   "manifestLocation": [
     "https://api.dandiarchive.org/api/dandisets/001692/versions/draft/assets/"
   ]

@@ -1,6 +1,32 @@
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
+  message: '{''id'': ''urn:uuid:da57959f-2be6-47ee-8bc8-7832f6098aea'', ''name'':
+    ''DANDI publish'', ''endDate'': ''2026-02-20T18:38:21.374000+00:00'', ''schemaKey'':
+    ''PublishActivity'', ''startDate'': ''2026-02-20T18:38:21.374000+00:00'', ''wasAssociatedWith'':
+    [{''id'': ''urn:uuid:2c31bb96-46fa-48f7-ba41-3ab2814492c8'', ''name'': ''DANDI
+    API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'': ''RRID:SCR_017571''}]}
+    is not of type ''string'' in /publishedBy'
+  severity: ERROR
+  source:
+    absolute_path:
+    - publishedBy
+    absolute_schema_path:
+    - properties
+    - publishedBy
+    - type
+    message: '{''id'': ''urn:uuid:da57959f-2be6-47ee-8bc8-7832f6098aea'', ''name'':
+      ''DANDI publish'', ''endDate'': ''2026-02-20T18:38:21.374000+00:00'', ''schemaKey'':
+      ''PublishActivity'', ''startDate'': ''2026-02-20T18:38:21.374000+00:00'', ''wasAssociatedWith'':
+      [{''id'': ''urn:uuid:2c31bb96-46fa-48f7-ba41-3ab2814492c8'', ''name'': ''DANDI
+      API'', ''version'': ''0.1.0'', ''schemaKey'': ''Software'', ''identifier'':
+      ''RRID:SCR_017571''}]} is not of type ''string'''
+    validator: type
+    validator_value: string
+  type: jsonschema validation
+- context: []
+  instance_index: 0
+  instantiates: PublishedDandiset
   message: '{''name'': ''Gonzalez, Limary'', ''email'': ''limary.gonzalez@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0009-0009-0306-0002'', ''affiliation'': [], ''awardNumber'': ''UM1MH130981'',
@@ -24,7 +50,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Lee, Brian'', ''email'': ''brianle@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0002-3210-5638'', ''awardNumber'': ''UM1MH130981'', ''includeInCitation'':
@@ -48,7 +74,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Kalmbach, Brian'', ''email'': ''briank@alleninstitute.org'',
     ''roleName'': [''dcite:ContactPerson''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0003-3136-8097'', ''awardNumber'': ''UM1MH130981'', ''includeInCitation'':
@@ -72,7 +98,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Dalley, Rachel '', ''email'': ''racheld@alleninstitute.org'',
     ''roleName'': [''dcite:ProjectMember''], ''schemaKey'': ''Person'', ''identifier'':
     ''0000-0001-7461-7845'', ''awardNumber'': ''UM1MH130981'', ''includeInCitation'':
@@ -96,7 +122,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''name'': ''Lein, Ed'', ''email'': ''edl@alleninstitute.org'', ''roleName'':
     [''dcite:ProjectLeader''], ''schemaKey'': ''Person'', ''identifier'': ''0000-0001-9012-6552'',
     ''awardNumber'': ''UM1MH130981'', ''includeInCitation'': True} is not of type
@@ -120,7 +146,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://alleninstitute.org/'', ''name'': ''Allen Institute
     for Brian Science'', ''roleName'': [''dcite:Affiliation''], ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/00dcv1019'', ''awardNumber'': ''UM1MH130981'',
@@ -145,7 +171,7 @@
   type: jsonschema validation
 - context: []
   instance_index: 0
-  instantiates: Dandiset
+  instantiates: PublishedDandiset
   message: '{''url'': ''https://www.nimh.nih.gov/'', ''name'': ''National Institute
     of Mental Health'', ''roleName'': [''dcite:Funder''], ''schemaKey'': ''Organization'',
     ''identifier'': ''https://ror.org/04xeg9z08'', ''awardNumber'': ''UM1MH130981'',
