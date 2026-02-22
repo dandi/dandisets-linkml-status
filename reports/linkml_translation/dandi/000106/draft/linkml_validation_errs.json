@@ -116,12 +116,12 @@
   {
     "type": "jsonschema validation",
     "severity": "ERROR",
-    "message": "'spdx:CC-BY-NC-4.0' is not one of ['spdx:CC0-1.0', 'spdx:CC-BY-4.0'] in /license/0",
+    "message": "'spdx:CC-BY-NC-4.0' is not one of ['spdx:CC-BY-4.0', 'spdx:CC0-1.0'] in /license/0",
     "instance_index": 0,
     "instantiates": "Dandiset",
     "context": [],
     "source": {
-      "message": "'spdx:CC-BY-NC-4.0' is not one of ['spdx:CC0-1.0', 'spdx:CC-BY-4.0']",
+      "message": "'spdx:CC-BY-NC-4.0' is not one of ['spdx:CC-BY-4.0', 'spdx:CC0-1.0']",
       "absolute_path": [
         "license",
         0
@@ -134,8 +134,8 @@
       ],
       "validator": "enum",
       "validator_value": [
-        "spdx:CC0-1.0",
-        "spdx:CC-BY-4.0"
+        "spdx:CC-BY-4.0",
+        "spdx:CC0-1.0"
       ]
     }
   }
