@@ -10,11 +10,11 @@
   type: string_pattern_mismatch
   url: https://errors.pydantic.dev/2.10/v/string_pattern_mismatch
 - ctx:
-    expected: '''spdx:CC-BY-4.0'' or ''spdx:CC0-1.0'''
+    expected: '''spdx:CC0-1.0'' or ''spdx:CC-BY-4.0'''
   input: spdx:CC-BY-NC-4.0
   loc:
   - license
   - 0
-  msg: Input should be 'spdx:CC-BY-4.0' or 'spdx:CC0-1.0'
+  msg: Input should be 'spdx:CC0-1.0' or 'spdx:CC-BY-4.0'
   type: enum
   url: https://errors.pydantic.dev/2.10/v/enum

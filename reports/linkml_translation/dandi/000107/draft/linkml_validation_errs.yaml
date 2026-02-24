@@ -1,7 +1,7 @@
 - context: []
   instance_index: 0
   instantiates: Dandiset
-  message: '''spdx:CC-BY-NC-4.0'' is not one of [''spdx:CC-BY-4.0'', ''spdx:CC0-1.0'']
+  message: '''spdx:CC-BY-NC-4.0'' is not one of [''spdx:CC0-1.0'', ''spdx:CC-BY-4.0'']
     in /license/0'
   severity: ERROR
   source:
@@ -13,9 +13,9 @@
     - license
     - items
     - enum
-    message: '''spdx:CC-BY-NC-4.0'' is not one of [''spdx:CC-BY-4.0'', ''spdx:CC0-1.0'']'
+    message: '''spdx:CC-BY-NC-4.0'' is not one of [''spdx:CC0-1.0'', ''spdx:CC-BY-4.0'']'
     validator: enum
     validator_value:
-    - spdx:CC-BY-4.0
     - spdx:CC0-1.0
+    - spdx:CC-BY-4.0
   type: jsonschema validation
